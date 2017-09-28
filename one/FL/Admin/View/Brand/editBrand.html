@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jQuery.1.8.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/imagePreview.js"></script>
+
+    <style type="text/css">
+        .fileBtn{
+            display: inline-block;
+            text-align:center;
+            color:#fff;
+            border-radius:4px;
+            background:#00C4F6;
+            font-size:15px;
+            height:27px;
+            line-height: 27px;
+            padding:0 25px;
+            padding-bottom:8px;
+            margin-bottom:15px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+</div>
+<div class="formbody">
+    <form action="{:u('Admin/Brand/editBrand',array('brand_bid'=>$brand_bid))}" method="post" enctype="multipart/form-data" id="form1">
+        <div id="usual1" class="usual">
+            <div id="tab1" class="tabson">
+                <ul class="forminfo">
+                    <li><label>品牌名称<b>*</b></label>
+                        <input type="text" name="brand_name" class="dfinput" style="width:167px;" value="{$brand_name}"/>
+                    </li>
+                    <li><label>品牌图片<b>*</b></label>
+                        <input name="brand_pic" type="file" style="display: none" id="image1" onchange="previewImage(this,'preview1','imghead1',150,60)"/>
+                        <label for="image1" class="fileBtn">选择图片</label>
+                        <P id="preview1"><img src="{:substr($brand_pic,1)}" id="imghead1" /></P>
+                    </li>
+                    <li><label>&nbsp;</label><input name="" type="submit" class="btn" value="提交"/><!--<button class="btn" >添加品牌</button>--></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $("#form1").submit(function(){
+            var submit_able=true;
+            if(!$("[name='brand_name']").val()){
+                $(".forminfo li").eq(0).append("<b>品牌名称不能为空</b>");
+                submit_able=false;
+            }
+            if(!submit_able){
+                return false;
+            }
+        });
+    })
+</script>
+</body>
+
+</html>

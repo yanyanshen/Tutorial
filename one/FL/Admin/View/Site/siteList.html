@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表页</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jQuery.1.8.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+    <script type="text/javascript" src="__STATIC__/editor/kindeditor.js"></script>
+
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 167
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .coo{
+            color: red;
+            font-weight: bold;
+        }
+        .cooo{
+            color:#0000ff;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+</div>
+
+<form action="{:u('Admin/Site/siteList')}" method="post" id="searchForm">
+    <ul class="searchform">
+        <li><label>综合查询</label><input name="key" type="text" class="scinput" value="{$keywords}"/></li>
+        <!--<li><label>&nbsp;</label><a href="cateAction.php?act=search" >查询</a></li>-->
+        <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="查询"/></li>
+    </ul>
+</form>
+
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab2" class="tabson">
+            <table class="tablelist">
+                <thead>
+                <tr>
+                    <th><input name="" type="checkbox" value=""  id="headCheck"/></th>
+                    <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+                    <th>订单号</th>
+                    <th>收货人</th>
+                    <th>送货地址</th>
+                    <th width="200px">联系电话</th>
+                    <th width="200px">购买时间</th>
+                    <th width="200px">订单金额</th>
+                    <th width="200px">订单状态</th>
+                    <!--<th width="300px">管理员权限</th>-->
+                    <th width="200px">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                    <volist name="siteList" id="pval" key="k">
+                        <tr>
+                            <td><input name="" type="checkbox" value="" /></td>
+                            <td>{$firstRow+$k}</td>
+                            <td>{$pval.order_feel}</td>
+                            <td>{$pval.site_name}</td>
+                            <td>{$pval.site_area}，{$pval.site_content}</td>
+                            <td>{$pval.site_tel}</td>
+                            <!--<td><img src="/Uploads/Prod/140_{$pval.prod_pic}" width="100px" height="100px;"></td>-->
+                            <td>{:date("Y-m-d H:i:s",$pval['order_date'])}</td>
+                            <td>{$pval.order_tot}</td>
+                            <td class="inline"><span style="{:($pval[order_status] == '未付款')?'color:#f00;':'color:#74B93E;'};display:inline-block">{$pval.order_status}</span></td>
+                            <td><a href="#" class="tablelink" onclick="del({$pval['order_feel']})"> 删除</a>&nbsp;&nbsp;
+
+                            <a href="{:u('Admin/Site/orderDetail',array('order_feel'=>$pval[order_feel]))}" class="tablelink" onclick=""> 订单详情&nbsp;&nbsp;</a>
+                                <a href="#" class="tablelink" onclick="send({$pval['order_feel']})"> {:(($pval['order_status'] == '已发货') or ($pval['order_status'] == '已收货'))?'':'发货'}</a>
+                            </td>
+                        </tr>
+                    </volist>
+                </tbody>
+            </table>
+            <div id="page">
+                {$page}
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#usual1 ul").idTabs();
+    </script>
+    <script type="text/javascript">
+        $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</div>
+</body>
+<script type="text/javascript">
+    function go(id){
+        var url="/Admin/Admin/toggleAdmin/id/"+id;
+        $.post(url,null,function(res){
+            layer.alert(res,function(){
+                location.reload();
+            })
+        })
+    }
+
+    function del(id){
+        layer.confirm('确定要删除吗？',{
+            btn:['删除','取消']
+        },function(){
+            var url="/Admin/Site/delOrder/order_feel/"+id;
+            $.post(url,null,function(res){
+                layer.alert(res,function(){
+                    location.reload();
+                });
+            })
+        })
+    }
+</script>
+
+
+<script type="text/javascript">
+    $("#headCheck").click(function(){
+        if($("#headCheck").attr("checked")=="checked"){
+            $("[type=checkbox]").attr("checked",$("#headCheck").attr("checked"));
+        }else{
+            $("[type=checkbox]").removeAttr("checked");
+        }
+    })
+
+</script>
+
+<script type="text/javascript">
+    function send(feel){
+        layer.confirm('确定要发货吗？',{
+            btn:['发货','取消']
+        },function(){
+            var url="/Admin/Site/sendProd/order_feel/"+feel;
+            $.get(url,null,function(res){
+                layer.alert(res,function(){
+                    location.reload();
+                });
+            })
+        })
+    }
+
+</script>
+</html>

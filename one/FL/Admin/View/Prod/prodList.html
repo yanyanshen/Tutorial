@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表页</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jQuery.1.8.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+    <script type="text/javascript" src="__STATIC__/editor/kindeditor.js"></script>
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 167
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+</div>
+
+<form action="{:u('Admin/Prod/prodList')}" method="post" id="searchForm">
+    <ul class="searchform">
+        <li><label>综合查询</label><input name="key" type="text" class="scinput" value="{$keywords}"/></li>
+        <!--<li><label>&nbsp;</label><a href="cateAction.php?act=search" >查询</a></li>-->
+        <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="查询"/></li>
+    </ul>
+</form>
+
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab2" class="tabson">
+            <table class="tablelist">
+                <thead>
+                <tr>
+                    <th><input name="" type="checkbox" value=""  id="headCheck"/></th>
+                    <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+                    <th>产品名称</th>
+                    <th>产品类别</th>
+                    <th>产品数量</th>
+                    <th>市场价格</th>
+                    <th>商城价格</th>
+                    <th width="300px">描述</th>
+                    <th>图片</th>
+                    <th>发布时间</th>
+                    <th>上下架状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <volist name="prodList" id="pval" key="k">
+                    <tr>
+                        <td><input name="" type="checkbox" value="" /></td>
+                        <td>{$firstRow+$k}</td>
+                        <td>{$pval.prod_name}</td>
+                        <td>{$pval.prod_cid}</td>
+                        <td>{$pval.prod_qty}</td>
+                        <td>{$pval.prod_sale_price}</td>
+                        <td>{$pval.prod_price}</td>
+                        <td>{$pval.prod_desc}</td>
+                        <td><img src="/Uploads/Prod/140_{$pval.prod_pic}" width="100px" height="100px;"></td>
+                        <td>{:date("Y-m-d H:i:s",$pval['prod_createtime'])}</td>
+                        <td>{$pval[prod_go]?'下架':'上架'}</td>
+                        <td><a href="{:u('Admin/Prod/editProd',array('prod_id'=>$pval[prod_id]))}" class="tablelink">编辑</a><?='&nbsp;&nbsp;&nbsp;'?>
+                            <a href="#" class="tablelink" onclick="go({$pval['prod_id']})">{$pval[prod_go]?'上架':'下架'}</a><?='&nbsp;&nbsp;&nbsp;'?>
+                            <a href="#" class="tablelink" onclick="del({$pval['prod_id']})"> 删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <div id="page">
+                {$page}
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#usual1 ul").idTabs();
+    </script>
+    <script type="text/javascript">
+        $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</div>
+</body>
+<script type="text/javascript">
+    function go(id){
+        var url="/Admin/Prod/toggleProd/prod_id/"+id;
+        $.post(url,null,function(res){
+            layer.alert(res,function(){
+                location.reload();
+            })
+        })
+    }
+    function del(id){
+        layer.confirm('确定要删除这个商品吗？',{
+            btn:['删除','取消']
+        },function(){
+            var url="/Admin/Prod/delProd/prod_id/"+id;
+            $.post(url,null,function(res){
+                layer.alert(res,function(){
+                    location.reload();
+                });
+            })
+        })
+    }
+</script>
+
+<script type="text/javascript">
+    $("#headCheck").click(function(){
+        if($("#headCheck").attr("checked")=="checked"){
+            $("[type=checkbox]").attr("checked",$("#headCheck").attr("checked"));
+        }else{
+            $("[type=checkbox]").removeAttr("checked");
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表页</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jQuery.1.8.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+    <script type="text/javascript" src="__STATIC__/editor/kindeditor.js"></script>
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 167
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .coo{
+            color: red;
+            font-weight: bold;
+        }
+        .cooo{
+            color:#0000ff;
+        }
+    </style>
+</head>
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+</div>
+
+<form action="{:u('Admin/Site/siteList')}" method="post" id="searchForm">
+
+    <ul class="searchform">
+        <li><label>综合查询</label><input name="key" type="text" class="scinput" value="{$keywords}"/></li>
+        <!--<li><label>&nbsp;</label><a href="cateAction.php?act=search" >查询</a></li>-->
+        <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="查询"/></li>
+    </ul>
+</form>
+
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab2" class="tabson">
+            <table class="tablelist">
+                <thead>
+                <tr>
+                    <th><input name="" type="checkbox" value="" checked="checked"/></th>
+                    <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+                    <th>商品图片</th>
+                    <th>商品名称</th>
+                    <th>商品单价</th>
+                    <th>商品数量</th>
+                    <th>商品总价</th>
+                    <th>评论状态</th>
+<!--                    <th width="200px">联系电话</th>
+                    <th width="200px">购买时间</th>
+                    <th width="200px">订单金额</th>
+                    <th width="200px">订单状态</th>-->
+                    <!--<th width="300px">管理员权限</th>-->
+                    <!--<th width="200px">操作</th>-->
+                </tr>
+                </thead>
+                <tbody>
+
+                <volist name="prods" id="pval" key="k">
+                    <tr>
+                        <td><input name="" type="checkbox" value="" /></td>
+                        <td>{$firstRow+$k}</td>
+                        <td><img src="/Uploads/Prod/140_{$pval['prod_pic']}" alt="" width="100px" height="100px;"/></td>
+                        <td>{$pval.prod_name}</td>
+                        <td>{$pval.prod_sale_price}</td>
+                        <td>{$pval.prod_num}</td>
+                        <td>{$pval['prod_sale_price']*$pval['prod_num']}</td>
+                        <td style="{:($pval['order_pl']==已评论)?'color:#74B93E;':'color:#f00;'}">{$pval.order_pl}</td>
+                        <!--<td>
+                            <if condition="$orderStatus eq '已付款'">
+                            <a href="#" class="tablelink" onclick="send({$pval['prod_id']},{$pval['order_feel']})"> {:$pval['prod_send']?'':'发货'}</a>
+                            </if>
+                        </td>-->
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <div id="page">
+                {$page}
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#usual1 ul").idTabs();
+    </script>
+    <script type="text/javascript">
+        $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</div>
+</body>
+<script type="text/javascript">
+    function go(id){
+        var url="/Admin/Admin/toggleAdmin/id/"+id;
+        $.post(url,null,function(res){
+            layer.alert(res,function(){
+                location.reload();
+            })
+        })
+    }
+
+    function del(id){
+        layer.confirm('确定要删除吗？',{
+            btn:['删除','取消']
+        },function(){
+            var url="/Admin/Site/delSite/site_id/"+id;
+            $.post(url,null,function(res){
+                layer.alert(res,function(){
+                    location.reload();
+                });
+            })
+        })
+    }
+</script>
+
+<script type="text/javascript">
+    function send(id,feel){
+        layer.confirm('确定要发货吗？',{
+            btn:['发货','取消']
+        },function(){
+            var url="/Admin/Site/sendProd/prod_id/"+id+"/order_feel/"+feel;
+            $.get(url,null,function(res){
+                layer.alert(res,function(){
+                    location.reload();
+                });
+            })
+        })
+    }
+
+</script>
+</html>
