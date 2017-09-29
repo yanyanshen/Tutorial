@@ -1,0 +1,818 @@
+[ 2016-07-22T09:16:48+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0100s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-22T09:41:30+08:00 ] 127.0.0.1 /Admin/Prod/toggleProd/prod_id/7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0000s ]
+SQL: SELECT `prod_go` FROM `fl_prod` WHERE `prod_id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fl_prod` SET `prod_go`='1' WHERE `prod_id` = 7 [ RunTime:0.0468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T09:43:45+08:00 ] 127.0.0.1 /Admin/Prod/toggleProd/prod_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0080s ]
+SQL: SELECT `prod_go` FROM `fl_prod` WHERE `prod_id` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `fl_prod` SET `prod_go`='1' WHERE `prod_id` = 8 [ RunTime:0.0246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T09:46:40+08:00 ] 127.0.0.1 /Admin/Prod/toggleProd/prod_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT `prod_go` FROM `fl_prod` WHERE `prod_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fl_prod` SET `prod_go`='0' WHERE `prod_id` = 8 [ RunTime:0.0468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T09:51:32+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0040s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 0 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T09:51:37+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 0 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:08:14+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 0 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:08:48+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 0 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:09:44+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T10:09:48+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:10:12+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 0 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:10:36+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 0 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:10:54+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 8 [ RunTime:0.1080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:11:47+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0040s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 8 [ RunTime:0.0510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:13:15+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0090s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 8 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T10:13:33+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 8 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:15:01+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-22T10:30:39+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 8 [ RunTime:0.0572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T10:30:58+08:00 ] 127.0.0.1 /Admin/Prod/delProd/prod_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fl_pic` [ RunTime:0.0156s ]
+SQL: SELECT `pic_name` FROM `fl_pic` WHERE `pic_prod_id` = 8  [ RunTime:0.0000s ]
+SQL: DELETE FROM `fl_prod` WHERE `prod_id` = 8 [ RunTime:0.0568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-22T10:46:03+08:00 ] 127.0.0.1 /Admin/Prod/delProd/prod_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `fl_pic` [ RunTime:0.0000s ]
+SQL: SELECT `pic_name` FROM `fl_pic` WHERE `pic_prod_id` = 8  [ RunTime:0.0000s ]
+SQL: DELETE FROM `fl_prod` WHERE `prod_id` = 8 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-22T10:50:34+08:00 ] 127.0.0.1 /Admin/Custom/delCustom/Custom_id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0020s ]
+SQL: DELETE FROM `fl_custom` WHERE `custom_id` = 8 [ RunTime:0.0312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T11:00:13+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 7 [ RunTime:0.0196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T11:00:35+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 7 [ RunTime:0.0270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T14:23:04+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-22T14:28:39+08:00 ] 127.0.0.1 /index.php/Admin/Prod/prodList.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fl_class` WHERE `class_cid` IN () 
+
+[ 2016-07-22T14:28:46+08:00 ] 127.0.0.1 /index.php/Admin/Prod/prodList.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fl_class` WHERE `class_cid` IN () 
+
+[ 2016-07-22T14:28:51+08:00 ] 127.0.0.1 /index.php/Admin/Prod/prodList.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fl_class` WHERE `class_cid` IN () 
+
+[ 2016-07-22T14:28:57+08:00 ] 127.0.0.1 /index.php/Admin/Prod/prodList.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fl_class` WHERE `class_cid` IN () 
+
+[ 2016-07-22T14:35:48+08:00 ] 127.0.0.1 /index.php/Admin/orders/list.php
+ERR: 无法加载控制器:Orders
+
+[ 2016-07-22T15:01:16+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 7 [ RunTime:0.0470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T15:22:17+08:00 ] 127.0.0.1 /index.php/Admin/Prod/prodList.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fl_class` WHERE `class_cid` IN () 
+
+[ 2016-07-22T15:22:56+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-22T15:42:39+08:00 ] 127.0.0.1 /Admin/Prod/toggleProd/prod_id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0090s ]
+SQL: SELECT `prod_go` FROM `fl_prod` WHERE `prod_id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_prod` SET `prod_go`='1' WHERE `prod_id` = 35 [ RunTime:0.0310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:43:17+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+
+[ 2016-07-22T15:43:18+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+
+[ 2016-07-22T15:43:19+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+
+[ 2016-07-22T15:48:20+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+
+[ 2016-07-22T15:48:21+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+ERR: 1054:Unknown column 'admin_go' in 'field list'
+ [ SQL语句 ] : SELECT `admin_go` FROM `fl_custom` LIMIT 1  
+
+[ 2016-07-22T15:49:41+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 35 [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:49:46+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 35 [ RunTime:0.0420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:51:07+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 35 [ RunTime:0.0320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:51:11+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 35 [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:55:13+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 6 [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:56:39+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 9 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 9 [ RunTime:0.0300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:56:42+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 10 [ RunTime:0.0240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:56:46+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0040s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 5 [ RunTime:0.0490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-22T15:56:56+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 1 [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-22T15:57:00+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 1 [ RunTime:0.0830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:57:05+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 5 [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T15:57:08+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 6 [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:57:11+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 7 [ RunTime:0.0350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T15:57:13+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 9 [ RunTime:0.1050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T15:57:17+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 10 [ RunTime:0.0290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T15:57:23+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 10 [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T15:59:10+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-22T15:59:18+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 10 [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T16:02:36+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 10 [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T16:02:46+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 10 [ RunTime:0.0800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T16:17:35+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0070s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 10 [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-22T16:46:14+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='0' WHERE `custom_id` = 10 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T16:46:37+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 35 [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T16:47:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '789456' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T16:47:19+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('789456','71b3b26aaa319e0cdf6fdb8429c112b0','1469177239') [ RunTime:0.0560s ]
+
+[ 2016-07-22T16:56:03+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 35 [ RunTime:0.0350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T16:56:06+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 35 [ RunTime:0.0470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T17:00:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/loginAction.php?act=logout
+ERR: 非法操作:loginAction.php
+
+[ 2016-07-22T17:00:59+08:00 ] 127.0.0.1 /index.php/Admin/Admin/
+ERR: 非法操作:index
+
+[ 2016-07-22T17:01:23+08:00 ] 127.0.0.1 /Admin/admin
+ERR: 非法操作:index
+
+[ 2016-07-22T17:01:52+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = '456456' AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: admin_go D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 12 行.
+
+[ 2016-07-22T17:02:16+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: admin_go D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 12 行.
+
+[ 2016-07-22T17:02:19+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: admin_go D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 12 行.
+
+[ 2016-07-22T17:02:58+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3'  [ RunTime:0.0010s ]
+
+[ 2016-07-22T17:05:41+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-22T17:05:56+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-22T17:06:02+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-22T17:06:11+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-22T17:06:50+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-22T17:07:12+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-22T17:07:39+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mid D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 16 行.
+
+[ 2016-07-22T17:07:52+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = '456456' AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-22T17:07:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mid D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 16 行.
+
+[ 2016-07-22T17:09:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mid D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 16 行.
+
+[ 2016-07-22T17:11:03+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-22T17:14:07+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 36 [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T17:14:30+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 35 [ RunTime:0.0230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T17:14:34+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 36 [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T17:14:53+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 36 [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-22T17:14:58+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0050s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 36 [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T17:15:18+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 34 [ RunTime:0.0250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-22T17:15:56+08:00 ] 127.0.0.1 /Admin/Custom/toggleCustom/Custom_id/10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0080s ]
+SQL: SELECT `custom_go` FROM `fl_custom` WHERE `custom_id` = 10 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `fl_custom` SET `custom_go`='1' WHERE `custom_id` = 10 [ RunTime:0.0800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+

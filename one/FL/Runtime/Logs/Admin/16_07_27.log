@@ -1,0 +1,40 @@
+[ 2016-07-27T16:48:22+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T16:48:22+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `login_lasttime`='1469580690',`login_lastip`='172.16.11.106' WHERE `id` = 1 [ RunTime:0.0410s ]
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' D:\wamp\www\one\FL\Admin\Controller\AdminController.class.php 第 24 行.
+SQL: UPDATE `fl_admin` SET `login_time`='1469609302',`login_ip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0250s ]
+
+[ 2016-07-27T17:07:45+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 36 [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-27T17:07:55+08:00 ] 127.0.0.1 /Admin/Admin/toggleAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 36 [ RunTime:0.0380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

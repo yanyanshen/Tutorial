@@ -1,0 +1,575 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>丰林食品-首页</title>
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/style.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/index.css" />
+<script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="__STATIC__/js/zhonglin.js"></script>
+</head>
+<body>
+	<!--top 开始-->
+    <div class="top">
+    	<div class="top-con w1200">
+            <ul class="t-con-l f-l">
+                <li><span><span style="font-weight:bold;color:red">{:session('name')?session('name'):''}</span>{:session('name')?'，':'您好，'}欢迎来到丰林</span></li>
+                <li><a href="{:u('Custom/login')}">{:session('mid')?'':'请登录'}</a></li>
+                <li><a href="javascript:out();">{:session('mid')?'退出':''}</a></li>
+                <li><a href="{:u('Custom/register')}">免费注册</a></li>
+            </ul>
+            <ul class="t-con-r f-r">
+            	<li><a href="{:u('Home/User/index',array('url'=>'Home_User_index'))}">我 (个人中心)</a></li>
+            	<li><a href="{:u('User/order')}">我的订单</a></li>
+            	<li class="erweima">
+                	<a href="#">扫描二维码</a>
+                    <div class="ewm-tu">
+                    	<a href="#"><img src="__STATIC__/images/erweima-tu.jpg" /></a>
+                    </div>
+                </li>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <!--logo search 开始-->
+    <div class="hd-info1 w1200">
+        <div class="logo f-l">
+            <h1><a href="#" title="中林网站"><img src="__PUBLIC__/images/logo.png" /></a></h1>
+        </div>
+        <div class="dianji f-r">
+        </div>
+        <div class="search f-r">
+            <ul class="sp">
+                <div style="clear:both;"></div>
+            </ul>
+            <div class="srh">
+                <div class="ipt f-l">
+                    <form action="{:U('Search/index')}" method="get" id="classform">
+                        <input type="text" placeholder="搜索商品..." ss-search-show="sp" name="prods" />
+                    </form>
+                </div>
+                <button id="jk" class="f-r">搜 索</button>
+                <div style="clear:both;"></div>
+            </div>
+            <ul class="sp2">
+                <volist name='classProd' id="valclass" offset="3" length="9">
+                    <li><a href="{:U('Search/index',array('class_name'=>$valclass['class_name']))}">{$valclass['class_name']}</a></li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    
+    <!--nav 开始-->
+    <div class="nav w1200">
+    	<a href="JavaScript:;" class="sp-kj" kj="">
+        	商品分类快捷
+        </a>
+        <div class="kj-show">
+        </div>
+       <div class="kj-show2" kj-sh="">
+            <volist name="firstClassList" id="val">
+                <div class="kj-info1" mg="shiping">
+                    <dl class="kj-dl1">
+                        <dt>
+                            <a href="{:u('Search/index',array('class_cid'=>$val[class_cid],'bigclass'=>1))}">{$val.class_name}</a>
+                        </dt>
+                        <volist name="secondClassList" id="val2" key="k">
+                            <if condition="$val2[class_pid] eq $val[class_cid]">
+                                <dd>
+                                    <a href="{:u('Search/index',array('prods'=>str_replace('/','_',$val2[class_name])))}">{$val2.class_name}</a>
+                                </dd>
+                            </if>
+                        </volist>
+                    </dl>
+                    <div class="kj-if-show" mg2="muying">
+                        <volist name="secondClassList1" id="val3" key="k">
+
+                            <if condition="$val3[class_pid] eq $val[class_cid]">
+                            <dl>
+                                <dd>
+                                    <a href="{:u('Search/index',array('prods'=>$val3[class_name]))}">{$val3.class_name}</a>
+                                </dd>
+                            </dl>
+                            </if>
+                        </volist>
+                    </div>
+                </div>
+
+            </volist>
+        </div>
+        <ul>
+        	<volist name="firstClassList" id="val">
+                <li><a href="{:u('Search/index',array('class_cid'=>$val[class_cid],'bigclass'=>1))}">{$val.class_name}</a></li>
+            </volist>
+            <div style="clear:both;"></div>
+        </ul>
+        <div style="clear:both;"></div>
+    </div>
+    
+    <!--banner 开始-->
+    <div class="banner-box">
+    	<div class="banner w1200">
+        	<ul>
+            	<!--<li><a href="JavaScript:;"><img src="__STATIC__/images/taiwan2.png" /></a></li>
+                <li><a href="JavaScript:;"><img src="__STATIC__/images/rouganroupu2.png" /></a></li>
+                <li><a href="JavaScript:;"><img src="__STATIC__/images/jushihui2.png" /></a></li>
+                <li><a href="JavaScript:;"><img src="__STATIC__/images/enshi2.png" /></a></li>
+                <li><a href="JavaScript:;"><img src="__STATIC__/images/dove2.png" /></a></li>
+                <li><a href="JavaScript:;"><img src="__STATIC__/images/taiwan2.png" /></a></li>-->
+                <volist name="adBanner" id="adB">
+                    <li><a href="{:u('Detail/index',array('prod_id'=>$adB[ad_url]))}"><img src="/Uploads/Advertise/{$adB.ad_pic}" /></a></li>
+                </volist>
+                <li><a href="{:u('Home/Detail/index',array('prod_id'=>$firstBannerUrl))}"><img src="/Uploads/Advertise/{$firstBannerPic}" /></a></li>
+                <div style="clear:both;"></div>
+            </ul>
+            <a href="JavaScript:;" class="bnr bnr-left"><</a>
+            <a href="JavaScript:;" class="bnr bnr-right">></a>
+        </div>
+    </div>
+    <div class="hot-recommend w1200">
+    	<h3>美食集汇</h3>
+        <ul class="">
+        	<volist name="adFloor" id="adF">
+                <li class="ys1">
+                    <a href="{:u('Home/Detail/index',array('prod_id'=>$adF[ad_url]))}"><img src="/Uploads/Advertise/{$adF.ad_pic}" /></a>
+                </li>
+            </volist>
+            <div style="clear:both;"></div>
+        </ul>
+    </div>
+
+    <!--购物车-->
+    <div class="J-global-toolbar">
+        <div class="toolbar-wrap J-wrap">
+            <div class="toolbar">
+                <div class="toolbar-panels J-panel">
+                    <div style="visibility: hidden;" class="J-content toolbar-panel tbar-panel-cart toolbar-animate-out">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="" class="title"><i></i><em class="title">购物车</em></a>
+                            <span class="close-panel J-close"></span>
+                        </h3>
+
+                        <volist name="cart" id="vo" offset="0" length='10'>
+
+                            <div class="tbar-cart-item" >
+                                <div class="jtc-item-goods">
+                                    <span class="p-img"><a href="#" target="_blank"><img src="/Uploads/Prod/{$vo[0].prod_pic}" alt="" height="50" width="50" /></a></span>
+                                    <div class="p-name">
+                                        <a href="#">{$vo[0].prod_name}</a>
+                                    </div>
+                                    <div class="p-price"><strong>¥{$vo[0].prod_price}</strong>×{$vo[0].num}<p  class="mid-je f-r">¥ <span class="prices">{$vo[0][prod_price]*$vo[0][num]}</span></p></div>
+
+                                    <a href="{:u('')}" class="p-del J-del">删除</a>
+                                </div>
+                            </div>
+
+                        </volist>
+
+                        <div class="tbar-panel-footer J-panel-footer">
+                            <div class="tbar-checkout">
+                                <div class="jtc-number"> <strong class="J-count"></strong>{$count}件商品 </div>
+                                <div class="jtc-number"> <strong class="J-count">总价</strong><span id="pric"></span></div>
+                                <a class="jtc-btn J-btn" href="{:u('User/cart')}" target="_blank">去购物车结算</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="visibility: hidden;" class="J-content toolbar-panel tbar-panel-history toolbar-animate-in">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="#" target="_blank" class="title"> <i></i> <em class="title">我的足迹</em> </a>
+                            <span class="close-panel J-close"></span>
+                        </h3>
+                        <div class="tbar-panel-footer J-panel-footer">
+
+                            <volist name="zj" id="vo" offset="0" length='10'>
+
+                                <div class="tbar-cart-item" >
+                                    <div class="jtc-item-goods">
+                                        <span class="p-img"><a href="#" target="_blank"><img src="/Uploads/Prod/{$vo.prod_pic}" alt="" height="50" width="50" /></a></span>
+                                        <div class="p-name">
+                                            <a href="#">{$vo.prod_name}</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </volist>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar-header"></div>
+
+                <div class="toolbar-tabs J-tab">
+                    <div class="toolbar-tab tbar-tab-cart">
+                        <i class="tab-ico" id="tabbbb"></i>
+                        <span id="gwc"></span>
+                        <em class="tab-text">购物车</em>
+                        <span class="tab-sub J-count ">{$count}</span>
+                    </div>
+                    <div class=" toolbar-tab tbar-tab-history ">
+                        <i class="tab-ico"></i>
+                        <em class="tab-text">我的足迹</em>
+                        <span class="tab-sub J-count ">{$zjss}</span>
+                    </div>
+                </div>
+
+                <div class="toolbar-mini"></div>
+
+            </div>
+
+            <div id="J-toolbar-load-hook"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--1 在线商城-->
+    <div class="mall w1200 mt20">
+    	<div class="title1">
+        	<h3><span>1F </span>进口食品</h3>
+            <ul>
+            	<volist name="floorClassList1" id="fval1">
+                    <li><a href="{:u('Search/index',array('prods'=>$fval1[class_name]))}">{$fval1.class_name}</a></li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="sa-con">
+             <ul class="sa-con-l f-l">
+              <volist name="prodList1" id="val1">
+                    <li class="li-ys">
+                        <a href="{:U('Detail/index',array('prod_id'=>$val1[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/350_{$val1['prod_pic']}" width="230px" height="230px"/></a>
+                        <div>
+                            <h3>{:mb_substr($val1[prod_name],0,18,"utf-8")}</h3>
+                            <h3 class="sp1">¥{$val1.prod_sale_price}</h3>
+                        </div>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <ul class="sa-con-r f-l">
+                <volist name="prodList1_1" id="val1_1">
+                    <li class="">
+                        <h3>{:mb_substr($val1_1[prod_name],0,18,"utf-8")}</h3>
+                        <h3 class="sp1">¥{$val1_1.prod_sale_price}</h3>
+                        <a href="{:U('Detail/index',array('prod_id'=>$val1_1[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/140_{$val1_1[prod_pic]}" width="100px" height="100px" /></a>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+    <!--广告栏 二-->
+    <ul class="advertisement2">
+        <volist name="firstFloorBrands" id="Bval1">
+            <li><a href="{:u('Search/index',array('brand_bid'=>$Bval1[brand_bid],'brandsname'=>$Bval1['brand_name'],'pinpai'=>1))}"><img src="{:substr($Bval1[brand_pic],1)}" /></a></li>
+        </volist>
+        <li><a href="#"><img src="__STATIC__/images/hover-br-li-tu2.gif" /></a></li>
+        <li><a href="#"><img src="__STATIC__/images/hover-br-li-tu2.gif" /></a></li>
+        <li><a href="#"><img src="__STATIC__/images/hover-br-li-tu2.gif" /></a></li>
+        <div style="clear:both;"></div>
+    </ul>
+    
+    <!--2 餐饮娱乐-->
+    <div class="dining w1200">
+    	<div class="title1">
+        	<h3><span style="color:#FDA30C;">2F </span>休闲零食</h3>
+            <ul>
+            	<volist name="floorClassList2" id="fval2">
+                    <li><a href="{:u('Search/index',array('prods'=>$fval2[class_name]))}">{$fval2.class_name}</a></li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="sa-con">
+            <ul class="sa-con-l f-l">
+                <volist name="prodList2" id="val2">
+                    <li class="li-ys">
+                        <a href="{:U('Detail/index',array('prod_id'=>$val2[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/350_{$val2[prod_pic]}" width="230px" height="230px"/></a>
+                        <div>
+                            <h3>{:mb_substr($val2[prod_name],0,18,"utf-8")}</h3>
+                            <h3 class="sp1">¥{$val2.prod_sale_price}</h3>
+                        </div>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <ul class="sa-con-r f-l">
+                <volist name="prodList2_2" id="val2_2">
+                    <li class="">
+                        <h3>{:mb_substr($val2_2[prod_name],0,18,"utf-8")}</h3>
+                        <h3 class="sp1">¥{$val2_2.prod_sale_price}</h3>
+                        <a href="{:U('Detail/index',array('prod_id'=>$val2_2[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/140_{$val2_2[prod_pic]}" width="100px" height="100px" /></a>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+     <!--广告栏 二-->
+    <ul class="advertisement2">
+        <volist name="secondFloorBrands" id="Bval2" >
+            <li><a href="{:u('Search/index',array('brand_bid'=>$Bval2[brand_bid],'brandsname'=>$Bval2['brand_name'],'pinpai'=>1))}"><img src="{:substr($Bval2[brand_pic],1)}" /></a></li>
+        </volist>
+        <div style="clear:both;"></div>
+    </ul>
+    
+    <!--3 家政服务-->
+    <div class="service w1200">
+    	<div class="title1">
+        	<h3><span style="color:#6995D8;">3F </span>茶水冲调</h3>
+            <ul>
+            	<volist name="floorClassList3" id="fval3">
+                    <li><a href="{:u('Search/index',array('prods'=>$fval3[class_name]))}">{$fval3.class_name}</a></li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+         <div class="sa-con">
+            <ul class="sa-con-l f-l">
+                <volist name="prodList3" id="val3">
+                    <li class="li-ys">
+                        <a href="{:U('Detail/index',array('prod_id'=>$val3[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/350_{$val3[prod_pic]}" width="230px" height="230px"/></a>
+                        <div>
+                            <h3>{:mb_substr($val3[prod_name],0,16,"utf-8")}</h3>
+                            <h3 class="sp1">¥{$val3.prod_sale_price}</h3>
+                        </div>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <ul class="sa-con-r f-l">
+                <volist name="prodList3_3" id="val3_3">
+                    <li class="">
+                        <h3>{:mb_substr($val3_3[prod_name],0,16,"utf-8")}</h3>
+                        <h3 class="sp1">¥{$val3_3.prod_sale_price}</h3>
+                        <a href="{:U('Detail/index',array('prod_id'=>$val3_3[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/140_{$val3_3[prod_pic]}" width="100px" height="100px" /></a>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+   <!--广告栏-->
+    <ul class="advertisement2">
+        <volist name="thirdFloorBrands" id="Bval3" >
+            <li><a href="{:u('Search/index',array('brand_bid'=>$Bval3[brand_bid],'brandsname'=>$Bval3['brand_name'],'pinpai'=>1))}"><img src="{:substr($Bval3[brand_pic],1)}" /></a></li>
+        </volist>
+        <li><a href="#"><img src="__STATIC__/images/hover-br-li-tu2.gif" /></a></li>
+        <div style="clear:both;"></div>
+    </ul>
+    
+    <!--4 美容美发-->
+    <div class="salon w1200 mt20">
+    	<div class="title1">
+        	<h3><span style="color:#FF6B7F;">4F </span>坚果蜜饯</h3>
+            <ul>
+            	<volist name="floorClassList4" id="fval4">
+                    <li><a href="{:u('Search/index',array('prods'=>$fval4[class_name]))}">{$fval4.class_name}</a></li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="sa-con">
+            <ul class="sa-con-l f-l">
+                <volist name="prodList4" id="val4">
+                    <li class="li-ys">
+                        <a href="{:U('Detail/index',array('prod_id'=>$val4[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/350_{$val4[prod_pic]}" width="230px" height="230px"/></a>
+                        <div>
+                            <h3>{:mb_substr($val4[prod_name],0,16,"utf-8")}</h3>
+                            <h3 class="sp1">¥{$val4.prod_sale_price}</h3>
+                        </div>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <ul class="sa-con-r f-l">
+                <volist name="prodList4_4" id="val4_4">
+                    <li class="">
+                        <h3>{:mb_substr($val4_4[prod_name],0,16,"utf-8")}</h3>
+                        <h3 class="sp1">¥{$val4_4.prod_sale_price}</h3>
+                        <a href="{:U('Detail/index',array('prod_id'=>$val4_4[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/140_{$val4_4[prod_pic]}" width="100px" height="100px" /></a>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+    <!--广告栏 二-->
+    <ul class="advertisement2">
+        <volist name="forthFloorBrands" id="Bval4" >
+            <li><a href="{:u('Search/index',array('brand_bid'=>$Bval4[brand_bid],'brandsname'=>$Bval4['brand_name'],'pinpai'=>1))}"><img src="{:substr($Bval4[brand_pic],1)}" /></a></li>
+        </volist>
+        <li><a href="#"><img src="__STATIC__/images/hover-br-li-tu2.gif" /></a></li>
+        <div style="clear:both;"></div>
+    </ul>
+    
+    <!--5 教育培训-->
+    <div class="education w1200">
+    	<div class="title1">
+        	<h3><span style="color:#FF6B7F;">5F </span>地方特产</h3>
+            <ul>
+            	<volist name="floorClassList5" id="fval5">
+                    <li><a href="{:u('Search/index',array('prods'=>$fval5[class_name]))}">{$fval5.class_name}</a></li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="sa-con">
+            <ul class="sa-con-l f-l">
+                <volist name="prodList5" id="val5">
+                    <li class="li-ys">
+                        <a href="{:U('Detail/index',array('prod_id'=>$val5[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/350_{$val5[prod_pic]}" width="230px" height="230px"/></a>
+                        <div>
+                            <h3>{:mb_substr($val5[prod_name],0,16,"utf-8")}</h3>
+                            <h3 class="sp1">¥{$val5.prod_sale_price}</h3>
+                        </div>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <ul class="sa-con-r f-l">
+                <volist name="prodList5_5" id="val5_5">
+                    <li class="">
+                        <h3>{:mb_substr($val5_5[prod_name],0,16,"utf-8")}</h3>
+                        <h3 class="sp1">¥{$val5_5.prod_sale_price}</h3>
+                        <a href="{:U('Detail/index',array('prod_id'=>$val5_5[prod_id]))}" class="li-tu"><img src="/Uploads/Prod/140_{$val5_5[prod_pic]}" width="100px" height="100px" /></a>
+                    </li>
+                </volist>
+                <div style="clear:both;"></div>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+    <!--广告栏-->
+    <ul class="advertisement2">
+        <volist name="fifthFloorBrands" id="Bval5" >
+            <li><a href="{:u('Search/index',array('brand_bid'=>$Bval5[brand_bid],'brandsname'=>$Bval5['brand_name'],'pinpai'=>1))}"><img src="{:substr($Bval5[brand_pic],1)}" /></a></li>
+        </volist>
+        <li style="border-right:none;"><a href="#"><img src="__STATIC__/images/hover-br-li-tu2.gif" /></a></li>
+        <div style="clear:both;"></div>
+    </ul>
+
+    
+    <!--底部服务-->
+    <div class="ft-service">
+    	<div class="w1200">
+        	<div class="sv-con-l2 f-l">
+            	<dl>
+                	<dt><a href="#">新手上路</a></dt>
+                    <dd>
+                    	<a href="#">购物流程</a>
+                    	<a href="#">在线支付</a>
+                    </dd>
+                </dl>
+                <dl>
+                	<dt><a href="#">配送方式</a></dt>
+                    <dd>
+                    	<a href="#">货到付款区域</a>
+                    	<a href="#">配送费标准</a>
+                    </dd>
+                </dl>
+                <dl>
+                	<dt><a href="#">购物指南</a></dt>
+                    <dd>
+                    	<a href="#">常见问题</a>
+                    	<a href="#">订购流程</a>
+                    </dd>
+                </dl>
+                <dl>
+                	<dt><a href="#">售后服务</a></dt>
+                    <dd>
+                    	<a href="#">售后服务保障</a>
+                    	<a href="#">退款说明</a>
+                    	<a href="#">新手选购商品总则</a>
+                    </dd>
+                </dl>
+                <dl>
+                	<dt><a href="#">关于我们</a></dt>
+                    <dd>
+                    	<a href="#">投诉与建议</a>
+                    </dd>
+                </dl>
+                <div style="clear:both;"></div>
+            </div>
+        	<div class="sv-con-r2 f-r">
+            	<p class="sv-r-tle">187-8660-5539</p>
+            	<p>周一至周五9:00-17:30</p>
+            	<p>（仅收市话费）</p>
+            	<a href="#" class="zxkf">24小时在线客服</a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+    <!--底部 版权-->
+    <div class="footer w1200">
+    	<p>
+        	<a href="#">关于我们</a><span>|</span>
+        	<a href="#">友情链接</a><span>|</span>
+        	<a href="#">宅客微购社区</a><span>|</span>
+        	<a href="#">诚征英才</a><span>|</span>
+        	<a href="#">商家登录</a><span>|</span>
+        	<a href="#">供应商登录</a><span>|</span>
+        	<a href="#">热门搜索</a><span>|</span>
+        	<a href="#">宅客微购新品</a><span>|</span>
+        	<a href="#">开放平台</a>
+        </p>
+        <p>
+        	沪ICP备13044278号<span>|</span>合字B1.B2-20130004<span>|</span>营业执照<span>|</span>互联网药品信息服务资格证<span>|</span>互联网药品交易服务资格证
+        </p>
+    </div>
+</body>
+<script type="text/javascript" >
+    function out(){
+        $.post("{:u('Custom/logout')}",null,function(res){
+            if(res.status=='ok'){
+                location.reload();
+            }
+        })
+    }
+
+    function gettotalprice(){
+        var prices=document.getElementsByClassName('prices');
+        var totalprice=0;
+        for(var i=0;i<prices.length;i++){
+
+            totalprice+=parseInt(prices[i].innerHTML);
+
+        };
+
+        document.getElementById('pric').innerHTML='￥'+totalprice;
+    }
+    gettotalprice();
+</script>
+
+<script type="text/javascript">
+    $('#jk').click(function(){
+        $('#classform').submit();
+    })
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,1586 @@
+[ 2016-07-21T14:19:01+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-21T14:19:10+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '123123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-21T14:19:12+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('123123','4297f44b13955235245b2497399d7a93')
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('123123','4297f44b13955235245b2497399d7a93')
+
+[ 2016-07-21T14:19:21+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('123123','4297f44b13955235245b2497399d7a93')
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('123123','4297f44b13955235245b2497399d7a93')
+
+[ 2016-07-21T14:23:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '123123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:23:48+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('123123','4297f44b13955235245b2497399d7a93')
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('123123','4297f44b13955235245b2497399d7a93')
+
+[ 2016-07-21T14:27:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 25 AND `pwd` = 'aab3238922bcc25a6f606eb525ffdc56' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:27:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 25 AND `pwd` = '250cf8b51c773f3f8dc8b4be867a9a02' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:29:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = 'a' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:29:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = 'aa' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:29:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = 'aaa' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:29:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('aaa','65ba841e01d6db7733e90a5b7f9e6f80')
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('aaa','65ba841e01d6db7733e90a5b7f9e6f80')
+
+[ 2016-07-21T14:30:06+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = 'aa' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:30:08+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+
+[ 2016-07-21T14:30:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-21T14:30:29+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('aa','65ba841e01d6db7733e90a5b7f9e6f80')
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('aa','65ba841e01d6db7733e90a5b7f9e6f80')
+
+[ 2016-07-21T14:31:02+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('aa','65ba841e01d6db7733e90a5b7f9e6f80')
+ERR: 1364:Field 'time' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `fl_admin` (`username`,`pwd`) VALUES ('aa','65ba841e01d6db7733e90a5b7f9e6f80')
+
+[ 2016-07-21T14:31:41+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-21T14:31:49+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-21T14:32:52+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-21T14:33:13+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('aa','65ba841e01d6db7733e90a5b7f9e6f80','1469082792') [ RunTime:0.0370s ]
+
+[ 2016-07-21T14:33:25+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('aa','65ba841e01d6db7733e90a5b7f9e6f80','1469082805') [ RunTime:0.0950s ]
+
+[ 2016-07-21T14:35:08+08:00 ] 127.0.0.1 /Admin/Admin/delAdmin/id/32
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: DELETE FROM `fl_admin` WHERE `id` = 32 [ RunTime:0.0770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T14:35:12+08:00 ] 127.0.0.1 /Admin/Admin/delAdmin/id/31
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: DELETE FROM `fl_admin` WHERE `id` = 31 [ RunTime:0.0650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T14:35:22+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '789' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:35:25+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('789','68053af2923e00204c3ca7c6a3150cf7','1469082925') [ RunTime:0.0420s ]
+
+[ 2016-07-21T14:35:39+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '123123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:35:41+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('123123','4297f44b13955235245b2497399d7a93','1469082941') [ RunTime:0.0490s ]
+
+[ 2016-07-21T14:35:48+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '456456' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:35:50+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('456456','b51e8dbebd4ba8a8f342190a4b9f08d7','1469082950') [ RunTime:0.0410s ]
+
+[ 2016-07-21T14:35:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '789789' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:35:59+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('789789','f751b09ec3662e423a5d9db50b2e9400','1469082959') [ RunTime:0.0580s ]
+
+[ 2016-07-21T14:36:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '981325628ceab4c25a5e7f391dad3a38' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T14:37:00+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '68053af2923e00204c3ca7c6a3150cf7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:37:01+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '21b95a0f90138767b0fd324e6be3457b' LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:37:09+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '68053af2923e00204c3ca7c6a3150cf7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T14:37:10+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '21b95a0f90138767b0fd324e6be3457b' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T14:37:28+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '21b95a0f90138767b0fd324e6be3457b' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:37:36+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 36 AND `pwd` = '68053af2923e00204c3ca7c6a3150cf7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:37:56+08:00 ] 127.0.0.1 /Admin/Admin/delAdmin/id/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: DELETE FROM `fl_admin` WHERE `id` = 36 [ RunTime:0.0490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T14:38:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T14:38:22+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:06:09+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:06:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:06:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:06:34+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'a87ff679a2f3e71d9181a67b7542122c' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:06:37+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '250cf8b51c773f3f8dc8b4be867a9a02' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T15:06:40+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:06:43+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:07:59+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:08:05+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:08:38+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:08:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:08:54+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `fl_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 35 行.
+NOTIC: [8] Undefined variable: brand_pic D:\wamp\www\one\FL\Runtime\Cache\Admin\e30001718177f03b02a5e30c7fc0d2a1.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:39+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '84a64aa81a125bc3c2ff5e46842d7871' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'a87ff679a2f3e71d9181a67b7542122c' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '6c8349cc7260ae62e3b1396831a8398f' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '250cf8b51c773f3f8dc8b4be867a9a02' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '75429d136f65d2d6168b9b6c5f6ec951' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'a330238f5e5026982abe38b8f2215898' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T15:12:43+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:12:49+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE ( id= )
+
+[ 2016-07-21T15:14:54+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-21T15:15:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:15:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T15:16:29+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T15:18:05+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:18:08+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '6c8349cc7260ae62e3b1396831a8398f' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:18:08+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '250cf8b51c773f3f8dc8b4be867a9a02' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T15:18:09+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:18:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:18:30+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:18:37+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-21T15:22:19+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0380s ]
+
+[ 2016-07-21T15:22:22+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0510s ]
+
+[ 2016-07-21T15:22:26+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0470s ]
+
+[ 2016-07-21T15:22:54+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:22:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0310s ]
+
+[ 2016-07-21T15:23:00+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0260s ]
+
+[ 2016-07-21T15:23:08+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0420s ]
+
+[ 2016-07-21T15:23:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0500s ]
+
+[ 2016-07-21T15:23:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0340s ]
+
+[ 2016-07-21T15:23:48+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0350s ]
+
+[ 2016-07-21T15:23:52+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0490s ]
+
+[ 2016-07-21T15:24:32+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 0 [ RunTime:0.0010s ]
+
+[ 2016-07-21T15:24:39+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:24:43+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 0 [ RunTime:0.0010s ]
+
+[ 2016-07-21T15:32:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0430s ]
+
+[ 2016-07-21T15:34:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0380s ]
+
+[ 2016-07-21T15:36:11+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0330s ]
+
+[ 2016-07-21T15:36:30+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0410s ]
+
+[ 2016-07-21T15:37:03+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0320s ]
+
+[ 2016-07-21T15:42:32+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0520s ]
+
+[ 2016-07-21T15:42:38+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0420s ]
+
+[ 2016-07-21T15:43:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T15:44:00+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0090s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:44:13+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T15:44:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-21T15:44:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T15:46:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0420s ]
+
+[ 2016-07-21T15:49:12+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0490s ]
+
+[ 2016-07-21T15:49:20+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0350s ]
+
+[ 2016-07-21T15:53:54+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0050s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0440s ]
+
+[ 2016-07-21T16:02:11+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0720s ]
+
+[ 2016-07-21T16:02:20+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:22+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:23+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:31+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:32+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:34+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:37+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:38+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:02:40+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:04:42+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:04:43+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:04:44+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:04:52+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:04:54+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:04:58+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T16:05:12+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0110s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '250cf8b51c773f3f8dc8b4be867a9a02' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T16:05:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T16:05:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0420s ]
+
+[ 2016-07-21T16:06:21+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0380s ]
+
+[ 2016-07-21T16:20:34+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T16:20:37+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0260s ]
+
+[ 2016-07-21T16:39:38+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0390s ]
+
+[ 2016-07-21T16:39:44+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '250cf8b51c773f3f8dc8b4be867a9a02' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T16:39:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T16:39:48+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0470s ]
+
+[ 2016-07-21T16:47:29+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0410s ]
+
+[ 2016-07-21T17:12:11+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0370s ]
+
+[ 2016-07-21T17:17:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0440s ]
+
+[ 2016-07-21T17:18:02+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'b51e8dbebd4ba8a8f342190a4b9f08d7' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:18:09+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0410s ]
+
+[ 2016-07-21T17:18:18+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0300s ]
+
+[ 2016-07-21T17:19:03+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0480s ]
+
+[ 2016-07-21T17:19:48+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0850s ]
+
+[ 2016-07-21T17:21:11+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='4297f44b13955235245b2497399d7a93' WHERE `id` = 35 [ RunTime:0.0500s ]
+
+[ 2016-07-21T17:21:25+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='4297f44b13955235245b2497399d7a93' WHERE `id` = 35 [ RunTime:0.0420s ]
+
+[ 2016-07-21T17:22:17+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='4297f44b13955235245b2497399d7a93' WHERE `id` = 35 [ RunTime:0.0390s ]
+
+[ 2016-07-21T17:22:26+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '4297f44b13955235245b2497399d7a93' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:22:56+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='698d51a19d8a121ce581499d7b701668' WHERE `id` = 35 [ RunTime:0.1460s ]
+
+[ 2016-07-21T17:23:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = '698d51a19d8a121ce581499d7b701668' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:23:35+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: UPDATE `fl_admin` SET `pwd`='bcbe3365e6ac95ea2c0343a2395834dd' WHERE `id` = 35 [ RunTime:0.0470s ]
+
+[ 2016-07-21T17:23:56+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkPwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `fl_admin` WHERE `id` = 35 AND `pwd` = 'bcbe3365e6ac95ea2c0343a2395834dd' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T17:24:02+08:00 ] 127.0.0.1 /index.php/Admin/Admin/editAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: UPDATE `fl_admin` SET `pwd`='b51e8dbebd4ba8a8f342190a4b9f08d7' WHERE `id` = 35 [ RunTime:0.0340s ]
+
+[ 2016-07-21T17:30:13+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:44:17+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:44:53+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:44:59+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:46:17+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:46:18+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:48:07+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:57:01+08:00 ] 127.0.0.1 /index.php/Admin/Prod/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:57:06+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:57:08+08:00 ] 127.0.0.1 /index.php/Admin/orders/list.php
+ERR: 无法加载控制器:Orders
+
+[ 2016-07-21T17:57:11+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:57:12+08:00 ] 127.0.0.1 /index.php/Admin/members/add.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:57:13+08:00 ] 127.0.0.1 /index.php/Admin/members/list.php
+ERR: 无法加载控制器:Members
+
+[ 2016-07-21T17:59:30+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:59:45+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:59:49+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:59:50+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:59:51+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:59:52+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T17:59:53+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T18:02:59+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T18:03:37+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T18:03:58+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T18:04:14+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T19:09:41+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T19:10:22+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T19:31:57+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T19:58:11+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:01:44+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:02:02+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:02:46+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:03:01+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:03:35+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:09:47+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:09:53+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:17:38+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:17:43+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:17:51+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:17:55+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:18:41+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:19:01+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:19:48+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:19:49+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:19:55+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:21:43+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:21:44+08:00 ] 127.0.0.1 /index.php/Admin/Member/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-21T20:22:16+08:00 ] 127.0.0.1 /index.php/Admin/Member/addMember.html
+ERR: 非法操作:addMember
+
+[ 2016-07-21T20:29:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '789798789' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:29:56+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('789798789','c5801728121f2135e4c756adb4e201b7','1469104196') [ RunTime:0.0400s ]
+
+[ 2016-07-21T20:29:58+08:00 ] 127.0.0.1 /index.php/Admin/Admin/adminOne.html
+ERR: 非法操作:adminOne
+
+[ 2016-07-21T20:30:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '789789789' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:30:29+08:00 ] 127.0.0.1 /index.php/Admin/Admin/addAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `fl_admin` (`username`,`pwd`,`time`) VALUES ('789789789','c5801728121f2135e4c756adb4e201b7','1469104229') [ RunTime:0.0780s ]
+
+[ 2016-07-21T20:30:39+08:00 ] 127.0.0.1 /Admin/Admin/delAdmin/id/37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: DELETE FROM `fl_admin` WHERE `id` = 37 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:30:48+08:00 ] 127.0.0.1 /Admin/Admin/delAdmin/id/38
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: DELETE FROM `fl_admin` WHERE `id` = 38 [ RunTime:0.1050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:30:55+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '45' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:30:55+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '456' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:30:56+08:00 ] 127.0.0.1 /index.php/Admin/Admin/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_admin` WHERE `username` = '456456' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T20:43:11+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:43:12+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:43:21+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:44:05+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:44:44+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:44:48+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:46:38+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:46:44+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:47:17+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T20:48:04+08:00 ] 127.0.0.1 /index.php/Admin/Member/memberList.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-21T21:06:59+08:00 ] 127.0.0.1 /index.php/Admin/Custom/memberList.html
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-21T21:07:20+08:00 ] 127.0.0.1 /index.php/Admin/Custom/memberList.html
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-21T21:07:41+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/advertiseList.html
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-21T21:08:02+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/advertiseList.html
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-21T21:08:23+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/advertiseList.html
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-21T21:08:45+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/advertiseList.html
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+

@@ -1,0 +1,40 @@
+[ 2016-07-25T19:51:30+08:00 ] 127.0.0.1 /index.php/Home/Detail/index.html?p=1&pid=2&cid=0
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: prod_id D:\wamp\www\one\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 68 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `fl_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 2 AND `comment_star` > 3 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 2 AND `comment_star` BETWEEN '2' AND '3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 2 AND `comment_star` BETWEEN '0' AND '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_comment` WHERE `comment_prod_id` = 2 GROUP BY comment_custom_id  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_comment` WHERE `comment_prod_id` = 2 ORDER BY comment_custom_id LIMIT 0,2   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: appendList D:\wamp\www\one\FL\Home\Controller\DetailController.class.php 第 268 行.
+NOTIC: [2] Division by zero D:\wamp\www\one\FL\Home\Controller\DetailController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:51:32+08:00 ] 127.0.0.1 /index.php/Home/Detail/index.html?p=1&pid=2&cid=1
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: prod_id D:\wamp\www\one\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 68 行.
+
+[ 2016-07-25T19:51:33+08:00 ] 127.0.0.1 /index.php/Home/Detail/index.html?p=1&pid=2&cid=2
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: prod_id D:\wamp\www\one\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 68 行.
+
+[ 2016-07-25T19:51:33+08:00 ] 127.0.0.1 /index.php/Home/Detail/index.html?p=1&pid=2&cid=2
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: prod_id D:\wamp\www\one\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 68 行.
+

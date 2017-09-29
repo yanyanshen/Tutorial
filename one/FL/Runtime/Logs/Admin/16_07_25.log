@@ -1,0 +1,141 @@
+[ 2016-07-25T14:07:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-25T14:27:06+08:00 ] 127.0.0.1 /Admin/Admin/verify
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:32:00+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:32:00+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:32:01+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:32:01+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:32:20+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:13+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:14+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:14+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:42+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:43+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:43+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:44+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:44+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T14:37:44+08:00 ] 127.0.0.1 /Admin/Admin/verify?num=+Math.radom()
+ERR: 非法操作:verify
+
+[ 2016-07-25T15:10:22+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-25T15:10:23+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-25T15:15:52+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T15:15:52+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T15:16:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T15:16:11+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T15:16:11+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-25T15:16:14+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T15:16:14+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-25T15:16:15+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T15:16:16+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`admin_go` FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-25T15:17:04+08:00 ] 127.0.0.1 /index.php/Admin/orders/list.php
+ERR: 无法加载控制器:Orders
+

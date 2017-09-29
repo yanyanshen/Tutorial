@@ -1,0 +1,1416 @@
+[ 2016-07-29T10:21:22+08:00 ] 172.16.11.90 /index.php/Home/Search/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fl_brand` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_brand`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 58 行.
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `fl_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_class` WHERE (`class_path` LIKE '%,%,%') LIMIT 40   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_class` WHERE ( class_pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 61 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 459 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: prodlist D:\project\one\FL\Home\Controller\SearchController.class.php 第 395 行.
+NOTIC: [2] Illegal string offset 'prod_bid' D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+NOTIC: [8] Undefined variable: prodsbid D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+SQL: SELECT * FROM `fl_brand` WHERE `brand_bid` IN ('�','')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE `prod_go` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 64 行.
+NOTIC: [8] Undefined index: class2_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 65 行.
+NOTIC: [8] Undefined index: brand_bid D:\project\one\FL\Home\Controller\SearchController.class.php 第 66 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 74 行.
+NOTIC: [8] Undefined index: hobby D:\project\one\FL\Home\Controller\SearchController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: hobbyname1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 81 行.
+NOTIC: [8] Undefined index: hobbyname D:\project\one\FL\Home\Controller\SearchController.class.php 第 83 行.
+NOTIC: [8] Undefined index: pinpai D:\project\one\FL\Home\Controller\SearchController.class.php 第 121 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 142 行.
+NOTIC: [8] Undefined index: smallclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 156 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 171 行.
+NOTIC: [8] Undefined index: zonghe D:\project\one\FL\Home\Controller\SearchController.class.php 第 180 行.
+NOTIC: [8] Undefined index: xiaoliang D:\project\one\FL\Home\Controller\SearchController.class.php 第 190 行.
+NOTIC: [8] Undefined index: xinpin D:\project\one\FL\Home\Controller\SearchController.class.php 第 199 行.
+NOTIC: [8] Undefined index: form2 D:\project\one\FL\Home\Controller\SearchController.class.php 第 208 行.
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 223 行.
+NOTIC: [8] Undefined index: cart D:\project\one\FL\Home\Controller\SearchController.class.php 第 229 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\project\one\FL\Home\Controller\SearchController.class.php 第 229 行.
+NOTIC: [8] Undefined index: cart D:\project\one\FL\Home\Controller\SearchController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [2] Cookie names cannot contain any of the following '=,; \t\r\n\013\014' D:\project\one\ThinkPHP\Common\functions.php 第 1405 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+SQL: SELECT * FROM `fl_prod` WHERE `prod_id` IN ('')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: item D:\project\one\FL\Home\Controller\SearchController.class.php 第 253 行.
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: cart D:\project\one\FL\Home\Controller\SearchController.class.php 第 33 行.
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_id=23 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 260 行.
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\SearchController.class.php 第 274 行.
+NOTIC: [8] Undefined index: item D:\project\one\FL\Home\Controller\SearchController.class.php 第 277 行.
+
+[ 2016-07-29T10:21:23+08:00 ] 172.16.11.90 /index.php/Home/Search/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fl_brand` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_brand`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 58 行.
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `fl_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_class` WHERE (`class_path` LIKE '%,%,%') LIMIT 40   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_class` WHERE ( class_pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 61 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 459 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: prodlist D:\project\one\FL\Home\Controller\SearchController.class.php 第 395 行.
+NOTIC: [2] Illegal string offset 'prod_bid' D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+NOTIC: [8] Undefined variable: prodsbid D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+SQL: SELECT * FROM `fl_brand` WHERE `brand_bid` IN ('�','')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE `prod_go` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 64 行.
+NOTIC: [8] Undefined index: class2_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 65 行.
+NOTIC: [8] Undefined index: brand_bid D:\project\one\FL\Home\Controller\SearchController.class.php 第 66 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 74 行.
+NOTIC: [8] Undefined index: hobby D:\project\one\FL\Home\Controller\SearchController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: hobbyname1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 81 行.
+NOTIC: [8] Undefined index: hobbyname D:\project\one\FL\Home\Controller\SearchController.class.php 第 83 行.
+NOTIC: [8] Undefined index: pinpai D:\project\one\FL\Home\Controller\SearchController.class.php 第 121 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 142 行.
+NOTIC: [8] Undefined index: smallclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 156 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 171 行.
+NOTIC: [8] Undefined index: zonghe D:\project\one\FL\Home\Controller\SearchController.class.php 第 180 行.
+NOTIC: [8] Undefined index: xiaoliang D:\project\one\FL\Home\Controller\SearchController.class.php 第 190 行.
+NOTIC: [8] Undefined index: xinpin D:\project\one\FL\Home\Controller\SearchController.class.php 第 199 行.
+NOTIC: [8] Undefined index: form2 D:\project\one\FL\Home\Controller\SearchController.class.php 第 208 行.
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 223 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [2] Cookie names cannot contain any of the following '=,; \t\r\n\013\014' D:\project\one\ThinkPHP\Common\functions.php 第 1405 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+SQL: SELECT * FROM `fl_prod` WHERE `prod_id` IN ('')  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 260 行.
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\SearchController.class.php 第 274 行.
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' D:\project\one\FL\Home\Controller\SearchController.class.php 第 278 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant prod_price - assumed 'prod_price' D:\project\one\FL\Runtime\Cache\Home\40a90d4ee4fa990bc6e68635303b3224.php 第 14 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' D:\project\one\FL\Runtime\Cache\Home\40a90d4ee4fa990bc6e68635303b3224.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T10:22:02+08:00 ] 172.16.11.90 /index.php/Home/Search/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fl_brand` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_brand`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 58 行.
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `fl_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_class` WHERE (`class_path` LIKE '%,%,%') LIMIT 40   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_class` WHERE ( class_pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 61 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 459 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: prodlist D:\project\one\FL\Home\Controller\SearchController.class.php 第 395 行.
+NOTIC: [2] Illegal string offset 'prod_bid' D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+NOTIC: [8] Undefined variable: prodsbid D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+SQL: SELECT * FROM `fl_brand` WHERE `brand_bid` IN ('�','')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE `prod_go` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 64 行.
+NOTIC: [8] Undefined index: class2_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 65 行.
+NOTIC: [8] Undefined index: brand_bid D:\project\one\FL\Home\Controller\SearchController.class.php 第 66 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 74 行.
+NOTIC: [8] Undefined index: hobby D:\project\one\FL\Home\Controller\SearchController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: hobbyname1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 81 行.
+NOTIC: [8] Undefined index: hobbyname D:\project\one\FL\Home\Controller\SearchController.class.php 第 83 行.
+NOTIC: [8] Undefined index: pinpai D:\project\one\FL\Home\Controller\SearchController.class.php 第 121 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 142 行.
+NOTIC: [8] Undefined index: smallclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 156 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 171 行.
+NOTIC: [8] Undefined index: zonghe D:\project\one\FL\Home\Controller\SearchController.class.php 第 180 行.
+NOTIC: [8] Undefined index: xiaoliang D:\project\one\FL\Home\Controller\SearchController.class.php 第 190 行.
+NOTIC: [8] Undefined index: xinpin D:\project\one\FL\Home\Controller\SearchController.class.php 第 199 行.
+NOTIC: [8] Undefined index: form2 D:\project\one\FL\Home\Controller\SearchController.class.php 第 208 行.
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 223 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [2] Cookie names cannot contain any of the following '=,; \t\r\n\013\014' D:\project\one\ThinkPHP\Common\functions.php 第 1405 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+SQL: SELECT * FROM `fl_prod` WHERE `prod_id` IN ('')  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mid D:\project\one\FL\Home\Controller\SearchController.class.php 第 260 行.
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\SearchController.class.php 第 274 行.
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' D:\project\one\FL\Home\Controller\SearchController.class.php 第 278 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant prod_price - assumed 'prod_price' D:\project\one\FL\Runtime\Cache\Home\40a90d4ee4fa990bc6e68635303b3224.php 第 14 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' D:\project\one\FL\Runtime\Cache\Home\40a90d4ee4fa990bc6e68635303b3224.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:58:38+08:00 ] 172.16.11.90 /index.php/Home/Search/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fl_brand` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_brand`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 58 行.
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `fl_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_class` WHERE (`class_path` LIKE '%,%,%') LIMIT 40   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_class` WHERE ( class_pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 61 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 459 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: prodlist D:\project\one\FL\Home\Controller\SearchController.class.php 第 395 行.
+NOTIC: [2] Illegal string offset 'prod_bid' D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+NOTIC: [8] Undefined variable: prodsbid D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+SQL: SELECT * FROM `fl_brand` WHERE `brand_bid` IN ('�','')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE `prod_go` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 64 行.
+NOTIC: [8] Undefined index: class2_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 65 行.
+NOTIC: [8] Undefined index: brand_bid D:\project\one\FL\Home\Controller\SearchController.class.php 第 66 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 74 行.
+NOTIC: [8] Undefined index: hobby D:\project\one\FL\Home\Controller\SearchController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: hobbyname1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 81 行.
+NOTIC: [8] Undefined index: hobbyname D:\project\one\FL\Home\Controller\SearchController.class.php 第 83 行.
+NOTIC: [8] Undefined index: pinpai D:\project\one\FL\Home\Controller\SearchController.class.php 第 121 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 142 行.
+NOTIC: [8] Undefined index: smallclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 156 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 171 行.
+NOTIC: [8] Undefined index: zonghe D:\project\one\FL\Home\Controller\SearchController.class.php 第 180 行.
+NOTIC: [8] Undefined index: xiaoliang D:\project\one\FL\Home\Controller\SearchController.class.php 第 190 行.
+NOTIC: [8] Undefined index: xinpin D:\project\one\FL\Home\Controller\SearchController.class.php 第 199 行.
+NOTIC: [8] Undefined index: form2 D:\project\one\FL\Home\Controller\SearchController.class.php 第 208 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 223 行.
+NOTIC: [8] Undefined index: cart D:\project\one\FL\Home\Controller\SearchController.class.php 第 229 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\project\one\FL\Home\Controller\SearchController.class.php 第 229 行.
+NOTIC: [8] Undefined index: cart D:\project\one\FL\Home\Controller\SearchController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [2] Cookie names cannot contain any of the following '=,; \t\r\n\013\014' D:\project\one\ThinkPHP\Common\functions.php 第 1405 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+SQL: SELECT * FROM `fl_prod` WHERE `prod_id` IN ('')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: item D:\project\one\FL\Home\Controller\SearchController.class.php 第 253 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: cart D:\project\one\FL\Home\Controller\SearchController.class.php 第 33 行.
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_id=34 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 260 行.
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\SearchController.class.php 第 274 行.
+NOTIC: [8] Undefined index: item D:\project\one\FL\Home\Controller\SearchController.class.php 第 277 行.
+
+[ 2016-07-29T10:58:42+08:00 ] 172.16.11.90 /index.php/Home/Search/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fl_brand` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_brand`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 323 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined variable: brandlist1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 341 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 58 行.
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `fl_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_class` WHERE (`class_path` LIKE '%,%,%') LIMIT 40   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_class` WHERE ( class_pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 61 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 459 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_prod` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_go=0 ) LIMIT 0,16   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: prodlist D:\project\one\FL\Home\Controller\SearchController.class.php 第 395 行.
+NOTIC: [2] Illegal string offset 'prod_bid' D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+NOTIC: [8] Undefined variable: prodsbid D:\project\one\FL\Home\Controller\SearchController.class.php 第 464 行.
+SQL: SELECT * FROM `fl_brand` WHERE `brand_bid` IN ('�','')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fl_prod` WHERE `prod_go` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: class_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 64 行.
+NOTIC: [8] Undefined index: class2_cid D:\project\one\FL\Home\Controller\SearchController.class.php 第 65 行.
+NOTIC: [8] Undefined index: brand_bid D:\project\one\FL\Home\Controller\SearchController.class.php 第 66 行.
+NOTIC: [8] Undefined index: prods D:\project\one\FL\Home\Controller\SearchController.class.php 第 74 行.
+NOTIC: [8] Undefined index: hobby D:\project\one\FL\Home\Controller\SearchController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: hobbyname1 D:\project\one\FL\Home\Controller\SearchController.class.php 第 81 行.
+NOTIC: [8] Undefined index: hobbyname D:\project\one\FL\Home\Controller\SearchController.class.php 第 83 行.
+NOTIC: [8] Undefined index: pinpai D:\project\one\FL\Home\Controller\SearchController.class.php 第 121 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 142 行.
+NOTIC: [8] Undefined index: smallclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 156 行.
+NOTIC: [8] Undefined index: bigclass D:\project\one\FL\Home\Controller\SearchController.class.php 第 171 行.
+NOTIC: [8] Undefined index: zonghe D:\project\one\FL\Home\Controller\SearchController.class.php 第 180 行.
+NOTIC: [8] Undefined index: xiaoliang D:\project\one\FL\Home\Controller\SearchController.class.php 第 190 行.
+NOTIC: [8] Undefined index: xinpin D:\project\one\FL\Home\Controller\SearchController.class.php 第 199 行.
+NOTIC: [8] Undefined index: form2 D:\project\one\FL\Home\Controller\SearchController.class.php 第 208 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 223 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: prod_id D:\project\one\FL\Home\Controller\SearchController.class.php 第 235 行.
+NOTIC: [2] Cookie names cannot contain any of the following '=,; \t\r\n\013\014' D:\project\one\ThinkPHP\Common\functions.php 第 1405 行.
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\one\FL\Home\Controller\SearchController.class.php 第 238 行.
+SQL: SELECT * FROM `fl_prod` WHERE `prod_id` IN ('')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: fl_home D:\project\one\FL\Home\Controller\SearchController.class.php 第 260 行.
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\SearchController.class.php 第 274 行.
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' D:\project\one\FL\Home\Controller\SearchController.class.php 第 278 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant prod_price - assumed 'prod_price' D:\project\one\FL\Runtime\Cache\Home\40a90d4ee4fa990bc6e68635303b3224.php 第 14 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' D:\project\one\FL\Runtime\Cache\Home\40a90d4ee4fa990bc6e68635303b3224.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T10:59:57+08:00 ] 172.16.11.90 /index.php/Home/Custom/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_custom` WHERE `custom_username` = 'gaoyong' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T11:00:09+08:00 ] 172.16.11.90 /index.php/Home/Custom/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T11:00:10+08:00 ] 172.16.11.90 /index.php/Home/Custom/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0000s ]
+SQL: SELECT `custom_id`,`custom_go` FROM `fl_custom` WHERE `custom_username` = 'gaoyong' AND `custom_pwd` = 'f66c583bb0f57faf6eacaedc7e30834a' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:00:40+08:00 ] 172.16.11.90 /index.php/Home/Detail/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: item D:\project\one\FL\Home\Controller\DetailController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `fl_prod` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 29 D:\project\one\FL\Home\Controller\DetailController.class.php 第 14 行.
+SQL: SELECT * FROM `fl_prod` WHERE ( prod_id=29 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\DetailController.class.php 第 93 行.
+NOTIC: [8] Undefined index: item D:\project\one\FL\Home\Controller\DetailController.class.php 第 96 行.
+
+[ 2016-07-29T11:00:41+08:00 ] 172.16.11.90 /index.php/Home/Detail/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: totalPrice D:\project\one\FL\Home\Controller\DetailController.class.php 第 93 行.
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' D:\project\one\FL\Home\Controller\DetailController.class.php 第 97 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant prod_price - assumed 'prod_price' D:\project\one\FL\Runtime\Cache\Home\24464032d991a3b6fd5e8ee5d94f3aec.php 第 14 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' D:\project\one\FL\Runtime\Cache\Home\24464032d991a3b6fd5e8ee5d94f3aec.php 第 14 行.
+NOTIC: [8] Use of undefined constant prod_price - assumed 'prod_price' D:\project\one\FL\Runtime\Cache\Home\24464032d991a3b6fd5e8ee5d94f3aec.php 第 14 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' D:\project\one\FL\Runtime\Cache\Home\24464032d991a3b6fd5e8ee5d94f3aec.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T11:03:11+08:00 ] 172.16.11.90 /index.php/Home/User/site.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fl_site` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\project\one\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\one\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_site` WHERE ( site_custom_id=11 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `fl_site` (`site_content`,`site_zip`,`site_name`,`site_tel`,`site_custom_id`,`site_area`) VALUES ('fsdsd','410103','高勇','15237150303','11','河南省 郑州市 二七区') [ RunTime:0.0330s ]
+SQL: SELECT * FROM `fl_site` WHERE ( site_custom_id=11 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T11:03:24+08:00 ] 172.16.11.90 /Home/Order/index/site_id/33
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_site` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `fl_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_site` WHERE `site_id` = 33  [ RunTime:0.0000s ]
+SQL: UPDATE `fl_site` SET `site_m`='0' WHERE `site_custom_id` IN ('11') [ RunTime:0.0290s ]
+SQL: UPDATE `fl_site` SET `site_m`='site' WHERE ( site_id='33' ) [ RunTime:0.0250s ]
+SQL: SELECT * FROM `fl_site` WHERE ( site_custom_id=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_site` WHERE `site_custom_id` = 11 AND `site_m` = 'site'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: x D:\project\one\FL\Home\Controller\OrderController.class.php 第 90 行.
+NOTIC: [8] Undefined index: act D:\project\one\FL\Home\Controller\OrderController.class.php 第 97 行.
+
+[ 2016-07-29T11:18:17+08:00 ] 172.16.11.90 /index.php/Home/Detail/index.html?p=1&pid=29&cid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_comment` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 29 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 29 AND `comment_star` > 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 29 AND `comment_star` BETWEEN '2' AND '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 29 AND `comment_star` BETWEEN '0' AND '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_comment` WHERE `comment_prod_id` = 29 GROUP BY comment_custom_id  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fl_comment` WHERE `comment_prod_id` = 29 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fl_comment` WHERE `comment_prod_id` = 29 ORDER BY comment_custom_id LIMIT 0,2   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\one\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `fl_custom` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fl_custom` WHERE `custom_id` IN ('1','11')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: appendList D:\project\one\FL\Home\Controller\DetailController.class.php 第 294 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant comment_createtime - assumed 'comment_createtime' D:\project\one\FL\Runtime\Cache\Home\95257c743e16dc6a6bf5ec88cdefacb2.php 第 42 行.
+NOTIC: [8] Use of undefined constant comment_createtime - assumed 'comment_createtime' D:\project\one\FL\Runtime\Cache\Home\95257c743e16dc6a6bf5ec88cdefacb2.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,58 @@
+[ 2016-07-29T11:09:44+08:00 ] 172.16.11.90 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T11:09:44+08:00 ] 172.16.11.90 /index.php/Admin/Admin/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fl_admin` WHERE `username` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `fl_admin` SET `login_lasttime`='1469755173',`login_lastip`='172.16.11.106' WHERE `id` = 1 [ RunTime:0.0430s ]
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' D:\project\one\FL\Admin\Controller\AdminController.class.php 第 24 行.
+SQL: UPDATE `fl_admin` SET `login_time`='1469761784',`login_ip`='172.16.11.90' WHERE `id` = 1 [ RunTime:0.0340s ]
+
+[ 2016-07-29T11:10:22+08:00 ] 172.16.11.90 /Admin/Admin/toggleAdmin/id/35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0030s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 35 [ RunTime:0.0360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T11:10:25+08:00 ] 172.16.11.90 /Admin/Admin/toggleAdmin/id/34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0000s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='0' WHERE `id` = 34 [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T11:10:38+08:00 ] 172.16.11.90 /Admin/Admin/toggleAdmin/id/25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_admin` [ RunTime:0.0030s ]
+SQL: SELECT `admin_go` FROM `fl_admin` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `fl_admin` SET `admin_go`='1' WHERE `id` = 25 [ RunTime:0.0380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T11:14:20+08:00 ] 172.16.11.90 /Admin/Site/sendProd/prod_id/29/order_feel/2016072970446
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fl_order_prod` [ RunTime:0.0030s ]
+SQL: UPDATE `fl_order_prod` SET `order_prod_send`='1' WHERE `order_prod_id` = 29 [ RunTime:0.0400s ]
+
