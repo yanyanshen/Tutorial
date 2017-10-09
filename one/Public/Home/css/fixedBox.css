@@ -1,0 +1,17 @@
+
+/*评论列表样式*/
+.commentOne{width: 900px;height: 180px;border-bottom: 1px solid lightgray}
+.comment-lt{width: 239px;height: 180px;float: left;border-right: 1px solid lightgray}
+.comment-mem{margin-left: 20px;margin-top: 20px;font-size: 14px;color: darkslategray;}
+.comment-mem p{margin-top: 5px}
+.comment-mem span{color: lightseagreen;font-size: 16px;}
+.comment-mem img{width: 22px;height: 22px;}
+.comment-rt1{width: 658px;height: 120px;float: left;font-size: 16px;line-height: 40px}
+.comment-rt1 p{margin-left: 10px;}
+.comment-rt2{width: 658px;height: 60px;float: left;line-height: 10px;}
+.comment-rt2 p{margin-left: 26px;margin-top: 10px;color: dimgray;}
+.comment-rt2 span{margin-left: 5px;font-size: 14px;}
+.discuss_Paging .discuss{margin-top: 20px;}
+.discuss_Paging .discuss span{margin-right:10px;}
+.discuss_Paging .discuss b{color: deepskyblue}
+#star input{display:none}

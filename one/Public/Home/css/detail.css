@@ -1,0 +1,133 @@
+.detail{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border: solid 1px #dddddd;
+}
+.detail .title{
+
+    width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
+
+
+}
+.detail .author{
+    font-size: 14px;
+    color: #ccc;
+    padding-left:500px;
+    padding-top: 20px;
+}
+.detail .pic{
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.detail .content{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: rgb(240,239,239);
+
+}
+
+.detail .shara{
+    padding-top: 5px;
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.detail .shara span{
+    color:#ccc;
+    font-size: 14px;
+    margin-left: 820px;
+    padding-right: 10px;
+}
+
+.detail .shara .sina{
+    padding-right: 10px;
+}
+.advertisement{
+
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.advertisement .tuijian{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #6F4D33;
+
+}
+
+
+
+.left{
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+    position: fixed;
+}
+
+.right{
+    margin-top: 20px;
+    margin-left: 30px;
+    float: right;
+    position: fixed;
+}
+
+/* css 重置 */
+*{margin:0; padding:0; list-style:none; }
+body{ background:#fff; font:normal 12px/22px 宋体;  }
+img{ border:0;  }
+a{ text-decoration:none; color:#333;  }
+
+
+.js{width:90%; margin:10px auto 0 auto; }
+.js p{ padding:5px 0; font-weight:bold; overflow:hidden;  }
+.js p span{ float:right; }
+.js p span a{ color:#f00; text-decoration:underline;   }
+.js textarea{ height:100px;  width:98%; padding:5px; border:1px solid #ccc; border-top:2px solid #aaa;  border-left:2px solid #aaa;  }
+
+
+/* 本例子css */
+.picMarquee-top{ margin:0 auto;  width:250px;height: 600px; overflow:hidden; position:relative;  border:1px solid #ccc;   }
+.picMarquee-top .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+.picMarquee-top .hd .prev,.picMarquee-top .hd .next{ display:block;  width:9px; height:5px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+    cursor:pointer; background:url("../images/arrow.png") 0 -100px no-repeat;}
+.picMarquee-top .hd .next{ background-position:0 -140px;  }
+.picMarquee-top .hd span{float: left;font-size: 8px;color:rgb(89,89,89); }
+.picMarquee-top .hd .prevStop{ background-position:-60px -100px;  }
+.picMarquee-top .hd .nextStop{ background-position:-60px -140px;  }
+.picMarquee-top .bd{ padding:10px; }
+.picMarquee-top .bd ul{ overflow:hidden; zoom:1; }
+.picMarquee-top .bd ul li{ text-align:center; zoom:1; }
+.picMarquee-top .bd ul li .pic{ text-align:center; }
+.picMarquee-top .bd ul li .pic img{ width:200px; height:130px; display:block; padding:2px; border:1px solid #ccc; margin: 0 auto;}
+.picMarquee-top .bd ul li .pic a:hover img{ border-color:#999;  }
+.picMarquee-top .bd ul li .title{ line-height:24px;   }
+
+
+/*下面广告栏的样式*/
+.slideGroup{ width:1200px; border:1px solid #ddd; text-align:left;  }
+/*.slideGroup .parHd{ height:50px; line-height:50px; background:#f4f4f4; padding:0 20px; border-bottom:1px solid #ddd;  position:relative;  }
+.slideGroup .parHd ul{ position:absolute; left:0; top:-1px; height:50px;    }
+.slideGroup .parHd ul li{ float:left; padding:0 15px; cursor:pointer;  }
+.slideGroup .parHd ul li.on{ height:50px;width: 50px;  background:#ccc; border:1px solid #ddd; border-bottom:2px solid #ccc; }*/
+
+.slideGroup .parHd{height: 50px;line-height: 50px;background: #f4f4f4;}
+.slideGroup .parHd ul{text-align: center}
+.slideGroup .parHd ul li{float: left;padding-right: 30px;cursor: pointer;width: 50px; font-size: 14px;}
+.slideGroup .parHd ul li.on{background: #b8b8ad;color:#F90;}
+
+.slideGroup .slideBox{ overflow:hidden; zoom:1; padding:10px 0 10px 0; position:relative;  margin: 0;width: 1200px;height: 250px; }
+
+.slideGroup .parBd ul{ overflow:hidden; zoom:1; }
+.slideGroup .parBd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+.slideGroup .parBd ul li .pic{ text-align:center; padding: 0;}
+.slideGroup .parBd ul li .pic img{ width:300px; height:230px; display:block;  padding:2px; border:1px solid #ccc; }
+.slideGroup .parBd ul li .pic a:hover img{ border-color:#999;  }
+.slideGroup .parBd ul li .title{ line-height:24px;   }
