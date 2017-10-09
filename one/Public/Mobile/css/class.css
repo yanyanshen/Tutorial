@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*tongyong */
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var{ margin: 0; padding: 0;}
+body{font-family:"微软雅黑";width:7.5rem;font-size:0.16rem;}
+img{vertical-align:top;}
+.bk{border:0.03rem solid red;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover,a:link,a:visited{color:#000;}
+.fl{float:left;}
+.fr{float:right;}
+.wrapper{width:7rem;margin:0 auto;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+/*清除浮动通用样式*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom:1;
+}
+
+
+/*头部*/
+.header{height:1.1rem;background:#eee}
+.header .search{position: relative;}
+.header .search input{width:6.45rem;height:0.7rem;font-size:0.24rem;margin-top:0.2rem;background:#fff;padding-left:0.55rem}
+.header .search i{display:block;width:0.24rem;height:0.29rem;background:url(../images/search.png);background-size:0.24rem 0.29rem;position: absolute;top:0.42rem;left:0.1rem;}
+
+/*热销分类*/
+.class .left>ul li{width:1.7rem;height:0.85rem;background:#eee;margin:0.02rem 0;text-align:center;line-height:0.85rem;font-size:0.26rem;cursor:pointer;}
+.class .left ul .active{background:#fff;}
+.class .right{width:5.3rem;margin-left:0.24rem;position: relative;}
+.class .right .ul01{height:5.2rem;}
+.class .right .ul02{height:5.3rem;}
+.class .right .ul03{height:3rem;}
+.class .right .ul04{height:5.26rem;margin-bottom:1rem}
+/*.class .right .ul05{height:3rem;}*/
+.class .right ul .title01{height:0.74rem;line-height:0.74rem;}
+.class .right .ul01 li,.class .right .ul02 li,.class .right .ul03 li,.class .right .ul04 li,.class .right .ul05 li,.class .right .ul06 li,.class .right .ul07 li,.class .right .ul08 li{float:left;margin-right:0.25rem;margin-bottom:0.26rem;width:1.6rem;height:2.1rem;background:#f0f0f0;text-align:center;padding-left:0.1rem;padding-top:0.12rem;box-sizing:border-box;}
+.class .right .ul01 .li03,.class .right .ul01 .li06{margin-right:0;}
+.class .right .ul02 .li09,.class .right .ul02 .li12{margin-right:0;}
+.class .right ul .title02,.class .right ul .title03,.class .right ul .title04,.class .right ul .title05,.class .right ul .title06,.class .right ul .title07,.class .right ul .title08{margin-bottom:0.24rem}
+.class .right .ul03 .li15{margin-right:0;}
+.class .right .ul04 .li18,.class .right .ul04 .li21{margin-right:0;}
+.class .right .ul05 .li24,.class .right .ul05 .li27{margin-right:0;}
+.class .right ul .title07{margin-bottom:0.24rem}
+.class .right .ul06 .li30,.class .right .ul06 .li33,.class .right .ul07 .li36,.class .right .ul07 .li39,.class .right .ul08 .li42,.class .right .ul08 .li45{margin-right:0;}
+.class .right ul li i{display:block;width:1.4rem;height:1.38rem;margin-bottom:0.15rem;}
+.class .right ul .li01 i{background:url(../images/type01.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li02 i{background:url(../images/type02.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li03 i{background:url(../images/type03.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li04 i{background:url(../images/type04.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li05 i{background:url(../images/type05.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li06 i{background:url(../images/type06.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li07 i{background:url(../images/type07.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li08 i{background:url(../images/type08.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li09 i{background:url(../images/type09.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li10 i{background:url(../images/type10.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li11 i{background:url(../images/type11.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li12 i{background:url(../images/type12.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li13 i{background:url(../images/type13.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li14 i{background:url(../images/type14.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li15 i{background:url(../images/type15.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li16 i{background:url(../images/type16.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li17 i{background:url(../images/type17.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li18 i{background:url(../images/type18.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li19 i{background:url(../images/type19.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li20 i{background:url(../images/type20.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li21 i{background:url(../images/type21.jpg);background-size:1.4rem 1.38rem;}
+
+.class .right ul .li22 i{background:url(../images/type22.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li23 i{background:url(../images/type23.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li24 i{background:url(../images/type24.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li25 i{background:url(../images/type25.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li26 i{background:url(../images/type26.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li27 i{background:url(../images/type27.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li28 i{background:url(../images/type28.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li29 i{background:url(../images/type29.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li30 i{background:url(../images/type30.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li31 i{background:url(../images/type31.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li32 i{background:url(../images/type32.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li33 i{background:url(../images/type33.jpg);background-size:1.4rem 1.38rem;}
+
+.class .right ul .li34 i{background:url(../images/type34.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li35 i{background:url(../images/type35.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li36 i{background:url(../images/type36.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li37 i{background:url(../images/type37.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li38 i{background:url(../images/type38.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li39 i{background:url(../images/type39.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li40 i{background:url(../images/type40.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li41 i{background:url(../images/type41.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li42 i{background:url(../images/type42.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li43 i{background:url(../images/type43.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li44 i{background:url(../images/type44.jpg);background-size:1.4rem 1.38rem;}
+.class .right ul .li45 i{background:url(../images/type45.jpg);background-size:1.4rem 1.38rem;}
+.class .right>div{position: absolute;top:0;left:0;}
+
+/*底部导航*/
+.outside { background: #f4f4f4; padding-top: 0.1rem; height: 1.08rem; position: fixed; bottom: 0; left: 0; z-index: 999;}
+.footer { width: 7.5rem; height: 0.97rem; border-top: 0.01rem solid #eee; background: #fbfbfb; font-size: 0; padding: 0.15rem 0.05rem 0;}
+.footer ul li { display: inline-block; *display: inline; *zoom: 1; width: 25%;text-align: center}
+.footer ul .end { margin-right: 0;}
+.footer ul li a { display: block;}
+.footer ul li a i { margin: 0 auto 0.04rem; display: block; width: 0.4rem; height: 0.4rem; background: #333; border-radius: 0.2rem; transition: all .3s;}
+.footer ul li a i span { display: block; width: 0.4rem; height: 0.4rem;}
+.footer ul li a i .i1 { background: url(../images/footer_1.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer ul li a i .i2 { background: url(../images/footer_2.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer ul li a i .i3 { background: url(../images/footer_3.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer ul li a i .i4 { background: url(../images/footer_4.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer h5 { font-size: 0.2rem; color: #333;}
+.footer ul li a .on { background: #f8313a;}
+
+
+
+
+
+
+
+

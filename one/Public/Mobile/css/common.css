@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/*通用样式*/
+
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var{ margin: 0; padding: 0; box-sizing: border-box;}
+body { font-family:"微软雅黑"; font-size:0.28rem; background:#fff;}
+ul, li { list-style:none;}
+h1,h2,h3,h4,h5,h6 { font-weight:normal;}
+img { border:none; vertical-align:middle; font-size:0;}
+.bk { border:0.01rem solid #ccc;}
+.fl { float:left;}
+.fr { float:right;}
+a { text-decoration:none; color:#000;}
+a:hover { color:#ea5505;}
+.clearfix:after { content:""; height:0; font-size:0; visibility:hidden; display:block; clear:both;}
+.clearfix { *zoom:1;}
+.wrapper { width:6.9rem; margin:0 auto;}

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-06-18 14:01:24
+ * @version $Id$
+ */
+/*通用样式*/
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var{ margin: 0; padding: 0; box-sizing: border-box;}
+body{ width: 7.5rem; font-family: "Microsoft YaHei","微软雅黑"; background: #f4f4f4; padding-bottom: 1.28rem;}
+html{font-size: 100px;}
+.bk{border: 1px solid blue;}
+.wrapper{width:6.9rem;}
+ul, li { list-style:none;}
+.fl { float: left;}
+.bk { border:0.01rem solid red;}
+.fr { float:right;}
+.clearfix:after { content: ""; height:0; font-size:0rem; visibility:hidden; display:block; clear:both;}
+.clearfix { *zoom:1;}
+a { text-decoration:none;}
+i { font-style: normal;}
+img { border:none; vertical-align:middle; font-size:0rem;}
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+/*通用样式*/
+
+/*头部搜索框*/
+.search {width: 100%; height: 0.88rem; background: #f8313a; position: relative;}
+.search .logo { background: url(../images/logo.png) no-repeat 0.2rem 0.14rem; width: 0.74rem; height: 0.80rem; background-size:0.6rem 0.6rem;}
+.search #search {border: 0; width: 6.1rem; height: 0.6rem; background: #fff; color: #333; font-size: 0.24rem; text-align: center; position: absolute; top: 16%; left: 15%; border-radius: 0.08rem;}
+.search i { display: block; width: 0.22rem; height: 0.28rem; background-size: 0.23rem 0.29rem; background: url(../images/search.png); background-size:0.22rem 0.28rem; position: absolute; top: 33%; left: 18%;}
+/*头部搜索框*/
+
+/*BANNER*/
+.banner { width: 100%; height: 3.4rem; position: relative; overflow: hidden;}
+.banner .banner-img { font-size: 0; height: 3.4rem; position: absolute; top: 0; left: 0; width: 45rem;}
+.banner .banner-img img { width: 7.5rem; height: 3.4rem;}
+.banner ul li { display: inline-block; *display: inline; *zoom: 1;}
+.banner .banner-btn {position: absolute; bottom: 0.05rem; text-align: center; width: 100%;}
+.banner .banner-btn li { margin: 0 0.05rem; width: 0.1rem; height: 0.1rem; border-radius: 0.05rem; background: rgba(255,255,255,.8); cursor: pointer;}
+.banner .focus { background: rgba(5,5,5,.6)!important;}
+.banner span { position: absolute; width: 0.3rem; height: 0.4rem; background: rgba(5,5,5,.6); border-radius: 0.06rem; font-size: 0.2rem; top: 50%; margin-top: -0.2rem; color: #fff; z-index: 999; text-align: center; line-height: 0.4rem; cursor: pointer; display: none;}
+.banner .prev { left: 0.1rem;}
+.banner .next { right: 0.1rem;}
+/*BANNER*/
+
+/*快捷导航*/
+.easynav { background: #fff; width: 100%; height: 2rem; padding: 0.3rem 0.3rem 0;}
+.easynav ul { font-size: 0;}
+.easynav ul li { display: inline-block; *display: inline; *zoom: 1;margin-right: 1.08rem; text-align: center; width: auto;}
+.easynav ul .end { margin-right: 0;}
+.easynav ul li a { display: block;}
+.easynav ul li a i { display: block; width: 0.8rem; height: 0.8rem; border-radius: 0.4rem; line-height: 0.8rem; background: #eee; transition: all .8s ease; margin: 0 auto;}
+.easynav ul li a img { transform: rotate(0deg); transition: all .5s; width: 0.33rem; height: 0.33rem;}
+.easynav ul li a:hover img { transform:rotate(360deg);}
+.easynav ul li a:hover .bg1 { background: #f8313a;}
+.easynav ul li a:hover .bg2 { background: #b1f060;}
+.easynav ul li a:hover .bg3 { background: #6d43d9;}
+.easynav ul li a:hover .bg4 { background: #f7ea55;}
+.easynav ul li a p { font-size: 0.26rem; color: #333; line-height: 0.3rem; padding-top: 0.3rem; height: 0.6rem;}
+/*快捷导航*/
+
+/*洋货头条*/
+.hot { height: 1.3rem; width: 100%; margin-top: 0.2rem; background: #fff; padding: 0.3rem 0 0 0.3rem;}
+.hot h3 { height: 0.29rem; width: 1.2rem; background: url(../images/hot.png) no-repeat 0 0; background-size:100% 100%; margin-top: 0.2rem; margin-right: 0.3rem;}
+.hot i { display: block; height: 0.7rem; width: 0.01rem; background: #ccc;}
+.hot .text { height: 0.7rem; position: relative; width: 70%; overflow: hidden; padding-left: 30px;}
+.hot .text ul { position: absolute; top: 0;}
+.hot .text li {font-size: 0.26rem; color: #666;}
+.hot .text ul li {line-height: 0.3rem;}
+.hot .text p { height: 0.3rem; margin-top: 0; line-height: 0.3rem; cursor: pointer;}
+.hot .text .p1 {margin-bottom: 0.1rem;}
+.hot .text ul li p:hover { color: #f8313a;}
+/*洋货头条*/
+
+/*争分夺秒*/
+.rushup { width: 100%; height: 4.5rem; background: #fff; font-size: 0; margin-top: 0.2rem; padding: 0.24rem 0.3rem 0.3rem;}
+.rushup h3 { width: 1.36rem; height: 0.26rem; background: url(../images/rush_t.png) no-repeat 0 0; background-size:100% 100%;}
+.rushup .time-l {line-height: 0.26rem; color: #f8313a; font-size: 0.24rem; margin-left: 0.37rem; margin-right: 0.1rem;}
+.rushup #time { font-size: 0.28rem; color: #666; margin-bottom: 0.25rem; line-height: 0.28rem;}
+.rushup .title .more a { font-size: 0.24rem; color: #333;}
+.rushup .pro li { *display: inline; display: inline-block; *zoom: 1; margin-right: 0.28rem; background: #f4f4f4; width: 2.11rem; height: 3.33rem;}
+.rushup .pro .end { margin-right: 0;}
+.rushup .pro i, .rushup .pro span, .rushup .pro a { display: block;}
+.rushup .pro li .img {width: 2.11rem; height: 2.67rem; position: relative;}
+.rushup .pro li .img img {width: 100%; height: 100%;}
+.rushup .pro li .img span { line-height: 0.2rem; color: #333; font-size: 0.2rem; padding: 0.08rem 0 0 0.08rem; width: 100%; height: 0.34rem; background: rgba(255,255,255,.5); position: absolute; bottom: 0;z-index: 999;}
+.rushup .pro li .img span i { width: 0.37rem; height: 0.2rem; margin-right: 0.1rem;}
+.rushup .pro li .img span .l1 { background: url(../images/rush_l1.png) no-repeat 0 0; background-size:100% 100%;}
+.rushup .pro li .img span .l2 { background: url(../images/rush_l2.png) no-repeat 0 0; background-size:100% 100%;}
+.rushup .pro li .img span .l3 { background: url(../images/rush_l3.png) no-repeat 0 0; background-size:100% 100%;}
+.rushup .pro li .price { padding-top: 0.2rem; line-height: 0.32rem;}
+.rushup .pro li .price .l { font-size: 0.26rem; color: #999; margin-left: 0.1rem; text-decoration: line-through;}
+.rushup .pro li .price .r { font-size: 0.32rem; color: #f8313a; margin-right: 0.1rem;} 
+.rushdown { width: 100%; height: 4.3rem; padding-top: 0.02rem;}
+.rushdown>div { background: #fff; position: relative;}
+.rushdown .w { padding-left: 0.22rem;}
+.rushdown h4 { font-size: 0.32rem; color: #333; line-height: 0.4rem;}
+.rushdown p { font-size: 0.22rem; color: #666; line-height: 0.28rem;}
+.rushdown span { position: absolute;}
+.rushdown .t1 { margin-top: 0.02rem; margin-left: 0.02rem;}
+.rushdown .t2 { margin-top: 0.02rem;}
+.rushdown .rushdown1 { width: 2.75rem; height: 4.28rem; padding-top: 0.45rem; background: url(../images/rush_3.jpg) no-repeat 0.32rem 1.5rem; background-size:1.98rem 1.98rem;}
+.rushdown .rushdown1 span { font-size: 0.28rem; color: #f8313a; bottom: 0.3rem; left: 0.9rem;}
+.rushdown .rushdown2 { width: 4.73rem; height: 2.31rem; padding-top: 0.32rem; background: url(../images/rush_2.jpg) no-repeat 2.87rem 0.5rem; background-size:1.52rem 1.52rem;}
+.rushdown .rushdown2 span { font-size: 0.2rem; color: #fff; background: #f8313a; text-align: center; line-height: 0.68rem; top: 0.17rem; left: 2.39rem; width: 0.68rem; height: 0.68rem; border-radius: 0.34rem;}
+.rushdown .rushdown2 .p1 { color: #fff; background: #f8313a; width: 1.78rem; height: 0.39rem; text-align: center; line-height: 0.39rem; border: 0.01rem solid #f5747a; margin-top: 0.1rem; margin-bottom: 0.12rem;}
+.rushdown .rushdown3 { background: url(../images/rush_5.jpg) no-repeat 0.99rem 0.84rem; width: 2.35rem; height: 1.95rem; padding-top: 0.16rem; background-size:1.2rem 1.2rem;}
+.rushdown .rushdown3 span, .rushdown .rushdown4 span { font-size: 0.14rem; color: #fff; bottom: 0.23rem; left: 0.14rem; text-align: center; line-height: 0.47rem; border-radius: 0.24rem; background: #f8313a; width: 0.47rem; height: 0.47rem;}
+.rushdown .rushdown3 span i, .rushdown .rushdown4 span i{display:block;/*transform:scale(0.5);*/}
+.rushdown .rushdown4 { background: url(../images/rush_4.jpg) no-repeat 0.95rem 0.76rem; width: 2.36rem; height: 1.95rem; padding-top: 0.16rem; background-size:1.2rem 1.2rem;}
+/*争分夺秒*/
+
+/*市场通用*/
+.market { padding: 0 0.2rem; background: #fff; width: 100%; margin-top: 0.3rem; font-size: 0;}
+.market .title { margin-bottom: 0.23rem;}
+.market .title i { display: block; height: 0.02rem; width: 2.62rem;background: #ccc; margin-top: 0.4rem;}
+.market .title h3 { width: 1.86rem; font-size: 0.28rem; line-height: 0.28rem; color: #333; text-align: center; margin-top: 0.28rem; height: 0.28rem;}
+.sales ul { padding-bottom: 0.37rem;}
+.sales ul li { overflow: hidden; position: relative; display: inline-block; *display: inline; *zoom: 1; margin-right: 0.04rem; width: 3.52rem; height: 2.11rem; border: 0.03rem solid #f4f4f4; margin-top: 0.04rem;}
+.sales ul li img { position: absolute;}
+.sales ul li a { display: block; width: 3.52rem; height: 2.11rem; padding: 0.2rem 0 0 0.24rem;}
+.sales ul li a p { font-size: 0.22rem; line-height: 0.3rem; color: #666;}
+.sales ul .end { margin-right: 0;}
+.sales ul li h4 { font-size: 0.28rem; color: #333; line-height: 0.28rem; margin-bottom: 0.11rem;}
+/*市场通用*/
+
+/*今日特惠*/
+.tspecial .sales ul li { height: 3.52rem; position: relative;}
+.tspecial .sales ul li a { padding: 0;}
+.tspecial .sales ul li p { width: 100%; position: absolute; bottom: 0; height: 0.35rem; line-height: 0.35rem; font-size: 0.20rem; text-align: center; color: #fff; background: rgba(5,5,5,.5);}
+.tspecial .sales ul li a { display: block; width: 3.52rem; height: 3.52rem;}
+.tspecial .sales ul .ts1 { background: url(../images/tspecial_1.jpg) no-repeat 0 0; background-size: 3.52rem 3.52rem; border: 0.01rem solid  #f7ea55;}
+.tspecial .sales ul .ts2 { background: url(../images/tspecial_2.png) no-repeat 0 0; background-size: 3.52rem 3.52rem; border: 0.01rem solid  pink;}
+.tspecial .sales ul .ts3 { background: url(../images/tspecial_3.jpg) no-repeat 0 0; background-size: 3.52rem 3.52rem; border: 0.01rem solid  #666;}
+.tspecial .sales ul .ts4 { background: url(../images/tspecial_4.png) no-repeat 0 0; background-size: 3.52rem 3.52rem; border: 0.01rem solid  #999;}
+/*今日特惠*/
+
+/*热门市场*/
+.hotgoods .sales .li01 { background: url(../images/hotgoods_1.jpg) no-repeat 2.1rem 0.78rem; background-size:0.86rem 1.34rem;}
+.hotgoods .sales .li01 h4 { color: #3854ff;}
+.hotgoods .sales .li01 .p1 { color: #212121;}
+.hotgoods .sales .li02 { background: url(../images/hotgoods_2.jpg) no-repeat 2.2rem 0.78rem; background-size:1.3rem 1.36rem;}
+.hotgoods .sales .li02 h4 { color: #fa858e;}
+.hotgoods .sales .li03 { background: url(../images/hotgoods_3.jpg) no-repeat 1.95rem 0.48rem; background-size:1.2rem 1.2rem;}
+.hotgoods .sales .li03 h4 { color: #8227ff;}
+.hotgoods .sales .li04 { background: url(../images/hotgoods_4.jpg) no-repeat 2.1rem 0.58rem; background-size:1.2rem 1.2rem;}
+.hotgoods .sales .li04 h4 { color: #ffe92b;}
+/*热门市场*/
+
+/*特色市场*/
+.specialgoods .sales ul li { height: 1.6rem;}
+.specialgoods ul .li01, .specialgoods ul .li04 { background: #e4e4e4; border: #e4e4e4;}
+.specialgoods ul .li02, .specialgoods ul .li03 { background: #f4f4f4; border: #f4f4f4;}
+.specialgoods ul .li01 img { bottom: 0.24rem; right: 0.44rem; width: 0.86rem; height: 0.94rem;}
+.specialgoods ul .li02 img { bottom: 0.08rem; right: 0.24rem; width: 1.46rem; height: 1.18rem;}
+.specialgoods ul .li03 img { bottom: 0; right: 0.61rem; width: 0.63rem; height: 1.26rem;}
+.specialgoods ul .li04 img { bottom: 0.21rem; right: 0.33rem; width: 1.32rem; height: 0.96rem;}
+/*特色市场*/
+
+/*底部导航*/
+.outside { background: #f4f4f4; padding-top: 0.1rem; height: 1.08rem; position: fixed; bottom: 0; left: 0; z-index: 999;}
+.footer { width: 7.5rem; height: 0.97rem; border-top: 0.01rem solid #eee; background: #fbfbfb; font-size: 0; padding: 0.15rem 0.2rem 0;}
+.footer ul li { display: inline-block; *display: inline; *zoom: 1; width: 25%;text-align: center}
+.footer ul .end { margin-right: 0;}
+.footer ul li a { display: block;}
+.footer ul li a i { margin: 0 auto 0.04rem; display: block; width: 0.4rem; height: 0.4rem; background: #333; border-radius: 0.2rem; transition: all .3s;}
+.footer ul li a i span { display: block; width: 0.4rem; height: 0.4rem;}
+.footer ul li a i .i1 { background: url(../images/footer_1.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer ul li a i .i2 { background: url(../images/footer_2.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer ul li a i .i3 { background: url(../images/footer_3.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer ul li a i .i4 { background: url(../images/footer_4.png) no-repeat center center; background-size:0.4rem 0.4rem;}
+.footer h5 { font-size: 0.2rem; color: #333;}
+.footer ul li a .on { background: #f8313a;}
+
+/*底部导航*/
+
+/*屏幕查询*/
+@media screen and (max-width:414px){
+    .rushdown .rushdown3 span i, .rushdown .rushdown4 span i { transform: translate(-4px,0) scale(0.62);}
+}
+@media screen and (max-width:375px){
+	.rushup .pro li .img span p { transform:translate(20px,-10px) scale(0.83);}
+    .rushdown .rushdown3 span i, .rushdown .rushdown4 span i { transform:translate(-4px,0) scale(0.58);}
+    .rushdown p{ transform: translate(-10px,0) scale(0.9);}
+}
+@media screen and (max-width:320px){
+    .easynav ul li { margin-right: 1.08rem;}
+    .rushdown .rushdown3 span i, .rushdown .rushdown4 span i { transform: translate(-4px,0) scale(0.42);}
+    .footer ul li { width: 25%;text-align: center}
+    .banner span, .rushdown .rushdown2 span i, .footer h5 { transform: scale(0.7);}
+    .rushup .pro .img span p { transform: translate(8px,-9px) scale(0.8)!important;}
+    .hotgoods .sales ul li a p, .specialgoods .sales ul li a p{transform: translate(-16px,0) scale(0.78);}
+}
+/*屏幕查询*/
+
+
+
+/*SuperSlide样式*/
+/* 本例子css -------------------------------------- */
+.focus{ width:7.5rem; height:3.4rem;  margin:0 auto; position:relative; overflow:hidden;   }
+.focus .hd{ width:100%; height:0.05rem;  position:absolute; z-index:1; bottom:0; text-align:center;  }
+.focus .hd ul{ overflow:hidden; display:-moz-box; display:-webkit-box; display:box; height:0.05rem; background-color:rgba(51,51,51,0.5);   }
+.focus .hd ul li{ -moz-box-flex:1; -webkit-box-flex:1; box-flex:1; }
+.focus .hd ul .on{ background:#FF4000;  }
+.focus .bd{ position:relative; z-index:0; }
+.focus .bd li img{ width:100%;  height:3.4rem; }
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
