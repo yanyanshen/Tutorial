@@ -1,0 +1,35 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:x="urn:schemas-microsoft-com:office:excel"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 11">
+</head>
+<body>
+<table border=1 cellpadding=0 cellspacing=0 width="100%" >
+    <tr>
+        <td colspan="5" align="center">
+            <h2>分类列表</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style='width:54pt' align="center">编号</td>
+        <td style='width:54pt' align="center">分类名称</td>
+        <td style='width:54pt' align="center">分类路径</td>
+        <td style='width:54pt' align="center">添加时间</td>
+        <td style='width:54pt' align="center">状态</td>
+    </tr>
+    <volist name="info" id="val" key="k">
+        <tr>
+            <td style="text-align: center">{$k}</td>
+            <td style="text-align: center;width: 100px;">{$val['catename']}</td>
+            <td style="text-align: center;width: 200px;">{$val['path']}</td>
+            <td style="text-align: center;width: 200px;">{$val['addtime']|date='Y-m-d H:i:s',###}</td>
+            <td style="text-align: center;width: 50px;">{$val['active']==0?'下架':'展示'}</td>
+
+        </tr>
+    </volist>
+</table>
+</body>
+</html>

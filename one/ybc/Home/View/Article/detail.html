@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/common.css" rel="stylesheet" tyle="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="__STATIC__/images/logo.ico" media="screen" />
+<link href="__STATIC__/css/detail.css" rel="stylesheet" tyle="text/css" />
+<script src="__STATIC__/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__STATIC__/js/common_js.js" type="text/javascript"></script>
+<script src="__STATIC__/js/footer.js" type="text/javascript"></script>
+<title>一杯茶/茶叶百科/{$info.title}</title>
+    <script type="text/javascript">
+        $(function(){
+            var keyword="{$info['teatag']}";
+            $.get("{:U('Article/detail')}",{'keyword':keyword})
+        })
+    </script>
+</head>
+
+<body style="background-color:white);">
+<!--顶部样式-->
+<div id="top">
+  <div class="top">
+    <div class="Collection"><em></em><a href="#">收藏我们</a></div>
+	<div class="hd_top_manu clearfix">
+	  <ul class="clearfix">
+	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！<a href="#" class="red">[请登录]</a> 新用户<a href="#" class="red">[免费注册]</a></li>
+	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">我的订单</a></li> 
+	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"> <a href="#">购物车(<b>0</b>)</a> </li>
+	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">联系我们</a></li>
+	   <li class="hd_menu_tit list_name" data-addclass="hd_menu_hover"><a href="#" class="hd_menu">客户服务</a>
+	    <div class="hd_menu_list">
+		   <ul>
+		    <li><a href="#">常见问题</a></li>
+			<li><a href="#">在线退换货</a></li>
+		    <li><a href="#">在线投诉</a></li>
+			<li><a href="#">配送范围</a></li>
+		   </ul>
+		</div>	   
+	   </li>
+	  </ul>
+	</div>
+  </div>
+</div>
+<!--logo和搜索样式-->
+<div id="header"  class="header">
+  <div class="logo">
+  <a href="{:U('Index/index')}"><img src="__STATIC__/images/logo.png" /></a>
+  <div class="phone">
+   <em class="icon_img"></em><span style="font-size:30px;font-weight:bold;"><a href="{:U('Article/index')}">茶叶百科</a></span>
+  </div>
+  </div>
+  <div class="Search">
+      <form action="{:U('index')}" method="get">
+    <p><select name="search" id="" style="font-size:14px;color:#000000;width: 80px;height: 40px;background-color: rgb(247,247,247);border: 4px solid rgb(184, 184, 173);margin-left: 10px">
+
+        <switch name="search">
+            <case value="title">
+                <option value="title" selected>按标题</option>
+                <option value="author">按作者</option>
+                <option value="teatag">按标签</option>
+                <option value="content">按内容</option>
+            </case>
+            <case value="author">
+                <option value="title">按标题</option>
+                <option value="author" selected>按作者</option>
+                <option value="teatag">按标签</option>
+                <option value="content">按内容</option>
+            </case>
+            <case value="teatag">
+                <option value="title">按标题</option>
+                <option value="author">按作者</option>
+                <option value="teatag" selected>按标签</option>
+                <option value="content">按内容</option>
+            </case>
+            <case value="content">
+                <option value="title">按标题</option>
+                <option value="author">按作者</option>
+                <option value="teatag">按标签</option>
+                <option value="content" selected>按内容</option>
+            </case>
+            <default/>
+            <option value="title">按标题</option>
+            <option value="author">按作者</option>
+            <option value="teatag">按标签</option>
+            <option value="content">按内容</option>
+        </switch>
+
+
+
+    </select>
+        <input name="keyword" type="text" placeholder="请输入搜索关键字" value="{$keyword}"  class="text" /><input name="" type="submit" value=""  class="Search_btn"/></p>
+      </form>
+</div>
+</div>
+
+
+
+<!--菜单栏样式-->
+<include file="Public/right"/>
+
+<!--左边广告栏-->
+<div class="left">
+    <div class="picMarquee-top">
+        <div class="hd">
+            <span>向您推荐</span>
+            <a class="next"></a>
+            <a class="prev"></a>
+        </div>
+        <div class="bd">
+            <ul class="picList">
+
+                <!--------左侧广告栏循环------->
+                <volist name="leftInfo" id="val">
+                <li>
+                    <div class="pic"><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank"><img src="__ROOT__/Uploads/goodsPic/{$val.adpic}" /></a></div>
+                    <div class="title"><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank">{$val.goodsname|truncate_cn=30,'',0}...</a></div>
+                </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(".picMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:4,interTime:50});
+    </script>
+</div>
+<!--左边广告结束-->
+
+<!-- 中间内容部分 开始-->
+<div class="detail">
+    <div class="title" style="color:#333;line-height: 45px;font-size: 20px;padding-top: 20px;">{$info.title}</div>
+    <div class="author">发布时间：{$info.dateline|date='Y-m-d H:i:s',###}&nbsp;作者：{$info.author}&nbsp;标签：{$info.teatag}</div>
+    <div class="shara"><span>分享到：</span><img class="sina" src="__STATIC__/images/sina.png" alt="" title="分享到新浪微博" style="cursor: pointer"/>
+        <a href="javascript:void(0)" onclick="postToWb();return false;" class="tmblog"><img src="__STATIC__/images/tenxun.png" title="分享到腾讯微博" class="tenxun"></a></div>
+    <img src="__ROOT__/Uploads/teapic/{$info.dateline|date='Y-m-d',###}/{$info.teapic}" alt="图片" class="pic"/>
+    <div class="content" style="font-size: 15px; text-align: left; line-height: 40px;color:rgb(85,85,85);white-space: normal;background-color: white;">{:html_entity_decode($info['content'])}</div>
+
+
+    <script type="text/javascript">
+
+        /***************************分享到新浪微博API接口**************************/
+        $('.sina').click(function(){
+            window.sharetitle = $(this).parent().siblings('.title').html();
+            window.shareUrl = $(this).parent().siblings('img').attr('src');
+            share();
+        });
+        function share(){
+            //d指的是window
+            (function(s,d,e){try{}catch(e){}var f='http://v.t.sina.com.cn/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(window.sharetitle),'&appkey=2924220432','&pic=',e(window.shareUrl)].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent);
+        }
+
+
+        /****************************分享到腾讯微博API接口***********************/
+        function postToWb(){
+            var _url = encodeURIComponent(document.location);
+            var _assname = encodeURI("");//你注册的帐号，不是昵称
+            var _appkey = encodeURI("801363995");//你从腾讯获得的appkey
+            var _pic = $(this).parent().siblings('img').attr('src');//（例如：var _pic='图片url1|图片url2|图片url3....）
+            var _t = "{$info['title']}";//标题和描述信息
+            var metainfo = document.getElementsByTagName("meta");
+            for(var metai = 0;metai < metainfo.length;metai++){
+                if((new RegExp('description','gi')).test(metainfo[metai].getAttribute("name"))){
+                    _t = metainfo[metai].attributes["content"].value;
+                }
+            }
+            _t =  document.title+_t;//请在这里添加你自定义的分享内容
+            if(_t.length > 120){
+                _t= _t.substr(0,117)+'...';
+            }
+            _t = encodeURI(_t);
+
+            var _u = 'http://share.v.t.qq.com/index.php?c=share&a=index&url='+_url+'&appkey='+_appkey+'&pic='+_pic+'&assname='+_assname+'&title='+_t;
+            window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+        }
+    </script>
+
+
+
+</div>
+<!-- 中间内容部分 结束-->
+
+
+<!--底部广告部分开始-->
+<div class="advertisement">
+    <div class="tuijian">根据文章向您推荐</div>
+    <div class="slideGroup" style="margin:0 auto">
+        <div class="parHd">
+            <ul><li>茶叶</li><li>茶具</li></ul>
+        </div>
+        <div class="parBd">
+            <div class="slideBox">
+                <ul>
+                    <!-------文章茶叶广告循环----->
+                    <volist name="articleTea" id="val">
+                    <li>
+                        <div class="pic"><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank"><img src="__ROOT__/Uploads/goodsPic/{$val.adpic}" /></a></div>
+                        <div class="title"><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank">{$val.goodsname|truncate_cn=30,'',0}...</a></div>
+                    </li>
+
+                    </volist>
+
+                </ul>
+            </div><!-- slideBox End -->
+            <div class="slideBox">
+                <ul>
+                    <!-------文章茶具广告循环--------->
+                    <volist name="articleTeaSet" id="val">
+                    <li>
+                        <div class="pic"><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank"><img src="__ROOT__/Uploads/goodsPic/{$val.adpic}" /></a></div>
+                        <div class="title"><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank">{$val.goodsname|truncate_cn=30,'',0}...</a></div>
+                    </li>
+                    </volist>
+                </ul>
+            </div><!-- slideBox End -->
+        </div><!-- parBd End -->
+    </div>
+    <script type="text/javascript">
+        /*
+         SuperSlide组合注意：
+         1、内外层mainCell、targetCell、prevCell、nextCell等对象不能相同，除非特殊应用；
+         2、注意书写顺序，通常先写内层js调用，再写外层js调用
+         */
+        /* 内层图片无缝滚动 */
+        jQuery(".slideGroup .slideBox").slide({ mainCell:"ul",vis:4,prevCell:".sPrev",nextCell:".sNext",effect:"leftMarquee",interTime:50,autoPlay:true,trigger:"click"});
+        /* 外层tab切换 */
+        jQuery(".slideGroup").slide({titCell:".parHd li",mainCell:".parBd"});
+
+    </script>
+
+</div>
+
+<!--底部广告开始-->
+
+
+<!--底部样式-->
+<include file="Public/footer"/>
+ <!--右侧菜单栏购物车样式-->
+
+</body>
+</html>
+
+

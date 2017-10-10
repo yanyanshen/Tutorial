@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>茶叶商城/每日签到</title>
+
+
+
+    <link href="__STATIC__/css/fixedBox.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/show.css" rel="stylesheet" type="text/css" />
+
+    <link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="__STATIC__/images/logo.ico" media="screen" />
+
+
+
+
+
+    <link rel="stylesheet" href="__STATIC__/css/qiandao_style.css">
+        <script src="__STATIC__/js/jquery.min.1.8.2.js"></script>
+    <script src="__STATIC__/js/footer.js" type="text/javascript"></script>
+        <script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+
+
+        <!--<script src="__STATIC__/js/qiandao_js.js"></script>-->
+</head>
+
+<body>
+<!--顶部样式-->
+<!--logo和搜索样式-->
+<include file="Public/header"/>
+<!--导航栏样式-->
+<!--购物车-->
+<div class="qiandao-warp">
+	<div class="qiandap-box">
+		<div class="qiandao-banner">
+			<img src="__STATIC__/images/qiandao_banner.jpg" height="551" width="1120" alt="">
+		</div>
+		<div class="qiandao-con clear">
+			<div class="qiandao-left">
+				<div class="qiandao-left-top clear">
+					<div class="current-date">2016年1月6日</div>
+					<div class="qiandao-history qiandao-tran qiandao-radius" id="js-qiandao-history">我的签到</div>
+				</div>
+				<div class="qiandao-main" id="js-qiandao-main">
+					<ul class="qiandao-list" id="js-qiandao-list">
+					</ul>
+				</div>
+			</div>
+			<div class="qiandao-right">
+				<div class="qiandao-top">
+					<div class="just-qiandao qiandao-sprits" id="js-just-qiandao">
+					</div>
+					<p class="qiandao-notic">今日已领<span>{$info.reward|default='0'}</span>积分，请明日继续签到</p>
+				</div>
+				<div class="qiandao-bottom">
+					<div class="qiandao-rule-list">
+						<h4>签到规则</h4>
+						<p>首次签到获得10积分奖励</p>
+						<p>连续签到每天增加10积分奖励</p>
+						<p>连续签到7天及以上每天获得30积分奖励</p>
+					</div>
+					<div class="qiandao-rule-list">
+						<h4>其他说明</h4>
+						<p>如果中间有一天间断未签到的，重先开始计算连续签到时间。</p>
+						<p>连续签到获得奖励后分享到QQ空间、微信朋友圈后再获得一次奖励，每天只限分享一次。</p>
+						<p>积分可以在积分商城里面兑换礼品。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 我的签到 layer start -->
+<div class="qiandao-layer qiandao-history-layer">
+	<div class="qiandao-layer-con qiandao-radius">
+		<a href="javascript:;" class="close-qiandao-layer qiandao-sprits"></a>
+		<ul class="qiandao-history-inf clear">
+			<li>
+				<p>连续签到</p>
+				<h4>{$info.mouth}</h4>
+			</li>
+			<li>
+				<p>本月签到</p>
+				<h4>{$info.count}</h4>
+			</li>
+			<li>
+				<p>总共签到数</p>
+				<h4>{$info.total}</h4>
+			</li>
+			<li>
+				<p>签到累计奖励</p>
+				<h4>{$info.sum}</h4>
+			</li>
+		</ul>
+		<div class="qiandao-history-table">
+			<table>
+				<thead>
+					<tr>
+						<th>签到日期</th>
+						<th>奖励</th>
+					</tr>
+				</thead>
+				<table>
+					<volist name="reward" id="val">
+					<tr>
+						<td>{$val.signtime|date='Y-m-d H:i:s',###}</td>
+						<td>{$val.reward}积分</td>
+					</tr>
+                    </volist>
+				</table>
+			</table>
+		</div>
+	</div>
+	<div class="qiandao-layer-bg"></div>
+</div>
+<!-- 我的签到 layer end -->
+<!-- 签到 layer start -->
+<div class="qiandao-layer qiandao-active">
+	<div class="qiandao-layer-con qiandao-radius">
+		<a href="javascript:;" class="close-qiandao-layer qiandao-sprits"></a>
+		<div class="yiqiandao clear">
+			<div class="yiqiandao-icon qiandao-sprits"></div>
+		</div>
+		<div class="qiandao-jiangli qiandao-sprits">
+			<span class="qiandao-jiangli-num">签到完成！</span>
+		</div>
+	</div>
+	<div class="qiandao-layer-bg"></div>
+</div>
+<!-- 签到 layer end -->
+
+<!--底部样式-->
+<include file="Public/footer"/>
+<!--右侧菜单栏购物车样式-->
+<include file="Public/right" />
+</body>
+</html>
+
+
+<script type="text/javascript">
+    $(function() {
+        var signFun = function() {
+
+            var dateArray = [{$info['days']}]; // 假设已经签到的
+
+
+            var $dateBox = $("#js-qiandao-list"),
+                    $currentDate = $(".current-date"),
+                    $qiandaoBnt = $("#js-just-qiandao"),
+                    _html = '',
+                    _handle = true,
+                    myDate = new Date();
+            $currentDate.text(myDate.getFullYear() + '年' + parseInt(myDate.getMonth() + 1) + '月' + myDate.getDate() + '日');
+
+            var monthFirst = new Date(myDate.getFullYear(), parseInt(myDate.getMonth()), 1).getDay();
+
+            var d = new Date(myDate.getFullYear(), parseInt(myDate.getMonth() + 1), 0);
+            var totalDay = d.getDate(); //获取当前月的天数
+
+            for (var i = 0; i < 42; i++) {
+                _html += ' <li><div class="qiandao-icon"></div></li>'
+            }
+            $dateBox.html(_html) //生成日历网格
+
+            var $dateLi = $dateBox.find("li");
+            for (var i = 0; i < totalDay; i++) {
+                $dateLi.eq(i + monthFirst).addClass("date" + parseInt(i+1));
+                for (var j = 0; j < dateArray.length; j++) {
+                    if (i == dateArray[j]) {
+                        $dateLi.eq(i + monthFirst-1).addClass("qiandao");
+                    }
+                }
+            } //生成当月的日历且含已签到
+
+            $(".date" + myDate.getDate()).addClass('able-qiandao');
+
+            $dateBox.on("click", "li", function() {
+                //查询是否登录
+                $.get("{:U('Sign/chkLogin')}",'',function(res){
+                    if(res.status==1){
+                        //代表已经登录
+                        //判断今天是否已经签到
+                        $.get("{:U('Sign/chkSign')}",'',function(res1){
+                            if(res1.status==1){
+                                //没有签到
+                                    $.get("{:U('Sign/sign')}",'',function(res2){
+                                        if(res2.status==1){
+                                            $(this).addClass('qiandao');
+                                            qiandaoFun();
+
+
+                                        }else{
+                                            layer.msg(res2.info,{icon:5,time:2000},function(){
+                                                location=location.href;
+                                            })
+                                        }
+                                    });
+                            }else{
+                                //已经签到了
+                            }
+                        })
+                    }else{
+                        //代表没有登录,然后跳转到登录页面
+                        layer.msg(res.info,{icon:6,time:1500},function(){
+                            location="{:U('Home/Login/login')}";
+                        })
+                    }
+                });
+
+            }); //签到表
+
+
+            $.get("{:U('chkSign')}",'',function(res){
+               if(res.status==1){
+
+               } else{
+                   $qiandaoBnt.addClass('actived');
+                   _handle = false;
+               }
+            });
+
+            $qiandaoBnt.on("click", function() {
+
+                $.get("{:U('Sign/chkLogin')}",'',function(res){
+                    if(res.status==1){
+                        //代表已经登录
+                        //判断今天是否已经签到
+                        $.get("{:U('Sign/chkSign')}",'',function(res1){
+                            if(res1.status==1){
+                                //没有签到
+                                $.get("{:U('Sign/sign')}",'',function(res2){
+                                    if(res2.status==1){
+                                        qiandaoFun();
+                                    }else{
+                                        layer.msg(res2.info,{icon:5,time:2000},function(){
+                                            location=location.href;
+                                        })
+                                    }
+                                });
+                            }else{
+                                //已经签到了
+                            }
+                        })
+                    }else{
+                        //代表没有登录,然后跳转到登录页面
+                        layer.msg(res.info,{icon:6,time:1500},function(){
+                            location="{:U('Home/Login/login')}";
+                        })
+                    }
+                });
+
+
+               /* if (_handle) {
+                    qiandaoFun();
+                }*/
+            }); //签到按钮
+
+            function qiandaoFun() {
+                $qiandaoBnt.addClass('actived');
+                openLayer("qiandao-active", qianDao);
+                _handle = false;
+            }
+
+            function qianDao() {
+                $(".date" + myDate.getDate()).addClass('qiandao');
+            }
+        }();
+
+        function openLayer(a, Fun) {
+            $('.' + a).fadeIn(Fun)
+        } //打开弹窗
+
+        var closeLayer = function() {
+            $("body").on("click", ".close-qiandao-layer", function() {
+                $(this).parents(".qiandao-layer").fadeOut()
+            })
+        }(); //关闭弹窗
+
+        $("#js-qiandao-history").on("click", function() {
+            openLayer("qiandao-history-layer", myFun);
+
+            function myFun() {
+                console.log(1)
+            } //打开弹窗返回函数
+        })
+
+    })
+
+</script>
+<script type="text/javascript">
+    $(function(){
+        $.get("{:U('Sign/mouth')}",'',function(){
+
+        })
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script src="__STATIC__/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__STATIC__/js/common_js.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.foucs.js" type="text/javascript"></script>
+<title>用户中心</title>
+</head>
+<style>
+    li{
+        list-style: none;
+    }
+</style>
+<body style="background-color: floralwhite">
+<!--顶部样式-->
+    <div class=" right_style r_user_style">
+      <div class="user_Borders">
+       <div class="about_user_info">
+       <div class="user_layout">
+<volist name="user" id="val">
+         <ul >
+             <if condition="$val.avatar eq 0">
+                 <li style="margin-top: 20px"><label class="user_title_name">用户头像&nbsp;&nbsp;：</label><div style="border: 1px solid #cccccc;width: 100px;height: 100px;"><img src="__STATIC__/images/deavatar.jpg" alt="" style="width: 100px;height: 100px;border-radius: 999px"/></div></li>
+          <else/>
+                 <li style="margin-top: 20px"><label class="user_title_name">用户头像&nbsp;&nbsp;：</label><div style="border: 1px solid #cccccc;width: 100px;height: 100px;"><img src="__ROOT__/Uploads/avatar/100/100_{$val.avatar}" alt="" style="width: 100px;height: 100px;border-radius: 999px"/></div></li>
+             </if>
+          <li style="margin-top: 20px"><label class="user_title_name">用&nbsp;户&nbsp;名&nbsp;&nbsp;：</label>{$val.username}</li>
+          <li style="margin-top: 20px"><label class="user_title_name">手&nbsp;机&nbsp;号&nbsp;&nbsp;：</label>{$val.mobile}</li>
+          <li style="margin-top: 20px"><label class="user_title_name">邮箱&nbsp;地址&nbsp;&nbsp;：</label>{$val.mail}</li>
+          <li style="margin-top: 20px"><label class="user_title_name">Q&nbsp;&nbsp;&nbsp;&nbsp;Q&nbsp;&nbsp;：</label>{$val.qq}</li>
+          <li style="margin-top: 20px"><label class="user_title_name">当前&nbsp;积分&nbsp;&nbsp;：</label>{$val.points}</li>
+          <li style="margin-top: 20px"><label class="user_title_name">历史总积分&nbsp;&nbsp;：</label>{$val.totalpoints}</li>
+             <if condition="$val.active eq 1">
+          <li style="margin-top: 20px"><label class="user_title_name">账户&nbsp;状态&nbsp;&nbsp;：</label>已启用</li>
+                 <else/>
+          <li style="margin-top: 20px"><label class="user_title_name">账户&nbsp;状态&nbsp;&nbsp;：</label>已停用</li>
+             </if>
+         </ul>
+</volist>
+         </div>
+
+       </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

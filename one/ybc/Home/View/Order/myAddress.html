@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/Threelinkage/linkage.css" rel="stylesheet"  type="text/css"/>
+<script src="__STATIC__/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__STATIC__/js/common_js.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.foucs.js" type="text/javascript"></script>
+<script src="__STATIC__/js/geo.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.validate.js" type="text/javascript"></script>
+<script src="__STATIC__/js/layer/layer.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/x-icon" href="__STATIC__/images/logo.ico" media="screen" />
+
+
+
+    <title>用户地址管理</title>
+</head>
+<style type="text/css">
+    #s1,#s2,#s3{ width: 50px; height: 34px; display: inline-block; border-radius: 0px;}
+
+    input.error { border: 1px solid #EA5200;background: #ffdbb3;}
+    div.error {
+        background:url("__ROOT__/Public/Home/images/error.png") no-repeat 5px 2px;
+        margin-left:75px;
+        margin-top: 5px;
+        padding-left: 22px;
+        padding-bottom: 2px;
+        font-weight: bold;
+        color: #EA5200;
+        vertical-align: middle
+    }
+
+
+</style>
+<script type="text/javascript">
+    $(function(){
+        var validate=$("#form1").validate({
+            rules:{
+                name:{ required:true},
+                town:{ chkpct:true},
+                address:{ required:true, minlength:5},
+                postcode:{ required:true, postCode:true},
+                phone:{ required:true, mobile:true}
+            },
+            messages:{
+                name:{ required:"收件人不能为空"},
+                town:{ chkpct:"请选择地址到县级"},
+                address:{ required:"不能为空", minlength:"最少5个字"},
+                postcode:{ required:"不能为空", postCode:"请正确填写您的邮政编码"},
+                phone:{ required:"不能为空", mobile:"请正确填写您的手机号码"}
+            },
+            errorElement:'div',
+            errorPlacement: function(error, element) {
+                error.appendTo( element.parent());
+            }
+        })
+        jQuery.validator.addMethod("chkpct", function(value, element) {
+            if(value=="市、县级市、县"){
+                res=false;
+            }else{
+                res=true;
+            }
+            return this.optional(element) || res;
+        }, "请选择地址");
+        jQuery.validator.addMethod("postCode", function(value, element) {
+            var codeReg= /^[0-9]{6}$/;
+            return this.optional(element) || (codeReg.test(value));
+        }, "请正确填写您的邮政编码");
+        jQuery.validator.addMethod("mobile", function(value, element) {
+            var mobileReg = /^1[34578]{1}[0-9]{9}$/;
+            return this.optional(element) || (mobileReg.test(value));
+        }, "请正确填写您的手机号码");
+
+        $("#submit_btn1").click(function(){
+            if(validate.form()){
+                $.post("{:U('Order/chaA')}",$("#form1").serialize(),function(res){
+                    layer.msg("修改成功",function(){
+                        location="{:U('Order/myAddress')}";
+                    });
+                },"json")
+            }
+        })
+
+        $("#submit_btn2").click(function(){
+            if(validate.form()){
+                $.post("{:U('Order/addA')}",$("#form1").serialize(),function(res){
+                    layer.msg(res.info,{time:1000,icon:6},function(){
+                        location="{:U('Order/myAddress')}";
+                    });
+
+                },"json")
+            }
+        })
+
+        del=function(id){
+            $.post("{:U('Order/delA')}",{id:id},function(res){
+                layer.msg(res.info,{time:1000,icon:6},function(){
+                    location="{:U('Order/myAddress')}";
+                });
+            },'json')
+        }
+        def=function(id){
+            $.post("{:U('Order/defA')}",{id:id},function(res){
+                layer.msg(res.info,{time:1000,icon:6},function(){
+                    location="{:U('Order/myAddress')}";
+                });
+            },'json')
+        }
+    })
+</script>
+<body onload="setup();preselect('{$address.province}');">
+<!--顶部样式-->
+
+<!--logo和搜索样式-->
+<include file="Public/header"/>
+<!--导航栏样式-->
+
+<!--用户中心(地址管理界面)-->
+<div class="user_style clearfix" id="user">
+<div class="user_title"><em></em>用户中心</div>
+ <div class="clearfix user" >
+   <!--左侧菜单栏样式-->
+     <div class="user_left">
+         <if condition="!isset($_SESSION['avatar1'])">
+             <div class="user_info">
+                 <div class="Head_portrait"><a href="{:U('UserCenter/usercenter')}"><img src="__STATIC__/images/deavatar.jpg"   style="width:100px; height:100px;border-radius: 50px"/></a><!--头像区域--></div>
+                 <div class="user_name">用户{$Think.session.ybc_username}<!--<a href="#">[个人资料]</a>--></div>
+             </div>
+             <else/>
+             <div class="user_info">
+                 <div class="Head_portrait"><a href="{:U('UserCenter/usercenter')}"><img src="__ROOT__/Uploads/avatar/100/100_{$Think.session.avatar1}"  width="100px" height="100px"/></a><!--头像区域--></div>
+                 <div class="user_name">用户{$Think.session.ybc_username}<!--<a href="#">[个人资料]</a>--></div>
+             </div>
+         </if>
+      <ul class="Section">
+          <li><a href="{:U('UserCenter/userinfo')}"><em></em><span>个人信息</span></a></li>
+          <li><a href="{:U('UserCenter/changepassword')}"><em></em><span>修改密码</span></a></li>
+          <li><a href="{:U('Order/myOrderList')}"><em></em><span>我的订单</span></a></li>
+          <li><a href="{:U('UserCenter/myComment')}"><em></em><span>我的评价</span></a></li>
+          <li><a href="{:U('UserCenter/userintegral')}"><em></em><span>我的积分</span></a></li>
+          <li><a href="{:U('UserCenter/usermsg')}"><em></em><span>我的消息</span></a></li>
+          <li><a href="{:U('UserCenter/myCollect')}"><em></em><span>我的收藏</span></a></li>
+          <li><a href="{:U('Order/myAddress')}"><em></em><span>收货地址管理</span></a></li>
+          <li><a href="{:U('Order/history')}"><em></em><span>已购买的商品</span></a></li>
+      </ul>
+    </div>
+
+    <!--右侧内容样式-->
+    <div class="right_style r_user_style">
+      <div class="user_Borders">
+       <div class="title_name">
+        <span class="name">地址管理</span>
+       </div>
+       <div class="about_user_info">
+         <form id="form1" name="form1" method="post" action="">
+       <div class="user_layout">
+         <ul>
+             <input type="hidden" name="id" value="{$ai}"/>
+          <li class="li"><label class="user_title_name">收件人姓名：</label><input name="name" type="text" value="{$address.name}" class="add_text"><i>*</i></li>
+          <li class="li"><label class="user_title_name">选择地址：</label>
+              <div class="add_text" style="float: left; border: 0px; padding: 0px;" >
+                  <select class="select" name="province" id="s1" style="margin: 0px;width: 80px; border-color: #ccc; border-radius: 0px;">
+                      <option></option>
+                  </select>
+                  <select class="select" name="city" id="s2" style="margin: 0px; margin-left: 9px; width: 80px; border-color: #ccc; border-radius: 0px;">
+                      <option></option>
+                  </select>
+                  <select class="select" name="town" id="s3" style="margin: 0px; margin-left: 9px; width: 80px; border-color: #ccc; border-radius: 0px;">
+                      <option></option>
+                  </select>
+              </div>
+              <i>*</i>
+        </li >
+          <li class="li"><label class="user_title_name">详细地址：</label><input name="address" value="{$address.address}" type="text" class="add_text"><i>*</i></li>
+          <li class="li"><label class="user_title_name">邮&nbsp;&nbsp;&nbsp;编：</label><input name="postcode" value="{$address.postcode}" type="text" class="add_text"><i>*</i></li>
+          <li class="li"><label class="user_title_name">手&nbsp;机&nbsp;号：</label><input name="phone" value="{$address.phone}" type="text" class="add_text"><i>*</i></li>
+         </ul>
+           <if condition="$ac eq c">
+               <div class="operating_btn"><input id="submit_btn1" type="button" style="width: 300px;" value="确认修改" class="submit—btn"></div>
+                <else />
+               <div class="operating_btn"><input id="submit_btn2" type="button" style="width: 300px;" value="确认添加" class="submit—btn"></div>
+           </if>
+         </div>
+          </form>       
+       </div>
+       <!--地址列表-->
+       <div class="Address_List">
+        <div class="title_name"><span class="name">用户地址列表</span></div>
+        <div class="list">
+         <table>
+         <thead>
+          <td class="list_name_title0">收件人姓名</td>
+          <td class="list_name_title1">收货地址</td>
+          <td class="list_name_title2">电话</td>
+          <td class="list_name_title3">邮政编码</td>
+          <td class="list_name_title5">操作</td>
+         </thead>
+             <empty name="addrList">
+                 <tr><td colspan="5"><h2 style="color:red;">你还没有任何地址信息</h2></td></tr>
+             </empty>
+        <volist name="addrList" id="va">
+          <tr>
+              <eq name="va.def" value="1">
+                  <td style="background-image: url('__STATIC__/images/def.png');background-repeat: no-repeat;">{$va.name}</td>
+                <else />
+                  <td>{$va.name}</td>
+              </eq>
+              <td>{$va.address}</td>
+              <td>{$va.phone}</td>
+              <td>{$va.postcode}</td>
+              <td>
+                  <a href="{:U('myAddress')}?ac=c&ai={$va.id}">修改</a>
+                  <a onclick="del({$va.id})" style="cursor: pointer">删除</a>
+                  <neq name="va.def" value="1"><a onclick="def({$va.id})" style="cursor: pointer">设为默认</a>
+                  </neq>
+              </td>
+          </tr>
+        </volist>
+         </table>
+        </div>
+       </div>
+      </div>
+   </div>
+ </div>
+</div>
+<include file="Public/footer"/>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<volist name="info" id="v">
+    <div class="nav">
+        <div class="one">
+            <img onclick="location.href='{:U('Detail/detail')}?id={$v.gid}';" src="__ROOT__/Uploads/goodsPic/100/100_{$v.pic}" alt=""/>
+            <div class="right">
+                <div onclick="location.href='{:U('Detail/detail')}?id={$v.gid}';" class="up">{:mb_substr($v['goodsname'],0,25,'utf-8')}</div>
+                <div class="down1">￥{$v.price}×2</div>
+            </div>
+        </div>
+        <div class="two">
+            <span>{:date("Y-m-d",$v['buytime'])}</span>
+            <gt name="v['buytime']" value="$time">
+                <a href="{:U('Services/servDetail')}?id={$v.id}">申请售后</a>
+            </gt>
+            <eq name="v['status']" value="1">
+                <a href='javascript:can({$v.id});'>取消</a>
+            </eq>
+        </div>
+    </div>
+</volist>
+<empty name="info">
+    <div style="height: 3rem;line-height: 3rem;text-align: center; font-size: 1.5rem;">已加载完所有记录</div>
+    <else />
+    <div id="getMore" style="text-align: center;height: 3rem;line-height: 3rem;">点击加载更多</div>
+<script type="text/javascript">
+    $(function(){
+        $("#getMore").click(function() {
+                    $.post("{:U('Services/getMoreHis')}", {start: "{$start}"}, function (res) {
+                        $("#getMore").replaceWith(res);
+                    })
+                }
+        )
+    })
+</script>
+</empty>

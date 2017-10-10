@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script src="__STATIC__/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="__STATIC__/js/slide.js"></script>
+<script src="__STATIC__/js/common_js.js" type="text/javascript"></script>
+    <script src="__STATIC__/js/jquery.validate.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.foucs.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.downCount.js" type="text/javascript"></script>
+    <script src="__STATIC__/js/footer.js" type="text/javascript"></script>
+<script src="__STATIC__/js/layer/layer.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/x-icon" href="__STATIC__/images/logo.ico" media="screen" />
+<!--[if IE 7]>
+<link rel="stylesheet" href="assets/__STATIC__/css/font-awesome-ie7.min.css">
+
+<![endif]-->
+<title>商品团购</title>
+</head>
+<script type="text/javascript">
+    $(function(){
+        $('img').lazyload({
+            effect:"fadeIn"
+        })
+    })
+</script>
+<script type="text/javascript">
+    $(function(){
+        apply=function(id){
+            $.get("{:U('check')}",'',function(res){
+                if(res.status==1){
+                    $.get("{:U('apply')}",{id:id},function(res1){
+                        if(res1.status==1){
+                            layer.confirm('报名成功,你需要设置提醒吗？',{
+                                btn:['需要','不需要'],
+                                title:'温馨提示'
+                            },function(){
+                                $.get("{:U('chkMail')}",{"gid":res1.info},function(res2){
+                                  if(res2.status==1){
+                                      layer.msg(res2.info,{icon:6,time:3000})
+                                  }else{
+                                      layer.msg(res2.info,{icon:6,time:2000},function(){
+                                          location="{:U('UserCenter/userinfo')}";
+                                      });
+
+                                  }
+                                })
+                            })
+                        }else{
+                            layer.msg(res1.info,{icon:6,time:2000});
+                        }
+                    })
+                }else{
+                    layer.msg(res.info,{icon:6,time:1000},function(){
+                        location.href="{:U('Home/Login/login')}";
+                    })
+                }
+            })
+        }
+        toCollect=function(gid){
+            $.post("{:U('Detail/toCollect')}",{gid:gid},function(res){
+                if(res.status==1){
+                    layer.msg(res.info,{time:1000,icon:1});
+                    str="clt"+gid;
+                    str1='';
+                    str1+='<img onclick="toCollect('+gid+')" src="__STATIC__/images/heart2.png" class="heart2" style="cursor: pointer;"/>';
+                    $('#'+str).html(str1);
+                }else{
+                    layer.msg(res.info,{time:1000,icon:6})
+                }
+            })
+        }
+        outCollect=function(gid){
+            $.post("{:U('Detail/outCollect')}",{gid:gid},function(res){
+                if(res.status==1){
+                    layer.msg(res.info,{time:1000,icon:1});
+                    str="clt"+gid;
+                    str1='';
+                    str1+='<img onclick="toCollect('+gid+')" src="__STATIC__/images/heart1.png" class="heart1" style="cursor: pointer;"/>';
+                    $('#'+str).html(str1);
+                }else{
+                    layer.msg(res.info,{time:1000,icon:6})
+                }
+            })
+        }
+        noLogin=function(){
+            layer.msg('登陆后您才能收藏哦',{time:1000,icon:6});
+        }
+    })
+</script>
+<body>
+<!--顶部样式-->
+<!--logo和搜索样式-->
+<include file="Public/header"/>
+<!--导航栏样式-->
+<include file="Public/right"/>
+    <!--购物车-->
+<!-----------------------广告循环-------------------->
+<div style="height:472px; width:100%; background-position:center">
+
+    <style type="text/css">
+        /* css 重置 */
+        *{margin:0; padding:0; list-style:none; }
+        body{ background:#fff; font:normal 12px/22px 宋体;  }
+        img{ border:0;  }
+        a{ text-decoration:none; color:#333;  }
+        /* 本例子css */
+        .slideBox{ width:100%; height:472px; overflow:hidden; position:relative;}
+        .slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+        .slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+        .slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+        .slideBox .hd ul li.on{ background:#f00; color:#fff; }
+        .slideBox .bd{ position:relative; height:100%; z-index:0;   }
+        .slideBox .bd li{ zoom:1; vertical-align:middle; }  .slideBox .bd img{ width:100%; height:472px; display:block;  }
+    </style>
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <ul><li>1</li><li>2</li><li>3</li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <volist name="groupAd" id="val">
+                <li><a href="{:U('Detail/detail')}?id={$val.gid}" target="_blank"><img src="__ROOT__/Uploads/goodsPic/{$val.adpic}" /></a></li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,interTime:2000});
+    </script>
+</div>
+<!--位置-->
+<div class="Bread_crumbs">
+ <div class="Inside_pages clearfix">
+   <div class="left">当前位置：<a href="#">今日团购</a></div>
+ </div>
+</div>
+
+<!--团购样式-->
+<div class="Inside_pages clearfix">
+ <div class="Group_buy">
+    <div class="Group_title"><em></em>今日团购<span>GROUP-BUYING</span></div>
+    <div class="Group_list clearfix">
+     <div class="left_Group">
+
+
+         <volist name="leftInfo" id="val" key="k">
+      <div class="Group_prodcut">
+      <div class="clearfix">
+       <div class="Group_info">
+         <ul>
+          <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+              <li class="Group_p_name" style="color: #693;font-size: 18px;cursor: pointer;;" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...
+          <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+              <li class="Group_p_name" style="color: #693;font-size: 18px;cursor: pointer;;" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...
+          <else/>
+              <li class="Group_p_name"><a href="{:U('Detail/detail')}?id={$val.gid}" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...</a>
+          </if>
+     <!--收藏-->
+             <span id="clt{$val['gid']}">
+             <if condition="$loginStatus">
+                 <empty name="val['collect']">
+                     <img src="__STATIC__/images/heart1.png" class="heart1" style="cursor: pointer;" onclick="toCollect({$val['gid']})"/>
+                 <else/>
+                     <img src="__STATIC__/images/heart2.png" class="heart2" style="cursor: pointer;" onclick="outCollect({$val['gid']})"/>
+                 </empty>
+             <else/>
+                 <img src="__STATIC__/images/heart1.png" class="heart3" style="cursor: pointer;" onclick="noLogin()"/>
+             </if>
+             </span>
+         </li>
+          <li class="Group_p_about">品牌：{$val.brand}</li>
+          <li>规格：{$val.weight}(克/个)</Li>
+          <li class="Group_price"><span class="Current_price"><i>￥</i>{$val.price}.00</span> <span class="Group_List">原价：{$val.oldprice}</span></li>
+          <li class="Group_p_buy">
+           <span class="Group_Number" style="color:red"><em></em>开团还需{$val['groupnum']}人</span>
+
+              <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+                  <span class="Group_button right">
+                      <a style="cursor: pointer;background: #ccc; border-radius: 5px;line-height: 32px;text-align: center;font-size: 14px;color: #ffffff" class="buy_button">暂时无法购买</a></span>
+                  <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+                  <span class="Group_button right">
+                      <a onclick="javascript:apply({$val['id']});" style="cursor: pointer;background: red; border-radius: 5px;line-height: 32px;text-align: center;font-size: 14px;color: #ffffff" class="buy_button">立即报名</a></span>
+                  <else/>
+                  <span class="Group_button right"><a href="{:U('Detail/detail')}?id={$val.gid}" class="buy_button"></a></span>
+              </if>
+
+          </li>
+         </ul>
+       </div>
+
+       <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+           <div class="Group_img"><a style="cursor: pointer"><img class="lazy" data-original="__ROOT__/Uploads/goodsPic/{$val.pic}" src="__STATIC__/images/loading.gif"  height="195" width="326"/></a></div>
+           <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+           <div class="Group_img"><a style="cursor: pointer"><img class="lazy" data-original="__ROOT__/Uploads/goodsPic/{$val.pic}" src="__STATIC__/images/loading.gif"  height="195" width="326"/></a></div>
+           <else/>
+           <div class="Group_img"><a href="{:U('Detail/detail')}?id={$val.gid}"><img class="lazy" data-original="__ROOT__/Uploads/goodsPic/{$val.pic}" src="__STATIC__/images/loading.gif"  height="195" width="326"/></a></div>
+       </if>
+
+
+       </div>
+
+          <if condition="$val['startime'] gt $nowtime">
+              <div class="Group_time" >
+                  <em></em><span style="position: relative;left:-55px;">距离<span style="color: red;font-size: 20px;">开始</span>还有</span>
+                  <ul class="countdown k{$k}" >
+                      <li> <span class="days" >00</span></li>
+                      <li class="seperator">天</li>
+                      <li> <span class="hours">00</span></li>
+                      <li class="seperator">小时</li>
+                      <li> <span class="minutes">00</span></li>
+                      <li class="seperator">分</li>
+                      <li> <span class="seconds">00</span></li>
+                  </ul>
+                  <script type="text/javascript">
+                      var k="{$val.startime|date='Y-m-d',###}";
+                      $(".k{$k}").downCount({
+                          date: k,
+                          offset: +8
+                      }, function () {
+                          alert('倒计时结束!');
+                      });
+                  </script>
+              </div>
+            <elseif condition="$val['endtime'] lt $nowtime"/>
+              <div class="Group_time">
+                  <span style="color:#b8b8ad;">活动已经结束，下次再见！</span>
+              </div>
+            <else/>
+              <div class="Group_time" >
+                  <em></em><span style="position: relative;left:-55px;">距离<span style="color: red;font-size: 20px;">结束</span>还有</span>
+                  <ul class="countdown d{$k}" >
+                      <li> <span class="days" >00</span></li>
+                      <li class="seperator">天</li>
+                      <li> <span class="hours">00</span></li>
+                      <li class="seperator">小时</li>
+                      <li> <span class="minutes">00</span></li>
+                      <li class="seperator">分</li>
+                      <li> <span class="seconds">00</span></li>
+                  </ul>
+                  <script type="text/javascript">
+                      var k="{$val.endtime|date='Y-m-d',###}";
+                      $(".d{$k}").downCount({
+                          date: k,
+                          offset: +8
+                      }, function () {
+                          alert('倒计时结束!');
+                      });
+                  </script>
+              </div>
+          </if>
+      </div>
+         </volist>
+
+
+
+     </div>
+
+
+
+     <!--右侧团购样式-->
+     <div class="right_Group">
+
+
+        <!----------------------主要推荐团购位置--------------------------->
+
+
+         <volist name="mainInfo" id="val" key="k">
+     <div class="right_Group_p_style">
+       <div class="clearfix">
+        <div class="left_Group_name">
+         <ul>
+             <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+                 <li class="Group_p_name" style="color: #693;font-size: 18px;cursor: pointer;;" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...
+                 <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+                 <li class="Group_p_name" style="color: #693;font-size: 18px;cursor: pointer;;" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...
+                 <else/>
+                 <li class="Group_p_name"><a href="{:U('Detail/detail')}?id={$val.gid}" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...</a>
+             </if>
+         <span  id="clt{$val['gid']}">
+             <if condition="$loginStatus">
+                 <empty name="val['collect']">
+                     <img src="__STATIC__/images/heart1.png" class="heart1" style="cursor: pointer;" onclick="toCollect({$val['gid']})"/>
+                     <else/>
+                     <img src="__STATIC__/images/heart2.png" class="heart2" style="cursor: pointer;" onclick="outCollect({$val['gid']})"/>
+                 </empty>
+                 <else/>
+                 <img src="__STATIC__/images/heart1.png" class="heart3" style="cursor: pointer;" onclick="noLogin()"/>
+             </if>
+        </span>
+         </li>
+          <li class="Group_p_about">品牌：{$val.brand}</li>
+          <Li class="spacing">规格：{$val.weight}(克/个)</Li>
+          <li class="Group_price"><span class="Current_price"><i>￥</i>{$val.price}.00</span> <span class="Group_List">原价：{$val.oldprice}</span></li>
+          <li class="Group_p_buy">
+           <span class="Group_Number" style="color:red"><em></em>开团还需{$val['groupnum']}人</span>
+
+
+              <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+                  <span class="Group_button right">
+                      <a style="cursor: pointer;background: #ccc; border-radius: 5px;line-height: 32px;text-align: center;font-size: 14px;color: #ffffff" class="buy_button">暂时无法购买</a></span>
+                  <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+                  <span class="Group_button right">
+                      <a onclick="javascript:apply({$val['id']});" style="cursor: pointer;background: red; border-radius: 5px;line-height: 32px;text-align: center;font-size: 14px;color: #ffffff" class="buy_button">立即报名</a></span>
+                  <else/>
+                  <span class="Group_button right"><a href="{:U('Detail/detail')}?id={$val.gid}" class="buy_button"></a></span>
+              </if>
+
+          </li>
+         </ul>
+        </div>
+
+           <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+           <div class="Group_img"><a style="cursor: pointer"><img src="__ROOT__/Uploads/goodsPic/{$val.pic}"   height="370" width="326"/></a></div>
+               <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+               <div class="Group_img"><a style="cursor: pointer"><img src="__ROOT__/Uploads/goodsPic/{$val.pic}"   height="370" width="326"/></a></div>
+               <else/>
+           <div class="Group_img"><a href="{:U('Detail/detail')}?id={$val.gid}"><img src="__ROOT__/Uploads/goodsPic/{$val.pic}"   height="370" width="326"/></a></div>
+           </if>
+
+
+       </div>
+
+         <if condition="$val['startime'] gt $nowtime">
+             <div class="Group_time" >
+                 <em></em><span style="position: relative;left:-55px;">距离<span style="color: #f60011;font-size: 20px;">开始</span>还有</span>
+                 <ul class="countdown s{$k}" >
+                     <li> <span class="days" >00</span></li>
+                     <li class="seperator">天</li>
+                     <li> <span class="hours">00</span></li>
+                     <li class="seperator">小时</li>
+                     <li> <span class="minutes">00</span></li>
+                     <li class="seperator">分</li>
+                     <li> <span class="seconds">00</span></li>
+                 </ul>
+                 <script type="text/javascript">
+                     var k="{$val.startime|date='Y-m-d',###}";
+                     $(".s{$k}").downCount({
+                         date: k,
+                         offset: +8
+                     }, function () {
+
+                     });
+                 </script>
+             </div>
+             <elseif condition="$val['endtime'] lt $nowtime"/>
+             <div class="Group_time">
+                 <span style="color:#b8b8ad;">活动已经结束，下次再见！</span>
+             </div>
+             <else/>
+             <div class="Group_time" >
+                 <em></em><span style="position: relative;left:-55px;">距离<span style="color: red;font-size: 20px;">结束</span>还有</span>
+                 <ul class="countdown m{$k}" >
+                     <li> <span class="days" >00</span></li>
+                     <li class="seperator">天</li>
+                     <li> <span class="hours">00</span></li>
+                     <li class="seperator">小时</li>
+                     <li> <span class="minutes">00</span></li>
+                     <li class="seperator">分</li>
+                     <li> <span class="seconds">00</span></li>
+                 </ul>
+                 <script type="text/javascript">
+                     var k="{$val.endtime|date='Y-m-d',###}";
+                     $(".m{$k}").downCount({
+                         date: k,
+                         offset: +8
+                     }, function () {
+
+                     });
+                 </script>
+             </div>
+         </if>
+     </div>
+        </volist>
+
+
+     <!--团购列表-->
+     <div class="other_Group clearfix">
+         <volist name="rightInfo" id="val" key="k">
+
+         <div class="g_p_list">
+             <div class="g_p_style">
+                 <div class="g_p_img">
+
+                     <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+                         <a style="cursor: pointer;"><img src="__ROOT__/Uploads/goodsPic/{$val.pic}"   height="220" width="254"/></a>
+                         <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+                         <a style="cursor: pointer;"><img src="__ROOT__/Uploads/goodsPic/{$val.pic}"   height="220" width="254"/></a>
+                         <else/>
+                         <a href="{:U('Detail/detail')}?id={$val.gid}"><img src="__ROOT__/Uploads/goodsPic/{$val.pic}"   height="220" width="254"/></a>
+                     </if>
+
+
+                     
+                 </div>
+                 <ul>
+                     <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+                         <li><a  class="name" style="color: #693;font-size: 18px;cursor: pointer;;" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...</a>
+                         <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+                         <li><a  class="name" style="color: #693;font-size: 18px;cursor: pointer;;" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...</a>
+                         <else/>
+                         <li><a href="{:U('Detail/detail')}?id={$val.gid}" class="name" title="{$val.goodsname}">{$val.goodsname|truncate_cn=20,'',0}...</a>
+                     </if>
+                     <span id="clt{$val['gid']}">
+                     <if condition="$loginStatus">
+                         <empty name="val['collect']">
+                             <img src="__STATIC__/images/heart1.png" class="heart1" style="cursor: pointer;" onclick="toCollect({$val['gid']})"/>
+                             <else/>
+                             <img src="__STATIC__/images/heart2.png" class="heart2" style="cursor: pointer;" onclick="outCollect({$val['gid']})"/>
+                         </empty>
+                         <else/>
+                         <img src="__STATIC__/images/heart1.png" class="heart3" style="cursor: pointer;" onclick="noLogin()"/>
+                     </if>
+                     </span>
+                     </li>
+                     <li>品牌：{$val.brand}</li>
+                     <li class="Group_price"><span class="Current_price"><i>￥</i>{$val.price}.00</span> <span class="Group_List" style="color:orangered">开团还需{$val['groupnum']}人</span></li>
+                     <li class="Group_p_buy">
+
+
+                         <span class="Group_button right">
+                         <if condition="($val['startime'] gt $nowtime) OR ($val['endtime'] lt $nowtime)">
+                              <a style="cursor: pointer;background: #ccc; border-radius: 5px;line-height: 32px;text-align: center;font-size: 14px;color: #ffffff" class="buy_button">暂时无法购买</a>
+                             <elseif condition="$val['groupnum'] gt $val['applynum']"/>
+                             <a onclick="javascript:apply({$val['id']});" style="cursor: pointer;background: red; border-radius: 5px;line-height: 32px;text-align: center;font-size: 14px;color: #ffffff" class="buy_button">立即报名</a></span>
+                         <else/>
+                             <a href="{:U('Detail/detail')}?id={$val.gid}" class="buy_button"></a>
+                         </if>
+                         </span>
+
+
+                     </li>
+                 </ul>
+
+                <!---------------倒计时----------->
+
+                 <if condition="$val['startime'] gt $nowtime">
+                     <ul class="rightDown rt{$k}" >
+                         <li>客官莫急，活动尚未开始！</li>
+                     </ul>
+                     <elseif condition="$val['endtime'] lt $nowtime"/>
+                     <ul class="rightDown rt{$k}" >
+                         <li>客官来晚啦，活动结束啦！</li>
+                     </ul>
+                     <else/>
+                     <ul class="rightDown rt{$k}" style="color:red" >
+                         <li> <span class="days" >00</span></li>
+                         <li class="seperator">天</li>
+                         <li> <span class="hours">00</span></li>
+                         <li class="seperator">小时</li>
+                         <li> <span class="minutes">00</span></li>
+                         <li class="seperator">分</li>
+                         <li> <span class="seconds">00</span></li>
+                     </ul>
+                     <script type="text/javascript">
+                         var k="{$val.endtime|date='Y-m-d',###}";
+                         $(".rt{$k}").downCount({
+                             date: k,
+                             offset: +8
+                         }, function () {
+
+                         });
+                     </script>
+                 </if>
+
+             </div>
+         </div>
+
+
+         </volist>
+
+
+       <!---->
+     </div>
+     </div>
+    </div>
+ 
+</div>
+
+    <!--友情链接-->
+
+</div>
+<!--底部样式-->
+<include file="Public/footer"/>
+</body>
+</html>

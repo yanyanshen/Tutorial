@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 11">
+</head>
+<body>
+<table border=1 cellpadding=0 cellspacing=0 width="100%" >
+    <tr>
+        <td colspan="7" align="center">
+            <h2>团购信息表</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style='width:100pt' align="center">编号</td>
+        <td style='width:100pt' align="center">商品名称</td>
+        <td style='width:100pt' align="center">商品分类</td>
+        <td style='width:100pt' align="center">商品品牌</td>
+        <td style='width:100pt' align="center">团购价格</td>
+        <td style='width:100pt' align="center">开始时间</td>
+        <td style='width:100pt' align="center">结束时间</td>
+    </tr>
+
+    <volist name="info" id="val" key="k">
+        <tr>
+            <td align="center">{$k}</td>
+            <td  align="center">{$val.goodsname}</td>
+            <td  align="center">{$val.catename}</td>
+            <td  align="center">{$val.brandname}</td>
+            <td  align="center">{$val.price}</td>
+            <td  align="center">{$val.startime|date="Y-m-d H:i:s",###}</td>
+            <td  align="center">{$val.endtime|date="Y-m-d H:i:s",###}</td>
+        </tr>
+    </volist>
+</table>
+</body>
+</html>

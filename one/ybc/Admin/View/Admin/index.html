@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表页</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jQuery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+
+</head>
+<script type="text/javascript">
+    $(function(){
+        $("#usual1 ul").idTabs();
+        $('.tablelist tbody tr:odd').addClass('odd');
+    })
+</script>
+<script>
+    $(function() {
+        stopuse = function (id) {
+            $.post('{:U("stopuse")}', {id: id}, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, {icon: 1}, function () {
+                        location = window.location.href;
+                    });
+                } else {
+                    layer.msg(res.info, {icon: 2});
+                }
+            })
+        }
+        startuse = function (id) {
+            $.post('{:U("startuse")}', {id: id}, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, {icon: 1}, function () {
+                        location = window.location.href;
+                    });
+                } else {
+                    layer.msg(res.info, {icon: 2});
+                }
+            })
+        }
+    })
+</script>
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">权限管理</a></li>
+        <li><a href="#">管理员列表</a></li>
+    </ul>
+</div>
+
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab2" class="tabson">
+            <table class="tablelist">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>所属组</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name="adminList" id="value">
+                            <tr>
+                                <td width="150">{$value.username}</td>
+                                <td>{$value.group}</td>
+                                <td>
+                                    {$value['active']==1?'正常':'禁用'}
+                                </td>
+                                <td>
+                                    <if condition="$value['active'] eq 1">
+                                         <a style="cursor: pointer;" class="tablelink" onclick="stopuse({$value.id})">禁用</a>
+                                    <else />
+                                        <a style="cursor: pointer;" class="tablelink" onclick="startuse({$value.id})">激活</a>
+                                    </if> ｜
+                                        <a href="{:U('edit',array('id'=>$value['id']))}" class="tablelink">编辑</a>
+                            </tr>
+                    </volist>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

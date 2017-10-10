@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>我的订单</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/layer_mobile/layer.js"></script>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/indent.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css"/>
+    <style type="text/css">
+        .menu { padding: 0;}
+        .menu ul li { width: 20%; margin: 0; text-align: center;}
+        .menu ul li.on { border-bottom: 1px solid #f00; }
+        .menu ul .on a{ color:#f00 !important;}
+        .search { height: 0.6rem; border: 0.007rem solid #ccc; border-radius: 0.02rem; width: 90%;float: left;}
+        .sear { height: 0.7rem; width: 9%; float: right; background: url("__STATIC__/images/search1.png") no-repeat; background-position: center center; background-size: 0.5rem;}
+    </style>
+    <script>
+        (function(){
+            function w() {
+                var r = document.documentElement;
+                var a = r.getBoundingClientRect().width;
+                // console.log(a);
+                if (a > 750 ){
+                    a = 750;
+                }
+                rem = a / 7.5;
+                r.style.fontSize = rem + "px"
+            }
+            var t;
+            w();
+            window.addEventListener("resize", function() {
+                clearTimeout(t);
+                t = setTimeout(w, 300)
+            }, false);
+        })();
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $("#getMore").click(function() {
+                        $.post("{:U('Order/getMore')}", {status: "{$status?$status:''}",keywords:"{$keywords}" ,start: "{$start}"}, function (res) {
+                            $("#getMore").replaceWith(res);
+                        })
+                    }
+            )
+        })
+
+        txfh=function(id){
+            layer.open({content:"已发送提醒"});
+        }
+
+        qrsh=function(id){
+            layer.open({
+                content:"是否确认收货？",
+                btn:["yes","no"],
+                yes:function(){
+                    $.post("{:U('Order/qrsh')}",{id:id},function(res){
+                        if(res.status==1){
+                            layer.open({content:res.info,btn:'我知道了',shadeClose:false,yes:function(index){
+                                location.reload();
+                                layer.close(index);
+                            }});
+                        }else{
+                            layer.open({content:res.info});
+                        }
+                    })
+                }
+            })
+        }
+
+        goDetail=function(id){
+            location.href="{:U('Order/orderDetail')}?id="+id;
+        }
+
+        search=function(){
+            keywords=$(".search").val();
+            location.href="{:U('Order/index')}?keywords="+keywords+"{$status?'&status=':''}{$status?$status:''}";
+        }
+    </script>
+</head>
+<body>
+<div style="display: inline-block; background:#000;color:#fff;width: 100%;height: 1rem;line-height: 1rem;padding-left: 0.2rem;">
+    <a href="{:U('UserCenter/userCenter')}" style="font-size: 0.5rem;text-decoration: none; color: #fff  ;">&lt; 我的订单</a>
+</div>
+<!-- 头部 开始 -->
+<div class="header bk">
+    <input class="search" name="keywords" type="text" value="{$keywords}" placeholder="订单编号"><div onclick="search()" class="sear"></div>
+</div>
+<!-- 头部 结束 -->
+<!-- 菜单 开始 -->
+<div class="menu">
+    <ul>
+        <li class="{$status?'':'on'} all"><a href="{:U('Order/index')}{$keywords?'?keywords=':''}{$keywords?$keywords:''}" class="one">全部</a></li>
+        <li class="{$status==1?'on':''}"><a href="{:U('Order/index')}?status=1{$keywords?'&keywords=':''}{$keywords?$keywords:''}">待付款</a></li>
+        <li class="{$status==2?'on':''}"><a href="{:U('Order/index')}?status=2{$keywords?'&keywords=':''}{$keywords?$keywords:''}">待发货</a></li>
+        <li class="{$status==3?'on':''}"><a href="{:U('Order/index')}?status=3{$keywords?'&keywords=':''}{$keywords?$keywords:''}">待收货</a></li>
+        <li class="{$status==4?'on':''}"><a href="{:U('Order/index')}?status=4{$keywords?'&keywords=':''}{$keywords?$keywords:''}">待评价</a></li>
+    </ul>
+</div>
+<!-- 菜单 结束 -->
+<volist name="orderList" id="v">
+<div class="evaluate">
+    <div class="evaluate-top">
+        <switch name="v.orderstatus">
+            <case value="1"><p><a href="javascript:goDetail({$v.id});">{$v.mnext}</a></p></case>
+            <case value="2"><p><a href="javascript:txfh({$v.id});">{$v.mnext}</a></p></case>
+            <case value="3"><p><a href="javascript:qrsh({$v.id});">{$v.mnext}</a></p></case>
+            <case value="4"><p><a href="javascript:goDetail({$v.id});">{$v.mnext}</a></p></case>
+            <default />
+            <p><a href="#">{$v.mnext}</a></p>
+        </switch>
+        <p style="padding-left: 0.28rem;color: #000" onclick="goDetail({$v.id})">{$v.ordersyn}</p>
+    </div>
+    <volist name="v.goods" id="va">
+        <div class="evaluate-bottom clearfix">
+            <p class="fl"><a href="{:U('Detail/detail')}?id={$va.gid}"><img src="__ROOT__/Uploads/goodsPic/100/100_{$va.pic}" alt=""></a></p>
+            <div class="evaluate-bottom-right fl" style="width: 60%;">
+                <p><a href="{:U('Detail/detail')}?id={$va.gid}">{$va.goodsname}</a></p>
+                <p class="money">￥{$va.price}<span>×{$va.buynum}件</span></p>
+            </div>
+        </div>
+    </volist>
+</div>
+</volist>
+<empty name="orderList">
+    <div style="text-align: center; font-size: 0.5rem;">没有订单信息</div>
+    <else />
+    <div id="getMore" style="text-align: center;height: 30px;line-height: 30px;margin-top: -25px;">点击加载更多</div>
+</empty>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+<table class="tablelist">
+    <thead>
+    <tr>
+        <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+        <th>标题</th>
+        <th>作者</th>
+        <th>标签</th>
+        <th>文章简介</th>
+        <th>发布时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+
+    <volist name="list" id="val" key="k" >
+
+        <tr>
+            <td>{$k+$firstRow}</td>
+            <td>{$val.title}</td>
+            <td>{$val.author}</td>
+            <td>{$val.teatag}</td>
+            <td>{$val.descript|truncate_cn=100,'',0}......</td>
+            <td>{$val.dateline|date="Y-m-d H:i:s",###}</td>
+            <td><a href="{:U('modify')}?id={$val['id']}" class="tablelink">修改</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a onclick="javascript:active({$val['id']});"   style="cursor: pointer" class="tablelink">删除</a></td>
+        </tr>
+    </volist>
+
+    <empty name="list">
+        <tr align="center">
+            <td colspan="7">没有查询到所需条件的相关文章</td>
+        </tr>
+    </empty>
+
+
+
+    </tbody>
+</table>
+
+<div class="pagin">
+    <div class="message">共<i class="blue">{$count}</i>条记录，当前显示第&nbsp;<i class="blue">{$firstRow/4+1}&nbsp;</i>页</div>
+    <ul class="paginList">
+        <li class="pag">{$page}</li>
+    </ul>
+</div>

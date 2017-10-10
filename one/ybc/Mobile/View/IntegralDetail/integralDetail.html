@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{$goodsInfo[0]['goodsname']}</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="" rel="stylesheet">
+<link href="__STATIC__/css/details.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome.css" rel="stylesheet">
+<link href="__STATIC__/css/swiper.min.css" rel="stylesheet">
+<script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+<script src="__STATIC__/js/swiper.min.js"></script>
+<script src="__STATIC__/js/details.js"></script>
+<script src="__STATIC__/js/layer_mobile/layer.js"></script>
+    <style type="text/css">
+        .evaluate .great .highlight{background: orangered;color: white}
+    </style>
+</head>
+<body>
+<!-- banner开始 -->
+    <!-- Swiper -->
+
+    <div class="swiper-container" >
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide" style="position: relative"><div style="width: 100%;height: 0.5rem;background-color: rgba(5,5,5,0.5);position: absolute;color: #ffffff">
+                <a href="javascript:history.go(-1);"><span style="color: #fff;font-size: 0.4rem">&lt;返回</span></a></div><img src="__ROOT__/Uploads/integralGoodsPic/800/800_{$goodsInfo[0][pic]}" style="width: 7.5rem;height: 5.25rem;"></div>
+            <volist name="goodsPic" id="pic">
+                <div class="swiper-slide"><div style="width: 100%;height: 0.5rem;background-color: rgba(5,5,5,0.5);position: absolute;color: #ffffff">
+                    <a href="javascript:history.go(-1);"><span style="color: #fff;font-size: 0.4rem">&lt;返回</span></a></div><img src="__ROOT__/Uploads/integralGoodsPic/800/800_{$pic.picname}" style="width: 7.5rem;height: 5.25rem;" alt=""></div>
+            </volist>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+
+<!--    详情开始  -->
+    <form action="" id="form1">
+    <input type="hidden" name="gid" value="{$gid}"/>
+    <div class="introduct">
+        <div class="wrapper font ">
+            <span class="name" style="margin-top: 0.2rem;width: 5.27rem">{$goodsInfo[0]['goodsname']}</span>
+                <span class="share" id="noCollect" style="border: 0rem;color: gray">收藏</span>
+            <span class="price">积分{$goodsInfo[0]['points']}</span>
+            <span class="price-2"><i>特惠</i></span>
+            <span class="price-3"><i>促销</i></span>
+            <p class="price-4">市场价值<span>￥{$goodsInfo[0]['price']}</span></p>
+	        <span class="price-5">快递：免运费<span>已兑换{$sum}笔</span>河南郑州</span>
+        </div>
+        <div class="statement" style="margin-top: 0.2rem;">
+                <i class="icon-heart"></i>
+                <span>卖家承诺7天内发货</span>
+                <i class="icon-heart"></i>
+                <span>七天无理由</span>
+                <i class="icon-heart"></i>
+                <span>正品</span>
+        </div>
+        <div class="jiathis_style_m" style="margin-top: 0.2rem;font-size: 0.28rem;width: 100%;height: 0.6rem;background: #eee;line-height: 0.6rem;padding-left: 0.3rem;box-sizing: border-box;color: #7b7b7b;"></div>
+    </div>
+    </form>
+<!-- 商品评价 -->
+<div class="evaluate">
+    <div class="wrapper font ">
+        <p>宝贝评价（{$count}）</p>
+        <div class="great">
+            <span id="comment" class="highlight">全部({$count})</span>
+            <span id="comment1">好评({$count1})</span>
+            <span id="comment2">中评({$count2})</span>
+            <span id="comment3">差评({$count3})</span>
+        </div>
+        <div class="content" id="content">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList">
+                    <volist name="commentList" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+        <div class="content"  id="content1" style="display: none">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList1">
+                    <volist name="commentList1" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+        <div class="content"  id="content2" style="display: none">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList2">
+                    <volist name="commentList2" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+        <div class="content"  id="content3" style="display: none">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList3">
+                    <volist name="commentList3" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#comment').click(function(){
+            $('#content').show();$('#content1').hide();$('#content2').hide();$('#content3').hide();
+        })
+        $('#comment1').click(function(){
+            $('#content1').show();$('#content').hide();$('#content2').hide();$('#content3').hide();
+        })
+        $('#comment2').click(function(){
+            $('#content2').show();$('#content').hide();$('#content1').hide();$('#content3').hide();
+        })
+        $('#comment3').click(function(){
+            $('#content3').show();$('#content1').hide();$('#content2').hide();$('#content').hide();
+        })
+        $('.evaluate .great span').click(function(){
+            $(this).addClass('highlight').siblings().removeClass('highlight');
+        })
+    })
+</script>
+<!-- 底部开始   -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="__STATIC__/js/jiathis_m.js" ></script>
+<!-- JiaThis Button END -->
+<div class="foot">
+    <div class="bg">
+    </div>
+    <ul class="memu">
+        <li class="buy" id="btn1" style="width: 100%">立即兑换</li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        $('#btn1').click(function(){
+            $.post('{:U("IntegralDetail/buy")}',$('#form1').serialize(),function(res){
+                if(res.status==1){
+                    layer.open({
+                        content:'确定兑换该商品吗？',
+                        btn: ['确定','取消'] ,//按钮,
+                        yes: function(){
+                        $.post('{:U("IntegralDetail/points")}',$('#form1').serialize(),function(res){
+                            if(res.status==1){
+                                    $.post("{:U('IntegralOrder/createOrder')}",$('#form1').serialize(),function(res1){
+                                        if(res1.status==1){
+                                            location=res1.url;
+                                        }else{
+                                            layer.open({content:'兑换失败',skin:'msg'});
+                                        }
+                                    })
+                            }else{
+                                layer.open({content:res.info,time:2});
+                            }
+                        })
+                    }
+                })
+                }else{
+                    layer.open({content:'请先登录',btn:['确定','取消'],yes:function(){
+                        location.href="{:U('Home/Login/login')}";
+                    }
+                })
+                }
+            })
+        })
+    })
+</script>
+<!-- js -->
+    <!-- Swiper JS -->
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+</script>
+
+</body>
+</html>

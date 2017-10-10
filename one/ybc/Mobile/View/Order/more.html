@@ -1,0 +1,43 @@
+<volist name="orderList" id="v">
+    <!-- 评价 开始 -->
+    <div class="evaluate">
+        <div class="evaluate-top">
+            <switch name="v.orderstatus">
+                <case value="1"><p><a href="#">{$v.mnext}</a></p></case>
+                <case value="2"><p><a href="#">{$v.mnext}</a></p></case>
+                <case value="3"><p><a href="javascript:qrsh({$v.id});">{$v.mnext}</a></p></case>
+                <case value="4"><p><a href="#">{$v.mnext}</a></p></case>
+                <default />
+                <p><a href="#">{$v.mnext}</a></p>
+            </switch>
+            <p style="padding-left: 0.28rem;color: #000" onclick="goDetail({$v.id})">{$v.ordersyn}</p>
+        </div>
+        <volist name="v.goods" id="va">
+            <div class="evaluate-bottom clearfix">
+                <p class="fl"><a href="{:U('Detail/detail')}?id={$va.gid}"><img src="__ROOT__/Uploads/goodsPic/100/100_{$va.pic}" alt=""></a></p>
+                <div class="evaluate-bottom-right fl" style="width: 60%;">
+                    <p><a href="{:U('Detail/detail')}?id={$va.gid}">{$va.goodsname}</a></p>
+                    <p class="money">￥{$va.price}<span>{$va.buynum}件</span></p>
+                </div>
+            </div>
+        </volist>
+    </div>
+</volist>
+<empty name="orderList">
+    <div style='text-align: center;height: 30px;line-height: 30px;margin-top: -25px;'>已加载完所有信息</div>
+    <else />
+    <div id="getMore" style="text-align: center;height: 30px;line-height: 30px;margin-top: -25px;">点击加载更多</div>
+<script type="text/javascript">
+    $(function(){
+        $("#getMore").click(function() {
+                    $.post("{:U('Order/getMore')}", {
+                        status: "{$status?$status:''}",
+                        start: "{$start}"
+                    }, function (res) {
+                        $("#getMore").replaceWith(res);
+                    })
+                }
+        )
+    })
+</script>
+</empty>

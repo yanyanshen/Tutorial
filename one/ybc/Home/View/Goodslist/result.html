@@ -1,0 +1,79 @@
+
+<script type="text/javascript">
+    $(function(){
+        $('.prev1').click(function(){
+
+            location=$('#mypage .current').prev('#big').attr("href");
+        })
+        $('.next1').click(function(){
+            location=$('#mypage .current').next('#big').attr("href");
+        })
+
+    })
+</script>
+
+
+<empty name="res">
+    <div style="width: 1200px;height: 100px;">
+        <h1 style="text-align: center">抱歉，没有找到符合条件的相关商品</h1>
+    </div>
+    <else />
+    <div class="Sorted">
+        <div class="Sorted_style">
+            <a class="{$order?'':'on'}" href="{:U('index')}?{$keywords?"keywords=$keywords":''}{$keywords?'&':''}{$category1?"category1=$category1":''}{$category1?'&':''}{$brand?"brand=$brand":''}{$brand?'&':''}{$cate?"cate=$cate":''}{$cate?'&':''}{$price?"price=$price":''}">综合<i class="icon-angle-down"></i></a>
+            <a class="{$order==1?'on':''}" href="{:U('index')}?{$keywords?"keywords=$keywords":''}{$keywords?'&':''}{$category1?"category1=$category1":''}{$category1?'&':''}{$brand?"brand=$brand":''}{$brand?'&':''}{$cate?"cate=$cate":''}{$cate?'&':''}{$price?"price=$price":''}{$price?'&':''}order=1">销量<i class="icon-angle-down"></i></a>
+            <a class="{$order==2?'on':''}{$order==4?'on':''}" href="{:U('index')}?{$keywords?"keywords=$keywords":''}{$keywords?'&':''}{$category1?"category1=$category1":''}{$category1?'&':''}{$brand?"brand=$brand":''}{$brand?'&':''}{$cate?"cate=$cate":''}{$cate?'&':''}{$price?"price=$price":''}{$price?'&':''}{$order==2?'order=4':'order=2'}">价格<i class="icon-angle-down"></i></a>
+            <a class="{$order==3?'on':''}" href="{:U('index')}?{$keywords?"keywords=$keywords":''}{$keywords?'&':''}{$category1?"category1=$category1":''}{$category1?'&':''}{$brand?"brand=$brand":''}{$brand?'&':''}{$cate?"cate=$cate":''}{$cate?'&':''}{$price?"price=$price":''}{$price?'&':''}order=3">新品<i class="icon-angle-down"></i></a>
+        </div>
+        <!--页数-->
+
+
+        <div class="s_Paging" style="width: 200px;">
+            <a class="{$nowpage==$totalpage?'on':'next1'}" style="cursor: pointer;display: inline-block;width: 37px;height: 37px; border: 1px solid #ccc;border-left:0px;line-height: 37px;text-align: center;float: right; ">&gt;</a>
+            <a class="{$nowpage==1?'on':'prev1'}" style="cursor: pointer;display: inline-block;width: 37px;height: 37px; border: 1px solid #ccc;line-height: 37px;text-align: center;float: right; ">&lt;</a>
+            <span style="float: right">{$nowpage}/{$totalpage}</span>
+
+        </div>
+    </div>
+    <!--产品列表样式-->
+    <div id="info">
+        <div class="p_list clearfix">
+            <ul>
+
+                <volist name="res" id="val">
+                    <li class="gl-item">
+                        <div class="Borders">
+                            <div class="img"><a href="{:U('detail/detail')}?id={$val['id']}"><img src="__ROOT__/Uploads/goodsPic/800/800_{$val['pic']}" style="width:220px;height:220px"/></a></div>
+                            <div class="name"><a href="{:U('detail/detail')}?id={$val['id']}">{$val['goodsname']}</a></div>
+                            <div class="Price">商城价：<b>¥{$val['price']}</b><span>原价：<em>{$val['oldprice']}</em></span></div>
+                            <div class="Review">已有<a href="#">{$val['commentnum']}</a>评论</div>
+                            <div class="p-operate" id="collect{$val['id']}">
+                                <empty name="val['collect']">
+                                    <a  onclick="addcollect({$val['id']})"    class="p-o-btn Collect" style="width:70px;cursor: pointer;">收藏</a>
+                                    <else />
+                                    <a  onclick="deletcollect({$val['id']})"  class="p-o-btn Collect" style="width: 70px;cursor: pointer;">取消收藏</a>
+                                </empty>
+
+
+                                <a onclick="addcart({$val['id']})"  style="cursor: pointer" class="p-o-btn shop_cart"><em></em>加入购物车</a>
+                            </div>
+                        </div>
+                    </li>
+                </volist>
+            </ul>
+            <div class="Paging_style">
+                <div id="mypage" style="text-align: center;">
+                    <span class="result">共<em>{$total}</em>件商品，当前显示第<em>{$nowpage}</em>页</span>
+                    <ul class="paginList">
+                        <li class="pag">{$page}</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</empty>

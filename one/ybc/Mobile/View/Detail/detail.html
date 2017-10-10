@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{$goodsInfo[0]['goodsname']}</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="" rel="stylesheet">
+<link href="__STATIC__/css/details.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__STATIC__/css/font-awesome.css" rel="stylesheet">
+<link href="__STATIC__/css/swiper.min.css" rel="stylesheet">
+<script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+<script src="__STATIC__/js/swiper.min.js"></script>
+<script src="__STATIC__/js/details.js"></script>
+<script src="__STATIC__/js/layer_mobile/layer.js"></script>
+    <style type="text/css">
+        .evaluate .great .highlight{background: orangered;color: white}
+    </style>
+</head>
+<body>
+<!-- banner开始 -->
+    <!-- Swiper -->
+    <div onclick="javascript:history.go(-1);" style="font-size: 0.44rem;position: absolute;top: 0;left: 0;color: #fff;width: 2rem;z-index: 100;">&lt;返回</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="__ROOT__/Uploads/goodsPic/800/800_{$goodsInfo[0][pic]}" style="width: 7.5rem;height: 5.25rem"></div>
+            <volist name="goodsPic" id="pic">
+                <div class="swiper-slide"><img src="__ROOT__/Uploads/goodsPic/800/800_{$pic.picname}" style="width: 7.5rem;height: 5.25rem" alt=""></div>
+            </volist>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+
+<!--    详情开始  -->
+    <form action="" id="form1">
+    <input type="hidden" name="gid" value="{$gid}"/>
+    <div class="introduct">
+        <div class="wrapper font ">
+            <span class="name" style="margin-top: 0.2rem;width: 5.27rem">{$goodsInfo[0]['goodsname']}</span>
+            <if condition="$loginStatus">
+                <if condition="$ifCollect">
+                    <span class="share" id="toCollect" style="border: 0rem;color: darkgoldenrod;display: none">收藏</span>
+                    <span class="share" id="delCollect" style="border: 0rem;color: darkgoldenrod">取消收藏</span>
+                    <else />
+                    <span class="share" id="toCollect" style="border: 0rem;color: darkgoldenrod">收藏</span>
+                    <span class="share" id="delCollect" style="border: 0rem;color: darkgoldenrod;display: none">取消收藏</span>
+                </if>
+                <else />
+                <span class="share" id="noCollect" style="border: 0rem;color: gray">收藏</span>
+            </if>
+            <span class="price">￥{$goodsInfo[0]['price']}</span>
+            <span class="price-2"><i>特惠</i></span>
+            <span class="price-3"><i>促销</i></span>
+            <p class="price-4">价格<span style="text-decoration:line-through;">￥{$goodsInfo[0]['oldprice']}</span><span style="margin-left: 10%">库存：{$goodsInfo[0]['num']}件</span></p>
+	        <span class="price-5">快递：免运费<span>销量{$goodsInfo[0]['salenum']}笔</span>河南郑州</span>
+        </div>
+        <div class="statement" style="margin-top: 0.2rem;">
+                <i class="icon-heart"></i>
+                <span>卖家承诺7天内发货</span>
+                <i class="icon-heart"></i>
+                <span>七天无理由</span>
+                <i class="icon-heart"></i>
+                <span>正品</span>
+        </div>
+        <div style="margin-top: 0.2rem;font-size: 0.28rem;width: 100%;height: 0.6rem;background: #eee;line-height: 0.6rem;padding-left: 0.3rem;box-sizing: border-box;color: #7b7b7b;"">
+            选择您的购买数量：
+            <input type="button" class="btn-reduce" onclick="jian()" value="-" style="width: 0.4rem;height: 0.4rem;font-size: 0.18rem">
+            <input type="text" id="buy-num" name="buy-num" value="1" style="width: 0.5rem;text-align: center;height: 0.3rem;font-size: 0.18rem">
+            <input type="button" class="btn-add" onclick="jia()" value="+" style="width: 0.4rem;height: 0.4rem;font-size: 0.18rem">
+        </div>
+        <div class="choose-color" style="margin-top: 0.2rem;">
+            <span style="font-size: 0.1rem;border: 1px solid orangered;color: orangered;border-radius: 0.05rem;padding: 0.05rem">积分</span>
+            <span style="font-size: 0.2rem;">购买可得{$goodsInfo[0]['price']}积分</span>
+        </div>
+        <div class="jiathis_style_m" style="margin-top: 0.2rem;font-size: 0.28rem;width: 100%;height: 0.6rem;background: #eee;line-height: 0.6rem;padding-left: 0.3rem;box-sizing: border-box;color: #7b7b7b;"></div>
+    </div>
+    </form>
+<!-- 商品评价 -->
+<div class="evaluate">
+    <div class="wrapper font ">
+        <p>宝贝评价（{$count}）</p>
+        <div class="great">
+            <span id="comment" class="highlight">全部({$count})</span>
+            <span id="comment1">好评({$count1})</span>
+            <span id="comment2">中评({$count2})</span>
+            <span id="comment3">差评({$count3})</span>
+        </div>
+        <div class="content" id="content">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList">
+                    <volist name="commentList" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+        <div class="content"  id="content1" style="display: none">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList1">
+                    <volist name="commentList1" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+        <div class="content"  id="content2" style="display: none">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList2">
+                    <volist name="commentList2" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+        <div class="content"  id="content3" style="display: none">
+            <div class="user ">
+                <p class="border"></p>
+                <if condition="$commentList3">
+                    <volist name="commentList3" id="list">
+                        <img src="__ROOT__/Uploads/avatar/100/100_{$list.avatar}" class="people-2" style="width: 0.5rem;height: 0.5rem">
+                        <span class="tel">{$list.username}</span>
+                        <eq name="list.level" value="1"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="2"><span class="icon-star"></span><span class="icon-star"></span></eq>
+                        <eq name="list.level" value="3"><span class="icon-star"></span></span></eq>
+                        <span class="time">{$list.addtime|date='Y-m-d',###}</span>
+                        <p>{$list.text}</p>
+                        <empty name="list.text1">
+                            <else/>
+                            <span style="font-size: 0.2rem">卖家回复：{$list.text1}  回复时间：{$list.addtime1|date='Y-m-d',###}</span>
+                        </empty>
+                    </volist>
+                <else/>
+                    <span>暂时还没有评价哦</span>
+                </if>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#comment').click(function(){
+            $('#content').show();$('#content1').hide();$('#content2').hide();$('#content3').hide();
+        })
+        $('#comment1').click(function(){
+            $('#content1').show();$('#content').hide();$('#content2').hide();$('#content3').hide();
+        })
+        $('#comment2').click(function(){
+            $('#content2').show();$('#content').hide();$('#content1').hide();$('#content3').hide();
+        })
+        $('#comment3').click(function(){
+            $('#content3').show();$('#content1').hide();$('#content2').hide();$('#content').hide();
+        })
+        $('.evaluate .great span').click(function(){
+            $(this).addClass('highlight').siblings().removeClass('highlight');
+        })
+    })
+</script>
+<!-- 底部开始   -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="__STATIC__/js/jiathis_m.js" ></script>
+<!-- JiaThis Button END -->
+<div class="foot">
+    <div class="bg">
+    </div>
+    <ul class="memu">
+        <li class="icon-heart-empty icon" id="tCollect" style="width: 1.33rem"> </li>
+        <a href="{:U('Cart/cart')}"><li class="icon-shopping-cart icon"></li></a>
+        <li class="shopping" style="width: 4.76rem">加入购物车</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('.shopping').click(function(){
+            $.post("{:U('Detail/toCart')}",$('#form1').serialize(),function(res){
+                if(res.status==1){
+                    layer.open({
+                        content: '加入成功'
+                        ,skin: 'msg'
+                        ,time: 1.5
+                    });
+                }else{
+                    layer.open({
+                        content: '加入失败'
+                        ,skin: 'msg'
+                        ,time: 1.5
+                    });
+                }
+            })
+        })
+        $('#toCollect').click(function(){
+            var gid={$gid};
+            $.post("{:U('Detail/toCollect')}",{gid:gid},function(res){
+                if(res.status==1){
+                    $('#toCollect').hide();
+                    $('#delCollect').show();
+                }
+            })
+        })
+        $('#delCollect').click(function(){
+            var gid={$gid};
+            $.post("{:U('Detail/outCollect')}",{gid:gid},function(res){
+                if(res.status==1){
+                    $('#delCollect').hide();
+                    $('#toCollect').show();
+                }
+            })
+        })
+        $('#noCollect').click(function(){
+            layer.open({
+                content: '登陆后才能收藏商品哦'
+                ,skin: 'msg'
+                ,time: 1.5
+            });
+        })
+        $('#tCollect').click(function(){
+            $.post("{:U('tCollect')}",function(res){
+                if(res.status==1){
+                    location="{:U('UserCenter/myCollect')}";
+                }else{
+                    location="{:U('UserCenter/myCollect')}";
+                }
+            })
+        })
+    })
+    function jian(){
+        var buynum=document.getElementById('buy-num').value;
+        if(buynum>1){
+            document.getElementById('buy-num').value=parseInt(buynum)-1;
+        }
+    }
+    function jia(){
+        var buynum=document.getElementById('buy-num').value;
+        if(buynum<{$goodsInfo[0]['num']} && buynum<129){
+            document.getElementById('buy-num').value=parseInt(buynum)+1;
+        }
+    }
+    document.getElementById('buy-num').onkeyup=function(){
+        if(this.value<1){
+            this.value=1;
+        }
+        if(this.value>129){
+            this.value=129;
+        }
+        if(this.value>{$goodsInfo[0]['num']}){
+            this.value={$goodsInfo[0]['num']};
+        }
+        if(isNaN(this.value)){
+            this.value=1;
+        }
+    }
+</script>
+<!-- js -->
+    <!-- Swiper JS -->
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+</script>
+
+</body>
+</html>

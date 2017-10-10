@@ -1,0 +1,91 @@
+<script type="text/javascript">
+    $(function(){
+        getMyCart1=function(){
+            $.post("{:U('Cart/getMyCart')}",'',function(res){
+                if(res.status==1){
+                    var str='';
+                    var num=0;
+                    var price=0;
+                    str+="<div class='mycart' style='font-size: 15px;color: #008800;height: 29px;'><b>我的购物车</b></div><ul class='p_s_list' style='overflow: auto;max-height: 272px;margin-bottom: 40px;'>";
+                    for(var i in res.info){
+                        num+=parseInt(res['info'][i]['buynum']);
+                        price+=(parseInt(res['info'][i]['buynum'])*parseInt(res['info'][i]['price']));
+                        str+="<li class='goodsList' style='height: 60px;'><div class='img' style='float: left;margin-left: 6px;'><img style='width:55px;height:55px' src='__ROOT__/Uploads/goodsPic/100/100_"+res['info'][i]['pic']+"'></div>";
+                        str+="<div class='content' style='float: left;width: 120px;height: 60px;'><p class='goodsNames' style='float: left;margin-left: 6px;color: lightslategray;height: 22px'>产品名称：</p><p class='goodsName' style='float: left;margin-left: 9px;margin-top: 5px;height: 22px'>";
+                        str+="<a href='{:U('Home/Detail/detail')}?id="+res['info'][i]['id']+"' title="+res['info'][i]['goodsname']+">";
+                        str+=res['info'][i]['goodsname'].substring(0,9);
+                        str+=" </a></p></div>";
+                        str+="<div class='Operations' style='float: right;height: 60px;'> <p class='Price' style='color: lightslategray;height: 22px'>￥<span class='singlePrice'>";
+                        str+=res['info'][i]['price'];
+                        str+="</span>   x   <span class='buyNums1'>";
+                        str+=res['info'][i]['buynum'];
+                        str+="</span><p><a class='del1' onclick='delCart("+res['info'][i]['id']+");' style='cursor: pointer'>移除</a></p></div> </li><hr/>";
+                    }
+                    str+="<ul/>";
+                    str+="<div class='Shopping_style' style='position: absolute;width: 280px;height: 34px;line-height: 34px;'><div class='p-total' style='float: left;margin-left: 5px'>共  <b>"+num+"</b> 件商品　共计￥<b class='tPrice' id='totalPrice2' style='font-size: 16px; color: #ff5555;'>"+price+"</b></div>";
+                    str+="<a href='{:U('Cart/cart')}' id='btn-payforgoods1' class='Shopping' style='height:22px;line-height:22px;font-size:10px;margin-top:10px;margin-right:10px;float:right;background-color:#008800;color:#fff0f0;border-radius:2px'>去购物车结算</a></div>";
+                    $("#cartGoods").html(str);
+                    $("#cartBox-num").text(num);
+                }else{
+                    var str='';
+                    str+="<div class='message' style='height: 83px;'><b></b>购物车中还没有商品，赶紧选购吧！</div>";
+                    $("#cartGoods").html(str);
+                    $("#cartBox-num").text(0);
+                }
+            })
+        }
+        getMyCart1();
+    });
+</script>
+<div class="fixedBox">
+    <ul class="fixedBoxList">
+        <if condition="isset($_SESSION['ybc_id'])">
+            <li class="fixeBoxLi user"><a href="{:U('UserCenter/usercenter')}"> <span class="fixeBoxSpan"></span> <strong>用户</strong></a> </li>
+            <else/>
+            <li class="fixeBoxLi user"><a href="{:U('Login/login')}"> <span class="fixeBoxSpan"></span> <strong>用户</strong></a> </li>
+        </if>
+
+        <li class="fixeBoxLi cart_bd" style="display:block;" id="cartboxs">
+            <p class="good_cart" id="cartBox-num">0</p>
+            <a href="{:U('Cart/cart')}"><span class="fixeBoxSpan"></span> <strong>购物车</strong></a>
+            <div class="cartBox" id="cartGoods">
+                <span class="mycart"><b>我的购物车</b></span>
+                <div class="message">购物车内暂无商品，赶紧选购吧</div>
+            </div>
+        </li>
+
+        <li class="fixeBoxLi Service "> <span class="fixeBoxSpan"></span> <strong>客服</strong>
+            <div class="ServiceBox">
+                <dl onclick="javascript:;">
+                    <dt><img src="__ROOT__/Uploads/public/kefu1.png" width="60" height="60"></dt>
+                    <dd><strong>QQ客服1</strong>
+                        <p class="p1">9:00-22:00</p>
+                        <p class="p2"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=781075774&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:781075774:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></p>
+                    </dd>
+                </dl>
+                <dl onclick="javascript:;">
+                    <dt><img src="__ROOT__/Uploads/public/kefu1.png" width="60" height="60"></dt>
+                    <dd><strong>QQ客服2</strong>
+                        <p class="p1">9:00-22:00</p>
+                        <p class="p2"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=872233743&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:872233743:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></p>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+
+        <li class="fixeBoxLi code cart_bd " style="display:block;" id="cartbox">
+            <span class="fixeBoxSpan"></span> <strong>微信</strong>
+            <div class="cartBox">
+                <div class="QR_code">
+                    <p><img src="__ROOT__/Uploads/public/erweima.png" width="150px" height="150px" style=" margin-top:10px;" /></p>
+                    <p>微信扫一扫，关注我们</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="fixeBoxLi Home" id="collectLi">
+            <a href="{:U('UserCenter/myCollect')}"> <span class="fixeBoxSpan"></span> <strong>收藏</strong></a>
+        </li>
+        <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan"></span> <strong>返回顶部</strong> </li>
+    </ul>
+</div>

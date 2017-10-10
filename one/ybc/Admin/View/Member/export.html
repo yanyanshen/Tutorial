@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 11">
+</head>
+<body>
+<table border=1 cellpadding=0 cellspacing=0 width="100%" >
+    <tr>
+        <td colspan="7" align="center">
+            <h2>会员信息表</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style='width:100pt' align="center">编号</td>
+        <td style='width:100pt' align="center">ID</td>
+        <td style='width:100pt' align="center">用户名</td>
+        <td style='width:100pt' align="center">手机号</td>
+        <td style='width:100pt' align="center">上次登录时间</td>
+        <td style='width:100pt' align="center">上次登录IP</td>
+        <td style='width:100pt' align="center">当前积分</td>
+        <td style='width:100pt' align="center">历史总积分</td>
+    </tr>
+
+    <volist name="info" id="val" key="k">
+    <tr>
+        <td align="center">{$k}</td>
+        <td  align="center">{$val.id}</td>
+        <td  align="center">{$val.username}</td>
+        <td  align="center">{$val.mobile}</td>
+        <td  align="center">{$val.lasttime|date="Y-m-d H:i:s",###}</td>
+        <td  align="center">{$val.lastip}</td>
+        <td  align="center">{$val.points}</td>
+        <td  align="center">{$val.totalpoints}</td>
+    </tr>
+    </volist>
+</table>
+</body>
+</html>

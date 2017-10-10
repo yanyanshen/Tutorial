@@ -1,0 +1,30 @@
+
+    <table class="tablelist">
+            <thead>
+            <tr>
+                <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+                <th>品牌logo</th>
+                <th>品牌名称</th>
+                <th>添加时间</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+        <tbody>
+        <volist name="list" id="val" key="k">
+            <tr>
+                <td>{$k+$firstrow}</td>
+                <td><img src="__ROOT__/Uploads/brandsPic/logopic/100_{$val['pic']}" alt=""/></td>
+                <td>{$val['brandname']}</td>
+                <td>{$val['addtime']|date="Y-m-d H:s:i",###}</td>
+                <td>{$val['active']==0?'下架':'展示'}</td>
+                <td><a  onclick="javascript:active({$val['id']});" style="cursor: pointer"   class="tablelink">{$val['active']==0?'展示':'下架'}</a>   |  <a onclick="javascript:delet({$val['id']})" style="cursor: pointer" class="tablelink">删除</a></td>
+            </tr>
+        </volist>
+    </table>
+        <div class="pagin">
+            <div class="message">共<i class="blue">{$count}</i>条记录，当前显示第&nbsp;<i class="blue">{$firstrow/3+1}&nbsp;</i>页</div>
+            <ul class="paginList">
+                <li class="pag">{$page}</li>
+            </ul>
+        </div>

@@ -1,0 +1,35 @@
+<ul>
+<volist name="point" id="v">
+    <div class="Integral_Number">你的总积分：<b>{$v.totalpoints}分</b></div>
+    <div class="Integral_Number">你当前的积分：<b>{$v.points}分</b></div>
+</volist>
+    <empty name="integralList">
+        <span style="color: red;font-size: 16px;width: 100px;margin-left:400px ">暂时没有数据</span>
+        <else/>
+<table>
+    <thead>
+    <tr>
+        <td>积分获取订单号</td>
+        <td>订单金额</td>
+        <td>积分</td>
+        <td>获取日期</td>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="integralList" id="val">
+        <tr>
+            <td>{$val.ordersyn}</td>
+            <td>￥{$val.orderprice}</td>
+            <td>{$val.points}分</td>
+            <td>{$val.addtime|date='Y-m-d H:i:s',###}</td>
+        </tr>
+    </volist>
+
+    </tbody>
+</table>
+<div>
+    <div class="message">共<i>{$count}</i>条记录，当前显示第&nbsp;<i style="color: deepskyblue">{$firstRow/5+1}&nbsp;</i>页</div>
+    <div class="page" onclick="search()" style="float:right;">{$page}</div>
+</div>
+        </empty>
+</ul>

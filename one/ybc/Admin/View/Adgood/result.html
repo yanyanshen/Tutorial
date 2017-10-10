@@ -1,0 +1,59 @@
+
+<table class="tablelist">
+    <thead>
+    <tr>
+        <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+        <th>商品图片</th>
+        <th>广告商品名称</th>
+        <th>商品分类</th>
+        <th>广告分类</th>
+        <th>品牌</th>
+        <th>市场价格</th>
+        <th>网站价格</th>
+        <th>库存数量</th>
+        <th>规格</th>
+        <th>状态</th>
+        <th>添加时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <volist name="list" id="val" key="k">
+
+        <tr>
+            <td>{$k+$firstRow}</td>
+            <td><img src="__ROOT__/Uploads/goodsPic/100/100_{$val.pic}" alt=""/></td>
+            <td>{$val.goodsname}</td>
+            <td>{$val.category}</td>
+            <td>{$val.adcate}</td>
+            <td>{$val.brandname}</td>
+            <td>￥{$val.oldprice}</td>
+            <td>￥{$val.price}</td>
+            <td>{$val.num}</td>
+            <td>{$val.weight}(克或者个)</td>
+            <td>{$val['active']==1?'上架':'下架'}</td>
+            <td>{$val.addtime|date='Y-m-d H:i:s',###}</td>
+            <td><a href="{:U('edit')}?id={$val.id}" class="tablelink">编辑</a>
+                <a onclick="javascript:active({$val['id']});" class="tablelink" style="cursor: pointer;">{$val['active']==1?'下架':'上架'}</a>
+                <a onclick="javascript:del({$val['id']})" class="tablelink" style="cursor: pointer;">删除</a></td>
+        </tr>
+    </volist>
+
+    <empty name="list">
+        <tr align="center">
+            <td colspan="13">没有查询到相关商品...</td>
+        </tr>
+    </empty>
+
+    </tbody>
+</table>
+
+<div class="pagin">
+    <div class="message">共<i class="blue">{$count}</i>条记录，当前显示第&nbsp;<i class="blue">{$firstRow/4+1}&nbsp;</i>页</div>
+    <ul class="paginList">
+        <li class="pag">
+            {$page}
+        </li>
+    </ul>
+</div>

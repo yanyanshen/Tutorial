@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__STATIC__/css/css.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="__STATIC__/images/logo.ico" media="screen" />
+<script src="__STATIC__/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="__STATIC__/js/slide.js"></script>
+<script src="__STATIC__/js/common_js.js" type="text/javascript"></script>
+<script src="__STATIC__/js/jquery.foucs.js" type="text/javascript"></script>
+<script src="__STATIC__/js/layer/layer.js" type="text/javascript"></script>
+<title>用户消息</title>
+</head>
+<style type="text/css">
+    .pag a,.pag span{
+        display: inline-block;
+        width:25px;
+        height:25px ;
+        padding: 5px;
+        margin: 5px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 25px;
+        background: #f0ead8;
+        border-radius: 5px;
+        color:#000000;
+        border: 1px solid #c2d2d7;
+    }
+    .pag a:hover{
+        background: #ccc;
+        color:#000000;
+    }
+    .pag span{
+        background: #15fffa;
+        color: #ccc;
+        font-weight: bold;
+    }
+    .del:hover{
+        color:#00a4ac;
+    }
+
+</style>
+<script type="text/javascript">
+
+</script>
+<body>
+<!--logo和搜索样式-->
+<include file="Public/header"/>
+
+<!--用户中心(积分)-->
+<div class="user_style clearfix" id="user">
+<div class="user_title"><em></em>用户中心</div>
+  <div class="clearfix user" >
+  <!--左侧菜单栏样式-->
+      <div class="user_left">
+          <if condition="!isset($_SESSION['avatar1'])">
+              <div class="user_info">
+                  <div class="Head_portrait"><a href="{:U('UserCenter/usercenter')}"><img src="__STATIC__/images/deavatar.jpg"  style="width:100px; height:100px;border-radius: 50px"/></a><!--头像区域--></div>
+                  <div class="user_name">用户{$Think.session.ybc_username}<!--<a href="#">[个人资料]</a>--></div>
+              </div>
+              <else/>
+              <div class="user_info">
+                  <div class="Head_portrait"><a href="{:U('UserCenter/usercenter')}"><img src="__ROOT__/Uploads/avatar/100/100_{$Think.session.avatar1}"  width="100px" height="100px"/></a><!--头像区域--></div>
+                  <div class="user_name">用户{$Think.session.ybc_username}<!--<a href="#">[个人资料]</a>--></div>
+              </div>
+          </if>
+          <ul class="Section">
+              <li><a href="{:U('UserCenter/userinfo')}"><em></em><span>个人信息</span></a></li>
+              <li><a href="{:U('UserCenter/changepassword')}"><em></em><span>修改密码</span></a></li>
+              <li><a href="{:U('Order/myOrderList')}"><em></em><span>我的订单</span></a></li>
+              <li><a href="{:U('UserCenter/myComment')}"><em></em><span>我的评价</span></a></li>
+              <li><a href="{:U('UserCenter/userintegral')}"><em></em><span>我的积分</span></a></li>
+              <li><a href="{:U('UserCenter/usermsg')}"><em></em><span>我的消息</span></a></li>
+              <li><a href="{:U('UserCenter/myCollect')}"><em></em><span>我的收藏</span></a></li>
+              <li><a href="{:U('Order/myAddress')}"><em></em><span>收货地址管理</span></a></li>
+              <li><a href="{:U('Order/history')}"><em></em><span>已购买的商品</span></a></li>
+          </ul>
+      </div>
+    <!--右侧内容样式-->
+     <div class="right_style r_user_style">
+      <div class="user_Borders">
+      <div class="title_name">
+        <span class="name">用户消息</span>
+       </div>
+       <!--积分样式-->
+       <div class="user_integral_style slideTxtBox">
+         <div class="bd">
+             <ul class="htm1">
+                     <div class="Integral_Number">你的消息：<b>{$all}&nbsp;条</b></div>
+                     <div class="Integral_Number">当前未读消息：<b>{$unNum}&nbsp;条</b></div>
+                 <table>
+                     <thead>
+                     <tr>
+                         <td>标题</td>
+                         <td>来源</td>
+                         <td>时间</td>
+                         <td>状态</td>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     <volist name="info" id="val">
+                         <tr>
+                             <td><a href="{:U('UserCenter/msg1',array('id'=>$val['id']))}" title="{$val.title}" style="column-rule: #cccccc;;cursor: pointer;">{$val.title|truncate_cn=30,'',0}...</a></td>
+                             <td>{$val.from}</td>
+                             <td>{$val.time|date='Y-m-d H:i:s',###}</td>
+                             <if condition="$val['status'] eq 0">
+                                 <td><a href="{:U('UserCenter/msg1',array('id'=>$val['id']))}" style="color:red;cursor: pointer;">未读/点击查看</a></td>
+                                 <else/>
+                                 <td><a href="{:U('UserCenter/msg1',array('id'=>$val['id']))}" style="column-rule: #cccccc;;cursor: pointer;">已读/点击查看</a></td>
+                             </if>
+                         </tr>
+                     </volist>
+
+                     </tbody>
+                 </table>
+                 <div>
+                     <div class="message">共<i>{$count}</i>条记录，当前显示第&nbsp;<i style="color: deepskyblue">{$firstRow/4+1}&nbsp;</i>页</div>
+                     <div class="pag"  style="float:right;">{$page}</div>
+                 </div>
+             </ul>
+         </div>
+       </div>
+       <script>jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+      </div>
+     </div>    
+  </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#getintegral').click(function(){
+            $.get("{:U('userintegral')}", function (res) {
+                $('.bd').html(res);
+            })
+        })
+        $('#useintegral').click(function(){
+            $.get("{:U('userintegral1')}", function (res) {
+                $('.bd').html(res);
+            })
+        })
+    })
+    function search1(id) {
+        var id = id ? id : 1;
+        $.get("{:U('userintegral1')}", {"p": id}, function (res) {
+            $('.bd').html(res);
+        })
+    }
+    function search(id) {
+        var id = id ? id : 1;
+        $.get("{:U('userintegral')}", {"p": id}, function (res) {
+            $('.bd').html(res);
+        })
+    }
+</script>
+<include file="Public/footer"/>
+</body>
+</html>

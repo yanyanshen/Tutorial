@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 11">
+</head>
+<body>
+<table border=1 cellpadding=0 cellspacing=0 width="100%" >
+    <tr>
+        <td colspan="7" align="center">
+            <h2>文章一览表</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style='width:100pt' align="center">编号</td>
+        <td style='width:100pt' align="center">文章标题</td>
+        <td style='width:100pt' align="center">作者</td>
+        <td style='width:100pt' align="center">标签</td>
+        <td style='width:100pt' align="center">发布时间</td>
+        <td style='width:100pt' align="center">文章简介</td>
+        <td  align="center">文章内容</td>
+    </tr>
+
+    <volist name="info" id="val" key="k">
+    <tr>
+        <td align="center">{$k}</td>
+        <td  align="center">{$val.title}</td>
+        <td  align="center">{$val.author}</td>
+        <td  align="center">{$val.teatag}</td>
+        <td  align="center">{$val.dateline|date="Y-m-d H:i:s",###}</td>
+        <td  align="center">{$val.descript}</td>
+        <td  align="center">{$val.content}</td>
+    </tr>
+    </volist>
+</table>
+</body>
+</html>

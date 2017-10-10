@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表页</title>
+<link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__STATIC__/js/jQuery-1.8.2.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+
+    <style type="text/css">
+        .pag a,.pag span{
+            display: inline-block;
+            width:25px;
+            height:25px ;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 25px;
+            background: #f0ead8;
+            border-radius: 5px;
+            color:#000000;
+            border: 1px solid #c2d2d7;
+        }
+        .pag a:hover{
+            background: #ccc;
+            color:#000000;
+        }
+        .pag span{
+            background: #15fffa;
+            color: #ccc;
+            font-weight: bold;
+        }
+        .del:hover{
+            color:#00a4ac;
+        }
+
+    </style>
+
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+<script type="text/javascript">
+    $(function(){
+        active=function(id){
+            layer.confirm('你确定要删除这篇文章吗？',{
+                title:'温馨提示',
+                btn:['确定','取消']
+            },function(){
+                $.post("{:U('del')}",{id:id},function(res) {
+                    layer.msg(res.info,{icon:1,time:1500},function(){
+                        location=window.location.href;
+                    })
+                })
+                })
+            };
+
+        $("#export").click(function(){
+            layer.confirm("确认导出?",{
+                btn:['确认','取消'],
+                title:"温馨提示"
+            },function(){
+                layer.msg("正在导出",{icon:6,time:2000},function(){
+                    location="{:U('export')}";
+                })
+            })
+        })
+
+
+
+    })
+</script>
+</head>
+<body>
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">文章管理</a></li>
+    <li><a href="#">文章列表</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    <div id="usual1" class="usual">
+
+
+
+  	<div id="tab2" class="tabson">
+     <form action="{:U('index')}" method="get">
+    <ul class="seachform">
+    <li><label>文章查询</label><input name="keyword" type="text" class="scinput" value="{$keyword}"/></li>
+    <li><label>查询类型</label>
+    <div class="vocation">
+    <select class="select3" name="way">
+
+        <switch name="way">
+            <case value="title">
+                <option  value="title" selected>按标题</option>
+                <option  value="author">按作者</option>
+                <option  value="teatag">按标签</option>
+                <option  value="content">按内容</option>
+            </case>
+            <case value="author">
+                <option  value="title" >按标题</option>
+                <option  value="author" selected>按作者</option>
+                <option  value="teatag">按标签</option>
+                <option  value="content">按内容</option>
+            </case>
+            <case value="teatag">
+                <option  value="title" >按标题</option>
+                <option  value="author">按作者</option>
+                <option  value="teatag" selected>按标签</option>
+                <option  value="content">按内容</option>
+            </case>
+            <case value="content">
+                <option  value="title" >按标题</option>
+                <option  value="author">按作者</option>
+                <option  value="teatag">按标签</option>
+                <option  value="content" selected>按内容</option>
+            </case>
+            <default/>
+            <option  value="title" >按标题</option>
+            <option  value="author">按作者</option>
+            <option  value="teatag">按标签</option>
+            <option  value="content">按内容</option>
+        </switch>
+
+    </select>
+    </div>
+    </li>
+    <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="查询"/></li>
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" id="export" value="导出文章表"/></li>
+    </ul>
+    </form>
+
+        <div class="ybfy">
+
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+        <th>标题</th>
+        <th>作者</th>
+        <th>标签</th>
+        <th>文章简介</th>
+        <th>发布时间</th>
+        <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        
+        <volist name="list" id="val" key="k" >
+
+        <tr>
+        <td>{$k+$firstRow}</td>
+        <td>{$val.title}</td>
+        <td>{$val.author}</td>
+        <td>{$val.teatag}</td>
+        <td>{$val.descript|truncate_cn=100,'',0}......</td>
+        <td>{$val.dateline|date="Y-m-d H:i:s",###}</td>
+        <td><a href="{:U('modify')}?id={$val['id']}" class="tablelink">修改</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a onclick="javascript:active({$val['id']});"   style="cursor: pointer" class="tablelink">删除</a></td>
+        </tr>
+        </volist>
+
+        <empty name="list">
+            <tr align="center">
+                <td colspan="7">没有查询到所需条件的相关文章</td>
+            </tr>
+        </empty>
+        
+
+    
+        </tbody>
+    </table>
+    
+       <div class="pagin">
+        <div class="message">共<i class="blue">{$count}</i>条记录，当前显示第&nbsp;<i class="blue">{$firstRow/4+1}&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="pag">{$page}</li>
+        </ul>
+    </div>
+
+     </div>
+
+    </div>  
+       
+	</div> 
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+
+    function search(id) {
+        var keywords = $("input[name='keywords']").val();
+        var way=$("select[name='wany']").val();
+
+        var id = id ? id : 1;
+        $.get("{:U('index')}", {"p": id, "keywords": keywords,"way":way}, function (res) {
+            $('.ybfy').html(res);
+        })
+    }
+
+
+	</script>
+    
+    
+    
+    
+    
+    </div>
+
+
+</body>
+
+</html>

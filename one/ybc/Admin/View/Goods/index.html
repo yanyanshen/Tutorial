@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表页</title>
+<link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__STATIC__/js/jQuery-1.8.2.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/layer/layer.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="__ROOT__/Public/Admin/images/logo.ico" media="screen" />
+
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+    <style type="text/css">
+        .pag a,.pag span{
+            display: inline-block;
+            width:24px;
+            height:20px ;
+            border-radius: 2px;
+            padding: 5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 20px;
+            background: #D4E7F0;
+            color:#000000;
+            border: 1px solid #c2d2d7;
+        }
+        .pag a:hover{
+            background: #7AC4DD;
+            color:#000000;
+        }
+        .pag span{
+            background: #7AC4DD;
+            color: #000000;
+            font-weight: bold;
+        }
+
+
+    </style>
+
+<script type="text/javascript">
+
+
+    var active=function(id){
+        $.post("{:U('Goods/show')}",{id:id},function(res){
+
+            layer.msg(res.info,{time:1000,icon:1},function(){
+                location.reload();
+            });
+
+        },'json')
+    }
+</script>
+    <script type="text/javascript">
+
+    $(function(){
+        delet=function(id){
+            var str="确认删除？"
+            layer.confirm(str,{btn:['确认','取消'],title:['提示信息']},function(){
+                $.post("{:U('Goods/delete')}",{id:id},function(res){
+                    if(res.status==1){
+                        layer.msg(res.info,{time:1000,icon:1},function(){
+                            location.reload();
+                        })
+                    }else{
+                        layer.msg(res.info,{icon:2})
+                    }
+                })
+            },function(){
+
+            })
+        }
+        })
+    </script>
+    <script type="text/javascript">
+          $(function(){
+                 $('#Excel').click(function(){
+                     $.get("{:U('Goods/excel')}",'',function(res){
+                           if(res.status==1){
+                                  window.open("{:U('Goods/excel')}?keywords={$keywords}&active={$active}")
+                           }else{
+                                layer.msg(res.info,{icon:2})
+                           }
+                     })
+                 })
+          })
+    </script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">商品列表</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+    <div id="usual1" class="usual"> 
+    
+  
+     
+  	<div id="tab2" class="tabson">
+    
+    
+    <ul class="seachform">
+        <form action="{:U('Goods/index')}" method="get">
+     <li><label>商品名称查询</label><input name="keywords"  value="{$keywords}" type="text" class="scinput" /></li>
+        <li><label style="font-size: 13px">&nbsp;商品状态查询&nbsp;</label>
+        <div class="vocation">
+            <select class="select3" name="active">
+
+                <option value="2" {$active==2?"selected":""} > <span style="font-weight: bold">全部</span></option>
+                <option value="0" {$active==0?"selected":""} > <span style="font-weight: bold">下架商品</span></option>
+                <option value="1"  {$active==1?"selected":""} > <span style="font-weight: bold">在线商品</span></option>
+
+            </select>
+        </div>
+            </li>
+        <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="查询"/></li>
+            <li><label>&nbsp;</label><input  id="Excel" style="width: auto;padding:10px;" name="" type="button" class="scbtn" value="导出商品列表"/></li>
+    </form>
+
+    </ul>
+    
+    <div id="ybfy">
+        <empty name="goodslist">
+            <span style="font-size: 20px;font-weight: bold;">没有找到相关条件的数据</span>
+            <else />
+        <table class="tablelist">
+            <thead>
+            <tr>
+                <th>编号<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+                <th>商品ID</th>
+                <th>商品主图</th>
+                <th>商品名称</th>
+                <th>商品分类</th>
+                <th>商品品牌</th>
+                <th>市场价格</th>
+                <th>商城价格</th>
+                <th>商品规格</th>
+                <th>商品库存</th>
+                <th>添加时间</th>
+                <th>备注</th>
+                <th>状态</th>
+                <th>操作</th>
+                <th>编辑</th>
+            </tr>
+            </thead>
+            <tbody class="result">
+            <volist name="goodslist" id="val" key="k">
+                <tr>
+                    <td>{$k+$firstrow}</td>
+                    <td>{$val['id']}</td>
+                    <td><img src="__ROOT__/Uploads/goodsPic/100/100_{$val['pic']}" alt=""/></td>
+                    <td>{$val['goodsname']}</td>
+                    <td>{$val['path']}</td>
+                    <td>{$val['brandname']}</td>
+                    <td>{$val['oldprice']}</td>
+                    <td>{$val['price']}</td>
+                    <td>{$val['weight']}/g</td>
+                    <td>{$val['num']}</td>
+                    <td>{$val['addtime']|date="Y-m-d H:i:s",###}</td>
+                    <if condition="($val['group'] eq 1)">
+                        <td>团购商品</td>
+                        <elseif condition="($val['ad'] eq 1)"/>
+                        <td>广告商品</td>
+                        <else/>
+                        <td>无</td>
+                    </if>
+                    <td>{$val['active']==0?'下架':'展示'}</td>
+                    <td><a onclick="javascript:active({$val['id']});" style="cursor: pointer" class="tablelink">{$val['active']==0?'上架':'下架'}</a></td>
+                    <td><a href="{:U('Goods/edit')}?id={$val['id']}" class="tablelink">编辑</a>   |  <a onclick="javascript:delet({$val['id']})" style="cursor: pointer" class="tablelink">删除</a>  |
+                        <a class="tablelink" href="{:U('Group/publish',array('id'=>$val['id']))}">发布团购</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+       </table>
+        <div class="pagin">
+            <div class="message">共<i class="blue">{$count}</i>条记录，当前显示第&nbsp;<i class="blue">{$firstrow/5+1}&nbsp;</i>页</div>
+            <ul class="paginList">
+                <li class="pag">{$page}</li>
+            </ul>
+        </div>
+        </empty>
+    </div>
+
+    
+    </div>  
+       
+	</div> 
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+    
+    
+    
+    
+    
+    </div>
+    <script type="text/javascript">
+        function index(id) {
+            var id = id ? id : 1;
+            $.get("{:U('Goods/index')}", {"p": id}, function (res) {
+                $('#ybfy').html(res);
+            })
+        }
+    </script>
+
+</body>
+
+</html>

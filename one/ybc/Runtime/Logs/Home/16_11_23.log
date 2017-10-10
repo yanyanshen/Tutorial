@@ -1,0 +1,1169 @@
+[ 2016-11-23T17:15:02+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.6820s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:2.6472s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_article` [ RunTime:0.2670s ]
+SQL: SELECT * FROM `ybc_article` ORDER BY dateline desc LIMIT 0,8   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:1.6251s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 39 AND `active` = 1 ORDER BY addtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 41 AND `active` = 1 ORDER BY addtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_adcategory` [ RunTime:0.2200s ]
+SQL: SELECT * FROM `ybc_adcategory` WHERE `path` LIKE '1,6%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` IN ('6','') AND `active` = 1 ORDER BY addtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adcategory` WHERE `path` LIKE '1,4%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` IN ('4','') AND `active` = 1 ORDER BY addtime desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adcategory` WHERE `path` LIKE '1,42%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` IN ('42') AND `active` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 146 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 90 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 44 AND `active` = 1 ORDER BY addtime desc LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:1.0091s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `ybc_category` WHERE `active` = 1 AND `pid` = 0 LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:1.7731s ]
+SQL: SELECT * FROM `ybc_category` WHERE `active` = 1 AND `pid` = 0 LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:0.3150s ]
+SQL: SELECT `path` FROM `ybc_category` WHERE `id` = 26 AND `active` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `ybc_category` WHERE `path` LIKE '26%' AND `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `cid` IN ('26','31','32','33') AND `active` = 1 AND `num` <> 0 AND `group` = 0 AND `ad` = 0 ORDER BY salenum , addtime desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:2.2591s ]
+SQL: SELECT * FROM `ybc_category` WHERE `pid` = 26 AND `active` = 1 LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ybc_category` WHERE `pid` = 27 AND `active` = 1 LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `ybc_category` WHERE `id` = 27 AND `active` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `ybc_category` WHERE `path` LIKE '27%' AND `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `cid` IN ('27','34','35','36') AND `active` = 1 AND `num` <> 0 AND `group` = 0 AND `ad` = 0 ORDER BY salenum , addtime desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT `path` FROM `ybc_category` WHERE `id` = 44 AND `active` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `ybc_category` WHERE `path` LIKE '44%' AND `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `cid` IN ('44','45','46','48') AND `active` = 1 AND `num` <> 0 AND `group` = 0 AND `ad` = 0 ORDER BY salenum , addtime desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:0.7810s ]
+SQL: SELECT * FROM `ybc_category` WHERE `pid` = 44 AND `active` = 1 LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `active` = 1 AND `num` <> 0 ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `active` = 1 AND `num` <> 0 ORDER BY salenum desc LIMIT 0,5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\1407c3477b70c61ee97fc3b7446a54c5.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.268016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.268016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:15:03+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php_workspace\www\ybc\Project_ybc\ybc\Home\Controller\CartController.class.php 第 90 行.
+
+[ 2016-11-23T17:15:08+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/News/getNews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-23T17:15:08+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:15:08+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0080s ]
+
+[ 2016-11-23T17:15:09+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.8621s ]
+
+[ 2016-11-23T17:15:09+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/myOrderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:15:09+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:15:09+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:15:09+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:15:39+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:15:40+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:15:40+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:15:51+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_member` [ RunTime:0.5462s ]
+SQL: SELECT `id`,`username`,`password`,`lasttime`,`lastip`,`active`,`avatar` FROM `ybc_member` WHERE (  `username` = 'shoa' OR `mobile` = 'shoa' ) AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.9933s ]
+SQL: SELECT `id`,`addtime` FROM `ybc_order` WHERE `orderstatus` = 1 AND `mid` = 23  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT g.changetime FROM ybc_order_goods og INNER JOIN ybc_goods g on og.gid=g.id  WHERE `oid` = '131'  [ RunTime:0.0000s ]
+SQL: SELECT g.changetime FROM ybc_order_goods og INNER JOIN ybc_goods g on og.gid=g.id  WHERE `oid` = '132'  [ RunTime:0.0000s ]
+SQL: SELECT g.changetime FROM ybc_order_goods og INNER JOIN ybc_goods g on og.gid=g.id  WHERE `oid` = '163'  [ RunTime:0.0010s ]
+SQL: UPDATE `ybc_member` SET `lasttime`='1479892550',`lastip`='172.16.17.223' WHERE `username` = 'shoa' OR `mobile` = 'shoa' OR `id` = 23 [ RunTime:0.0510s ]
+
+[ 2016-11-23T17:15:51+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:02+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.8921s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_article` [ RunTime:0.9851s ]
+SQL: SELECT * FROM `ybc_article` ORDER BY dateline desc LIMIT 0,8   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.9971s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 39 AND `active` = 1 ORDER BY addtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 41 AND `active` = 1 ORDER BY addtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_adcategory` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ybc_adcategory` WHERE `path` LIKE '1,6%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` IN ('6','') AND `active` = 1 ORDER BY addtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adcategory` WHERE `path` LIKE '1,4%'  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` IN ('4','') AND `active` = 1 ORDER BY addtime desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adcategory` WHERE `path` LIKE '1,42%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` IN ('42') AND `active` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.9941s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 146 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 90 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 44 AND `active` = 1 ORDER BY addtime desc LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:1.9921s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:1.6531s ]
+SQL: SELECT * FROM `ybc_category` WHERE `active` = 1 AND `pid` = 0 LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ybc_category` WHERE `active` = 1 AND `pid` = 0 LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:1.0031s ]
+SQL: SELECT `path` FROM `ybc_category` WHERE `id` = 26 AND `active` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `ybc_category` WHERE `path` LIKE '26%' AND `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `cid` IN ('26','31','32','33') AND `active` = 1 AND `num` <> 0 AND `group` = 0 AND `ad` = 0 ORDER BY salenum , addtime desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:1.0071s ]
+SQL: SELECT * FROM `ybc_category` WHERE `pid` = 26 AND `active` = 1 LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:1.3041s ]
+SQL: SELECT * FROM `ybc_category` WHERE `pid` = 27 AND `active` = 1 LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `ybc_category` WHERE `id` = 27 AND `active` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `ybc_category` WHERE `path` LIKE '27%' AND `active` = 1  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `cid` IN ('27','34','35','36') AND `active` = 1 AND `num` <> 0 AND `group` = 0 AND `ad` = 0 ORDER BY salenum , addtime desc LIMIT 0,8   [ RunTime:0.0020s ]
+SQL: SELECT `path` FROM `ybc_category` WHERE `id` = 44 AND `active` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `ybc_category` WHERE `path` LIKE '44%' AND `active` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `cid` IN ('44','45','46','48') AND `active` = 1 AND `num` <> 0 AND `group` = 0 AND `ad` = 0 ORDER BY salenum , addtime desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_category` [ RunTime:0.1660s ]
+SQL: SELECT * FROM `ybc_category` WHERE `pid` = 44 AND `active` = 1 LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `active` = 1 AND `num` <> 0 ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_goods` WHERE `active` = 1 AND `num` <> 0 ORDER BY salenum desc LIMIT 0,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\1407c3477b70c61ee97fc3b7446a54c5.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-23T17:16:02+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+
+[ 2016-11-23T17:16:02+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:03+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.5830s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:04+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.9771s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:04+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.8751s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:06+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/News/getNews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:09+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/myOrderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.3290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ybc_order o INNER JOIN ybc_order_status s ON o.orderstatus=s.id  WHERE `mid` = '23' ORDER BY addtime desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT o.id AS `id`,`ordersyn`,`orderstatus`,`orderprice`,`mnext`,`mid`,`addtime`,`paymethod`,`address_id`,`status` FROM ybc_order o INNER JOIN ybc_order_status s ON o.orderstatus=s.id  WHERE `mid` = '23' ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\21046b94e98e7cdbbabdc7b7d1259f25.php 第 146 行.
+NOTIC: [8] Undefined variable: status D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\21046b94e98e7cdbbabdc7b7d1259f25.php 第 401 行.
+NOTIC: [8] Undefined variable: status D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\21046b94e98e7cdbbabdc7b7d1259f25.php 第 402 行.
+NOTIC: [8] Undefined variable: status D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\21046b94e98e7cdbbabdc7b7d1259f25.php 第 403 行.
+NOTIC: [8] Undefined variable: status D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\21046b94e98e7cdbbabdc7b7d1259f25.php 第 404 行.
+NOTIC: [8] Undefined variable: status D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\21046b94e98e7cdbbabdc7b7d1259f25.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:11+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:1.8521s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:12+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.6910s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:14+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:1.9591s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:14+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.7420s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:16+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.9521s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.9951s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-23T17:16:19+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:1.0071s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:2.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:20+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-23T17:16:22+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:1.8881s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:24+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:1.9691s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:27+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:1.9661s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:1.0031s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:27+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/myServices.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:0.7370s ]
+SQL: SELECT s.id,`goodsname`,`pic`,`price`,`buynum`,`applytime`,`type`,`status` FROM ybc_services s INNER JOIN ybc_history h on s.hid=h.id  WHERE s.mid = '23'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 137 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 409 行.
+NOTIC: [8] Undefined index: gid D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\876c9329a8b2b7a0ddccf0055c9fbc47.php 第 410 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:28+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.8560s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0030s ]
+
+[ 2016-11-23T17:16:28+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:0.0830s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:29+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.9851s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:32+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:2.1891s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0060s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-11-23T17:16:35+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/detail.html?id=41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:2.9352s ]
+SQL: SELECT * FROM ybc_services s INNER JOIN ybc_history h on s.hid=h.id INNER JOIN ybc_member m on s.mid=m.id  WHERE s.id = '41' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:16:40+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/detail.html?id=43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:0.7560s ]
+SQL: SELECT * FROM ybc_services s INNER JOIN ybc_history h on s.hid=h.id INNER JOIN ybc_member m on s.mid=m.id  WHERE s.id = '43' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:16:46+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/detail.html?id=44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:4.1502s ]
+SQL: SELECT * FROM ybc_services s INNER JOIN ybc_history h on s.hid=h.id INNER JOIN ybc_member m on s.mid=m.id  WHERE s.id = '44' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:16:56+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.3830s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:56+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.0680s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:56+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:56+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0060s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:56+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.0100s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:57+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/chkHis.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:0.1320s ]
+SQL: SELECT * FROM `ybc_services` WHERE `hid` = 138 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:58+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/erGoods.html?hid=138&type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ybc_history` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\f4c38e969b07aba80d2100d9abeb98d1.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:16:59+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0360s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:59+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:59+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.0530s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:16:59+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.0040s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:17:12+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/service.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:1.2521s ]
+SQL: SELECT * FROM `ybc_services` WHERE `hid` = 138 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\php_workspace\www\ybc\Project_ybc\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\php_workspace\www\ybc\Project_ybc\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ybc_services` (`hid`,`type`,`reason`,`message`,`mid`,`applytime`) VALUES ('138','2','气温气温气温','气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温气温','23','1479892632') [ RunTime:0.0700s ]
+
+[ 2016-11-23T17:17:18+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/uploadPic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\php_workspace\www\ybc\Project_ybc\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:5.9413s ]
+SQL: UPDATE `ybc_services` SET `pic1`='58355e98a2373.jpg' WHERE `id` = 51 [ RunTime:0.0640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:19+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/uploadPic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\php_workspace\www\ybc\Project_ybc\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ybc_services` [ RunTime:0.7310s ]
+SQL: UPDATE `ybc_services` SET `pic2`='58355e9eaccc5.jpg' WHERE `id` = 51 [ RunTime:0.0700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-23T17:17:26+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:2.9592s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:4.2872s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:29+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.9261s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:1.7671s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:30+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.8340s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:33+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:1.9581s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:1.2191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-23T17:17:33+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Order/history.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_order` [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `ybc_history` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ybc_history` WHERE `mid` = 23 AND `active` = 1 ORDER BY buytime desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: keywords D:\php_workspace\www\ybc\Project_ybc\ybc\Runtime\Cache\Home\5c59023503588a772444d649c362f025.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getMyCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.0240s ]
+SQL: SELECT g.id,`price`,`goodsname`,`pic`,`buynum`,c.addtime as addtime FROM ybc_cart c INNER JOIN ybc_goods g on g.id=c.gid  WHERE `mid` = '23' ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:17:34+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_adgood` [ RunTime:0.1200s ]
+SQL: SELECT * FROM `ybc_adgood` WHERE `aid` = 46 AND `active` = 1 ORDER BY addtime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ybc_goods` [ RunTime:0.0330s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 134 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname` FROM `ybc_goods` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-23T17:17:35+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/Cart/getNum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ybc_cart` [ RunTime:0.2550s ]
+SQL: SELECT SUM(buynum) as num FROM `ybc_cart` WHERE ( mid=23 )  [ RunTime:0.0020s ]
+
+[ 2016-11-23T17:17:35+08:00 ] 172.16.17.223 /ybc/Project_ybc/index.php/Home/MemberMessage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ybc_member_message` [ RunTime:0.0630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ybc_member_message` WHERE `mid` = 23 AND `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
