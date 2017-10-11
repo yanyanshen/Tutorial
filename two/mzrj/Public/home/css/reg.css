@@ -1,0 +1,189 @@
+@charset "utf-8";
+*{margin:0;padding:0; font-family:"微软雅黑"; font-weight:normal; font-size:12px;}
+ul,li {list-style:none;}
+a {text-decoration:none;}
+a:link {color:#666;}
+a:visited {color:purple;}
+a:hover {color:#136dc6}
+img {border:0; vertical-align:top;}
+
+/*公共类标签*/
+.wid_1200 {width:1200px; margin:0 auto;} /*公共框架,内容在1200px内,居中*/
+.fl {float:left;}
+.fr {float:right;}
+.clearfix:after {content:"."; display:block; height:0; font-size:0; clear:both; visibility:hidden;}
+.clearfix {zoom:1;}
+
+/*header样式*/
+.header{height:124px; border-bottom:1px solid red; line-height:124px; margin-bottom:48px;}
+.header .logo{width:300px; height:124px; line-height:124px; text-align:right; position:relative; display: inline-block;}
+.header .logo img{float:left; width:164px; height:86px; position:absolute; top:17px; left:0;}
+.header .logo h3{font-size:24px;}
+.header span{text-align:right; font-size:14px; color:#666;}
+.header span a{font-size:14px; color:#f00;}
+
+/*注册模块样式*/
+.reg {width:1200px; height:auto;}
+.reg ul li {margin-bottom:5px; float:left; width:120px; height:60px; line-height:60px; text-align:center;}
+.reg ul li a{font-size:18px; color:#666;}
+.reg div {padding-left:252px; padding-top:36px; height:580px; border:1px solid #cbcbcb; display:none;}
+
+.password{margin-left:0px;}
+p{ font-size:14px; color:#666;}
+.reg div form p a{color:#666;}
+.reg div form p a:hover{color:#f00;}
+.reg div form p span.red{color:red; font-size:14px; margin:0 5px;}
+.reg div form p input.sex{height:14px; width:14px;}
+.reg div form p select#country{margin-left:14px;}
+.reg div form p input.yzm{width:104px;}
+.reg div form p input.check{height:15px; width:15px; margin-left:70px;}
+.reg div form p input.btn{width:250px; height:44px; line-height:44px; text-align:right; font-size:24px; background:#cc0001; color:#fff; margin-left:70px; margin-top:56px; border:1px solid #f00; cursor:pointer; transition:all 1s;}
+.reg div form p input.btn:hover{background:#f00;}
+.reg div form p input.inp{margin-top:2px;}
+.reg div form p input.yzm1{width:115px;}
+.reg div form p input.yzm2{font-size:14px; text-align:center; padding-left:0; cursor:pointer;}
+
+
+
+/*表单样式*/
+#msform {
+    margin-left: 50px;
+    text-align: center;
+    position: relative;
+
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 50px 30px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    height: 400px;
+    margin: 0 10%;
+    position: absolute;
+}
+
+/*隐藏所有除了第一个自定义字段*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*文本框*/
+#msform input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    color: #2C3E50;
+    margin-left:15px;
+    padding-left:10px;
+    font-size:16px;
+}
+
+.login {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 39px;
+    box-sizing: border-box;
+    color: #2C3E50;
+    margin-left:15px;
+    padding-left:10px;
+    font-size:17px;
+    width: 170px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+/*按钮*/
+#msform .action-button {
+    width: 170px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 30px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+/*进度条*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: #CCCCCC;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+
+/*进度条连接*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #CCC;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+}
+#progressbar li:first-child:after {
+    content: none;
+}
+
+/*绿色标记主动/完成步骤*/
+/*前一步,连接器的数量=绿色*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+
+
+input.error {border: 1px solid #EA5200;}
+label.error{
+    position: absolute;
+    right: 70px;
+    margin-top: 12px;
+    background:url("/PUBLIC/home/images/error.png") no-repeat 5px 2px;
+    padding-left: 18px;
+    color:#ff0300;
+    font-weight: bold;
+    font-size: 6px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+}
+label.ok {
+    background:url("/PUBLIC/home/images/ok.png") no-repeat 5px 2px;
+}

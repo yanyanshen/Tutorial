@@ -1,0 +1,114 @@
+/*公共CSS样式*/
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size:12px;
+    font-family: "微软雅黑";
+    color:#333;
+}
+
+img{
+    border:0;
+}
+
+ul,ol,li{
+    list-style-type:none;
+    outline: none;
+}
+
+.lf{
+    float: left;
+}
+
+.rf{
+    float:right;
+}
+
+/*清浮动*/
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+
+a{
+    font-size:12px;
+    color:#666;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#C91623;
+}
+.box{
+    width:1200px;
+    margin:0px auto;
+}
+.buyerbox{width: 998px;float: left;margin-left: 20px;}
+.orderproinfo{ border-bottom:2px solid #E8E8E8!important}
+.orderproinfo span{ font-size:14px; font-weight:700; display:inline-table; width:60px; text-align:center; height:35px; line-height:35px; border-bottom:2px solid #88C6E2; margin-bottom:-2px; color:#000!important;}
+.orderprodiv{ padding:12px 0 22px;width:40%; padding-right:5%; float:left;}
+.orderprodiv p{ height:35px; line-height:35px;}
+.orderprodiv p span{ color:#969696; display:inline-table; width:60px; text-align:right; padding-right:20px;}
+.orderinfomation{ width:100%; text-align:center}
+.orderinfomation thead tr{ height:35px; line-height:35px; color:#969696; font-weight:700;}
+.orderinfomation tbody td{ border:1px solid #E8E8E8;}
+.orderdetitle{ width:30%; padding:10px 0;}
+.orderdestate{ width:20%;}
+.orderdejiage{ width:10%;}
+.orderdesum{ width:10%;}
+.orderdepinjia{ width:20%;}
+.orderdezjia{ width:10%; }
+.orderdezjia02{font-weight:700; font-size:14px;}
+.orderdetitle img{ float:left;}
+.orderdetitle p{ float:left; width:415px; padding:10px;}
+.orderdetitle p a,.orderdestatguo{ color:#0088ff}
+.orderdetitle p a:hover{ color:#D80C18}
+.orderdestameiguo{ color:#F7980A}
+.ordersumer{font-size: 20px; background-color:#F7F7F7; border:1px solid #e8e8e8; text-align:right;padding-top:20px; padding-right:10px; height:50px; line-height:50px;}
+.orderred{ color:#f00;}
+/*
+#buy a{margin-left: 100px;font-size: 20px;width: 100px;height: 40px;background-color: red;}
+#buy a:hover{background-color: #FD040A}*/
+.ordersumer p{width: 200px;line-height: 70px;margin-left: 500px;}
+#buy{
+    height:80px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 80px;
+}
+
+#buy b{
+    font-weight: bold;
+    font-size: 24px;
+    color:red;
+}
+#buy a{
+    display: inline-block;
+    width: 100px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:8px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+#buy .tobuy{
+    background: #C40000;
+    color:#fff;
+    margin:0 50px;
+}
+#buy .tobuy:hover{
+    background: #ff0000;
+
+}

@@ -1,0 +1,155 @@
+/* CSS Document */
+
+
+.nav  .navCont .classify .menu{width:185px;  background:#eee;position: absolute; top:0 left:0;display: none;z-index: 99999;}
+.nav  .navCont .classify:hover .menu{display:block;}
+/*顶部导航 样式开始*/
+.top{height:34px; border-bottom: 1px solid #dbdbdb; background:#f2f2f2;}
+.top p{line-height: 35px;font-size: 14px; float: left;}
+.top ul li{float: left; line-height: 35px; margin-right: 10px; }
+.top ul li a{margin-right: 10px;}
+.top ul li a:hover{color: #cc0001;}
+.top ul li span{color: #cc0001;}
+/*顶部导航 样式结束*/
+.logo{height: 130px;}
+.logo img{float:left;padding-top: 20px;}
+.logo h3{padding-left: 40px; font-size: 20px; color: #000;line-height: 130px;}
+.logo ul{background: url(../images/jindu.jpg) no-repeat 0px 30px; }
+.logo ul li{float: left;padding-top: 100px;padding: 60px 0px; font-size: 14px;}
+.logo ul li.li01{padding: 60px 40px; color: #e9cbc9;}
+.logo ul li.li02 a{ color: #cc0001 ;}
+.logo ul li.li01 a,.logo ul li.li03 a{color: #cbcbcb;}
+.logo ul li.li02{padding: 60px 20px; color: #cc0001;}
+.logo ul li.li03{padding: 60px 28px; color: #cbcbcb;}
+/*.x{width: 100%; height: 1px; border-bottom:1px solid #cc0001;}
+*/i{width:100%;height:1px;background: #cc000a;display: inline-block;}
+
+
+.title{width: 1200px;}
+.title h3{font-size: 18px; line-height: 36px;color: #343434;}
+.car{width: 1200px; height: 755px;border:1px solid #cbcbcb;}
+/*收货人信息 样式开始*/
+.car .site{ border-bottom:1px solid #cbcbcb; height: 128px; position: relative;}
+.car .site .title h3{font-size: 16px; color: #343434; padding-left:50px;padding-top: 18px; }
+.car .site .title span{margin-top: 28px;}
+.car .site .title span a{font-size: 12px; color: #4271c1;margin-right: 50px; }
+.car .site .title span a:hover{color: #343434;}
+.car .site .siteCont{padding-left: 30px;}
+.car .site .siteCont p{display:inline-block; font-size: 14px; color: #343434;margin-left: 20px;line-height: 32px;text-align: center;}
+.car .site .siteCont p.p1{width: 300px;}
+.car .site .siteCont p.p3{width: 76px; background: #d1d1d1; transition: all 0.5s; }
+.car .site .siteCont p.p3:hover{background: #cc0001;}
+.car .site .siteCont p.p3:hover a{ color: #fff; }
+.car .site .siteCont h4{ margin-left: 20px; line-height: 40px; }
+.car .site .siteCont h4 a{color: #979797;}
+.car .site .siteCont h4 a:hover{color: #343434; }
+/*弹出层 开始样式*/
+.show{ position: absolute; top: 30px; right:50px; }
+.show a{font-size: 14px; color: #4271c1;}
+.show a:hover{color: #343434;}
+.overlay {position:fixed; top:0px; left:0px; width:100%; height:100%;background:#000; opacity: .5; filter:alpha(opacity=50);display:none;}
+.pop {position:fixed; width:500px; height:480px; background: #fff; top:40%;left:50%; margin-left:-250px; margin-top:-150px;display:none;}
+.pop h3 { height:50px; background:#cc0001; line-height: 50px; padding:0 10px; font-size: 18px; color: #fff;}
+.pop h3 a{float:right; color: #fff;}
+
+.pop h3 a img{-webkit-transition:all 0.3s;}
+.pop h3 a img:hover{transform:rotate(180deg);}
+
+.pop .form {width: 410px; margin-top: 30px;}
+.pop .form p{font-size: 16px; color: #343434; float: right; margin-top: 20px;}
+.pop .form p input{margin-left: 10px; padding-left: 10px; color: #666; font-size: 16px;}
+.pop .form p.p1{margin-top: 10px;margin-left: 120px; float: left; font-size: 12px;} 
+.pop .form p.p2{ padding-right: 10px; }
+.pop .form p.p2 span{margin-right: 5px;}
+ /*#shengfen1{margin-left: 5px;}*/
+ #shengfen{width: 65px ;height: 25px; margin-left:0px;}  
+.pop .form button{width: 150px; height: 35px;background: #cc0001; color:#fff; border:none; font-size: 14px; margin-top: 50px; cursor: pointer; transition: all 1s;} 
+ .pop .form button:hover{background: #f00;}
+/*弹出层 样式结束*/
+
+/*收货人信息 样式结束*/
+/*支付方式 样式开始*/
+.car .way{ border-bottom:1px solid #cbcbcb; height: 128px;}
+.car .way .title h3{font-size: 16px; color: #343434; padding-left:50px;padding-top: 18px; }
+.car .way .wayCont ul{margin-left: 50px;}
+.car .way .wayCont ul li{float: left;width: 112px;font-size: 14px; text-align: center;line-height: 30px;cursor: pointer; color: #343434; }
+.car .way .wayCont ul li.select{background: url(../images/jl_icon02.png) no-repeat -145px 0px;}
+/*支付方式 样式结束*/
+/*送货清单 样式开始*/
+.car .opt{border-bottom: 1px solid #cbcbcb;}
+.car .opt .optCont{margin-left: 50px;background: #f6f6f6; width:330px;height: 300px; }
+.car .opt .title h3{font-size: 16px; color: #343434; 
+	padding-left:50px;padding-top: 18px; }
+
+
+
+.car .opt h4{padding: 15px;}
+.car .opt .title span{margin-top: 28px;}
+.car .opt .title span a{font-size: 14px; color: #4271c1;margin-right: 50px; }
+.car .opt .title span a:hover{color: #343434;}
+
+.car .opt .optCont h4{font-size: 14px; font-weight: bold; color: #343434;}
+.car .opt .optCont ul li{float: left;width: 112px;font-size: 14px; text-align: center;line-height: 30px;margin: 10px 10px;cursor: pointer; color: #343434;  }
+.car .opt .optCont ul li.select{background: url(../images/jl_icon02.png) no-repeat -145px 0px;}
+.car .opt .goods01{width: 820px;height: 150px; background: #feeeee; border-bottom:1px solid #fff;}
+.car .opt .goods01 h3{padding-left: 140px; padding-top: 50px;padding-bottom: 100px;}
+.car .opt .goods01 p{float:left; margin-left: 80px; line-height: 171px;font-size: 14px;}
+.car .opt .goods01 p.p1 a span{ color: #cc0001; }
+.car .opt .goods01 p.p3 a{color: #979797;}
+.car .opt .goods02{width: 820px;height: 149px; background: #feeeee; }
+.car .opt .goods02 h3{padding-left: 140px; padding-top: 50px;padding-bottom: 100px; background: url(../images/dd_bg02.jpg) no-repeat 25px 40px;}
+.car .opt .goods02 p{float:left; margin-left: 80px; line-height: 171px;font-size: 14px;}
+.car .opt .goods02 p.p1 a span{ color: #cc0001; }
+.car .opt .goods02 p.p3 a{color: #979797;}
+/*送货清单 样式结束*/
+/*发票信息 样式开始*/
+.car .invoice .title h3{font-size: 16px; color: #343434; padding-left:50px;padding-top: 18px; }
+.car .invoice .invoiceCont{padding-left: 70px; padding-top: 20px;}
+.car .invoice .invoiceCont p{font-size: 16px;padding-right: 10px; padding-top: 5px;}
+#user{height: 30px;width: 260px;margin-right: 10px;}
+.car .invoice .invoiceCont span a{font-size: 14px; color: #cc0001;}
+/*发票信息 样式结束*/
+/*优惠劵 样式开始*/
+.privilege {height: 125px; position: relative; width: 1200px;}
+.privilege .privilegeCont{padding-top: 15px; width: 180px;}
+.privilege .privilegeCont p{ font-size: 14px; line-height: 30px; float:right; }
+/*.privilege .privilegeCont p.p2{padding-left: 103px;}
+.privilege .privilegeCont p.p3{padding-left: 108px;}*/
+.privilege .privilegeCont p span{color: #cc0001;}
+.privilege span a{font-size: 14px; color: #4271c1; margin-left:65px;margin-top: 20px; padding-left: 15px; position: absolute; background: url(../images/jl_icon02.png) no-repeat -5px -115px;}
+/*优惠劵 样式结束*/
+/*总金额 样式开始*/
+.rental{width: 1200px; height: 80px; background: #f1f1f1; border:1px solid #cbcbcb;}
+.rental .rentalCont{width: 600px; margin-right: 20px; }
+.rental .rentalCont h3{float: right;font-size: 18px;  line-height: 50px;}
+.rental .rentalCont h3 span{font-size: 24px; color: #cc0001;}
+.rental .rentalCont p{float: right; font-size: 14px;}
+/*总金额 样式结束*/
+/*提交按钮 样式开始*/
+.btn{width: 1200px;height: 220px;}
+.btn button{font-family: "微软雅黑";width:210px; height: 50px;margin-right: 50px;margin-top: 70px; background: #cc0001; border:none; font-size: 18px; color: #fff; cursor: pointer;transition:all 1s; }
+.btn button:hover{background: #f00;}
+
+/*提交按钮 样式结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

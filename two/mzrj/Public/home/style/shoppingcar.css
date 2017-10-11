@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*顶部样式*/
+.top{height: 34px; border-bottom: 1px solid #dbdbdb; background:#f2f2f2;}
+.top .topCont p{line-height: 35px;font-size: 14px; float: left;}
+.top ul li{float: left; line-height: 35px; margin-right: 10px; }
+.top ul li a{margin-right: 10px;}
+.top ul li a:hover{color: #cc0001;}
+.top ul li span{color: #cc0001;}
+.top .topCont li.l1 a{margin-right: 0px;}
+/*顶部导航 样式结束*/
+
+i{width:100%;height:1px;background: #cc000a;display: inline-block;}
+
+.logo{height: 130px;}
+.logo img{float:left;padding-top: 20px;}
+.logo h3{padding-left: 40px; font-size:20px; color: #000;line-height: 130px;font-family: "微软雅黑";}
+
+.logo ul{background: url(../images/nav_line.png) no-repeat 0px 35px;/*cursor:pointer;*/}
+.logo ul li{float: left;/*padding-top: 100px;*/padding: 60px 0px; font-size: 14px;}
+.logo ul li.li01{padding: 60px 40px;}
+.logo ul li.li01 a{ color: #cc0001 ;}
+.logo ul li.li02 a,.logo ul li.li03 a{color: #cbcbcb;}
+.logo ul li.li02{padding: 60px 20px; }
+.logo ul li.li03{padding: 60px 28px; }
+
+/*全部商品 样式 main*/
+.name p{font-size: 20px;margin-top: 9px;font-family: "微软雅黑";}
+.name .p1 {float: left;color:#dd0206;margin-left:2%; } 
+.name .p2 {float: right;color:#616161;margin-right:2%;}
+
+.gwc{ width:1200px;font-size: 16px;}
+/*td{border:1px solid red;}*/
+.gwc_tb1{ width:100%; background:#f1f1f1;; height:40px; margin-top:9px;margin-bottom:20px;}
+.tb1_td1{ width:35px; text-align:center; }
+.tb1_td2{ width:108px; }
+.tb1_td3{ width:350px;padding-left: 80px; }
+.tb1_td4{ width:97px; padding-left: 28px;}
+.tb1_td5{ width:118px; text-align:center;}
+
+.tb1_td6{ width:76px; padding-left: 68px;}
+.tb1_td7{ text-align:center;padding-left: 5px;}
+
+.gwc_tb2{ width:100%; border:1px solid #e5e5e5; padding-top:15px; padding-bottom:15px;}
+.tb2_td1{ width:35px; text-align:center;}
+.tb2_td2{ width:108px; }
+.tb2_td2 img{ width:80px; height:80px; }
+.tb2_td3{ width:350px;padding-left:110px;height: 100px}
+.tb2_td3 ,.tb2_td7 { font-size:14px; line-height:22px;}
+.tb2_td4{ width:124px; text-align:center;}
+.tb2_td5{ width:104px;  padding-left: 25px;}
+.tb2_td5 input{float:left;text-align:center;}
+.tb2_td6{ width:144px; text-align:center;}
+.tb2_td7{ text-align:center;}
+
+.gwc_tb2 a:hover{color:#dd0206;}
+
+/*全选复选框 样式*/
+.gwc_tb3{ width:100%; border:1px solid #d2d2d2; height:46px; margin-top:20px; }
+.gwc_tb3 tr td{font-size:14px;}
+.tb3_td2{ width:100px;text-align:center;}
+.tb3_td2 span{ color:#ff5500;font-size:14px; font-weight:bold; padding-left:5px; padding-right:5px; }
+.tb3_td3{ width:220px;text-align:center;}
+.tb3_td3 span{ font-size:18px; font-weight:bold;color:#ff5500;}
+#zong{color:#ff5500;font-size:14px; font-weight:bold;}
+.tb3_td4{ width:110px;text-align:center;}
+#jz1{font-size:18px;}
+#jz2{ width:100px; height:46px; line-height:46px; text-align:center; font-size:18px;color:#fff; background:#ee0000; display:block; float:right;}
+#jz2 a{color:#fff;}
+
+/*页数 样式*/
+.btn{text-align: center;width:760px;}
+.btn li{float:left;border:1px solid #d2d2d2;width:30px;padding:5px 0;margin:0 8px;}
+.btn li.l1{width:70px;}
+.btn li.l2{border:0;width:85px;}
+.btn li:hover{border:1px solid #cc000a;cursor:pointer;}
+a:link{color:#606060;text-decoration:none;}
+a:visited{color:#606060;text-decoration:none;}
+.btn li:hover a  {color:#cc000a;text-decoration:none;}
+.btn li.l2:hover a{color:#606060;}
+.btn li.l2:hover {border:0;cursor:pointer;}
+.btn li.active{border:1px solid #cc000a;}
+.btn li.active a{ color:#cc000a;}
+/*猜您喜欢 样式*/
+.guess{padding-top:40px;overflow: hidden;padding-bottom: 50px;}
+.guess .ul11{width:1188px;height:40px;background:#ee0000;color:#fff;font-size:24px;line-height:40px;padding-left:1%;margin-bottom:10px;}
+.guess .ul11 .l11{float:left;}
+.guess .ul11 .l12{float:right;font-size: 14px;padding-right:1%;}
+.guess .Cont{width:1616px;}
+.guess .Cont li{float:left;padding-right:12px;position: relative; transition:all,1s;}
+.guess li a{display: block; width:100%;height:100%; color:#fff; text-decoration: none;}
+.guess .Cont .txt {position: absolute; bottom:0px; left: 0; width:100%; z-index:10;display: none;text-align: center;background:rgba(0,0,0,0.6);width:190px;height:50px;padding-top: 20px;line-height: 20px;}
+.guess .Cont li:hover{box-shadow: 0px 5px 30px rgba(0,0,0,0.5);transform:translate3d(0,-5px,0);}
+
+
+
+/*底部开始*/
+.footer{width:100%; height:auto; min-width:1200px; background-color:#f1f1f1;}
+.footer .footer_cont .service ul {border-bottom:1px solid #d6d6d6; width:1200px; font-size:0; /*border:1px solid green;*/}
+.footer .footer_cont .service ul li{display:inline-block; width:190px; height:90px; margin-right:124px; }
+.footer .footer_cont .service ul li span{float:left; display:block; width:58px; height:90px;}
+.footer .footer_cont .service ul li.ser1 span{background:url(../images/services.png) no-repeat -180px}
+.footer .footer_cont .service ul li.ser2 span{background:url(../images/services.png) no-repeat -120px;}
+.footer .footer_cont .service ul li.ser3 span{background:url(../images/services.png) no-repeat -60px;}
+.footer .footer_cont .service ul li.ser4 span{background:url(../images/services.png) no-repeat 0px;}
+.footer .footer_cont .service ul li:hover span{-webkit-transform: rotateY(360deg); transition:all 1s;}
+.footer .footer_cont .service ul li h4{float:left; width:132px; font-size:16px; font-weight:bold; padding-top:23px;}
+.footer .footer_cont .service ul li p{float:left; font-size:14px; padding-top:15px;}
+.footer .footer_cont .service ul li.ser1{margin-left:60px;}
+.footer .footer_cont .service ul li.ser4{margin-right:0px;}
+.footer .footer_cont .service ul li h4 a{color:#251716;font-weight:bold;}
+.footer .footer_cont .guild{padding-bottom:20px;}
+.footer .footer_cont .guild ul{float:left; width:190px; height:200px; }
+.footer .footer_cont .guild ul a{color:#333;}
+.footer .footer_cont .guild ul .strong{font-size:14px; padding-top:5px;}
+.footer .footer_cont .guild ul li{line-height:30px;}
+.footer .footer_cont .guild ul li a:hover{color:#251716;font-weight:bold;}
+.footer .footer_cont .guild .guild01{padding-left:60px;}
+.footer .footer_cont .guild .weixin{padding-right:60px;}
+.footer .footer_cont .guild .weixin p{font-size:14px;padding-top:10px;padding-bottom:10px; padding-right:20px;}
+.footer .footer_b{width:100%;height:50px;background-color:#251716;margin-top:50px;}
+.footer .footer_b p{color:#fff;line-height:50px;text-align:center;}
+
+
+
+
+
+
+
+
+
+

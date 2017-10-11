@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="style/reg.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/lr.js"></script>
+</head>
+<body>
+<!-- 头部开始 -->
+    <div class="header ">
+        <div class="headerCont wid_1200 clearfix">
+            <div class="logo clearfix"><a href="index.html"><img src="images/logo.png" alt=""></a><h3>会员注册</h3></div>
+            <span class="fr">已有账号，直接<a href="login.html">登录</a></span>
+        </div>
+    </div>
+<!-- 注册模块开始 -->
+    <div class="reg wid_1200">
+        <ul class="clearfix">
+            <li><a href="#">用户名注册</a></li>
+            <li><a href="#">邮箱注册</a></li>
+            <li><a href="#">手机注册</a></li>
+        </ul>
+        <div>
+            <form action="" method="">
+                    <p>用户名：<input type="text" name="user"><span class="red">*</span><span id="msgUser" class="tips">请输入4-14位首字符为字母的用户名，不支持特殊符号，如“-”，“%”...</span></p><br />
+                    <p>密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pass1"><span class="red">*</span><span id="msgPass1" class="tips">请输入6-14位密码</span></p><br />
+                    <p>确认密码：<input type="password" class="password" name="pass2"><span class="red">*</span><span id="msgPass2" class="tips">再输入一次相同的密码</span></p><br />
+                    <p>性&nbsp;&nbsp;&nbsp;别：<input class="sex" type="radio" name="sex">男<input class="sex" type="radio" name="sex">女</p><br />
+                    <p>出生年月：<select name="year" id="">
+                        <option value="">1990</option>
+                        <option value="">1991</option>
+                        <option value="">1992</option>
+                        <option value="">1993</option>
+                        <option value="">1994</option>
+                        <option value="">1995</option>
+                        <option value="">1996</option>
+                    </select>
+                    <select name="month" id="">
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                    </select>
+                    <select name="day" id="">
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                    </select><span class="red">*</span></p><br />
+                    <p>所在地：<select name="country" id="country">
+                        <option value="">中国</option>
+                    </select>
+                    <select name="province" id="">
+                        <option value="">广东</option>
+                    </select>
+                    <select name="city" id="">
+                        <option value="">广州</option>
+                    </select>
+                    <select name="cell" id="">
+                        <option value="">黄浦区</option>
+                    </select><span class="red">*</span></p><br />
+                    <p>手机号：<input type="text" name="tel"><span class="red">*</span><span id="msgTel" class="tips"></span></p><br />
+                    <p>E-mail：<input type="text" name="mail"><span id="msgMail" class="tips"></span></p><br />
+                    <p>验证码：<input class="yzm" type="text"><span class="red">*</span></p><br />
+                    <p><input class="check" type="checkbox" class="inp">我已看过并接受<a href="#">《苗家频道网注册用户协议》</a></p><br />
+                    <p><input class="btn" type="submit" name="btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册">
+            </form>
+        </div>
+        <div>
+            <form action="" method="">
+                <p>E-mail：<input type="text" name="mail2"><span class="red">*</span><span id="msgMail2" class="tips">请输入正确的邮箱地址，如××××@163.com</span></p><br />
+                <p>密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pass2_1"><span class="red">*</span><span id="msgPass2_1" class="tips">请输入6-14位密码</span></p><br />
+                <p>确认密码：<input type="password" class="password" name="pass2_2"><span class="red">*</span><span id="msgPass2_2" class="tips">再输入一次相同的密码</span></p><br />
+               <p>验证码：<input class="yzm yzm1" type="text"><input class="yzm yzm1 yzm2" type="button" value="去邮箱收取"><span class="red">*</span></p><br />
+                <p><input class="check" type="checkbox" class="inp">我已看过并接受<a href="#">《苗家频道网注册用户协议》</a></p><br />
+                <p><input class="btn" type="submit" name="btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册">
+            </form>
+        </div>
+        <div>
+            <form action="" method="">
+                <p>手机号：<input type="text" name="tel2"><span class="red">*</span><span id="msgTel2" class="tips">请输入11位手机号</span></p><br />
+                <p>密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pass3_1"><span class="red">*</span><span id="msgPass3_1" class="tips">请输入6-14位密码</span></p><br />
+                <p>确认密码：<input type="password" class="password" name="pass3_2"><span class="red">*</span><span id="msgPass3_2" class="tips">请再输入一次密码</span></p><br />
+                <p>验证码：<input class="yzm yzm1" type="text"><input id="conform" class="yzm yzm1 yzm2 conform" type="button" value="获取短信验证码"><span class="red">*</span></p><br />
+                <p><input class="check" type="checkbox" class="inp">我已看过并接受<a href="#">《苗家频道网注册用户协议》</a></p><br />
+                <p><input class="btn" type="submit" name="btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
