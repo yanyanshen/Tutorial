@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/style/shoppingcar.css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript" src="__STATIC__/js/shoppingcar.js"></script>
+
+
+</head>
+<body>
+
+<!-- 顶部开始 -->
+<include file="Index/header" />
+<!-- 全部商品 开始 -->
+<div class="" style="height: 200px;text-align: center;font-size: 18px;line-height: 200px">
+    <div class="frm_sty">
+        <table width="100%" border="0" style="border:0" id="cart">
+            <tbody><tr>
+                <td>
+                    <p>订单号：<span style="font-size: 18px;color: #f00">{$orderlist.ordersyn}</span>&nbsp;&nbsp;已经支付成功</p>
+                    <!--<a href="">-->
+                        <!--{$goods[0].goodsname} &nbsp;&nbsp;购买数量：{$goods.buynum} &nbsp;&nbsp;-->
+                    <!--</a>-->
+                </td>
+                <td class="pxtitle">
+                    <a href="__ROOT__/index.php" ><span style="padding:10px 20px;font-size:24px;border: 1px solid #ccc;background: #C2A07A;color:#fff;border-radius:15px";>继续购物</span></a>
+                    &nbsp;&nbsp; &nbsp;&nbsp;<a href="{:U('Centre/member')}" style="padding:10px 20px;font-size:24px;background:#B1191A;border-radius:15px;color: #fff">前往用户中心</a>
+                </td>
+            </tr>
+            </tbody></table>
+    </div>
+</div>
+
+
+</div>
+<!-- 猜您喜欢 开始 -->
+<div class="guess frm_sty clearfix">
+    <ul class="ul11">
+        <li class="l11"><a href="#">猜您喜欢</a></li>
+        <li class="l12"><a href="#">更多></a></li>
+    </ul>
+
+    <ul class="Cont">
+        <li><a href="#"><img src="__STATIC__/images/tu1.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu2.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu3.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu4.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu5.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l6"><a href="#"><img src="__STATIC__/images/tu6.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l7"><a href="#"><img src="__STATIC__/images/tu7.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l8"><a href="#"><img src="__STATIC__/images/tu8.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+    </ul>
+
+</div>
+<!-- 猜您喜欢  -->
+
+<!-- 底部  开始-->
+<include file="Index/footer" />
+<!-- 底部 结束 -->
+
+</body>
+
+
+</html>

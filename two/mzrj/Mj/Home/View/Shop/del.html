@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/shoppingcar.css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.1.4.2-min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/shoppingcar.js"></script>
+
+
+</head>
+<body>
+
+
+<body>
+<!-- 顶部开始 -->
+<div class="top ">
+    <div class="topCont frm_sty">
+        <p><a href="#">欢迎光临苗家频道！</a></p>
+        <ul class="fr">
+            <li><a href="password.html"><span>叶叶 </span></a></li>
+            <li><a href="#">退出</a>|</li>
+
+            <li><a href="member.html">会员中心</a>|</li>
+            <li><a href="order.html">我的订单</a>|</li>
+            <li><a href="denglu.html">消息[<span>1</span>]</a>|</li>
+            <li class="l1"><a href="#">网站导航</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- 导航搜索栏 -->
+<div class="logo frm_sty clearfix">
+    <a href="__ROOT__/index.php"><img src="__STATIC__/images/logo.png" alt=""></a>
+    <!--<h3 class="fl" ><a href="__ROOT__/index.php"><span style="font-size: 18px;color: red">前往首页-&ndash;&gt;>></span></a></h3>-->
+    <ul class="fr">
+        <li class="li01"><a href=" #">我的购物车</a></li>
+        <li class="li02"><a href="affirm.html">填写核对结算信息</a></li>
+        <li class="li03"><a href=" #">成功提交订单</a></li>
+    </ul>
+</div>
+<i></i>
+<!-- 全部商品 开始 -->
+<div class="name frm_sty clearfix">
+    <p class="p1">全部商品</p>
+    <!--  <p class="p2">已选商品(1)</p> -->
+</div>
+<form action="{:U('Order/index')}" method="post" id="form1">
+    <input type="hidden" name="money" class="money" id="money" />
+    <div class="gwc" style=" margin:auto;">
+        <table cellpadding="0" cellspacing="0" class="gwc_tb1">
+            <tr>
+                <td class="tb1_td1"><input class="invert" type="checkbox" /></td>
+                <td class="tb1_td1">全选</td>
+                <td class="tb1_td2">商品图片</td>
+                <td class="tb1_td3">商品名称</td>
+                <td class="tb1_td4">单价（元）</td>
+                <td class="tb1_td5">数量</td>
+                <td class="tb1_td6">小计</td>
+                <td class="tb1_td7">编辑</td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+            <volist name="goods" id="val" >
+
+                <tr>
+
+
+                    <td class="tb2_td1"><input type="checkbox"  class="chk[]"     onchange="GetCount()"  value="{$key}" name="newslist[]" id="newslist-2"  style="width: 20px;height:20px"/></td>
+                    <!--<td class="tb2_td1"></td>-->
+                    <td class="tb2_td2"><a href="#"><img src="__ROOT__/Uploads/60_{$val[0].picname}"/></a></td>
+                    <!--<td class="tb2_td3"></td>-->
+                    <td class="tb2_td3"><a href="#">{$val[0].goodsname}<input type="hidden" value="{$key}" name="id"/></a></td>
+
+                    <td class="tb2_td4">{$val[0].price}<input type="hidden" value="{$val[0].price}" class="price" /></td>
+                    <td class="tb2_td5">
+                        <input class="min2" name=""  style=" width:20px; height:19px;border:1px solid #ccc;" type="button" value="-" />
+                        <input class="text_box2" name="number{$key}" type="text" value="{$val.buynum}"   style=" width:30px; text-align:center; border:1px solid #ccc;" />
+                        <input class="add2"   name="" style=" width:20px; height:19px;border:1px solid #ccc;" type="button" value="+" />
+
+                    </td>
+                    <td class="tb2_td6"><label class="total2"  style="color:#ff5500;font-size:14px; font-weight:bold;"></label></td>
+                   <!-- <td class="tb2_td7"><a href="{:U('Shop/del')}/id/{$key}" ><p class="btn1"><a href="javascript:del({$val.id})" >删除</a></p></a></td>-->
+                    <a href="javascript:del ({$val[0].id})" >删除</a>
+                </tr>
+            </volist>
+
+        </table>
+        <table cellpadding="0" cellspacing="0" class="gwc_tb3">
+            <tr>
+                <td class="tb3_td1">
+                </td>
+                <td class="tb3_td2">已选商品<label id="num" class="num" style="color:#ff5500;font-size:24px; font-weight:bold;"> </label>  件</td>
+
+                <td class="tb3_td3">合计(不含运费):<span>￥</span> <span style=" color:#ff5500;"><label id="zong1" class="" style="color:#ff5500;font-size:24px; font-weight:bold;"></label>  </span> </td>
+                <input type="submit" value="tijiao" id="jz2">
+                <!--<td class="tb3_td4"><span id="jz1">结算</span><a href="{:U('Order/index')}" style="display:none;" onclick="document.getElementById('form1').submit()" class="jz2" id="jz2">结算</a></td>-->
+            </tr>
+        </table>
+
+    </div>
+</form>
+<!-- 猜您喜欢 开始 -->
+<div class="guess frm_sty clearfix">
+    <ul class="ul11">
+        <li class="l11"><a href="#">猜您喜欢</a></li>
+        <li class="l12"><a href="#">更多></a></li>
+    </ul>
+
+    <ul class="Cont">
+        <li><a href="#"><img src="__STATIC__/images/tu1.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu2.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu3.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu4.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu5.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l6"><a href="#"><img src="__STATIC__/images/tu6.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l7"><a href="#"><img src="__STATIC__/images/tu7.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l8"><a href="#"><img src="__STATIC__/images/tu8.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+    </ul>
+
+</div>
+<!-- 猜您喜欢  -->
+
+<!-- 底部  开始-->
+<include file="Index/footer" />
+<!-- 底部 结束 -->
+<script>
+
+    $(document).ready(function () {
+        //反选
+        $(".invert").click(function () {
+            $(".gwc_tb2 input[name=newslist[]]").each(function () {
+                if ($(this).attr("checked")) {
+                    $(this).attr("checked", false);
+                    //$(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+                } else {
+                    $(this).attr("checked", true);
+                    //$(this).next().css({ "background-color": "#3366cc", "color": "#000000" });
+                }
+            });
+            GetCount();
+        });
+
+        //取消
+        $("#cancel").click(function () {
+            $(".gwc_tb2 input[name=newslist[]]").each(function () {
+                $(this).attr("checked", false);
+                // $(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+            });
+            GetCount();
+        });
+
+        // 所有复选(:checkbox)框点击事件
+        $(".gwc_tb2 input[name=newslist[]]]").click(function () {
+            if ($(this).attr("checked")) {
+                //$(this).next().css({ "background-color": "#3366cc", "color": "#ffffff" });
+            } else {
+                // $(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+            }
+        });
+
+        // 输出
+        $(".gwc_tb2 input[name=newslist[]]").click(function () {
+            //$(".total2").html() = GetCount($(this));
+            GetCount();
+            //alert(conts);
+        });
+    });
+
+</script>
+
+
+<!-- 商品加减算总数 -->
+<script type="text/javascript">
+
+
+    $(function () {
+        //var t = $(".text_box2");
+        $(".add2").click(function () {
+            var n1 = $(this).prev('input').val();
+            n1++;
+            $(this).prev('input').val(n1);
+            setTotal();
+            GetCount();
+        })
+        $(".min2").click(function () {
+            var n2 = $(this).next('input').val()
+            n2--;
+            $(this).next('input').val(n2);
+            if(n2<1){
+                n2==1;
+            }
+            if(isNaN(n2)){
+                n2==1;
+            }
+            setTotal();
+            GetCount();
+        })
+
+
+
+
+
+
+    });
+
+
+    function setTotal() {
+        var nums=$("input[class='text_box2']");
+        var price=$("input[class='price']");
+        var prices=$(".total2");
+
+        for(var i=0;i<price.length;i++){
+            prices[i].innerHTML=parseInt(price[i].value)*parseInt(nums[i].value);
+        };
+//      $(".total2").html((parseInt(t.val()) *$("input[class='price']").val()).toFixed(2));
+//      $(".newslist-2").val(parseInt(t.val()) *$("input[class='price']").val());
+    }
+    setTotal();
+
+    function GetCount() {
+        setTotal();
+        var inputs = document.getElementsByClassName('chk[]');
+        var prices = document.getElementsByClassName('total2');
+        var nums=document.getElementsByClassName('text_box2');
+        var totalprice = 0;
+        var aa=0;
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].checked) {
+                totalprice += parseInt(prices[i].innerHTML);
+                aa+= parseInt(nums[i].value)
+
+            };
+        };
+        document.getElementById('num').innerHTML =  aa;
+        document.getElementById('zong1').innerHTML = totalprice;
+        document.getElementById('money').value = totalprice;
+        document.getElementById('jz2').style.display ='block';
+
+    };
+
+    GetCount() ;
+
+
+</script>
+
+<!---总数-->
+<script type="text/javascript">
+    $(function () {
+        $(".quanxun").click(function () {
+            setTotal();
+            setTotal();
+            //alert($(lens[0]).text());
+        });
+        function setTotal() {
+            var len = $(".total2");
+            var num = 0;
+            for (var i = 0; i < len.length; i++) {
+                num = parseInt(num) + parseInt($(len[i]).text());
+
+            }
+            //alert(len.length);
+            $("#zong1").text(parseInt(num).toFixed(2));
+            $("#shuliang").text(len.length);
+        }
+        //setTotal();
+    })
+
+    // 猜您喜欢 覆盖层
+    $(function(){
+        //给每个li中a添加元素overlay
+        $(".guess li").append("<span class='overlay'></span>");
+        //经过li时让overlay,txt过渡动画
+        $(".guess li").hover(function(){
+            $(this).find(".txt").slideToggle().next().slideToggle();
+        });
+
+    });
+
+    $("#jz2").click(function(){
+        $("#form1").submit();
+    })
+
+
+//删除
+
+   /* function del(e){
+        layer.confirm("你确定删除吗？",{
+            btn:['确定','取消']
+        },function(){
+
+            $.post("{:U('Shop/del')}",{'id':e},function(res){
+
+                if(res.status=='ok'){
+                    layer.msg('删除成功')
+                }else{
+                    layer.msg('删除失败')
+                }
+            })
+        })
+    }*/
+
+</script>
+
+</body>
+</html>

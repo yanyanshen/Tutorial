@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="__STATIC__/style/reset.css">
+    <link rel="stylesheet" href="__STATIC__/style/member.css">
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/carousel.js"></script>
+    <script type="text/javascript" src="__STATIC__/layer/layer.js"></script>
+
+    <title>我的订单</title>
+    <style>
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #f0ead8;
+            color:#373737;
+        }
+        #page a:hover{
+            background:#00c0ef;
+            color:#333;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #0088ff;
+            color:#fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!--  顶部开始 -->
+<!--<div class="top ">-->
+    <!--<div class="topCont frm_sty">-->
+        <!--<p><a href="#">欢迎光临苗家频道！</a></p>-->
+        <!--<ul class="fr">-->
+            <!--<li><a href="../Member/memberinfo.html">{$Think.session.mname} </a></li>-->
+            <!--<li><a href="#">退出</a>|</li>-->
+            <!--<li><a href="#"><span>会员中心</span></a>|</li>-->
+            <!--<li><a href="order.html">我的订单</a>|</li>-->
+            <!--<li><a href="denglu.html">消息[<span>1</span>]</a>|</li>-->
+            <!--<li class="l1"><a href="#">网站导航</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; 导航搜索栏 &ndash;&gt;-->
+<!--<div class="search">-->
+    <!--<div class="searchCont frm_sty clearfix">-->
+        <!--&lt;!&ndash; 标志搜索栏开始 &ndash;&gt;-->
+        <!--<h1 class="fl"><a href="{:U('Index/index')}"><img src="__STATIC__/images/logo.png" alt=""></a></h1>-->
+        <!--<div class="bd fl">-->
+            <!--<form action="" method="" >-->
+                <!--&lt;!&ndash; <select name="" class="op">-->
+                     <!--<option value="商品">商品</option>-->
+                     <!--<option value="店铺">店铺</option>-->
+                 <!--</select>&ndash;&gt;-->
+                <!--<input name="" type="text" class="msg" placeholder="血粑">-->
+                <!--&lt;!&ndash; <input class="btn" type="submit" value="搜索"/> &ndash;&gt;-->
+            <!--</form>-->
+            <!--<a href="#" class="btn fl">搜索</a>-->
+            <!--<p class="msg1">-->
+                <!--<a href="#">干笋 |</a>-->
+                <!--<a href="#">腊肉 |</a>-->
+                <!--<a href="#">银耳环 |</a>-->
+                <!--<a href="#">糯米糕</a>-->
+            <!--</p>-->
+        <!--</div>-->
+        <!--<div class="buy clearfix">-->
+            <!--<span class="fl">1</span>-->
+            <!--<a class="fl" href="shopping.html">购物车</a>-->
+            <!--&lt;!&ndash; <p class="fl"></p> &ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="nav">-->
+        <!--<div class="navCont frm_sty">-->
+            <!--<div class="classify fl">-->
+                <!--<div class="fenlei">-->
+                    <!--<h2>全部商品分类</h2>-->
+                    <!--<img class="xiala" src="__STATIC__/images/xiala.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="menu">-->
+                    <!--<div class="menu1">-->
+                        <!--<h4>苗家特产</h4>-->
+                        <!--<a href="#">干货</a>-->
+                        <!--<a href="#">药类</a>-->
+                        <!--<a href="#">肉类</a>-->
+                        <!--<a href="#">豆制品</a>-->
+                        <!--<div class="submenu">-->
+                            <!--<h4>苗家特产</h4>-->
+                            <!--<p>干货</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>药类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>肉类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>豆制品</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<img src="__STATIC__/images/menu1.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu2.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu3.jpg" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="menu1">-->
+                        <!--<h4>苗家工艺</h4>-->
+                        <!--<a href="#">银器</a>-->
+                        <!--<a href="#">刺绣</a>-->
+                        <!--<a href="#">工艺品</a>-->
+                        <!--<div class="submenu">-->
+                            <!--<h4>苗家工艺</h4>-->
+                            <!--<p>银器</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>刺绣</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>工艺品</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<img src="__STATIC__/images/menu1.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu2.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu3.jpg" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="menu1">-->
+                        <!--<h4>茗茶佳酿</h4>-->
+                        <!--<a href="#">酒类</a>-->
+                        <!--<a href="#">茶类</a>-->
+                        <!--<div class="submenu">-->
+                            <!--<h4>茗茶佳酿</h4>-->
+                            <!--<p>酒类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>茶类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<img src="__STATIC__/images/menu1.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu2.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu3.jpg" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="menu1">-->
+                        <!--<h4>生鲜食品</h4>-->
+                        <!--<a href="#">肉类</a>-->
+                        <!--<a href="#">蔬菜</a>-->
+                        <!--<a href="#">蛋类</a>-->
+                        <!--<a href="#">水果</a>-->
+                        <!--<div class="submenu">-->
+                            <!--<h4>生鲜食品</h4>-->
+                            <!--<p>肉类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>蔬菜</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>蛋类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--&lt;!&ndash; <a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a> &ndash;&gt;-->
+
+                            <!--<p>水果</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<img src="__STATIC__/images/menu1.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu2.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu3.jpg" alt="">-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                    <!--<div class="menu1">-->
+                        <!--<h4>休闲零食</h4>-->
+                        <!--<a href="#">坚果类</a>-->
+                        <!--<a href="#">肉制品</a>-->
+                        <!--<a href="#">糖果</a>-->
+                        <!--<div class="submenu">-->
+                            <!--<h4>休闲零食</h4>-->
+                            <!--<p>坚果类</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>肉制品</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+                            <!--<p>糖果</p>-->
+                            <!--<a href="#">风干腊肉</a>-->
+                            <!--<a href="#">农家土鸡蛋</a>-->
+                            <!--<a href="#">干香菇</a>-->
+                            <!--<a href="#">红薯粉丝</a>-->
+                            <!--<a href="#">鱼干</a>-->
+                            <!--<a href="#">黑木耳</a>-->
+
+
+                            <!--<img src="__STATIC__/images/menu1.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu2.jpg" alt="">-->
+                            <!--<img src="__STATIC__/images/menu3.jpg" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<ul class="topNav clearfix">-->
+                <!--<li><a href="{:U('Index/index')}">首页</a></li>-->
+                <!--<li><a href="#f1">苗家特产</a></li>-->
+                <!--<li><a href="#f2">苗家工艺</a></li>-->
+                <!--<li><a href="#">茗茶佳酿</a></li>-->
+                <!--<li><a href="#">生鲜食品</a></li>-->
+                <!--<li><a href="#">休闲食品</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+<include file="Index/header" />
+
+<!-- 导航开始 -->
+<div class="car clearfix frm_sty">
+    <div class="sidebar frm_sty">
+        <!-- 侧边栏导航 结束 -->
+        <ul class="fl">
+            <li class="li01" style="background: #f1f1f1;"><a href="#"><span>全部功能</span></a></li>
+            <!--<li class="no"><a href="membercenter.html">会员中心</a></li>-->
+            <li><a href="{:U('MemberCenter/orderlist')}">我的订单</a></li>
+            <!--<li><a href="#">我的优惠卷</a></li>-->
+            <!--<li><a href="#">商品收藏</a></li>-->
+            <li><a href="#">我的积分</a></li>
+            <!--<li><a href="returngoods.html">退换货申请</a></li>-->
+            <li><a href="{:U('Member/memberinfo')}">个人消息</a></li>
+            <li><a href="{:U('MemberCenter/address')}">收货地址</a></li>
+            <!--<li class="li02"><a href="#">在线客服</a></li>-->
+        </ul>
+    </div>
+    <!-- 侧边栏导航 结束 -->
+
+    <div class="manage fl">
+        <!-- 账户信息 开始 -->
+        <div class="account">
+            <h3>你好<a href="#"><span>{$Think.session.mname}</span></a>，欢迎登录苗家频道！</h3>
+            <ul>
+                <li><a href="#">所在城市:郑州</a></li>
+                <li><a href="#">你当前积分:<span>{$count}</span>分</a></li>
+                <li><a href="#">优惠劵:<span>{$count}</span>张</a></li>
+                <!--<li class="li04"><a href="#">待付款（<span>0</span>）</a></li>
+                <li class="li05"><a href="#">待收货（<span>0</span>）</a></li>
+                <li class="li06"><a href="#">待评价（<span>0</span>）</a></li>-->
+               <!-- <li><a href="#">账户余额:<span>￥0:00</span></a></li>
+                <li><a href="{:U('MemberCenter/chongzhi')}">充值</a></li>-->
+            </ul>
+        </div>
+        <!-- 账户信息 结束 -->
+        <!-- 订单信息 开始 -->
+        <div class=" order">
+            <div class="title">
+                <!--  <ul >
+                      <li style="float:left; margin-left: -50px;">商品图片</li>
+                      <li style="float:left;">商品价格</li>
+                      <li style="float:left;">订单号</li>
+                      <li style="float:left;">订单状态</li>
+                      <li style="float:left;">操作</li>
+
+                  </ul>-->
+                <!--<h3>我的订单<span style="margin-right: 50px;">操作</span><span style="margin-right: 150px;">状态</span><span style="margin-right: 150px;">订单号</span><span style="margin-right: 200px;">价格</span></h3>-->
+
+
+            </div>
+            <volist name="orderlist" id="val">
+                <ul class="clearfix">
+                    <li>
+                        <a href=""><img src="__ROOT__/Uploads/60_{$val.picname}" alt="" class="fl" ></a>
+                        <!--<p class="p1" style="margin-left: 50px;"><a href="#">叶叶</a></p>-->
+                        <p class="p2"><span>￥{$val['buynum']*$val['price']}</span> <br/>在线支付</a></p>
+                        <!--<p class="p3">{:date('Y-m-d',$val['createtime'])}</a></p>-->
+                        <p class="p3">{$val.ordersyn}</a></p>
+                        <p class="p3">{$val.orderstatus}</p>
+                        <p class="p3"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{:U('MemberCenter/chakan')}?oid={$val.orderid}">查看</a>&nbsp;&nbsp;<a href="{:U('MemberCenter/del')}?oid={$val.orderid}" onclick="return confirm('你确定要删除吗？')" id="del">删除</a></p>
+                    </li>
+                </ul>
+            </volist>
+
+            <!-- <div style="position:relative;left: 1250px;margin-bottom: 100px; margin-top: 50px;">-->
+
+            <div id="page" style="margin-left: 800px; margin-top: 20px;margin-bottom: 20px;">
+                {$show}
+            </div>
+
+        </div>
+
+
+
+        <div style="width:985px;height:250px;background-color:#f0ead8;">
+            <h3 style="margin-left: 200px;font-size: 30px;color:#9a9a9a">恭喜您已达到</h3>&nbsp;<a href="#"><p style="margin-left: 300px;font-size: 50px; color:red;">{$count}</p></a> &nbsp;<h3 style="margin-left: 400px;font-size: 30px; color:#9a9a9a">积分！</h3>
+           <div style="margin-left:800px;margin-top: 50px;">
+            <a href="{:U('Index/index')}">继续购物</a>&nbsp;&nbsp; <a href="{:U('Index/index')}">积分兑换</a>
+            </div>
+        </div>
+
+        <!-- 订单信息 结束 -->
+        <!-- 我的关注 开始 -->
+        <div class="attention clearfix">
+            <div class="title">
+                <h3>我的关注</h3>
+            </div>
+            <ul>
+                <li class="li01">
+                    <a href="#">
+                        <p class="p1"></p>
+                        <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+                    </a>
+                </li>
+                <li class="li02">
+                    <a href="#">
+                        <p class="p1"></p>
+                        <p class="p2">苗家烟熏肉</p>
+                    </a>
+                </li>
+                <li class="li03">
+                    <a href="#">
+                        <p class="p1"></p>
+                        <p class="p2">苗家特色农家<br/>糯米酒</p>
+                    </a>
+                </li>
+                <li class="li04">
+                    <a href="#">
+                        <p class="p1"></p>
+                        <p class="p2">苗家无色板</p>
+                    </a>
+                </li>
+                <li class="li05">
+                    <a href="#">
+                        <p class="p1"></p>
+                        <p class="p2">农家自制腌制<br/>泡菜</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 我的关注 结束 -->
+        <!-- 浏览记录 开始 -->
+        <div class="record">
+            <div class="title">
+                <h3>浏览记录</h3>
+            </div>
+            <div class="lb">
+                <ul class="lb-img">
+                    <li>
+                        <ul>
+                            <li class="li01">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家烟熏肉</p>
+                                </a>
+                            </li>
+                            <li class="li02">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家纯手工制<br/>作状元帽</p>
+                                </a>
+                            </li>
+                            <li class="li03">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家特色农家<br/>糯米酒</p>
+                                </a>
+                            </li>
+                            <li class="li04">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家天然晒制<br/>干木耳</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li01">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家烟熏肉</p>
+                                </a>
+                            </li>
+                            <li class="li02">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家纯手工制<br/>作状元帽</p>
+                                </a>
+                            </li>
+                            <li class="li03">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家特色农家<br/>糯米酒</p>
+                                </a>
+                            </li>
+                            <li class="li04">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家天然晒制<br/>干木耳</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li01">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家烟熏肉</p>
+                                </a>
+                            </li>
+                            <li class="li02">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家纯手工制<br/>作状元帽</p>
+                                </a>
+                            </li>
+                            <li class="li03">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家特色农家<br/>糯米酒</p>
+                                </a>
+                            </li>
+                            <li class="li04">
+                                <a href="#">
+                                    <p class="p1"></p>
+                                    <p class="p2">苗家天然晒制<br/>干木耳</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn_l">&lt;</div>
+                <div class="btn_r">&gt;</div>
+
+            </div>
+        </div>
+        <!-- 浏览记录 结束 -->
+    </div>
+</div>
+<div class="jilu frm_sty clearfix">
+    <div class="title">
+        <h3>浏览记录</h3>
+    </div>
+    <ul>
+        <li class="li01">
+            <a href="#">
+                <p class="p1"></p>
+                <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+            </a>
+        </li>
+        <li class="li02">
+            <a href="#">
+                <p class="p1"></p>
+                <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+            </a>
+        </li>
+        <li class="li03">
+            <a href="#">
+                <p class="p1"></p>
+                <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+            </a>
+        </li>
+        <li class="li04">
+            <a href="#">
+                <p class="p1"></p>
+                <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+            </a>
+        </li>
+        <li class="li05">
+            <a href="#">
+                <p class="p1"></p>
+                <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+            </a>
+        </li>
+        <li class="li06">
+            <a href="#">
+                <p class="p1"></p>
+                <p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- 底部 开始 -->
+<include file="Public/Home/footer.html" />
+<!-- 底部结束 -->
+</body>
+
+</html>
+

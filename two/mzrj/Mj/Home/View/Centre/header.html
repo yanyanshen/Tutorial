@@ -1,0 +1,22 @@
+<!--  顶部开始 -->
+<div class="top ">
+    <div class="topCont frm_sty">
+        <ul class="lf">
+            <li><a href="{:U('Index/index')}"><img src="__STATIC__/images/miaojia.jpg" alt="" style="width: 185px;height: 96px;"></a></li>
+            <li>|用户中心</li>
+        </ul>
+        <ul class="fr">
+            <gt name="Think.session.mid" value="0">
+                <li style="list-style-type: none">
+                <li>欢迎您<a href="{:U('Centre/password')}">{$username}</a></li>
+                <li><a href="javascript:logout()">退出</a>|</li>
+                </li>
+                <else />
+                <li><a href="{:U('Centre/member')}">会员中心</a>|</li>
+                <li><a href="{:U('Centre/order')}">我的订单</a></li>
+            </gt>
+            <li><a href="{:U('Centre/member')}">会员中心</a>|</li>
+            <li><a href="{:U('Centre/order')}">我的订单</a></li>
+        </ul>
+    </div>
+</div>

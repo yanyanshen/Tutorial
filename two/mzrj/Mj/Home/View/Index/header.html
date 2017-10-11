@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="__STATIC__/style/reset.css"/>
+
+    <script src="__STATIC__/layer/layer.js"></script>
+</head>
+
+<body>
+<div>
+    <div class="header">
+        <div class="headerCont frm_sty clearfix">
+            <p class="" style="font-size: 18px;color: red">{$Think.session.mname}&nbsp;&nbsp;</p>
+            <p>欢迎光临苗家频道！</p>
+            <a href="#">帮助中心</a>
+            <gt name="Think.session.mname" value="0">
+                <a href="{:U('Centre/member')}">用户中心</a>
+                <a href="javascript:logout()">退出</a>
+                <else/>
+                <a href="{:U('Member/reg')}">注册</a>
+                <a href="{:U('Member/login')}">登录</a>
+            </gt>
+        </div>
+    </div>
+    <!-- 导航搜索栏 -->
+    <div class="search">
+        <div class="searchCont frm_sty clearfix">
+            <!-- 标志搜索栏开始 -->
+            <h1 class="fl"><a href="{:U('Index/index')}"><img style="height: 96px;width:160px" src="__STATIC__/images/miaojia.jpg" alt=""></a></h1>
+            <div class="bd fl">
+                <form action="{:U('Search/index')}" method="get"  id="form2">
+
+                    <input name="keywords" type="text" class="msg"  placeholder="请输入搜索商品" value="{$name}">
+                    <!-- <input class="btn" type="submit" value="搜索"/> -->
+                </form>
+                <p   class="btn fl" id="tijiao" style="cursor:pointer">搜索</p>
+                <p class="msg1">
+                   <!-- <a href="#">干笋 |</a>
+                    <a href="#">腊肉 |</a>
+                    <a href="#">银耳环 |</a>
+                    <a href="#">糯米糕</a>-->
+                </p>
+            </div>
+            <div class="i_car">
+
+                <div class="car_t "><a class="fl" id="car" href="#">购物车</a> [ <span>{:count($_SESSION['mycar_'])}</span> ]</div>
+                <div class="car_bg">
+
+                    <div class="un_login"><a href="{:U('Shop/index')}" style="color:#ff4e00;">购物车列表</a> 商品详情！</div>
+                    <ul class="cars" id="mycar">
+
+
+                        </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navCont frm_sty">
+            <div class="classify fl">
+                <div class="fenlei">
+                    <h2>全部商品分类</h2>
+                    <img class="xiala" src="__STATIC__/images/xiala.png" alt="">
+                </div>
+                <div class="menu">
+                    <volist name="list" id="val" >
+                        <div class="menu1">
+
+                            <h4>{$val.catename}</h4>
+                            <volist name="val['second']" id="val1">
+                                <a href="{:U('Search/secondcate')}?cid1={$val1.cid}&&name1={$val1.catename}">{$val1.catename}</a>
+                            </volist>
+                            <div class="submenu">
+                                <h4>{$val.catename}</h4>
+                                <volist name="val['second']" id="val1">
+                                    <p>{$val1.catename}</p>
+                                    <volist name="val1['third']" id="val2" >
+                                        <a href="{:U('Search/thirdcate')}?cid2={$val2.cid}&&name={$val2.catename}">{$val2.catename}</a>
+                                    </volist>
+                                </volist>
+                                <div>
+                                <img src="__STATIC__/images/menu1.jpg" alt="">
+                                <img src="__STATIC__/images/menu2.jpg" alt="">
+                                <img src="__STATIC__/images/menu3.jpg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </volist>
+
+                </div>
+            </div>
+            <ul class="topNav clearfix">
+                <li><a href="__ROOT__/index.php">首页</a></li>
+                <li><a href="#f1">苗家特产</a></li>
+                <li><a href="#f2">苗家工艺</a></li>
+                <li><a href="#">茗茶佳酿</a></li>
+                <li><a href="#">生鲜食品</a></li>
+                <li><a href="#">休闲食品</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<script >
+    $("#tijiao").click(function(){
+      $("#form2").submit();
+    } )
+
+
+    function logout(){
+//询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/Member/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.reload();
+                };
+            })
+        });
+    }
+
+
+
+    //购物车ajax
+    $('.car_t').mouseenter(function(){
+        $('.car_bg').show();
+        $.get("{:U('Index/header')}",null,function(e){
+
+            var   res=JSON.parse(e);
+            var str=""
+            for(var i=0;i<res.length;i++){
+                var tupian='<div class="img"><img style="width:58px;height:58px" src="__ROOT__/Uploads/60_'+res[i].picname+'"/></div>'
+                var mingcheng='<div class="name">'+res[i].goodsname+"</div>";
+                var jiage='<div class="price99"><font color="#ff4e00">'+res[i].price+"</font>"+"x"+res[i].buynum+"</div>";
+                var d="<li>"+tupian+mingcheng+jiage+"</li>"
+                str+=d;
+            }
+            document.getElementById('mycar').innerHTML=str;
+
+        })
+    })
+
+    $('.car_t').mouseleave(function(){
+        //$(this).removeClass('myShopCar1')
+        $('.car_bg').hide();
+    })
+
+
+    $("#car").click(function() {
+        $.post("{:U('Member/log')}",$('#car').serialize(),function(res){
+            if(res.status=='no'){
+                layer.confirm("请先登录",{
+                    btn:['确定','稍后登录']
+                },function(){
+                    location.href="{:U('Member/login')}"
+                })
+            }else {
+                location.reload();
+            }
+            if(res.status=='ok'){
+                location.href="{:U('Shop/index')}"
+            }
+        })
+    })
+
+</script>
+
+ <!--导航开始 -->
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="__STATIC__/css/order.css">
+    <link rel="stylesheet" href="__STATIC__/css/swiper.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/reset.css">
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/order.js"></script>
+    <script src="__STATIC__/js/reset.js"></script>
+    <script src="__STATIC__/layer/layer.js"></script>
+    <script type="text/javascript">
+        function order(oid){    //user函数名 一定要和action中的第三个参数一致上面有
+            var id = oid;
+            $.get('Centre/order', {'p':id}, function(data) {  //用get方法发送信息到UserAction中的user方法
+            });
+        }
+        </script>
+    <!--<style>
+        #page{
+            float:right;
+        }
+        #page a{
+            display: inline-block;
+            width: 20px;
+            height:20px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #f0ead8;
+            color:#0E6BD3;
+        }
+        #page a:hover{
+            background: #333;
+            color:#fff;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #0E6BD3;
+            color:#fff;
+            font-weight: bold;
+        }
+    </style>-->
+</head>
+<body>
+<div>
+    <include file="header" />
+<!-- 我的订单开始 myorder-->
+<!-- 左侧边栏开始 -->
+<div class="myorder frm_sty clearfix">
+    <div class="sidebar fl">
+        <p>{$username}</p>
+        <h3><a href="{:U('Centre/member')}">首页</a></h3>
+        <a href="{:U('Centre/member')}">会员中心</a>
+        <a href="{:U('Centre/order')}">订单管理</a>
+        <a href="{:U('Centre/password')}">个人消息</a>
+        <a href="{:U('Centre/address')}">收货地址</a>
+
+    </div>
+
+    <!-- 左侧边栏结束 -->
+    <div class="order fl">
+        <div class="orderCont">
+            <ul class="clearfix">
+                <li><a href="__URL__/order/s/1">全部订单</a></li>
+                <li><a href="__URL__/order/s/2">未支付</a></li>
+                <li><a href="__URL__/order/s/3">已支付，未发货</a></li>
+                <li><a href="__URL__/order/s/4">已发货，未确认</a></li>
+                <li><a href="__URL__/order/s/5">已确认</a></li>
+            </ul>
+            <div class="text1">
+                <!--<span class="search lf">
+                    <input name="goodsname" type="text" class="lf" placeholder="请输入商品关键字或订单号"/>
+                    <button type="submit" class="seargoods">订单搜索</button>
+                </span>-->
+
+                    <table class="orderinfomation" cellpadding="0" cellspacing="0">
+
+                        <thead>
+                        <tr>
+                            <th class="or_th">
+                                <input type="checkbox"  checked="checked" onchange="gettotalprice();" id="chkAll" name="chkAll" />
+                            </th>
+                            <th class="or_th1"><a href="#">时间</a></th>
+                            <th class="or_th2"><a href="#">订单号</a></th>
+                            <th class="or_th3"><a href="#">用户名</a></th>
+                            <!--<th class="or_th4"><a href="#">成交金额</a></th>-->
+                            <th class="or_th5"><a href="#">订单状态</a></th>
+                            <th class="or_th6"><a href="#">操作</a></th>
+
+                        </tr>
+                        </thead>
+                        <volist name='goodslist' id='val' key="k">
+
+                            <tbody>
+                            <tr>
+                                <td class="or_td">
+                                    <input checked="checked" onchange="gettotalprice();" type="checkbox" value="" name="chk[]" />
+                                </td>
+                                <td class="or_td1">{:date("Y-m-d H:i:s",$val['order_createtime'])}</td>
+                                <td class="or_td2"><a href="#">{$val.ordersyn}</a></td>
+                                <td class="or_td3"><a href="#">{$val.username}</a></td>
+
+                                <td class="or_td5"><a href="{:U('Centre/orderdetail')}?id={$val.oid}">{$val['order_status']}</a></td>
+                                <td class="or_td6">
+                                    <eq name="val.status" value="30">
+                                        <a href="javascript:sure({$val.oid})">请确认</a>
+                                        <else/>
+                                        <a href="{:U('Centre/orderdetail')}?id={$val.oid}">订单详情</a><br/>
+                                        <input type="hidden" value="{$val.oid}" id="hidden">
+                                        <a href="javascript:del ({$val.oid})" >删除</a>
+
+                                    </eq>
+
+                                </td>
+                            </tr>
+                            </tbody>
+
+                        </volist>
+                    </table>
+                <span style="clear:both;"></span>
+                <!--<tr>
+                    <td>
+                        <span class="clkdel">
+                        <input type="checkbox"  checked="checked" onchange="gettotalprice();" id="chkAll" name="chkAll" />
+                        <a href="#">全部删除</a>
+                        </span>
+                    </td>
+                </tr>-->
+                <span class="listpage">
+                    {$page}
+                </span>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="__STATIC__/js/swiper.min.js"></script>
+
+<!-- 底部样式开始 -->
+    <include file="footer" />
+
+</div>
+</body>
+<script>
+    function logout(){
+        //询问框
+        layer.confirm('您确定要退出个人中心?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Member/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.replace("{:U('Index/index')}")
+                }else{
+                    location.reload();
+                }
+            })
+        });
+    }
+
+
+
+ /* function del()
+   {
+       if(confirm("确定要删除吗？"))
+       {
+           return true;
+       }
+       else
+       {
+           return false;
+       }
+   }*/
+
+
+
+    function del(e){
+        layer.confirm("你确定删除吗？",{
+            btn:['确定','取消']
+        },function(){
+
+            $.post("{:U('Centre/shanchu')}",{'id':e},function(res){
+
+                if(res.status=='ok'){
+
+                   layer.confirm("删除成功",{btn:['确定']},function(){
+                       location.href='';
+                   })
+                }else{
+                    layer.msg('删除失败')
+                }
+            })
+        })
+    }
+
+
+    function sure(e){
+        layer.confirm("请确认收货！",{
+            btn:['确定','取消']
+        },function(){
+
+            $.post("{:U('Centre/queren')}",{'id':e},function(res){
+
+                if(res.status=='ok'){
+
+                    layer.confirm("确认成功！",{btn:['确定']},function(){
+                        location.href='';
+                    })
+                }else{
+                    layer.msg('确认失败')
+                }
+            })
+        })
+    }
+   /*  var a=$("#hidden").val()
+     var b='del'+a
+    $(".b").click(function(){
+        layer.confirm("你确定删除吗？",{
+            btn:['确定','取消']
+        },function(){
+            $.post("{:U('MemberCenter/repwd')}?id={$val.oid}",$('.del').serialize(),function(res){
+                if(res.status=='ok'){
+                    layer.msg('删除成功')
+                }else{
+                    layer.msg('删除失败')
+                }
+            })
+        })
+    })*/
+</script>
+<script type="text/javascript">
+    $(function() {
+        $('.text2').hide();
+    });
+    </script>
+<script>
+    function chk(){
+        var chkAll=document.getElementById('chkAll');
+        var chks=document.getElementsByName('chk[]');
+        for(var i=0;i<chks.length;i++){
+            chks[i].checked=chkAll.checked;
+        }
+    }
+    document.getElementById('chkAll').onclick=chk;
+    $('.cateList').hide();
+    function getprices(){
+        var nums=document.getElementsByClassName('num');
+        var price=document.getElementsByClassName('price');
+        var prices=document.getElementsByClassName('prices');
+        for(var i=0;i<price.length;i++){
+
+            prices[i].innerHTML=parseInt(price[i].innerHTML)*parseInt(nums[i].value);
+
+        };
+    }
+
+    function gettotalprice(){
+        getprices();
+        var inputs=document.getElementsByName('chk[]');
+        var prices=document.getElementsByClassName('prices');
+        var totalprice=0;
+        for(var i=0;i<inputs.length;i++){
+            if(inputs[i].checked){
+                totalprice+=parseInt(prices[i].innerHTML);
+            };
+        };
+        document.getElementById('totalprice').innerHTML='￥'+totalprice;
+        document.getElementById('prices').value=totalprice;
+    }
+
+    gettotalprice();
+</script>
+</html>

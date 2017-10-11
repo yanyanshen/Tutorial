@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <!--<script src="__STATIC__/js/password.js"></script>-->
+    <link rel="stylesheet" href="__STATIC__/css/password.css" />
+    <link rel="stylesheet" href="__STATIC__/css/reset.css" />
+    <script src="__STATIC__/js/geo.js"></script>
+    <script src="__STATIC__/js/jquery.form.js"></script>
+    <script src="__STATIC__/js/jquery.validate.js"></script>
+    <script src="__STATIC__/layer/layer.js"></script>
+    <style type="text/css">
+        input.error{
+            border: 1px solid #EA5200;
+            background: #ffdbb3;
+        }
+        label.error{
+            background:url("__STATIC__/images/error.png") no-repeat 5px 2px;
+            padding-left:18px;
+            color:#ff0300;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        label.ok {
+            background:url("__STATIC__/images/ok.png") no-repeat 5px 2px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--  顶部开始 -->
+<include file="header" />
+
+
+
+
+
+<div class="cont">
+    <div class="cont_bg">
+        <ul class="sidebar">
+            <li class="touxiang"><img src="__STATIC__/images/touxiang.jpg"><p>{$username}</p>
+            </li>
+            <li class="gongneng" style="background: #f1f1f1;"><a href="{:U('Centre/member')}">首页</a></li>
+            <li><a href="{:U('Centre/member')}">会员中心</a></li>
+            <li><a href="{:U('Centre/order')}">我的订单</a></li>
+            <li><a href="{:U('Centre/password')}">个人信息</a></li>
+            <li><a href="{:U('Centre/address')}">收货地址</a></li>
+        </ul>
+
+        <!-- tab -->
+        <div class="news">
+            <ul class="clearfix">
+                <li><a href="#">收货地址</a></li>
+            </ul>
+            <div class="text">
+
+<!--
+                <div style="height:40px; background-color: #90a2bc">
+                    <ul style="padding-left: 50px; ">
+                        <li style="margin-right:100px; ">订单号</li>
+                        <li style="margin-right:50px;">收货人</li>
+                        <li style="margin-right:100px;">电话</li>
+                        <li style="margin-right:50px;">地址</li>
+                        <li style="margin-left:150px;">操作</li>
+                    </ul>
+                </div>
+                <div style="height:80px; background-color: #eee; " >
+                    <ul>
+                        <li style="margin-right:100px;font-size: 12px;margin-left: 0;">1234567895435635434563456356</li>
+                        <li style="margin-right:50px;margin-left:0;font-size: 12px;">测试</li>
+                        <li style="margin-right:100px;margin-left:0;font-size: 12px;">15939578152</li>
+                        <div style="height:70px;width: 150px;float: left;margin-left:10px;">  <li style="margin: 0px;padding:0;font-size: 12px;">贝多芬VU红人馆V绝对不V；放假吧</div>
+                        <li style="margin-left:100px;font-size: 12px;">对方部分的</li>
+                    </ul>
+                </div>-->
+                <form action="{:U('Address/address')}" id="address" method="post" >
+
+                    <p class="username">收货人：&nbsp;&nbsp;&nbsp;<input name="username" class="form1" type="text" id="user" value="{$username}"/></p><br />
+
+                    <p class="address1" style="margin-bottom: 25px;">所在地区：
+                        <select class="select" name="province" id="s1" value="{$province}">
+                            <option></option>
+                        </select>
+                        <select class="select" name="city" id="s2" value="{$city}">
+                            <option></option>
+                        </select>
+                        <select class="select" name="town" id="s3" value="{$town}">
+                            <option></option>
+                        </select>
+                    </p>
+                    <div>
+                    <span>详细地址：</span>
+                    <p class="addres2" style="margin-left: 70px;margin-top: -20px;">
+
+                        <textarea class="add" name="addressDetail" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息" style="width: 400px;height: 100px;"></textarea>
+                    </p>
+                    </div>
+                    <p class="mobile">手机号：<input type="text" class="mob" name="mobile" value="{$mobile}" style="width: 230px;height: 30px;"></p><br />
+
+                </form>
+                <button id="baocun" style="background-color:#EC0909;width:200px;height: 35px; margin-left: 180px;font-size: 20px;font-weight: bold;">保存</button>
+                <!--<h2><input id="baocun" type="submit" class="btn" value="保存"/></h2>-->
+                </div>
+            <script>
+                setup();
+            </script>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- 底部开始 -->
+<include file="footer" />
+
+
+</body>
+<script>
+    function logout(){
+        //询问框
+        layer.confirm('您确定要退出个人中心?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Member/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.replace("{:U('Centre/index')}")
+                }else{
+                    location.reload();
+                }
+            })
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    //jQuery Validate(表单验证)
+    $(function(){
+        var validate=$("#form1").validate({
+            //设置验证规则
+            rules:{ //规则
+                username: {         //用户名
+                    required: true, //用户名不能为空
+                    minlength: 2,   //用户名最小长度为两个字符
+                    maxlength: 10  //用户名最大长度为两个字符
+
+                },
+                addressDetail:{
+                    required:true    //地址不能为空
+                },
+                mobile:{             //手机号
+                    required:true,   //手机号不能为空
+                    mobile:true      //手机格式？
+                }
+            },
+            //设置提示信息
+            messages:{
+                username:{
+                    required:'用户名不能为空',
+                    minlength:'用户名至少需要2个字符',
+                    maxlength:'用户名最多10个字符',
+                    remote:'用户名已被占用'
+                },
+                addressDetail:{
+                    required:'详细地址不能为空'
+                },
+                mobile:{
+                    required:'手机号码不能为空',
+                    mobile:'手机号码格式不正确'
+                }
+            },
+            success: function(label) {
+                label.addClass("ok");
+            },
+            validClass: "ok",
+            errorPlacement: function(error, element) {
+                error.appendTo( element.parent());
+            }
+
+
+        })
+        //jQuery Validate(表单验证)得到焦点
+        jQuery.validator.onfocus=true;
+        // 邮政编码验证
+        jQuery.validator.addMethod("postCode", function(value, element) {
+            var codeReg= /^[0-9]{6}$/;
+            return this.optional(element) || (codeReg.test(value));
+        }, "请正确填写您的邮政编码");
+
+        //手机号验证
+        jQuery.validator.addMethod("mobile", function(value, element) {
+            var mobileReg = /^1[34578]{1}[0-9]{9}$/;
+            return this.optional(element) || (mobileReg.test(value));
+        }, "请正确填写您的手机号码");
+        //jQuery Form（AJAX表单提交）
+        /*$("#form1").submit(function(){
+            if(validate.form()){
+                $("#form1").ajaxSubmit(function(res){
+                    document.write(res);
+                });
+                return false; //阻止表单默认提交
+            }
+        })*/
+
+
+    })
+
+    //后台验证
+
+    $('#baocun').click(function(){
+        layer.confirm("你确定保存吗？",{
+            btn:['确定','取消']
+        },function(){
+            $.post("{:U('Address/address')}",$('#address').serialize(),function(res){
+                if(res.status=='ok'){
+                    layer.msg('保存成功')
+
+                }else{
+                    layer.msg('保存失败')
+                }})
+        })
+    })
+
+
+
+</script>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>欢迎光临苗家频道！</title>
+    <LINK rel=stylesheet type=text/css href="__STATIC__/style/common.css">
+    <link rel="stylesheet" href="__STATIC__/style/DetailPages.css" />
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.imagezoom.min.js"></script>
+    <script src="__STATIC__/js/DetailPages.js"></script>
+    <script type=text/javascript src="__STATIC__/js/kefu.js"></script>
+</head>
+
+<body>
+<!-- 顶部开始 -->
+<include file="Index/header" />
+<!--<include file="Common/top.html" />-->
+<!-- 导航开始结束 -->
+<!-- 淘宝产品区域开始 -->
+<!--当前位置开始-->
+<div class="frm_sty now">
+    <ul class="clearfix">
+        <li>
+            <p>当前位置：</p>
+        </li>
+        <li>
+            <a href="#">首页&nbsp;&nbsp; ></a>
+        </li>
+        <li>
+            <span>{$goodsname}</span>
+        </li>
+    </ul>
+</div>
+<!-- 描述开始 -->
+<div class="frm_sty detail clearfix">
+    <!-- 淘宝风聚焦图 -->
+    <div class="box">
+
+            <div class="tb-booth tb-pic tb-s310">
+                <a href="__ROOT__/Uploads/400_{$picname}">  <img src="__ROOT__/Uploads/400_{$picname}"  rel="__ROOT__/Uploads/{$picname}" class="jqzoom" /></a>
+            </div>
+
+        <ul class="tb-thumb" id="thumblist">
+                <li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img  src="__ROOT__/Uploads/60_{$picname}" mid="__ROOT__/Uploads/400_{$picname}"  big="__ROOT__/Uploads/{$picname}"></a></div></li>
+          </ul>
+    </div>
+    <!-- 右部描述 -->
+    <div class="fr">
+        <h3>苗家特色：{$goodsname}</h3>
+        <!-- <p>贵州纯天然，安全，放心的绿色食品，真空包装可延长保质期 老少皆宜！花米饭是贵州传统的“三月三”民俗文化风味食品。主要精选头年上好的糯米为主料，配以野生植物的根茎花叶，用他们提取红、黄、青、紫、黑等色素，再把这些色素和糯米共同浸泡使其着色，然后再放到锅里蒸熟。这样制出的花米饭，色香味俱全。</p>-->
+        <div class="price">
+            <ul class="clearfix">
+                <li class="li1">
+                    <p>商城价格</p>
+                </li>
+                <li>
+                    <p><b>￥{$price}</b><a href="#">(降价通知)</a></p>
+                </li>
+               <!-- <li class="li3">
+                    <p>已有<span>1560</span>人评价</p>
+                </li>-->
+            </ul>
+            <ul class="clearfix">
+                <li class="li1"><p>市场价格</p></li>
+                <li><p>￥{$marketprice}</p></li>
+            </ul>
+        </div>
+        <div class="sale clearfix">
+            <ul class="clearfix">
+                <li class="li1"><p>促销</p></li>
+                <li><p>以下促销可在购物车任选其:</p>
+                    <p><span>满减</span>满68.00元即赠热销商品，赠完即止，请在购物车点击领取</p>
+                    <p><span>满减</span>满99.00元减20.00,满108.00减30.00</p>
+                    <p><span>包邮</span>本店消费满￥79包邮</p>
+                </li>
+            </ul>
+            <h4>可选等级</h4>
+            <ul class="ul2" id="ul2">
+                <li>
+                    <p>特级精品</p>
+                </li>
+               <!-- <li>
+                    <p >一级精品</p>
+                </li>
+                <li>
+                    <p >二级精品</p>
+                </li>-->
+            </ul>
+        </div>
+
+        <div class="buycar clearfix">
+            <form action="{:U('Shop/toaction')}" method="post" id="form1">
+            <!--<form action="{:U('Shop/addcar')}" method="post" id="form1">-->
+                <input type="hidden" value="{$id}" name="id"/>
+            <p>数量</p>
+            <td class="tb1_td5">
+                <input id="min1" name=""  style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="-" />
+                <input id="text_box1" name="buynum" type="text" value="1" style=" width:30px;height:14px; text-align:center; border:1px solid #ccc;" />
+                <input id="add1" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="+" />
+            </td>
+                <input type="hidden" name="price" value="{$price}">
+            </form>
+            <a href="javascript:tobuy()" id="tobuy"><span class="span1">立即购买</span></a>
+            <!--<a  onclick="document.getElementById('form1').submit()"  id="add"><span class="span2">加入购物车</span></a>-->
+            <a href="javascript:add()"  id="add"><span class="span2">加入购物车</span></a>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- 描述结束 -->
+
+<!-- 产品详情页开始 -->
+<div class="frm_sty container clearfix">
+    <!-- 左侧分栏目 -->
+    <div class="slidebar">
+        <div class="s1">
+            <h4 class="title"><a href="#">HOT 热门商品</a></h4>
+            <ul>
+                <li><img src="__STATIC__/images/sidebar1.jpg" alt="" /><a href="#"><span class="txt">三米四豆五果粽</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar2.jpg" alt="" /><span class="txt">瑶柱虾仁海鲜棕</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar3.jpg" alt="" /><span class="txt">桂圆莲子蜜枣粽</span></a></li>
+            </ul>
+        </div>
+        <div class="s1">
+            <h4 class="title"><a href="#">HOT 热门商品</a></h4>
+            <ul>
+                <li><img src="__STATIC__/images/sidebar1.jpg" alt="" /><a href="#"><span class="txt">三米四豆五果粽</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar2.jpg" alt="" /><span class="txt">瑶柱虾仁海鲜棕</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar3.jpg" alt="" /><span class="txt">桂圆莲子蜜枣粽</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar3.jpg" alt="" /><span class="txt">桂圆莲子蜜枣粽</span></a></li>
+            </ul>
+        </div>
+        <div class="s2">
+            <h4 class="title"><a href="#">相关商品</a></h4>
+            <ul>
+                <li><a href="#"><img src="__STATIC__/images/sidebar4.jpg" alt="" /><span class="txt">精选竹叶</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar5.jpg" alt="" /><span class="txt">农家土生土长 的土鸡蛋</span></a></li>
+                <li><a href="#"><img src="__STATIC__/images/sidebar6.jpg" alt="" /><span class="txt"> 五色米</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 右部内容详情 -->
+    <div class="content">
+        <!-- 标题内容 -->
+        <!-- 右侧导航 -->
+        <div class="title">
+            <ul class="clearfix">
+                <li class="focus">
+                    <a href="javascript:void(0);">产品参数</a>
+                </li>
+                <li >
+                    <a href="javascript:void(0);">商品信息</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">累计评价</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">食用方法</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 商品描述内容 -->
+        <div class="m">
+            <div class="detail">
+                <div class="canshu">
+                    <ul class="clearfix">
+                        <li class="li1"><p>产品参数：</p></li>
+                        <li class="li2"><p>配料表：糯米、饮用水、猪肉、酿造酱油（含焦糖色）、白砂糖、食用盐、白酒、鸡精调味料、味精<br />储藏方法：常温避光通风<br /> 食品添加剂：鸡精调味料、味精净<br />是否有馅料: 有馅料<br />馅料: 其他/other粽子大小: 中粽（51g~120g）<br /> 规格: 1160g<br/>套餐份量: 5人份配送频次: 1周2次<br />保质期：270包装方式: 真空袋装 </p></li>
+                    </ul>
+                    <img src="__STATIC__/images/bg.jpg" alt="" />
+                </div>
+            </div>
+            <div class="pmsg">
+                <h3>商品信息</h3>
+                <div class="tupian1"></div>
+                <div class="tupian2"></div>
+                <div class="tupian3"></div>
+                <div class="tupian4"></div>
+            </div>
+            <!-- 累计评价开始 -->
+            <div class="msg">
+                <h3>累计评价<span>(5560条）</span></h3>
+                <ul>
+                    <li class="li1">
+                    </li>
+                    <li class="li2">
+                        <p>miya138***337</p>
+                        <p>特别爱吃鲜肉粽子，里面好大一个，分量足，一袋里面包装三个，都是单独包装的，方便，真空包装，早上煮的吃一个就饱了，生产日期是最新的，绝对新鲜，粽子控的吃货要下手咯</p>
+                        <p>2016.5.25</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="li1">
+                    </li>
+                    <li class="li2">
+                        <p>miya138***337</p>
+                        <p>特别爱吃鲜肉粽子，里面好大一个，分量足，一袋里面包装三个，都是单独包装的，方便，真空包装，早上煮的吃一个就饱了，生产日期是最新的，绝对新鲜，粽子控的吃货要下手咯</p>
+                        <p>2016.5.25</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="li1">
+                    </li>
+                    <li class="li2">
+                        <p>miya138***337</p>
+                        <p>特别爱吃鲜肉粽子，里面好大一个，分量足，一袋里面包装三个，都是单独包装的，方便，真空包装，早上煮的吃一个就饱了，生产日期是最新的，绝对新鲜，粽子控的吃货要下手咯</p>
+                        <p>2016.5.25</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="li1">
+                    </li>
+                    <li class="li2">
+                        <p>miya138***337</p>
+                        <p>特别爱吃鲜肉粽子，里面好大一个，分量足，一袋里面包装三个，都是单独包装的，方便，真空包装，早上煮的吃一个就饱了，生产日期是最新的，绝对新鲜，粽子控的吃货要下手咯</p>
+                        <p>2016.5.25</p>
+                    </li>
+                </ul><ul>
+                <li class="li1">
+                </li>
+                <li class="li2">
+                    <p>miya138***337</p>
+                    <p>特别爱吃鲜肉粽子，里面好大一个，分量足，一袋里面包装三个，都是单独包装的，方便，真空包装，早上煮的吃一个就饱了，生产日期是最新的，绝对新鲜，粽子控的吃货要下手咯</p>
+                    <p>2016.5.25</p>
+                </li>
+            </ul>
+            </div>
+            <div class="use">
+                <h3>食用方法</h3>
+            </div>
+        </div>
+        <!-- 使用方法开始   -->
+
+    </div>
+</div>
+<div>
+
+</div>
+<!-- 猜你喜欢 -->
+<div class="guess frm_sty clearfix">
+    <ul class="ul11">
+        <li class="l11"><a href="#">猜您喜欢</a></li>
+        <li class="l12"><a href="#">更多></a></li>
+    </ul>
+    <ul class="Cont">
+        <li><a href="#"><img src="__STATIC__/images/tu1.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu2.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu3.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu4.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu5.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏</span></a></li>
+        <li class="l6"><a href="#"><img src="__STATIC__/images/tu6.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏</span></a></li>
+    </ul>
+</div>
+<!-- 底部开始 -->
+<include file="Index/footer" />
+<!-- 返回顶部 -->
+<div class="toTop">返回<br/>顶部</div>
+<!-- 右侧导航 -->
+<div class="rightNav">
+    <ul>
+        <li class="focus"><a href="#" >产品参数</a></li>
+        <li><a href="#">商品信息</a></li>
+        <li><a href="#" >累计评价</a></li>
+        <li><a href="#">食用方法</a></li>
+    </ul>
+</div>
+<!-- 右部客服 -->
+<div id=floatTools class=float0831>
+    <div class=floatL><a style="DISPLAY: none" id=aFloatTools_Show class=btnOpen
+                         title="查看在线客服"
+                         onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');"
+                         href="javascript:void(0);">展开</a> <a id="aFloatTools_Hide" class="btnCtn"
+                                                              title="关闭在线客服"
+                                                              onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');"
+                                                              href="javascript:void(0);">收缩</a> </div>
+    <div id=divFloatToolsView class=floatR>
+        <div class="tp"></div>
+        <div class="cn">
+            <ul>
+                <li class="top">
+                    <h3 class="titZx">QQ咨询</h3>
+                </li>
+                <li><span class="icoZx">在线咨询</span> </li>
+                <li><a class="icoTc" href="#">A客服</a> </li>
+                <li><a class="icoTc" href="javascript:void(0);">B客服</a> </li>
+                <li><a class="icoTc" href="#">C客服</a> </li>
+                <li class="bot"><a class=icoTc href="javascript:void(0);">D客服</a> </li>
+            </ul>
+            <ul class="webZx">
+                <li class=webZx-in><a href="http://www.qq.com/" target="_blank" style="float : left"><img src="__STATIC__/images/right_float_web.png" border="0px"></a> </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3 class="titDh">电话咨询</h3>
+                </li>
+                <li><span class="icoTl">400-000-0000</span> </li>
+                <li class="bot">
+                    <h3 class="titDc"><a href="http://www.index.html/" target="_blank">新版调查</a></h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    // 置顶导航的右部导航效果
+    $(function(){
+        $(".rightNav li").click(function(){
+            var i=$(this).index();
+            T=$(".container .content .m>div").eq(i).offset().top;
+            $(this).addClass("focus").siblings().removeClass("focus");
+            $("body").animate({scrollTop: T},1000);
+        });
+        $(document).scroll(function(){
+            var T=$("body").scrollTop();
+            for(var j=0;j<4;j++){
+                divT=$(".container .content .m>div").eq(j).offset().top-70;
+                if (T>divT){
+                    $(".rightNav li").eq(j).addClass("focus").siblings().removeClass("focus");
+                }
+            }
+        });
+    });
+    //右部详情信息的滚屏效果
+    $(function(){
+        $(".container .content .title li").click(function(){
+            var i=$(this).index();
+            T=$(".container .content .m>div").eq(i).offset().top;
+            $(this).addClass("focus").siblings().removeClass("focus");
+            $("body").animate({scrollTop: T},1000);
+        });
+        $(document).scroll(function(){
+            var T=$("body").scrollTop();
+            for(var j=0;j<4;j++){
+                divT=$(".container .content .m>div").eq(j).offset().top;
+                if (T>divT){
+                    $(".container .content .title li").eq(j).addClass("focus").siblings().removeClass("focus");
+                }
+            }
+        });
+    });
+
+  /*  function tobuy(){
+        var res=document.getElementById('form1');
+        res.action="{:U('Home/Shop/toaction',array('act'=>'tobuy'))}";
+        res.submit();
+    }*/
+
+ /*function add(){
+        var res=document.getElementById('form1');
+        res.action="{:U('Home/Shop/toaction',array('act'=>'add'))}";
+        res.submit();
+    }
+*/
+
+
+    //判断是否登录
+
+    $("#tobuy").click(function() {
+        $.post("{:U('Member/log')}",$('#form1').serialize(),function(res){
+            if(res.status=='no'){
+                layer.confirm("请先登录",{
+                    btn:['确定','稍后登录']
+                },function(){
+                    location.href="{:U('Member/login')}"
+                })
+            }else {
+               // 如果已登录执行购买
+                    var res=document.getElementById('form1');
+                    res.action="{:U('Home/Shop/toaction',array('act'=>'tobuy'))}";
+                    res.submit()
+
+            }
+        })
+    })
+
+//登录加入购物车
+    $("#add").click(function() {
+        $.post("{:U('Member/log')}",$('#form1').serialize(),function(res){
+            if(res.status=='no'){
+                layer.confirm("请先登录",{
+                    btn:['确定','稍后登录']
+                },function(){
+                    location.href="{:U('Member/login')}"
+                })
+            }else {
+                //如果登录执行添加
+                    var res=document.getElementById('form1');
+                    res.action="{:U('Home/Shop/toaction',array('act'=>'add'))}";
+                    res.submit();
+
+            }
+        })
+    })
+
+
+    function logout(){
+//询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/Member/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.reload();
+                };
+            })
+        });
+    }
+</script>
+</body>
+</html>

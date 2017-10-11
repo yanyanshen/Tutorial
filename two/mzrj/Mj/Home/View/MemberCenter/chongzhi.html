@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="__STATIC__/style/member.css">
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <script type="text/javascript" src="__STATIC__/layer/layer.js"></script>
+</head>
+<body>
+
+
+
+<include file="Index/header" />
+
+
+<div class="cont">
+    <div class="cont_bg" >
+
+        <ul class="sidebar" style="height:450px;">
+            <li class="li01" style="background: #f1f1f1;"><a href="#"><span>全部功能</span></a></li>
+            <!--<li class="no"><a href="membercenter.html">会员中心</a></li>-->
+            <li><a href="{:U('MemberCenter/orderlist')}">我的订单</a></li>
+           <!-- <li><a href="#">我的优惠卷</a></li>
+            <li><a href="#">商品收藏</a></li>-->
+            <li><a href="{:U('MemberCenter/jifen')}">我的积分</a></li>
+           <!-- <li><a href="{:U('MemberCenter/returngoods')}">退换货申请</a></li>-->
+            <li><a href="{:U('Member/memberinfo')}">个人消息</a></li>
+            <li><a href="{:U('MemberCenter/address')}">收货地址</a></li>
+           <!-- <li class="kefu"><a href="#">在线客服</a></li>-->
+        </ul>
+
+        <!-- tab -->
+        <div class="news">
+            <ul class="clearfix">
+                <li><a href="#">账户充值</a></li>
+
+            </ul>
+            <div class="text">
+                <form action="{:U('MemberCenter/chongzhi')}" method="post" id="chongzhi">
+                    充值：<input name="chongzhi" class="form1" type="text"  /><br />
+
+         <div>
+           <a href=""> <img src="__STATIC__/images/支付宝.jpg" alt="" style="width:150px;height:120px;"></a>
+            <a href=""> <img src="__STATIC__/images/微信.jpg" alt="" style="width:80px;height:80px;"></a>
+            <a href=""> <img src="__STATIC__/images/银联.jpg" alt="" style="width:80px;height:80px;"></a>
+            <a href=""><img src="__STATIC__/images/钱盒.jpg" alt="" style="width:70px;height:70px;"></a>
+         </div>
+                    <!-- <h2 id="baocun">保存</h2>-->
+                </form>
+                <h2 class="queren" style="cursor:pointer;margin-left: 100px;">充值</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- 底部开始 -->
+<include file="Public/Home/footer.html" />
+
+</body>
+<script>
+   /* $('.queren').click(function(){
+        $('#chongzhi').submit()
+    })
+*/
+    $('.queren').click(function(){
+        layer.confirm("你确定充值吗？",{
+            btn:['确定','取消']
+        },function(){
+            $.post("{:U('MemberCenter/chongzhi')}",$('#chongzhi').serialize(),function(res){
+                if(res.status=='ok'){
+                    layer.msg('充值成功')
+                }else{
+                    layer.msg('充值失败')
+                }
+            })
+        })
+    })
+
+
+
+    function logout(){
+        //询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/Member/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.reload();
+                };
+            })
+        });
+    }
+
+
+
+</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户中心-我的订单</title>
+    <meta name="keywords" content="标题">
+    <meta name="description" content="内容">
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" rev="stylesheet" href="__STATIC__/css/membercenter.css" />
+    <script type="text/javascript" src="__STATIC__/js/jQuery.1.8.2.min.js"></script>
+    <style type="text/css">
+        a:hover{ text-decoration:none; color:#00A3EC!important;}
+        .infoul{text-align:center; padding:20px;}
+        .infoul li{ float:left;width:40%; margin:0 3% 0; margin-bottom:40px; height:110px; border:1px solid #ddd; padding:20px 0; background:#F6F6F6}
+        .infoul li p.infotime{font-size:16px;}
+        .infoul li .infodetail{ text-align:right; padding-right:20px;}
+        .infoul li .infodetail a{ font-size:14px; color:#0093DD}
+        .infotime{ height:40px; line-height:40px;}
+        .infomoney{ font-size:26px; font-weight:700;}
+        .news{ margin:10px; border:1px solid #0093DD; padding-bottom:10px;}
+        .news h1{padding: 10px 20px 0;}
+        .news h1 a{font-size:16px; font-weight:700;}
+        .news strong{ padding:5px 20px; display:block; color:#444;}
+        .news p{ padding:0 20px;}
+        .news h2{ font-size:18px; padding:8px 10px; border-bottom:1px solid #EEF2FB; background:#00A3EC; color:#fff; font-weight:700;}
+        #page{
+            position: fixed;
+            bottom: 160px;
+            right:50px;
+        }
+        .message{
+            position: fixed;
+            bottom: 220px;
+            right:50px;
+        }
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #f0ead8;
+            color:#373737;
+        }
+        #page a:hover{
+            background:#00c0ef;
+            color:#333;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #0088ff;
+            color:#fff;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="buyer_day">
+
+
+    <p class="select_title"><span>已确认订单列表</span></p>
+    <div class="day_select">
+        <form action="{:U('Order/finish')}" method="get">
+            <p class="day_time02">
+                <label>订单号:</label>
+                <input type="text" name="key" placeholder="请输入搜索内容 "/>
+                <input type="submit" value="搜索" class="selbtn01"/>
+                <!--<button  class="selbtn01" value="搜索" onclick="submit()">搜索</button>-->
+            </p>
+        </form>
+    </div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="day_list">
+        <thead>
+        <tr>
+            <th class="xuhao">编号</th>
+            <th class="username">时间</th>
+            <th class="userlogin">订单号</th>
+            <th class="userpv">用户名</th>
+            <th class="usertime">订单状态</th>
+            <th class="userip">成交金额</th>
+            <th class="websort">操作</th>
+        </tr>
+        </thead>
+        <tbody id="pageBody">
+        <volist name="goodslist" id="val" key="k">
+            <tr>
+                <td class="xuhao">{$k+firstRow}</td>
+                <td class="username">{:date("Y-m-d H:i:s",$val['order_createtime'])}</td>
+                <td class="userlogin">{$val.ordersyn}</td>
+                <td class="userpv">{$val.username}</td>
+                <td class="usertime">{$val.order_status}</td>
+                <td class="userip">{$val.money}</td>
+                <td class="websort"><a href="{:U('Order/findetail')}?oid={$val.oid}">查看订单详情</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{:U('Order/del')}?oid={$val.oid}" onclick="return confirm('你确定要删除吗')">删除</a></td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+
+    <div style="clear:both;"></div>
+    <div class="pagin">
+
+        <div class="message">共<i class="blue" style="font-size: 18px;color: #f00">{$count}</i>条记录，当前显示第&nbsp;<i class="blue" style="font-size: 18px;color: #f00" value="1">{$p}&nbsp;</i>页</div>
+
+        <ul class="paginList">
+            <div id="page">
+                {$page}
+            </div>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="__STATIC__/style/member.css">
+
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <script type="text/javascript" src="__STATIC__/layer/layer.js"></script>
+</head>
+<body>
+
+
+<include file="Index/header" />
+
+
+<div class="cont">
+   <div class="cont_bg" >
+
+        <ul class="sidebar" style="height: 300px;">
+            <li class="gongneng"><a href="#">全部功能</a></li>
+           <!-- <li><a href="member.html">会员中心</a></li>-->
+            <li><a href="{:U('MemberCenter/orderlist')}">我的订单</a></li>
+          <!--  <li><a href="#">我的优惠券</a></li>
+           <li><a href="#">商品收藏</a></li>-->
+            <li><a href="{:U('MemberCenter/jifen')}">我的积分</a></li>
+            <!--<li><a href="returngood.html">退款维权</a></li>-->
+            <li><a href="{:U('Member/memberinfo')}">个人信息</a></li>
+            <li><a href="{:U('MemberCenter/address')}">收货地址</a></li>
+            <!--<li class="kefu"><a href="#">在线客服</a></li>-->
+
+        </ul>
+
+        <!-- tab -->
+        <div class="news">
+            <ul class="clearfix">
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">修改密码</a></li>
+            </ul>
+            <div class="text">
+                <form action="{:U('Member/memberinfo')}" method="post" id="xiugai">
+                    用户名：<input name="username" class="form1" type="text" id="username" value=""/><br />
+                    <p class="p2">手机号：<input type="text" class="tel" name="mobile"><span class="red"></span><span id="msgTel" class="tips"></span></p><br />
+                    <p class="p3">E-mail：<input type="text" class="e_mail" name="email"><span id="msgMail" class="tips"></span></p><br />
+                   <!-- <h2 id="baocun">保存</h2>-->
+                    <h2 class="baocun" style="cursor:pointer;margin-left: 100px;">保存</h2>
+                </form>
+
+
+               <!-- <div class="file">
+                    <p class="fr file_p"><img src="__STATIC__/images/touxiang.jpg"></p>
+                    <input name="photo" type="file" id="photo" class="file_p1">
+                    </p>
+                    <p class="file_p2">
+                        支持文件类型：jpg/png/gif
+                    </p>
+                </div>-->
+            </div>
+
+            <div class="text02 clearfix">
+           <form method="post" action="{:U('MemberCenter/repwd')}" id="repwd">
+            <p>输入原密码：<input type="password" name="pwd1"><span class="mima01"></span></p><br />
+            <p>新密码：<input type="password" name="pwd2"><span class="mima02"></span></p><br />
+            <p>确认密码：<input type="password" name="pwd3"><span class="mima03"></span></p><br />
+            <p class="xiugai" style="cursor:pointer;">确认修改</p>
+           <!-- <input type="button" id="xiugaipwd" value="确认修改">-->
+           </form>
+       </div>
+    </div>
+
+</div>
+</div>
+
+<!-- 底部开始 -->
+<include file="Public/Home/footer.html" />
+    
+</body>
+<script>
+
+
+ /* $('.baocun').click(function(){
+   $('#xiugai').submit()
+   })
+*/
+
+  $('.baocun').click(function(){
+       layer.confirm("你确定保存吗？",{
+           btn:['确定','取消']
+       },function(){
+           $.post("{:U('Member/memberinfo')}",$('#xiugai').serialize(),function(res){
+               if(res.status=='ok'){
+                   layer.msg('保存成功')
+               }else{
+                   layer.msg('保存失败')
+               }
+           })
+       })
+   })
+
+   $('.xiugai').click(function(){
+        layer.confirm("你确定修改吗？",{
+            btn:['确定','取消']
+        },function(){
+            $.post("{:U('MemberCenter/repwd')}",$('#repwd').serialize(),function(res){
+                if(res.status=='ok'){
+                    layer.msg('修改成功')
+                }else{
+                    layer.msg('修改失败')
+                }
+            })
+        })
+    })
+
+
+
+</script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="__STATIC__/style/shoppingcar.css" />
+
+    <script type="text/javascript" src="__STATIC__/js/shoppingcar.js"></script>
+    <script src="__STATIC__/js/jQuery-1.8.2.min.js"></script>
+</head>
+<body>
+<include file="Index/header" />
+<!-- 顶部开始 -->
+
+
+<!-- 全部商品 开始 -->
+<div class="" style="height: 200px;text-align: center;font-size: 18px;line-height: 200px">
+  <div class="frm_sty">
+    <table width="100%" border="0" style="border:0" id="cart">
+        <tbody><tr>
+            <td>
+                <a href="">
+                    <img src="__ROOT__/Uploads/60_{$goods1.picname}" alt="" style="width:80px;margin:10px;vertical-align:middle" />
+                    {$goods1.goodsname} &nbsp;&nbsp;购买数量：{$goods1.buynum} &nbsp;&nbsp;单价：￥{$goods1.price}
+                </a>
+            </td>
+            <td class="pxtitle">
+                <a href="__ROOT__/index.php" ><span style="padding:10px 20px;font-size:24px;border: 1px solid #ccc;background: #C2A07A;color:#fff;border-radius:15px";>继续购物</span></a>
+                &nbsp;&nbsp; &nbsp;&nbsp;<a href="{:U('Shop/index')}" style="padding:10px 20px;font-size:24px;background:#B1191A;border-radius:15px;color: #fff">去购物车结算</a>
+            </td>
+        </tr>
+        </tbody></table>
+  </div>
+</div>
+
+
+</div>
+<!-- 猜您喜欢 开始 -->
+<div class="guess frm_sty clearfix">
+    <ul class="ul11">
+        <li class="l11"><a href="#">猜您喜欢</a></li>
+        <li class="l12"><a href="#">更多></a></li>
+    </ul>
+
+    <ul class="Cont">
+        <li><a href="#"><img src="__STATIC__/images/tu1.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu2.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu3.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu4.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li><a href="#"><img src="__STATIC__/images/tu5.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l6"><a href="#"><img src="__STATIC__/images/tu6.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l7"><a href="#"><img src="__STATIC__/images/tu7.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+        <li class="l8"><a href="#"><img src="__STATIC__/images/tu8.png"/><span class="txt">云南普洱茶勐海七子<br/>云南普洱茶生茶饼分享收藏
+</span></a></li>
+    </ul>
+
+</div>
+
+<!-- 底部 结束 -->
+<include file="Index/footer" />
+
+</body>
+
+<!--<script>
+    function logout(){
+//询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/Member/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.reload();
+                };
+            })
+        });
+    }
+</script>-->
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>订单详情</title>
+    <meta name="keywords" content="标题">
+    <meta name="description" content="内容">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/public.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/index.css">
+    <link type="text/css" rel="stylesheet" rev="stylesheet" href="__STATIC__/css/membercenter.css" />
+    <!--<script type="text/javascript" src="__STATIC__/js/jQuery-1.8.2.min.js"></script>-->
+</head>
+
+<body>
+
+<div class="buyerbox box">
+
+    <p class="orderpro01"><span><i>订单详情</i></span></p>
+    <div class="orderprocon">
+        <div class="clearfix" style="width:80%;">
+            <div class="orderprodiv clearfix">
+
+                <p class="orderproinfo"><span>订单信息</span></p>
+                <p >订单状态：{$status}</p>
+                <p>订单号：{$ordersyn}</p>
+                <p>下单时间：{:date('Y-m-d H:i:s',$createtime)}</p>
+                <p>用户名称：{$username}</p>
+
+            </div>
+
+            <div class="orderprodiv clearfix" style="position:relative">
+                <p class="orderproinfo orderproinfo001"><span>收货信息</span></p>
+                <p><span>收货地址：</span>{$detail}</p>
+                <p>收货人：{$shr}</p>
+                <p><span>联系方式：</span>{$mobile}</p>
+            </div>
+        </div>
+        <p class="orderproinfo"><span>支付方式</span></p>
+        <div style="padding:30px 0;">
+            <form action="">
+                <input type="radio" checked name="paytype" id="hdfk" style="width:18px;vertical-align:middle"/>货到付款
+                <input type="radio"  name="paytype" id="alipay" style="width:18px;vertical-align:middle"/>支付宝支付
+                <input type="radio"  name="paytype" id="wxpay" style="width:18px;vertical-align:middle"/>微信支付
+            </form>
+        </div>
+        <p class="orderproinfo"><span>商品信息</span></p>
+        <table class="orderinfomation" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th class="orderdetitle">商品图片</th>
+                <th class="orderdejiage">商品名称</th>
+                <th class="orderdesum">总量（件）</th>
+                <th class="orderdezjia">商品总价</th>
+            </tr>
+            </thead>
+            <tbody>
+<volist name="goods" id="val">
+                <td class="orderdetitle" style="text-align:left;">
+                    <img style="width:60px;vertical-align:middle" src="__ROOT__/Uploads/60_{$val.picname}" />
+                    <p><a href="#"></a></p>
+                </td>
+                <td class="orderdejiage">{$val.goodsname}</td>
+                <td class="orderdesum">{$val.buynum}件</td>
+                <td class="orderdezjia">￥{$val.totaprice}</td>
+            </tr>
+</volist>
+            </tbody>
+        </table>
+        <div class="ordersumer" id="buy">
+            商品总价:<span style="color:red;font-size:20px;">￥{$val.money}</span>
+<!--            <a style="margin-right: 200px;" target="_blank" class="tobuy" href="../buyAction.php?act=pay&ordersyn=--><?//=$order['ordersyn']?><!--">提交定单</a>-->
+        </div>
+
+    </div>
+</div>
+<div style="clear:both;"></div>
+
+</body>
+
+</html>
+
+

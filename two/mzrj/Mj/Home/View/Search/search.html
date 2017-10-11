@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/search.css">
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+
+</head>
+<style>
+    /*#page{*/
+        /*position: fixed;*/
+        /*bottom: 160px;*/
+        /*right:50px;*/
+    /*}*/
+    #page a{
+        display: inline-block;
+        width: 18px;
+        height:18px;
+        padding:5px;
+        margin: 2px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 18px;
+        border: 1px solid #c2ccd1;
+        background: #f0ead8;
+        color:#373737;
+    }
+    #page a:hover{
+        background:#00c0ef;
+        color:#333;
+    }
+    #page span.current{
+        display: inline-block;
+        width: 18px;
+        height:18px;
+        padding:5px;
+        margin: 2px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 18px;
+        border: 1px solid #c2ccd1;
+        background: #0088ff;
+        color:#fff;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+
+<include file="Index/header" />
+<div class="box main" >
+    <!--<div class="rqphtitle">当前搜索条件：<a href="#">手机</a>&nbsp;>><a href="#">苹果手机</a></div>-->
+    <div class="pxtitle" style="margin: 0 auto">
+        <div style=" float:left;">
+            <a href="javascript:;" onclick="sort(this)" title="desc" class="active">按商品名称查找</a>
+            <!--<a href="javascript:;" onclick="sort(this)" title="desc" style=" margin-left:30px;">商品价格降序排序</a>-->
+            <!--<a href="javascript:;" onclick="sort(this)" title="desc" style=" margin-left:30px;">销售数量降序排序</a>-->
+        </div>
+        <span>共搜索到<i style="color:#FF0000; margin:3px; font-size:14px; font-weight:700;">{$count}</i>件商品</span>
+    </div>
+    <div class="pxlistcon"  style="margin: 0 auto">
+        <div class="pxlist" >
+            <ul style="font-size: 18px;color: red">
+                <volist name="goodslist" id="val" empty="暂时没有数据" key="k">
+                    <li>
+                        <a href="{:U('Detail/index')}?id={$val.id}" title="" >
+                            <img src="__ROOT__/Uploads/400_{$val.picname}" alt="" />
+                            <span>{:mb_substr($val['goodsname'],0,12,"utf-8")}</span>
+                        </a>
+                        <p>￥{$val['price']}</p>
+                    </li>
+                </volist>
+            </ul>
+            <div style="clear:both;"></div>
+            <div class="listpage" id="page">
+                {$page}
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<include file="Index/footer" />
+
+</body>
+
+</html>

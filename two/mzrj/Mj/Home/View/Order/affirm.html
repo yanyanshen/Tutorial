@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="__STATIC__/style/affirm.css">
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/click.js"></script>
+    <script src="__STATIC__/js/geo.js"></script>
+    <title>确认{$goods}信息</title>
+</head>
+<body>
+
+<!--  顶部开始 -->
+<include file="Index/header" />
+
+
+<!--  导航搜索栏 -->
+<div class="logo frm_sty clearfix">
+    <!--<a href="index.html"><img src="__STATIC__/images/logo.png" alt=""></a>-->
+    <h3 class="fl">确认信息</h3>
+    <ul class="fr">
+        <!--<li class="li01"><a href="shopping.html">我的购物车</a></li>-->
+        <!--<li class="li02"><a href="affirm.html">填写核对结算信息</a></li>-->
+        <!--<li class="li03"><a href=" #">成功提交订单</a></li>-->
+    </ul>
+</div>
+<i></i>
+
+
+<div class="title frm_sty">
+	<h3>填写并核对订单信息</h3>
+</div>
+<div class="car frm_sty clearfix">
+<!-- 收货人信息  开始 -->
+	<div class="site">
+		<div class="title clearfix">
+			<h3 class="fl">订单信息</h3>
+			<!-- <span class="fr"><a href="#">新增收货地址</a></span> -->
+		</div>
+		<div class="siteCont clearfix">
+			<!--<div class="show"><a href="javascript:void(0);">新增收货地址</a></div>-->
+            订单号：<p class="p1"><a href="#">{$syn}</a></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			下单时间：<p class="p1"><a href="#">{:date('Y-m-d H:i:s',$ordertime)}</a></p>
+			<!--<p class="p2">河南省 郑州市 高新区 冬青街 26号 18699053882</p>-->
+			<!--<p class="p3"><a href="#">默认地址</a></p><br/>-->
+			<!--<h4><a href="#">更多地址 ∨</a></h4>-->
+		</div>
+	</div>
+
+    <div class="site">
+		<div class="title clearfix">
+			<h3 class="fl">收货人信息</h3>
+
+			<!-- <span class="fr"><a href="#">新增收货地址</a></span> -->
+		</div>
+
+		<div class="siteCont clearfix">
+			<div class="show"><a href="javascript:void(0);">新增收货地址</a></div>
+
+			<!--<p class="p1"><a href="#">收货人:{$addresslist['username']}</a></p>-->
+			<p class="p1">收货人:<span id="shr">{$addresslist['shr']}</span></p>
+			<p class="p">电话:<span id="dh">{$addresslist['mobile']}</span></p>
+			<p class="p2">收货地址:<span id="shdz">{$addresslist['province']}{$addresslist['city']}{$addresslist['town']}{$addresslist['detail_address']}</span></p>
+			<!--<p class="p3"><a href="#">默认地址</a></p><br/>
+			<h4><a href="#">更多地址 ∨</a></h4>-->
+		</div>
+	 </div>
+
+
+    <div class="overlay"></div>
+    <div class="pop">
+        <h3><a href="javascript:void(0);">
+            <img src="__STATIC__/images/gb_btn.png" alt="关闭" style="margin-top: 17px;">
+        </a>收货人信息
+        </h3>
+        <div class="form clearfix">
+          <form action="{:U('Address/address')}" method="post" id="address">
+              <input type="hidden" name="order_id" value="{$orderid}">
+            <p>收货人姓名(必填):<input type="text" name="shr"></p>
+            <p class="p2"><span>收货地址:</span>
+
+                <select class="select" name="province" id="s1">
+                    <option></option>
+                </select>
+                <select class="select" name="city" id="s2">
+                    <option></option>
+                </select>
+                <select class="select" name="town" id="s3">
+                    <option></option>
+                </select>
+            </p>
+            <p><input type="text" id="addr" placeholder="详情街道 楼层号" name="detailaddress"></p>
+            <p>手机号(必填):<input type="text" name="mobile"></p>
+            <p>邮编:<input type="text" name="youbian"></p>
+
+             </form>
+
+            <div style="margin-left: 200px;">
+                <button id="baocun" >添加</button>
+            </div>
+        </div>
+
+    </div>
+
+<!-- 收货人信息  结束-->
+<!-- 支付方式 开始 -->
+	<div class="way">
+		<div class="title clearfix">
+			<h3 class="fl">支付方式</h3>
+		</div>
+		<div class="wayCont">
+			<ul>
+					<li>在线支付</li>
+					<li>网上银行</li>
+					<li>货到付款</li>
+					<li>账户余额</li>
+			</ul>
+		</div>
+	</div>
+<!-- 支付方式 结束 -->
+<!-- 送货清单 开始 -->
+	<div class="opt clearfix" >
+        <p class="orderproinfo"><span style="font-size: 18px">购买商品信息</span></p>
+        <table class="orderinfomation" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th class="orderdetitle" style="width: 25%;height:80px;">商品名称</th>
+                <th class="orderdetitle" style="width: 35%;height:80px;">商品图片</th>
+                <th class="orderdejiage" style="width: 15%;height:80px;">单价（元）</th>
+                <th class="orderdesum" style="width: 30%;height:80px;">总量（件）</th>
+
+            </tr>
+            </thead>
+            <volist name="goods" id="val" >
+            <tr>
+                <td class="orderdetitle" style="text-align:center; width: 25%;height:60px;">
+                    <p><a href="#">{$val[0].goodsname}</a></p>
+
+                </td >
+                <td  style="width: 35%;height:70px; text-align:center; ">
+                    <img style="width:60px;vertical-align:middle" src="__ROOT__/Uploads/60_{$val[0].picname}" />
+
+                </td>
+                <td class="orderdejiage" style="width: 35%;height:60px; text-align:center; " >{$val[0].price}元</td>
+                <td class="orderdesum" style="width: 35%;height:60px; text-align:center; ">{$val[0].buynum}件</td>
+
+            </tr><br/>
+            </volist>
+            </table>
+        </div>
+
+<div class="rental frm_sty">
+	<div class="rentalCont fr">
+		<h3>应付金额:<span>￥{$money}</span></h3>
+		<p>配送至：<span id="shdz1"></span>收货人：<span id="shr1"></span><span id="dh1"></span></p>
+	</div>
+</div>
+<!-- 总金额 结束 -->
+<!-- 提交按钮 开始 -->
+<!-- 提交按钮 结束 -->
+<div class="btn frm_sty">
+    <a href="{:U('Order/tijiao')}?orderid={$orderid}"  ><span class="fr" style="padding:10px 20px;font-size:24px;border: 1px solid #ccc;background: #C2A07A;color:#fff;border-radius:15px";>提交订单</span></a>
+
+</div>
+
+
+
+<!-- 底部 开始 -->
+<include file="Index/footer" />
+<!-- 底部结束 -->
+</body>
+<script>
+    setup();
+
+ /*   $('#baocun').click(function(){
+       $('#address').submit()
+     })*/
+
+
+     $('#baocun').click(function(){
+         layer.confirm("你确定添加吗？",{
+         btn:['确定','取消']
+          },function(){
+              $.post("{:U('Address/address')}",$('#address').serialize(),function(res){
+                 if(res.status=='ok'){
+                    layer.msg('添加成功')
+                     $(".overlay").hide();
+                     $(".pop").hide();
+                     $("#shr").html(res.shr);
+                     $("#shdz").html(res.address);
+                     $("#dh").html(res.mobile);
+                     $("#shr1").html(res.shr);
+                     $("#shdz1").html(res.address);
+
+                     $("#dh1").html(res.mobile);
+                  }else{
+                      layer.msg('添加失败')
+                  }})
+                })
+             })
+
+
+
+
+
+</script>
+</html>

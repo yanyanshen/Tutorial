@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="__STATIC__/css/reset.css">
+    <link rel="stylesheet" href="__STATIC__/css/member.css">
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/carousel.js"></script>
+    <script src="__STATIC__/js/jquery-1.7.2.min.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/orderdatail.css">
+    <title>订单详情</title>
+    <style>
+        #page{
+            float:right;
+            margin: 20px 0;
+        }
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #f0ead8;
+            color:#0E6BD3;
+        }
+        #page a:hover{
+            background: #333;
+            color:#fff;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #0E6BD3;
+            color:#fff;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+<include file="header" />
+
+<div class="car clearfix frm_sty">
+
+    <div class="sidebar frm_sty">
+        <!-- 侧边栏导航 结束 -->
+        <ul class="fl">
+            <li class="li01" style="background: #f1f1f1;"><a href="{:U('Centre/member')}"><span>首页</span></a></li>
+            <li class="no"><a href="{:U('Centre/member')}">会员中心</a></li>
+            <li><a href="{:U('Centre/order')}">订单管理</a></li>
+            <li><a href="{:U('Centre/password')}">个人消息</a></li>
+            <li><a href="{:U('Centre/address')}">收货地址</a></li>
+        </ul>
+    </div>
+
+<div class="buyerbox box">
+        <p class="orderproinfo"><span>订单详情</span></p>
+        <table class="orderinfomation" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th class="orderdetitle">商品名称</th>
+                <th class="orderdejiage">单价（元）</th>
+                <th class="orderdesum">总量（件）</th>
+                <th class="orderdezjia">商品总价</th>
+            </tr>
+            </thead>
+            <volist name="orderlist" id='val' key="k" empty="暂时没有数据">
+            <tbody>
+            <tr>
+                <td class="orderdetitle" style="text-align:left;">
+                    <img style="width:60px;vertical-align:middle" src="__ROOT__/Uploads/60_{$val.picname}" />
+                    <p><a href="#">{$val.goodsname}</a></p>
+                </td>
+                <td class="orderdejiage">{$val['price']} 元</td>
+                <td class="orderdesum">{$val['buynum']} 件</td>
+                <td class="orderdezjia">￥ {$val['totalprice']}</td>
+            </tr>
+            </tbody>
+            </volist>
+        </table>
+        <div class="ordersumer" id="buy">
+            <p>
+            <span style="margin-top: -20px;">商品总价:</span>
+            <span style="color:red;font-size:20px;"> ￥{$totalprice}</span>
+            </p>
+            <eq name="status" value="10">
+                <p>
+                <a style="margin-left: 230px;margin-top: -70px; " target="_blank" class="tobuy" href="{:U('Order/tijiao')}?orderid={$val.orderid}">提交定单</a>
+                <a style="margin-left: 360px;margin-top: -70px;" class="tobuy" href="{:U('Centre/order')}">返回订单</a>
+              <else/>
+                <a style="margin-top: -60px;" class="tobuy" href="{:U('Centre/order')}">返回订单</a>
+                </p>
+            </eq>
+
+            <!--<a style="margin-top: -60px;" class="tobuy" href="{:U('Centre/order')}">返回订单</a>-->
+           <!-- <a style="margin-right: 100px;" target="_blank" class="tobuy" href="{:U('Order/tijiao')}?orderid={$orderid}">提交定单</a>-->
+
+        </div>
+
+    </div>
+</div>
+
+<div style="clear:both;"></div>
+
+</body>
+<script>
+    function logout(){
+    //询问框
+    layer.confirm('您确定要退出个人中心?', {
+        btn: ['确定','取消'] //按钮
+    }, function(){
+        $.get("{:U('Member/logout')}",'',function(res){
+            if(res.status=='ok'){
+                    location.replace("{:U('Index/index')}")
+            }else{
+                location.reload();
+            }
+        })
+    });
+
+
+
+}</script>
+
+}</html>
+
+

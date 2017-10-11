@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="__STATIC__/css/reg.css">
+</head>
+<body>
+<div class="header ">
+    <div class="headerCont wid_1200 clearfix">
+        <div class="logo clearfix"><a href="index.html"><img src="__STATIC__/images/miaojia.jpg" alt=""></a><h3>会员注册</h3></div>
+        <span class="fr">已有账号，直接<a href="{:U('Member/login')}">>登录</a></span>
+    </div>
+</div>
+<!-- 注册模块开始 -->
+<div class="reg wid_1200">
+    <form id="msform" action="{:U('Member/register')}" method="post">
+        <ul class="clearfix" id="progressbar">
+            <li class="active"><a>请输入手机号</a></li>
+            <li><a href="#">填写验证码</a></li>
+            <li><a href="#">完善信息</a></li>
+        </ul>
+        <!-- 分步骤 -->
+        <fieldset>
+            <p>手机号&nbsp;<input type="text" id="mobile" name="mobile" placeholder="请输入手机号"></p><br/><br/><br/><br/>
+            <input type="button" name="next" class="next action-button" value="下一步" />
+        </fieldset>
+        <fieldset>
+            <p>验证码&nbsp;<input type="text"  name="yzm" class='yzm' id="yzm" placeholder="请输入验证码"/>
+                <input type="button" style="height:40px;width:140px;padding-left: 0px" value="点击获取验证码" onclick="sendCode(this)" />
+            </p><br /><br/><br/><br/>
+
+            <input type="button" name="previous" class="previous action-button" value="上一步" />
+            <input type="button" name="next" class="next action-button" value="下一步" />
+        </fieldset>
+        <fieldset>
+            <p>用户名&nbsp;<input type="text" id="username" name="username" placeholder="请输入用户名"></p><br />
+            <p>密&nbsp;&nbsp;&nbsp;码&nbsp;<input type="password" id="pwd" name="pwd" placeholder="请输入密码"></p><br />
+            <p>确认密码&nbsp;<input type="password" id="repwd" name="repwd" style="margin-left:0px;" placeholder="请确认密码"></p><br />
+            <!--<p>电子邮箱&nbsp;<input type="text" id="email" name="email" style="margin-left:0px;"></p><br />-->
+            <p style="margin-top: 20px"><input name="protocol" id="protocol" type="checkbox" checked class="inp" onclick="chkProtocol();" style="width: 12px;height: 12px;">我已看过并接受<a style="color: #00a0e9">《苗家频道网注册用户协议》</a></p><br />
+            <input type="button" name="previous" class="previous action-button" value="上一步" />
+            <a id="loginBtn" name="loginBtn" class="login submit action-button"  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </fieldset>
+    </form>
+</div>
+</body>
+<script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+<script src="__STATIC__/js/jquery.easing.min.js"></script>
+<script src="__STATIC__/js/jquery.validate.js"></script>
+<script src="__STATIC__/js/jquery.form.js"></script>
+<script src="__STATIC__/layer/layer.js"></script>
+<script src="__STATIC__/js/zzsc.js"></script>
+<script>
+    //表单验证
+    $(function() {
+        var validate=$('#msform').validate({
+            //设置验证规则
+            rules: {
+
+                mobile: {
+                    required: true,
+                    mobile: true
+                },
+
+
+                yzm:{
+                    required:true,
+                    remote:{
+                        url:"{:U('Home/Member/checkYzm')}",
+                        type:'post'
+                    }
+                },
+
+                username: {
+                    required: true,
+                    username: true,
+                    remote: {
+                        url: "{:U('Home/Member/chkUsername')}",
+                        type: 'post'
+                    }
+                },
+
+                pwd: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 16
+                },
+
+                repwd: {
+                    required: true,
+                    equalTo: "#pwd"
+                },
+
+                protocol:{
+                    required: true
+                }
+            },
+
+
+            //设置提示信息
+            messages: {
+                username: {
+                    required: '用户名不能为空',
+                    minlength: '用户名至少需要6个字符',
+                    maxlength: '用户名最多16个字符',
+                    remote: '用户名已被注册'
+                },
+
+                pwd: {
+                    required: '密码不能为空',
+                    minlength: '密码长度至少6个字符',
+                    maxlength: '密码长度最多16个字符'
+                },
+
+                repwd: {
+                    required: '重复密码不能为空',
+                    equalTo: '两次密码输入不一致'
+                },
+
+                email: '请输入正确邮箱',
+
+                mobile: {
+                    required: '手机号码不能为空',
+                    mobile: '请输入正确手机号'
+                },
+
+                yzm:{
+                    required:'请输入验证码',
+                    remote:'验证码不正确'
+                },
+
+                protocol:'请接受协议'
+            },
+
+            success: function (label) {
+                label.addClass("ok");
+            },
+
+            validClass: "ok",
+
+            errorPlacement: function (error, element) {
+                error.appendTo(element.parent());
+            }
+        })
+
+        var current_fs, next_fs, previous_fs;
+        var left, opacity, scale;
+        var animating;
+
+        //手机号验证
+        jQuery.validator.addMethod("mobile", function (value, element) {
+            var mobileReg = /^1[34578]{1}[0-9]{9}$/;
+            return this.optional(element) || (mobileReg.test(value));
+        }, '请填写正确手机号');
+
+
+        //用户名规则
+        jQuery.validator.addMethod("username", function(value, element) {
+            var usernameReg = /^[A-Za-z][A-Za-z0-9_]{5,16}$/;
+            return this.optional(element) || (usernameReg.test(value));
+        }, "用户名格式不正确");
+
+
+        $(".next").click(function(){
+            if(validate.form()) {
+                if (animating) return false;
+                animating = true;
+
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+
+                next_fs.show();
+
+                current_fs.animate({opacity: 0}, {
+                    step: function (now, mx) {
+
+                        scale = 1 - (1 - now) * 0.2;
+
+                        left = (now * 50) + "%";
+
+                        opacity = 1 - now;
+                        current_fs.css({'transform': 'scale(' + scale + ')'});
+                        next_fs.css({'left': left, 'opacity': opacity});
+                    },
+                    duration: 800,
+                    complete: function () {
+                        current_fs.hide();
+                        animating = false;
+                    },
+
+                    easing: 'easeInOutBack'
+                });
+            }
+        });
+        $(".previous").click(function(){
+            if(animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+
+            previous_fs.show();
+
+            current_fs.animate({opacity: 0}, {
+                step: function(now, mx) {
+
+                    scale = 0.8 + (1 - now) * 0.2;
+
+                    left = ((1-now) * 50)+"%";
+
+                    opacity = 1 - now;
+                    current_fs.css({'left': left});
+                    previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+                },
+                duration: 800,
+                complete: function(){
+                    current_fs.hide();
+                    animating = false;
+                },
+
+                easing: 'easeInOutBack'
+            });
+        });
+        jQuery.validator.onfocus=true;
+        $('#loginBtn').click(function(){
+            if(validate.form()){
+                $.post("{:U('Home/Member/register')}",$('#msform').serialize(),function(res){
+                    if(res.status=='ok'){
+                        layer.alert(res.msg,{
+                            icon: 1,
+                            skin: 'layer-ext-moon',
+                            yes:function(){
+                                location.href="__ROOT__/index.php";
+                            }
+                        });
+
+                    }else{
+                        layer.alert(res.msg,{
+                            icon: 2,
+                            skin: 'layer-ext-moon'});
+                    };
+                })
+            }
+
+        })
+
+
+
+    })
+</script>
+</html>
