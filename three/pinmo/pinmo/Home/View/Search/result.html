@@ -1,0 +1,24 @@
+<div>
+    <ul>
+        <volist name="slist" id="value">
+            <li>
+                <dl>
+
+                    <dt><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}"><img src="__PIC__{$value.goodspic}" /></a></dt>
+
+                    <dd class="title"><a href="">{:mb_substr($value['goodsname'],0,12,"utf-8")}</a></dd>
+                    <dd class="content">
+                        <span class="goods_jiage">￥<strong>{$value.price}</strong></span>
+                        <span class="goods_chengjiao">最近成交{$value.salenum}笔</span>
+                    </dd>
+                </dl>
+            </li>
+        </volist>
+
+    </ul>
+
+</div>
+<div class="pagination" id="page" style="clear: both">
+    <p>{$page}</p>
+
+</div>

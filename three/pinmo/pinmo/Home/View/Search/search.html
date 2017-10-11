@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>商品搜索列表页</title>
+    <link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_list.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/shop_list.js" ></script>
+    <style>
+        #page{ padding:20px 0; text-align:center; clear: both}
+        #page a{ padding:5px 10px;  text-align:center; border:solid 1px #CCCCCC;}
+        #page a:hover{background-color: #FF6B00;color:#fff;font-weight: bold;}
+        #page a.current{background-color: #C91623;color:#fff;font-weight: bold;}
+        #page span{ margin:0 10px;}
+        #page input{ width:30px; margin:0 5px; border:solid 1px #CCCCCC;}
+
+    </style>
+
+</head>
+<body>
+<!-- Header  -wll-2013/03/24 -->
+<include file="public /header"/>
+
+<!-- Header End -->
+
+
+<!-- List Body 2013/03/27 -->
+<div class="shop_bd clearfix">
+    <div class="shop_bd_list_left clearfix">
+        <!-- 左边商品分类 -->
+
+        <!-- 左边商品分类 End -->
+
+        <!-- 热卖推荐商品 -->
+
+
+        <!-- 浏览过的商品 -->
+        <include file="public/tjgoods"/>
+        <!-- 浏览过的商品 -->
+
+    </div>
+
+    <div class="shop_bd_list_right clearfix">
+        <!-- 条件筛选框 -->
+        <div class="module_filter">
+            <div class="module_filter_line">
+                <dl>
+                    <dd>搜索&nbsp;&nbsp;"<b>{$catename}</b>"&nbsp;&nbsp;,共有&nbsp;&nbsp;<b>{$count}</b>&nbsp;&nbsp;条记录</dd>
+                </dl>
+
+
+
+                <!--<dl>
+                    <dt>类型：</dt>
+                    <dd>
+                        <volist name="clist" id="val">
+                            <span><a href="{:U('Home/Index/letter',array('cid'=>$val['cid']))}">{$val.catename}</a></span>
+                        </volist>
+                    </dd>
+                </dl>-->
+
+                <dl>
+                    <dt>品牌：</dt>
+                    <dd>
+                        <volist name="blist" id="val">
+                            <span><a href="{:U('Home/Search/search4',array('bid'=>$val['id'],'catename'=>$val['brand'] ))}"><img src="__PIC__{$val.pic}" width="100px" height="26.25px"/></a></span>
+                        </volist>
+
+
+                    </dd>
+                </dl>
+
+
+                <dl>
+                    <dt>价格：</dt>
+                    <dd>
+                        <span><a href="{:U('Home/Search/search3',array('lt'=>0,'gt'=>9))}">0-9元</a></span>
+                        <span><a href="{:U('Home/Search/search3',array('lt'=>10,'gt'=>29))}">10-29元</a></span>
+                        <span><a href="{:U('Home/Search/search3',array('lt'=>30,'gt'=>49))}">30-49元</a></span>
+                        <span><a href="{:U('Home/Search/search3',array('lt'=>50,'gt'=>99))}">50-99元</a></span>
+                        <span><a href="{:U('Home/Search/search3',array('lt'=>100))}">100元以上</a></span>
+
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="bottom"></div>
+        </div>
+        <!-- 条件筛选框 -->
+
+        <!-- 显示菜单 -->
+       <!-- <div class="sort-bar">
+            <div class="bar-l">
+                &lt;!&ndash; 查看方式S &ndash;&gt;
+                <div class="switch"><span class="selected"><a title="以方格显示" ecvalue="squares" nc_type="display_mode" class="pm" href="javascript:void(0)">大图</a></span><span style="border-left:none;"><a title="以列表显示" ecvalue="list" nc_type="display_mode" class="lm" href="javascript:void(0)">列表</a></span></div>
+                &lt;!&ndash; 查看方式E &ndash;&gt;
+                &lt;!&ndash; 排序方式S &ndash;&gt;
+                <ul class="array">
+                    <li class="selected"><a title="默认排序" onclick="javascript:dropParam(['key','order'],'','array');" class="nobg" href="javascript:void(0)">默认</a></li>
+                    <li><a title="点击按销量从高到低排序" onclick="javascript:replaceParam(['key','order'],['sales','desc'],'array');" href="javascript:void(0)">销量</a></li>
+                    <li><a title="点击按人气从高到低排序" onclick="javascript:replaceParam(['key','order'],['click','desc'],'array');" href="javascript:void(0)">人气</a></li>
+                    <li><a title="点击按信用从高到低排序" onclick="javascript:replaceParam(['key','order'],['credit','desc'],'array');" href="javascript:void(0)">信用</a></li>
+                    <li><a title="点击按价格从高到低排序" onclick="javascript:replaceParam(['key','order'],['price','desc'],'array');" href="javascript:void(0)">价格</a></li>
+                </ul>
+                &lt;!&ndash; 排序方式E &ndash;&gt;
+                &lt;!&ndash; 价格段S &ndash;&gt;
+                <div class="prices"> <em>¥</em>
+                    <input type="text" value="" class="w30">
+                    <em>-</em>
+                    <input type="text" value="" class="w30">
+                    <input type="submit" value="确认" id="search_by_price">
+                </div>
+                &lt;!&ndash; 价格段E &ndash;&gt;
+            </div>
+        </div>-->
+        <div class="clear"></div>
+        <!-- 显示菜单 End -->
+
+        <!-- 商品列表 -->
+        <div class="shop_bd_list_content clearfix" id="pxlist">
+<div>
+            <ul>
+                <volist name="slist" id="value">
+                    <li>
+                        <dl>
+
+                            <dt><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}"><img src="__PIC__{$value.goodspic}" /></a></dt>
+
+                            <dd class="title"><a href="">{:mb_substr($value['goodsname'],0,12,"utf-8")}</a></dd>
+                            <dd class="content">
+                                <span class="goods_jiage">￥<strong>{$value.price}</strong></span>
+                                <span class="goods_chengjiao">最近成交{$value.salenum}笔</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </volist>
+
+            </ul>
+</div>
+
+
+
+
+
+
+
+        <div class="pagination" id="page">
+            <p>{$page}</p>
+        </div>
+    </div>
+
+
+ <!-- 商品列表 End -->
+
+
+
+</div>
+<!-- List Body End -->
+</div>
+<!-- Footer - wll - 2013/3/24 -->
+<include file="public/footer"/>
+<!-- Footer End -->
+
+</body>
+<script type="text/javascript">
+
+    function search(id){
+        var keywords= $("input[name='keywords']").val();
+
+
+        var id=id;
+//alert (id);
+        $.get("{:U('search')}",{"p":id,"keywords":keywords},function(res){
+            $("#pxlist").html(res);
+        })
+    }
+</script>
+
+<script type="text/javascript">
+
+    function search2(id){
+        //var keywords= $("input[name='keywords']").val();
+
+
+        var id=id;var cid={$value['cid']};
+//alert (id);
+        $.get("{:U('Home/Search/search2')}",{"p":id,"cid":cid},function(res){
+            $("#pxlist").html(res);
+        })
+    }
+</script>
+<script type="text/javascript">
+
+    function search3(id){
+        //var keywords= $("input[name='keywords']").val();
+
+
+        var id=id;var lt={$lt};var gt={$gt};
+//alert (id);
+        $.get("{:U('Home/Search/search3')}",{"p":id,"lt":lt,"gt":gt},function(res){
+            $("#pxlist").html(res);
+        })
+    }
+</script>
+<script type="text/javascript">
+
+    function search4(id){
+        //var keywords= $("input[name='keywords']").val();
+
+
+        var id=id;var bid={$content};
+
+//alert (id);
+        $.get("{:U('Home/Search/search4')}",{"p":id,"bid":bid},function(res){
+            $("#pxlist").html(res);
+        })
+    }
+</script>
+</html>

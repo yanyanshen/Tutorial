@@ -1,0 +1,1059 @@
+[ 2016-07-29T08:38:18+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T08:38:21+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0668s ]
+SQL: SELECT `id` FROM `pm_adminuser` WHERE `adminname` = 'admin2' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `power` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0070s ]
+SQL: UPDATE `pm_adminuser` SET `creatime`='1469752701',`ip`='127.0.0.1' WHERE ( id=7 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T08:45:52+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa740711ee.jpg','1469753152') [ RunTime:0.0210s ]
+
+[ 2016-07-29T08:45:53+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa7419166e.jpg','1469753153') [ RunTime:0.0040s ]
+
+[ 2016-07-29T08:45:54+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa742024ab.jpg','1469753154') [ RunTime:0.0280s ]
+
+[ 2016-07-29T08:45:54+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa7422eba6.jpg','1469753154') [ RunTime:0.0000s ]
+
+[ 2016-07-29T08:45:54+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa742562ee.jpg','1469753154') [ RunTime:0.0110s ]
+
+[ 2016-07-29T08:45:54+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa7427d00f.jpg','1469753154') [ RunTime:0.0190s ]
+
+[ 2016-07-29T08:45:55+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa743f0256.jpg','1469753155') [ RunTime:0.0040s ]
+
+[ 2016-07-29T08:45:56+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa7444ec61.jpg','1469753156') [ RunTime:0.0090s ]
+
+[ 2016-07-29T08:45:56+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa74491ac1.jpg','1469753156') [ RunTime:0.0020s ]
+
+[ 2016-07-29T08:46:00+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa748328fb.jpg','1469753160') [ RunTime:0.0070s ]
+
+[ 2016-07-29T08:47:30+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('万卷','万卷','579aa7a26a257.jpg','1469753250') [ RunTime:0.0010s ]
+
+[ 2016-07-29T08:47:55+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=26 ) [ RunTime:0.0156s ]
+
+[ 2016-07-29T08:47:58+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=25 ) [ RunTime:0.0260s ]
+
+[ 2016-07-29T08:48:02+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=24 ) [ RunTime:0.0100s ]
+
+[ 2016-07-29T08:48:05+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=22 ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T08:48:08+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=23 ) [ RunTime:0.1280s ]
+
+[ 2016-07-29T08:48:12+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=21 ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T08:48:15+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=20 ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T08:48:19+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=18 ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T08:50:23+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('分割','法国','579aa84f7d9b8.jpg','1469753423') [ RunTime:0.0120s ]
+
+[ 2016-07-29T08:53:21+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T08:53:32+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('书店v','电商','579aa90cb6491.jpg','1469753612') [ RunTime:0.0020s ]
+
+[ 2016-07-29T08:53:47+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('地方','斯蒂芬','579aa91bd984e.jpg','1469753627') [ RunTime:0.0156s ]
+
+[ 2016-07-29T08:54:27+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_brand` (`brand`,`descript`,`pic`,`time`) VALUES ('地方','第三方','579aa943a1fc7.jpg','1469753667') [ RunTime:0.0020s ]
+
+[ 2016-07-29T08:57:48+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('斯蒂芬','66','44','55','16','','6','1469753868','1') [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('178','579aaa0c5ba37.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='斯蒂芬',`marketprice`='66',`price`='44',`num`='55',`cid`='16',`description`='',`bid`='6',`createtime`='1469753868',`issale`='1',`goodspic`='579aaa0c5ba37.jpg' WHERE ( id='178' ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T08:58:17+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=177 ) [ RunTime:0.0270s ]
+
+[ 2016-07-29T08:58:23+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=178 ) [ RunTime:0.0176s ]
+
+[ 2016-07-29T08:58:38+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Category/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `pm_category` WHERE `cid` = 51 [ RunTime:0.0020s ]
+
+[ 2016-07-29T08:58:53+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=30 ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T08:58:56+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Brand/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: DELETE FROM `pm_brand` WHERE ( id=29 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T08:59:02+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:06:22+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('大概','55','66','55','16','','6','1469754382','1') [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aac0e73388.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='55',`cid`='16',`description`='',`bid`='6',`createtime`='1469754382',`issale`='1',`goodspic`='579aac0e73388.jpg' WHERE ( id='179' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:06:38+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469754398',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aac1ebc1e2.jpg') [ RunTime:0.0140s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469754398',`issale`='1',`goodspic`='579aac1ebc1e2.jpg' WHERE ( id='179' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:06:50+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469754410',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0030s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aac2a3f1c0.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469754410',`issale`='1',`goodspic`='579aac2a3f1c0.jpg' WHERE ( id='179' ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:15:22+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:15:51+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2016-07-29T09:16:00+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_ad` (`adname`,`adurl`,`position`,`des`,`adpic`,`state`) VALUES ('123《','1','r3','','579aae50a8de0.jpg','1') [ RunTime:0.0080s ]
+
+[ 2016-07-29T09:16:24+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:16:33+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `pm_ad` (`adname`,`adurl`,`position`,`des`,`adpic`,`state`) VALUES ('123','123','r1','','579aae712c833.jpg','1') [ RunTime:0.0060s ]
+
+[ 2016-07-29T09:16:34+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:17:15+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `pm_ad` SET `adname`='123',`position`='r1',`des`='',`adpic`='579aae9b0f7f4.jpg' WHERE ( id=30 ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T09:17:38+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:17:59+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755079',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0050s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aaec7a897e.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755079',`issale`='1',`goodspic`='579aaec7a897e.jpg' WHERE ( id='179' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:17:59+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755079',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0050s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aaec7b6c11.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755079',`issale`='1',`goodspic`='579aaec7b6c11.jpg' WHERE ( id='179' ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:18:00+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/goodlist.html
+ERR: 非法操作:goodlist
+
+[ 2016-07-29T09:18:56+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755136',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aaf001feda.jpg') [ RunTime:0.0460s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755136',`issale`='1',`goodspic`='579aaf001feda.jpg' WHERE ( id='179' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:18:56+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755136',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aaf0042992.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755136',`issale`='1',`goodspic`='579aaf0042992.jpg' WHERE ( id='179' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:18:57+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/goodList.html
+ERR: 非法操作:goodList
+
+[ 2016-07-29T09:19:47+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755187',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0080s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aaf3394ebf.jpg') [ RunTime:0.0360s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755187',`issale`='1',`goodspic`='579aaf3394ebf.jpg' WHERE ( id='179' ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:19:47+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755187',`issale`='1' WHERE ( id='179' ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0040s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('179','579aaf33b71a7.jpg') [ RunTime:0.0010s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='大概',`marketprice`='55',`price`='66',`num`='555',`cid`='16',`description`='',`bid`='6',`createtime`='1469755187',`issale`='1',`goodspic`='579aaf33b71a7.jpg' WHERE ( id='179' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:20:09+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('123','123','123','123','16','','6','1469755209','1') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('180','579aaf49ab424.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='123',`marketprice`='123',`price`='123',`num`='123',`cid`='16',`description`='',`bid`='6',`createtime`='1469755209',`issale`='1',`goodspic`='579aaf49ab424.jpg' WHERE ( id='180' ) [ RunTime:0.0010s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('180','579aaf49ab80d.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='123',`marketprice`='123',`price`='123',`num`='123',`cid`='16',`description`='',`bid`='6',`createtime`='1469755209',`issale`='1',`goodspic`='579aaf49ab80d.jpg' WHERE ( id='180' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:22:13+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Users/state.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0040s ]
+SQL: SELECT `state` FROM `pm_user` WHERE ( id=101 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `pm_user` SET `state`='0' WHERE ( id=101 ) [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:22:17+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Users/state.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `state` FROM `pm_user` WHERE ( id=101 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `pm_user` SET `state`='1' WHERE ( id=101 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:22:20+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Users/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_user` WHERE ( id=101 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:22:37+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/issale.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: SELECT `issale` FROM `pm_goods` WHERE ( id=180 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `pm_goods` SET `issale`='0' WHERE ( id=180 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:22:42+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=180 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:24:24+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('12','123','123','123','16','','6','1469755464','1') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0080s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('181','579ab048359f3.jpg') [ RunTime:0.0010s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='123',`price`='123',`num`='123',`cid`='16',`description`='',`bid`='6',`createtime`='1469755464',`issale`='1',`goodspic`='579ab048359f3.jpg' WHERE ( id='181' ) [ RunTime:0.0010s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('181','579ab048361c4.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='123',`price`='123',`num`='123',`cid`='16',`description`='',`bid`='6',`createtime`='1469755464',`issale`='1',`goodspic`='579ab048361c4.jpg' WHERE ( id='181' ) [ RunTime:0.0010s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('181','579ab048365ac.jpg') [ RunTime:0.0010s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='123',`price`='123',`num`='123',`cid`='16',`description`='',`bid`='6',`createtime`='1469755464',`issale`='1',`goodspic`='579ab048365ac.jpg' WHERE ( id='181' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:24:50+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=181 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:25:13+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:25:22+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:25:30+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('123','1','1','1','16','','6','1469755530','1') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-29T09:25:46+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('123424','1','1','1','16','','6','1469755546','1') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-29T09:29:21+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('12','12','12','1','16','','6','1469755761','1') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-07-29T09:29:29+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_goods` (`goodsname`,`marketprice`,`price`,`num`,`cid`,`description`,`bid`,`createtime`,`issale`) VALUES ('12','12','12','1','16','','6','1469755769','1') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0060s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('185','579ab1792d9ae.jpg') [ RunTime:0.0020s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755769',`issale`='1',`goodspic`='579ab1792d9ae.jpg' WHERE ( id='185' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:29:36+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755776',`issale`='1' WHERE ( id='185' ) [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined variable: a D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Admin\Controller\GoodsController.class.php 第 211 行.
+
+[ 2016-07-29T09:29:36+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755776',`issale`='1' WHERE ( id='185' ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined variable: a D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Admin\Controller\GoodsController.class.php 第 211 行.
+
+[ 2016-07-29T09:29:42+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755782',`issale`='1' WHERE ( id='185' ) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined variable: a D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Admin\Controller\GoodsController.class.php 第 211 行.
+
+[ 2016-07-29T09:29:42+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755782',`issale`='1' WHERE ( id='185' ) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined variable: a D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Admin\Controller\GoodsController.class.php 第 211 行.
+
+[ 2016-07-29T09:29:48+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755788',`issale`='1' WHERE ( id='185' ) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0050s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('185','579ab18c0dd29.jpg') [ RunTime:0.0520s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755788',`issale`='1',`goodspic`='579ab18c0dd29.jpg' WHERE ( id='185' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:29:48+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_category` ORDER BY path  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_brand`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755788',`issale`='1' WHERE ( id='185' ) [ RunTime:0.1050s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `pm_picture` [ RunTime:0.0070s ]
+SQL: INSERT INTO `pm_picture` (`pid`,`picname`) VALUES ('185','579ab18c482cf.jpg') [ RunTime:0.0050s ]
+SQL: UPDATE `pm_goods` SET `goodsname`='12',`marketprice`='12',`price`='12',`num`='1',`cid`='16',`description`='',`bid`='6',`createtime`='1469755788',`issale`='1',`goodspic`='579ab18c482cf.jpg' WHERE ( id='185' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:29:58+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=185 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:30:03+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=184 ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:30:06+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=183 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:30:09+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=182 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:30:20+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Goods/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0040s ]
+SQL: DELETE FROM `pm_goods` WHERE ( id=179 ) [ RunTime:0.0080s ]
+
+[ 2016-07-29T09:30:42+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:30:54+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0060s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='30' ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T09:30:56+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/state.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT `state` FROM `pm_ad` WHERE ( id='29' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `pm_ad` SET `state`='0' WHERE ( id='29' ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:30:59+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/state.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT `state` FROM `pm_ad` WHERE ( id='29' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `pm_ad` SET `state`='1' WHERE ( id='29' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:31:02+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0040s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='29' ) [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:31:08+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='28' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:31:41+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/state.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0070s ]
+SQL: SELECT `state` FROM `pm_ad` WHERE ( id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `pm_ad` SET `state`='0' WHERE ( id='8' ) [ RunTime:0.0030s ]
+
+[ 2016-07-29T09:33:17+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:33:29+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/chkAdminname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_adminuser` WHERE `adminname` = '123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:33:47+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_adminuser` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `pm_adminuser` (`adminname`,`password`,`creatime`,`power`,`ip`,`status`) VALUES ('123','e10adc3949ba59abbe56e057f20f883e','1469756027','1','127.0.0.1','0') [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:34:05+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/checkPwd/adminname/123.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_adminuser` WHERE ( adminname='123' and password='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:34:17+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_adminuser` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `pm_adminuser` SET `password`='fcea920f7412b5da7be0cf42b8c93759' WHERE ( id='12' ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:34:30+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/chkAdminname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_adminuser` WHERE `adminname` = '123' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:34:34+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/chkAdminname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_adminuser` WHERE `adminname` = '12' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:34:34+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/chkAdminname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_adminuser` WHERE `adminname` = '123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:34:35+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Admin/chkAdminname.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_adminuser` WHERE `adminname` = '1234' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:36:18+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T09:36:28+08:00 ] 127.0.0.1 /three17/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-29T16:52:07+08:00 ] 172.16.11.90 /index.php/Admin/Admin/index.html
+ERR: 非法操作:index
+
+[ 2016-07-29T16:52:39+08:00 ] 172.16.11.90 /admin.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T16:52:39+08:00 ] 172.16.11.90 /admin.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `pm_adminuser` WHERE `adminname` = 'admin' AND `password` = 'c84258e9c39059a89ab77d846ddab909' AND `power` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-29T16:53:02+08:00 ] 172.16.11.90 /admin.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T16:53:02+08:00 ] 172.16.11.90 /admin.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `pm_adminuser` WHERE `adminname` = 'admin2' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `power` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0090s ]
+SQL: UPDATE `pm_adminuser` SET `creatime`='1469782382',`ip`='172.16.11.90' WHERE ( id=7 ) [ RunTime:0.0150s ]
+
+[ 2016-07-29T16:53:07+08:00 ] 172.16.11.90 /admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_adminuser` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_adminuser` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=11 ) [ RunTime:0.0020s ]
+
+[ 2016-07-29T16:53:35+08:00 ] 172.16.11.90 /admin.php/Admin/Order/gogoods.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0090s ]
+SQL: UPDATE `pm_order` SET `status`='3' WHERE `id` = 61 [ RunTime:0.0020s ]
+
+[ 2016-07-29T16:54:20+08:00 ] 172.16.11.90 /admin.php/Admin/Order/agree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0080s ]
+SQL: UPDATE `pm_order` SET `status`='7' WHERE `id` = 61 [ RunTime:0.0020s ]
+

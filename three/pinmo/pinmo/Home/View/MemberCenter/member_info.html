@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>修改个人资料</title>
+	<link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_manager.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_form.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/geo.js"></script>
+    <style>
+        input.error { border: 1px solid #EA5200;background: #ffdbb3;}
+        label.error{
+            background:url("error.png") no-repeat 5px 2px;
+            padding-left:18px;
+            color:#ff0300;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        label.ok {
+            background:url("ok.png") no-repeat 5px 2px;
+        }
+    </style>
+</head>
+<body  onload="setup();preselect('河南省');promptinfo();">
+		<!-- Header  -wll-2013/03/24 -->
+	<include file="public/header"/>
+
+	<!-- Header End -->	
+
+	<!-- 我的个人中心 -->
+	<div class="shop_member_bd clearfix">
+		<!-- 左边导航 -->
+        <include file="public/left"/>
+		<!-- 左边导航 End -->
+		
+		<!-- 右边购物列表 -->
+		<div class="shop_member_bd_right clearfix">
+			
+			<div class="shop_meber_bd_good_lists clearfix">
+				<div class="title"><h3>基本信息</h3></div>
+				<div class="clear"></div>
+				<div  class="shop_home_form">
+					<form action="{:U('MemberCenter/member_info')}" name="" id="form" class="shop_form" method="post">
+						<ul>
+							<li><label for="">用户名称：</label>{$Think.session.mname}<input name="username" type="hidden" value="{$Think.session.mname}"/></li>
+							<li><label for="email">电子邮件：</label><input id="email" type="text" class=" form-text" name="email"/></li>
+							<li><label for="name">真实姓名：</label><input id="name" type="text" class="truename form-text" name="truename"/></li>
+							<li><label for="sex">性别:</label>
+								<input id="sex" type="radio" class="ml10 mr5" name="sex" value="男" checked/>男
+								<input type="radio" class="ml10 mr5" name="sex" value="女" />女
+							</li>
+                            <li><label for="mobile">电话:</label><input id="mobile" type="text" name="mobile" class="form-text"/></li>
+                            <li><label for="address">联系地址:</label>
+                                <select class="select" name="province" id="s1">
+                                    <option></option>
+                                </select>
+                                <select class="select" name="city" id="s2">
+                                    <option></option>
+                                </select>
+                                <select class="select" name="town" id="s3" onchange="promptinfo();">
+                                    <option></option>
+                                </select>
+                                <input id="address" name="address" type="hidden" value="" />
+                            </li>
+							<li class="bn"><label>&nbsp;</label><input id="submit" type="button" class="form-submit" value="保存修改" /></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 右边购物列表 End -->
+
+	</div>
+	<!-- 我的个人中心 End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+	<div class="clear"></div>
+        <include file="public/footer"/>
+	<!-- Footer End -->
+</body>
+
+<script>
+    function promptinfo()
+    {
+        var address = document.getElementById('address');
+        var s1 = document.getElementById('s1');
+        var s2 = document.getElementById('s2');
+        var s3 = document.getElementById('s3');
+        address.value = s1.value + s2.value + s3.value;
+    }
+
+</script>
+<script src="__STATIC__/layer/layer.js"></script>
+<script src="__STATIC__/js/jquery.validate.min.js"></script>
+<script>
+    $(function() {
+        var validate = $('#form').validate({
+            //设置验证规则
+            rules: {
+                email:{
+                    required:true,
+                    'email':true
+                },
+
+                truename: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 5
+                },
+                sex: {
+                    required: true
+                },
+
+                mobile: {
+                    required:true,
+                    mobile:true
+                },
+                address: {
+                    required: true
+                }
+
+            },
+            messages: {
+                email:{
+                    required: '邮箱不能为空',
+                    email:'邮箱格式不正确'
+                },
+                truename: {
+                    required: '用户名不能为空',
+                    minlength: '用户名至少需要2个字符',
+                    maxlength: '用户名最多5个字符'
+                },
+                sex: {
+                    required: '密码不能为空'
+                },
+
+                mobile:{
+                    required:'手机号码不能为空',
+                    mobile:'手机号码格式不正确'
+                },
+                address: {
+                    required: '请输入验证码'
+                }
+
+            },
+
+            /*            success: function(label) {
+             label.addClass("ok");
+             },
+             validClass: "ok",*/
+            errorElement: 'div',
+            errorPlacement: function (error, element) {
+                error.appendTo(element.parent());
+            }
+
+        })
+        // 手机号码验证
+        jQuery.validator.addMethod("mobile", function(value, element) {
+            var mobileReg = /^1[34578]{1}[0-9]{9}$/;
+            return this.optional(element) || (mobileReg.test(value));
+        }, "请正确填写您的手机号码");
+        jQuery.validator.onfocus = true;
+
+        $('#submit').click(function () {
+            if(validate.form()){
+                $.post("{:U('Home/MemberCenter/member_info')}", $('.shop_form').serialize(), function (res) {
+                    if (res.status == 'ok') {
+                        layer.alert(res.msg, {
+                            yes: function () {
+                                location.href = "{:U('Home/MemberCenter/grxx')}";
+                            }
+                        });
+                    } else {
+                        layer.alert(res.msg);
+                    }
+                    ;
+                })
+            }
+        })
+    })
+</script>
+</html>

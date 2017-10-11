@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>购物车页面</title>
+	<link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_gouwuche.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.goodnums.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/shop_gouwuche.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/geo.js" ></script>
+
+    <style type="text/css">
+    .shop_bd_shdz_title{width:1000px; margin-top: 10px; height:50px; line-height: 50px; overflow: hidden; background-color:#F8F8F8;}
+    .shop_bd_shdz_title h3{width:120px; text-align: center; height:40px; line-height: 40px; font-size: 14px; font-weight: bold;  background:#FFF; border:1px solid #E8E8E8; border-radius:4px 4px 0 0; float: left;  position: relative; top:10px; left:10px; border-bottom: none;}
+    .shop_bd_shdz_title p{float: right;}
+    .shop_bd_shdz_title p a{margin:0 8px; color:#555555;}
+
+	.shop_bd_shdz_lists{width:1000px;}
+	.shop_bd_shdz_lists ul{width:1000px;}
+	.shop_bd_shdz_lists ul li{width:980px; border-radius: 3px; margin:5px 0; padding-left:18px; line-height: 40px; height:40px; border:1px solid #FFE580; background-color:#FFF5CC;}
+	.shop_bd_shdz_lists ul li label{color:#626A73; font-weight: bold;}
+	.shop_bd_shdz_lists ul li label span{padding:10px;}
+	.shop_bd_shdz_lists ul li em{margin:0 4px; color:#626A73;}
+
+	.shop_bd_shdz{width:1000px; margin:10px auto 0;}
+	.shop_bd_shdz_new{border:1px solid #ccc; width:998px;}
+	.shop_bd_shdz_new div.title{width:990px; padding-left:8px; line-height:35px; height:35px; border-bottom:1px solid #ccc; background-color:#F2F2F2; font-color:#656565; font-weight: bold; font-size:14px;}
+	.shdz_new_form{width:980px; padding:9px;}
+	.shdz_new_form ul{width:100%;}
+	.shdz_new_form ul li{clear:both; width:100%; padding:5px 0; height:25px; line-height: 25px;}
+	.shdz_new_form ul li label{float:left;width:100px; text-align: right; padding-right: 10px;}
+	.shdz_new_form ul li label span{color:#f00; font-weight: bold; font-size:14px; position: relative; left:-3px; top:2px;}
+    </style>
+
+</head>
+<body onload="setup();preselect('河南省');promptinfo();">
+		<!-- Header  -wll-2013/03/24 -->
+        <include file="public/header"/>
+	<!-- Header End -->
+	
+	<!-- 购物车 Body -->
+	<div class="shop_gwc_bd clearfix">
+		<div class="shop_gwc_bd_contents clearfix">
+
+			<!-- 购物流程导航 -->
+			<div class="shop_gwc_bd_contents_lc clearfix">
+				<ul>
+					<li class="step_a">确认购物清单</li>
+					<li class="step_b hover_b">确认收货人资料及送货方式</li>
+					<li class="step_c">购买完成</li>
+				</ul>
+			</div>
+			<!-- 购物流程导航 End -->
+			<div class="clear"></div>
+			<!-- 收货地址 title -->
+			<div class="shop_bd_shdz_title">
+				<h3>收货人地址</h3>
+                <p><a href="javasrcipt:void(0);" id="new_add_shdz_btn">新增收货地址</a></p>
+			</div>
+			<div class="clear"></div>
+			<!-- 收货人地址 Title End -->
+
+			<div class="shop_bd_shdz clearfix">
+
+                <!-- 新增收货地址 -->
+                <div id="new_add_shdz_contents" style="display:none;" class="shop_bd_shdz_new clearfix">
+                    <div class="title">新增收货地址</div>
+                    <div class="shdz_new_form">
+                        <form action="{:U('Home/Address/addeidt')}" name="form" id="addform" method="post" >
+                            <ul>
+                                <li><label for="name"><span>*</span>收货人姓名：</label><input name="recever" id="name" type="text" class="name" /></li>
+                                <li><label for="address">所在地址:</label>
+                                    <select class="select" name="province" id="s1">
+                                        <option></option>
+                                    </select>
+                                    <select class="select" name="city" id="s2">
+                                        <option></option>
+                                    </select>
+                                    <select class="select" name="town" id="s3" onchange="promptinfo();">
+                                        <option></option>
+                                    </select>
+                                    <input id="address" name="address1" type="hidden" value="" />
+                                </li>
+                                <li><label for=""><span>*</span>详细地址：</label><input name="address2" type="text" class="xiangxi" /></li>
+                                <li><label for=""><span></span>邮政编码：</label><input name="post" type="text" class="youbian" /></li>
+                                <li><label for=""><span></span>电话：</label><input name="mobile" type="text" class="dianhua" /></li>
+                                <li><label for="">&nbsp;</label><input id="submit" type="button" value="增加收货地址" /></li>
+                            </ul>
+                            </form>
+                    </div>
+                </div>
+            </div>
+                <form action="" id="form1">
+                    <div class="shop_bd_shdz_lists clearfix">
+
+                        <ul>
+                            <volist name="address" id="address" empty="收货地址为空，快去添加地址吧！">
+                                <li><label>寄送至：<span><input type="radio" name="add" value="{$address.id}" {$address['isdefault']?'checked':''} /></span></label>{$address.address1}<em>{$address.address2}</em><em>{$address.recever}(收)</em><em>{$address.mobile}</em></li>
+                            </volist>
+                        </ul>
+                    </div>
+			<div class="clear"></div>
+			<!-- 购物车列表 -->
+                <div class="clear"></div>
+                <!-- 购物车列表 -->
+                <div class="shop_bd_shdz_title">
+                    <h3>确认购物清单</h3>
+                </div>
+                <div class="clear"></div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="1.5"><span>图片</span></th>
+                        <th colspan="2"><span>商品</span></th>
+                        <th><span>单价(元)</span></th>
+                        <th><span>数量</span></th>
+                        <th><span>小计</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <input type="hidden" id="prices" name="prices" />
+                    <tbody id="pageBody">
+                    <volist name="orderinfo" id="order" key="k" >
+                        <tr>
+                            <td style="display: none"    class="xuhao" style="color: #ff0000"><input checked="checked" onchange="gettotalprice();" type="checkbox" name="chk[]" value={$order.goodsid}></td>
+                            <input type="hidden"  name="ordernum" value="{$order.ordernum}" />
+
+                            <td>
+                                <a href="{:U('Home/Goods/details',array('id'=>$order['id']))}">
+                                    <img src="__PIC__{$order.goodspic}" alt=""
+                                         style="width:80px;margin:10px;"/>
+                                </a>
+                            </td>
+                            <td colspan="2"><a href="{:U('Home/Goods/details',array('id'=>$order['id']))}">{$order.goodsname}</a></td>
+                            <td><a href="#" class="price">{$order.price}</a></td>
+                            <td>
+                                <div style="visibility: hidden"><a  href="javascript:jian({$k});" class="decrement">-</a>&nbsp;</div>
+                                <input readonly="readonly" style="width: 22px;height: 22px; text-align: center" type="text" value="{$order.goodsnum}" class="num" name='buynum{$order.goodsid}' id="buynum{$k}" onkeyup="chgnum(this)"/>&nbsp;
+                                <div style="visibility: hidden"><a href="javascript:jia({$k});" class="increment">+</a></div>
+                            <td class="prices">3088.00</td>
+                        </tr>
+                    </volist>
+
+                        <tr>
+                            <td> <input type="radio" name="pay[]" checked/>支付宝支付</td>
+                            <td> <input type="radio" name="pay[]"/>微信支付</td>
+                            <td> <input type="radio" name="pay[]"/>银联支付</td>
+                            <td colspan="3">请在此处输入支付账户<input style="font-size: 15px" type="text" name="account" /></td>
+                        </tr>
+
+                   <!-- <tr>
+                        <td style="display: none" class="xuhao" style="color: #ff0000">
+                            <input type="checkbox" checked="checked" onchange="gettotalprice();" id="chkAll" name="chkAll"/>
+                        </td>
+
+                        <td colspan="5" id="buy">
+                            <span>总价:<b id="totalprice">￥888.88</b></span>
+                            <a href="javascript:pay()" id="submi" class="tobuy">马上付款</a>
+                            <a href="javascript:delorder()" class="tobuy">取消订单</a>
+                        </td>
+                    </tr>-->
+
+                    <tr>
+                        <td style="display: none" class="xuhao" style="color: #ff0000">
+                            <input type="checkbox" checked="checked" onchange="gettotalprice();" id="chkAll" name="chkAll"/>
+                        </td>
+
+                        <td colspan="5" id="buy">
+                            <span>总价:<b id="totalprice">￥888.88</b></span>
+                            <a id="submi" class="tobuy">马上付款</a>
+                            <a href="javascript:delorder()" class="tobuy">取消订单</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <!-- 购物车列表 End -->
+            </form>
+		</div>
+	</div>
+	<!-- 购物车 Body End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+        <include file="public/footer"/>
+	<!-- Footer End -->
+
+</body>
+
+<script type="text/javascript">
+    jQuery(function(){
+        jQuery("#new_add_shdz_btn").toggle(function(){
+            jQuery("#new_add_shdz_contents").show(500);
+        },function(){
+            jQuery("#new_add_shdz_contents").hide(500);
+        });
+    });
+
+    function promptinfo()
+    {
+        var address = document.getElementById('address');
+        var s1 = document.getElementById('s1');
+        var s2 = document.getElementById('s2');
+        var s3 = document.getElementById('s3');
+        address.value = s1.value + s2.value + s3.value;
+    }
+
+
+</script>
+<script src="__STATIC__/js/jquery.validate.min.js"></script>
+<script src="__STATIC__/layer/layer.js"></script>
+<script>
+$(function() {
+    var validate1 = $('#form1').validate({
+        rules: {
+            account: {
+                required: true
+            }
+        },
+        messages: {
+            account: {
+                required: '账号不能为空'
+            }
+        },
+        errorElement: 'div',
+        errorPlacement: function (error, element) {
+            error.appendTo(element.parent());
+        }
+    })
+    jQuery.validator.onfocus = true;
+    $('#submi').click(function () {
+        if (validate1.form()) {
+            layer.prompt({
+                title: '请输入您的支付密码',
+                formType: 1 //prompt风格，支持0-2
+            }, function (pass) {
+                $.post("{:U('Home/Shopcar/pay')}", $('#form1').serialize(), function (res) {
+                    if (res.status == 'ok') {
+                        layer.alert(res.msg, {
+                            yes: function () {
+                                location.href = "{:U('Home/Shopcar/orderend')}";
+                            }
+                        });
+                    } else {
+                        layer.alert(res.msg);
+                    }
+                })
+            })
+        }
+    })
+})
+
+    //添加地址操作
+    $(function(){
+        var validate=$('#addform').validate({
+            //设置验证规则
+            rules:{
+                recever:{
+                    required:true,
+                    minlength:2,
+                    maxlength:15
+                },
+                address1:{
+                    required:true,
+                    minlength:5,
+                    maxlength:20
+                },
+
+                address2:{
+                    required:true
+                },
+                post:{
+                    required:true,
+                    isZipCode:true
+                },
+                mobile:{
+                    required:true,
+                    call:true
+                }
+
+            },
+            messages:{
+                recever:{
+                    required:'收货人姓名不能为空',
+                    minlength:'收货人姓名至少需要2个字符',
+                    maxlength:'收货人姓名最多15个字符'
+                },
+                address1:{
+                    required:'所在地址不能为空',
+                    minlength:'所在地址至少5个字符',
+                    maxlength:'所在地址最多20个字符'
+                },
+
+                address2:{
+                    required:'所在地不能为空'
+                },
+                post:{
+                    required:'邮编不能为空',
+                    isZipCode:'邮编格式不正确'
+                },
+                mobile:{
+                    required:'手机号码不能为空',
+                    call:'手机号码格式不正确'
+                }
+
+            },
+            /*            success: function(label) {
+             label.addClass("ok");
+             },
+             validClass: "ok",*/
+            errorElement:'div',
+            errorPlacement: function(error, element) {
+                error.appendTo( element.parent());
+            }
+
+        })
+        //自定义验证手机号码
+        jQuery.validator.addMethod('call',function(value,elevent){
+            var callreg=/^[1]{1}[3578]{1}\d{9}$/;
+            return this.optional(elevent) || (callreg.test(value))},"请正确的填写手机号码");
+        //自定义验证邮箱
+        jQuery.validator.addMethod("isZipCode", function(value, element) {
+            var tel = /^[0-9]{6}$/;
+            return this.optional(element) || (tel.test(value));
+        }, "请正确填写您的邮政编码");
+        jQuery.validator.onfocus=true;
+
+        $('#submit').click(function(){
+            //alert(validate.form());
+            if(validate.form()){
+                //alert(ddd);
+                $.post("{:U('Home/Address/addeidt')}",$('#addform').serialize(),function(res){
+                    if(res.status=='ok'){
+                        layer.alert(res.msg,{
+                            yes:function(){
+                                location.href="{:U('Home/Shopcar/playorder')}";
+                            }
+                        });
+                    }else{
+                        layer.alert(res.msg);
+                    };
+                })
+            }
+
+        })
+
+    })
+
+</script>
+<script>
+
+    function chk(){
+        var chkAll=document.getElementById('chkAll');
+        var chks=document.getElementsByName('chk[]');
+        for(var i=0;i<chks.length;i++){
+            chks[i].checked=chkAll.checked;
+        }
+    }
+    document.getElementById('chkAll').onclick=chk;
+
+    function jian(n){
+        var buynum=document.getElementById('buynum'+n).value;
+        if(buynum>1){
+            document.getElementById('buynum'+n).value=parseInt(buynum)-1;
+        }
+        getprices();
+        gettotalprice();
+    }
+    function jia(n){
+        var buynum=document.getElementById('buynum'+n).value;
+        if(buynum<199){
+            document.getElementById('buynum'+n).value=parseInt(buynum)+1;
+        }
+        getprices();
+        gettotalprice();
+    }
+
+    function chgnum(v){
+        if(v.value<1){
+            v.value=1;
+        }
+        if(v.value>199){
+            v.value=199;
+        }
+        if(isNaN(v.value)){
+            v.value=1;
+        }
+
+        gettotalprice();
+    }
+
+    function getprices(){
+        var nums=document.getElementsByClassName('num');
+        var price=document.getElementsByClassName('price');
+        var prices=document.getElementsByClassName('prices');
+        for(var i=0;i<price.length;i++){
+
+            prices[i].innerHTML=parseInt(price[i].innerHTML)*parseInt(nums[i].value);
+
+        };
+    }
+
+    function gettotalprice(){
+        getprices();
+        var inputs=document.getElementsByName('chk[]');
+        var prices=document.getElementsByClassName('prices');
+        var totalprice=0;
+        for(var i=0;i<inputs.length;i++){
+            if(inputs[i].checked){
+                totalprice+=parseInt(prices[i].innerHTML);
+            };
+        };
+        document.getElementById('totalprice').innerHTML='￥'+totalprice;
+        document.getElementById('prices').value=totalprice;
+    }
+
+    gettotalprice();
+
+
+    function delorder() {
+        //alert($('#form').serialize());
+        $.post("{:U('Home/Shopcar/delorder')}", $('#form1').serialize(), function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes: function () {
+                        location.href = "{:U('Home/Index/index')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })
+    }
+
+</script>
+</html>

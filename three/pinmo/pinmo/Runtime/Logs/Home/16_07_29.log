@@ -1,0 +1,1721 @@
+[ 2016-07-29T09:37:47+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'zzz123' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:38:19+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:38:19+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('zzz123','e10adc3949ba59abbe56e057f20f883e','qwer@qw','1469756299') [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:38:44+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:38:44+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = 'zzz123' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 102  [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:39:10+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:39:15+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:39:16+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:39:17+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:39:24+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:39:26+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = 'zzz123' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 102  [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:44:56+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:44:56+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = 'zzz123' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 102  [ RunTime:0.0010s ]
+
+[ 2016-07-29T09:45:07+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: m102 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+
+[ 2016-07-29T09:45:14+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'zzz1234' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:45:28+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:45:28+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('zzz1234','e10adc3949ba59abbe56e057f20f883e','qwe@qw.com','1469756728') [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:45:58+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: m103 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+
+[ 2016-07-29T09:46:55+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'zzz123' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:46:58+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'zzz1234' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:46:58+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'zzz12345' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:47:17+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:47:18+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('zzz12345','e10adc3949ba59abbe56e057f20f883e','qwe@qw.com','1469756838') [ RunTime:0.0020s ]
+
+[ 2016-07-29T09:47:32+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: m104 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+
+[ 2016-07-29T09:47:51+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'z123' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:48:08+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:48:09+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('z123','e10adc3949ba59abbe56e057f20f883e','qwe@qw.com','1469756889') [ RunTime:0.0270s ]
+
+[ 2016-07-29T09:48:33+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:48:33+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = 'z123' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 105  [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:05:04+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=2&bid=16
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 16 ORDER BY id desc LIMIT 2,2   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:05:04+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=3&bid=16
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 16 ORDER BY id desc LIMIT 4,2   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:05:08+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=2&bid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0010s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 6 ORDER BY id desc LIMIT 2,2   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:05:09+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=3&bid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 6 ORDER BY id desc LIMIT 4,2   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:05:09+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=4&bid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0050s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 6 ORDER BY id desc LIMIT 6,2   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:05:10+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=5&bid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0040s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 6 ORDER BY id desc LIMIT 8,2   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:05:10+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=6&bid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0156s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 6 ORDER BY id desc LIMIT 10,2   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:05:20+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Search/search4.html?p=1&bid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+NOTIC: [8] Undefined index: u105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: look D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: look1 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 64 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 65 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_goods` WHERE `bid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `bid` = 6 ORDER BY id desc LIMIT 0,2   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: header D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Org\Util\AjaxPage.class.php 第 122 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:10:18+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( issale=1 ) ORDER BY salenum desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0156s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='z123' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m105 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 51 行.
+SQL: SELECT * FROM `pm_goods` WHERE ( id=137 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id=136 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id=151 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:12:10+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 105 AND `goodsid` = 151 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `pm_car` (`mid`,`goodsid`,`num`) VALUES ('105','151','1') [ RunTime:0.0250s ]
+
+[ 2016-07-29T11:28:18+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'z1111' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T11:28:32+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T11:28:33+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('z1111','96e79218965eb72c92a549dd5a330112','11@11','1469762913') [ RunTime:0.0260s ]
+
+[ 2016-07-29T12:14:12+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T12:14:12+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = '张三' AND `password` = 'dc693143c7eb8dfe1f867164dfa662d1' AND `state` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 97  [ RunTime:0.0010s ]
+
+[ 2016-07-29T12:52:42+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: m97 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+
+[ 2016-07-29T12:53:00+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Goods/collect.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='151' )  [ RunTime:0.0000s ]
+
+[ 2016-07-29T12:53:11+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'z123456' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T12:53:28+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T12:53:28+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('z123456','e10adc3949ba59abbe56e057f20f883e','qw@qq.com','1469768008') [ RunTime:0.0200s ]
+
+[ 2016-07-29T12:53:55+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T12:53:55+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = 'z123456' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_car` WHERE `mid` = 107  [ RunTime:0.0010s ]
+
+[ 2016-07-29T12:57:01+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'sss' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T12:57:23+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T12:57:23+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('sss','2d02e669731cbade6a64b58d602cf2a4','qq@qq.com','1469768243') [ RunTime:0.0166s ]
+
+[ 2016-07-29T12:57:38+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'ccccc' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T12:57:52+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T12:57:52+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('ccccc','67c762276bced09ee4df0ed537d164ea','qwe@qw.com','1469768272') [ RunTime:0.0020s ]
+
+[ 2016-07-29T13:14:35+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'DDD' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T13:14:49+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:14:49+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769289') [ RunTime:0.0180s ]
+
+[ 2016-07-29T13:14:52+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769292') [ RunTime:0.0010s ]
+
+[ 2016-07-29T13:14:52+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769292') [ RunTime:0.0216s ]
+
+[ 2016-07-29T13:14:53+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769293') [ RunTime:0.0100s ]
+
+[ 2016-07-29T13:14:53+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769293') [ RunTime:0.0010s ]
+
+[ 2016-07-29T13:15:31+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769331') [ RunTime:0.0000s ]
+
+[ 2016-07-29T13:15:31+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769331') [ RunTime:0.0020s ]
+
+[ 2016-07-29T13:15:31+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769331') [ RunTime:0.0010s ]
+
+[ 2016-07-29T13:15:32+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769332') [ RunTime:0.0020s ]
+
+[ 2016-07-29T13:15:32+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769332') [ RunTime:0.0190s ]
+
+[ 2016-07-29T13:15:32+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('DDD','d138e5259cd506844dada79795218232','qwe@qw.com','1469769332') [ RunTime:0.0020s ]
+
+[ 2016-07-29T13:15:36+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'ddd' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T13:15:38+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'dddd' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T13:15:39+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'ddddd' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:15:55+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:15:55+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('ddddd','50f84daf3a6dfd6a9f20c9f8ef428942','qwe@qw.com','1469769355') [ RunTime:0.0000s ]
+
+[ 2016-07-29T13:15:56+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('ddddd','50f84daf3a6dfd6a9f20c9f8ef428942','qwe@qw.com','1469769356') [ RunTime:0.0000s ]
+
+[ 2016-07-29T13:17:22+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'CCCC' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:17:33+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T13:17:33+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('CCCC','e86a1cf0678099986a901c79086f5617','qwe@qw.com','1469769453') [ RunTime:0.0020s ]
+
+[ 2016-07-29T13:17:56+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'CCCCC' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:17:59+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'CCCCCC' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T13:18:12+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:18:12+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('CCCCCC','cba81d13b8fe4dc120a844ff5fb37321','qwe@qw.com','1469769492') [ RunTime:0.0030s ]
+
+[ 2016-07-29T13:20:24+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'cccccc' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:20:30+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'qqqqq' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T13:20:45+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:20:50+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('qqqqq','437599f1ea3514f8969f161a6606ce18','qwe@qw.com','1469769650') [ RunTime:0.0206s ]
+
+[ 2016-07-29T13:22:02+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Login/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.103005s ]
+NOTIC: [8] Undefined index: m125 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\LoginController.class.php 第 51 行.
+
+[ 2016-07-29T13:22:19+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='151' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='126' )  [ RunTime:0.0000s ]
+
+[ 2016-07-29T13:22:30+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'zxc123' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T13:22:49+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T13:22:49+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Program Files (x86)\WWW\htdocs\three17\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('zxc123','e10adc3949ba59abbe56e057f20f883e','qwe@qw.com','1469769769') [ RunTime:0.0346s ]
+
+[ 2016-07-29T13:27:21+08:00 ] 127.0.0.1 /three17/pinmo/index.php/Home/Goods/collect.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m126 D:\Program Files (x86)\WWW\htdocs\three17\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='126' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='150' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='120' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_collect` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `pm_collect` WHERE `uid` = 126 AND `goodsid` = 120 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `pm_collect` (`uid`,`goodsid`) VALUES ('126','120') [ RunTime:0.0312s ]
+
+[ 2016-07-29T14:27:03+08:00 ] 172.16.11.90 /index.php/Home/Goods/collect.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0070s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: m D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='123' )  [ RunTime:0.0010s ]
+
+[ 2016-07-29T14:27:12+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: m D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='123' )  [ RunTime:0.0010s ]
+
+[ 2016-07-29T14:27:22+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0100s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='136' )  [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:27:26+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0100s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='136' )  [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:28:08+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/playorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0050s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: m D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='123' )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='136' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='156' )  [ RunTime:0.0010s ]
+
+[ 2016-07-29T16:48:44+08:00 ] 172.16.11.90 /index.php/Home/Goods/collect.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0000s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: m D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='127' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0000s ]
+
+[ 2016-07-29T16:48:59+08:00 ] 172.16.11.90 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T16:48:59+08:00 ] 172.16.11.90 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `pm_user` WHERE `username` = 'gaoyong' AND `password` = 'f66c583bb0f57faf6eacaedc7e30834a' AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-29T16:49:07+08:00 ] 172.16.11.90 /index.php/Home/Register/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pm_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T16:49:17+08:00 ] 172.16.11.90 /index.php/Home/Register/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T16:49:17+08:00 ] 172.16.11.90 /index.php/Home/Register/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate D:\project\three\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\three\pinmo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `pm_user` (`username`,`password`,`email`,`creatime`) VALUES ('gaoyong','f66c583bb0f57faf6eacaedc7e30834a','a@a.com','1469782157') [ RunTime:0.0220s ]
+
+[ 2016-07-29T16:49:19+08:00 ] 172.16.11.90 /index.php/Home/Register/undefined
+ERR: 非法操作:undefined
+
+[ 2016-07-29T16:49:29+08:00 ] 172.16.11.90 /index.php/Home/Goods/collect.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0100s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='gaoyong' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: m137 D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: u137 D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 108 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 108 行.
+NOTIC: [8] Undefined variable: look D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 113 行.
+NOTIC: [8] Undefined variable: look1 D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 117 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 117 行.
+NOTIC: [2] array_splice() expects parameter 1 to be array, null given D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `pm_collect` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_collect` WHERE `uid` = 137 AND `goodsid` = 129 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `pm_collect` (`uid`,`goodsid`) VALUES ('137','129') [ RunTime:0.0100s ]
+
+[ 2016-07-29T16:49:41+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: m137 D:\project\three\pinmo\pinmo\Home\Controller\CommonController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `id` = 129 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T16:50:03+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/addcar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T16:50:10+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/playorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0100s ]
+SQL: INSERT INTO `pm_order` (`mid`,`creatime`,`ordernum`,`prices`) VALUES ('137','1469782210','2016-07-2976980ca3de05dd00','456') [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pm_ordergoods` [ RunTime:0.0100s ]
+SQL: INSERT INTO `pm_ordergoods` (`goodsid`,`goodspic`,`goodsnum`,`orderid`) VALUES ('129','57931e86e2a1e.jpg','4','61') [ RunTime:0.0000s ]
+SQL: INSERT INTO `pm_ordergoods` (`goodsid`,`goodspic`,`goodsnum`,`orderid`) VALUES ('137','579320f91b5e6.jpg','1','61') [ RunTime:0.0100s ]
+
+[ 2016-07-29T16:50:39+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/pay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add D:\project\three\pinmo\pinmo\Home\Controller\ShopcarController.class.php 第 135 行.
+
+[ 2016-07-29T16:51:05+08:00 ] 172.16.11.90 /index.php/Home/Address/addeidt.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_address` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pm_address` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_address` WHERE ( uid=137 )  [ RunTime:0.0100s ]
+SQL: INSERT INTO `pm_address` (`recever`,`address1`,`address2`,`post`,`mobile`,`uid`,`isdefault`) VALUES ('高勇','河南省三门峡市义马市','超大规模 ','450000','15237150303','137','1') [ RunTime:0.0000s ]
+
+[ 2016-07-29T16:51:23+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/pay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0000s ]
+SQL: UPDATE `pm_order` SET `address`='67',`status`='2' WHERE `ordernum` = '2016-07-2976980ca3de05dd00' [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pm_goods` WHERE `id` = 129 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `pm_goods` SET `salenum`='6' WHERE `id` = 129 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_goods` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `pm_goods` SET `salenum`='92' WHERE `id` = 137 [ RunTime:0.0000s ]
+
+[ 2016-07-29T16:53:56+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/sign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_brand` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_brand` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0080s ]
+SQL: UPDATE `pm_order` SET `status`='4' WHERE `id` = 61 [ RunTime:0.0020s ]
+
+[ 2016-07-29T16:54:05+08:00 ] 172.16.11.90 /index.php/Home/Shopcar/back.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='129' )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_goods` WHERE ( id='137' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0090s ]
+SQL: UPDATE `pm_order` SET `status`='6' WHERE `id` = 61 [ RunTime:0.0020s ]
+
+[ 2016-07-29T16:54:43+08:00 ] 172.16.11.90 /index.php/Home/MemberCenter/password_edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pm_ad` WHERE ( state=1 AND position="logo" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0090s ]
+SQL: SELECT `photo` FROM `pm_user` WHERE ( username='gaoyong' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pm_category` WHERE ( pid=0 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 16  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 17  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 19  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 20  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 21  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 22  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 23  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 25  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 26  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 27  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 28  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 29  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 30  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 31  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 32  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 33  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 34  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 35  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 36  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 37  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 38  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 39  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 40  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 41  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 42  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 43  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 44  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 45  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 46  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 47  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 48  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 49  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pm_category` WHERE `pid` = 50  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pm_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pm_user` WHERE ( username='gaoyong' )  [ RunTime:0.0010s ]
+

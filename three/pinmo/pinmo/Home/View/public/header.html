@@ -1,0 +1,228 @@
+
+<script>
+
+    window.onscroll = function(){
+        var ht=document.documentElement.scrollTop || document.body.scrollTop;
+        if(ht>10){$("#daohang").css({"position":"fixed","margin":"auto","right":"0px","left":"0","top":"0","z-index":"999"});}
+        else{$("#daohang").css({"position":"relative"});}
+    }
+</script>
+<!-- Header  -wll-2013/03/24 -->
+<div class="shop_hd">
+    <!-- Header TopNav -->
+    <div class="shop_hd_topNav">
+        <div class="shop_hd_topNav_all">
+            <!-- Header TopNav Left -->
+            <div class="shop_hd_topNav_all_left">
+                <p>您好{$Think.session.mname}，欢迎来到品墨书城
+                    <gt name="Think.session.mid" value="0">
+                        <a href="javascript:logout();">退出</a>
+                        <else />
+                        [<a href="{:U('Home/Login/login')}">登录</a>][<a href="{:U('Home/Register/register')}">注册</a>]
+                    </gt>
+                </p>
+            </div>
+            <!-- Header TopNav Left End -->
+
+            <!-- Header TopNav Right -->
+            <div class="shop_hd_topNav_all_right">
+                <ul class="topNav_quick_menu">
+
+                    <li>
+                        <div class="topNav_menu">
+                            <a href="{:U('Home/MemberCenter/grxx')}" class="topNavHover">个人中心<i></i></a>
+                            <div class="topNav_menu_bd" style="display:none;" >
+                                <ul>
+                                    <li><a title="已买到的商品" target="_top" href="{:U('Home/MemberCenter/order')}">已买到的商品</a></li>
+                                    <li><a title="个人主页" target="_top" href="{:U('Home/MemberCenter/grxx')}">个人主页</a></li>
+                                    <!-- <li><a title="我的好友" target="_top" href="#">我的好友</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--<div class="topNav_menu">
+                            <a href="#" class="topNavHover">卖家中心<i></i></a>
+                            <div class="topNav_menu_bd" style="display:none;">
+                                <ul>
+                                  <li><a title="已售出的商品" target="_top" href="#">已售出的商品</a></li>
+                                  <li><a title="销售中的商品" target="_top" href="#">销售中的商品</a></li>
+                                </ul>
+                            </div>
+                        </div>-->
+                    </li>
+
+                    <li>
+                        <div class="topNav_menu">
+                            <a href="{:U('Home/Shopcar/addcar')}" class="topNavHover">购物车(<b style="color:red;">{$num}</b>)种商品</a>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="topNav_menu">
+                            <a href="{:U('Home/MemberCenter/favorite')}" class="topNavHover">我的收藏</a>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="topNav_menu">
+                            <a href="javascript:help();">帮助中心</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Header TopNav Right End -->
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <!-- Header TopNav End -->
+
+    <!-- TopHeader Center -->
+    <div class="shop_hd_header">
+        <div class="shop_hd_header_logo">
+
+            <volist name="list6" id="value">
+                <h1 class="logo"><a href=""><img src="__PIC__{$value.adpic}" alt="" width="250px" height="80px"/></a><span>1234</span></h1>
+
+            </volist>
+        </div>
+        <div class="shop_hd_header_search">
+            <ul class="shop_hd_header_search_tab">
+                <li id="search" style="visibility: hidden" class="current"></li>
+
+            </ul>
+            <div class="clear"></div>
+            <div class="search_form">
+                <form method="get" action="{:U('Home/Search/search')}">
+                    <div class="search_formstyle">
+                        <input type="text" class="search_form_text" name="keywords" value="{$keywords}" placeholder="搜索其实很简单！" />
+                        <input type="submit" class="search_form_sub" name="secrch_submit" value="" title="搜索" />
+                    </div>
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div class="search_tag">
+                <a href="{:U('Home/Search/search',array('keywords'=>'余罪'))}">余罪</a>
+                <a href="{:U('Home/Search/search',array('keywords'=>'时间之间'))}">时间之间</a>
+                <a href="{:U('Home/Search/search',array('keywords'=>'悟空传'))}">悟空传</a>
+                <a href="{:U('Home/Search/search',array('keywords'=>'魔兽'))}">魔兽</a>
+                <a href="{:U('Home/Search/search',array('keywords'=>'历史上的今天'))}">历史上的今天</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- TopHeader Center End -->
+
+    <!-- Header Menu -->
+    <div class="shop_hd_menu" id="daohang">
+        <!-- 所有商品菜单 -->
+
+        <div id="shop_hd_menu_all_category" class="shop_hd_menu_all_category"><!-- 首页去掉 id="shop_hd_menu_all_category" 加上clsss shop_hd_menu_hover -->
+            <div class="shop_hd_menu_all_category_title"><h2 title="所有商品分类"><a href="javascript:cate();">所有商品分类</a></h2><i></i></div>
+            <div id="shop_hd_menu_all_category_hd" class="shop_hd_menu_all_category_hd">
+                <ul class="shop_hd_menu_all_category_hd_menu clearfix">
+                    <!-- 单个菜单项 -->
+                    <!--<li><h3><a href="">品牌推荐</a></h3>
+                   <div class="cat_menu clearfix" style="margin-bottom: 0px">
+                        <dl class="clearfix">
+                    <volist name="blist" id="value">
+                        <dd><img src="__PIC__{$value.pic}" width="150px" style="margin:5px "/></dd>
+                    </volist>
+                    </dl>
+                       </div>
+                    <li>-->
+                    <volist name="catelist" id="value1">
+                        <li id="cat_1" class="" style="margin-top: 10px">
+                            <h3><a href="{:U('Home/Index/letter',array('cid'=>$value1['cid'],'catename'=>$value1['catename']))}" title="">{$value1.catename}</a></h3>
+                            <div id="cat_1_menu" class="cat_menu clearfix" style="">
+
+                                <volist name="value1" id="value2">
+                                    <volist name="value2" id="value3">
+
+
+                                        <dl class="clearfix">
+
+                                            <dt><a href="{:U('Home/Search/search2',array('cid'=>$value3['cid'],'catename'=>$value3['catename']))}">{$value3.catename}</a></dt>
+
+                                            <dd>
+
+                                                <a href="">{$value.catename}</a>
+
+
+
+                                            </dd>
+
+                                        </dl>
+
+                                    </volist>
+                                </volist>
+
+                            </div>
+                        </li>
+                    </volist>
+                    <!-- 单个菜单项 End -->
+                </ul>
+            </div>
+        </div>
+        <!-- 所有商品菜单 END -->
+
+        <!-- 普通导航菜单 -->
+        <ul class="shop_hd_menu_nav">
+            <li class="current_link"><a href="{:U('Home/Index/index')}"><span>首页</span></a></li>
+            <volist name="catelist" id="value">
+
+                <li class="link"><a href="{:U('Home/Index/letter',array('cid'=>$value['path'],'catename'=>$value['catename']))}"><span>{$value.catename}</span></a></li>
+            </volist>
+
+
+            <!--<li class="link"><a href="{:U('Home/Index/letter',array('pid'=>24))}"><span>社科频道</span></a></li>
+            <li class="link"><a href="{:U('Home/Index/letter',array('pid'=>30))}"><span>经营频道</span></a></li>
+            <li class="link"><a href="{:U('Home/Index/letter',array('pid'=>36))}"><span>文教频道</span></a></li>
+            <li class="link"><a href="{:U('Home/Index/letter',array('pid'=>43))}"><span>生活频道</span></a></li>
+            <li class="link"><a href="{:U('Home/Index/letter',array('pid'=>16))}"><span>音象</span></a></li>-->
+
+        </ul>
+        <!-- 普通导航菜单 End -->
+    </div>
+    <!-- Header Menu End -->
+
+
+
+</div>
+
+
+
+</div>
+<div class="clear"></div>
+<script src="__STATIC__/js/jquery-1.8.2.js"></script>
+<script src="__STATIC__/layer/layer.js"></script>
+<script>
+
+    function logout() {
+        layer.confirm('您是真的要退出吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.post("{:U('Home/Login/logout')}", null, function (res) {
+                if (res.status == 'ok') {
+                    layer.alert(res.msg, {
+                        yes:function(){
+                            location.href="{:U('Home/Index/index')}";
+                        }
+                    });
+                }
+            })
+        })
+    }
+    function help(){
+         //为了layer.ext.js加载完毕再执行
+            layer.alert("有任何问题请拨打400-8888888，我们将提供令您满意的解决方案！"
+            );
+
+    }
+
+</script>

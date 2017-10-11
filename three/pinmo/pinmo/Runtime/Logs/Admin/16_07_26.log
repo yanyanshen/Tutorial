@@ -1,0 +1,520 @@
+[ 2016-07-26T21:02:13+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2016-07-26T21:02:13+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0202s ]
+SQL: SELECT `id` FROM `pm_adminuser` WHERE `adminname` = 'admin2' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `power` = 1 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0038s ]
+SQL: UPDATE `pm_adminuser` SET `creatime`='1469538133',`ip`='172.16.11.178' WHERE ( id=7 ) [ RunTime:0.0015s ]
+
+[ 2016-07-26T21:02:33+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Order/gogoods.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0035s ]
+SQL: UPDATE `pm_order` SET `status`='3' WHERE `id` = 38 [ RunTime:0.0012s ]
+
+[ 2016-07-26T21:02:56+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Order/gogoods.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0034s ]
+SQL: UPDATE `pm_order` SET `status`='3' WHERE `id` = 38 [ RunTime:0.0010s ]
+
+[ 2016-07-26T21:03:00+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Order/gogoods.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0043s ]
+SQL: UPDATE `pm_order` SET `status`='3' WHERE `id` = 38 [ RunTime:0.0011s ]
+
+[ 2016-07-26T21:03:03+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Order/gogoods.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `pm_order` [ RunTime:0.0033s ]
+SQL: UPDATE `pm_order` SET `status`='3' WHERE `id` = 38 [ RunTime:0.0011s ]
+
+[ 2016-07-26T21:11:32+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0030s ]
+SQL: INSERT INTO `pm_adminuser` (`adminname`,`password`,`creatime`,`power`,`ip`) VALUES ('张三000','dc693143c7eb8dfe1f867164dfa662d1','1469538692','1','172.16.11.178') [ RunTime:0.0012s ]
+
+[ 2016-07-26T21:11:57+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0031s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0010s ]
+
+[ 2016-07-26T21:12:01+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0037s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0013s ]
+
+[ 2016-07-26T21:12:06+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0038s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0010s ]
+
+[ 2016-07-26T21:12:14+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0030s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0013s ]
+
+[ 2016-07-26T21:12:17+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0044s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0010s ]
+
+[ 2016-07-26T21:12:50+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Goods/issale.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0039s ]
+SQL: SELECT `issale` FROM `pm_goods` WHERE ( id=120 ) LIMIT 1   [ RunTime:0.0172s ]
+SQL: UPDATE `pm_goods` SET `issale`='0' WHERE ( id=120 ) [ RunTime:0.0020s ]
+
+[ 2016-07-26T21:12:55+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Goods/issale.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `pm_goods` [ RunTime:0.0039s ]
+SQL: SELECT `issale` FROM `pm_goods` WHERE ( id=120 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_goods` SET `issale`='1' WHERE ( id=120 ) [ RunTime:0.0102s ]
+
+[ 2016-07-26T21:13:47+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0032s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+
+[ 2016-07-26T21:13:49+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0034s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+
+[ 2016-07-26T21:13:53+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0033s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+
+[ 2016-07-26T21:13:53+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0034s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+
+[ 2016-07-26T21:13:54+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0031s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+
+[ 2016-07-26T21:13:54+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002213s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0032s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `pm_ad` WHERE ( id= )
+
+[ 2016-07-26T21:14:00+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:14:03+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:14:04+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:15:07+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0035s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0283s ]
+
+[ 2016-07-26T21:15:16+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0034s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0003s ]
+
+[ 2016-07-26T21:15:39+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:16:39+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0033s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0243s ]
+
+[ 2016-07-26T21:17:41+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:19:21+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0032s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0002s ]
+
+[ 2016-07-26T21:19:25+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0030s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0002s ]
+
+[ 2016-07-26T21:19:39+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0031s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0002s ]
+
+[ 2016-07-26T21:20:39+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0039s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='' ) [ RunTime:0.0003s ]
+
+[ 2016-07-26T21:21:18+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+SQL: SHOW COLUMNS FROM `pm_ad` [ RunTime:0.0037s ]
+SQL: DELETE FROM `pm_ad` WHERE ( id='26' ) [ RunTime:0.0017s ]
+
+[ 2016-07-26T21:21:50+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0037s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0014s ]
+
+[ 2016-07-26T21:21:53+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0038s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0014s ]
+
+[ 2016-07-26T21:21:54+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0032s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0009s ]
+
+[ 2016-07-26T21:21:57+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0035s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0011s ]
+
+[ 2016-07-26T21:22:00+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0032s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0013s ]
+
+[ 2016-07-26T21:22:10+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0032s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0010s ]
+
+[ 2016-07-26T21:22:13+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0030s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0026s ]
+
+[ 2016-07-26T21:22:18+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:22:20+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:03+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:08+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:08+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:08+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:09+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:09+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:09+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:09+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:09+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:09+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:24:14+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:36+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:37+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:37+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:37+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:37+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:38+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:38+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:39+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:40+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:52+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:53+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:25:59+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:26:25+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:26:46+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0030s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0015s ]
+
+[ 2016-07-26T21:26:57+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0034s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=3 ) [ RunTime:0.0009s ]
+
+[ 2016-07-26T21:27:00+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0033s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0013s ]
+
+[ 2016-07-26T21:27:03+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0034s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0012s ]
+
+[ 2016-07-26T21:27:10+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0037s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=3 ) [ RunTime:0.0011s ]
+
+[ 2016-07-26T21:29:24+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0032s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0230s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Common\functions.php:850) D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-07-26T21:29:32+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0032s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0011s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Common\functions.php:850) D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-07-26T21:29:43+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0034s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0010s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Common\functions.php:850) D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-07-26T21:32:35+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002399s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0036s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0016s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Common\functions.php:850) D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-07-26T21:34:13+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0034s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0012s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Common\functions.php:850) D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-07-26T21:37:31+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0039s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0010s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Common\functions.php:850) D:\wamp\apache\htdocs\three13(2)\pinmo\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-07-26T21:38:26+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0035s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `pm_adminuser` SET `power`='1' WHERE ( id=7 ) [ RunTime:0.0012s ]
+
+[ 2016-07-26T21:39:41+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0050s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `pm_adminuser` SET `power`='0' WHERE ( id=7 ) [ RunTime:0.0013s ]
+
+[ 2016-07-26T21:39:43+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Admin/opp.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0054s ]
+SQL: SELECT `power` FROM `pm_adminuser` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `pm_adminuser` SET `power`='1' WHERE ( id=7 ) [ RunTime:0.0028s ]
+
+[ 2016-07-26T21:40:18+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:40:45+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:41:55+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-26T21:56:01+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003258s ]
+
+[ 2016-07-26T21:56:02+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0051s ]
+SQL: SELECT `id` FROM `pm_adminuser` WHERE `adminname` = 'admin2' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `power` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `pm_adminuser` [ RunTime:0.0052s ]
+SQL: UPDATE `pm_adminuser` SET `creatime`='1469541362',`ip`='172.16.11.178' WHERE ( id=7 ) [ RunTime:0.0015s ]
+
+[ 2016-07-26T21:56:59+08:00 ] 172.16.11.178 /three13(2)/pinmo/admin.php/Admin/Ad/index.css
+ERR: 非法操作:index.css
+

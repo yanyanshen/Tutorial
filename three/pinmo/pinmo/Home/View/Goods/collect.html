@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>商品列表页</title>
+	<link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_list.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/shop_list.js" ></script>
+    <style>
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #3eafe0;
+            color:#000;
+        }
+        #page a:hover{
+            background: #FF6B00;
+            color:#fff;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #EDF6FA;
+            color:#000;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+	<!-- Header  -wll-2013/03/24 -->
+    <include file="public /header"/>
+
+	<!-- Header End -->
+
+
+	<!-- List Body 2013/03/27 -->
+	<div class="shop_bd clearfix">
+		<div class="shop_bd_list_left clearfix">
+			<!-- 左边商品分类 -->
+			<div class="shop_bd_list_bk clearfix">
+				<div class="title">商品分类</div>
+				<div class="contents clearfix">
+					<dl class="shop_bd_list_type_links clearfix">
+						<dt><strong>女装</strong></dt>
+						<dd>
+							<span><a href="">风衣</a></span>
+							<span><a href="">长袖连衣裙</a></span>
+							<span><a href="">毛呢连衣裙</a></span>
+							<span><a href="">半身裙</a></span>
+							<span><a href="">小脚裤</a></span>
+							<span><a href="">加绒打底裤</a></span>
+							<span><a href="">牛仔裤</a></span>
+							<span><a href="">打底衫</a></span>
+							<span><a href="">情侣装</a></span>
+							<span><a href="">棉衣</a></span>
+							<span><a href="">毛呢大衣</a></span>
+							<span><a href="">毛呢短裤</a></span>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 左边商品分类 End -->
+
+			<!-- 热卖推荐商品 -->
+
+
+			<!-- 浏览过的商品 -->
+			<include file="public/tjgoods"/>
+			<!-- 浏览过的商品 -->
+
+		</div>
+
+		<div class="shop_bd_list_right clearfix">
+			<!-- 条件筛选框 -->
+			<div class="module_filter">
+
+				<div class="bottom"></div>
+			</div>
+			<!-- 条件筛选框 -->
+
+			<!-- 显示菜单 -->
+			<div class="sort-bar">
+				<div class="bar-l"> 
+		            <!-- 查看方式S -->
+		            <div class="switch"><span class="selected"><a title="以方格显示" ecvalue="squares" nc_type="display_mode" class="pm" href="javascript:void(0)">大图</a></span><span style="border-left:none;"><a title="以列表显示" ecvalue="list" nc_type="display_mode" class="lm" href="javascript:void(0)">列表</a></span></div>
+		            <!-- 查看方式E --> 
+		            <!-- 排序方式S -->
+		            <ul class="array">
+		              <li class="selected"><a title="默认排序" onclick="javascript:dropParam(['key','order'],'','array');" class="nobg" href="javascript:void(0)">默认</a></li>
+		              <li><a title="点击按销量从高到低排序" onclick="javascript:replaceParam(['key','order'],['sales','desc'],'array');" href="javascript:void(0)">销量</a></li>
+		              <li><a title="点击按人气从高到低排序" onclick="javascript:replaceParam(['key','order'],['click','desc'],'array');" href="javascript:void(0)">人气</a></li>
+		              <li><a title="点击按信用从高到低排序" onclick="javascript:replaceParam(['key','order'],['credit','desc'],'array');" href="javascript:void(0)">信用</a></li>
+		              <li><a title="点击按价格从高到低排序" onclick="javascript:replaceParam(['key','order'],['price','desc'],'array');" href="javascript:void(0)">价格</a></li>
+		            </ul>
+		            <!-- 排序方式E --> 
+		            <!-- 价格段S -->
+		            <div class="prices"> <em>¥</em>
+		              <input type="text" value="" class="w30">
+		              <em>-</em>
+		              <input type="text" value="" class="w30">
+		              <input type="submit" value="确认" id="search_by_price">
+		            </div>
+		            <!-- 价格段E --> 
+		          </div>
+			</div>
+			<div class="clear"></div>
+			<!-- 显示菜单 End -->
+
+			<!-- 商品列表 -->
+			<div class="shop_bd_list_content clearfix">
+				<ul>
+					<volist name="letlist" id="value">
+                        <li>
+                        <dl>
+                            <dt><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}"><img src="__PIC__{$value.goodspic}" /></a></dt>
+                            <dd class="title"><a href="">{$value.goodsname}</a></dd>
+                            <dd class="content">
+                                <span class="goods_jiage">￥<strong>{$value.price}</strong></span>
+                                <span class="goods_chengjiao">最近成交{$value.salenum}笔</span>
+                            </dd>
+                        </dl>
+                        </li>
+                    </volist>
+
+
+
+
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="pagination" id="page">
+				{$page}
+			</div>
+			<!-- 商品列表 End -->
+
+
+		</div>
+	</div>
+	<!-- List Body End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+    <include file="public/footer"/>
+	<!-- Footer End -->
+	
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_manager.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+</head>
+<body>
+		<!-- Header  -wll-2013/03/24 -->
+        <include file="public/header"/>
+
+	<!-- Header End -->	
+
+	<!-- 我的个人中心 -->
+	<div class="shop_member_bd clearfix">
+		<!-- 左边导航 -->
+        <include file="public/left"/>
+		<!-- 左边导航 End -->
+		
+		<!-- 右边购物列表 -->
+		<div class="shop_member_bd_right clearfix">
+			
+			<div class="shop_meber_bd_good_lists clearfix">
+				<div class="title"><h3>订单列表</h3></div>
+				<table>
+					<thead class="tab_title">
+						<th style="width:380px;"><span>商品信息</span></th>
+						<th style="width:150px;"><span>单价</span></th>
+						<th style="width:80px;"><span>数量</span></th>
+
+					</thead>
+					<tbody>
+                        <volist name="order" id="order1">
+						<tr><td colspan="3">
+							<table class="good">
+								<thead >
+									<tr><th style="width:280px;" >
+										<span><strong>订单号码：</strong>{$order1.ordernum}</span>
+									</th>
+                                        <th style="width:70px;">
+                                            <span><strong>订单总价：</strong>￥{$order1.prices}</span>
+									</th>
+                                        <th style="width:120px;">
+                                            <span><strong>订单状态：</strong>
+                                                <switch name="order1.status" >
+                                                    <case value="1" >未付款</case>
+                                                    <case value="2">已付款</case>
+                                                    <case value="3">已发货</case>
+                                                    <case value="4">已签收</case>
+                                                    <case value="5">已评价</case>
+                                                    <case value="6">申请退货</case>
+                                                    <case value="7">已退货</case>
+                                                    <case value="8">订单已取消</case>
+                                                    <case value="9">取消订单中</case>
+                                                    <default />
+                                                </switch>
+                                                </span>
+									</th>
+                                        <th style="width:120px;">
+                                            <span><strong>操作：</strong>
+                                                <switch name="order1.status" >
+                                                    <case value="1" ><a href="javascript:pay({$order1['id']})">去付款</a> <a href="javascript:del({$order1['id']})">取消订单</a></case>
+                                                    <case value="2"><a href="javascript:del({$order1['id']})">取消订单</a></case>
+                                                    <case value="3"><a href="javascript:sign({$order1['id']})">签收</a> <a href="javascript:del({$order1['id']})">取消订单</a></case>
+                                                    <case value="4"><a href="javascript:back({$order1['id']})">退货</a> <a href="{:U('Home/MemberCenter/discuss',array('id'=>$order1['id']))}">评价</a></case>
+                                                    <default />
+                                                </switch>
+                                                </span>
+									</th>
+                                    </tr>
+								</thead>
+                                <volist name="order1.temp" id="ordergoods" key="k">
+								<tbody>
+									<tr>
+										<td class="dingdan_pic"><img src="__PIC__{$ordergoods.goodspic}" /></td>
+										<td class="dingdan_title"><span><a href="{:U('Home/Goods/details',array('id'=>$ordergoods['goodsid']))}">{$ordergoods.goodsname}</a></span></td>
+                                        <td><a href="#" class="price">{$ordergoods.price}</a></td>
+                                        <td style="text-align: center">
+                                            <input readonly="readonly" style="width: 100%;height: 22px; border: 0; text-align: center" type="text" value="{$ordergoods.goodsnum}" class=" dingdan_shuliang" name='buynum' id="buynum{$k}" onkeyup="chgnum(this)"/>&nbsp;
+									</tr>
+								</tbody>
+                                </volist>
+							</table>
+						</td></tr>
+                        </volist>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 右边购物列表 End -->
+
+	</div>
+	<!-- 我的个人中心 End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+        <include file="public/footer"/>
+	<!-- Footer End -->
+</body>
+<script>
+    function pay(id){
+        $.post("{:U('Home/Shopcar/justpay')}",{'id':id}, function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes:function(){
+                        location.href="{:U('Home/MemberCenter/order')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })}
+    function back(id){
+        $.post("{:U('Home/Shopcar/back')}",{'id':id}, function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes:function(){
+                        location.href="{:U('Home/MemberCenter/order')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })}
+    function sign(id){
+        $.post("{:U('Home/Shopcar/sign')}",{'id':id}, function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes:function(){
+                        location.href="{:U('Home/MemberCenter/order')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })}
+    function del(id) {
+        //alert($('#form').serialize());
+        layer.confirm('您是真的要删除吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+        $.post("{:U('Home/Shopcar/delor')}", {'id':id}, function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes: function () {
+                        location.href = "{:U('Home/MemberCenter/order')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })
+    })}
+   /* function discuss(id) {
+            $.post("{:U('Home/Shopcar/discuss1')}", {'id':id}, function (res) {
+                if (res.status == 'ok') {
+                    layer.alert(res.msg, {
+                        yes: function () {
+                            location.href = "{:U('Home/MemberCenter/order')}";
+                        }
+                    });
+                } else {
+                    layer.alert(res.msg);
+                }
+            })
+            layer.close(index);
+        });
+        //alert($('#form').serialize());
+
+    }*/
+</script>
+
+</html>

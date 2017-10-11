@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_manager.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+</head>
+<body>
+<!-- Header  -wll-2013/03/24 -->
+<include file="public/header"/>
+
+<!-- Header End -->
+
+<!-- 我的个人中心 -->
+<div class="shop_member_bd clearfix">
+    <!-- 左边导航 -->
+    <include file="public/left"/>
+    <!-- 左边导航 End -->
+
+    <!-- 右边购物列表 -->
+    <div class="shop_member_bd_right clearfix">
+
+        <div class="shop_meber_bd_good_lists clearfix">
+            <div class="title"><h3>商品列表</h3></div>
+            <table>
+                <thead class="tab_title">
+                <th style="width:200px;"><span>商品</span></th>
+                <th style="width:400px;"><span>评价</span></th>
+                </thead>
+                <form action="{:U('Home/Shopcar/discuss')}" method="post" id="form">
+                    <volist name="ordergoods" id="ordergoods" key="k">
+                <tbody>
+
+                                <tbody style="border: 1px solid #AED2FF">
+                                <tr>
+                                    <td style="text-align: center;" class="dingdan_pic"><img width="80px" src="__PIC__{$ordergoods.goodspic}" /></td>
+                                    <td style="text-align: center;" class="dingdan_title"><span>
+                                        <input type="hidden" name="goodsid{$k}" value="{$ordergoods.goodsid}"/>
+                                        <textarea style="height: 100px;width: 570px;scrolling:none;font-size: 25px" name="msg{$k}" placeholder="在这里输入您的评价吧！"/></textarea></span></td>
+                                </tr>
+                                </tbody>
+
+                </tbody>
+                    </volist>
+                    <input type="hidden" name="id" value="{$orderid}"/>
+                </form>
+
+            </table>
+            <input style="background-color: #f27102;width: 80px;height: 40px;margin: 10px 0 0 250px" id="ok"  type="button" value="提交评论"/>
+            <input style="background-color: #f27102;width: 80px;height: 40px;margin: 10px 0 0 250px" id="giveup" type="button" value="放弃评论"/>
+        </div>
+    </div>
+    <!-- 右边购物列表 End -->
+
+</div>
+<!-- 我的个人中心 End -->
+
+<!-- Footer - wll - 2013/3/24 -->
+<include file="public/footer"/>
+<!-- Footer End -->
+</body>
+<script src="__STATIC__/layer/layer.js"></script>
+<script>
+    $('#ok').click(function(){
+        alert($('#form').serialize());
+            $.post("{:U('Home/Shopcar/discuss')}",$('#form').serialize(),function(res) {
+                if (res.status == 'ok') {
+                    layer.alert(res.msg, {
+                        yes: function () {
+                            location.href = "{:U('Home/MemberCenter/order')}";
+                        }
+                    });
+                } else {
+                    layer.alert(res.msg);
+                }
+                ;
+            })
+    })
+    $('#giveup').click(function(){
+        layer.confirm('您是真的要放弃评论吗吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            location.href = "{:U('Home/MemberCenter/order')}";
+        })
+    })
+</script>
+</html>

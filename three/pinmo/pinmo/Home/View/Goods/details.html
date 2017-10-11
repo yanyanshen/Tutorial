@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>商品详细页面</title>
+	<link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="__STATIC__/css/shop_list.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_goods.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/shop_goods.js" ></script>
+</head>
+<body>
+	<!-- Header  -wll-2013/03/24 -->
+    <include file="public/header"/>
+	<div class="clear"></div>
+	<!-- 面包屑 注意首页没有 -->
+	<div class="shop_hd_breadcrumb">
+		<strong>当前位置：</strong>
+		<span>
+			<a href="">首页</a>&nbsp;›&nbsp;
+			<a href="">商品详情</a>&nbsp;›&nbsp;
+		</span>
+	</div>
+	<div class="clear"></div>
+	<!-- 面包屑 End -->
+
+	<!-- Header End -->
+	
+	<!-- Goods Body -->
+	<div class="shop_goods_bd clear">
+
+		<!-- 商品展示 -->
+		<div class="shop_goods_show">
+			<div class="shop_goods_show_left">
+				<!-- 京东商品展示 -->
+				<link rel="stylesheet" href="__STATIC__/css/shop_goodPic.css" type="text/css" />
+				<script type="text/javascript" src="__STATIC__/js/shop_goodPic_base.js"></script>
+				<script type="text/javascript" src="__STATIC__/js/lib.js"></script>
+				<script type="text/javascript" src="__STATIC__/js/163css.js"></script>
+				<div id="preview">
+					<div class=jqzoom id="spec-n1" onClick="window.open(''__PIC__{$plist['0']['picname']}'')"><IMG height="350" src="__PIC__{$plist['0']['picname']}" jqimg="__PIC__{$plist['0']['picname']}" width="350">
+						</div>
+						<div id="spec-n5">
+
+                            <div id="spec-list">
+								<ul class="list-h">
+                                    <volist name="plist" id="value">
+									<li><img src="__PIC__{$value.picname}"> </li>
+                                    </volist>
+								</ul>
+							</div>
+
+
+					    </div>
+					</div>
+
+					<SCRIPT type=text/javascript>
+						$(function(){			
+						   $(".jqzoom").jqueryzoom({
+								xzoom:400,
+								yzoom:400,
+								offset:10,
+								position:"right",
+								preload:1,
+								lens:1
+							});
+							$("#spec-list").jdMarquee({
+								deriction:"left",
+								width:350,
+								height:56,
+								step:2,
+								speed:4,
+								delay:10,
+								control:true,
+								_front:"#spec-right",
+								_back:"#spec-left"
+							});
+							$("#spec-list img").bind("mouseover",function(){
+								var src=$(this).attr("src");
+								$("#spec-n1 img").eq(0).attr({
+									src:src.replace("\/n5\/","\/n1\/"),
+									jqimg:src.replace("\/n5\/","\/n0\/")
+								});
+								$(this).css({
+									"border":"2px solid #ff6600",
+									"padding":"1px"
+								});
+							}).bind("mouseout",function(){
+								$(this).css({
+									"border":"1px solid #ccc",
+									"padding":"2px"
+								});
+							});				
+						})
+						</SCRIPT>
+					<!-- 京东商品展示 End -->
+
+			</div>
+			<div class="shop_goods_show_right">
+                <volist name="glist" id="value">
+				<ul>
+					<li>
+						<strong style="font-size:16px; font-weight:bold;">{$value.goodsname}</strong>
+					</li>
+                    <li>
+                        <label>市场价格：</label>
+                        <span><del><strong>{$value.marketprice}</strong></del>元</span>
+                    </li>
+                    <li>
+						<label>价格：</label>
+						<span><strong>{$value.price}</strong>元</span>
+					</li>
+					<li>
+						<label>运费：</label>
+						<span>卖家承担运费</span>
+					</li>
+					<li>
+						<label>累计售出：</label>
+						<span><strong>{$value.salenum}</strong>件</span>
+					</li>
+					<li>
+						<label>评价：</label>
+						<span>0条评论</span>
+					</li>
+                    <form action="{:U('Home/Shopcar/addcar')}" method="post" id="form">
+					<li class="goods_num">
+						<label>购买数量：</label>
+						<span><a class="good_num_jian" id="good_num_jian" href="javascript:void(0);"></a><input type="text" name="goodsnum" value="1" id="good_nums" class="good_nums" /><a href="javascript:void(0);" id="good_num_jia" class="good_num_jia"></a>(当前库存{$value.num}件)</span>
+					</li>
+
+					<li style="padding:20px 0;margin-left: 50px">
+                        <input type="hidden" name="goodsid" value="{$value.id}"/>
+
+						<span><a href="javascript:goodscar();" class="goods_sub goods_sub_gou" >加入购物车</a></span>
+                        <span onclick="javascript:collect({$value.id});" style="font-size:15px;cursor:pointer;padding-left: 40px"> <a style="text-decoration: none;"><b style="color: red">&#9829;</b>{$b>0?'已收藏':'添加收藏'}</a></span>
+					</li>
+                    </form>
+
+				</ul>
+                </volist>
+			</div>
+		</div>
+		<!-- 商品展示 End -->
+
+		<div class="clear mt15"></div>
+		<!-- Goods Left -->
+		<div class="shop_bd_list_left clearfix">
+
+
+			<!-- 热卖推荐商品 -->
+            <include file="public/tjgoods"/>
+			<!-- 浏览过的商品 -->
+
+		</div>
+		<!-- Goods Left End -->
+
+		<!-- 商品详情 -->
+		<script type="text/javascript" src="__STATIC__/js/shop_goods_tab.js"></script>
+		<div class="shop_goods_bd_xiangqing clearfix">
+			<div class="shop_goods_bd_xiangqing_tab">
+				<ul>
+					<li id="xiangqing_tab_1" onmouseover="shop_goods_easytabs('1', '1');" onfocus="shop_goods_easytabs('1', '1');" onclick="return false;"><a href=""><span>商品详情</span></a></li>
+					<li id="xiangqing_tab_2" onmouseover="shop_goods_easytabs('1', '2');" onfocus="shop_goods_easytabs('1', '2');" onclick="return false;"><a href=""><span>商品评论</span></a></li>
+				</ul>
+			</div>
+			<div class="shop_goods_bd_xiangqing_content clearfix">
+				<div id="xiangqing_content_1" class="xiangqing_contents clearfix">
+                    <volist name="glist" id="value">
+
+                        {$value.description}
+
+                    </volist>
+				</div>
+				<div id="xiangqing_content_2" class="xiangqing_contents clearfix"> <!--style="overflow:auto;"-->
+                    <div>
+                        <volist name="discuss" id="discuss" empty="该商品暂无评价！">
+                            <div style="border: 1px solid #000000;width: 730px;margin: 10px">
+                                <table>
+                                    <tr style="width: 725px;margin: 5px 0;border-bottom: 1px solid #AED2FF;">
+                                        <th width="225px" height="25px"><span style="font-size: 15px;">用户名:{$discuss.username}</span></th>
+                                        <th width="400px" height="25px"><span style="font-size: 15px;color:#EEDO22">发表时间:{$discuss.creatime|date='Y-m-d H:i:s',###}</span></th>
+                                    </tr>
+
+                                    <tr style="width: 725px;;margin: 5px 0;margin: 10px 0;">
+                                        <td width="725px" height="25px"><span style="font-size: 15px">评论内容:</span>&nbsp;&nbsp;{$discuss.msg}</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </volist>
+                    </div>
+				</div>
+
+
+			</div>
+		</div>
+		<!-- 商品详情 End -->
+
+	</div>
+	<!-- Goods Body End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+	<include file="public\footer"/>
+	<!-- Footer End -->
+
+</body>
+<script>
+    function goodscar(){
+        //  alert($('#form').serialize());
+        $.post("{:U('Home/Shopcar/addcar')}",$('#form').serialize(),function(res){
+            if(res.status=='ok'){
+                layer.alert(res.msg,{
+                    yes:function(){
+                        location.href="{:U('Home/Shopcar/addcar')}";
+                    }
+                });
+            }else if(res.status=='nologin'){
+                layer.alert(res.msg,{
+                    yes:function(){
+                        location.href="{:U('Home/Login/login')}";
+                    }
+                });
+            }
+            else {
+                layer.alert(res.msg)
+            } });
+    };
+    function collect(id){
+        //  alert($('#form').serialize());
+        $.post("{:U('Home/Goods/collect')}",{'goodsid':id},function(res){
+
+            if(res.status=='ok'){
+                layer.alert(res.msg,{
+                    yes:function(){
+                        location.href="";
+                    }
+                });
+            }else if(res.status=='nologin'){
+                layer.alert(res.msg,{
+                    yes:function(){
+                        location.href="{:U('Home/Login/login')}";
+                    }
+                });
+            }else{
+                layer.alert(res.msg);
+            };
+        })
+    }
+</script>
+</html>

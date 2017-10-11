@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>个人头像</title>
+    <link rel="stylesheet" href="__STATIC__/css/base.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_common.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_header.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_manager.css" type="text/css" />
+    <link rel="stylesheet" href="__STATIC__/css/shop_form.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/topNav.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/geo.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.form.js"></script>
+    <style type="text/css">
+        .selectImg{
+
+            display: block;
+            float: left;
+            width:60px;
+            height:23px;
+            line-height:23px;
+            margin-left:20px;
+            margin-top: 50px;
+            padding:3px 15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            background:#00C4F6;
+            font-size:13px;
+            text-align:center;
+            color:#fff;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Header  -wll-2013/03/24 -->
+<include file="public/header"/>
+
+<!-- Header End -->
+
+<!-- 我的个人中心 -->
+<div class="shop_member_bd clearfix">
+    <!-- 左边导航 -->
+    <include file="public/left"/>
+
+    <div>
+        <form action="{:U('Home/MemberCenter/photo')}" id="form1" method="post" enctype="multipart/form-data" >
+            <div id="preview"></div>
+            <input  type="file" id="photo1" onchange="preview(this)" name="photo" style="display: none"/>
+            <label for="photo1" class="selectImg">添加图片</label>
+            <input type="submit"  id="photo2" style="display: none">
+            <label for="photo2" class="selectImg">立即上传</label>
+        </form>
+    </div>
+</div>
+
+<!-- Footer - wll - 2013/3/24 -->
+<include file="public/footer"/>
+<!-- Footer End -->
+
+<script type="text/javascript">
+    function preview(file)
+    {
+        var prevDiv = document.getElementById('preview');
+        if (file.files && file.files[0])
+        {
+            var reader = new FileReader();
+            reader.onload = function(evt){
+                prevDiv.innerHTML = '<img src="' + evt.target.result + '" width="200px" height="200px"/>';
+            }
+            reader.readAsDataURL(file.files[0]);
+        }
+        else
+        {
+            prevDiv.innerHTML = '<div class="img1" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';
+        }
+    }
+</script>
+</body>
+<!--<script src="__STATIC__/layer/layer.js"></script>
+<script>
+    $('#photo2').click(function () {
+
+        $('#form1').ajaxSubmit(function (res) {
+            //alert(111);
+            if(res.status=='ok'){
+                layer.msg(res.msg,
+                        {
+                            yes: function () {
+                                location.href = "{:U('Home/MemberCenter/grxx')}";
+                            }
+                        })
+            }else{
+                layer.msg(res.msg,{icon: 5});
+            }
+        })
+
+    })
+</script>-->
+</html>

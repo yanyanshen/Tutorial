@@ -1,0 +1,59 @@
+
+<div class="shop_bd_list_bk clearfix">
+    <div class="title">商品分类</div>
+    <div class="contents clearfix">
+        <dl class="shop_bd_list_type_links clearfix">
+            <dt><strong>品墨书城</strong></dt>
+            <dd>
+                <volist name="clist" id="val">
+                    <span><a href="{:U('Home/Index/letter',array('cid'=>$val['cid'],'catename'=>$val['catename']))}">{$val.catename}</a></span>
+                </volist>
+
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="shop_bd_list_bk clearfix">
+    <div class="title">热卖推荐商品</div>
+    <div class="contents clearfix">
+        <ul class="clearfix">
+            <volist name="tglist" id="value">
+                <li class="clearfix">
+                    <div class="goods_name"><a href="">{$value.goodsname}</a></div>
+                    <div class="goods_pic"><span class="goods_price">¥ {$value.price} </span><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}"><img src="__PIC__{$value.goodspic}" /></a></div>
+                    <div class="goods_xiaoliang">
+                        <span class="goods_xiaoliang_link"><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}">去看看</a></span>
+                        <span class="goods_xiaoliang_nums">已销售<strong>{$value.salenum}</strong>笔</span>
+                    </div>
+                </li>
+            </volist>
+
+
+
+        </ul>
+    </div>
+</div>
+<!-- 热卖推荐商品 -->
+<div class="clear"></div>
+
+<!-- 浏览过的商品 -->
+<div class="shop_bd_list_bk clearfix">
+    <div class="title">浏览过的商品</div>
+    <div class="contents clearfix">
+        <ul class="clearfix">
+            <volist name="look1" id="value">
+                <li class="clearfix">
+                    <div class="goods_name"><a href="">{$value.goodsname}</a></div>
+                    <div class="goods_pic"><span class="goods_price">¥ {$value.price} </span><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}"><img src="__PIC__{$value.goodspic}" /></a></div>
+                    <div class="goods_xiaoliang">
+                        <span class="goods_xiaoliang_link"><a href="{:U('Home/Goods/details',array('id'=>$value['id']))}">去看看</a></span>
+                        <span class="goods_xiaoliang_nums">已销售<strong>{$value.salenum}</strong>笔</span>
+                    </div>
+                </li>
+            </volist>
+
+
+        </ul>
+    </div>
+</div>
