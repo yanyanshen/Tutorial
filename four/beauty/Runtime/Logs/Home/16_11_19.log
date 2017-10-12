@@ -1,0 +1,31 @@
+[ 2016-11-19T10:51:54+08:00 ] 127.0.0.1 /index.php/Home/Index/goodsImg.html?cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT g.imageurl,g.imagename,g.id FROM beauty_goods g
+            where g.bid not in (select bid from beauty_activity where astatus=1)
+                    and g.cid=1 and g.show=1 ORDER  by addtime desc limit 0,3  [ RunTime:0.0010s ]
+
+[ 2016-11-19T11:02:27+08:00 ] 127.0.0.1 /index.php/Home/Sign/addSign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_sign` SET `sign`=sign+1 WHERE `mid` = 8 [ RunTime:0.0780s ]
+SQL: UPDATE `beauty_sign` SET `signcount`=signcount+1 WHERE `mid` = 8 [ RunTime:0.0490s ]
+SQL: UPDATE `beauty_sign` SET `signtag`='1',`signtime`='1479524547',`stopsign`='1479571200' WHERE `mid` = 8 [ RunTime:0.0410s ]
+
+[ 2016-11-19T11:02:53+08:00 ] 127.0.0.1 /index.php/Home/Sign/addSign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-19T12:57:36+08:00 ] 127.0.0.1 /index.php/Home/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+

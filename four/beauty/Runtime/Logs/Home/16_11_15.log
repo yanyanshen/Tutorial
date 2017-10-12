@@ -1,0 +1,18 @@
+[ 2016-11-15T21:08:48+08:00 ] 127.0.0.1 /index.php/Home/Index/goodsImg.html?cid=22
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0140s ]
+SQL: SELECT g.imageurl,g.imagename,g.id FROM beauty_goods g
+            where g.bid not in (select bid from beauty_activity where astatus=1)
+                    and g.cid=22 and g.show=1 ORDER  by addtime desc limit 0,3  [ RunTime:0.0020s ]
+
+[ 2016-11-15T21:08:49+08:00 ] 127.0.0.1 /index.php/Home/Index/goodsImg.html?cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0120s ]
+SQL: SELECT g.imageurl,g.imagename,g.id FROM beauty_goods g
+            where g.bid not in (select bid from beauty_activity where astatus=1)
+                    and g.cid=1 and g.show=1 ORDER  by addtime desc limit 0,3  [ RunTime:0.0020s ]
+

@@ -1,0 +1,28 @@
+[ 2016-11-22T16:19:42+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T16:19:48+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T16:19:49+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1479802789',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.1220s ]
+

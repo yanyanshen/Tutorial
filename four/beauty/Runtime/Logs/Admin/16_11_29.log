@@ -1,0 +1,929 @@
+[ 2016-11-29T11:34:40+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006500s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-11-29T11:34:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T11:34:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480390486',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0510s ]
+
+[ 2016-11-29T11:34:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480390486',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0670s ]
+
+[ 2016-11-29T11:34:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-29T11:38:56+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T11:42:44+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0165s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0070s ]
+
+[ 2016-11-29T11:43:30+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0130s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0060s ]
+
+[ 2016-11-29T11:47:01+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 107 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 108 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:49:18+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` = 1 AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` = 1 AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 107 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 108 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:49:29+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` = 2 AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` = 2 AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T11:51:17+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-29T11:51:25+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` = 1 AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` = 1 AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 107 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 108 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T11:53:02+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE `cosid` IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 107 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 108 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 110 行.
+NOTIC: [8] Undefined variable: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:53:28+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:53:52+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:54:19+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:54:22+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1/cstatus/2.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 107 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 108 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T11:55:31+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:56:04+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1/cstatus/2.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 107 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 108 行.
+NOTIC: [8] Undefined index: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:56:24+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:56:41+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T11:58:16+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T11:59:18+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=2016-10-31&cstatus=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.coaddtime < 1477843200 AND c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.coaddtime < 1477843200 AND c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T12:44:34+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0190s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined variable: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T12:45:01+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined variable: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T12:45:08+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T12:54:42+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined variable: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T12:55:56+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid IN ('1','2','3') AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+NOTIC: [8] Undefined variable: cosid D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T12:56:52+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T12:57:06+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T12:57:31+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:06:55+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:07:04+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:07:09+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-29T13:08:40+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?cosid=&time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:08:45+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:09:03+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?cosid=&time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-11-29T13:09:07+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:09:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0015s ]
+
+[ 2016-11-29T13:09:27+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?cosid=&time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:09:30+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-29T13:13:38+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0085s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '1' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:13:52+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:14:38+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:15:08+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '2' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:15:13+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search1/respid/1.html?time1=&time2=&cstatus=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '3' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT g.goodsname,c.oid,os.statusname,c.coaddtime,u.username,c.respid,c.mid,c.gid,c.cosid FROM `beauty_comment` `c`,`beauty_order_status` `os`,`beauty_goods` `g`,`beauty_user` `u` WHERE c.cosid = '3' AND c.respid = '1' AND c.cstatus = 5 AND ( c.cstatus=os.id and c.mid=u.id and c.gid=g.id ) ORDER BY `coaddtime` desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: time1 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 64 行.
+NOTIC: [8] Undefined variable: time2 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Admin\85b445ac0764bfbd50605cf1a143ecc6.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:18:45+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T13:19:11+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T13:19:13+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T13:22:17+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `response`='312341241234132432141' WHERE `respid` = 1 AND `cosid` = 1 [ RunTime:0.0430s ]
+SQL: UPDATE `beauty_comment` SET `respid`='2' WHERE `respid` = 1 AND `cosid` = 1 [ RunTime:0.0420s ]
+
+[ 2016-11-29T13:22:59+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_comment` SET `response`='bcuoo ' WHERE `respid` = 1 AND `cosid` = 2 [ RunTime:0.0460s ]
+SQL: UPDATE `beauty_comment` SET `respid`='2' WHERE `respid` = 1 AND `cosid` = 2 [ RunTime:0.0320s ]
+
+[ 2016-11-29T16:22:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0170s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0050s ]
+
+[ 2016-11-29T16:22:41+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: UPDATE `beauty_comment` SET `response`='2131241234321423',`readdtime`='1480407761' WHERE `respid` = 1 AND `cosid` = 3 [ RunTime:0.1100s ]
+SQL: UPDATE `beauty_comment` SET `respid`='2' WHERE `respid` = 1 AND `cosid` = 3 [ RunTime:0.0760s ]
+
+[ 2016-11-29T16:23:24+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: UPDATE `beauty_comment` SET `response`='1`3123123123123',`readdtime`='1480407804' WHERE `respid` = 1 AND `cosid` = 1 [ RunTime:0.0690s ]
+SQL: UPDATE `beauty_comment` SET `respid`='2' WHERE `respid` = 1 AND `cosid` = 1 [ RunTime:0.0760s ]
+

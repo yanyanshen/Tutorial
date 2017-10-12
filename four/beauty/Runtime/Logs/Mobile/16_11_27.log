@@ -1,0 +1,596 @@
+[ 2016-11-27T14:10:11+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: update beauty_sign set signtag=0  where mid=8 [ RunTime:0.0550s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:10:19+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html?checkedDay=27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: update beauty_sign set signtag=0  where mid=8 [ RunTime:0.0680s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:10:23+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html?checkedDay=27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:10:29+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:10:32+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:10:34+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:10:39+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html?checkedDay=27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T14:11:34+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0040s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 1 AND `mid` = 8 [ RunTime:0.0580s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 1 AND `mid` = 8 [ RunTime:0.0660s ]
+SQL: select sum(gcount) as goodscount from beauty_count where gid=1 [ RunTime:0.0010s ]
+
+[ 2016-11-27T14:11:35+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 1 AND `mid` = 8 [ RunTime:0.0600s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 1 AND `mid` = 8 [ RunTime:0.0410s ]
+SQL: select sum(gcount) as goodscount from beauty_count where gid=1 [ RunTime:0.0010s ]
+
+[ 2016-11-27T14:11:35+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 1 AND `mid` = 8 [ RunTime:0.0550s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 1 AND `mid` = 8 [ RunTime:0.0660s ]
+SQL: select sum(gcount) as goodscount from beauty_count where gid=1 [ RunTime:0.0010s ]
+
+[ 2016-11-27T14:11:36+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-27T14:11:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/saleprice.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_type` [ RunTime:0.0060s ]
+SQL: SELECT `saleprice` FROM `beauty_type` WHERE `ml` = '200' AND `gid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-27T14:11:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 47  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('157678af64d2805','8','158','1480227114') [ RunTime:0.0658s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 47  [ RunTime:0.0000s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('454ddd7f713b749','8','158','1480227114') [ RunTime:0.0352s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('47','1','100','38','69') [ RunTime:0.0624s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('47','1','120','38','89') [ RunTime:0.0538s ]
+
+[ 2016-11-27T14:12:09+08:00 ] 127.0.0.1 /index.php/Mobile/Address/editAddress.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_addresses` SET `area`='河南省-郑州市-中原区',`username`='王杰',`mobile`='18303873562',`address`='吕谭乡' WHERE `id` = 32 [ RunTime:0.0570s ]
+
+[ 2016-11-27T14:15:58+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T14:20:33+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T14:20:47+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/usercomment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+NOTIC: [8] Undefined index: image40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: image40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Undefined index: imageimage40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: imageimage40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+NOTIC: [8] Undefined index: image57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: image57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Undefined index: imageimage57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: imageimage57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`cstatus`,`imageurl`,`imagename`) VALUES ('100','1','5','cfqwrwqrewqedqweqwerqwrqw','1','8','1480227646','5','2016-11-27/','583a7b3edc3ff.jpg') [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 5 [ RunTime:0.0670s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`cstatus`,`imageurl`,`imagename`) VALUES ('100','40','5','qweqwreqwrweqr','1','8','1480227646','5',NULL,NULL) [ RunTime:0.0320s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 5 [ RunTime:0.0580s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`cstatus`,`imageurl`,`imagename`) VALUES ('150','57','5','','1','8','1480227646','5',NULL,NULL) [ RunTime:0.0312s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 5 [ RunTime:0.0468s ]
+
+[ 2016-11-27T14:20:49+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T14:20:53+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T14:21:36+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [8] Undefined index: image40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: image40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Undefined index: imageimage40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imageimage40 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [8] Undefined index: image57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: image57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Undefined index: imageimage57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imageimage57 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='1321313112312432143',`cstatus`='6',`picurl`='2016-11-27/',`picname`='583a7b708500e.jpg' WHERE `oid` = 5 AND `gid` = 1 AND `mid` = 8 AND `ml` = 100 [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_order` SET `status`='6' WHERE `id` = 5 [ RunTime:0.0750s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='3213213312321312',`cstatus`='6',`picurl`='2016-11-27/',`picname`='583a7b708500e.jpg' WHERE `oid` = 5 AND `gid` = 40 AND `mid` = 8 AND `ml` = 100 [ RunTime:0.0320s ]
+SQL: UPDATE `beauty_order` SET `status`='6' WHERE `id` = 5 [ RunTime:0.0410s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='',`cstatus`='6',`picurl`='2016-11-27/',`picname`='583a7b708500e.jpg' WHERE `oid` = 5 AND `gid` = 57 AND `mid` = 8 AND `ml` = 150 [ RunTime:0.0320s ]
+SQL: UPDATE `beauty_order` SET `status`='6' WHERE `id` = 5 [ RunTime:0.0410s ]
+
+[ 2016-11-27T14:21:39+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:18:37+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:18:46+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:19:08+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/usercomment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+NOTIC: [8] Undefined index: image44100 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: image44100 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Undefined index: imageimage44100 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: imageimage44100 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`cstatus`,`imageurl`,`imagename`) VALUES ('120','44','33','21321312321','2','8','1480231147','5','2016-11-27/','583a88ebc9cde.jpg') [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 33 [ RunTime:0.0570s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`cstatus`,`imageurl`,`imagename`) VALUES ('100','44','33','3213123213123','1','8','1480231147','5',NULL,NULL) [ RunTime:0.0330s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 33 [ RunTime:0.0410s ]
+
+[ 2016-11-27T15:19:10+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:19:17+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:19:56+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 94 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 95 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 96 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 97 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0000s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='13212312321312312',`cstatus`='6',`picurl`='2016-11-27/',`picname`='583a891c95931.jpg' WHERE `oid` = 33 AND `gid` = 44 AND `mid` = 8 AND `ml` = 120 [ RunTime:0.0756s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_order` SET `status`='6' WHERE `id` = 33 [ RunTime:0.0660s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='312123412312',`cstatus`='6',`picurl`='2016-11-27/',`picname`='583a891c99df1.jpg' WHERE `oid` = 33 AND `gid` = 44 AND `mid` = 8 AND `ml` = 100 [ RunTime:0.0330s ]
+SQL: UPDATE `beauty_order` SET `status`='6' WHERE `id` = 33 [ RunTime:0.0410s ]
+
+[ 2016-11-27T15:19:59+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:20:05+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deleteorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: DELETE FROM `beauty_order` WHERE `id` = 38 AND `mid` = 8 [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0060s ]
+
+[ 2016-11-27T15:20:08+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:20:09+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-27T15:29:24+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/showusercomment.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND o.mid = '8' AND o.id = ''' at line 1
+ [ SQL语句 ] : SELECT g.imageurl,g.imagename,g.goodsname,g.id,og.ml FROM beauty_goods g,beauty_order_goods og,beauty_order o WHERE ( g.id=og.gid and o.id=og.oid ) AND g.id IN () AND o.mid = '8' AND o.id = '' 
+
+[ 2016-11-27T15:29:32+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/showusercomment.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND o.mid = '8' AND o.id = ''' at line 1
+ [ SQL语句 ] : SELECT g.imageurl,g.imagename,g.goodsname,g.id,og.ml FROM beauty_goods g,beauty_order_goods og,beauty_order o WHERE ( g.id=og.gid and o.id=og.oid ) AND g.id IN () AND o.mid = '8' AND o.id = '' 
+
+[ 2016-11-27T15:30:04+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/showusercomment.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND o.mid = '8' AND o.id = ''' at line 1
+ [ SQL语句 ] : SELECT g.imageurl,g.imagename,g.goodsname,g.id,og.ml FROM beauty_goods g,beauty_order_goods og,beauty_order o WHERE ( g.id=og.gid and o.id=og.oid ) AND g.id IN () AND o.mid = '8' AND o.id = '' 
+
+[ 2016-11-27T16:53:37+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/showusercomment.html?p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM beauty_goods g,beauty_comment c WHERE ( g.id=c.gid ) AND c.mid = '8' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT g.goodsname,g.imageurl,g.imagename,c.gid,c.oid,c.content,c.response,c.respid,cs.costatus,c.coaddtime,c.ml FROM beauty_goods g,beauty_comment c,beauty_comment_status cs WHERE ( g.id=c.gid and c.cosid=cs.id ) AND c.mid = '8' ORDER BY c.coaddtime desc LIMIT 4,4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM beauty_user u,beauty_user_vipinfo v WHERE ( u.memberorder=v.id ) AND u.id = '8'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-27T16:53:38+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/need/layer.css?2.0
+ERR: 非法操作:need
+
+[ 2016-11-27T16:53:40+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/showusercomment.html?p=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM beauty_goods g,beauty_comment c WHERE ( g.id=c.gid ) AND c.mid = '8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0156s ]
+SQL: SELECT g.goodsname,g.imageurl,g.imagename,c.gid,c.oid,c.content,c.response,c.respid,cs.costatus,c.coaddtime,c.ml FROM beauty_goods g,beauty_comment c,beauty_comment_status cs WHERE ( g.id=c.gid and c.cosid=cs.id ) AND c.mid = '8' ORDER BY c.coaddtime desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM beauty_user u,beauty_user_vipinfo v WHERE ( u.memberorder=v.id ) AND u.id = '8'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-27T16:53:40+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/need/layer.css?2.0
+ERR: 非法操作:need
+
+[ 2016-11-27T16:58:55+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=&oid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0000s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 0 AND `mid` = 8 AND `oid` = 0 [ RunTime:0.0000s ]
+ERR: 模板不存在:./beauty/Mobile/View/Comment/Member_Comment.html
+
+[ 2016-11-27T16:59:12+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=44&oid=33
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0156s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 44 AND `mid` = 8 AND `oid` = 33 [ RunTime:0.0712s ]
+ERR: 模板不存在:./beauty/Mobile/View/Comment/Member_Comment.html
+
+[ 2016-11-27T16:59:39+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=44&oid=34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0000s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 44 AND `mid` = 8 AND `oid` = 34 [ RunTime:0.0468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: commentlist D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\4f421ae5d825414cfb7b019da7e31eb2.php 第 44 行.
+NOTIC: [8] Undefined variable: page D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\4f421ae5d825414cfb7b019da7e31eb2.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-27T17:02:22+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=47&oid=38
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0030s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 47 AND `mid` = 8 AND `oid` = 38 [ RunTime:0.0468s ]
+

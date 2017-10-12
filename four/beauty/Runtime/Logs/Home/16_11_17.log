@@ -1,0 +1,145 @@
+[ 2016-11-17T10:27:58+08:00 ] 127.0.0.1 /index.php/Home/Collect/collect.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-17T10:28:13+08:00 ] 127.0.0.1 /index.php/Home/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'beibei'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-17T10:28:16+08:00 ] 127.0.0.1 /index.php/Home/Order/layerLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-17T10:28:23+08:00 ] 127.0.0.1 /index.php/Home/Order/layerLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-17T10:28:32+08:00 ] 127.0.0.1 /index.php/Home/Order/images/bitbug_favicon%20.icon
+ERR: 非法操作:images
+
+[ 2016-11-17T10:28:39+08:00 ] 127.0.0.1 /index.php/Home/MyCart/mycart.html?gid=61&xinghao=100ml&salenum=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 61 AND `mid` = 8 AND `ml` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `buynum` FROM `beauty_cart` WHERE `gid` = 61 AND `mid` = 8 AND `ml` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `saleprice` FROM `beauty_goods` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `sumprice` FROM `beauty_cart` WHERE `gid` = 61 AND `mid` = 8 AND `ml` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='2',`sumprice`='138' WHERE `gid` = 61 AND `mid` = 8 AND `ml` = 100 [ RunTime:0.0620s ]
+
+[ 2016-11-17T10:28:47+08:00 ] 127.0.0.1 /index.php/Home/MyCart/mycart.html?gid=38&xinghao=60ml&salenum=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 38 AND `mid` = 8 AND `ml` = 60 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `saleprice` FROM `beauty_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `beauty_cart` (`sumprice`,`gid`,`buynum`,`addtime`,`mid`,`ml`) VALUES ('39','38','1','1479349727','8','60') [ RunTime:0.0600s ]
+
+[ 2016-11-17T10:29:32+08:00 ] 127.0.0.1 /index.php/Home/MyCart/images/bitbug_favicon%20.icon
+ERR: 非法操作:images
+
+[ 2016-11-17T10:29:57+08:00 ] 127.0.0.1 /index.php/Home/Order/topay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT `paypwd` FROM `beauty_user` WHERE `paypwd` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-17T10:30:05+08:00 ] 127.0.0.1 /index.php/Home/Order/topay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT `paypwd` FROM `beauty_user` WHERE `paypwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_order` WHERE `id` = 260 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_account` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_account` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_account_trade` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_account_trade` WHERE `mid` = 8 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-17T10:30:12+08:00 ] 127.0.0.1 /index.php/Home/Order/topay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT `paypwd` FROM `beauty_user` WHERE `paypwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_order` SET `status`='2',`price`='233' WHERE `id` = 260 [ RunTime:0.0830s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT `gid`,`buynum`,`ml` FROM `beauty_order_goods` WHERE `oid` = '260'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_goods` SET `salenum`=salenum+2 WHERE `id` = 61 [ RunTime:0.0570s ]
+SQL: UPDATE `beauty_goods` SET `num`=num-2 WHERE `id` = 61 [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 61 AND `ml` = 100 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `sumprice` FROM `beauty_cart` WHERE `gid` = 61 AND `ml` = 100 AND `mid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `beauty_cart` WHERE `gid` = 61 AND `ml` = 100 AND `mid` = 8 [ RunTime:0.0640s ]
+SQL: UPDATE `beauty_goods` SET `salenum`=salenum+1 WHERE `id` = 33 [ RunTime:0.0580s ]
+SQL: UPDATE `beauty_goods` SET `num`=num-1 WHERE `id` = 33 [ RunTime:0.0410s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 33 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `sumprice` FROM `beauty_cart` WHERE `gid` = 33 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `beauty_cart` WHERE `gid` = 33 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0310s ]
+
+[ 2016-11-17T19:06:37+08:00 ] 127.0.0.1 /index.php/Home/Sign/addSign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_sign` SET `sign`=sign+1 WHERE `mid` = 8 [ RunTime:0.0340s ]
+SQL: UPDATE `beauty_sign` SET `signcount`=signcount+1 WHERE `mid` = 8 [ RunTime:0.0410s ]
+SQL: UPDATE `beauty_sign` SET `signtag`='1',`signtime`='1479380797',`stopsign`='1479398400' WHERE `mid` = 8 [ RunTime:0.0360s ]
+
+[ 2016-11-17T19:07:02+08:00 ] 127.0.0.1 /index.php/Home/Sign/addSign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-11-17T19:24:39+08:00 ] 127.0.0.1 /index.php/Home/MyCart/mycart.html?gid=44&xinghao=120ml&salenum=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 44 AND `mid` = 8 AND `ml` = 120 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `saleprice` FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`sumprice`,`gid`,`buynum`,`addtime`,`mid`,`ml`) VALUES ('99','44','1','1479381879','8','120') [ RunTime:0.0670s ]
+
+[ 2016-11-17T19:25:08+08:00 ] 127.0.0.1 /index.php/Home/MyCart/mycart.html?gid=61&xinghao=100ml&salenum=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 61 AND `mid` = 8 AND `ml` = 100 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `saleprice` FROM `beauty_goods` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `beauty_cart` (`sumprice`,`gid`,`buynum`,`addtime`,`mid`,`ml`) VALUES ('69','61','1','1479381908','8','100') [ RunTime:0.0640s ]
+
+[ 2016-11-17T20:11:12+08:00 ] 127.0.0.1 /index.php/Home/Sign/addSign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+

@@ -1,0 +1,74 @@
+[ 2016-11-20T12:49:14+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0370s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479617354' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0720s ]
+
+[ 2016-11-20T13:04:04+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/tocartdelete.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0070s ]
+SQL: DELETE FROM `beauty_cart` WHERE `id` = 144 [ RunTime:0.0820s ]
+
+[ 2016-11-20T13:10:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0630s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0620s ]
+SQL: select sum(gcount) as goodscount from beauty_count where gid=59 [ RunTime:0.0010s ]
+
+[ 2016-11-20T13:10:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0630s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0280s ]
+SQL: select sum(gcount) as goodscount from beauty_count where gid=59 [ RunTime:0.0020s ]
+
+[ 2016-11-20T13:10:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0640s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0290s ]
+SQL: select sum(gcount) as goodscount from beauty_count where gid=59 [ RunTime:0.0010s ]
+
+[ 2016-11-20T13:10:44+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-20T13:23:37+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479619417' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0560s ]
+
+[ 2016-11-20T14:16:38+08:00 ] 127.0.0.1 /index.php/Mobile/ManageAddress/deleteAddress.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0070s ]
+SQL: DELETE FROM `beauty_addresses` WHERE `id` = 24 [ RunTime:0.0690s ]
+
+[ 2016-11-20T14:17:13+08:00 ] 127.0.0.1 /index.php/Mobile/ManageAddress/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0070s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-洛阳市-西工区','18739794296','周贝贝','聂老行政村','1479622633','0','8') [ RunTime:0.0570s ]
+

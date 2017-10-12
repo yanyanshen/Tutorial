@@ -1,0 +1,50 @@
+[ 2016-11-24T16:38:35+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+ERR: 模板不存在:./beauty/Mobile/View/Login/Login.html
+
+[ 2016-11-24T16:38:54+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+ERR: 模板不存在:./beauty/Mobile/View/Login/Login.html
+
+[ 2016-11-24T16:42:10+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479976929' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.1820s ]
+
+[ 2016-11-24T19:16:17+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-24T19:16:17+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-24T19:16:24+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-24T19:16:24+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-24T19:33:22+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-24T19:33:22+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.056003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.057003s ]
+ERR: 非法操作:ajax_member_order.php
+

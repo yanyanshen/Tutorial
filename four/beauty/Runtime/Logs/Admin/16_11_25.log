@@ -1,0 +1,94 @@
+[ 2016-11-25T13:05:10+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-25T13:05:17+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-25T13:05:17+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480050317',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0830s ]
+
+[ 2016-11-25T13:05:17+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480050317',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0660s ]
+
+[ 2016-11-25T13:05:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-25T13:06:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0020s ]
+
+[ 2016-11-25T13:06:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0020s ]
+
+[ 2016-11-25T13:06:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `bid` = 0 AND `cid` = 1 AND `goodsname` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-25T13:06:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `bid` = 0 AND `cid` = 1 AND `goodsname` = '' LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1364:Field 'goodsname' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `beauty_goods` (`cid`,`saleprice`,`addtime`,`imageurl`,`imagename`) VALUES ('1','0','1480050410','2016-11-25/','5837c6ea376f2.jpg')
+ERR: 1364:Field 'goodsname' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `beauty_goods` (`cid`,`saleprice`,`addtime`,`imageurl`,`imagename`) VALUES ('1','0','1480050410','2016-11-25/','5837c6ea376f2.jpg')
+
+[ 2016-11-25T13:13:19+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-11-25T14:05:27+08:00 ] 127.0.0.1 /index.php/Admin/Comment/search.html?time1=&time2=&status=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,1513 @@
+[ 2016-12-01T08:41:12+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-01T08:41:19+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T08:41:20+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T08:41:27+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-01T08:41:31+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T08:41:31+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480552891',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0490s ]
+
+[ 2016-12-01T08:41:31+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480552891',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0650s ]
+
+[ 2016-12-01T08:41:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T08:41:46+08:00 ] 127.0.0.1 /index.php/Admin/Foote/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0070s ]
+ERR: Think\Model:getCateByPidÊñπÊ≥ï‰∏çÂ≠òÂú®ÔºÅ
+
+[ 2016-12-01T12:48:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:48:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `show` FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0500s ]
+
+[ 2016-12-01T12:48:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `show` FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0620s ]
+
+[ 2016-12-01T12:49:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `show` FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0610s ]
+
+[ 2016-12-01T12:49:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-01T12:49:56+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T12:50:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-01T12:50:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T12:50:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T12:51:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0710s ]
+
+[ 2016-12-01T12:51:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:52:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:52:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:53:13+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0040s ]
+
+[ 2016-12-01T12:53:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T12:53:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T12:53:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0550s ]
+
+[ 2016-12-01T12:53:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0420s ]
+
+[ 2016-12-01T12:53:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0510s ]
+
+[ 2016-12-01T12:54:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0560s ]
+
+[ 2016-12-01T12:55:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0640s ]
+
+[ 2016-12-01T12:55:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0660s ]
+
+[ 2016-12-01T12:55:05+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0690s ]
+
+[ 2016-12-01T12:55:07+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0580s ]
+
+[ 2016-12-01T12:55:19+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:01:43+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-12-01T13:02:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0040s ]
+
+[ 2016-12-01T13:15:51+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2016-12-01T13:16:09+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0130s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0060s ]
+
+[ 2016-12-01T13:18:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-12-01T13:18:31+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-12-01T13:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:24:41+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0060s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:24:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0640s ]
+
+[ 2016-12-01T13:25:52+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0510s ]
+
+[ 2016-12-01T13:25:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 54 [ RunTime:0.0640s ]
+
+[ 2016-12-01T13:25:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 54 [ RunTime:0.0730s ]
+
+[ 2016-12-01T13:27:03+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-12-01T13:27:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0460s ]
+
+[ 2016-12-01T13:27:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0680s ]
+
+[ 2016-12-01T13:28:19+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T13:28:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:28:43+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0640s ]
+
+[ 2016-12-01T13:29:15+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0460s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0380s ]
+
+[ 2016-12-01T13:29:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0530s ]
+
+[ 2016-12-01T13:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 44 [ RunTime:0.0520s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 44 [ RunTime:0.0420s ]
+
+[ 2016-12-01T13:29:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0480s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0420s ]
+
+[ 2016-12-01T13:29:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0460s ]
+
+[ 2016-12-01T13:30:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:30:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T13:31:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-01T13:32:07+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0500s ]
+
+[ 2016-12-01T13:32:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0520s ]
+
+[ 2016-12-01T13:32:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0630s ]
+
+[ 2016-12-01T13:33:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0740s ]
+
+[ 2016-12-01T13:35:20+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 48 [ RunTime:0.0760s ]
+
+[ 2016-12-01T13:35:46+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0580s ]
+
+[ 2016-12-01T13:37:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0790s ]
+
+[ 2016-12-01T13:37:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:37:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:38:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0660s ]
+
+[ 2016-12-01T13:38:15+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0540s ]
+
+[ 2016-12-01T13:41:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0690s ]
+
+[ 2016-12-01T13:42:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0630s ]
+
+[ 2016-12-01T13:42:34+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0610s ]
+
+[ 2016-12-01T13:42:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 44 [ RunTime:0.0650s ]
+
+[ 2016-12-01T13:42:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 55 [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:43:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:43:12+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.2020s ]
+
+[ 2016-12-01T13:43:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0580s ]
+
+[ 2016-12-01T13:43:57+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0080s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,%'  [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_foote` SET `show`='0' WHERE `id` IN ('1','2','3','4','5') [ RunTime:0.0710s ]
+
+[ 2016-12-01T13:44:08+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0810s ]
+
+[ 2016-12-01T13:44:21+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0080s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,2,%'  [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_foote` SET `show`='1' WHERE `id` IN ('2') [ RunTime:0.0480s ]
+
+[ 2016-12-01T13:44:24+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0090s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,2,%'  [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_foote` SET `show`='0' WHERE `id` IN ('2') [ RunTime:0.0650s ]
+
+[ 2016-12-01T13:44:27+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0080s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,%'  [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_foote` SET `show`='1' WHERE `id` IN ('1','2','3','4','5') [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:44:37+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0120s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,%'  [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_foote` SET `show`='0' WHERE `id` IN ('1','2','3','4','5') [ RunTime:0.0950s ]
+
+[ 2016-12-01T13:45:09+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0090s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,%'  [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_foote` SET `show`='1' WHERE `id` IN ('1','2','3','4','5') [ RunTime:0.0400s ]
+
+[ 2016-12-01T13:46:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0700s ]
+
+[ 2016-12-01T13:46:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.1850s ]
+
+[ 2016-12-01T13:46:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 44 [ RunTime:0.0600s ]
+
+[ 2016-12-01T13:46:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0760s ]
+
+[ 2016-12-01T13:46:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0620s ]
+
+[ 2016-12-01T13:46:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 48 [ RunTime:0.0540s ]
+
+[ 2016-12-01T13:46:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 48 [ RunTime:0.0730s ]
+
+[ 2016-12-01T13:46:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 48 [ RunTime:0.0620s ]
+
+[ 2016-12-01T13:46:47+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 48 [ RunTime:0.0660s ]
+
+[ 2016-12-01T13:47:50+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 48 [ RunTime:0.0690s ]
+
+[ 2016-12-01T13:47:52+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 44 [ RunTime:0.0630s ]
+
+[ 2016-12-01T13:47:56+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 55 [ RunTime:0.0700s ]
+
+[ 2016-12-01T13:48:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 54 [ RunTime:0.0540s ]
+
+[ 2016-12-01T13:48:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 54 [ RunTime:0.0690s ]
+
+[ 2016-12-01T13:48:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 54 [ RunTime:0.0820s ]
+
+[ 2016-12-01T13:48:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 54 [ RunTime:0.0740s ]
+
+[ 2016-12-01T13:50:46+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0720s ]
+
+[ 2016-12-01T13:50:47+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0700s ]
+
+[ 2016-12-01T13:51:08+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0710s ]
+
+[ 2016-12-01T13:51:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0640s ]
+
+[ 2016-12-01T13:51:15+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0440s ]
+
+[ 2016-12-01T13:52:03+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:52:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0660s ]
+
+[ 2016-12-01T13:52:08+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0780s ]
+
+[ 2016-12-01T13:53:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0470s ]
+
+[ 2016-12-01T13:54:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0130s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T13:54:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0530s ]
+
+[ 2016-12-01T13:54:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:55:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0740s ]
+
+[ 2016-12-01T13:55:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0560s ]
+
+[ 2016-12-01T13:56:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0570s ]
+
+[ 2016-12-01T13:57:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0670s ]
+
+[ 2016-12-01T13:57:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 24 [ RunTime:0.0720s ]
+
+[ 2016-12-01T13:57:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 48 [ RunTime:0.0700s ]
+
+[ 2016-12-01T13:57:46+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 44 [ RunTime:0.0730s ]
+
+[ 2016-12-01T13:57:48+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 44 [ RunTime:0.0550s ]
+
+[ 2016-12-01T13:57:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 48 [ RunTime:0.0680s ]
+
+[ 2016-12-01T13:57:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 24 [ RunTime:0.0620s ]
+
+[ 2016-12-01T13:57:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 65 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 65 [ RunTime:0.0670s ]
+
+[ 2016-12-01T13:58:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 66 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 66 [ RunTime:0.0560s ]
+
+[ 2016-12-01T13:58:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 67 [ RunTime:0.0580s ]
+
+[ 2016-12-01T13:58:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 65 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 65 [ RunTime:0.0530s ]
+
+[ 2016-12-01T13:58:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 66 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 66 [ RunTime:0.0720s ]
+
+[ 2016-12-01T13:58:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 67 [ RunTime:0.0500s ]
+
+[ 2016-12-01T14:01:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 77 [ RunTime:0.0650s ]
+
+[ 2016-12-01T14:01:20+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='1' WHERE `id` = 77 [ RunTime:0.0650s ]
+
+[ 2016-12-01T14:01:32+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0090s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,%'  [ RunTime:0.0040s ]
+SQL: UPDATE `beauty_foote` SET `show`='0' WHERE `id` IN ('1','2','3','4','5') [ RunTime:0.0650s ]
+
+[ 2016-12-01T14:01:40+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0070s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,2,%'  [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_foote` SET `show`='1' WHERE `id` IN ('2') [ RunTime:0.0750s ]
+
+[ 2016-12-01T14:01:51+08:00 ] 127.0.0.1 /index.php/Admin/Foote/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_foote` [ RunTime:0.0080s ]
+SQL: SELECT `show` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `path` FROM `beauty_foote` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_foote` WHERE `path` LIKE '1,%'  [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_foote` SET `show`='1' WHERE `id` IN ('1','2','3','4','5') [ RunTime:0.0630s ]
+
+[ 2016-12-01T14:03:20+08:00 ] 127.0.0.1 /index.php/Admin/Admin/loginout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_admin` SET `online`='0' WHERE `id` = 6 [ RunTime:0.0800s ]
+
+[ 2016-12-01T14:03:26+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T14:03:30+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-01T14:03:30+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480572210',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0730s ]
+
+[ 2016-12-01T14:03:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-12-01T14:08:24+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0040s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-12-01T14:13:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 25 [ RunTime:0.0840s ]
+
+[ 2016-12-01T14:25:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `show`='0' WHERE `id` = 34 [ RunTime:0.0330s ]
+
+[ 2016-12-01T14:26:10+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:15+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:20+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/updateshow.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:26:51+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T14:28:47+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-01T15:59:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T15:59:40+08:00 ] 127.0.0.1 /index.php/Admin/Order/sendGoods.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `beauty_order` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_order` SET `status`='3' WHERE `id` = 1 [ RunTime:0.0660s ]
+
+[ 2016-12-01T16:15:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0060s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T16:20:43+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: UPDATE `beauty_comment` SET `response`='Ë∞¢Ë∞¢ÊîØÊåÅÂì¶',`readdtime`='1480580443' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T16:20:49+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_comment` SET `response`='Ë∞¢Ë∞¢ÊîØÊåÅÂì¶',`readdtime`='1480580449' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T16:22:07+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: UPDATE `beauty_comment` SET `response`='Ë∞¢Ë∞¢',`readdtime`='1480580527' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T16:25:05+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `response`='12312423423',`readdtime`='1480580705' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T17:08:49+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-01T17:08:54+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-01T17:08:55+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480583335',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0720s ]
+
+[ 2016-12-01T17:08:55+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1480583335',`lastip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.3210s ]
+
+[ 2016-12-01T17:08:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T17:09:05+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: UPDATE `beauty_comment` SET `response`='2132143214531412',`readdtime`='1480583345' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T17:09:30+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `response`='2132143214531412',`readdtime`='1480583370' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T17:11:53+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: UPDATE `beauty_comment` SET `response`='2132143214531412',`readdtime`='1480583513' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0000s ]
+
+[ 2016-12-01T17:12:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-12-01T17:12:10+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_comment` SET `response`='213124321412',`readdtime`='1480583530' WHERE `respid` = 1 AND `cosid` = 0 [ RunTime:0.0010s ]
+
+[ 2016-12-01T17:14:37+08:00 ] 127.0.0.1 /index.php/Admin/Comment/pilresponse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `response`='213124321412',`readdtime`='1480583677' WHERE `respid` = 1 AND `cosid` IN ('1','2','3') [ RunTime:0.0730s ]
+SQL: UPDATE `beauty_comment` SET `respid`='2' WHERE `respid` = 1 AND `cosid` IN ('1','2','3') [ RunTime:0.0330s ]
+

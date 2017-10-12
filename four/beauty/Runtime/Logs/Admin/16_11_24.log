@@ -1,0 +1,857 @@
+[ 2016-11-24T08:48:37+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-24T08:48:43+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T08:48:43+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1479948523',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0700s ]
+
+[ 2016-11-24T08:48:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-11-24T08:58:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/export.html?goodsname=%E9%9D%A2%E8%86%9C&bname=&cname=&time1=&time2=&price1=&price2=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM beauty_goods g,beauty_brands b,beauty_category c WHERE ( g.bid=b.id and g.cid=c.id ) AND g.goodsname LIKE '%面膜%'  [ RunTime:0.0030s ]
+
+[ 2016-11-24T12:53:44+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-24T12:56:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2016-11-24T12:59:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0020s ]
+
+[ 2016-11-24T12:59:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0020s ]
+
+[ 2016-11-24T13:02:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0020s ]
+
+[ 2016-11-24T13:02:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0020s ]
+
+[ 2016-11-24T18:52:56+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T18:53:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-24T18:53:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1479984783',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.1690s ]
+
+[ 2016-11-24T18:53:04+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1479984784',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0970s ]
+
+[ 2016-11-24T18:53:05+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-11-24T18:53:11+08:00 ] 127.0.0.1 /index.php/Admin/Category/export.html?time1=&time2=&keywords=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: where1 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 207 行.
+SQL: SELECT * FROM `beauty_category`  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','2','3','2','3')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','2','3','2','4')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','2','3','2','5')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','2','3','2','6')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','7')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','7','8')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','7','9')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','7','10')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','11')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','12')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','12','13')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','12','14')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','12','15')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','12','16')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','17')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','17','18')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','17','19')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','17','20')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','17','21')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','23')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','24')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','25')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','23','26')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','23','27')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','23','28')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','24','29')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','24','30')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','25','31')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('22','25','32')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','34')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','35')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','36')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','37')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','34','38')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','34','39')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','34','40')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','34','41')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','35','42')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','35','43')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','35','44')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','35','45')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','36','46')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','36','47')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','36','48')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','36','49')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','37','50')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','37','51')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','37','52')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','54')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','55')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','56')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','57')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('54','58')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('54','59')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','55','60')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','55','61')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','55','62')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','55','63')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','56','64')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','56','65')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','56','66')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','57','67')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','57','68')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('53','57','69')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','71')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','71','72')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','71','73')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','71','74')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','71','75')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','76')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','76','77')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','76','78')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','76','79')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','80')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','80','81')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('70','80','82')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83')  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','84')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','85')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','86')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','86','88')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','85','89')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','85','90')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','86','91')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','84','92')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','93')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','94')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','95')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','94','96')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','93','97')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','95','98')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('87','95','99')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','100')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','100','101')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('83','100','102')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('33','103')  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_category` WHERE `id` IN ('1','11','104')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 1 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 2 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 3 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 4 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 5 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 6 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 7 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 8 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 9 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 10 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 11 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 12 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 13 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 14 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 15 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 16 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 17 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 18 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 19 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 20 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 21 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 22 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 23 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 24 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 25 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 26 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 27 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 28 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 29 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 30 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 31 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 32 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 33 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 34 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 35 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 36 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 37 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 38 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 39 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 40 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 41 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 42 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 43 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 44 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 45 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 46 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 47 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 48 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 49 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 50 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 51 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 52 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 53 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 54 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 55 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 56 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 57 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 58 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 59 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 60 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 61 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 62 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 63 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 64 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 65 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 66 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 67 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 68 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 69 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 70 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 71 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 72 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 73 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 74 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 75 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 76 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 77 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 78 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 79 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 80 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 81 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 82 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 83 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 84 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 85 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 86 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 87 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 88 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 89 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 90 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 91 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 92 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 93 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 94 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 95 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 96 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 97 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 98 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 99 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 100 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 101 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 102 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined offset: 103 D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+NOTIC: [8] Undefined index: path D:\ZBB\PHP\beauty\beauty\Admin\Controller\CategoryController.class.php 第 216 行.
+
+[ 2016-11-24T18:53:12+08:00 ] 127.0.0.1 /index.php/Admin/Category/export.html?time1=&time2=&keywords=
+ERR: 模板不存在:./beauty/Admin/View/Category/export.html
+
+[ 2016-11-24T18:53:12+08:00 ] 127.0.0.1 /index.php/Admin/Category/export.html?time1=&time2=&keywords=
+ERR: 模板不存在:./beauty/Admin/View/Category/export.html
+
+[ 2016-11-24T18:54:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/export.html?goodsname=%E9%9D%A2%E8%86%9C&bname=&cname=&time1=&time2=&price1=&price2=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM beauty_goods g,beauty_brands b,beauty_category c WHERE ( g.bid=b.id and g.cid=c.id ) AND g.goodsname LIKE '%面膜%'  [ RunTime:0.0030s ]
+
+[ 2016-11-24T18:55:31+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-24T18:59:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/export.html?goodsname=%E9%9D%A2%E8%86%9C&bname=&cname=&time1=&time2=&price1=&price2=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM beauty_goods g,beauty_brands b,beauty_category c WHERE ( g.bid=b.id and g.cid=c.id ) AND g.goodsname LIKE '%面膜%'  [ RunTime:0.0040s ]
+
+[ 2016-11-24T18:59:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/export.html?goodsname=%E9%9D%A2%E8%86%9C&bname=&cname=&time1=&time2=&price1=&price2=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM beauty_goods g,beauty_brands b,beauty_category c WHERE ( g.bid=b.id and g.cid=c.id ) AND g.goodsname LIKE '%面膜%'  [ RunTime:0.0030s ]
+
+[ 2016-11-24T18:59:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/export.html?goodsname=%E9%9D%A2%E8%86%9C&bname=%E5%BE%A1%E6%B3%A5%E5%9D%8A&cname=&time1=&time2=&price1=&price2=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM beauty_goods g,beauty_brands b,beauty_category c WHERE ( g.bid=b.id and g.cid=c.id ) AND g.goodsname LIKE '%面膜%' AND b.bname = '御泥坊'  [ RunTime:0.0030s ]
+
+[ 2016-11-24T19:02:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/export.html?goodsname=%E9%9D%A2%E8%86%9C&bname=&cname=&time1=&time2=&price1=&price2=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM beauty_goods g,beauty_brands b,beauty_category c WHERE ( g.bid=b.id and g.cid=c.id ) AND g.goodsname LIKE '%面膜%'  [ RunTime:0.0040s ]
+
+[ 2016-11-24T20:24:19+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:24:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0030s ]
+
+[ 2016-11-24T20:24:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:24:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 1  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:24:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 17  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:25:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `bid` = 2 AND `cid` = 20 AND `goodsname` = '面膜' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `beauty_goods` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('面膜','10','199','0','109','10000','不错哦','20','2','1479990325','2016-11-24/','5836dc3455283.jpg') [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `beauty_type` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_type` (`ml`,`saleprice`,`gid`) VALUES ('100','109','77') [ RunTime:0.0570s ]
+SQL: INSERT INTO `beauty_type` (`ml`,`saleprice`,`gid`) VALUES ('200','159','77') [ RunTime:0.0420s ]
+
+[ 2016-11-24T20:26:03+08:00 ] 127.0.0.1 /index.php/Admin/Golds/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+
+[ 2016-11-24T20:26:04+08:00 ] 127.0.0.1 /index.php/Admin/Golds/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0030s ]
+
+[ 2016-11-24T20:26:06+08:00 ] 127.0.0.1 /index.php/Admin/Golds/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 22  [ RunTime:0.0010s ]
+
+[ 2016-11-24T20:26:23+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('21','21','312','123','203','312','不多','22','1','1479990383','2016-11-24/','5836dc6eddf60.jpg') [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `beauty_gtype` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_gtype` (`ml`,`gid`) VALUES ('21·','63') [ RunTime:0.0490s ]
+
+[ 2016-11-24T20:52:52+08:00 ] 127.0.0.1 /index.php/Admin/Index/getGoodsTop.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`salenum` FROM `beauty_goods` ORDER BY salenum desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:52:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:52:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:53:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 22  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:53:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `bid` = 2 AND `cid` = 22 AND `goodsname` = '面膜' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `beauty_goods` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('面膜','0','199','0','109','10000','不错','22','2','1479992012','2016-11-24/','5836e2cba0b87.jpg') [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `beauty_type` [ RunTime:0.0080s ]
+SQL: INSERT INTO `beauty_type` (`ml`,`saleprice`,`gid`) VALUES ('10','109','78') [ RunTime:0.0660s ]
+SQL: INSERT INTO `beauty_type` (`ml`,`saleprice`,`gid`) VALUES ('20','159','78') [ RunTime:0.0340s ]
+
+[ 2016-11-24T20:53:40+08:00 ] 127.0.0.1 /index.php/Admin/Golds/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 0  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:53:40+08:00 ] 127.0.0.1 /index.php/Admin/Golds/brandlist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_brands` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_brands`  [ RunTime:0.0020s ]
+
+[ 2016-11-24T20:53:42+08:00 ] 127.0.0.1 /index.php/Admin/Golds/getCateByPid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_category` WHERE `pid` = 22  [ RunTime:0.0010s ]
+
+[ 2016-11-24T20:53:58+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992038','2016-11-24/','5836e2e5c4f97.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992038','2016-11-24/','5836e2e5c4f97.jpg')
+
+[ 2016-11-24T20:54:00+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992040','2016-11-24/','5836e2e836ac9.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992040','2016-11-24/','5836e2e836ac9.jpg')
+
+[ 2016-11-24T20:54:03+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992043','2016-11-24/','5836e2ea718b1.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992043','2016-11-24/','5836e2ea718b1.jpg')
+
+[ 2016-11-24T20:54:03+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992043','2016-11-24/','5836e2eb119ac.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992043','2016-11-24/','5836e2eb119ac.jpg')
+
+[ 2016-11-24T20:54:04+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992044','2016-11-24/','5836e2eba87df.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992044','2016-11-24/','5836e2eba87df.jpg')
+
+[ 2016-11-24T20:54:04+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992044','2016-11-24/','5836e2ec54845.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992044','2016-11-24/','5836e2ec54845.jpg')
+
+[ 2016-11-24T20:54:05+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992045','2016-11-24/','5836e2ecec230.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992045','2016-11-24/','5836e2ecec230.jpg')
+
+[ 2016-11-24T20:54:06+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992046','2016-11-24/','5836e2ed98e4e.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992046','2016-11-24/','5836e2ed98e4e.jpg')
+
+[ 2016-11-24T20:54:06+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992046','2016-11-24/','5836e2ee3d982.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992046','2016-11-24/','5836e2ee3d982.jpg')
+
+[ 2016-11-24T20:54:07+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992047','2016-11-24/','5836e2eee4d71.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992047','2016-11-24/','5836e2eee4d71.jpg')
+
+[ 2016-11-24T20:54:08+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992048','2016-11-24/','5836e2ef909ef.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992048','2016-11-24/','5836e2ef909ef.jpg')
+
+[ 2016-11-24T20:54:08+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992048','2016-11-24/','5836e2f042bfd.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992048','2016-11-24/','5836e2f042bfd.jpg')
+
+[ 2016-11-24T20:54:09+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992049','2016-11-24/','5836e2f0ed2b5.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992049','2016-11-24/','5836e2f0ed2b5.jpg')
+
+[ 2016-11-24T20:54:10+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992050','2016-11-24/','5836e2f1b2961.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992050','2016-11-24/','5836e2f1b2961.jpg')
+
+[ 2016-11-24T20:54:11+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992051','2016-11-24/','5836e2f2e65c6.jpg')
+ERR: 1264:Out of range value for column 'discount' at row 1
+ [ SQL语句 ] : INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','30213','3123','3213','不错哦','22','2','1479992051','2016-11-24/','5836e2f2e65c6.jpg')
+
+[ 2016-11-24T20:54:41+08:00 ] 127.0.0.1 /index.php/Admin/Golds/addAct.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_golds` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `beauty_golds` (`goodsname`,`score`,`marketprice`,`discount`,`saleprice`,`num`,`description`,`cid`,`bid`,`addtime`,`imageurl`,`imagename`) VALUES ('2321','2311','3213','0','3123','3213','不错哦','22','2','1479992081','2016-11-24/','5836e310dcc50.jpg') [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `beauty_gtype` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_gtype` (`ml`,`gid`) VALUES ('23112','64') [ RunTime:0.0490s ]
+

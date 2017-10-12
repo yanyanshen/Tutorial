@@ -1,0 +1,119 @@
+[ 2016-11-18T20:17:33+08:00 ] 127.0.0.1 /index.php/aDMIN
+ERR: 无法加载控制器:Index
+
+[ 2016-11-18T20:17:51+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkAdmin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.074004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.109006s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T20:17:58+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-18T20:18:04+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T20:18:04+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T20:18:06+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_admin` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `beauty_admin` WHERE `username` = 'beibei' AND `password` = '46d294deab9987e94ced5c0f7b478f5d' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_admin` SET `online`='1',`lastlogin`='1479471486',`lastip`='127.0.0.1' WHERE `id` = 6 [ RunTime:0.0520s ]
+
+[ 2016-11-18T20:19:51+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_advertise` (`title`,`position`,`detail`,`addtime`) VALUES ('轮播','1','这是轮播广告','1479471590') [ RunTime:0.0550s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(/Uploads/Advertises/1/2016-11-18/582ef1e6bac01.png): failed to open stream: No such file or directory D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 99 行.
+SQL: UPDATE `beauty_advertise` SET `picurl`='2016-11-18/',`picname`='582ef1e6bac01.png' WHERE `id` = 18 [ RunTime:0.0420s ]
+
+[ 2016-11-18T20:20:17+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_advertise` (`title`,`position`,`detail`,`addtime`) VALUES ('轮播','1','轮播广告','1479471617') [ RunTime:0.0650s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(/Uploads/Advertises/1/2016-11-18/582ef201220ad.png): failed to open stream: No such file or directory D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 99 行.
+SQL: UPDATE `beauty_advertise` SET `picurl`='2016-11-18/',`picname`='582ef201220ad.png' WHERE `id` = 19 [ RunTime:0.0340s ]
+
+[ 2016-11-18T20:21:04+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0090s ]
+
+[ 2016-11-18T20:21:24+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_advertise` (`title`,`position`,`detail`,`addtime`) VALUES ('轮播','1','这是轮播广告','1479471684') [ RunTime:0.0670s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(/Uploads/Advertises/1/2016-11-18/582ef2444f2b8.png): failed to open stream: No such file or directory D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 99 行.
+SQL: UPDATE `beauty_advertise` SET `picurl`='2016-11-18/',`picname`='582ef2444f2b8.png' WHERE `id` = 20 [ RunTime:0.0410s ]
+
+[ 2016-11-18T20:22:01+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_advertise` (`title`,`position`,`detail`,`addtime`) VALUES ('轮播','1','这是轮播广告','1479471721') [ RunTime:0.0710s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] imagejpeg(/Uploads/Advertises/1/2016-11-18/582ef26923fba.jpg): failed to open stream: No such file or directory D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 94 行.
+SQL: UPDATE `beauty_advertise` SET `picurl`='2016-11-18/',`picname`='582ef26923fba.jpg' WHERE `id` = 21 [ RunTime:0.0650s ]
+
+[ 2016-11-18T20:26:34+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_advertise` (`title`,`position`,`detail`,`addtime`) VALUES ('轮播','1','这是轮播广告','1479471994') [ RunTime:0.0590s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(/Uploads/Advertises/1/2016-11-18/582ef37a89751.png): failed to open stream: No such file or directory D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 99 行.
+SQL: UPDATE `beauty_advertise` SET `picurl`='2016-11-18/',`picname`='582ef37a89751.png' WHERE `id` = 22 [ RunTime:0.0780s ]
+
+[ 2016-11-18T20:28:58+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0050s ]
+
+[ 2016-11-18T20:29:18+08:00 ] 127.0.0.1 /index.php/Admin/Advertise/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_advertise` [ RunTime:0.0070s ]
+SQL: INSERT INTO `beauty_advertise` (`title`,`position`,`detail`,`addtime`) VALUES ('轮播','1','这是轮播广告','1479472157') [ RunTime:0.0950s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] imagejpeg(/Uploads/Advertises/1/2016-11-18/582ef41dee5f4.jpg): failed to open stream: No such file or directory D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 94 行.
+SQL: UPDATE `beauty_advertise` SET `picurl`='2016-11-18/',`picname`='582ef41dee5f4.jpg' WHERE `id` = 23 [ RunTime:0.0800s ]
+

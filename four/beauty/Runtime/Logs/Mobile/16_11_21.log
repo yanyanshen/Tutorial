@@ -1,0 +1,64 @@
+[ 2016-11-21T15:47:14+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = '18736199128' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479714434' WHERE `username` = '18736199128' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' [ RunTime:0.0600s ]
+
+[ 2016-11-21T15:56:03+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0040s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 62  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0040s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('ff0ebd96e86126e','38','640','1479714963') [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('62','5','15','352','640') [ RunTime:0.0630s ]
+
+[ 2016-11-21T15:56:23+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-21T15:56:35+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479714995' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0600s ]
+
+[ 2016-11-21T16:05:05+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('1a686fc7c35a194','8','120','1479715505') [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('59','3','50','353','119.7') [ RunTime:0.0720s ]
+
+[ 2016-11-21T16:08:52+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479715732' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0650s ]
+
+[ 2016-11-21T16:17:36+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479716256' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0780s ]
+
+[ 2016-11-21T16:20:18+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+

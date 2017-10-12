@@ -1,0 +1,1118 @@
+[ 2016-11-28T14:30:58+08:00 ] 127.0.0.1 /index.php/Mobile/Sign/sign.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_sign` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: update beauty_sign set signtag=0  where mid=8 [ RunTime:0.0950s ]
+SQL: SELECT * FROM `beauty_sign` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `beauty_user` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-28T14:31:49+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/saleprice.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_type` [ RunTime:0.0130s ]
+SQL: SELECT `saleprice` FROM `beauty_type` WHERE `ml` = '200' AND `gid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-11-28T14:31:54+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/saleprice.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_type` [ RunTime:0.0130s ]
+SQL: SELECT `saleprice` FROM `beauty_type` WHERE `ml` = '200' AND `gid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-11-28T14:32:44+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0120s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='0' WHERE `mid` = '8' [ RunTime:0.1040s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-管城回族区','18739794296','沈艳艳','聂老行政村','1480314764','1','8') [ RunTime:0.0400s ]
+
+[ 2016-11-28T14:33:00+08:00 ] 127.0.0.1 /index.php/Mobile/Order/money.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_packet` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `beauty_packet` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0050s ]
+
+[ 2016-11-28T14:33:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/topay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0120s ]
+SQL: SELECT `paypwd` FROM `beauty_user` WHERE `paypwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_order` WHERE `id` = 46 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_account` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_account` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_account_trade` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_account_trade` WHERE `mid` = 8 ORDER BY id desc LIMIT 1   [ RunTime:0.0060s ]
+SQL: UPDATE `beauty_order` SET `status`='2' WHERE `id` = 46 [ RunTime:0.0030s ]
+SQL: INSERT INTO `beauty_account_trade` (`trademoney`,`tradetime`,`tradesum`,`mid`) VALUES ('204','1480314799','2217','8') [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_account` SET `balance`='8052',`time`='1480314799' WHERE `mid` = 8 [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT `gid`,`buynum`,`ml` FROM `beauty_order_goods` WHERE `oid` = '46'  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `num` FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_goods` SET `salenum`='1',`num`='9998' WHERE `id` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 1 AND `ml` = 200 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `sumprice` FROM `beauty_cart` WHERE `gid` = 1 AND `ml` = 200 AND `mid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `beauty_cart` WHERE `gid` = 1 AND `ml` = 200 AND `mid` = 8 [ RunTime:0.0000s ]
+
+[ 2016-11-28T14:33:22+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:33:26+08:00 ] 127.0.0.1 /index.php/Mobile/Member/myOrder/oid/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+SQL: SELECT o.id,o.price,s.statusname,o.orderno,o.status,o.create_time FROM beauty_order o,beauty_order_status s WHERE `orderno` LIKE '%%' AND `mid` = 8 AND ( o.status=s.id ) ORDER BY id desc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 46 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 46 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 45 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 45 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 43 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 43 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 42 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 42 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 41 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 41 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 40 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 40 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0060s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 39 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 39 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 37 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 37 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 36 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 36 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 35 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 35 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 34 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 34 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 33 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 33 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 32 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 32 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 31 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 31 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 30 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 5 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 4 AND ( og.gid=g.id )  [ RunTime:0.0070s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 4 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 1 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-11-28T14:33:28+08:00 ] 127.0.0.1 /index.php/Mobile/Member/myOrder/oid/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0130s ]
+SQL: SELECT o.id,o.price,s.statusname,o.orderno,o.status,o.create_time FROM beauty_order o,beauty_order_status s WHERE `orderno` LIKE '%%' AND `mid` = 8 AND ( o.status=s.id ) ORDER BY id desc  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 46 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 46 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0050s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 45 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 45 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 43 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 43 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 42 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 42 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 41 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 41 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 40 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 40 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 39 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 39 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 37 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 37 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 36 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 36 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 35 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 35 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 34 AND ( og.gid=g.id )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 34 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 33 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 33 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 32 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 32 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 31 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 31 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 30 AND ( og.gid=g.id )  [ RunTime:0.0065s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 30 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0075s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 5 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 4 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 4 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 1 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-28T14:33:30+08:00 ] 127.0.0.1 /index.php/Mobile/Member/myOrder/oid/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0140s ]
+SQL: SELECT o.id,o.price,s.statusname,o.orderno,o.status,o.create_time FROM beauty_order o,beauty_order_status s WHERE `orderno` LIKE '%%' AND `mid` = 8 AND ( o.status=s.id ) ORDER BY id desc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 46 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 46 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0050s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 45 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 45 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 43 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 43 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 42 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 42 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 41 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 41 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 40 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 40 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 39 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 39 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 37 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 37 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 36 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 36 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 35 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 35 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 34 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 34 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 33 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 33 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 32 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 32 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 31 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 31 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 30 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 5 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 4 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 4 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 1 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 1 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T14:33:33+08:00 ] 127.0.0.1 /index.php/Mobile/Member/myOrder/oid/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+SQL: SELECT o.id,o.price,s.statusname,o.orderno,o.status,o.create_time FROM beauty_order o,beauty_order_status s WHERE `orderno` LIKE '%%' AND `mid` = 8 AND ( o.status=s.id ) ORDER BY id desc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 46 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 46 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 45 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0040s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 43 AND ( og.gid=g.id )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 42 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 42 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 41 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 41 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 40 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 40 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 39 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 39 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 37 AND ( og.gid=g.id )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 36 AND ( og.gid=g.id )  [ RunTime:0.0020s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 36 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 35 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 35 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 34 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 34 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 33 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 33 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 32 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 32 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0050s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 31 AND ( og.gid=g.id )  [ RunTime:0.0020s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 31 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 30 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 5 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 4 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 4 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 1 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T14:33:40+08:00 ] 127.0.0.1 /index.php/Mobile/Member/myOrder/oid/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0140s ]
+SQL: SELECT o.id,o.price,s.statusname,o.orderno,o.status,o.create_time FROM beauty_order o,beauty_order_status s WHERE `orderno` LIKE '%%' AND `mid` = 8 AND ( o.status=s.id ) ORDER BY id desc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0120s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 46 AND ( og.gid=g.id )  [ RunTime:0.0070s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 46 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0110s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 45 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 45 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0120s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 43 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 43 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0130s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 42 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 42 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 41 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 41 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 40 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 40 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 39 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 39 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 37 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 37 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0050s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 36 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 36 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 35 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 35 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 34 AND ( og.gid=g.id )  [ RunTime:0.0030s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 34 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 33 AND ( og.gid=g.id )  [ RunTime:0.0030s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 33 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 32 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 32 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0060s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 31 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 31 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 30 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 5 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 4 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 4 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 1 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-28T14:34:02+08:00 ] 127.0.0.1 /index.php/Mobile/Member/myOrder/oid/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0130s ]
+SQL: SELECT o.id,o.price,s.statusname,o.orderno,o.status,o.create_time FROM beauty_order o,beauty_order_status s WHERE `orderno` LIKE '%%' AND `mid` = 8 AND ( o.status=s.id ) ORDER BY id desc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0130s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 46 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 46 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 45 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 45 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 43 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 43 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 42 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 42 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 41 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 41 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 40 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 40 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0040s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 39 AND ( og.gid=g.id )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 39 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 37 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 37 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 36 AND ( og.gid=g.id )  [ RunTime:0.0070s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 36 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 35 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 35 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0060s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 34 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 34 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 33 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 33 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 32 AND ( og.gid=g.id )  [ RunTime:0.0030s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 32 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 31 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 31 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 30 AND ( og.gid=g.id )  [ RunTime:0.0040s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 30 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 5 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 4 AND ( og.gid=g.id )  [ RunTime:0.0060s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 4 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT og.buynum,og.ml,g.saleprice,g.goodsname,g.imageurl,g.imagename FROM beauty_order_goods og,beauty_goods g WHERE `oid` = 1 AND ( og.gid=g.id )  [ RunTime:0.0050s ]
+SQL: SELECT SUM(buynum) AS tp_sum FROM `beauty_order_goods` WHERE `oid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+NOTIC: [8] Array to string conversion D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\c7564403c0c1e8e3666104e7f200eb17.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-28T14:34:58+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:34:59+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:35:00+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:35:01+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:35:52+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:36:31+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:37:25+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T14:37:53+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=29&oid=40
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0200s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 29 AND `mid` = 8 AND `oid` = 40 [ RunTime:0.1230s ]
+
+[ 2016-11-28T18:52:38+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=44&oid=34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 44 AND `mid` = 8 AND `oid` = 34 [ RunTime:0.0510s ]
+
+[ 2016-11-28T18:52:47+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deletecomment.html?gid=1&oid=39
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: DELETE FROM `beauty_comment` WHERE `gid` = 1 AND `mid` = 8 AND `oid` = 39 [ RunTime:0.0560s ]
+
+[ 2016-11-28T19:34:07+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:34:23+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/usercomment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 39 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 39 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 40 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 40 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 45 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`imageurl`,`imagename`) VALUES ('200','1','36','123123412412312','1','8','1480332862','2016-11-28/','583c163ec8f73.jpg') [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0040s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 36 [ RunTime:0.0620s ]
+
+[ 2016-11-28T19:34:25+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:34:29+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:34:37+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:34:54+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/usercomment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 39 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 39 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 40 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 40 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 39 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 39 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 40 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 40 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`) VALUES ('160','4','35','1312432141234214','2','8','1480332894') [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 35 [ RunTime:0.0440s ]
+
+[ 2016-11-28T19:34:56+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:34:59+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:35:03+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:37:40+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:38:05+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:38:06+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:38:44+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 106 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='12312312341231',`picurl`='2016-11-28/',`picname`='583c1744d4418.jpg' WHERE `oid` = 36 AND `gid` = 1 AND `mid` = 8 AND `ml` = 200 [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+
+[ 2016-11-28T19:38:47+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:39:06+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:39:20+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 106 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='31231231231',`picurl`='2016-11-28/',`picname`='583c176876466.jpg' WHERE `oid` = 36 AND `gid` = 1 AND `mid` = 8 AND `ml` = 200 [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+
+[ 2016-11-28T19:39:22+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:40:32+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:40:36+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:40:42+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imageurl D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 117 行.
+
+[ 2016-11-28T19:41:12+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imageurl D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='312321321312312' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0470s ]
+
+[ 2016-11-28T19:41:34+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imageurl D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='312321321312312' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0660s ]
+NOTIC: [8] Undefined index: imageurl D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 117 行.
+NOTIC: [8] Undefined index: imageurl D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 117 行.
+
+[ 2016-11-28T19:41:37+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:41:49+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:41:57+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 106 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='13213213123214213',`picurl`='2016-11-28/',`picname`='583c1805a6e58.jpg' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0990s ]
+
+[ 2016-11-28T19:42:57+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 106 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='13213213123214213',`picurl`='2016-11-28/',`picname`='583c1841858ed.jpg' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0600s ]
+
+[ 2016-11-28T19:43:21+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 106 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='13213213123214213',`picurl`='2016-11-28/',`picname`='583c18593ef7c.jpg' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+
+[ 2016-11-28T19:43:23+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:43:50+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:43:52+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:44:10+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 98 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 106 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='123123213213123123',`picurl`='2016-11-28/',`picname`='583c188a7dcf2.jpg' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0650s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+
+[ 2016-11-28T19:44:13+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:47:32+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:47:33+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:47:42+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/zuijiasuccess.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 99 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 100 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 101 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 103 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 107 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_comment` SET `zuijia`='1231243124123123124',`cstatus`='6',`picurl`='2016-11-28/',`picname`='583c195e59899.jpg' WHERE `oid` = 35 AND `gid` = 4 AND `mid` = 8 AND `ml` = 160 [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_order` SET `status`='6' WHERE `id` = 35 [ RunTime:0.0500s ]
+
+[ 2016-11-28T19:47:45+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:47:46+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:47:54+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/deleteorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: DELETE FROM `beauty_order` WHERE `id` = 35 AND `mid` = 8 [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: DELETE FROM `beauty_order_goods` WHERE `oid` = 35 [ RunTime:0.0670s ]
+
+[ 2016-11-28T19:47:57+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:48:00+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T19:49:06+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T20:06:16+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-28T20:06:18+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax_member_order.php
+

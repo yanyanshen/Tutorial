@@ -1,0 +1,1257 @@
+[ 2016-11-15T11:35:20+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T11:36:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T11:36:51+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T11:53:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T11:54:46+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T11:58:23+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:00:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:01:00+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:03:41+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:03:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:56:18+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:56:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:57:02+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:57:22+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:57:58+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:58:17+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:58:29+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:58:45+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:58:57+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:59:10+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:59:27+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:59:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:59:40+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T12:59:41+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:01:05+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:01:25+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:01:41+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:01:57+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:02:21+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:02:23+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:02:53+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:03:07+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:04:27+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:04:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:04:46+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:05:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:05:22+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:05:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:06:16+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:06:24+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:07:22+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:07:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:07:44+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:07:57+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:08:09+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:08:23+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:08:43+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:08:59+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:09:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:09:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:09:53+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:10:17+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:13:29+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:13:45+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:14:03+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:19:33+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:19:56+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:20:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:20:50+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:21:03+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:22:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:23:26+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:23:45+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:23:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:26:05+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:26:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:27:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:27:38+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:27:45+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:27:50+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:28:01+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:28:09+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:28:33+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:28:44+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:29:03+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:29:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:29:25+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:29:39+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:29:49+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:30:25+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:30:33+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:30:45+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:33:59+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:34:48+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:38:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:07+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:37+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:38+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:42+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:46+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:51+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:42:57+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:43:00+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:43:03+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:43:58+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+ERR: 模板不存在:./beauty/Mobile/View/MyCart/cart_order.html
+
+[ 2016-11-15T13:44:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:44:15+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T13:47:24+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T14:10:10+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T14:10:16+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T15:28:12+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T15:36:36+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/imgdetail/gid/1.html
+ERR: Think\Model:fuimg方法不存在！
+
+[ 2016-11-15T16:05:03+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T16:41:49+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T16:44:04+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:16:29+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:16:49+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:16:56+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:17:18+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:17:59+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:20:37+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:21:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:21:50+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:22:07+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:22:33+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:23:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:23:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:23:47+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:24:09+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:25:04+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:25:58+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:26:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:27:21+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:27:37+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:29:30+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:31:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:38:31+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:39:44+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:39:57+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:40:31+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:40:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T17:56:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:56:04+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:56:05+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:56:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T17:56:51+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-15T17:56:59+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-15T17:57:04+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:57:07+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:57:21+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T17:58:17+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-15T17:59:27+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-15T17:59:38+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T18:00:09+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:00:21+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:00:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:00:57+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:01:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:01:26+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:01:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:01:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:02:18+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:02:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:03:00+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:03:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:03:35+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T18:03:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-15T18:04:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T18:11:31+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:11:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:52:31+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:53:16+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:54:08+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:54:11+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:54:58+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T18:54:59+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:55:39+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-11-15T18:55:40+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:56:09+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T18:56:10+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T18:56:31+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-11-15T18:56:32+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:00:04+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:00:45+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:01:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-11-15T19:01:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:02:59+08:00 ] 127.0.0.1 /Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:07:22+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:09:38+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:13:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:14:37+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:17:25+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:18:16+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:19:24+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T19:55:00+08:00 ] 127.0.0.1 /index.php/Mobile/Mycart/addresslist.html
+ERR: 无法加载控制器:Mycart
+
+[ 2016-11-15T19:55:08+08:00 ] 127.0.0.1 /index.php/Mobile/Mycart/addresslist.html
+ERR: 无法加载控制器:Mycart
+
+[ 2016-11-15T19:55:10+08:00 ] 127.0.0.1 /index.php/Mobile/Mycart/addresslist.html
+ERR: 无法加载控制器:Mycart
+
+[ 2016-11-15T21:01:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:21+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:24+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:26+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:29+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/index.html
+ERR: 非法操作:index
+
+[ 2016-11-15T21:01:36+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:37+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:39+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:41+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:01:42+08:00 ] 127.0.0.1 /Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:03:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T21:03:15+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:09:12+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T21:09:16+08:00 ] 127.0.0.1 /index.php/Mobile/Index/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:10:52+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-15T21:10:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:11:07+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:11:09+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-15T21:11:12+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax.php
+

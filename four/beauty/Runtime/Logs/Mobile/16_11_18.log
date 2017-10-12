@@ -1,0 +1,2176 @@
+[ 2016-11-18T09:11:56+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T09:34:45+08:00 ] 127.0.0.1 /index.php/Mobile/Order/tobuy.html
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('c2e7f533b44906d',NULL,'40','1479432885')
+
+[ 2016-11-18T09:39:07+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T09:45:53+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0070s ]
+
+[ 2016-11-18T09:47:01+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:47:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:47:22+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:47:37+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:49:50+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:50:25+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:50:53+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:51:07+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0060s ]
+
+[ 2016-11-18T09:51:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:51:29+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:51:41+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:51:56+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:52:05+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:52:20+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T09:52:35+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-18T09:52:58+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:53:10+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:53:33+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T09:56:19+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T09:59:49+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479434388' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT `gid`,`buynum`,`sumprice`,`ml` FROM `beauty_cart` WHERE `mid` = 8 AND `gid` = 22 AND `ml` = 750 LIMIT 1   [ RunTime:0.0050s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`addtime`,`sumprice`,`gid`,`ml`,`mid`) VALUES ('19','1479434013','760','22','750','8') [ RunTime:0.0680s ]
+
+[ 2016-11-18T10:00:06+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/tocartdelete.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0080s ]
+SQL: DELETE FROM `beauty_cart` WHERE `id` = 143 [ RunTime:0.0960s ]
+
+[ 2016-11-18T10:05:21+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:05:33+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-18T10:06:22+08:00 ] 127.0.0.1 /index.php/Mobile/Order/tobuy.html
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('6f71c3260ed5aef',NULL,'269','1479434782')
+
+[ 2016-11-18T10:06:44+08:00 ] 127.0.0.1 /index.php/Mobile/Order/tobuy.html
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('36a9491b1680523',NULL,'269','1479434804')
+
+[ 2016-11-18T10:53:41+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'b31231'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:43+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'b3123'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-18T10:53:43+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'b312'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T10:53:43+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'b31'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:43+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'b3'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:44+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'b'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:45+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'be'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:45+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'bei'  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:45+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'beib'  [ RunTime:0.0210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:53:46+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'beibei'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:55:57+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'beibei'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T10:56:03+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layerLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T10:56:05+08:00 ] 127.0.0.1 /index.php/Mobile%20/%20Order%20/%20tobuy__%20%20%20%20%20%20.html
+ERR: 无法加载控制器: Order
+
+[ 2016-11-18T10:59:45+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:00:01+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'beibei'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:00:05+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layerLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:03:54+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0040s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479438234','59','1','8','1479484800') [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:03:56+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0670s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0430s ]
+
+[ 2016-11-18T11:03:56+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0030s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0530s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0630s ]
+
+[ 2016-11-18T11:03:57+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0040s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0460s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 59 AND `mid` = 8 [ RunTime:0.0410s ]
+
+[ 2016-11-18T11:03:58+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:03:58+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:03:58+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:04:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:05:52+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0040s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 59 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:06:02+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 59 AND `ml` = 50 AND `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`mid`,`gid`,`ml`,`addtime`,`sumprice`) VALUES ('2','8','59','50','1479438362','79') [ RunTime:0.0760s ]
+
+[ 2016-11-18T11:07:35+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-18T11:08:00+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T11:08:11+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:08:15+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T11:25:18+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('96f92c860e5c8a0',NULL,'39','1479439518')
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('96f92c860e5c8a0',NULL,'39','1479439518')
+
+[ 2016-11-18T11:25:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('c90bfb1fe80f908',NULL,'39','1479439519')
+ERR: 1048:Column 'mid' cannot be null
+ [ SQL语句 ] : INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('c90bfb1fe80f908',NULL,'39','1479439519')
+
+[ 2016-11-18T11:26:15+08:00 ] 127.0.0.1 /index.php/Mobile/Order/carturl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:26:15+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/Mobile/Login/Dologin
+ERR: 非法操作:Mobile
+
+[ 2016-11-18T11:26:58+08:00 ] 127.0.0.1 /index.php/Mobile/Order/carturl.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:27:07+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479439626' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0050s ]
+SQL: SELECT `gid`,`buynum`,`sumprice`,`ml` FROM `beauty_cart` WHERE `mid` = 8 AND `gid` = 59 AND `ml` = 50 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='3',`sumprice`='118' WHERE `mid` = 8 AND `gid` = 59 AND `ml` = 50 [ RunTime:0.1190s ]
+NOTIC: [8] Undefined variable: res2 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\LoginController.class.php 第 42 行.
+SQL: SELECT `gid`,`buynum`,`sumprice`,`ml` FROM `beauty_cart` WHERE `mid` = 8 AND `gid` = 26 AND `ml` = 120 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`sumprice`,`addtime`,`gid`,`ml`,`mid`) VALUES ('1','89','1479438490','26','120','8') [ RunTime:0.0620s ]
+SQL: SELECT `gid`,`buynum`,`sumprice`,`ml` FROM `beauty_cart` WHERE `mid` = 8 AND `gid` = 26 AND `ml` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`sumprice`,`addtime`,`gid`,`ml`,`mid`) VALUES ('1','89','1479438495','26','100','8') [ RunTime:0.0360s ]
+
+[ 2016-11-18T11:27:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('9167888e64e873a','8','117','1479439633') [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('59','3','50','315','119.7') [ RunTime:0.0560s ]
+
+[ 2016-11-18T11:30:23+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:32:24+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:33:20+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layer.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_user` WHERE `username` = 'beibei'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:33:24+08:00 ] 127.0.0.1 /index.php/Mobile/Order/layerLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT `id` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:34:20+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-开封市-祥符区','18303873562','鳖杰','吕谭乡','1479440059','0','8') [ RunTime:0.0560s ]
+
+[ 2016-11-18T11:34:28+08:00 ] 127.0.0.1 /index.php/Mobile/Address/setdefault.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='1' WHERE `mid` = 8 AND `id` = 20 [ RunTime:0.0530s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='0' WHERE `mid` = 8 AND `id` NOT IN ('20') [ RunTime:0.0380s ]
+
+[ 2016-11-18T11:35:12+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='0' WHERE `mid` = 8 [ RunTime:0.0560s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-二七区','18726199128','沈艳艳','聂老行政村','1479440112','1','8') [ RunTime:0.0370s ]
+
+[ 2016-11-18T11:35:32+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 22  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('fd458af9b0449ae','8','760','1479440132') [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('22','19','750','317','760') [ RunTime:0.0670s ]
+
+[ 2016-11-18T11:35:39+08:00 ] 127.0.0.1 /index.php/Mobile/Address/setdefault.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='1' WHERE `mid` = 8 AND `id` = 20 [ RunTime:0.0770s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='0' WHERE `mid` = 8 AND `id` NOT IN ('20') [ RunTime:0.0370s ]
+
+[ 2016-11-18T11:36:12+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0050s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-中原区','18739794296','231231','12312312','1479440172','0','8') [ RunTime:0.0700s ]
+
+[ 2016-11-18T11:36:24+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0040s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0040s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('832d6bcdfea88ee','8','117','1479440184') [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('59','3','50','318','119.7') [ RunTime:0.0570s ]
+
+[ 2016-11-18T11:36:39+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0080s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-二七区','18739794296','21313','241312312','1479440199','0','8') [ RunTime:0.0730s ]
+
+[ 2016-11-18T11:37:00+08:00 ] 127.0.0.1 /index.php/Mobile/Address/editAddress.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0080s ]
+SQL: UPDATE `beauty_addresses` SET `area`='河南省-郑州市-中原区',`username`='21313',`mobile`='18739794296',`address`='聂老' WHERE `id` = 23 [ RunTime:0.0780s ]
+
+[ 2016-11-18T11:37:10+08:00 ] 127.0.0.1 /index.php/Mobile/Address/deleteAddress.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0040s ]
+SQL: DELETE FROM `beauty_addresses` WHERE `id` = 22 [ RunTime:0.0660s ]
+
+[ 2016-11-18T11:37:29+08:00 ] 127.0.0.1 /index.php/Mobile/Address/setdefault.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0120s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='1' WHERE `mid` = 8 AND `id` = 21 [ RunTime:0.0400s ]
+SQL: UPDATE `beauty_addresses` SET `isdefault`='0' WHERE `mid` = 8 AND `id` NOT IN ('21') [ RunTime:0.0580s ]
+
+[ 2016-11-18T11:39:47+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('c651aad2d1d116f','8','117','1479440387') [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('59','3','50','319','119.7') [ RunTime:0.0530s ]
+
+[ 2016-11-18T11:40:00+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0040s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-中原区','18739794296','2131231','213121','1479440400','0','8') [ RunTime:0.0810s ]
+SQL: SELECT * FROM `beauty_addresses` WHERE `mid` = 8 ORDER BY addtime desc  [ RunTime:0.0010s ]
+
+[ 2016-11-18T11:40:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 22  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0150s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('170035e92080c9a','8','760','1479440428') [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('22','19','750','320','760') [ RunTime:0.0640s ]
+
+[ 2016-11-18T11:41:46+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0090s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-二七区','18739794296','21312','213123','1479440506','0','8') [ RunTime:0.0690s ]
+SQL: SELECT * FROM `beauty_addresses` WHERE `mid` = 8 ORDER BY addtime desc  [ RunTime:0.0020s ]
+
+[ 2016-11-18T11:46:18+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('3ac222f320e80ab','8','206','1479440778') [ RunTime:0.0630s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 26  [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('cf8cf2f18cfc563','8','206','1479440778') [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('59','3','50','322','119.7') [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0080s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('26','1','100','322','89') [ RunTime:0.0740s ]
+
+[ 2016-11-18T11:46:37+08:00 ] 127.0.0.1 /index.php/Mobile/Address/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0050s ]
+SQL: INSERT INTO `beauty_addresses` (`area`,`mobile`,`username`,`address`,`addtime`,`isdefault`,`mid`) VALUES ('河南省-郑州市-中原区','18739794296','王杰','321312','1479440797','0','8') [ RunTime:0.0640s ]
+
+[ 2016-11-18T11:46:53+08:00 ] 127.0.0.1 /index.php/Mobile/Address/deleteAddress.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0050s ]
+SQL: DELETE FROM `beauty_addresses` WHERE `id` = 25 [ RunTime:0.0630s ]
+
+[ 2016-11-18T11:47:19+08:00 ] 127.0.0.1 /index.php/Mobile/Address/editAddress.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `beauty_addresses` [ RunTime:0.0070s ]
+SQL: UPDATE `beauty_addresses` SET `area`='河南省-郑州市-中原区',`username`='周贝贝',`mobile`='18739794296',`address`='王杰' WHERE `id` = 24 [ RunTime:0.1720s ]
+
+[ 2016-11-18T11:57:28+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:57:29+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:30+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:30+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:31+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:57:31+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:57:31+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:32+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:57:33+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:57:33+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:42+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T11:57:43+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:43+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T11:57:43+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T12:00:40+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479441640' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0680s ]
+
+[ 2016-11-18T14:06:01+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T14:06:15+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei1' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479449175' WHERE `username` = 'beibei1' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' [ RunTime:0.0660s ]
+
+[ 2016-11-18T14:08:32+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T14:08:50+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479449330' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0740s ]
+
+[ 2016-11-18T16:18:10+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 60 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479457090','60','1','8','1479484800') [ RunTime:0.0700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T16:18:11+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0090s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 60 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 60 AND `mid` = 8 [ RunTime:0.0590s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 60 AND `mid` = 8 [ RunTime:0.0660s ]
+
+[ 2016-11-18T16:18:12+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 60 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 60 AND `mid` = 8 [ RunTime:0.0500s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 60 AND `mid` = 8 [ RunTime:0.0400s ]
+
+[ 2016-11-18T16:18:12+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 60 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 60 AND `mid` = 8 [ RunTime:0.0470s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 60 AND `mid` = 8 [ RunTime:0.0410s ]
+
+[ 2016-11-18T16:18:13+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0120s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 60 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:18:37+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 55 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479457117','55','1','8','1479484800') [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T16:18:40+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 55 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 55 AND `mid` = 8 [ RunTime:0.1090s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 55 AND `mid` = 8 [ RunTime:0.0330s ]
+
+[ 2016-11-18T16:18:48+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 55 AND `mid` = 8 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 55 AND `mid` = 8 [ RunTime:0.0680s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 55 AND `mid` = 8 [ RunTime:0.0330s ]
+
+[ 2016-11-18T16:18:49+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 55 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 55 AND `mid` = 8 [ RunTime:0.0580s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 55 AND `mid` = 8 [ RunTime:0.0410s ]
+
+[ 2016-11-18T16:18:50+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 55 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:21:15+08:00 ] 127.0.0.1 /index.php/Mobile/Login/LoginOut.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T16:21:49+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:21:52+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei1' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479457312' WHERE `username` = 'beibei1' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' [ RunTime:0.0750s ]
+
+[ 2016-11-18T16:22:43+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 1 AND `ml` = 150 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`mid`,`gid`,`ml`,`addtime`,`sumprice`) VALUES ('1','16','1','150','1479457363','269') [ RunTime:0.0700s ]
+
+[ 2016-11-18T16:22:56+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 1 AND `ml` = 150 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='2',`sumprice`='538' WHERE `gid` = 1 AND `ml` = 150 AND `mid` = 16 [ RunTime:0.0650s ]
+
+[ 2016-11-18T16:23:16+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479457396','1','1','16','1479484800') [ RunTime:0.0590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T16:23:17+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0090s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 1 AND `mid` = 16 [ RunTime:0.0660s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 1 AND `mid` = 16 [ RunTime:0.0340s ]
+
+[ 2016-11-18T16:23:18+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0090s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 1 AND `mid` = 16 [ RunTime:0.1040s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 1 AND `mid` = 16 [ RunTime:0.0560s ]
+
+[ 2016-11-18T16:23:18+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 1 AND `mid` = 16 [ RunTime:0.0610s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 1 AND `mid` = 16 [ RunTime:0.0410s ]
+
+[ 2016-11-18T16:23:19+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T16:31:15+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 2 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479457875','2','1','16','1479484800') [ RunTime:0.0530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-18T16:31:16+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 2 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 2 AND `mid` = 16 [ RunTime:0.0660s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 2 AND `mid` = 16 [ RunTime:0.0350s ]
+
+[ 2016-11-18T16:31:17+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 2 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 2 AND `mid` = 16 [ RunTime:0.0540s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 2 AND `mid` = 16 [ RunTime:0.1540s ]
+
+[ 2016-11-18T16:31:18+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 2 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 2 AND `mid` = 16 [ RunTime:0.0760s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 2 AND `mid` = 16 [ RunTime:0.0560s ]
+
+[ 2016-11-18T16:31:18+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 2 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T16:31:20+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 2 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:32:54+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0130s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479457974','3','0','16','1479484800') [ RunTime:0.0510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T16:32:55+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 3 AND `mid` = 16 [ RunTime:0.0670s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 3 AND `mid` = 16 [ RunTime:0.0420s ]
+
+[ 2016-11-18T16:32:57+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 3 AND `mid` = 16 [ RunTime:0.0720s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 3 AND `mid` = 16 [ RunTime:0.0340s ]
+
+[ 2016-11-18T16:32:58+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 3 AND `mid` = 16 [ RunTime:0.0720s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 3 AND `mid` = 16 [ RunTime:0.0570s ]
+
+[ 2016-11-18T16:32:59+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:33:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:33:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:33:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 3 AND `mid` = 16 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-11-18T16:34:02+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:36:46+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0130s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T16:36:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T16:36:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:36:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0080s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 1 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:52:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 70 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479459162','70','0','16','1479484800') [ RunTime:0.2990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-18T16:52:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 70 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 70 AND `mid` = 16 [ RunTime:0.0640s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 70 AND `mid` = 16 [ RunTime:0.0420s ]
+
+[ 2016-11-18T16:52:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0090s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 70 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 70 AND `mid` = 16 [ RunTime:0.0640s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 70 AND `mid` = 16 [ RunTime:0.0410s ]
+
+[ 2016-11-18T16:52:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 70 AND `mid` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 70 AND `mid` = 16 [ RunTime:0.0630s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 70 AND `mid` = 16 [ RunTime:0.0410s ]
+
+[ 2016-11-18T16:52:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 70 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-11-18T16:52:44+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 70 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:56:45+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0110s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 38 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479459405','38','0','16','1479484800') [ RunTime:0.0490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T16:56:46+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 38 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 38 AND `mid` = 16 [ RunTime:0.0840s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 38 AND `mid` = 16 [ RunTime:0.2410s ]
+
+[ 2016-11-18T16:56:46+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0090s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 38 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 38 AND `mid` = 16 [ RunTime:0.0700s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 38 AND `mid` = 16 [ RunTime:0.0330s ]
+
+[ 2016-11-18T16:56:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 38 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 38 AND `mid` = 16 [ RunTime:0.0550s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 38 AND `mid` = 16 [ RunTime:0.0420s ]
+
+[ 2016-11-18T16:56:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 38 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T16:56:47+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0100s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 38 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T17:15:41+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/allcomment.html?p=2&gid=38&cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0090s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 1 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0040s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 2 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 3 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T17:15:49+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/allcomment.html?p=2&gid=38&cid=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 1 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 2 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 3 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: commresponlist D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 26 行.
+NOTIC: [8] Undefined variable: empty D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 42 行.
+NOTIC: [8] Undefined variable: page D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 45 行.
+NOTIC: [8] Undefined variable: commresponlist D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 51 行.
+NOTIC: [8] Undefined variable: empty D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 70 行.
+NOTIC: [8] Undefined variable: commresponlist D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 77 行.
+NOTIC: [8] Undefined variable: empty D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\6223e7774e7bdebd9251b5d84cdcff78.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T17:17:00+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/allcomment.html?p=2&gid=38&cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0080s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 1 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 2 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 3 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T17:17:32+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/allcomment.html?p=2&gid=38&cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0070s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 1 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 2 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0050s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 3 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-18T17:17:34+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/allcomment.html?p=1&gid=38&cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0110s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 0,1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 1 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 0,1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 2 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0060s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 3 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 0,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T17:18:41+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_count` (`addtime`,`gid`,`gcount`,`mid`,`stoptime`) VALUES ('1479460721','62','0','16','1479484800') [ RunTime:0.0710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-18T17:18:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 62 AND `mid` = 16 [ RunTime:0.0630s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 62 AND `mid` = 16 [ RunTime:0.0410s ]
+
+[ 2016-11-18T17:18:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 62 AND `mid` = 16 [ RunTime:0.0580s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 62 AND `mid` = 16 [ RunTime:0.0420s ]
+
+[ 2016-11-18T17:18:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_count` SET `gcount`=gcount+1 WHERE `gid` = 62 AND `mid` = 16 [ RunTime:0.0600s ]
+SQL: UPDATE `beauty_count` SET `todaycount`=todaycount+1 WHERE `gid` = 62 AND `mid` = 16 [ RunTime:0.0410s ]
+
+[ 2016-11-18T17:18:42+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0050s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T17:18:43+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0060s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T17:18:44+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/goodscount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_count` [ RunTime:0.0070s ]
+SQL: SELECT `gcount`,`addtime`,`todaycount` FROM `beauty_count` WHERE `gid` = 62 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T17:41:30+08:00 ] 127.0.0.1 /index.php/Mobile/Goods/allcomment.html?p=2&gid=38&cid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0120s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0130s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 1 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0160s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 2 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_comment` WHERE `gid` = 38 AND `cosid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0140s ]
+SQL: SELECT c.content,c.cosid,c.coaddtime,c.response,c.id,u.username,u.imgpath,u.imgname,c.ml,c.readdtime,c.respid,cs.costatus,c.imageurl,c.imagename FROM beauty_comment c,beauty_user u,beauty_comment_status cs WHERE c.gid = '38' AND c.cosid = 3 AND ( c.mid=u.id and c.cosid=cs.id ) ORDER BY c.coaddtime desc LIMIT 1,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T17:41:40+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 38 AND `ml` = 60 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`mid`,`gid`,`ml`,`addtime`,`sumprice`) VALUES ('2','16','38','60','1479462099','78') [ RunTime:0.0690s ]
+
+[ 2016-11-18T17:41:46+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 38  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('539937ac3f714f0','16','78','1479462106') [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0070s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('38','2','60','330','78') [ RunTime:0.0600s ]
+
+[ 2016-11-18T17:41:57+08:00 ] 127.0.0.1 /index.php/Mobile/Order/money.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_packet` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_packet` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T18:55:21+08:00 ] 127.0.0.1 /Mobile/Goods/goodsdetail
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select sum(gcount) as goodscount from beauty_count where gid=
+
+[ 2016-11-18T19:07:01+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 5 AND `ml` = 200 AND `mid` = 16 LIMIT 1   [ RunTime:0.0030s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`mid`,`gid`,`ml`,`addtime`,`sumprice`) VALUES ('1','16','5','200','1479467221','469') [ RunTime:0.0640s ]
+
+[ 2016-11-18T19:10:13+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 2 AND `ml` = 150 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`mid`,`gid`,`ml`,`addtime`,`sumprice`) VALUES ('1','16','2','150','1479467413','389') [ RunTime:0.0740s ]
+
+[ 2016-11-18T19:10:29+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 2 AND `ml` = 150 AND `mid` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='2',`sumprice`='778' WHERE `gid` = 2 AND `ml` = 150 AND `mid` = 16 [ RunTime:0.0510s ]
+
+[ 2016-11-18T19:14:24+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 2 AND `ml` = 150 AND `mid` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='3',`sumprice`='1167' WHERE `gid` = 2 AND `ml` = 150 AND `mid` = 16 [ RunTime:0.0510s ]
+
+[ 2016-11-18T19:18:25+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T19:18:25+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:19:07+08:00 ] 127.0.0.1 /index.php/Mobile/Login/Dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_user` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`username`,`password` FROM `beauty_user` WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_user` SET `lastlogin`='1479467947' WHERE `username` = 'beibei' AND `password` = '6f2462312f6a173d5531d8db7469dbc1' [ RunTime:0.0600s ]
+
+[ 2016-11-18T19:29:17+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:29:17+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T19:30:08+08:00 ] 127.0.0.1 /index.php/Mobile/Search/Search.html?p=2&keywords=%E5%8F%A3%E7%BA%A2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_cart` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_keywords` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_keywords` WHERE `mid` = 8 AND `keywords` = '口红' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: order D:\ZBB\PHP\beauty\beauty\Mobile\Controller\SearchController.class.php 第 59 行.
+SQL: SELECT * FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 3,3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_activity` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 5 AND `astatus` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T19:30:10+08:00 ] 127.0.0.1 /index.php/Mobile/Search/Search.html?p=1&keywords=%E5%8F%A3%E7%BA%A2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_cart` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_keywords` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `beauty_keywords` WHERE `mid` = 8 AND `keywords` = '口红' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: order D:\ZBB\PHP\beauty\beauty\Mobile\Controller\SearchController.class.php 第 59 行.
+SQL: SELECT * FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_activity` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 1 AND `astatus` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 2 AND `astatus` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 5 AND `astatus` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-18T19:30:13+08:00 ] 127.0.0.1 /index.php/Mobile/Search/Search.html?p=2&keywords=%E5%8F%A3%E7%BA%A2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_cart` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_keywords` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_keywords` WHERE `mid` = 8 AND `keywords` = '口红' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: order D:\ZBB\PHP\beauty\beauty\Mobile\Controller\SearchController.class.php 第 59 行.
+SQL: SELECT * FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 3,3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_activity` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 5 AND `astatus` = 1  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T19:30:14+08:00 ] 127.0.0.1 /index.php/Mobile/Search/Search.html?p=1&keywords=%E5%8F%A3%E7%BA%A2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_cart` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_keywords` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_keywords` WHERE `mid` = 8 AND `keywords` = '口红' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: order D:\ZBB\PHP\beauty\beauty\Mobile\Controller\SearchController.class.php 第 59 行.
+SQL: SELECT * FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_activity` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 1 AND `astatus` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 2 AND `astatus` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 5 AND `astatus` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T19:30:17+08:00 ] 127.0.0.1 /index.php/Mobile/Search/Search.html?p=2&keywords=%E5%8F%A3%E7%BA%A2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_cart` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_keywords` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `beauty_keywords` WHERE `mid` = 8 AND `keywords` = '口红' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: order D:\ZBB\PHP\beauty\beauty\Mobile\Controller\SearchController.class.php 第 59 行.
+SQL: SELECT * FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 3,3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_activity` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 5 AND `astatus` = 1  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T19:30:19+08:00 ] 127.0.0.1 /index.php/Mobile/Search/Search.html?p=1&keywords=%E5%8F%A3%E7%BA%A2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_cart` WHERE `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_keywords` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_keywords` WHERE `mid` = 8 AND `keywords` = '口红' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\ZBB\PHP\beauty\ThinkPHP\Library\Org\Beauty\AjaxPage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: order D:\ZBB\PHP\beauty\beauty\Mobile\Controller\SearchController.class.php 第 59 行.
+SQL: SELECT * FROM `beauty_goods` WHERE `goodsname` LIKE '%口红%' LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_activity` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 1 AND `astatus` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 2 AND `astatus` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `beauty_activity` WHERE `bid` = 5 AND `astatus` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 9 行.
+NOTIC: [8] Undefined offset: 0 D:\ZBB\PHP\beauty\beauty\Runtime\Cache\Mobile\ec7fdddc5b54da71b8682295545b47a2.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-18T19:30:55+08:00 ] 127.0.0.1 /index.php/Mobile/Index/js/zepto.min.js
+ERR: 非法操作:js
+
+[ 2016-11-18T19:30:55+08:00 ] 127.0.0.1 /index.php/Mobile/Index/js/zip.touch.member2_0.index.v36.js
+ERR: 非法操作:js
+
+[ 2016-11-18T19:30:55+08:00 ] 127.0.0.1 /index.php/Mobile/Index/css/zip.touch.member2_0.index.v39016.css
+ERR: 非法操作:css
+
+[ 2016-11-18T19:30:55+08:00 ] 127.0.0.1 /index.php/Mobile/Index/js/jweixin-1.0.0.js
+ERR: 非法操作:js
+
+[ 2016-11-18T19:34:09+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:34:09+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T19:36:12+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `beauty_cart` (`buynum`,`mid`,`gid`,`ml`,`addtime`,`sumprice`) VALUES ('1','8','60','30','1479468972','39') [ RunTime:0.0770s ]
+
+[ 2016-11-18T19:36:20+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='2',`sumprice`='78' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0680s ]
+
+[ 2016-11-18T19:38:14+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='3',`sumprice`='117' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0590s ]
+
+[ 2016-11-18T19:38:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='4',`sumprice`='156' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0510s ]
+
+[ 2016-11-18T19:38:54+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='5',`sumprice`='195' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0590s ]
+
+[ 2016-11-18T19:40:28+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='6',`sumprice`='234' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0620s ]
+
+[ 2016-11-18T19:41:35+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='7',`sumprice`='273' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0690s ]
+
+[ 2016-11-18T19:42:42+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='8',`sumprice`='312' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0620s ]
+
+[ 2016-11-18T19:44:12+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='9',`sumprice`='351' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0660s ]
+
+[ 2016-11-18T19:44:34+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='10',`sumprice`='390' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0710s ]
+
+[ 2016-11-18T19:44:46+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='11',`sumprice`='429' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0650s ]
+
+[ 2016-11-18T19:45:00+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='12',`sumprice`='468' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0630s ]
+
+[ 2016-11-18T19:45:10+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='13',`sumprice`='507' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0620s ]
+
+[ 2016-11-18T19:45:25+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='14',`sumprice`='546' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0750s ]
+
+[ 2016-11-18T19:45:32+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/addcart.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_goods` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_cart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `beauty_cart` WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `beauty_cart` SET `buynum`='15',`sumprice`='585' WHERE `gid` = 60 AND `ml` = 30 AND `mid` = 8 [ RunTime:0.0700s ]
+
+[ 2016-11-18T19:55:32+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:55:33+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T19:57:30+08:00 ] 127.0.0.1 /index.php/Mobile/Comment/usercomment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\ZBB\PHP\beauty\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'ml' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 34 行.
+NOTIC: [2] Illegal string offset 'gid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 35 行.
+NOTIC: [2] Illegal string offset 'oid' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'content' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'pingjia' D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 38 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 43 行.
+NOTIC: [8] Undefined index: imagestatus D:\ZBB\PHP\beauty\beauty\Mobile\Controller\CommentController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `beauty_comment` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_comment` (`ml`,`gid`,`oid`,`content`,`cosid`,`mid`,`coaddtime`,`cstatus`,`imageurl`,`imagename`) VALUES ('80','32','71','还不错哦，下次还来买','1','8','1479470250','5','2016-11-18/','582eecaa0cc15.jpg') [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0090s ]
+SQL: UPDATE `beauty_order` SET `status`='5' WHERE `id` = 71 [ RunTime:0.0580s ]
+
+[ 2016-11-18T19:57:36+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:57:36+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T19:57:38+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T19:57:39+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:59:16+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T19:59:16+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:01:31+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:01:31+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:01:44+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:01:44+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:01:47+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:01:47+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:01:48+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:01:48+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:05:22+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:05:22+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:05:24+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:05:24+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:12:04+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:12:04+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:12:10+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:12:10+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:22:15+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax_member_order.php?type=0&page=1&ajax=1&key=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:ajax_member_order.php
+
+[ 2016-11-18T20:22:15+08:00 ] 127.0.0.1 /index.php/Mobile/Member/ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:ajax.php
+
+[ 2016-11-18T20:22:19+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0100s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 22  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('c27db7286e7ac0c','8','760','1479471739') [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('22','19','750','335','760') [ RunTime:0.0650s ]
+
+[ 2016-11-18T20:22:27+08:00 ] 127.0.0.1 /index.php/Mobile/MyCart/toaccount.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `beauty_goods` [ RunTime:0.0110s ]
+SQL: SELECT `goodsname`,`imageurl`,`discount`,`saleprice`,`imagename`,`id` FROM `beauty_goods` WHERE `id` = 59  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `beauty_order` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_order` (`orderno`,`mid`,`price`,`create_time`) VALUES ('dfefb1d36c7eca7','8','117','1479471747') [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `beauty_order_goods` [ RunTime:0.0100s ]
+SQL: INSERT INTO `beauty_order_goods` (`gid`,`buynum`,`ml`,`oid`,`saleprice`) VALUES ('59','3','50','336','119.7') [ RunTime:0.0650s ]
+
+[ 2016-11-18T20:22:32+08:00 ] 127.0.0.1 /index.php/Mobile/Order/money.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `beauty_packet` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `beauty_packet` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0020s ]
+
