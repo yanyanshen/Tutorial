@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*body{background: url(../images/containBg.jpg);}*/
+/*banner样式*/
+.maybelline_banner {width:1200px;position:relative; height:494px;  overflow:hidden;margin:0 auto;}
+.maybelline_banner .maybelline_banner_img{width:7200px;position:absolute; top:0; left:0;}
+.maybelline_banner .maybelline_banner_img li { float:left;}
+.maybelline_banner .maybelline_banner_img img{width:1200px;height:auto;}
+.maybelline_banner .maybelline_bannerMenu {width:100%; position:absolute; bottom:10px; left:0; text-align:center;}
+.maybelline_banner .maybelline_bannerMenu li { display: inline-block;width:10px;height:10px;background:rgba(0,0,0,0.3);color:#fff; border-radius:5px; margin:0 5px;cursor:pointer;}
+.maybelline_banner .maybelline_bannerMenu li.choice {background: #bfbfbf;}
+.maybelline_banner div {width:50px; height:50px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 50px;top:50%;margin-top:-50px;cursor:pointer;display: none;}
+.maybelline_banner:hover div{display: block;}
+.maybelline_banner .btnl {left:15%;}
+.maybelline_banner .btnr {right:15%;}
+
+/*新品发布样式*/
+.newProduct{width:100%;min-width: 1200px;height:auto;}
+.newProduct .newProductCont{width:1200px;margin:0 auto;}
+.newProduct .newProductCont h2{font-size: 24px;padding-top:24px;display:block;height:50px;text-align:center;color:#333;background: url(../images/scp_03.png) no-repeat center 16px;}
+.newProduct .newProductCont ul{padding-top:10px;width:1200px;height:60px;}
+.newProduct .newProductCont ul li{width:370px;float:left;}
+.newProduct .newProductCont ul li h3{padding-top: 310px;font-size: 20px;color:#666;}
+.newProduct .newProductCont ul li p{font-size: 16px;color:#666;padding-top: 10px;}
+.newProduct .newProductCont ul li p span{display: block;}
+.newProduct .newProductCont ul li.li1{background: url(../images/cuerlainN1.jpg) no-repeat center 0;margin-right: 25px;}
+.newProduct .newProductCont ul li.li2{background: url(../images/cuerlainN2.jpg) no-repeat center 0;margin-right: 25px;}
+.newProduct .newProductCont ul li.li3{background: url(../images/cuerlainN3.jpg) no-repeat center 0;}
+
+/*护肤样式*/
+.skinCare{width:100%;min-width:1200px;height:716px;margin-top: 56px;background: #fff;padding-top:10px;}
+.skinCare .skinCareCont{width:1200px;height:660px;margin:0 auto;}
+.skinCare .skinCareCont h2{padding-left:46px;font-size: 26px;color:#333;background:url(../images/scp_18.png) no-repeat 5px center;}
+.skinCare .skinCareCont ul{width:1200px;height:660px;padding-top: 20px;background: #fff;}
+.skinCare .skinCareCont ul li.li1{width:540px;height:660px;margin-right: 26px;float:left;background: url(../images/cuerlain_skinCare1.jpg) no-repeat center 0px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.skinCare .skinCareCont ul li.li2{width:300px;height:660px;margin-right:26px;float:left;background: url(../images/cuerlain_skinCare2.jpg) no-repeat center 170px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.skinCare .skinCareCont ul li.li3{width:300px;height:660px;float:left;background: url(../images/cuerlain_skinCare3.png) no-repeat center 150px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.skinCare .skinCareCont ul li.li1 h3{padding-top: 390px;text-align: center;font-size: 24px;color:#333;}
+.skinCare .skinCareCont ul li.li1 h3 span{display: block;font-size: 18px;color:#333;}
+.skinCare .skinCareCont ul li.li1 p{text-align: center;color:#333;margin-top: 16px;}
+.skinCare .skinCareCont ul li .a1 {border:1px solid red;display:inline-block;width:250px;height:46px;background: #000;margin-right: 26px;margin-left: 4px;line-height: 46px;}
+.skinCare .skinCareCont ul li .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;}
+.skinCare .skinCareCont ul li p a{display:block;font-size: 22px;color:#fff;}
+.skinCare .skinCareCont ul li.li2 h3{padding-top:29px;text-align: center;font-size: 24px;color:#333;}
+.skinCare .skinCareCont ul li.li2 h3 span{display:block;font-size: 18px;}
+.skinCare .skinCareCont ul li.li2 p{text-align: center;color:#333;margin-top: 16px;}
+.skinCare .skinCareCont ul li.li2 .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;margin-top:314px;margin-left: 25px;}
+.skinCare .skinCareCont ul li.li2 .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;margin-left: 25px;}
+.skinCare .skinCareCont ul li.li3 h3{padding-top:29px;text-align: center;font-size: 24px;color:#333;}
+.skinCare .skinCareCont ul li.li3 h3 span{display:block;font-size: 18px;}
+.skinCare .skinCareCont ul li.li3 p{text-align: center;color:#333;margin-top: 16px;}
+.skinCare .skinCareCont ul li.li3 .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;margin-top:314px;margin-left: 25px;}
+.skinCare .skinCareCont ul li.li3 .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;margin-left: 25px;}
+/*最多购买样式*/
+.popular{width:1200px;height:260px;margin:0 auto;position: relative;overflow: hidden;margin-top:48px;}
+.popular h3{font-size: 20px;color:#666;}
+.popular .popular_img{width:2400px;height:260px;position: absolute;top:0px;left:0px;float:left;margin-left: 50px;}
+.popular .popular_img ul{width:1200px;}
+.popular .popular_img ul li{width:240px;height:260px;float:left;margin:0px 28px;/*border:1px solid red;*/}
+.popular .popular_img ul li span{display: block;font-size: 14px;color:#666;padding: 10px 0px 0px 30px ;}
+.popular .btl {left:0;width:20px; height:20px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 20px;top:50%;margin-top:-50px;cursor:pointer;}
+.popular .btr {right:0;width:20px; height:20px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 20px;top:50%;margin-top:-50px;cursor:pointer;}
+
+/*彩妆样式*/
+.cosmetic{width:100%;min-width:1200px;height:716px;margin-top: 56px;background: #fff;padding-top:10px;}
+.cosmetic .cosmeticCont{width:1200px;height:660px;margin:0 auto;}
+.cosmetic .cosmeticCont h2{padding-left:46px;font-size: 26px;color:#333;background:url(../images/scp_37.png) no-repeat 5px center;}
+.cosmetic .cosmeticCont ul{width:1200px;height:660px;padding-top: 20px;background: #fff;}
+.cosmetic .cosmeticCont ul li.li1{width:540px;height:660px;margin-right: 26px;float:left;background: url(../images/cuerlain_cosmetics1.jpg) no-repeat center 0px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.cosmetic .cosmeticCont ul li.li2{width:300px;height:660px;margin-right:26px;float:left;background: url(../images/cuerlain_cosmetics2.png) no-repeat center 170px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.cosmetic .cosmeticCont ul li.li3{width:300px;height:660px;float:left;background: url(../images/cuerlain_cosmetics3.jpg) no-repeat center 150px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.cosmetic .cosmeticCont ul li.li1 h3{padding-top: 390px;text-align: center;font-size: 24px;color:#333;}
+.cosmetic .cosmeticCont ul li.li1 h3 span{display: block;font-size: 18px;color:#333;}
+.cosmetic .cosmeticCont ul li.li1 p{text-align: center;color:#333;margin-top: 16px;}
+.cosmetic .cosmeticCont ul li .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;}
+.cosmetic .cosmeticCont ul li .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;}
+.cosmetic .cosmeticCont ul li p a{display:block;font-size: 22px;color:#fff;}
+.cosmetic .cosmeticCont ul li.li2 h3{padding-top:29px;text-align: center;font-size: 24px;color:#333;}
+.cosmetic .cosmeticCont ul li.li2 h3 span{display:block;font-size: 18px;}
+.cosmetic .cosmeticCont ul li.li2 p{text-align: center;color:#333;margin-top: 16px;}
+.cosmetic .cosmeticCont ul li.li2 .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;margin-top:314px;margin-left: 25px;}
+.cosmetic .cosmeticCont ul li.li2 .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;margin-left: 25px;}
+.cosmetic .cosmeticCont ul li.li3 h3{padding-top:29px;text-align: center;font-size: 24px;color:#333;}
+.cosmetic .cosmeticCont ul li.li3 h3 span{display:block;font-size: 18px;}
+.cosmetic .cosmeticCont ul li.li3 p{text-align: center;color:#333;margin-top: 16px;}
+.cosmetic .cosmeticCont ul li.li3 .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;margin-top:314px;margin-left: 25px;}
+.cosmetic .cosmeticCont ul li.li3 .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;margin-left: 25px;}
+/*最多购买样式*/
+.popular1{width:1200px;height:260px;margin:0 auto;position: relative;overflow: hidden;margin-top:48px;}
+.popular1 h3{font-size: 20px;color:#666;}
+.popular1 .popular1_img{width:2400px;height:260px;position: absolute;top:0px;left:0px;float:left;margin-left: 50px;}
+.popular1 .popular1_img ul{width:1200px;}
+.popular1 .popular1_img ul li{width:240px;height:260px;float:left;margin:0px 28px;}
+.popular1 .popular1_img ul li img{display:inline-block;margin:0 auto;}
+.popular1 .popular1_img ul li span{display: block;font-size: 14px;color:#666;padding: 10px 0px 0px 30px ;}
+.popular1 .btl1 {left:0;width:20px; height:20px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 20px;top:50%;margin-top:-50px;cursor:pointer;}
+.popular1 .btr1 {right:0;width:20px; height:20px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 20px;top:50%;margin-top:-50px;cursor:pointer;}
+/*香水样式*/
+.perfume{width:100%;min-width:1200px;height:716px;margin-top: 56px;background: #fff;padding-top:10px;}
+.perfume .perfumeCont{width:1200px;height:660px;margin:0 auto;}
+.perfume .perfumeCont h2{padding-left:46px;font-size: 26px;color:#333;background:url(../images/scp_61.png) no-repeat 5px center;}
+.perfume .perfumeCont ul{width:1200px;height:660px;padding-top: 20px;background: #fff;}
+.perfume .perfumeCont ul li.li1{width:540px;height:660px;margin-right: 26px;float:left;background: url(../images/cuerlain_perfume1.jpg) no-repeat center 0px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.perfume .perfumeCont ul li.li2{width:300px;height:660px;margin-right:26px;float:left;background: url(../images/cuerlain_perfume2.png) no-repeat center 170px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.perfume .perfumeCont ul li.li3{width:300px;height:660px;float:left;background: url(../images/cuerlain_perfume3.png) no-repeat center 150px;border:1px solid #ddd;box-shadow: 2px 2px 12px #ddd;}
+.perfume .perfumeCont ul li.li1 h3{padding-top: 390px;text-align: center;font-size: 24px;color:#333;}
+.perfume .perfumeCont ul li.li1 h3 span{display: block;font-size: 18px;color:#333;}
+.perfume .perfumeCont ul li.li1 p{text-align: center;color:#333;margin-top: 16px;}
+.perfume .perfumeCont ul li .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 18px;line-height: 46px;}
+.perfume .perfumeCont ul li .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;}
+.perfume .perfumeCont ul li p a{display:block;font-size: 22px;color:#fff;}
+.perfume .perfumeCont ul li.li2 h3{padding-top:29px;text-align: center;font-size: 24px;color:#333;}
+.perfume .perfumeCont ul li.li2 h3 span{display:block;font-size: 18px;}
+.perfume .perfumeCont ul li.li2 p{text-align: center;color:#333;margin-top: 16px;}
+.perfume .perfumeCont ul li.li2 .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;margin-top:314px;margin-left: 25px;}
+.perfume .perfumeCont ul li.li2 .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;margin-left: 25px;}
+.perfume .perfumeCont ul li.li3 h3{padding-top:29px;text-align: center;font-size: 24px;color:#333;}
+.perfume .perfumeCont ul li.li3 h3 span{display:block;font-size: 18px;}
+.perfume .perfumeCont ul li.li3 p{text-align: center;color:#333;margin-top: 16px;}
+.perfume .perfumeCont ul li.li3 .a1 {display:inline-block;width:250px;height:46px;background: #000;margin-right: 30px;margin-top: 16px;line-height: 46px;margin-top:314px;margin-left: 25px;}
+.perfume .perfumeCont ul li.li3 .a2 {display:inline-block;width:250px;height:46px;background: #666;line-height: 46px;margin-left: 25px;}
+/*香水最多购买样式*/
+.popular2{width:1200px;height:260px;margin:0 auto;position: relative;overflow: hidden;margin-top:48px;}
+.popular2 h3{font-size: 20px;color:#666;}
+.popular2 .popular2_img{width:2400px;height:260px;position: absolute;top:0px;left:0px;float:left;margin-left: 50px;}
+.popular2 .popular2_img ul{width:1200px;}
+.popular2 .popular2_img ul li{width:240px;height:260px;float:left;margin:0px 28px;}
+.popular2 .popular2_img ul li span{display: block;font-size: 14px;color:#666;padding: 10px 0px 0px 30px ;}
+.popular2 .btl2 {left:0;width:20px; height:20px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 20px;top:50%;margin-top:-50px;cursor:pointer;}
+.popular2 .btr2 {right:0;width:20px; height:20px; background:rgba(0,0,0,0.3); position:absolute;  color:#fff; border-radius:5px;font-size:30px; font-weight: bold; text-align:center; line-height: 20px;top:50%;margin-top:-50px;cursor:pointer;}

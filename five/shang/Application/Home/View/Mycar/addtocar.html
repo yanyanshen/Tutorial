@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品成功加入购物车</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/public.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/index.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/search.css">
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <style type="text/css">
+        #cart td{
+            border: 0;
+            text-align: left;
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<!--  头部开始 -->
+<include file="Public/header"/>
+<!-- 头部结束 -->
+
+<div style="margin-bottom:20px;padding:45px;background:#F5F5F5;">
+    <div class="box">
+        <h1 style="color:#71B247;margin:10px 0">商品已成功加入购物车</h1>
+        <table width="100%" border="0" style="border:0" id="cart">
+            <tr>
+                <td>
+                    <a href="">
+                        <img src="__UPLOAD__/goods/100_{$mygoods['pic']}" alt="" style="width:80px;margin:10px;vertical-align:middle" />
+                        {$mygoods['goodsname']} &nbsp;&nbsp;购买数量：{$buynum} &nbsp;&nbsp;单价：￥{$mygoods['price']}
+                    </a>
+                </td>
+                <td class="pxtitle">
+                    <a href="{:U('Home/Index/index')}" style="padding:10px 20px;font-size:14px;">继续购物</a>
+                    <a href="{:U('Home/Mycar/mycar')}" style="padding:10px 20px;font-size:14px;background:#B1191A">去购物车结算</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="pxlistcon box">
+    <div class="pxlist" >
+        <h3>购买该商品的用户还购买了</h3>
+            <ul>
+              <volist name="goodslist" id="val">
+                <li>
+                    <a href="{:u('Index/detail',array('gid'=>$val['gid']))}" title="">
+                        <img src="__UPLOAD__/goods/350_{$val['pic']}" alt="" />
+                        <span>{$val.goodsname}</span>
+                    </a>
+                    <p>{$val.price}</p>
+                </li>
+              </volist>
+            </ul>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<!-- 尾部开始 -->
+<!-- footer开始 -->
+<include file="Public/footer"/>
+<!-- footer结束 -->
+<!-- 侧面导航开始 -->
+<include file="Public/right"/>
+<!-- 侧面导航结束 -->
+<!-- 尾部结束 -->
+</body>
+<script type="text/javascript">
+    $(function() {
+        $('.cateList').hide();
+    });
+
+    function sort(v) {
+        $(v).addClass('active').siblings().removeClass('active');
+    }
+</script>
+</html>

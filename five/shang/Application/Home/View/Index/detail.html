@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$goodsList.goodsname}</title>
+	<link rel="stylesheet" type="text/css" href="__STATIC__/style/public.css">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/style/index.css">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/style/detail.css">
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/style/xiangqing.css" />
+	<link rel="stylesheet" type="text/css" href="__STATIC__/style/jquery.jqzoom.css">
+	<script type="text/javascript" src="__STATIC__/js/jQuery.1.8.2.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.jqzoom-core.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.jqzoom').jqzoom({
+	            zoomType: 'standard',
+	            lens:true,
+	            preloadImages: true,
+	            alwaysOn:false,
+				title:false,
+				zoomWidth:430,
+				zoomHeight:430,
+				xOffset:20,
+				yOffset:0
+	        });
+
+	});
+</script>
+    <style type="text/css">
+    .empty{
+        color: red;
+        font-size: 30px;
+        margin-left: 510px;
+    }
+        .box{
+            margin:0 auto;
+            padding:0;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--  头部开始 -->
+<include file="Public/header"/>
+<!-- 头部结束 -->
+<div class="box goodsinfo">
+	<div class="lf leftinfo">
+		<!--jQzoom开始-->
+
+    	<!--显示上面大图和放大镜-->
+    	<div>
+       	 	<a href="__UPLOAD__/goods/{$goodsList.pic}"  class="jqzoom" rel='gal1'  title="triumph">
+                <img src="__UPLOAD__/goods/350_{$goodsList.pic}"  title="triumph" />
+        	</a>
+    	</div>
+    	<!--显示下面三张小图-->
+        <div >
+            <ul id="thumblist" class="clear"  >
+                <volist name="goodsList['pics']" id="pic">
+                <li><a class="{$key?'':'zoomThumbActive'}"  href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: '__UPLOAD__/goods/350_{$pic}',largeimage: '__UPLOAD__/goods/{$pic}'}"><img src='__UPLOAD__/goods/100_{$pic}' width="50px"/></a></li>
+                </volist>
+            </ul>
+        </div>
+
+	  <!--jQzoom结束-->
+	</div>
+	<div class="lf rightinfo">
+		<div>
+            <form action="" method="post" id="form1">
+			<h2>{$goodsList.goodsname}</h2>
+                <input type="hidden" name="gid" value="{$goodsList.gid}">
+			<dl>
+                <dd>品牌：<span class='price'>{$goodsList.brand_name}</span></dd>
+				<dd>价格：<span class='price'>{$goodsList.price}</span></dd>
+				<dd>销量：<span>{$goodsList.saled_num}</span> &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;现余库存：<span>{$goodsList.num}</span></dd>
+				<dd>上架时间：<span>{:date('Y-m-d',$goodsList['createtime'])}</span></dd>
+				<dd >
+					<span>购买数量:</span>
+
+                    <a href="javascript:jian();" class="decrement">-</a>&nbsp;
+					<input type="text" name="buynum" value="1"  id="buynum"/>&nbsp;
+					<a href="javascript:jia();" class="increment">+</a>
+				</dd>
+                <dd><a href="javascript:sc()"  >
+                    <img src="__STATIC__/images/heart1.jpg" id="pic" />
+                    <span  id="collect" style="display:none"  >加入收藏</span>
+                </a>
+                </dd>
+                <dd>
+                    <div id="buy">
+                        <a class="tobuy" onclick="buy();">立即购买</a>
+                        <a class="tocart" onclick="addtocar();">加入购物车</a>
+                    </div>
+                </dd>
+			</dl>
+            </form>
+		</div>
+
+	</div>
+</div>
+<div class="intro_part2">
+    <a id="first"></a>
+    <div class="information box">
+        <div class="intro_infor_title" >
+        </div>
+        <div class="intro_infor_cont">
+            <p style="width: 960px;">{$goodsList.description}</p>
+            <p class="notice"></p>
+        </div>
+    </div>
+    <div class="pro_judge" id="fiveth" style="margin-left: 200px;">
+        <div class="judge_title"></div>
+        <div class="judge_cont" style="margin-left: 320px;">
+            <ul>
+                <li class="li1">
+                </li>
+                <li class="li2">
+                    <p class="p1"><span>1</span>美白度</p><span class="sp2">5</span>
+                    <p class="p1"><span>2</span>收缩毛孔</p><span class="sp2">5</span>
+                    <p class="p1"><span>3</span>抗衰老</p><span class="sp2">5</span>
+                    <p class="p1"><span>4</span>滋润度</p><span class="sp2">5</span>
+                    <p class="p1"><span>5</span>保湿度</p><span class="sp2">5</span>
+                    <p class="p1"><span>6</span>低刺激</p><span class="sp2">5</span>
+                </li>
+                <li class="li3" style="font-size: 18px">
+                    <p>该商品使用起来好用吗？
+                        与超千万美轮美尚用户分享你的独家秘笈。
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- 用户具体评价开始 -->
+<volist name="comList" key="k" id="v" empty="$empty">
+    <div class="user box" style="margin:0 0 0 300px">
+        <ul>
+            <li class="li2 ">
+                <div class="user_cont clearfix">
+                    <div class="clearfix">
+                        <div class="user_judge fl">
+                            <div class="title" style="position: relative;">
+                                <span class="sp1" style="font-size: 20px;position: relative;left: -140px">序号：{$k}</span>
+                                <span class="sp1" style="font-size: 20px">用户名：{$v.username}</span>
+                                <span class="sp1" style="font-size: 20px">评价时间：{:date('Y-m-d H:i:s',$v['time'])}</span>
+                            </div>
+                            <div class="judgement">
+                                {$v.message}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</volist>
+
+<!-- 尾部开始 -->
+<!-- footer开始 -->
+<include file="Public/footer"/>
+<!-- footer结束 -->
+<!-- 侧面导航开始 -->
+<include file="Public/right"/>
+<!-- 侧面导航结束 -->
+<!-- 尾部结束 -->
+</body>
+<script type="text/javascript">
+    function sc(){
+        $.post("{:U('Collect/add')}",$('#form1').serialize(),function(res){
+            if(res.status=='ok'){
+                layer.msg(res.msg,{
+                    icon: 1,
+                    time: 1000
+                },function(){
+                    location.href="{:U('Member/collect')}";
+                });
+            }if(res.status=='login'){
+                layer.msg(res.msg,{
+                    icon: 7,
+                    time: 1000
+                },function(){
+                    location.href="{:U('User/login')}";
+                });
+
+            }else{
+                layer.msg(res.msg,{
+                    icon: 2,
+                    time: 1000
+                });
+            }
+        });
+    }
+    $('#pic').mouseenter(function(){
+        $('#collect').show();
+
+    });
+    $('#pic').mouseleave(function(){
+        $('#collect').hide();
+
+    })
+    function jian(){
+        var buynum=document.getElementById('buynum').value;
+        if(buynum>1){
+            document.getElementById('buynum').value=parseInt(buynum)-1;
+        }
+    }
+
+    function jia(){
+        var buynum=document.getElementById('buynum').value;
+        if(buynum<199){
+            document.getElementById('buynum').value=parseInt(buynum)+1;
+        }
+    }
+
+    document.getElementById('buynum').onkeyup=function(){
+        if(this.value<1){
+            this.value=1;
+        }
+        if(this.value>199){
+            this.value=199;
+        }
+        if(isNaN(this.value)){
+            this.value=1;
+        }
+    };
+    function buy(){
+        $.post("{:U('Order/buy')}",$('#form1').serialize(),function(res){
+            if(res.status=='ok'){
+                layer.msg(res.msg,{
+                    icon: 1,
+                    time: 1000
+                },function(){
+                    location.href="{:U('Home/Order/order')}?oid="+res.oid;
+                });
+            }else if(res.status=='login'){
+                layer.msg(res.msg,{
+                    icon: 7,
+                    time: 1000
+                },function(){
+                    location.href="{:U('Home/User/login')}"
+                });
+            }else{
+                layer.msg(res.msg,{
+                    icon: 2,
+                    time: 1000
+                });
+            }
+        });
+    }
+    function addtocar(){
+        $.post("{:U('Mycar/addtocar')}",$('#form1').serialize(),function(res){
+            if(res.status=='ok'){
+                layer.msg(res.msg,{
+                    icon: 1,
+                    time: 1000
+                },function(){
+                    location.href="{:U('Mycar/addtocar')}?gid="+res.gid+'&buynum='+res.buynum;
+                });
+            }else{
+                layer.msg(res.msg,{
+                    icon: 2,
+                    time: 1000
+                });
+            }
+        });
+
+    }
+</script>
+</html>

@@ -1,0 +1,103 @@
+[ 2016-07-28T08:47:35+08:00 ] 172.16.11.198 /index.php/Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-28T08:47:36+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'zcx' AND `pwd` = 'ac0881ac3355c807bfb2a197d9c77535' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-28T08:47:45+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'admin' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_admin` SET `last_time`='1469614875',`last_ip`='172.16.11.198' WHERE `aid` = 25 [ RunTime:0.0918s ]
+SQL: UPDATE `shang_admin` SET `time`='1469666865',`ip`='172.16.11.198' WHERE `aid` = 25 [ RunTime:0.0600s ]
+
+[ 2016-07-28T08:48:07+08:00 ] 172.16.11.198 /index.php/Admin/Goods/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-28T08:48:09+08:00 ] 172.16.11.198 /index.php/Admin/User/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:48:11+08:00 ] 172.16.11.198 /index.php/Admin/User/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:48:16+08:00 ] 172.16.11.198 /index.php/Admin/User/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:48:18+08:00 ] 172.16.11.198 /index.php/Admin/User/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:48:37+08:00 ] 172.16.11.198 /index.php/Admin/Order/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:48:39+08:00 ] 172.16.11.198 /index.php/Admin/Ad/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:48:54+08:00 ] 172.16.11.198 /index.php/Admin/Goods/index.css
+ERR: 非法操作:index.css
+
+[ 2016-07-28T08:52:24+08:00 ] 172.16.11.198 /admin.php/User/editor/kindeditor.js
+ERR: 非法操作:editor
+
+[ 2016-07-28T08:57:22+08:00 ] 172.16.11.198 /admin.php/Admin/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-28T09:01:27+08:00 ] 172.16.11.198 /index.php/Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-28T09:01:28+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'zcx' AND `pwd` = 'ac0881ac3355c807bfb2a197d9c77535' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-28T09:01:35+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'zcx' AND `pwd` = 'ac0881ac3355c807bfb2a197d9c77535' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-28T09:02:45+08:00 ] 172.16.11.198 /index.php/Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-28T09:02:46+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'zcx' AND `pwd` = 'ac0881ac3355c807bfb2a197d9c77535' LIMIT 1   [ RunTime:0.0010s ]
+

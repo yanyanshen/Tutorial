@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+body{background: #f5f5f5;}
+/*返回上一级样式开始*/
+body{background: #f7f7f7;}
+.return{height: 55px;}
+.return p{margin-left: 40px;}
+/*choose样式开始*/
+.choose{height: 240px;background: #fff;margin-bottom: 10px;}
+.choose .choose_title{height: 40px;border-bottom: 1px solid #dddddd;line-height: 40px;}
+.choose_title p{margin-left: 20px;}
+.choose_title p span{color:#e2023a;}
+.choose_cont ul .li1{height: 80px;border-bottom:1px solid #dddddd;}
+.choose_cont ul h6{display: inline-block;width:77px;background: #fafafa;color:#333333;padding-left: 20px;padding-top: 10px;float: left;}
+.choose_cont ul h6.h61{height: 70px;}
+.choose_cont ul li span{margin-right:63px;float:left;margin-bottom: 20px;}
+.choose_cont ul li span.sp1{margin-left: 10px;}
+.choose_cont ul li span a{color:#666;}
+.choose_cont ul li span a:hover{color:#e2023a;}
+.choose_cont ul li.li2{height: 56px;border-bottom:1px solid #dddddd;}
+.choose_cont ul li.li2 span{margin-top: 18px;}
+.choose_cont ul h6.h62{height: 56px;line-height: 56px;padding-top:0px;}
+.choose_cont ul .li3 span{margin-top: 20px; }
+.choose_cont ul .li3{height: 60px;padding-top: 0px;width: 100%;float: left;border-bottom:1px solid #dddddd;}
+.choose_cont ul h6.h63{height: 60px;padding-top:0px;line-height: 60px;margin-top: 0px;padding-top: 0px;}
+/*choose样式结束的*/
+/*product样式开始*/
+.product{height: auto;background: #fff;}
+.product .pro_title{height: 40px;width: 100%;background: url(../images/bg.jpg);}
+.pro_title span{display: inline-block;width: 96px;height: 40px;line-height: 40px;text-align: center;cursor: pointer;border:1px solid #cccccc;transition:all 0.4s;border-bottom:none;}
+.pro_title span:hover{background: #fff;border:1px solid #fff;color:#e2023a;}
+.pro_cont{height: 1060px;position: relative;overflow: hidden;}
+.pro_cont .bg{height: 2120px;position: absolute;top:0px;left:0px;}
+.pro_cont ul{height: 1060px;}
+.pro_cont ul li{float:left;margin:20px 20px 5px 0px;background: #fff;border:1px solid #f5f5f5;padding-bottom: 10px;transition:all 0.4s;}
+.pro_cont ul li:hover{box-shadow: 2px 2px 12px #ddd;}
+.pro_cont ul li.li1{margin-left: 30px;}
+.pro_cont ul li p{line-height: 25px;margin-left: 8px;}
+.pro_cont ul li p .sp1{font-size: 18px;color:#e2023a;}
+.pro_cont ul li p .sp2{font-size: 12px;color:#666666;}
+.pro_cont ul li .sp3,.sp4{display: inline-block;line-height: 40px;text-align: center;}
+.pro_cont ul li .sp3{width: 94px;height: 40px;margin-right: 10px;background: #e2023a;}
+.pro_cont ul li .sp3 a{color:#fff;}
+.pro_cont ul li .sp4{width: 70px;height: 40px;background: #fefefe;border:1px solid #dddddd;}
+.product .exchange{width: 400px;margin:0 auto;margin-top:20px;text-align: center;margin-bottom: 10px;}
+.product .exchange input{border:none ;width: 30px;text-align: center;}
+.product .exchange span{cursor: pointer;}
+.product .exchange span:hover{color:#e2023a;}
+/*product样式结束*/

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品成功加入购物车</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/public.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/index.css">
+    <link type="text/css" rel="stylesheet" rev="stylesheet" href="__STATIC__/style/membercenter.css" />
+    <style type="text/css">
+        #pageBody input{
+            width:15px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+<!--  头部开始 -->
+<include file="Public/header"/>
+<!-- 头部结束 -->
+<div class="buyer_day box">
+    <p class="select_title"><span>我的购物车</span></p>
+    <notempty name="num">
+    <form action="" method="post" id="form1">
+        <input type="hidden" name="prices" id="prices"/>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="day_list">
+            <thead>
+            <tr>
+                <th class="xuhao"></th>
+                <th width="15%">商品图片</th>
+                <th width="30%">商品名称</th>
+                <th width="10%">商品单价(元)</th>
+                <th width="20%">商品数量</th>
+                <th width="10%">小计(元)</th>
+                <th width="5%">操作</th>
+            </tr>
+            </thead>
+            <tbody id="pageBody">
+        <volist name="mygoods" key="k" id="v">
+            <notempty name="v.goodsname">
+            <tr>
+                <td class="xuhao" style="color: #ff0000"><input checked="checked" onchange="gettotalprice();" type="checkbox" value="{$v.gid}" name="chk[]" /></td>
+                <td >
+                    <a href="">
+                        <img src="__UPLOAD__/goods/100_{$v.pic}" alt="" style="width:80px;margin:10px;" />
+                    </a>
+                </td>
+                <td ><a href="">{$v.goodsname}</a></td>
+                <td ><a href="javascript:;" class="price">{$v.price}</a></td>
+                <td >
+                    <a href="javascript:jian({$k});" class="decrement">-</a>&nbsp;
+                    <input style="margin:10px" type="text" name="buynum{$v.gid}" value="{$v['buynum']?$v['buynum']:1}" class="num" id="buynum{$k}" onkeyup="chgnum(this)" />&nbsp;
+                    <a href="javascript:jia({$k});" class="increment">+</a>
+                <td class="prices"></td>
+                <td ><a href="javascript:del({$v['gid']});"  class="tablelink">删除</a></td>
+            </tr>
+            </notempty>
+            </volist>
+        <empty name="v">
+            <div style="color:red;font-size: 20px">购物车里没有商品</div>
+            <else/>
+            <tr>
+                <td  class="xuhao" style="color: #ff0000">
+                    <input type="checkbox"  checked="checked" onchange="gettotalprice();" id="chkAll" name="chkAll" />
+                </td>
+                <td colspan="5" id="buy">
+                    <span>总价:<b id="totalprice">￥888.88</b></span>
+                    <a href="javascript:account()" target="_self" class="tobuy">去结算</a>
+                </td>
+            </tr>
+        </empty>
+            </tbody>
+
+        </table>
+
+    </form>
+        <else/> <div style="color:red;font-size: 20px">购物车里没有商品</div>
+</notempty>
+    <div style="clear:both;"></div>
+
+</div>
+<div style="clear:both;"></div>
+<!-- footer开始 -->
+<include file="Public/footer"/>
+<!-- footer结束 -->
+<!-- 侧面导航开始 -->
+<include file="Public/right"/>
+<!-- 侧面导航结束 -->
+</body>
+<script type="text/javascript">
+    function account(){
+        $.post("{:U('Mycar/createorder')}",$('#form1').serialize(),function(res){
+            if(res.status=='ok'){
+                layer.alert(res.msg,{
+                    yes:function(){
+                        location.href="{:U('Home/Order/order')}?oid="+res.oid;
+                    }
+                });
+
+            }else if(res.status=='login'){
+                layer.alert(res.msg,{
+                    yes:function(){
+                        location.href="{:U('User/login')}";
+                    }
+                });
+
+            }else{
+                layer.alert(res.msg);
+
+            }
+        })
+    }
+    function del(gid){
+        //询问框
+        layer.confirm('您确定要删除吗?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:u('Mycar/del')}",{gid:gid},function(res){
+                if(res.status=='ok'){
+                    layer.alert(res.msg,{
+                        yes:function(){
+                            location.reload();
+                        }
+                    });
+                }else{
+                    layer.alert(res.msg);
+                }
+            })
+        })
+    }
+    function chk(){
+        var chkAll=document.getElementById('chkAll');
+        var chks=document.getElementsByName('chk[]');
+        for(var i=0;i<chks.length;i++){
+            chks[i].checked=chkAll.checked;
+        }
+    }
+    document.getElementById('chkAll').onclick=chk;
+    $('.cateList').hide();
+    function jian(n){
+        var buynum=document.getElementById('buynum'+n).value;
+        if(buynum>1){
+            document.getElementById('buynum'+n).value=parseInt(buynum)-1;
+        }
+        getprices();
+        gettotalprice();
+    }
+    function jia(n){
+        var buynum=document.getElementById('buynum'+n).value;
+        if(buynum<199){
+            document.getElementById('buynum'+n).value=parseInt(buynum)+1;
+        }
+        getprices();
+        gettotalprice();
+    }
+
+    function chgnum(v){
+        if(v.value<1){
+            v.value=1;
+        }
+        if(v.value>199){
+            v.value=199;
+        }
+        if(isNaN(v.value)){
+            v.value=1;
+        }
+
+        gettotalprice();
+    }
+
+    function getprices(){
+        var nums=document.getElementsByClassName('num');
+        var price=document.getElementsByClassName('price');
+        var prices=document.getElementsByClassName('prices');
+        for(var i=0;i<price.length;i++){
+
+            prices[i].innerHTML=parseInt(price[i].innerHTML)*parseInt(nums[i].value);
+            if(isNaN(prices[i].innerHTML)){
+                prices[i].innerHTML=0;
+            }
+
+        };
+    }
+
+    function gettotalprice(){
+        getprices();
+        var inputs=document.getElementsByName('chk[]');
+        var prices=document.getElementsByClassName('prices');
+        var totalprice=0;
+        for(var i=0;i<inputs.length;i++){
+            if(inputs[i].checked){
+                totalprice+=parseInt(prices[i].innerHTML);
+                if(isNaN(totalprice)){
+                    totalprice=0;
+                }
+            };
+        };
+        document.getElementById('totalprice').innerHTML='￥'+totalprice;
+        document.getElementById('prices').value=totalprice;
+    }
+
+    gettotalprice();
+</script>
+</html>

@@ -1,0 +1,90 @@
+<!-- 侧面导航开始 -->
+<div class="rightNav">
+    <ul>
+        <li class="li1"><img src="__STATIC__/images/user.png"/>
+            <ul>
+                <li>
+                    <h1><img src="__STATIC__/images/quxiao.png" alt="" /></h1>
+                    <h2><img src="__STATIC__/images/nvhai.png"/></h2>
+                    <b>您好！请
+                        <gt name="Think.session.id" value="0">
+                            <a href="javascript:logout()">退出</a> &nbsp&nbsp&nbsp
+                            <a href="{:u('Member/memberinfo')}">会员中心</a>
+                            <else/>
+                            <a href="{:u('User/login')}">登录 </a>
+                            &nbsp;| &nbsp;<a href="{:u('User/register')}">注册</a>
+                        </gt>
+                    </b>
+                    <h5></h5>
+                    <gt name="Think.session.id" value="0">
+                        <span class="span2"><a href="{:u('Member/Order')}">我的订单 </a></span>
+
+                        <else/>
+                    </gt>
+                </li>
+            </ul>
+
+        </li>
+        <h4><img src="__STATIC__/images/lineke.png"/></h4>
+
+        <li class="li2">
+            <a href="{:U('Home/Mycar/mycar')}">
+                <h3>
+                    <img src="__STATIC__/images/shop.png"/>
+                </h3>
+                <p>购物车</p>
+                <h1><lt name="Think.session.num" value="0">0<else/>{$Think.session.num}</lt></h1>
+            </a>
+        </li>
+        <h5><img src="__STATIC__/images/lineke.png"/></h5>
+
+        <li class="li4">
+            <a href="javascript:collect({$Think.session.id});">
+                <img src="__STATIC__/images/heart.png"/>
+                <p>我的收藏</p>
+            </a>
+        </li>
+        <li class="li5">
+            <a href="{:U('Home/Index/myfoot')}">
+            <img src="__STATIC__/images/zuji.png"/>
+            <p>我的足迹</p>
+            </a>
+        </li>
+        <li class="li6">
+            <p>
+            </p>
+        </li>
+        <li class="li7">
+            <p></p>
+        </li>
+        <li class="li8">
+            <img src="__STATIC__/images/totop.png" class="toTop"/>
+            <p>返回顶部</p>
+        </li>
+    </ul>
+</div>
+<!-- 侧面导航结束 -->
+<script>
+    function logout(){
+        //询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/User/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.href="{:U('Home/Index/index')}";
+                }
+            });
+        });
+    }
+    function collect(v){
+        if(v){
+            location.href="{:u('Home/Member/collect')}";
+        }else{
+            layer.alert('请先登录',{
+                yes:function(){
+                    location.href="{:u('Home/User/login')}";
+            }})
+        }
+    }
+</script>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>用户注册</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/all.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <script src="__STATIC__/js/jquery.validate.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css"/>
+    <link rel="stylesheet" href="__STATIC__/style/login.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <style>
+        input.error { border: 1px solid red;background: #ffdbb3;}
+        label.error{
+
+            padding-left:35px;
+            color:#ff0300;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<!--头部>
+<include file="Public/header"/>
+<!-->
+
+<div class="cont">
+    <div class="middle">
+        <div class="right fr clearfix">
+            <ul>
+                <li class="li1"><p>已有账号，<span><a href="{:u('User/login')}">立即登录</a></span></p></li>
+                <li class="li2"><h3>免费注册</h3></li>
+                <li class="li3">
+                    <form action="{:u('User/register')}" method="post" id="form1" enctype="multipart/form-data">
+                        <p><input type="text" id="t1" placeholder="请输入用户名" name="name"/><br/></p>
+
+                        <p><input type="password" id="t2" placeholder="请输入密码" name="mm"/><br/></p>
+
+                        <p><input type="password" id="t3" placeholder="请再次输入密码" name="rmm"/><br/></p>
+
+                        <p><div><input type="text" id="t4" placeholder="请输入验证码" name="verify"/>
+                        <h4>
+                            <img src="{:u('verify')}" id="verify" alt="verify" style="height:35px;width:80px"
+                                 onclick="this.src='{:u(\'verify\',array(\'id\'=>mt_rand()))}'"/>
+                        </h4></div></p>
+                        <br/>
+
+                        <p><input type="checkbox" name="checkbox" id="checkbox"  checked="checked";/>我已阅读并同意<span>《美伦美尚有限公司》<br/></span></p>
+                        <li id="li4" class="li4">立即注册</li>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- footer开始 -->
+<include file="Public/footer"/>
+<!-- footer结束 -->
+
+</body>
+<script type="text/javascript">
+    $(function(){
+        var validate=$("#form1").validate({
+            //设置验证规则
+            rules:{
+                name:{
+                    required:true,
+                    minlength:3,
+                    maxlength:15,
+                    remote:{
+                        url:"{:u('User/test1')}",
+                        type:'post'
+                    }
+                },
+                mm:{
+                    required:true,
+                    minlength:3,
+                    maxlength:15
+                },
+                rmm:{
+                    required:true,
+                    equalTo:"#t2"
+                } ,
+                verify:{
+                    required:true,
+                    remote:{
+                        url:"{:u('User/checkVerify')}",
+                        type:'post'
+                    }
+                },
+                checkbox:{
+                    required:true
+                }
+
+
+            },
+            //设置提示信息
+            messages:{
+                name:{
+                    required:'用户名不能为空',
+                    minlength:'用户名至少需要3个字符',
+                    maxlength:'用户名最多15个字符',
+                    remote:'用户名已经存在'
+                },
+                mm:{
+                    required:'密码不能为空',
+                    minlength:'密码长度至少为3个字符',
+                    maxlength:'密码最多不能超过15个字符'
+                },
+                rmm:{
+                    required:'确认密码不能为空',
+                    equalTo:'两次密码输入不一致'
+                },
+                verify:{
+                    required:'请输入验证码',
+                    remote:'验证码不正确'
+                },
+                checkbox:{
+                    required:'未阅读'
+                }
+
+            },
+
+
+            /* success:function(label){
+             label.addClass("ok");
+             },
+             validClass:"ok",*/
+            errorPlacement:function(error,element){
+                error.appendTo(element.parent());
+            }
+        });
+
+        jQuery.validator.onfocus=true;
+        $('#li4').click(function(){
+            if(validate.form()){
+                $.post("{:U('Home/User/register')}",$('#form1').serialize(),function(res){
+                    if(res.status=='ok'){
+                        layer.msg(res.msg,{
+                            icon: 1,
+                            time: 1000
+                        },function(){
+                            location.href="{:U('Home/Index/index')}";
+                        });
+                    }else{
+                        layer.msg(res.msg,{
+                            icon: 2,
+                            time: 1000
+                        });
+                    }
+                })
+            }
+        });
+    });
+
+</script>
+</html>
+

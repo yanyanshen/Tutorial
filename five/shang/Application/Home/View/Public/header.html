@@ -1,0 +1,76 @@
+<!-- top开始 -->
+<div class="top">
+    <div class="topCont frm_sty clearfix">
+        <p class="fl">  <b style="color:#000;"><switch name="Think.session.level">
+            <case value="1">普通会员</case>
+            <case value="2">铜牌会员</case>
+            <case value="3">银牌会员</case>
+            <case value="4">金牌会员</case>
+            <case value="5">钻石会员</case>
+        </switch>
+            {$Think.session.username}&nbsp;&nbsp;&nbsp;&nbsp;</b>欢迎来到美伦美尚！</p>
+        <p class="fr">
+            <gt name="Think.session.id" value="0">
+                <a href="javascript:logout()">退出</a> &nbsp&nbsp&nbsp
+                <a href="{:u('Member/memberinfo')}">会员中心</a>
+                <else/>
+                <a href="{:u('User/login')}">登录</a>&nbsp&nbsp&nbsp
+                <a href="{:u('User/register')}">注册</a>&nbsp&nbsp&nbsp
+            </gt>
+
+        </p>
+    </div>
+</div>
+<!-- top结束 -->
+<div class="topNav">
+    <div class="topNavCont frm_sty clearfix">
+        <h1 class="fl"><img src="__STATIC__/images/logo.png" alt="" height="85px"/></h1>
+        <ul class="fl clearfix">
+            <li  ><a href="{:u('Index/index')}" >首页</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'护肤'))} "  >护肤</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'彩妆'))}"  >彩妆</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'香水'))}">香水</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'洗护'))}">洗护</a></li>
+
+
+        </ul>
+        <form action="{:u('Home/Index/search')}" method="get" class="fr clearfix">
+            <input type="text" class="text" name="name" value="{$name}"/>
+            <input type="submit" id="submit" value="" />
+        </form>
+    </div>
+</div>
+<!-- topNav结束 -->
+<!-- 置顶导航istop开始 -->
+<div class="istop">
+    <div class="istopCont frm_sty clearfix">
+        <h1 class="fl"><img src="__STATIC__/images/logo.png" height="85px" alt="" /></h1>
+        <ul class="fl clearfix">
+            <li><a href="{:u('Index/index')}" target="_blank">首页</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'护肤'))} "  >护肤</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'彩妆'))}"  >彩妆</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'香水'))}">香水</a></li>
+            <li><a href="{:U('Index/search',array('name'=>'洗护'))}">洗护</a></li>
+        </ul>
+        <form action="{:U(Index/search)}" method="get" class="fr clearfix">
+            <input type="text" class="text" name="name"/>
+            <input type="submit" id="submit" value=""/>
+        </form>
+    </div>
+</div>
+<!-- 置顶导航istop结束 -->
+<script>
+    function logout(){
+        //询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/User/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.href="{:U('Home/Index/index')}";
+                }
+            });
+        });
+    }
+
+</script>

@@ -1,0 +1,183 @@
+@charset "utf-8";
+body{background-color: #f5f5f5;}
+/*banner样式*/
+.banner {position:relative; width:100%; height:478px;  overflow:hidden;}
+.banner .banner-img{width:9600px;position:absolute; top:0; left:0;}
+.banner .banner-img li { float:left;}
+.banner .banner-img img{width:1920px;height:auto;}
+.banner .banner-menu {width:100%; position:absolute; bottom:10px; left:0; text-align:center;}
+.banner .banner-menu li { display: inline-block;width:21px;height:21px;background: url(../images/cosmetics_c2.png) no-repeat ;  margin:0 15px;cursor:pointer;}
+.banner .banner-menu li.select {background: url(../images/cosmetics_c1.png) no-repeat;}
+.banner div { position:absolute; top:35%;cursor:pointer;display: none;}
+.banner:hover div{display: block;}
+.banner .btn_l {left:15%;}
+.banner .btn_r {right:15%;}
+
+/*品牌展示样式*/
+.brandShow{width:100%; min-width: 1200px;height:450px; }
+.brandShow .brandShowCont{width:1200px;margin:0 auto;height:450px;position:relative;background: #fff;}
+.brandShow .brandShowCont ul{height:78px;}
+.brandShow .brandShowCont ul li{float:left;width:300px;height:78px;line-height: 78px;text-align: center;font-size: 20px;color:#333;}
+.brandShow .brandShowCont ul li.active {border-bottom: 3px solid #e8013d;}
+.brandShow .brandShowCont .showCont{height:370px;margin:20px 160px;display: none;}
+.brandShow .brandShowCont .showCont ol{position:relative;}
+.brandShow .brandShowCont .showCont ol li{float:left;margin-bottom: 8px;margin-right:8px;}
+.brandShow .brandShowCont .showCont ol li img{transition:all 0.4s;}
+.brandShow .brandShowCont .showCont ol li:hover img{-webkit-filter:drop-shadow(1px 1px 3px #808080);-ms-filter:drop-shadow(1px 1px 3px #808080);-o-filter:drop-shadow(1px 1px 3px #808080);-moz-filter:drop-shadow(1px 1px 3px #808080);filter:drop-shadow(1px 1px 3px #808080);-webkit-transform:scale(1.02);
+    -ms-transform:scale(1.02);-o-transform:scale(1.02);-moz-transform:scale(1.02);transform:scale(1.02);
+}
+
+
+/*分隔段样式*/
+.divide{width:100%;height:60px;background: #e2023a;}
+.divide p{font-size: 18px;color:#fff;line-height: 60px;text-align: center;}
+.divide p span{font-size: 14px;margin-left: 10px; border-left:1px solid #fff;padding-left: 10px;transition:all 0.6s;}
+.divide:hover p{font-size: 20px;}
+
+/*脸部产品样式*/
+.face{width:100%;min-width:1200px;height:auto;}
+.retSty{width:1200px;background: #fff;margin:0 auto;}
+.retSty h3{font-size:18px;color:#333333; padding-top: 30px;padding-bottom: 10px;}
+.retSty h3 span{font-size: 16px;font-family: Arial;}
+.before{width:50px;height:30px;padding-left: 1060px;margin-top: -30px;cursor: pointer;}
+.after{height:30px;padding-left: 1120px;margin-top: -30px;cursor: pointer;}
+/*.more{padding-left: 1124px;}*/
+/*脸部产品左部样式*/
+.face .faceCont .faceContL{width:280px;height:640px;background: url(../images/face.jpg)}
+.face .faceCont .faceContL ul{padding-top: 404px;padding-left: 2px;}
+.face .faceCont .faceContL ul li{width:130px;height:50px;background: #e07769;float:left;margin:4px;}
+.face .faceCont .faceContL ul li a{display:block;color:#fff;font-size: 16px;line-height: 50px;text-align: center;}
+.face .faceCont .faceContL ul li:hover{-webkit-filter:drop-shadow(1px 1px 3px #e07769);-ms-filter:drop-shadow(1px 1px 3px #e07769);-o-filter:drop-shadow(1px 1px 3px #e07769);-moz-filter:drop-shadow(1px 1px 3px #e07769);filter:drop-shadow(1px 1px 3px #e07769);}
+
+/*脸部产品右部样式*/
+.face .lunbo{width:900px;height:640px;margin-left: 280px;position: relative;overflow: hidden;}
+.face .lunbo .faceContR{width:1840px;height:640px;position: absolute;top:0px;left:0px;}
+.face .faceCont .faceContR ul{width:900px;height:640px;margin-left:20px;float:left;}
+.face .faceCont .faceContR ul li{width:190px;height:106px;float:left;padding-left: 20px;/*border:1px solid red;*/position: relative;margin-bottom: 10px;}
+.face .faceCont .faceContR ul li.li1{background:url(../images/cosmetics_pro00.jpg) no-repeat center 0;padding-top: 214px;}
+.face .faceCont .faceContR ul li h6{font-size:14px;margin-bottom: 10px;}
+.face .faceCont .faceContR ul li h6 a{color:#333333;}
+.face .faceCont .faceContR ul li p{font-size:16px;color:#e2023a;margin-bottom: 10px;}
+.face .faceCont .faceContR ul li span{display: block;width:108px;height:34px;background: #e2023a;color:#fff;line-height: 34px;text-align: center;}
+.face .faceCont .faceContR ul li.li2{background:url(../images/cosmetics_pro2.jpg) no-repeat center 0;padding-top: 214px;}
+.face .faceCont .faceContR ul li.li3{background:url(../images/cosmetics_pro3.jpg) no-repeat center 0;padding-top: 214px;}
+.face .faceCont .faceContR ul li.li4{background:url(../images/cosmetics_pro4.jpg) no-repeat center 0;padding-top: 214px;}
+/*.face .faceCont .faceContR ul.ul2{margin-top: 10px;}*/
+.face .faceCont .faceContR ul li.li5{background:url(../images/cosmetics_pro5.jpg) no-repeat center 0;padding-top: 214px;}
+.face .faceCont .faceContR ul li.li6{background:url(../images/cosmetics_pro6.jpg) no-repeat center 0;padding-top: 214px;}
+.face .faceCont .faceContR ul li.li7{background:url(../images/cosmetics_pro7.jpg) no-repeat center 0;padding-top: 214px;}
+.face .faceCont .faceContR ul li.li8{background:url(../images/cosmetics_pro8.jpg) no-repeat center 0;padding-top: 214px;}
+
+
+/*脸部产品淘宝风焦点图样式*/
+
+.face .faceCont .faceContR ul li .li01{width:210px;height:320px;position: absolute;top:0px;left:0px;display: none;}
+.face .faceCont .faceContR ul li .li01 h6{padding-left:20px;padding-top:6px;font-size:14px;margin-bottom: 10px;}
+.face .faceCont .faceContR ul li .li01 h6 a{color:#333333;}
+.face .faceCont .faceContR ul li .li01 p{font-size:16px;color:#e2023a;margin-bottom: 10px;padding-left:20px;}
+.face .faceCont .faceContR ul li .li01 span{display: block;width:108px;height:34px;background: #e2023a;color:#fff;line-height: 34px;text-align: center;margin-left: 20px;}
+.face .faceCont .faceContR ul li .li01 .small ul li.j0{position:absolute; top:0;left:160px;}
+.face .faceCont .faceContR ul li .li01 .small ul li.j1{position:absolute; top:70px;left:160px;}
+.face .faceCont .faceContR ul li .li01 .small ul li.j2{position:absolute; top:140px;left:160px;}
+
+.face .faceCont .faceContR ul li:hover .li01{display: block;}
+.face .faceCont .faceContR ul .li1:hover .h6{display: none;}
+/*产品点击时的cs3样式*/
+/*.face .faceCont .faceContR ul li:hover{background: #000;opacity:1;filter:alpha(opacity=100);}*/
+
+
+
+/*眼部样式*/
+.eyes{width:100%;min-width:1200px;height:auto;}
+.retSty{width:1200px;background: #fff;margin:0 auto;}
+.retSty h3{font-size:18px;color:#333333; padding-top: 30px;padding-bottom: 10px;}
+.retSty h3 span{font-size: 16px;font-family: Arial;}
+.before{width:50px;height:30px;padding-left: 1060px;margin-top: -30px;cursor: pointer;}
+.after{height:30px;padding-left: 1120px;margin-top: -30px;cursor: pointer;}
+/*.more{padding-left: 1124px;}*/
+/*眼部产品左部样式*/
+.eyes .eyesCont .eyesContL{width:280px;height:640px;background: url(../images/eyes.jpg)}
+.eyes .eyesCont .eyesContL ul{padding-top: 404px;padding-left: 2px;}
+.eyes .eyesCont .eyesContL ul li{width:130px;height:50px;background: #281f21;float:left;margin:4px;}
+.eyes .eyesCont .eyesContL ul li a{display:block;color:#fff;font-size: 16px;line-height: 50px;text-align: center;}
+.eyes .eyesCont .eyesContL ul li:hover{-webkit-filter:drop-shadow(1px 1px 3px #281f21);-ms-filter:drop-shadow(1px 1px 3px #281f21);-o-filter:drop-shadow(1px 1px 3px #281f21);-moz-filter:drop-shadow(1px 1px 3px #281f21);filter:drop-shadow(1px 1px 3px #281f21);}
+
+/*眼部产品右部样式*/
+.eyes .lunbo{width:900px;height:640px;margin-left: 280px;position: relative;overflow: hidden;}
+.eyes .lunbo .eyesContR{width:1840px;height:640px;position: absolute;top:0px;left:0px;}
+.eyes .eyesCont .eyesContR ul{width:900px;height:640px;margin-left:20px;float:left;}
+.eyes .eyesCont .eyesContR ul li{width:190px;height:106px;float:left;padding-left: 20px;/*border:1px solid red;*/position: relative;margin-bottom: 10px;}
+.eyes .eyesCont .eyesContR ul li.li1{background:url(../images/cosmetics_pro40.jpg) no-repeat center 0;padding-top: 214px;}
+.eyes .eyesCont .eyesContR ul li h6{font-size:14px;margin-bottom: 10px;}
+.eyes .eyesCont .eyesContR ul li h6 a{color:#333333;}
+.eyes .eyesCont .eyesContR ul li p{font-size:16px;color:#e2023a;margin-bottom: 10px;}
+.eyes .eyesCont .eyesContR ul li span{display: block;width:108px;height:34px;background: #e2023a;color:#fff;line-height: 34px;text-align: center;}
+.eyes .eyesCont .eyesContR ul li.li2{background:url(../images/cosmetics_pro9.jpg) no-repeat center 0;padding-top: 214px;}
+.eyes .eyesCont .eyesContR ul li.li3{background:url(../images/cosmetics_pro10.jpg) no-repeat center 0;padding-top: 214px;}
+.eyes .eyesCont .eyesContR ul li.li4{background:url(../images/cosmetics_pro11.jpg) no-repeat center 0;padding-top: 214px;}
+/*.face .faceCont .faceContR ul.ul2{margin-top: 10px;}*/
+.eyes .eyesCont .eyesContR ul li.li5{background:url(../images/cosmetics_pro12.jpg) no-repeat center 0;padding-top: 214px;}
+.eyes .eyesCont .eyesContR ul li.li6{background:url(../images/cosmetics_pro13.jpg) no-repeat center 0;padding-top: 214px;}
+.eyes .eyesCont .eyesContR ul li.li7{background:url(../images/cosmetics_pro14.jpg) no-repeat center 0;padding-top: 214px;}
+.eyes .eyesCont .eyesContR ul li.li8{background:url(../images/cosmetics_pro15.jpg) no-repeat center 0;padding-top: 214px;}
+/*脸部产品淘宝风焦点图样式*/
+
+.eyes .eyesCont .eyesContR ul li .li02{width:210px;height:320px;position: absolute;top:0px;left:0px;display: none;}
+.eyes .eyesCont .eyesContR ul li .li02 h6{padding-left:20px;padding-top:6px;font-size:14px;margin-bottom: 10px;}
+.eyes .eyesCont .eyesContR ul li .li02 h6 a{color:#333333;}
+.eyes .eyesCont .eyesContR ul li .li02 p{font-size:16px;color:#e2023a;margin-bottom: 10px;padding-left:20px;}
+.eyes .eyesCont .eyesContR ul li .li02 span{display: block;width:108px;height:34px;background: #e2023a;color:#fff;line-height: 34px;text-align: center;margin-left: 20px;}
+.eyes .eyesCont .eyesContR ul li .li02 .smalleyes ul li.j3{position:absolute; top:0;left:160px;}
+.eyes .eyesCont .eyesContR ul li .li02 .smalleyes ul li.j4{position:absolute; top:70px;left:160px;}
+.eyes .eyesCont .eyesContR ul li .li02 .smalleyes ul li.j5{position:absolute; top:140px;left:160px;}
+
+.eyes .eyesCont .eyesContR ul li:hover .li02{display: block;}
+.eyes .eyesCont .eyesContR ul .li1:hover .h6{display: none;}
+
+
+/*唇部样式*/
+.mouse{width:100%;min-width:1200px;height:auto;}
+.retSty{width:1200px;background: #fff;margin:0 auto;}
+.retSty h3{font-size:18px;color:#333333; padding-top: 30px;padding-bottom: 10px;}
+.retSty h3 span{font-size: 16px;font-family: Arial;}
+.before{width:50px;height:30px;padding-left: 1060px;margin-top: -30px;cursor: pointer;}
+.after{height:30px;padding-left: 1120px;margin-top: -30px;cursor: pointer;}
+/*.more{padding-left: 1124px;}*/
+/*唇部部产品左部样式*/
+.mouse .mouseCont .mouseContL{width:280px;height:640px;background: url(../images/mouse.jpg)}
+.mouse .mouseCont .mouseContL ul{padding-top: 404px;padding-left: 2px;}
+.mouse .mouseCont .mouseContL ul li{width:130px;height:50px;background: #ff517a;float:left;margin:4px;}
+.mouse .mouseCont .mouseContL ul li a{display:block;color:#fff;font-size: 16px;line-height: 50px;text-align: center;}
+.mouse .mouseCont .mouseContL ul li:hover{-webkit-filter:drop-shadow(1px 1px 3px #ff517a);-ms-filter:drop-shadow(1px 1px 3px #ff517a);-o-filter:drop-shadow(1px 1px 3px #ff517a);-moz-filter:drop-shadow(1px 1px 3px #ff517a);filter:drop-shadow(1px 1px 3px #ff517a);}
+
+/*唇部产品右部样式*/
+.mouse .lunbo{width:900px;height:640px;margin-left: 280px;position: relative;overflow: hidden;}
+.mouse .lunbo .mouseContR{width:1840px;height:640px;position: absolute;top:0px;left:0px;}
+.mouse .mouseCont .mouseContR ul{width:900px;height:640px;margin-left:20px;float:left;}
+.mouse .mouseCont .mouseContR ul li{width:190px;height:106px;float:left;padding-left: 20px;/*border:1px solid red;*/position: relative;margin-bottom: 10px;}
+.mouse .mouseCont .mouseContR ul li.li1{background:url(../images/cosmetics_pro50.jpg) no-repeat center 0;padding-top: 214px;}
+.mouse .mouseCont .mouseContR ul li h6{font-size:14px;margin-bottom: 10px;}
+.mouse .mouseCont .mouseContR ul li h6 a{color:#333333;}
+.mouse .mouseCont .mouseContR ul li p{font-size:16px;color:#e2023a;margin-bottom: 10px;}
+.mouse .mouseCont .mouseContR ul li span{display: block;width:108px;height:34px;background: #e2023a;color:#fff;line-height: 34px;text-align: center;}
+.mouse .mouseCont .mouseContR ul li.li2{background:url(../images/cosmetics_pro18.jpg) no-repeat center 0;padding-top: 214px;}
+.mouse .mouseCont .mouseContR ul li.li3{background:url(../images/cosmetics_pro19.jpg) no-repeat center 0;padding-top: 214px;}
+.mouse .mouseCont .mouseContR ul li.li4{background:url(../images/cosmetics_pro20.jpg) no-repeat center 0;padding-top: 214px;}
+/*.face .faceCont .faceContR ul.ul2{margin-top: 10px;}*/
+.mouse .mouseCont .mouseContR ul li.li5{background:url(../images/cosmetics_pro21.jpg) no-repeat center 0;padding-top: 214px;}
+.mouse .mouseCont .mouseContR ul li.li6{background:url(../images/cosmetics_pro22.jpg) no-repeat center 0;padding-top: 214px;}
+.mouse .mouseCont .mouseContR ul li.li7{background:url(../images/cosmetics_pro23.jpg) no-repeat center 0;padding-top: 214px;}
+.mouse .mouseCont .mouseContR ul li.li8{background:url(../images/cosmetics_pro24.jpg) no-repeat center 0;padding-top: 214px;}
+/*唇部产品淘宝风焦点图样式*/
+
+.mouse .mouseCont .mouseContR ul li .li03{width:210px;height:320px;position: absolute;top:0px;left:0px;display: none;}
+.mouse .mouseCont .mouseContR ul li .li03 h6{padding-left:20px;padding-top:6px;font-size:14px;margin-bottom: 10px;}
+.mouse .mouseCont .mouseContR ul li .li03 h6 a{color:#333333;}
+.mouse .mouseCont .mouseContR ul li .li03 p{font-size:16px;color:#e2023a;margin-bottom: 10px;padding-left:20px;}
+.mouse .mouseCont .mouseContR ul li .li03 span{display: block;width:108px;height:34px;background: #e2023a;color:#fff;line-height: 34px;text-align: center;margin-left: 20px;}
+.mouse .mouseCont .mouseContR ul li .li03 .smallmouse ul li.j6{position:absolute; top:0;left:160px;}
+.mouse .mouseCont .mouseContR ul li .li03 .smallmouse ul li.j7{position:absolute; top:70px;left:160px;}
+.mouse .mouseCont .mouseContR ul li .li03 .smallmouse ul li.j8{position:absolute; top:140px;left:160px;}
+
+.mouse .mouseCont .mouseContR ul li:hover .li03{display: block;}
+.mouse .mouseCont .mouseContR ul .li1:hover .h6{display: none;}

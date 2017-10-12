@@ -1,0 +1,724 @@
+[ 2016-07-27T19:15:04+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-27T19:15:12+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T19:15:15+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T19:15:17+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '111' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('111','698d51a19d8a121ce581499d7b701668') [ RunTime:0.0270s ]
+
+[ 2016-07-27T19:15:32+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_12 D:\five\shang\Application\Home\Controller\UserController.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-27T19:15:37+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:15:41+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:15:45+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' AND pwd='698d51a19d8a121ce581499d7b701668' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:18:41+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_12 D:\five\shang\Application\Home\Controller\UserController.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:18:49+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:18:52+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:19:21+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:19:25+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:19:29+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:19:30+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select g.gid,goodsname,buynum,pic,price,num from shang_cart as ca ,shang_goods as g  where ca.gid=g.gid and uid=3 [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:19:36+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-27a5f3d128add2ec03','355','1469618375') [ RunTime:0.0326s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('12','200','1') [ RunTime:0.0312s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('12','184','1') [ RunTime:0.0156s ]
+
+[ 2016-07-27T19:20:30+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/12.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 12 [ RunTime:0.0216s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=12 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='270' WHERE `gid` = 200 [ RunTime:0.0176s ]
+
+[ 2016-07-27T19:20:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:20:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:21:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:21:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:21:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:21:59+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:22:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:22:11+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:22:28+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 200 D:\five\shang\Application\Home\Controller\UserController.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:22:32+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T19:22:37+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:22:37+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' AND pwd='698d51a19d8a121ce581499d7b701668' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:22:43+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('12','2016-07-27e172be4317beaad5','299','1469618563') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('13','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T19:23:20+08:00 ] 172.16.11.198 /index.php/Home/Order/add_ars.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_address` [ RunTime:0.0080s ]
+SQL: UPDATE `shang_address` SET `isdefault`='0' WHERE `isdefault` = 1 AND `uid` = 12 [ RunTime:0.0010s ]
+SQL: INSERT INTO `shang_address` (`uid`,`name`,`address`,`tel`,`zip`,`isdefault`) VALUES ('12','zcx','河南省-开封市-顺河回族区-玉林街25号','15538309976','417500','1') [ RunTime:0.0340s ]
+
+[ 2016-07-27T19:23:39+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/13.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 13 [ RunTime:0.0312s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=13 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='265' WHERE `gid` = 184 [ RunTime:0.0312s ]
+
+[ 2016-07-27T19:23:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:24:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:24:51+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:24:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:25:01+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('12','2016-07-27cceaae936d3b8353','299','1469618701') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('14','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T19:25:08+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:25:27+08:00 ] 172.16.11.198 /index.php/Home/Member/cancel/oid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: DELETE FROM `shang_order` WHERE `oid` = 14 [ RunTime:0.0550s ]
+
+[ 2016-07-27T19:25:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:25:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:25:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:25:48+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T19:35:01+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_12 D:\five\shang\Application\Home\Controller\UserController.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0030s ]
+
+[ 2016-07-27T19:35:05+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:35:11+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:35:15+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T19:35:15+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select g.gid,goodsname,buynum,pic,price,num from shang_cart as ca ,shang_goods as g  where ca.gid=g.gid and uid=3 [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:35:18+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-27d0ec61d0d7ee8358','299','1469619318') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('16','184','1') [ RunTime:0.0468s ]
+
+[ 2016-07-27T19:42:18+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 200 D:\five\shang\Application\Home\Controller\UserController.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0080s ]
+
+[ 2016-07-27T19:42:28+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-27T19:42:32+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T19:42:32+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' AND pwd='698d51a19d8a121ce581499d7b701668' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 12 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-27T19:42:36+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('12','2016-07-270998acf7b8c17ab6','199','1469619756') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('17','183','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T19:44:58+08:00 ] 172.16.11.198 /index.php/Home/Order/edit_ars.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_address` [ RunTime:0.0040s ]
+SQL: UPDATE `shang_address` SET `name`='zcx',`address`='河南省-开封市-市、县级市、县-玉林街25号',`tel`='15538309976',`zip`='417500' WHERE `id` = 21 [ RunTime:0.0312s ]
+
+[ 2016-07-27T19:45:15+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:45:22+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shang_cart` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_cart` (`uid`,`gid`,`buynum`) VALUES ('12','200','1') [ RunTime:0.0468s ]
+
+[ 2016-07-27T19:45:25+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-27T19:45:39+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 70 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:48:50+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:49:19+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 187 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T19:49:30+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 61 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-27T20:03:39+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+
+[ 2016-07-27T20:03:43+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T20:03:46+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-27T20:03:47+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select g.gid,goodsname,buynum,pic,price,num from shang_cart as ca ,shang_goods as g  where ca.gid=g.gid and uid=3 [ RunTime:0.0010s ]
+
+[ 2016-07-27T20:03:59+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-27dcfd4fb782b8544f','199','1469621039') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('19','183','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T20:13:26+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-277dd584fe558f77aa','56','1469621606') [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('20','200','1') [ RunTime:0.0468s ]
+
+[ 2016-07-27T20:20:48+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 69 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0050s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-2754b78b2f2fbb8064','69','1469622048') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('21','69','1') [ RunTime:0.0468s ]
+
+[ 2016-07-27T20:23:30+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/21.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 21 [ RunTime:0.0406s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=21 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 69 LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='234' WHERE `gid` = 69 [ RunTime:0.0156s ]
+
+[ 2016-07-27T20:23:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:25:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:25:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:25:34+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-27e7ef55a71477a6fb','299','1469622334') [ RunTime:0.0478s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('22','184','1') [ RunTime:0.0156s ]
+
+[ 2016-07-27T20:25:36+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/22.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 22 [ RunTime:0.0960s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=22 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='266' WHERE `gid` = 184 [ RunTime:0.1110s ]
+
+[ 2016-07-27T20:25:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:27:06+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-27cf5405ed193ac510','56','1469622426') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0166s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('23','200','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T20:27:11+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/23.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 23 [ RunTime:0.0490s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=23 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0040s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='271' WHERE `gid` = 200 [ RunTime:0.0320s ]
+
+[ 2016-07-27T20:27:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:29:39+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/23.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 23 [ RunTime:0.0310s ]
+
+[ 2016-07-27T20:29:45+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/23.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 23 [ RunTime:0.1530s ]
+
+[ 2016-07-27T20:29:57+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/23.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 23 [ RunTime:0.0340s ]
+
+[ 2016-07-27T20:30:25+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/23.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 23 [ RunTime:0.0410s ]
+
+[ 2016-07-27T20:38:24+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0030s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-27bdb03fb03a246904','299','1469623104') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('24','184','1') [ RunTime:0.0468s ]
+
+[ 2016-07-27T20:48:59+08:00 ] 172.16.11.198 /index.php/Home/Order/edit_ars.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_address` [ RunTime:0.0000s ]
+SQL: UPDATE `shang_address` SET `name`='zcx',`address`='河南省-郑州市-高新区-电子商务产业园中心',`tel`='15538309976',`zip`='450001' WHERE `id` = 2 [ RunTime:0.0476s ]
+
+[ 2016-07-27T20:49:18+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/24.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 24 [ RunTime:0.0390s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=24 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='267' WHERE `gid` = 184 [ RunTime:0.0280s ]
+
+[ 2016-07-27T20:49:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:49:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T20:49:42+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-274420ed4cd5195f8a','299','1469623782') [ RunTime:0.0362s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('25','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T21:11:02+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/25.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 25 [ RunTime:0.0330s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=25 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='268' WHERE `gid` = 184 [ RunTime:0.0156s ]
+
+[ 2016-07-27T21:11:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T21:11:18+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T21:11:23+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-2726b5c2d50b750d91','299','1469625083') [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('26','184','1') [ RunTime:0.0370s ]
+
+[ 2016-07-27T21:11:31+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/26.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 26 [ RunTime:0.0450s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=26 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='269' WHERE `gid` = 184 [ RunTime:0.0312s ]
+
+[ 2016-07-27T21:11:34+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T21:11:48+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-277255eb8c3d30983a','299','1469625108') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('27','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-27T21:12:02+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/27.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 27 [ RunTime:0.0400s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=27 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='270' WHERE `gid` = 184 [ RunTime:0.0280s ]
+
+[ 2016-07-27T21:12:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-27T21:17:17+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-27T21:17:40+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `shang_cart` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_cart` (`uid`,`gid`,`buynum`) VALUES ('3','184','2') [ RunTime:0.1092s ]
+

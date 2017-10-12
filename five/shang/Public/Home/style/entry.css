@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.outside{width:100%;/*height:630px;*/background:#f2f2f2;overflow:hidden;}
+.outside .inside{width:100%;background:url(../images/entry3.png) no-repeat center center;margin:0 auto;height:490px;/*margin-top:70px*/;}
+.outside .inside .right{float:right;margin-right:30%;}
+.outside .inside .right h2{font-size:24px;font-weight:bold;color:#666;margin-top:80px;}
+.outside .inside .right form input#t1{width:250px;height:35px;padding-left:50px;border:1px solid #d9d9d9;background:url(../images/p1.png) no-repeat;margin-top:15px;}
+.outside .inside .right form input#t3{border:1px solid #d9d9d9;width:150px;height:35px;padding-left:50px;margin-top:15px;}
+.outside .inside .right form  h4{width:80px;height:35px;border:1px solid #d9d9d9;float:right;margin-left:10px;margin-top:15px;text-align:center;line-height:35px;}
+.outside .inside .right form input#t2{border:1px solid #d9d9d9;width:250px;height:35px;padding-left:50px;background:url(../images/p2.png) no-repeat;margin-top:15px;}
+.outside .inside .right form  div{ width:250px; padding-left:50px;color:red ;margin-top:15px}
+
+.outside .inside .right .input input{margin-right:-5px; float:right;font-size:20px;background:#e2003e;width:305px;height:35px;color:#fff;margin-top:15px;text-align:center;line-height:35px;}
+.outside .inside .right h4{float:left;margin-top:15px;width:130px;height:20px;}
+
+
+.outside .inside .right h5{float:right;height:20px;width:80px;color:#ff7f00;margin-top:15px;}
+.outside .inside .right a:link {color:#000;text-decoration:none;}
+.outside .inside .right a:visited {color:#000;text-decoration:none;}
+.outside .inside .right a:hover {color:#ff7f00;text-decoration:none;}

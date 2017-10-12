@@ -1,0 +1,129 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>修改</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 190
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">订单管理</a></li>
+        <li><a href="#">订单编辑</a></li>
+    </ul>
+</div>
+
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab1" class="tabson">
+            <div style="float:left;width:420px" >
+            <form action="{:U('Admin/Order/edit',array('oid'=>$orderinfo['oid']))}" method="post">
+                <ul class="forminfo">
+                    <li><label>订单编号<b>*</b></label>
+                        <br/>{$orderinfo['ordersyn']} </li>
+                    <li><label>用户名<b>*</b></label>
+                        <br/>{$userinfo['username']} </li>
+                    <li><label>原价<b>*</b></label>
+                        <br/><del>{$orderinfo['preprices']}</del> </li>
+                    <li><label>折后价格<b>*</b></label>
+                        <br/>{$orderinfo['prices']} </li>
+                    <li><label>收货人<b>*</b></label>
+                        <br/>{$addressinfo['name']} </li>
+                    <li><label>联系方式<b>*</b></label>
+                        <br/>{$addressinfo['tel']} </li>
+                    <li><label>发货地址<b>*</b></label>
+                        <br/>{$addressinfo['address']} </li>
+                    <li>创建时间<b> :</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{$orderinfo.createtime|date="y-m-d H:i:s",###} </li>
+                    <li><label>订单状态<b>*</b></label>
+                        <div class="vocation">
+                            <select class="select2" name="status"  >
+                                <option value="{$orderinfo.status}" ><switch name="orderinfo.status">
+                                    <case value="1">已下单，未付款</case>
+                                    <case value="2">已付款，未发货</case>
+                                    <case value="3">已发货，未签收</case>
+                                    <case value="4">已签收，未评价</case>
+                                    <case value="10">已评价，订单完成</case>
+                                    <case value="5">已取消</case>
+                                    <case value="6">申请退货</case>
+                                    <case value="7">退货中</case>
+                                    <case value="8">已退货</case>
+                                    <case value="9">商家已取消，缺货</case>
+
+                                    <default/>未知
+                                </switch></option>
+                                <option value="1">已下单，为付款</option>
+                                <option value="2">已付款，为发货</option>
+                                <option value="3">已发货，未签收</option>
+                                <option value="4">已签收，未评价</option>
+                                <option value="10">已评价，订单完成</option>
+                                <option value="5">已取消</option>
+                                <option value="6">申请退货</option>
+                                <option value="7">退货中</option>
+                                <option value="8">已退货</option>
+                                <option value="9">商家已取消，缺货</option>
+
+                            </select>
+                            <li><label>&nbsp;</label><input type="submit" class="btn" value="保存"/></li>
+                        </div>
+                </ul>
+            </form>
+            </div>         <div style="float:left">
+                            <table class="tablelist">
+                                <thead>
+                                <tr>
+                                    <th>商品名<i class="sort"><img src="__STATIC__/images/px.gif" /></i></th>
+                                    <th>图片</th>
+                                    <th>购买数量</th>
+                                    <th>单价</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="orderlist" id="val" key="k">
+                                    <tr>
+                                        <td>{$val.goodsname}</td>
+                                        <td><img src="__UPLOAD__/goods/100_{$val.pic}"/></td>
+                                        <td>{$val.buynum}</td>
+                                        <td>{$val.price}</td>
+
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                           </div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

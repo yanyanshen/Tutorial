@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>我的订单</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/YMDClass.mini.js"></script>
+    <script src="__STATIC__/js/geo.js"></script>
+    <script src="__STATIC__/js/jquery.form.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <script src="__STATIC__/js/order.js"></script>
+    <script src="__STATIC__/js/reset.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/reset1.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/style/order.css">
+    <link rel="stylesheet" href="__STATIC__/style/swiper.min.css">
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/index.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <style>
+        #list li{
+            margin: 0 60px 0 30px;
+        }
+    </style>
+    <style>
+
+
+
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #3D96C9;
+            color:#fff;
+        }
+        #page a:hover{
+            background: deeppink;
+            color:#000;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 20px;
+            height:18px;
+            padding:5px;
+            margin: 5px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #ff2832;
+            color:#000;
+            font-weight: bold;
+        }
+        #page span.rows{
+            float:left;
+            margin-right:50px;
+            margin-top:5px;
+            font-size: 20px;
+        }
+        #page span.rows b{
+            font-size: 20px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<include file="Public/header"/>
+
+<!-- 我的订单开始 myorder-->
+<!-- 左侧边栏开始 -->
+<div class="myorder frm_sty clearfix">
+    <div class="sidebar fl">
+        <img src="__UPLOAD__/UserPic/{$pic['pic']|default='5.jpg'}" height="120px" width="120px">
+        <a  href="{:u('Member/order')}">我的订单</a>
+        <a class="no" href="{:u('Member/collect')}">我的收藏</a>
+        <a href="{:u('Member/level')}">我的会员等级</a>
+        <a href="{:u('Member/memberinfo')}">个人信息</a>
+        <a href="{:u('Member/address')}">收货地址</a>
+    </div>
+    <!-- 左侧边栏结束 -->
+    <div class="order fl">
+        <h4>我的收藏</h4>
+        <div class="orderCont">
+                <table>
+                     <ul id="list" class="clearfix">
+                           <volist name="orderList" id="val">
+                                <li class="or_li22" style="margin: 10px 100px 30px 80px ;float: left" ><img src="__UPLOAD__/goods/100_{$val.pic}" style="width: 150px;height: 150px"  ><p>&nbsp&nbsp&nbsp&nbsp&nbsp{$val.goodsname}</p>
+                                    &nbsp&nbsp&nbsp <a href="#">总额￥{$val.price}</a>&nbsp&nbsp&nbsp
+                                 <a href="javascript: del({$val['id']})" class="tablelink"> 删除</a>
+                                </li>
+                           </volist>
+                     </ul>
+                </table>
+        </div>
+        &nbsp &nbsp&nbsp&nbsp<div class="pagin">
+        <ul class="orderlist">
+            <li><div id="page">
+                {$page}
+            </div></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- hot样式开始 -->
+
+<!-- Swiper JS -->
+
+</div>
+
+<include file="Public/right"/>
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+
+</body>
+<script>
+    //删除
+    function  del(id){
+        //询问框
+        layer.confirm('您确定要删除吗?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home/Member/delcollect')}",{'id':id},function(res){
+                if(res.status=='ok'){
+                    layer.msg(res.msg,{
+                        icon:1,
+                        time:2000
+                    },function(){
+                        location.href="{:U('Home/Member/collect')}";
+                    })
+
+                }else{
+                    layer.alert(res.msg);
+                    location.href="{:U('Home/Member/collect')}";
+                }
+            });
+        })
+
+    }
+
+
+
+</script>
+</html>

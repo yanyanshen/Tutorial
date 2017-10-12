@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>{$brand.brand_name}</title>
+    <link  rel="stylesheet" href="__STATIC__/style/cosmetics.css"/>
+    <link rel="stylesheet" href="__STATIC__/style/perfume.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link  rel="stylesheet" href="__STATIC__/style/cuerlain.css"/>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/headerAndFooter.js"></script>
+    <script src="__STATIC__/js/cosmetics.js"></script>
+    <script src="__STATIC__/js/jiaodian.js"></script>
+
+</head>
+<body>
+<!-- header开始 -->
+<!-- header结束 -->
+<include file="Public/header"/>
+<!-- 轮播图开始   -->
+<div class="banner">
+    <ul class="banner-img">
+        <volist name="adlist" id="val">
+            <li><a href="#"><img src="__UPLOAD__/Ad/{$val.pic}" alt=""/></a></li>
+        </volist>
+    </ul>
+    <ul class="banner-menu"></ul>
+    <div class="btn_l"><img src="__STATIC__/images/cosmetics_st1.png" alt="" /></div>
+    <div class="btn_r"><img src="__STATIC__/images/cosmetics_st2.png" alt="" /></div>
+</div>
+
+
+<!-- banner结束 -->
+<!-- free开始 -->
+<div class="free clearfix">
+    <div class="freeCont frm_sty clearfix">
+
+        <div class="right fl">
+            <div class="head clearfix">
+                <p class="p1">七月七日当日前两名<span>免单</span></p>
+                <p class="p1 p2">全场第二件<span>半价</span>限量十单</p>
+            </div>
+            <ul class="clearfix">
+                <volist name="goodslist" id="v" >
+                    <li class="li6"><a href="{:u('Index/detail',array('gid'=>$v['gid']))}">
+                        <img src="__UPLOAD__/goods/{$v.pic}" alt="" height="220" width="180" />
+                        <p>{$v.goodsname}<br /><span class="span2">￥{$v.price}</span></p>
+                    </a></li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- free结束 -->
+<!-- man开始 -->
+<div class="free man clearfix">
+    <div class="freeCont manCont frm_sty clearfix">
+
+        <div class="right fl">
+            <div class="head clearfix">
+                <p class="p1">买两套彩妆<span>送</span>睫毛刷</p>
+                <p class="p1 p2">全场第二件<span>半价</span>限量十单</p>
+            </div>
+            <ul class="clearfix">
+                <volist name="goodslist1" id="v" >
+                    <li class="li6"><a href="{:u('Index/detail',array('gid'=>$v['gid']))}">
+                        <img src="__UPLOAD__/goods/{$v.pic}" alt="" height="220" width="180" />
+                        <p>{$v.goodsname}<br /><span class="span2">￥{$v.price}</span></p>
+                    </a></li>
+                </volist>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- man结束 -->
+
+<!-- woman开始 -->
+<div class="free woman clearfix">
+    <div class="freeCont womanCont frm_sty clearfix">
+        <div class="right fl">
+            <div class="head clearfix">
+                <p class="p1">买两瓶女香芬<span>送</span>10ml小样</p>
+                <p class="p1 p2">全场第二件<span>半价</span>限量十单</p>
+            </div>
+            <ul class="clearfix">
+                <volist name="goodslist2" id="v" >
+                    <li class="li6"><a href="{:u('Index/detail',array('gid'=>$v['gid']))}">
+                        <img src="__UPLOAD__/goods/{$v.pic}" alt="" height="220" width="180" />
+                        <p>{$v.goodsname}<br /><span class="span2">￥{$v.price}</span></p>
+                    </a></li>
+                </volist>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- woman结束 -->
+
+<!-- footer开始 -->
+<include file="Public/footer"/>
+<!-- footer结束 -->
+<!-- 侧面导航开始 -->
+<include file="Public/right"/>
+<!-- 侧面导航结束 -->
+</body>
+</html>

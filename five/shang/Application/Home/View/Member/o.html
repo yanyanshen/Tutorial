@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>我的订单</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/YMDClass.mini.js"></script>
+    <script src="__STATIC__/js/geo.js"></script>
+    <script src="__STATIC__/js/jquery.form.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <script src="__STATIC__/js/order.js"></script>
+    <script src="__STATIC__/js/reset.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/reset1.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link rel="stylesheet" href="__STATIC__/style/order.css">
+    <link rel="stylesheet" href="__STATIC__/style/swiper.min.css">
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/index.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <style type="text/css">
+        body .demo-class .layui-layer-title{background:#ccc; color:red; border: none;}
+        body .demo-class .layui-layer-content{background:#ccc; color:white; border: none;}
+    </style>
+    <style>
+        #list li{
+            margin: 0 60px 0 30px;
+        }
+    </style>
+    <style>
+
+
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #3D96C9;
+            color:#fff;
+        }
+        #page a:hover{
+            background: deeppink;
+            color:#000;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 20px;
+            height:18px;
+            padding:5px;
+            margin: 5px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #ff2832;
+            color:#000;
+            font-weight: bold;
+        }
+        #page span.rows{
+            float:left;
+            margin-right:50px;
+            margin-top:5px;
+            font-size: 20px;
+        }
+        #page span.rows b{
+            font-size: 20px;
+            color:red;
+        }
+        .or_li11 a{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<include file="Public/header"/>
+
+<!-- 我的订单开始 myorder-->
+<!-- 左侧边栏开始 -->
+<div class="myorder frm_sty clearfix">
+    <div class="sidebar fl">
+        <img src="__UPLOAD__/UserPic/{$pic['pic']|default='5.jpg'}" height="120px" width="120px">
+        <a class="no" href="{:u('Member/order')}">我的订单</a>
+        <a  href="{:u('Member/collect')}">我的收藏</a>
+        <a href="{:u('Member/level')}">我的会员等级</a>
+        <a href="{:u('Member/memberinfo')}">个人信息</a>
+        <a href="{:u('Member/address')}">收货地址</a>
+    </div>
+    <!-- 左侧边栏结束 -->
+    <div class="order fl">
+        <h4 style="border:0">我的订单</h4>
+        <div class="orderCont fl">
+            <div class="orderCont01 clearfix">
+                <ul>
+                    <li class="or_li1"><a href="#">订单号</a></li>
+                    <li class="or_li2"><a href="#">订单时间</a></li>
+                    <li class="or_li5"><a href="#">订单状态</a></li>
+                    <li><a href="#">操作</a></li>
+                </ul>
+                <div style="clear: both">
+                    <volist name="orderlist" id="vo">
+
+                        {$vo.ordersyn}{$vo.createtime|date='Y-m-d H:i:s',###}
+                        <switch name="vo.status">
+                            <case value="1">已下单，未付款</case>
+                            <case value="2">已付款，未发货</case>
+                            <case value="3">已发货，未签收</case>
+                            <case value="4">已签收，未评价</case>
+                            <case value="5">已取消</case>
+                            <case value="6">申请退货</case>
+                            <case value="7">退货中</case>
+                            <case value="8">已退货</case>
+                            <case value="9">商家已取消，缺货</case>
+                            <case value="10">已评价，订单完成</case>
+                            <default/>未知
+                        </switch>
+                        <switch name="vo.status" >
+                            <case value="1" ><a href="{:U('Home/Order/order',array('oid'=> $vo['oid']))}" style="margin-right:30px">去付款</a> <a href="javascript: del({$vo['oid']})">删除订单</a></case>
+                            <case value="2"><p>静等发货</p></case>
+                            <case value="3"><a href="javascript:sign({$vo['oid']})">签收</a></case>
+                            <case value="4"><a href="javascript:back({$vo['oid']})" style="margin-right:30px">申请退货</a> &nbsp&nbsp<a href="javascript:comment({$vo['oid']},{$v['gid']})">去评价</a></case>
+                            <default />
+                        </switch>
+                        <volist name="vo[0]" id="v">
+                            <ul id="list" class="clearfix">
+                                <li>
+
+                                    <a href="{:u('Index/detail',array('gid'=>$v['gid']))}"><img src="__UPLOAD__/goods/100_{$v.pic}"  ></a><p> {$v.goodsname}</p>&nbsp&nbsp&nbsp
+                                </li>
+                                <li class="or_li22"><p><a href="#">数量：{$v.buynum}</a></p></li>
+                                <li class="or_li33"><a href="#"> 商品名：{$username}</a></li>
+                                <li class="or_li44"><a href="#"> 单价￥{$v.price}</a></li>
+                                <li class="or_li55">
+                                    <switch name="vo.status">
+                                        <case value="1">已下单，未付款</case>
+                                        <case value="2">已付款，未发货</case>
+                                        <case value="3">已发货，未签收</case>
+                                        <case value="4">已签收，未评价</case>
+                                        <case value="5">已取消</case>
+                                        <case value="6">申请退货</case>
+                                        <case value="7">退货中</case>
+                                        <case value="8">已退货</case>
+                                        <case value="9">商家已取消，缺货</case>
+                                        <case value="10">已评价，订单完成</case>
+                                        <default/>未知
+                                    </switch>
+                                </li>
+                                <li class="or_li11">
+                                    <switch name="vo.status" >
+                                        <case value="1" ><a href="{:U('Home/Order/order',array('oid'=> $vo['oid']))}" style="margin-right:30px">去付款</a> <a href="javascript: del({$vo['oid']})">删除订单</a></case>
+                                        <case value="2"><p>静等发货</p></case>
+                                        <case value="3"><a href="javascript:sign({$vo['oid']})">签收</a></case>
+                                        <case value="4"><a href="javascript:back({$vo['oid']})" style="margin-right:30px">申请退货</a> &nbsp&nbsp<a href="javascript:comment({$vo['oid']},{$v['gid']})">去评价</a></case>
+                                        <default />
+                                    </switch>
+
+                                    <!-- <eq name="vo.status" value="1">
+                                     <p><a href="javascript: cancel()" class="tablelink"> 取消订单</a>
+                                         <a href="{:U('Home/Order/order',array('oid'=> $vo['oid']))}">去付款</a>
+                                     </p></eq>
+                                     <eq name="vo.status" value="3"><a href="javascript: right({$v['gid']})" id="qr"> 待收货</a></eq>
+
+                                     <eq name="vo.status" value="4"><a href="javascript: returngoods()"> 申请退货</a>
+                                        &nbsp &nbsp &nbsp <a href="javascript:comment({$v['gid']})">评价</a>
+                                     </eq>-->
+
+                                </li>
+                            </ul>
+                        </volist>
+                    </volist>
+                </div>
+
+                <div class="pagin">
+                    <ul class="orderlist">
+                        <li><div id="page">
+                            {$page}
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hot样式开始 -->
+
+    <!-- Swiper JS -->
+
+    <script src="js/swiper.min.js"></script>
+    <include file="Public/right"/>
+    <!-- 底部开始 -->
+    <include file="Public/footer"/>
+
+</body>
+<script>
+    //去付款
+
+    //退货
+    function back(oid){
+        $.get("{:U('Home/Member/back')}",{'oid':oid}, function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes:function(){
+                        location.href="{:U('Home/Member/order')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })}
+    //去签收订单
+    function sign(oid){
+        //alert(oid);
+        $.get("{:U('Home/Member/sign')}",{'oid':oid}, function (res) {
+            if (res.status == 'ok') {
+                layer.alert(res.msg, {
+                    yes:function(){
+                        location.href="{:U('Home/Member/order')}";
+                    }
+                });
+            } else {
+                layer.alert(res.msg);
+            }
+        })
+    }
+    //删除
+    function del(oid) {
+        //alert($('#form').serialize());
+        layer.confirm('您是真的要删除吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:U('Home//Member/delor')}", {'oid':oid}, function (res) {
+                if (res.status == 'ok') {
+                    layer.alert(res.msg, {
+                        yes: function () {
+                            location.href = "{:U('Home/Member/order')}";
+                        }
+                    });
+                } else {
+                    layer.alert(res.msg);
+                }
+            })
+        })}
+
+
+    //去评论
+    function comment(oid,gid){
+        layer.open({
+            type: 2,
+            skin: 'demo-class',
+            title: '',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['850px', '50%'],
+            content: "{:U('comment')}?gid="+gid+"&oid="+oid//调用方法
+        });
+    }
+</script>
+</html>

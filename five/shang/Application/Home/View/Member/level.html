@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/YMDClass.mini.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <script src="__STATIC__/js/geo.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <link rel="stylesheet" href="__STATIC__/style/reset1.css" />
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/index.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <style>
+        .text b{color:#EF1C55;}
+    </style>
+</head>
+<body>
+<include file="Public/header"/>
+<div class="cont">
+    <div class="cont_bg">
+        <ul class="sidebar">
+            <li class="touxiang"><div><img src="__UPLOAD__/UserPic/{$userlist['pic']|default='5.jpg'}" height="120px" width="120px"></div><div><a href="#"><p>{$username}</p></a></div>
+            </li>
+            <li><a href="{:u('order')}">我的订单</a></li>
+            <li><a href="{:u('Member/collect')}">我的收藏</a></li>
+            <li style="background-color:#CC0001 ;"><a href="{:u('Member/level')}" style="color: #fff">我的会员等级</a></li>
+            <li><a href="{:u('Member/memberinfo')}">个人信息</a></li>
+            <li><a href="{:u('Member/address')}">收货地址</a></li>
+
+        </ul>
+
+        <!-- tab -->
+        <div class="news" style="background-color: #fff">
+            <ul class="clearfix">
+                <li><a href="#">我的会员等级</a></li>
+
+            </ul>
+            <div  class="text ">
+                <div style="float:left;padding:22px;font-size:28px;width:380px;line-height:45px;">
+                <p class="form1">用户名：{$Think.session.username}</p><br/>
+                <p class="form1">性别：&nbsp;&nbsp;&nbsp; {$userlist.sex}</p><br />
+                <p class="form1">会员等级: <b><switch name="Think.session.level">
+                    <case value="1">普通会员</case>
+                    <case value="2">铜牌会员</case>
+                    <case value="3">银牌会员</case>
+                    <case value="4">金牌会员</case>
+                    <case value="5">钻石会员</case>
+                </switch></b>
+                </p><br />
+                 <p class="form1">目前消费额度：<b>￥{$userlist.expense}</b></p>
+                    <br/>
+                </div>
+                <div style="padding:22px; ">
+                <p class="form1"><span style="font-size:28px;">等级规则:</span>
+                <ul style="float:left">
+                    <li><b>0~~~~~4999元</b> 为 普通会员 享受<b>99</b>折</li><br/>
+                    <li><b>5000~·29999元</b> 为 铜牌会员 享受<b>96</b>折</li><br/>
+                    <li><b>30000~49999元</b> 为 银牌会员 享受<b>92</b>折</li><br/>
+                    <li><b>50000~99999元</b> 为 金牌会员 享受<b>89</b>折</li><br/>
+                    <li><b>100000 元~~~~</b> 为 钻石会员 享受<b>85</b>折</li>
+                </ul>
+                </div>
+                </p>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<include file="Public/right"/>
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+
+</body>
+<script>
+
+</script>
+
+</html>

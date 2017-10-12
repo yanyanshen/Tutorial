@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/YMDClass.mini.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <script src="__STATIC__/js/geo.js"></script>
+
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/index.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <style type="text/css">
+        body .demo-class .layui-layer-title{background:#ccc; color:red; border: none;}
+        body .demo-class .layui-layer-content{background:#ccc; color:white; border: none;}
+    </style>
+</head>
+<body>
+<include file="Public/header"/>
+<div class="cont">
+    <div class="cont_bg">
+        <ul class="sidebar">
+            <li class="touxiang"><div><img src="__UPLOAD__/UserPic/{$pic['pic']|default='5.jpg'}" height="120px" width="120px"></div><div><a href="#"><p>{$username}</p></a></div>
+            </li>
+            <li><a href="{:u('order')}">我的订单</a></li>
+            <li><a href="{:u('Member/collect')}">我的收藏</a></li>
+            <li><a href="{:u('Member/level')}" >我的会员等级</a></li>
+            <li><a href="{:u('Member/memberinfo')}">个人信息</a></li>
+            <li  style="background-color:#CC0001 ;"><a href="{:u('Member/address')}" style="color: #fff">收货地址</a></li>
+
+        </ul>
+        <!-- tab -->
+        <div class="news" style="background-color: #fff">
+            <ul class="clearfix">
+                <li>管理收货地址</li>
+                <li><a href="javascript:add()">新增收货地址</a></li>
+            </ul>
+            <div class="text">
+
+                <form action=" " id="form1" method="post"  enctype="multipart/form-data">
+                    <volist name="address" id="val">
+                        <p style="height: 30px;  color: red"  >
+                            收货地址:&nbsp{$val.address},&nbsp&nbsp&nbsp&nbsp&nbsp收货人:{$val.name},&nbsp&nbsp&nbsp&nbsp联系电话:{$val.tel}
+                            &nbsp&nbsp&nbsp&nbsp <a href="javascript:edit({$val['id']})" >编辑</a>&nbsp&nbsp&nbsp&nbsp<a href="javascript:del({$val['id']})" >删除</a>&nbsp&nbsp&nbsp&nbsp
+                            <a id='off' href="javascript:isdefault({$val['id']} " class="tablelink" style="color: mediumblue;  display: inline-block;font-size: 20px" > <eq name="val['isdefault']" value="1">默认地址</eq></a>
+                            <a id='on'  href="javascript:isdefault({$val['id']})" class="tablelink"> <eq name="val['isdefault']" value="0">设为默认地址</eq></a>
+
+                        </p><br />
+                    </volist>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<include file="Public/right"/>
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+</body>
+<script>
+
+        function add(){
+            layer.open({
+                type: 2,
+                skin: 'demo-class',
+                title: '新增地址',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['500px', '50%'],
+                content: "{:U('add_address')}"//调用方法
+            });
+        }
+        function edit(id){
+            layer.open({
+                type: 2,
+                skin: 'demo-class',
+                title: '编辑地址',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['500px', '50%'],
+                content: "{:U('edit_address')}?id="+id
+            });
+        }
+        function del(id){
+            //询问框
+            layer.confirm('您确定要删除吗?', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                $.get("{:U('Home/Member/add_del')}",{'id':id},function(res){
+                    if(res.status=='ok'){
+                        layer.msg(res.msg,{
+                            icon:1,
+                            time:2000
+                        },function(){
+                            location.href="{:U('Home/Member/address')}";
+                        })
+
+                    }else{
+                        layer.alert(res.msg);
+                        location.href="{:U('Home/Member/address')}";
+                    }
+                });
+            })
+        }
+function isdefault(id){
+        $.get("{:U('Home/Member/isdefault_address')}",{'id':id},function(res){
+            if(res.status=='ok'){
+                layer.msg(res.msg,{
+                    icon:1,
+                    time:2000
+                },function(){
+                    location.href="{:U('Home/Member/address')}";
+                })
+            }else{
+                layer.alert(res.msg);
+                location.href="{:U('Home/Member/address')}";
+            }
+        });
+}
+</script>
+
+
+
+
+
+</html>

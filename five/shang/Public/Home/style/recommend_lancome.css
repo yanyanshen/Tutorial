@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+/*part1样式*/
+.part1{width:100%;min-width: 1200px;background:#f4f4f4;}
+.part1 .part1Cont{color:#000;padding-top: 10px;}
+.part1 .part1Cont a:link{color:#000;}
+.part1 .part1Cont a:visited{color:#000;}
+.part1 .part1Cont a:hover{color:#e80040;}
+/*part2样式*/
+.part2{width:100%;min-width:1200px;background:#f4f4f4;padding:20px 0 60px 0;}
+.part2 .part2Cont{border-bottom: 1px solid #ddd;}
+.part2 .part2Cont h3{font-size: 16px;color:#000;border-bottom: 1px solid #ddd;line-height: 40px;padding-left: 14px;}
+.part2 .part2Cont p{line-height: 62px;border-bottom: 1px solid #ddd;background:#fff;}
+.part2 .part2Cont p .span1{color:#000;display:inline-block;padding-right: 30px;padding-left: 14px;background:#f4f4f4;margin-right: 14px;}
+.part2 .part2Cont p .span2{float:right;}
+.part2 .part2Cont p a{display:inline-block;margin-right: 40px;}
+/*part3样式*/
+.part3{width:100%;min-width:1200px;background:#f4f4f4;padding:20px 0 26px 0;}
+.part3 .part3Cont{border: 1px solid #ddd;}
+.part3 .part3Cont .head{line-height: 34px;text-align: center;background:#f4f4f4;/}
+.part3 .part3Cont .head .p1{color:#000;text-align: left;padding:0 23px 0 25px;border-right:1px solid #ddd;}
+/*.part3 .part3Cont .head ul{margin-right: 600px;}*/
+.part3 .part3Cont .head ul li{float:left;width:90px;border-right:1px solid #ddd;}
+.part3 .part3Cont .head ul li a{display:block;}
+.part3 .part3Cont .head ul li.li1,.part3 .part3Cont .head ul li.li3,.part3 .part3Cont .head ul li.li4,.part3 .part3Cont .head ul li.li5{background:url(../images/recommend_lancome_part2_11.png) no-repeat 66px 52%;}
+.part3 .part3Cont .head ul li.li1:hover,.part3 .part3Cont .head ul li.li3:hover,.part3 .part3Cont .head ul li.li4:hover,.part3 .part3Cont .head ul li.li5:hover{background:url(../images/recommend_lancome_part2_12.png)#fff no-repeat 66px 52%;}
+.part3 .part3Cont .head ul li.li2{background:url(../images/recommend_lancome_part2_21.png) no-repeat 66px 52%;}
+.part3 .part3Cont .head ul li.li2:hover{background:url(../images/recommend_lancome_part2_22.png)#fff no-repeat 66px 52%;}
+.part3 .part3Cont .head ul li.li1.focus{background:url(../images/recommend_lancome_part2_12.png)#fff no-repeat 66px 52%;}
+.part3 .part3Cont .head .p2 a{display:inline-block;padding:0px 5px;background:#fff;line-height:25px;margin:5px 5px;}
+        /*btm开始*/
+.part3 .part3Cont .btm{background:#fff;padding-top:20px;}
+
+.part3 .part3Cont .btm ul li.all{width:283px;height:370px;background:#fff;float:left;margin:0 7px 20px;text-align: left;border:1px solid transparent;-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-ms-transition:all 0.4s;-o-transition:all 0.4s;padding-bottom:14px;position: relative;overflow:hidden;}
+.part3 .part3Cont .btm ul li.all .more{width:360px;position: absolute; z-index: 99999;padding: 10px 4px;background: #fff;}
+.part3 .part3Cont .btm ul li .none{padding-top: 8px;}
+.part3 .part3Cont .btm ul li .none .p1{padding-bottom: 2px;}
+
+.part3 .part3Cont .btm ul li .left{padding-left: 25px;}
+.part3 .part3Cont .btm ul li .left img{margin-top: 24px;width:200px;}
+
+.part3 .part3Cont .btm ul li .left .p1{font-size: 16px;color:#444;padding-top: 10px;}
+.part3 .part3Cont .btm ul li .left .p1 span.span1{font-size: 14px;color:#999;}
+.part3 .part3Cont .btm ul li .left .p1 span.span2{color:#ff4830;font-size: 22px;display:block;padding:4px 0 6px 0;}
+.part3 .part3Cont .btm ul li .left .p2{color:#fff;font-size:16px;background:#e80040;line-height: 30px;width:80px;text-align: center;}
+.part3 .part3Cont .btm ul li .left .p3{padding-top: 10px;margin-bottom:6px;display:none;}
+.part3 .part3Cont .btm ul li .left .p3 span{display:inline-block;border:1px solid #ddd;padding:3px;margin-right: 6px;}
+.part3 .part3Cont .btm ul li .right{height:100%;z-index:9999;position: absolute;top:0;right:0px;display:none;}
+.part3 .part3Cont .btm ul li .right ul li img{width:60px;border:1px solid #ddd;margin:6px 8px 0px;}
+.part3 .part3Cont .btm ul li .right ul li img:hover{border:1px solid #e80040;}
+.part3 .part3Cont .btm ul .all:hover .left .p3{display: block;}
+.part3 .part3Cont .btm ul .all:hover .right{display: block;}
+.part3 .part3Cont .btm ul .all:hover{overflow: visible;}
+.part3 .part3Cont .btm ul .all:hover .more{box-shadow: 3px 3px 13px #ccc;}
+.part3 .part3Cont .btm ul .all:hover{box-shadow: 3px 3px 13px #ccc;}
+
+.part3 .part3Cont .p4{background:#fff;padding-left: 800px;}
+.part3 .part3Cont .p4 span{background:#fdfdfd;display:inline-block;*display:block;*zoom:1;padding:6px 8px;border:1px solid #ddd;margin:5px 4px 20px;}

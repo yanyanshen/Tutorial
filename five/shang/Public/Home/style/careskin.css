@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+body{background: url(../images/cs_bg.jpg);}
+/*banner样式开始*/
+.banner{width: 100%;height: 450px;position: relative;overflow: hidden;}
+.banner_bg{width: 5760px;height: 450px;position: absolute;top: :0px;left:0px;}
+.banner_bg li{float:left;}
+.banner_bg li img{width: 1920px;height: 382px;}
+.banner_menu{width: 100%;height: 20px;position: absolute;top:80%;left:0px;text-align: center;}
+.banner_menu li{width: 16px;height: 16px;border-radius: 8px;display: inline-block;border: 1px solid #ea0044;margin-right: 20px;cursor: pointer;}
+.banner_menu li.select{background: #ea0044;}
+.banner .left_nav{width: 212px;height: 330px;border:1px solid #ea0044;border-bottom:none;position: absolute;top:5%;left:20%;background: #fff;font-size: 20px;text-align: left;}
+/*左侧导航样式开始*/
+.left_nav span{border-bottom: 1px solid #ea0044;display: block;width: 100%;height: 65px;line-height: 50px;}
+.left_nav span a{margin-left: 20px;color:#333333;}
+.left_nav span a:hover{color:#ea0044;}
+/*左侧导航样式结束*/
+/*banner样式结束*/
+.hot{padding-top: 0px;text-align: center;}
+.hot_cont ul{padding-top: 40px;margin-left:20px;}
+.hot_cont ul li{text-align: left;font-size: 16px;float:left;width: 350px;height: 470px;margin-right: 35px;-webkit-transition: all 0.4s;-ms-transition: all 0.4s;-o-transition: all 0.4s;-moz-transition: all 0.4s;transition: all 0.4s;position: relative;}
+.hot_cont ul .overlay{position: absolute;top:0px;left:0px;width: 350px;height: 470px;background: #1a1a1a;opacity: 0.1;filter:alpha(opacity=10);}
+.hot_cont ul .txt{width: 160px;height: 60px;background: #ea0044;font-size:24px;position:absolute;top:50%;left:50%;margin-left: -80px;height: -30px;line-height: 60px;text-align: center;display: none;z-index:10; }
+.hot_cont ul .txt a{color:#fff;}
+.hot_cont ul li:hover{box-shadow: 5px 5px 10px #bbb;}
+.hot_cont ul li h3{padding-top: 430px;}
+.hot_cont ul li p{color:#ea0044;}
+.hot_cont ul .li1{background: url(../images/cs_pic1.jpg) no-repeat;}
+.hot_cont ul .li2{background: url(../images/cs_pic2.jpg) no-repeat;}
+.hot_cont ul .li3{background: url(../images/cs_pic3.jpg) no-repeat;}
+/*热门推荐样式结束*/
+/*新品推荐样式开始*/
+.new{height: 410px;text-align: center;padding-top: 50px;position: relative;}
+.new .lunbo{height: 250px;width:1200px;position:relative;padding-top: 30px;position: relative;overflow: hidden;}
+.new .new_cont{height: 250px;padding-top: 30px;width: 3600px;position: absolute;top:0px;left:0px;}
+.new .new_cont ul{width: 1200px;float:left;}
+.new .new_cont ul li{float:left;text-align: left;width:160px;margin-left:68px;}
+/*.new .new_cont ul li.li1{margin-left: 100px;}*/
+.new .new_cont ul li h3{color:#c70b18;}
+.new .new_cont ul li p{overflow: hidden;-webkit-text-overflow:ellipsis;white-space: nowrap;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-text-overflow:ellipsis;text-overflow:ellipsis;}
+.new .new_cont ul li span{color:#ea0044;}
+.new .new_cont ul li img{width: 150px;height: 150px;}
+.new .bt .li1{position: absolute;top:50%;left:15%;cursor: pointer;}
+.new .bt .li2{position: absolute;top:50%;right:15%;cursor: pointer;}
+/*新品推荐样式结束*/
+/*日常洁面样式开始*/
+.pro{padding-top: 0px;height: auto;}
+.pro_title{padding-bottom: 30px;}
+.pro_title h2{font-size: 24px;}
+.por_clean_l{width: 266px;height:600px;background: #fe997b;}
+.pro_l span{display: inline-block;color: #fff;background: rgba(255,255,255,0.25);width: 95px;height:30px;font-size: 16px;line-height: 30px;text-align: center;margin-left: 25px;margin-top: 25px;margin-bottom: 25px;}
+.pro_l ul li{float: left;margin:1px;}
+.pro_m{width: 300px;height: 600px;position: relative;overflow: hidden;}
+.pro_m .pro_bg{width: 900px;position: absolute;top: 0px;left:0px;}
+.pro_m .pro_bg li{float: left;position: relative;}
+.pro_m .pro_bg .li1 p{width: 265px;height: 165px;color:#fe997b;background: #fff;position: absolute;bottom:10px;left:20px;}
+.pro_m .pro_bg li img{width: 300px;}
+.pro_menu{position: absolute;bottom:5px;left: 0px;width: 100%;height: 20px;text-align: center;}
+.pro_m .pro_menu li{width: 10px;height: 10px;border-radius: 5px;border:1px solid #fe997b;cursor: pointer;display: inline-block;margin:10px;}
+.pro_m .pro_menu li.select{background: #fe997b;border:none;}
+.pro_r{width: 633px;height: 600px;}
+.pro_r ul li{font-size: 16px;transition:all 0.4s;position: relative;display: inline-block;}
+.pro_clean_r ul #li1{margin-top: -65px;margin-left:400px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_clean_r ul #li2{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_clean_r ul #li3{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_r ul li p{position: absolute;bottom:-3px;left:0px;width: 200px;transition:all 0.4s;}
+.pro_r ul li .p1{height:40px;background:  #fafafa;margin-bottom: 2px;}
+.pro_r ul li .p2{background: #ea0044;color:#fff;text-align: center;line-height: 40px;height: 0px;}
+.pro_r ul li p span{color:#ea0044;}
+.pro_r ul li:hover a{color:#fff;}
+.pro_r ul li:hover .p1{display: none;}
+.pro_r ul li:hover .p2{height: 40px;background: #ea0044;}
+.pro_r ul li.select{background: #ea0044;}
+.pro_r ul ul{margin-top: -23px;overflow: hidden;}
+.pro_r ul ul li{float:left;height: 195px;width: 205px;border: 1px solid #f5f5f5;overflow: hidden;}
+.pro_r ul div{display: none;}
+.pro_l ul li img{transition:all 0.4s;}
+.pro_l ul li:hover img{-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-0-transform: scale(1.1);-moz-transform: scale(1.1);transform: scale(1.1);}
+/*爽肤水/精华样式开始*/
+.pro_shui_m .shui_menu li.select{background: #f2b9e4;border:none;}
+.pro_shui_l{width: 266px;height:600px;background: #f2b9e4;}
+.pro_shui_l ul{margin-top: 50px;}
+.pro_shui_r ul #li4{margin-top: -65px;margin-left:400px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_shui_r ul #li5{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_shui_r ul #li6{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_shui_r ul li p{position: absolute;bottom:-3px;left:0px;width: 200px;transition:all 0.4s;}
+/*面霜样式开始*/
+.cream_menu li.select{background: #b9f1cc;border:none;}
+.pro_cream_l{width: 266px;height:600px;background: #b9f1cc;}
+.pro_cream_l ul{margin-top: 50px;}
+.pro_cream_r ul #li7{margin-top: -65px;margin-left:400px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_cream_r ul #li8{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_cream_r ul #li9{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+/*面膜样式开始*/
+.mianmo_menu li.select{background: #b9f1cc;border:none;}
+.pro_mianmo_l{width: 266px;height:600px;background: #d8b9f2;}
+.pro_mianmo_l ul{margin-top: 50px;}
+.pro_mianmo_l ul li{float:left;}
+.pro_mianmo_r ul #li10{margin-top: -65px;margin-left:400px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_mianmo_r ul #li11{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}
+.pro_mianmo_r ul #li12{margin-top: -65px;width: 65px;height: 24px;line-height: 24px;text-align: center;}

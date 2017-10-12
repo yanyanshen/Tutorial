@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cont{width:100%;height:auto;overflow:hidden;}
+.cont .middle{width:100%;min-width:1200px;height:490px;margin:0px auto;overflow:hidden;background:url(../images/entry3.png) no-repeat center center;}
+.cont .middle .right{width:380px; height:420px; float:right;margin-top:20px;font-size:12px;margin-right:20%;}
+.cont .middle .right ul li.li1 p{font-size:14px;text-align:right;margin-right:60px;}
+.cont .middle .right ul li.li1 span a{color:#e2003e;}
+.cont .middle .right ul li.li2 h3{font-size:16px;color:#e2003e;padding-top:20px;margin-left:40px;}
+.cont .middle .right ul li.li3 form input#t1{border:1px solid #d9d9d9;width:230px;margin-top:15px;margin-left:30px;height:35px;padding-left:50px;background:url(../images/d1.png) no-repeat 2px 1px;}
+.cont .middle .right ul li.li3 form input#t2{border:1px solid #d9d9d9;width:230px;margin-top:15px;margin-left:30px;height:35px;padding-left:50px;background:url(../images/d2.png) no-repeat;}
+.cont .middle .right ul li.li3 form input#t3{border:1px solid #d9d9d9;width:230px;margin-top:15px;margin-left:30px;height:35px;padding-left:50px;background:url(../images/d3.png) no-repeat;}
+.cont .middle .right ul li.li3 form input#t4{border:1px solid #d9d9d9;width:135px;margin-top:15px;margin-left:30px;height:35px;padding-left:50px;background:url(../images/d4.png) no-repeat;}
+
+.cont .middle .right ul li.li3 form input#checkbox{margin-left:30px;margin-right:15px;}
+.cont .middle .right ul li.li3 form h4{width:80px;height:35px;border:1px solid #d9d9d9;float:right;margin-right:68px;margin-top:15px;text-align:center;line-height:35px;}
+.cont .middle .right ul li.li3 form h5{width:80px;height:35px;background:#e2003e;float:right;margin-right:68px;margin-top:15px;text-align:center;line-height:35px;color:#fff;}
+.cont .middle .right ul li.li3 form h5 a{color:#fff;}
+.cont .middle .right .li4{font-size:20px;width:280px;height:40px;margin-left:30px;background:#e2003e;color:#fff;margin-top:10px;line-height:40px;text-align:center;}
+.cont .middle .right ul li a:link {color:#fff;text-decoration:none;}
+.cont .middle .right ul li a:visited {color:#fff;text-decoration:none;}
+.cont .middle .right ul li a:hover {color:#fff;}
+.cont .middle .right ul li.li1 p a:hover {color:#eb6100;}
+

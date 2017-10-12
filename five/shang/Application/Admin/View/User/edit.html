@@ -1,0 +1,76 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>修改会员</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 167
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">会员管理</a></li>
+        <li><a href="#">会员添加</a></li>
+    </ul>
+</div>
+
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab1" class="tabson">
+            <form action="{:U('Admin/User/index')}" method="post">
+                <ul class="forminfo">
+                    <li>用户名<b>&nbsp&nbsp&nbsp: </b> {$list.username}</li>
+                    <li>会员昵称<b> :</b>  {$list.nickname} </li>
+                    <li>会员邮箱<b> :</b>  {$list.email} </li>
+                    <li>消费额度<b> :</b>  {$list.expense} </li>
+                    <li>会员地址<b> :</b>  {$list.address} </li>
+                    <li>会员电话<b> :</b>  {$list.tel} </li>
+
+                    <li>会员等级<b> :</b> <switch name="list.level">
+                          <case value="0">禁用</case>
+                          <case value="1">注册会员</case>
+                          <case value="2">铜牌会员</case>
+                          <case value="3">银牌会员</case>
+                          <case value="4">金牌会员</case>
+                          <case value="5">钻石会员</case>
+                          <default/>非法
+                    </switch>
+
+                         </li>
+                    <li><label>&nbsp;</label><input type="submit" class="btn" value="返回"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

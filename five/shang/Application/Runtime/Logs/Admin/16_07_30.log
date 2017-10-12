@@ -1,0 +1,36 @@
+[ 2016-07-30T09:04:52+08:00 ] 172.16.11.198 /index.php/Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:05:06+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'zcx' AND `pwd` = 'ac0881ac3355c807bfb2a197d9c77535' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-30T09:05:19+08:00 ] 172.16.11.198 /index.php/Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:05:20+08:00 ] 172.16.11.198 /index.php/Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `shang_admin` WHERE `adminname` = 'zjj' AND `pwd` = '9ed1d718cf330795214ccd8e1fcdde09' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_admin` SET `last_time`='1469840511',`last_ip`='172.16.11.182' WHERE `aid` = 24 [ RunTime:0.0370s ]
+SQL: UPDATE `shang_admin` SET `time`='1469840720',`ip`='172.16.11.198' WHERE `aid` = 24 [ RunTime:0.0260s ]
+

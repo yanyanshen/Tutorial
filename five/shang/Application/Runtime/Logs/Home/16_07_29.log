@@ -1,0 +1,2372 @@
+[ 2016-07-29T00:11:12+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:11:55+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:12:18+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:12:39+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:12:55+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:12:57+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:13:00+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:13:12+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:13:33+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:15:42+08:00 ] 127.0.0.1 /five/shang/index.php
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2016-07-29T00:16:54+08:00 ] 127.0.0.1 /five/shang/index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T00:16:58+08:00 ] 127.0.0.1 /five/shang/index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T00:17:02+08:00 ] 127.0.0.1 /five/shang/index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T00:17:02+08:00 ] 127.0.0.1 /five/shang/index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T00:17:03+08:00 ] 127.0.0.1 /five/shang/index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0330s ]
+NOTIC: [8] Undefined index: mycart_3 D:\http\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\http\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-29T00:17:12+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:17:30+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:17:52+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:22:59+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:23:49+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Order/pay/oid/4.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 4 [ RunTime:0.1630s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=4 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 61 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='239' WHERE `gid` = 61 [ RunTime:0.0230s ]
+
+[ 2016-07-29T00:23:51+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:24:44+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:24:53+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:24:58+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:26:56+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:27:07+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:27:14+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:30:45+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/c.html
+ERR: 非法操作:c
+
+[ 2016-07-29T00:40:18+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:40:35+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:40:36+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:41:18+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:41:43+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:41:59+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:43:42+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:44:15+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:44:36+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:44:48+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:45:01+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:45:02+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:45:19+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:45:58+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:46:14+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:47:22+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:47:36+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:48:01+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:48:08+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:48:25+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:48:46+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:50:11+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:58:36+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T00:59:13+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T00:59:15+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T00:59:16+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:00:12+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:01:08+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:01:27+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:01:40+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:01:48+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:02:31+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:03:24+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:03:33+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:03:55+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:04:29+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:04:38+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:04:54+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:05:21+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0080s ]
+
+[ 2016-07-29T01:05:27+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:09:47+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:09:51+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:13:03+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:13:10+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:13:30+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:14:50+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:14:53+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0050s ]
+
+[ 2016-07-29T01:17:19+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:17:38+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:17:43+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:17:43+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:17:46+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:17:49+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:17:50+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:17:51+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0080s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:17:53+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:17:54+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:15+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0070s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:17+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:18:26+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+
+[ 2016-07-29T01:18:30+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:30+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:31+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:37+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0050s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:38+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:18:39+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\http\five\shang\ThinkPHP\Library\Think\Db\Driver.class.php 第 802 行.
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `shang_comment` () VALUES ()
+
+[ 2016-07-29T01:19:00+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:19:04+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','0','ffg','1469726344') [ RunTime:0.1430s ]
+
+[ 2016-07-29T01:20:33+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:20:36+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','0','','1469726436') [ RunTime:0.0730s ]
+
+[ 2016-07-29T01:20:38+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:21:19+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0460s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','0','gf','1469726479') [ RunTime:0.0380s ]
+
+[ 2016-07-29T01:21:21+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:29:11+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:29:34+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','0','sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd','1469726973') [ RunTime:0.0830s ]
+
+[ 2016-07-29T01:29:35+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:31:18+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:31:40+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:35:23+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:35:32+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:35:39+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:35:52+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:36:05+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:36:24+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:36:39+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:36:43+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T01:36:54+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T02:35:44+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Index/myfoot.html
+ERR: 非法操作:myfoot
+
+[ 2016-07-29T02:35:55+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Index/myfoot.html
+ERR: 非法操作:myfoot
+
+[ 2016-07-29T02:36:17+08:00 ] 127.0.0.1 /five/shang/index.php/Home/Index/myfoot.html
+ERR: 非法操作:myfoot
+
+[ 2016-07-29T08:59:05+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0000s ]
+
+[ 2016-07-29T08:59:05+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T08:59:06+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0156s ]
+
+[ 2016-07-29T08:59:06+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T08:59:07+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0000s ]
+
+[ 2016-07-29T08:59:07+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T08:59:07+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0050s ]
+
+[ 2016-07-29T08:59:07+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T08:59:08+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+
+[ 2016-07-29T08:59:08+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T08:59:08+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0000s ]
+
+[ 2016-07-29T08:59:08+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T08:59:09+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0040s ]
+
+[ 2016-07-29T08:59:09+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T08:59:09+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0050s ]
+
+[ 2016-07-29T08:59:09+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:01:14+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:01:14+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:01:15+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:01:15+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:01:17+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+
+[ 2016-07-29T09:01:17+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:01:18+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:01:18+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:01:20+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0040s ]
+
+[ 2016-07-29T09:01:20+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:01:21+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+
+[ 2016-07-29T09:01:21+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:01:21+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+
+[ 2016-07-29T09:01:22+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:02:38+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:02:38+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:02:40+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:02:40+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: level D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 35 行.
+NOTIC: [8] Undefined index: id D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 42 行.
+NOTIC: [8] Undefined variable: name D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [8] Use of undefined constant search - assumed 'search' D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+NOTIC: [2] Division by zero D:\five\shang\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:02:55+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:02:58+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:03:01+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:03:01+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:03:04+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:03:06+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:03:07+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0312s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-29T09:03:10+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_collect` WHERE `gid` = 184 AND `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `shang_collect` (`gid`,`uid`) VALUES ('184','3') [ RunTime:0.0312s ]
+
+[ 2016-07-29T09:03:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T09:05:47+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:05:50+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0156s ]
+
+[ 2016-07-29T09:06:48+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0070s ]
+
+[ 2016-07-29T09:12:30+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:37:19+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/184.html
+ERR: XML标签语法错误 : name="comList" key="k" id="v" empty="<div
+
+[ 2016-07-29T09:54:29+08:00 ] 172.16.11.198 /index.php/Home/Member/address.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `shang_address` WHERE ( uid= ) 
+
+[ 2016-07-29T09:55:01+08:00 ] 172.16.11.198 /index.php/Home/Member/address.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `shang_address` WHERE ( uid= ) 
+
+[ 2016-07-29T09:55:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T09:55:07+08:00 ] 172.16.11.198 /index.php/Home/Member/address.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `shang_address` WHERE ( uid= ) 
+
+[ 2016-07-29T10:10:46+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T10:10:49+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:10:52+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:10:53+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:10:55+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-29T10:11:01+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:11:15+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 188 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-29T10:11:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:11:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:11:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:11:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:11:35+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-295e913d8cd023cfe8','898','1469758294') [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('2','184','1') [ RunTime:0.0260s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('2','188','1') [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0010s ]
+
+[ 2016-07-29T10:11:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:14:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:18:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:18:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:18:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:18:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:18:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:18:31+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:18:46+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:13+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:14+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:14+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:16+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:19:17+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:19:21+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:32+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:33+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:33+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:19:33+08:00 ] 172.16.11.198 /index.php/Home/Order/order/oid/2.html
+ERR: 1054:Unknown column '2s' in 'where clause'
+ [ SQL语句 ] : select goodsname,pic,price,buynum from  shang_order_goods o,shang_goods g where o.gid=g.gid and o.oid=2s
+
+[ 2016-07-29T10:23:34+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:23:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:24:11+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T10:24:45+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 76 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-29T10:24:49+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-2983ddab300cbbff30','222','1469759089') [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('5','76','1') [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0010s ]
+
+[ 2016-07-29T10:25:57+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-2902b14a2bc5ca8d0f','56','1469759156') [ RunTime:0.1020s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('6','200','1') [ RunTime:0.0624s ]
+
+[ 2016-07-29T10:26:09+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 59 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:26:21+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0010s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-2996d99049b56b7161','444','1469759180') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('7','59','2') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:26:51+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 83 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:26:58+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-297996a490a1fd2dd5','666','1469759218') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('8','83','3') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:23:33+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 80 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2016-07-29T11:23:37+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-295ee1167523cc74ff','222','1469762617') [ RunTime:0.0624s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('9','80','1') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:23:52+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 71 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:23:55+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-29b129d78e7487a8b2','129','1469762635') [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('10','71','1') [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0050s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0010s ]
+
+[ 2016-07-29T11:26:09+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0030s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-29d8d5563519479614','129','1469762769') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('11','71','1') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:32:46+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:38:47+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0030s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-292199c520e0f2e398','199','1469763526') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('1','183','1') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:39:06+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 188 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-29T11:39:11+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-29ccdfa68f1a68eb2e','599','1469763551') [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('2','188','1') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:40:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:40:40+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-294fced630daa4b61f','199','1469763640') [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('3','183','1') [ RunTime:0.0312s ]
+
+[ 2016-07-29T11:40:53+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-29T11:40:59+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-29f0e026800d9eb071','199','1469763659') [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('4','183','1') [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0010s ]
+
+[ 2016-07-29T11:41:22+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-296c1c1b75a4031098','299','1469763681') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('5','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-29T11:41:33+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-29T11:41:37+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-296a364dc69a725c12','199','1469763697') [ RunTime:0.0362s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('6','183','1') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:41:57+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-2994e65bd47e8d5831','299','1469763716') [ RunTime:0.1102s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('7','184','1') [ RunTime:0.0156s ]
+
+[ 2016-07-29T11:44:08+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:44:13+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0040s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-29d7d65a9518d84557','199','1469763853') [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0030s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('8','183','1') [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0020s ]
+
+[ 2016-07-29T11:44:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:44:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:44:57+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 188 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:45:00+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 61 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:45:05+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-29a3fa68f196b9b1e6','798','1469763905') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('9','188','1') [ RunTime:0.0312s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('9','61','1') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T11:45:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:46:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:46:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:48:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:48:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:00+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:08+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:49:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:50:03+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:50:43+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:50:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:51:21+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:51:34+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:53:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:54:08+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shang_collect` WHERE `gid` = 184 AND `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_collect` (`gid`,`uid`) VALUES ('184','3') [ RunTime:0.0312s ]
+
+[ 2016-07-29T11:54:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:54:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:54:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:54:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:54:45+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:55:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:56:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:56:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:57:18+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:57:18+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:57:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:57:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:57:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T11:57:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:45:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:45:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:47:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:57:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:57:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:57:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:57:53+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:57:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:58:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:58:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:58:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:58:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T13:58:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:06:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:07:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:07:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:08:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:08:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:08:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:08:52+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:08:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:09:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:09:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:09:10+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:09:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:09:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:09:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:10:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:11:01+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:11:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:11:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:11:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:11:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:11:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:14:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:14:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:14:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:15:31+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:15:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:15:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T14:23:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:13:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:13:09+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:13:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:13:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:13:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:15+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:34+08:00 ] 172.16.11.198 /index.php/Home/Member/returngoods/oid/37.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_order` WHERE `oid` = 37 [ RunTime:0.0936s ]
+
+[ 2016-07-29T15:14:34+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:37+08:00 ] 172.16.11.198 /index.php/Home/Member/returngoods/oid/39.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_order` WHERE `oid` = 39 [ RunTime:0.0312s ]
+
+[ 2016-07-29T15:14:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:14:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:15:06+08:00 ] 172.16.11.198 /index.php/Home/Member/returngoods/oid/43.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: DELETE FROM `shang_order` WHERE `oid` = 43 [ RunTime:0.0312s ]
+
+[ 2016-07-29T15:15:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:15:12+08:00 ] 172.16.11.198 /index.php/Home/Member/returngoods/oid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0010s ]
+SQL: DELETE FROM `shang_order` WHERE `oid` = 1 [ RunTime:0.0468s ]
+
+[ 2016-07-29T15:15:12+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:15:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:15:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:15:17+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/184.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '184' 
+
+[ 2016-07-29T15:15:21+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/200.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '200' 
+
+[ 2016-07-29T15:15:24+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/69.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '69' 
+
+[ 2016-07-29T15:16:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:16:59+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:00+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:01+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:07+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:17:28+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/184.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '184' 
+
+[ 2016-07-29T15:17:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:18:01+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/184.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '184' 
+
+[ 2016-07-29T15:18:52+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/184.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '184' 
+
+[ 2016-07-29T15:18:52+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/184.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '184' 
+
+[ 2016-07-29T15:19:04+08:00 ] 172.16.11.198 /index.php/Home/Index/detail/gid/80.html
+ERR: 1054:Unknown column 'u.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM shang_comment as c INNER JOIN shang_user as u on c.uid=u.id  WHERE `gid` = '80' 
+
+[ 2016-07-29T15:20:46+08:00 ] 172.16.11.198 /index.php/Home/user/test
+ERR: 非法操作:test
+
+[ 2016-07-29T15:21:07+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T15:21:13+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T15:21:13+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-29T15:21:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:21:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:21:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:21:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:21:32+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-292fdf97e51fad3fe8','299','1469776892') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('47','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-29T15:21:32+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`) VALUES ('3','2016-07-290afdccbfd4e1a2de','299','1469776892') [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('48','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-29T15:21:38+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/47.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0100s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 47 [ RunTime:0.0250s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=47 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='271' WHERE `gid` = 184 [ RunTime:0.0290s ]
+
+[ 2016-07-29T15:21:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:21:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:31+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T15:22:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T18:57:18+08:00 ] 172.16.11.198 /index.php/Home/user/test
+ERR: 非法操作:test
+
+[ 2016-07-29T18:58:40+08:00 ] 172.16.11.198 /index.php/Home/user/test
+ERR: 非法操作:test
+
+[ 2016-07-29T19:04:53+08:00 ] 172.16.11.198 /index.php/Home/user/test
+ERR: 非法操作:test
+
+[ 2016-07-29T21:40:12+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-29T21:40:15+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T21:40:18+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T21:40:18+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-29T21:40:21+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 69 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-292e9e306bb0beee1b','66.24','1469799621','69') [ RunTime:0.1340s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('39','69','1') [ RunTime:0.0230s ]
+
+[ 2016-07-29T21:40:31+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/39.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 39 [ RunTime:0.0480s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=39 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='男',`email`='954168807@qq.com',`expense`='7330.24',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579af56d5a7e0.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0240s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=39 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 69 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='238' WHERE `gid` = 69 [ RunTime:0.0140s ]
+
+[ 2016-07-29T21:40:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:40:40+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T21:40:43+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-297157883dacb313ef','191.04','1469799643','199') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('40','183','1') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0206s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0010s ]
+
+[ 2016-07-29T21:40:53+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:41:00+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:48:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:48:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:48:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:48:53+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:49:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:50:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:56:52+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:57:26+08:00 ] 172.16.11.198 /index.php/Home/Member/memberinfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1294 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: repwd D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1284 行.
+NOTIC: [8] Undefined index: pwd D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1284 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] trim() expects at least 1 parameter, 0 given D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] trim() expects at least 1 parameter, 0 given D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\five\shang\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `shang_user` SET `pic`='579b60c691579.jpg',`nickname`='吱吱',`birthday`='634579200',`tel`='18296897468',`email`='954168807@qq.com',`sex`='女' WHERE `id` = 3 [ RunTime:0.0420s ]
+
+[ 2016-07-29T21:57:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:57:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:57:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:58:45+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:58:50+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-2971b8ae6adfa1f5bb','191.04','1469800730','199') [ RunTime:0.0556s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0030s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('41','183','1') [ RunTime:0.0312s ]
+
+[ 2016-07-29T21:59:03+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/41.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 41 [ RunTime:0.0340s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=41 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='女',`email`='954168807@qq.com',`expense`='7521.28',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579b60c691579.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0156s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=41 [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='258' WHERE `gid` = 183 [ RunTime:0.0468s ]
+
+[ 2016-07-29T21:59:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T21:59:26+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/40.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 40 [ RunTime:0.0510s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=40 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='女',`email`='954168807@qq.com',`expense`='7712.32',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579b60c691579.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0530s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=40 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='259' WHERE `gid` = 183 [ RunTime:0.0550s ]
+
+[ 2016-07-29T21:59:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:38+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:43+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:00:55+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-2910c9753bd229c682','191.04','1469800855','199') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('42','183','1') [ RunTime:0.0312s ]
+
+[ 2016-07-29T22:03:27+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0166s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-29dabd7da378eb2e2f','191.04','1469801007','199') [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('43','183','1') [ RunTime:0.0350s ]
+
+[ 2016-07-29T22:03:38+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/43.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 43 [ RunTime:0.0490s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=43 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='女',`email`='954168807@qq.com',`expense`='7903.36',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579b60c691579.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0260s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=43 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='260' WHERE `gid` = 183 [ RunTime:0.0312s ]
+
+[ 2016-07-29T22:03:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-29T22:03:57+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 187 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T22:04:02+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-299fe935146c04daa1','383.04','1469801042','399') [ RunTime:0.0276s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('44','187','1') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 3 [ RunTime:0.0000s ]
+
+[ 2016-07-29T22:04:12+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 187 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0020s ]
+

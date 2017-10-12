@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/YMDClass.mini.js"></script>
+    <script src="__STATIC__/js/password.js"></script>
+    <script src="__STATIC__/js/geo.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+
+    <link rel="stylesheet" href="__STATIC__/style/reset1.css" />
+    <link rel="stylesheet" href="__STATIC__/style/password.css" />
+    <link rel="stylesheet" href="__STATIC__/style/index.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+</head>
+
+<script>
+
+    //下面用于图片上传预览功能
+    function setImagePreview(avalue) {
+        var docObj=document.getElementById("doc");
+
+        var imgObjPreview=document.getElementById("preview");
+        if(docObj.files &&docObj.files[0])
+        {
+//火狐下，直接设img属性
+            imgObjPreview.style.display = 'block';
+            imgObjPreview.style.width = '100px';
+            imgObjPreview.style.height = '120px';
+//imgObjPreview.src = docObj.files[0].getAsDataURL();
+
+//火狐7以上版本不能用上面的getAsDataURL()方式获取，需要以下方式
+            imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+        }
+        else
+        {
+//IE下，使用滤镜
+            docObj.select();
+            var imgSrc = document.selection.createRange().text;
+            var localImagId = document.getElementById("localImag");
+//必须设置初始大小
+            localImagId.style.width = "80px";
+         localImagId.style.height = "100px";
+//图片异常的捕捉，防止用户修改后缀来伪造图片
+            try{
+                localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+            }
+            catch(e)
+            {
+                alert("您上传的图片格式不正确，请重新选择!");
+                return false;
+            }
+            imgObjPreview.style.display = 'none';
+            document.selection.empty();
+        }
+        return true;
+    }
+
+
+</script>
+<body>
+<include file="Public/header"/>
+<div class="cont">
+    <div class="cont_bg">
+        <ul class="sidebar">
+            <li class="touxiang"><div><img src="__UPLOAD__/UserPic/{$pic|default='5.jpg'}" height="120px" width="120px"></div><div><a href="#"><p>{$username}</p></a></div>
+            </li>
+            <li><a href="{:u('order')}">我的订单</a></li>
+            <li><a href="{:u('Member/collect')}">我的收藏</a></li>
+            <li><a href="{:u('Member/level')}">我的会员等级</a></li>
+            <li style="background-color:#CC0001 ;"><a href="{:u('Member/memberinfo')}" style="color: #fff">个人信息</a></li>
+            <li><a href="{:u('Member/address')}">收货地址</a></li>
+        </ul>
+
+        <!-- tab -->
+        <div class="news" style="background-color: #fff">
+            <ul class="clearfix">
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">修改信息</a></li>
+                <li><a href="#">修改密码</a></li>
+
+            </ul>
+
+            <div class="text">
+                <form action="{:u('memberinfo',array('id'=>$memberinfo['id']))}" id="" method="post"  enctype="multipart/form-data">
+                    <p class="form1">用户名：{$meminfo.username}</p>
+                    <p class="form1">昵称：&nbsp;&nbsp;&nbsp;{$meminfo.nickname|default='请输入昵称'}</p><br />
+                    <p class="form1">性别：&nbsp;&nbsp;&nbsp; {$meminfo.sex}</p><br />
+                    <p class="form1">出生日期：{$meminfo.birthday|date="Y-m-d",###}</p><br />
+                    <p class="form1">手机号：{$meminfo.tel} </p><br />
+                    <p class="form1">E-mail：{$meminfo.email} </p><br />
+                </form>
+            </div>
+
+            <div class="text">
+                <form action="{:u('memberinfo',array('id'=>$memberinfo['id']))}" id="form1" method="post"  enctype="multipart/form-data">
+                    <p class="form1">用户名：<input type="text" name="username" disabled value="{$meminfo.username}"></p>
+                    昵称：&nbsp;&nbsp;&nbsp;<input name="nickname" class="form1" type="text" id="nickname" value="{$meminfo.nickname|default='请输入昵称'}"/><br />
+                    性别：&nbsp;&nbsp;&nbsp;<input class="sex" type="radio" name="sex" value="男" class="form2">男&nbsp;&nbsp;&nbsp;<input class="sex" type="radio" name="sex" value="女" checked="checked">女<br />
+                    <p class="p1">出生年月：<select name="year"></select>
+                        <select name="month"></select>
+                        <select name="day"></select><span class="red">*</span></p><br />
+                    <p class="p2">手机号：<input type="text" name="tel" id="tel" value="{$meminfo.tel}"> </p><br />
+                    <p class="p3">E-mail：<input type="text"  name="email" id="email" value="{$meminfo.email}"> </p><br />
+                    <a href="javascript:bc( );" ><h2 id="updateInfo">保存</h2></a>
+                    <div class="file">
+                        <p class="fr file_p" id="localImag"><img src="__UPLOAD__/UserPic/{$pic|default='5.jpg'}" id="preview" alt="头像预览" height="120px" width="100px"/></p>
+                        <input name="pic" type="file" id="doc" class="file_p1"  onchange="javascript:setImagePreview();">
+                    </div>
+                </form>
+            </div>
+            <div class="text02 clearfix">
+                <p class="text_p">用户名:{$meminfo.username}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <form action="{:U('Member/changepwd')}" method="post" id="form2">
+                    <p>输入原密码：<input type="password" name="pwd"/></p><br />
+                    <p>新密码：<input type="password" name="newpwd" /> </p><br />
+                    <p>确认密码：<input type="password" name="reppwd"/> </p><br />
+                    <p class="xiugai"><a href="javascript:xiugai();">确认修改</a></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<include file="Public/right"/>
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+
+</body>
+<script src="__STATIC__/js/jquery.form.js"></script>
+<script>
+    new YMDselect('year','month','day',1990,2,10);//年月日三级联动，默认值
+    function bc() {
+       // alert( $('#form1').attr('id'));
+            $('#form1').ajaxSubmit(function(res) {
+                layer.alert(res.msg);
+            });
+
+    }
+   function xiugai(){
+       $('#form2').ajaxSubmit(function(res) {
+           layer.alert(res.msg);
+       });
+
+    }
+
+</script>
+
+</html>

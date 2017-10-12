@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <link type="text/css" rel="stylesheet" rev="stylesheet" href="__STATIC__/style/public.css" />
+    <link type="text/css" rel="stylesheet" rev="stylesheet" href="__STATIC__/style/membercenter.css" />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/index.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/detail.css">
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <style type="text/css">
+        body .demo-class .layui-layer-title{background:#ccc; color:red; border: none;}
+        body .demo-class .layui-layer-content{background:#ccc; color:white; border: none;}
+    </style>
+</head>
+
+<body>
+<!--  头部开始 -->
+<include file="Public/header"/>
+<!-- 头部结束 -->
+<div class="buyerbox box">
+    <p class="orderpro01"><span><i>订单详情</i></span></p>
+    <div class="orderprocon">
+        <div class="clearfix" style="width:100%;">
+            <div class="orderprodiv clearfix">
+                <p class="orderproinfo"><span>订单信息</span></p>
+                <p><span>订单状态：</span><em class="orderred"><switch name="orderList.status">
+                    <case value="1">已下单，未付款</case>
+                    <case value="2">已付款，未发货</case>
+                    <case value="3">已发货，未签收</case>
+                    <case value="4">已签收，未评价</case>
+                    <case value="5">已取消</case>
+                    <case value="6">申请退货</case>
+                    <case value="7">退货中</case>
+                    <case value="8">已退货</case>
+                    <case value="9">商家已取消，缺货</case>
+                    <case value="10">已评价，订单完成</case>
+                    <default />非法
+                </switch></em></p>
+                <p><span>订单号：</span>{$orderList.ordersyn}</p>
+                <p><span>下单时间：</span>{:date('Y-m-d',$orderList['createtime'])}</p>
+                <p><span>用户名称：</span>{$username}</p>
+            </div>
+
+            <div class="orderprodiv clearfix" style="position:relative">
+                <p class="orderproinfo orderproinfo001"><span>收货信息</span></p>
+                 <empty name="address.address">
+                    <a href="javascript:add();" style="color:red">新增地址</a>
+                    <else/>
+                    <a href="javascript:edit({$address['id']});" style="color:red">编辑地址</a>
+                <p><span>收货地址：</span><b id="ars">{$address.address}</b></p>
+                 </empty>
+                <p><span>邮编：</span>{$address.zip}</p>
+                <p><span>收货人：</span>{$address.name}</p>
+                <p><span>联系方式：</span>{$address.tel}</p>
+            </div>
+        </div>
+        <p class="orderproinfo"><span>支付方式</span></p>
+        <div style="padding:30px 0;">
+            <form action="">
+                <input type="radio" checked="checked"  name="paytype" id="alipay" style="width:18px;vertical-align:middle"/>支付宝支付
+                <input type="radio"  name="paytype" id="wxpay" style="width:18px;vertical-align:middle"/>微信支付<br/>
+                账号：<input type="text"  name="zh" id="zh" style="background: #ccc; width:100px"/>
+                密码：<input type="password"  name="mm" id="mm" style="background: #ccc;width:100px"/>
+            </form>
+        </div>
+        <p class="orderproinfo"><span>商品信息</span></p>
+        <table class="orderinfomation" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th class="orderdetitle">商品名称</th>
+                <th class="orderdejiage">单价（元）</th>
+                <th class="orderdesum">总量（件）</th>
+                <th class="orderdezjia">商品总价</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="order_goods" id="v">
+            <tr>
+                <td class="orderdetitle" style="text-align:left;">
+                    <img style="width:60px;vertical-align:middle" src="__UPLOAD__/goods/100_{$v.pic}"/>
+                    <p><a href="#">{$v.goodsname}</a></p>
+                </td>
+                <td class="orderdejiage">{$v.price}元</td>
+                <td class="orderdesum">{$v.buynum}件</td>
+                <td class="orderdezjia">￥{$v['price']*$v['buynum']}</td>
+            </tr>
+            </volist>
+            </tbody>
+        </table>
+        <div class="ordersumer" id="buy">
+            <del>商品总价:<span style="color:red;font-size:20px;">￥{$orderList.preprices}</span></del>
+            折后价格:<span style="color:red;font-size:20px;">￥{$orderList.prices}</span>
+            <a class="tobuy" href="javascript:tobuy()">支付</a>
+        </div>
+
+    </div>
+</div>
+<div style="clear:both;"></div>
+<!-- 尾部开始 -->
+<!-- footer开始 -->
+<include file="Public/footer"/>
+<!-- footer结束 -->
+<!-- 侧面导航开始 -->
+<include file="Public/right"/>
+<!-- 侧面导航结束 -->
+<script type="text/javascript">
+    function tobuy(){
+        var v =$('#ars').text();
+        var zh =$('#zh').val();
+        var mm =$('#mm').val();
+
+        if(v){
+            v=1;
+        }
+        if(zh){
+            zh=1;
+        }
+        if(mm){
+            mm=1;
+        }
+        var flag=v&zh&mm;
+        if(flag){
+            $.get("{:U('pay',array('oid'=>$orderList['oid']))}",'',function(res){
+                if(res.status=='ok'){
+                    layer.msg(res.msg,{
+                        icon: 1,
+                        time: 2000
+                    },function(){
+                        location.href="{:U('Home/Member/order')}"
+                    });
+                }else{
+                    layer.msg(res.msg,{
+                        icon: 2,
+                        time: 2000
+                    });
+                }
+            });
+        }else{
+            if(!v){
+                layer.alert('请填写收货地址');
+            }else if(!zh){
+                layer.alert('请填写支付账号');
+            }else if(!mm){
+                layer.alert('请填写支付密码');
+            }
+        }
+    }
+    function add(){
+        layer.open({
+            type: 2,
+            skin: 'demo-class',
+            title: '新增地址',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['500px', '50%'],
+            content: "{:U('add_ars')}"
+        });
+    }
+    function edit(id){
+        layer.open({
+            type: 2,
+            skin: 'demo-class',
+            title: '编辑地址',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['500px', '50%'],
+            content: "{:U('edit_ars')}?id="+id
+        });
+    }
+    function chk(){
+        var chkAll=document.getElementById('chkAll');
+        var chks=document.getElementsByName('chk[]');
+        for(var i=0;i<chks.length;i++){
+            chks[i].checked=chkAll.checked;
+        }
+    }
+    document.getElementById('chkAll').onclick=chk;
+    $('.cateList').hide();
+    function jian(n){
+        var buynum=document.getElementById('buynum'+n).value;
+        if(buynum>1){
+            document.getElementById('buynum'+n).value=parseInt(buynum)-1;
+        }
+        getprices();
+        gettotalprice();
+    }
+    function jia(n){
+        var buynum=document.getElementById('buynum'+n).value;
+        if(buynum<199){
+            document.getElementById('buynum'+n).value=parseInt(buynum)+1;
+        }
+        getprices();
+        gettotalprice();
+    }
+
+    function chgnum(v){
+        if(v.value<1){
+            v.value=1;
+        }
+        if(v.value>199){
+            v.value=199;
+        }
+        if(isNaN(v.value)){
+            v.value=1;
+        }
+
+        gettotalprice();
+    }
+
+    function getprices(){
+        var nums=document.getElementsByClassName('num');
+        var price=document.getElementsByClassName('price');
+        var prices=document.getElementsByClassName('prices');
+        for(var i=0;i<price.length;i++){
+
+            prices[i].innerHTML=parseInt(price[i].innerHTML)*parseInt(nums[i].value);
+
+        }
+    }
+
+    function gettotalprice(){
+        getprices();
+        var inputs=document.getElementsByName('chk[]');
+        var prices=document.getElementsByClassName('prices');
+        var totalprice=0;
+        for(var i=0;i<inputs.length;i++){
+            if(inputs[i].checked){
+                totalprice+=parseInt(prices[i].innerHTML);
+            }
+        }
+        document.getElementById('totalprice').innerHTML='￥'+totalprice;
+        document.getElementById('prices').value=totalprice;
+    }
+
+    gettotalprice();
+</script>
+
+</body>
+</html>

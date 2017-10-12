@@ -1,0 +1,2124 @@
+[ 2016-07-30T08:53:03+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T08:53:07+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T08:53:08+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-30T08:53:18+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T08:53:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T08:53:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T08:53:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:02:44+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-30f8973e21c49e8408','53.76','1469840564','56') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('45','200','1') [ RunTime:0.0156s ]
+
+[ 2016-07-30T09:03:04+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/45.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 45 [ RunTime:0.0920s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=45 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='女',`email`='954168807@qq.com',`expense`='7957.12',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579b60c691579.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0312s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=45 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 200 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='277' WHERE `gid` = 200 [ RunTime:0.0312s ]
+
+[ 2016-07-30T09:03:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:03:20+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/44.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 44 [ RunTime:0.0286s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=44 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='女',`email`='954168807@qq.com',`expense`='8340.16',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579b60c691579.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0312s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=44 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 187 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='246' WHERE `gid` = 187 [ RunTime:0.0312s ]
+
+[ 2016-07-30T09:03:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:03:37+08:00 ] 172.16.11.198 /index.php/Home//Member/delor.html?oid=42
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: DELETE FROM `shang_order` WHERE ( oid=42 ) [ RunTime:0.0468s ]
+
+[ 2016-07-30T09:03:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:04:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:04:09+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 188 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-305b4c35a4adef3af5','575.04','1469840649','599') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('46','188','1') [ RunTime:0.0312s ]
+
+[ 2016-07-30T09:04:14+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/46.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 46 [ RunTime:0.0370s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=46 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_user` SET `id`='3',`username`='zcx',`pwd`='ac0881ac3355c807bfb2a197d9c77535',`nickname`='吱吱',`sex`='女',`email`='954168807@qq.com',`expense`='8915.2',`address`='河南省郑州市高新区',`tel`='18296897468',`pic`='579b60c691579.jpg',`birthday`='634579200',`level`='2' WHERE ( id=3 ) [ RunTime:0.0240s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=46 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 188 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='243' WHERE `gid` = 188 [ RunTime:0.0370s ]
+
+[ 2016-07-30T09:04:16+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:23:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T09:24:05+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+
+[ 2016-07-30T09:24:32+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:24:37+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:24:37+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-30T09:25:04+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('3','2016-07-3007d6ba2397b312d7','191.04','1469841904','199') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('48','183','1') [ RunTime:0.0312s ]
+
+[ 2016-07-30T09:25:08+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T09:25:10+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:25:14+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:25:17+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:25:17+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-30T09:26:00+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_collect` WHERE `gid` = 183 AND `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_collect` (`gid`,`uid`) VALUES ('183','3') [ RunTime:0.0468s ]
+
+[ 2016-07-30T09:26:07+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:42:20+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:42:24+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:42:28+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:42:28+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-30T09:43:36+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mycart_3 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:44:19+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+
+[ 2016-07-30T09:44:31+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:44:41+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+
+[ 2016-07-30T09:46:12+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:46:30+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 53 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-30T09:47:43+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+
+[ 2016-07-30T09:47:59+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+
+[ 2016-07-30T10:05:06+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:05:09+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:05:13+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:05:16+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '111' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('111','698d51a19d8a121ce581499d7b701668') [ RunTime:0.0312s ]
+
+[ 2016-07-30T10:05:54+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:05:56+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='222' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:06:02+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:06:03+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '222' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('222','bcbe3365e6ac95ea2c0343a2395834dd') [ RunTime:0.0468s ]
+
+[ 2016-07-30T10:07:08+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='333' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:07:11+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:07:14+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:07:14+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:07:15+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '333' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('333','310dcbbf4cce62f762a2aaa148d556bd') [ RunTime:0.0480s ]
+
+[ 2016-07-30T10:07:28+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_24 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:07:33+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='555' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:07:44+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:07:48+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '555' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('555','15de21c670ae7c3f6f3f1f37029303c9') [ RunTime:0.0490s ]
+
+[ 2016-07-30T10:07:54+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: mycart_25 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:07:58+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='444' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:08:07+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='444' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:08:12+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:08:14+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:08:15+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:08:18+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:08:19+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:08:20+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '444' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('444','550a141f12de6341fba65b0ad0433500') [ RunTime:0.0430s ]
+
+[ 2016-07-30T10:09:53+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_26 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:14:34+08:00 ] 172.16.11.198 /index.php/Home/User/:U('Index/index')
+ERR: 非法操作::U('Index
+
+[ 2016-07-30T10:14:58+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:04+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='666' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:08+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:09+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '666' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('666','fae0b27c451c728867a567e8c1bb4e53') [ RunTime:0.0450s ]
+
+[ 2016-07-30T10:15:17+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_28 D:\five\shang\Application\Home\Controller\UserController.class.php 第 148 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:15:28+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='777' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:33+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:35+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:36+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:38+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:40+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:44+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:45+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:15:46+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '777' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('777','f1c1592588411002af340cbaedd6fc33') [ RunTime:0.0360s ]
+
+[ 2016-07-30T10:18:06+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='999' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:19:05+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: mycart_29 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0050s ]
+
+[ 2016-07-30T10:41:39+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='777' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:41:42+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='000' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:41:49+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:41:50+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '000' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('000','c6f057b86584942e415435ffb1fa93d4') [ RunTime:0.0490s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\five\shang\Application\Home\Controller\UserController.class.php 第 94 行.
+
+[ 2016-07-30T10:41:50+08:00 ] 172.16.11.198 /index.php/Home/User/:U('Index/index')
+ERR: 非法操作::U('Index
+
+[ 2016-07-30T10:42:41+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_32 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:42:46+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='666' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:42:52+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:42:53+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '666' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('666','fae0b27c451c728867a567e8c1bb4e53') [ RunTime:0.1570s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\five\shang\Application\Home\Controller\UserController.class.php 第 94 行.
+
+[ 2016-07-30T10:44:10+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mycart_33 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:44:20+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='999' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:44:26+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:44:28+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = '999' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('999','b706835de79a2b4e80506f582af3676a') [ RunTime:0.1290s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\five\shang\Application\Home\Controller\UserController.class.php 第 94 行.
+
+[ 2016-07-30T10:44:45+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_34 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:44:53+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='000' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:44:57+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='aaa' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:45:07+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:45:08+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = 'aaa' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('aaa','47bce5c74f589f4867dbd57e9ca9f808') [ RunTime:0.0410s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\five\shang\Application\Home\Controller\UserController.class.php 第 94 行.
+
+[ 2016-07-30T10:48:09+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_35 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:48:15+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+
+[ 2016-07-30T10:48:21+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:48:23+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:48:26+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:48:27+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:48:28+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-30T10:48:56+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_cart` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `shang_cart` (`uid`,`gid`,`buynum`) VALUES ('3','53','1') [ RunTime:0.0630s ]
+
+[ 2016-07-30T10:49:02+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='bbb' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:49:05+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='ccc' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:49:12+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-30T10:49:13+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = 'ccc' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('ccc','9df62e693988eb4e1e1444ece0578579') [ RunTime:0.0250s ]
+
+[ 2016-07-30T10:55:30+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_36 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:55:37+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='1111' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:55:38+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T10:55:55+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:55:56+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='111' AND pwd='698d51a19d8a121ce581499d7b701668' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 22 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mycart_22 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-30T10:55:59+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mycart_22 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+
+[ 2016-07-30T10:56:03+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='ccc' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:56:05+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='ddd' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:56:09+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:56:10+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = 'ddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('ddd','77963b7a931377ad4ab5ad6a9cd718aa') [ RunTime:0.0370s ]
+
+[ 2016-07-30T10:57:27+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: mycart_37 D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0070s ]
+
+[ 2016-07-30T10:57:31+08:00 ] 172.16.11.198 /index.php/Home/User/test1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='eee' ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:57:35+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:57:36+08:00 ] 172.16.11.198 /index.php/Home/User/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = 'eee' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shang_user` (`username`,`pwd`) VALUES ('eee','d2f2297d6e829cd3493aa7de4416a18f') [ RunTime:0.0460s ]
+
+[ 2016-07-30T11:03:45+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:03:50+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('38','2016-07-30093dd16e166fca28','299','1469847830','299') [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('51','184','1') [ RunTime:0.0230s ]
+
+[ 2016-07-30T11:04:14+08:00 ] 172.16.11.198 /index.php/Home/Order/add_ars.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_address` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_address` SET `isdefault`='0' WHERE `isdefault` = 1 AND `uid` = 38 [ RunTime:0.0010s ]
+SQL: INSERT INTO `shang_address` (`uid`,`name`,`address`,`tel`,`zip`,`isdefault`) VALUES ('38','zcx','天津市-天津市-河西区-fadsf','15538309976','420000','1') [ RunTime:0.0410s ]
+
+[ 2016-07-30T11:04:19+08:00 ] 172.16.11.198 /index.php/Home/Order/pay/oid/51.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: UPDATE `shang_order` SET `status`='2' WHERE `oid` = 51 [ RunTime:0.0400s ]
+SQL: SELECT * FROM `shang_order` WHERE ( oid=51 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_user` SET `id`='38',`username`='eee',`pwd`='d2f2297d6e829cd3493aa7de4416a18f',`nickname`='未填写',`sex`='女',`email`='未填写',`expense`='299',`address`='河南省郑州市高新区',`tel`='未填写',`pic`=NULL,`birthday`=NULL,`level`='1' WHERE ( id=38 ) [ RunTime:0.0240s ]
+SQL: select gid,buynum from shang_order o,shang_order_goods og where o.oid=og.oid and o.oid=51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shang_goods` SET `saled_num`='274' WHERE `gid` = 184 [ RunTime:0.0310s ]
+
+[ 2016-07-30T11:04:21+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:06:36+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('38','2016-07-3039623f0619226f7b','299','1469847996','299') [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('53','184','1') [ RunTime:0.0350s ]
+
+[ 2016-07-30T11:09:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:09:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:10:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:10:09+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:10:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:10:45+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:11:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:13:14+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:13:17+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:13:20+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:13:20+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:13:21+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='zcx' AND pwd='ac0881ac3355c807bfb2a197d9c77535' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0010s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select g.gid,goodsname,buynum,pic,price,num from shang_cart as ca ,shang_goods as g  where ca.gid=g.gid and uid=3 [ RunTime:0.0000s ]
+
+[ 2016-07-30T11:13:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:13:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:13:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:26:38+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:26:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:36:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:36:59+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:48:01+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:48:03+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:48:16+08:00 ] 172.16.11.198 /index.php/Home/Member/memberinfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1294 行.
+SQL: SELECT * FROM `shang_user` WHERE `username` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: repwd D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1284 行.
+NOTIC: [8] Undefined index: pwd D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1284 行.
+NOTIC: [8] Undefined index: auto D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] trim() expects at least 1 parameter, 0 given D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] trim() expects at least 1 parameter, 0 given D:\five\shang\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\five\shang\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `shang_user` SET `pic`='579c237fe658c.jpg',`nickname`='吱吱',`birthday`='634579200',`tel`='18296897468',`email`='954168807@qq.com',`sex`='女' WHERE `id` = 3 [ RunTime:0.0460s ]
+
+[ 2016-07-30T11:48:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:48:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:48:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:50:35+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:52:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:52:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:54:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:54:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:55:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:55:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:55:48+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:55:55+08:00 ] 172.16.11.198 /index.php/Home//Member/delor.html?oid=48
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: DELETE FROM `shang_order` WHERE ( oid=48 ) [ RunTime:0.0528s ]
+
+[ 2016-07-30T11:55:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:56:06+08:00 ] 172.16.11.198 /index.php/Home/Member/sign.html?oid=44
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: UPDATE `shang_order` SET `status`='4' WHERE ( oid=44 ) [ RunTime:0.2292s ]
+
+[ 2016-07-30T11:56:07+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:59:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T11:59:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T12:00:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T12:00:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T12:00:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:00:08+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shang_collect` WHERE `gid` = 72 AND `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_collect` (`gid`,`uid`) VALUES ('72','3') [ RunTime:0.0622s ]
+
+[ 2016-07-30T14:00:20+08:00 ] 172.16.11.198 /index.php/Home/Member/delcollect.html?id=13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0050s ]
+SQL: DELETE FROM `shang_collect` WHERE ( id=13 ) [ RunTime:0.0468s ]
+
+[ 2016-07-30T14:00:33+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shang_collect` WHERE `gid` = 83 AND `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_collect` (`gid`,`uid`) VALUES ('83','3') [ RunTime:0.0468s ]
+
+[ 2016-07-30T14:00:48+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:00:55+08:00 ] 172.16.11.198 /index.php/Home/Member/sign.html?oid=46
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0040s ]
+SQL: UPDATE `shang_order` SET `status`='4' WHERE ( oid=46 ) [ RunTime:0.0312s ]
+
+[ 2016-07-30T14:00:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:01:12+08:00 ] 172.16.11.198 /index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','0','fddddddddddddddddddddddddddddddddddddddddddddddd','1469858472') [ RunTime:0.1434s ]
+
+[ 2016-07-30T14:01:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:01:22+08:00 ] 172.16.11.198 /index.php/Home/Member/sign.html?oid=41
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0060s ]
+SQL: UPDATE `shang_order` SET `status`='4' WHERE ( oid=41 ) [ RunTime:0.0432s ]
+
+[ 2016-07-30T14:01:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:01:53+08:00 ] 172.16.11.198 /index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','0','sssssssssssssssssssssssssssssssssss','1469858513') [ RunTime:0.0468s ]
+
+[ 2016-07-30T14:02:44+08:00 ] 172.16.11.198 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shang_collect` WHERE `gid` = 58 AND `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `shang_collect` (`gid`,`uid`) VALUES ('58','3') [ RunTime:0.0312s ]
+
+[ 2016-07-30T14:22:43+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:23:21+08:00 ] 172.16.11.198 /index.php/Home/Member/comment.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0070s ]
+SQL: UPDATE `shang_order` SET `status`='10' WHERE ( oid=45 ) [ RunTime:0.0336s ]
+SQL: SHOW COLUMNS FROM `shang_comment` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_comment` (`uid`,`gid`,`message`,`time`) VALUES ('3','200','非常好，很不错，下次还在这个地方买','1469859801') [ RunTime:0.0312s ]
+
+[ 2016-07-30T14:23:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:25:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:26:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:27:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:34:17+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:34:17+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:38:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:39:32+08:00 ] 172.16.11.198 /index.php/Home/User/logout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index:  D:\five\shang\Application\Home\Controller\UserController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0030s ]
+
+[ 2016-07-30T14:39:36+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='888' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:39:40+08:00 ] 172.16.11.198 /index.php/Home/User/test2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='777' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:39:45+08:00 ] 172.16.11.198 /index.php/Home/User/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:39:46+08:00 ] 172.16.11.198 /index.php/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shang_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_user` WHERE ( username='777' AND pwd='f1c1592588411002af340cbaedd6fc33' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0156s ]
+SQL: SELECT * FROM shang_cart as c WHERE `uid` = 29 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mycart_29 D:\five\shang\Application\Home\Controller\UserController.class.php 第 68 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given D:\five\shang\Application\Home\Controller\UserController.class.php 第 69 行.
+
+[ 2016-07-30T14:40:35+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:40:40+08:00 ] 172.16.11.198 /index.php/Home/Order/buy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0156s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('29','2016-07-30f0b4b9982988714c','296.01','1469860840','299') [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('57','184','1') [ RunTime:0.0312s ]
+
+[ 2016-07-30T14:40:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:43:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:43:34+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:43:35+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:44:17+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:44:17+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:44:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:44:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:44:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:44:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:08+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:21+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:21+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:45:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:46:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:46:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:46:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:46:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:07+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:15+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:47:53+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:48:03+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:48:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:48:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:48:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:48:59+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:50:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:50:41+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:50:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:50:43+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:50:47+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:21+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:56:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:58:03+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:58:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:58:17+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:58:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:58:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T14:58:48+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-30T14:58:57+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 183 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-30T14:59:05+08:00 ] 172.16.11.198 /index.php/Home/Mycar/addtocar.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shang_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shang_goods` WHERE `gid` = 187 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-07-30T14:59:08+08:00 ] 172.16.11.198 /index.php/Home/Mycar/createorder.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shang_order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `shang_order` (`uid`,`ordersyn`,`prices`,`createtime`,`preprices`) VALUES ('29','2016-07-3028797178490f59e0','789.03','1469861948','797') [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `shang_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('58','183','2') [ RunTime:0.0360s ]
+SQL: INSERT INTO `shang_order_goods` (`oid`,`gid`,`buynum`) VALUES ('58','187','1') [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `shang_cart` [ RunTime:0.0060s ]
+SQL: DELETE FROM `shang_cart` WHERE `uid` = 29 [ RunTime:0.0010s ]
+
+[ 2016-07-30T14:59:15+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:00:07+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:00:08+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:02:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:02:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:02:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:03:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:03:51+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:03:51+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:15+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:48+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:04:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:05:01+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:05:01+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:05:02+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:06:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:06:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:06:31+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:06:31+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:06:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:07:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:07:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:07:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:07:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:08:53+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:08:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:09:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:09:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:11:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:11:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:11:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:11:24+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:19+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:21+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:42+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:12:43+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:13:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:13:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:13:52+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:13:53+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:16:12+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:17:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:17:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:17:34+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:17:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:17:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:18:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:18:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:18:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:07+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:15+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:15+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:40+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:19:46+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:22+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:44+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:45+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:20:54+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:05+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:38+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:45+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:51+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:51+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:21:58+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:06+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:23+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:48+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:22:57+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:04+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:08+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:08+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:36+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:23:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:10+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:11+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:19+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:20+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:27+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:29+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:37+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:50+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:24:51+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:00+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:01+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:12+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:13+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:14+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:26+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:31+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:32+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:33+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:38+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:39+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:48+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:49+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:55+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:25:56+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:26:03+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:26:03+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:27:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:27:31+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:28:09+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:28:09+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:28:19+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:28:19+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:31:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:31:25+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:31:28+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T15:31:30+08:00 ] 172.16.11.198 /index.php/Home/Member/js/swiper.min.js
+ERR: 非法操作:js
+
+[ 2016-07-30T17:50:28+08:00 ] 172.16.11.90 /index.php/Home/Collect/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shang_collect` [ RunTime:0.0020s ]
+

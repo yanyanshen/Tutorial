@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>美伦美尚--网购平台</title>
+    <link rel="stylesheet" href="__STATIC__/style/recommend_lancome.css" />
+    <link rel="stylesheet" href="__STATIC__/style/headerAndFooter.css" />
+    <link rel="stylesheet" href="__STATIC__/style/reset.css" />
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__STATIC__/js/jquery.lazyload.js"></script>
+    <script src="__STATIC__/js/recommend_lancome.js"></script>
+    <script src="__STATIC__/js/headerAndFooter.js"></script>
+    <script src="__STATIC__/js/layer/layer.js"></script>
+    <style>
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background:#c2c2c2;
+            color:#fff;
+        }
+        #page a:hover{
+            background:red;
+            color:#000;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background:red;
+            color:#fff;
+            font-weight: bold;
+        }
+        #page span.rows{
+            float:left;
+            margin-right:50px;
+            margin-top:5px;
+            font-size: 20px;
+        }
+        #page span.rows b{
+            font-size: 20px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<!-- header开始 -->
+<include file="Public/header"/>
+<!-- header结束 -->
+
+<!-- part2开始 -->
+
+<div class="part2">
+    <div class="part2Cont frm_sty">
+
+        <gt name="count" value="0">
+        <h1>已找到{$count}件与&nbsp&nbsp&nbsp"&nbsp{$name}&nbsp"&nbsp&nbsp&nbsp相关商品</h1>
+    </div>
+</div>
+<!-- part2结束    -->
+
+<!-- part3开始    -->
+<div class="part3">
+    <div class="part3Cont frm_sty">
+            <div class="head clearfix">
+                <p class="p1 fl">排序:</p>
+                <ul class="clearfix fl">
+                    <li class="li1 focus"><a href="{:u('search',array('by'=>'gid','name'=>$name))}">综合</a></li>
+                    <li class="li2"><a href="{:u('search',array('by'=>'price','name'=>$name))}">价格</a></li>
+                    <li class="li3"><a href="{:u('search',array('by'=>'saled_num','name'=>$name))}">销量</a></li>
+
+                </ul>
+
+            </div>
+            <div class="btm">
+                <ul class="clearfix">
+                    <volist name="goodslist" id="val">
+                        <li class="all"><a href="{:u('Index/detail',array('gid'=>$val['gid']))}">
+                            <div class="left" >
+                                <img  id="big" class="lazy" data-original="__UPLOAD__/goods/{$val.pic}" src="__STATIC__/images/loading.jpg" alt="" />
+                                <p class="p1">{$val.goodsname}<br/><span class="span1">{$val.description}</span><br /><span class="span2">￥{$val.price}</span></p>
+                                <a href="#"><p class="p2">去看看</p></a>
+                                <p style="float:right">销量：{$val.saled_num}件&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                            </div>
+                        </a></li>
+                    </volist>
+                </ul>
+            </div>
+            <p class="p4 clearfix">
+            <li><div id="page">
+                {$page}
+            </div></li>
+            </p>
+
+        <!-- footer开始 -->
+        <else/><h1>搜索内容为空，请重新搜索</h1>
+        </gt>
+
+    </div>
+</div>
+<!-- part3结束    -->
+
+<include file="Public/footer"/>
+<!-- footer结束 -->
+<!-- 侧面导航开始 -->
+<include file="Public/right"/>
+<!-- 侧面导航结束 -->
+
+</body>
+<script>
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+</script>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__STATIC__/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/editor/kindeditor.js"></script>
+
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 167
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+</div>
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab1" class="tabson">
+            <form action="{:U('goods_edit',array('gid'=>$thisGoods['gid']))}"  method="post" enctype="multipart/form-data">
+                <input type="hidden" name="gid" value="$thisGoods.gid" />  <!--隐藏域-->
+                <ul class="forminfo">
+                    <li><label>商品名称<b>*</b></label>
+                        <input name="goodsname" type="text" class="dfinput" value="{$thisGoods.goodsname}"  style="width:518px;"/>
+                    </li>
+                    <li><label>商品分类<b>*</b></label>
+                        <div class="vocation">
+                            <select class="select2" name="cid">
+                                <option>添加分类</option>
+                                <option value="0">顶级分类</option>
+
+                                <volist name="list" id="vol">
+                                    <option value="{$vol.cid}" <eq name="vol.cid" value="$thisGoods.cid">selected</eq> > {$vol.cname}</option>
+                                </volist>
+
+                            </select>
+                        </div>
+
+                    </li>
+                    <li><label>商品品牌<b>*</b></label>
+
+                        <div class="vocation">
+                            <select class="select2" name="bid">
+                                <option>添加品牌</option>
+                                <volist name="brand" id="val">
+                                    <option value="{$val.bid}" <eq name="val.bid" value="$thisGoods.bid">selected</eq> > {$val.brand_name}</option>
+                                </volist>
+                            </select>
+                        </div>
+
+                    </li>
+                    <li><label>商品数量<b>*</b></label>
+                        <input name="num" type="text" class="dfinput" value="{$thisGoods.num}"  style="width:167px;"/>
+                    </li>
+
+                    <li><label>商品价格<b>*</b></label>
+                        <input name="price" type="text" class="dfinput" value="{$thisGoods.price}"  style="width:167px;"/>
+                    </li>
+                    <li><label>商品图片<b>*</b></label>
+                        <div style="display: inline-block;position:relative;top:-53px;" >
+                        <input name="pic[]" type="file"  /> <br><input name="pic[]" type="file" /> <br/><input name="pic[]" type="file"  />
+                            </div>
+                      <img src="__UPLOAD__/goods/{$thisGoods.pic}" alt="路径错误" width="100px" height="100px" />  </li>
+                    <!--$thisPic[1]['picname']-->
+                    <li><label>商品描述<b>*</b></label>
+
+                        <textarea id="content7" name="description"   style="width:700px;height:250px;"  >{$thisGoods.description}</textarea>
+
+                    </li>
+                    <li><label>&nbsp;</label><input name="" type="submit" class="btn" value="马上发布"/></li>
+                </ul>
+            </form>
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+
+<!--<script type="text/javascript">
+    $(function(){
+        $("#prodForm").submit(function(){
+            var submit_able=true;
+            if(!$("[name=goodsname]").val()){
+                $(".forminfo li").eq(0).append("<b>商品名称不能为空</b>");
+                submit_able=false;
+            }
+            if(!$("[gid]").val()){
+                $(".forminfo li").eq(6).append("<b>商品编号不能为空</b>");
+                submit_able=false;
+            }
+            if(!$("[name=price]").val()){
+                $(".forminfo li").eq(8).append("<b>商品价格不能为空</b>");
+                submit_able=false;
+            }
+            if(!$("[name=num]").val()){
+                $(".forminfo li").eq(9).append("<b>商品数量不能为空</b>");
+                submit_able=false;
+            }
+            /*if(!$("[type=file]").eq(0).val()&&!$("[type=file]").eq(1).val()&&!$("[type=file]").eq(2).val()&&!$("[type=file]").eq(3).val()){
+             $(".forminfo li").eq(11).append("<b>商品图片不能为空</b>");
+             submit_able=false;
+             }*/
+            if(!$("[name=description]").val()){
+                $(".forminfo li").eq(12).append("<b>商品描述不能为空</b>");
+                submit_able=false;
+            }
+            if(!submit_able){
+                return false;
+            }
+        })
+    })
+</script>-->
+
+</html>
