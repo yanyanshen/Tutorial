@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/main.css">
+    <script type="text/javascript" src="__URL__/cjyy/jQuery-1.8.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/colResizable-1.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/common.js"></script>
+    <script type="text/javascript" src="__URL__/cjyy/jquery.validate.js"></script>
+    <script type="text/javascript" src="__URL__/cjyy/layer/layer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#chkAll").click(function(){
+                $("input[name='chk[]']").each(function(){
+                    $(this).attr('checked',true);
+                })
+            })
+
+            $("#reChkAll").click(function(){
+                $("input[name='chk[]']").each(function(){
+                    if($(this).attr('checked')){
+                        $(this).attr('checked',false);
+                    }else{
+                        $(this).attr('checked',true);
+                    }
+                })
+            })
+            $("#delMoreAd").click(function(){
+                if($(":checked").size()>0){
+                    layer.confirm('确认全部删除么?',{
+                        btn:['确认','取消'],
+                        shade:false
+                    },function(){
+                        $.ajax({
+                            type:"post",
+                            url:"{:u('delMoreAd')}",
+                            data:{data:$("#form1").serializeArray()},
+                            success:(function(data){
+                                layer.msg(data.message,{
+                                    icon:1,
+                                    time:2000
+                                },function(){
+                                    location.reload();
+                                    $("input[name='chk[]']").each(function(){
+                                        $(this).attr('checked',false);
+                                    })
+                                });
+                            })
+                        })
+                    },function(){
+                        //取消删除实际操作代码
+                        $("input[name='chk[]']").each(function(){
+                            $(this).attr('checked',false);
+                        })
+                    });
+                }
+            });
+
+
+        });
+    </script>
+    <style>
+        #page a{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #f0ead8;
+            color:#08c;
+        }
+        #page a:hover{
+            background: #333;
+            color:#fff;
+        }
+        #page span.current{
+            display: inline-block;
+            width: 18px;
+            height:18px;
+            padding:5px;
+            margin: 2px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #c2ccd1;
+            background: #00A9E8;
+            color:#fff;
+            font-weight: bold;
+        }
+        #addAd{
+            float:right;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <!-- 头部开始 -->
+    <tr>
+        <td width="17" valign="top" background="__URL__/Images/mail_left_bg.gif">
+            <img src="__URL__/Images/left_top_right.gif" width="17" height="29" />
+        </td>
+        <td valign="top" background="__URL__/Images/content_bg.gif">
+            <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./__URL__/Images/content_bg.gif">
+                <tr><td height="31"><div class="title">广告列表</div></td></tr>
+            </table>
+        </td>
+        <td width="16" valign="top" background="__URL__/Images/mail_right_bg.gif"><img src="__URL__/Images/nav_right_bg.gif" width="16" height="29" /></td>
+    </tr>
+    <!-- 中间部分开始 -->
+    <tr>
+        <!--第一行左边框-->
+        <td valign="middle" background="__URL__/Images/mail_left_bg.gif">&nbsp;</td>
+        <!--第一行中间内容-->
+        <td valign="top" bgcolor="#F7F8F9">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <!-- 空白行-->
+                <tr><td colspan="2" valign="top">&nbsp;</td><td>&nbsp;</td><td valign="top">&nbsp;</td></tr>
+                <tr>
+                    <td colspan="4">
+                        <table>
+                            <tr>
+                                <td width="100" align="center"><img src="__URL__/Images/mime.gif" /></td>
+                                <td valign="button"><h3 style="letter-spacing:1px;">MrBig,改变空间，改变生活！</h3></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- 一条线 -->
+
+                <tr>
+                    <td height="40" colspan="4">
+                        <table width="100%" height="1" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- 产品列表开始 -->
+                <tr>
+                    <td width="2%">&nbsp;</td>
+                    <td width="96%">
+                        <div class="box_center pt10 pb10">
+                            <form action="{:u('listAd')}" method="post" id="loginForm">
+                                <table class="form_table" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>广告名称:</td>
+                                        <td><input type="text" name="adname" class="input-text lh25" size="10">
+                                            &nbsp;&nbsp;<input type="submit" value="查询" class="ext_btn ext_btn_submit" id="serchad"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <table width="100%">
+                                &nbsp;&nbsp;<input type="button" name="chkAll" id="chkAll" class="ext_btn ext_btn_submit" value="全选">
+                                &nbsp;&nbsp;<input type="button" name="reChkAll" id="reChkAll" class="ext_btn ext_btn_submit" value="反选">
+                                &nbsp;&nbsp;<input type="button" name="delMoreAd" id="delMoreAd" class="ext_btn ext_btn_submit" value="删除">
+                                &nbsp;&nbsp;<input type="button"  name="delMoreGoods" id="addAd" class="ext_btn ext_btn_submit" value="添加广告">
+                            <tr>
+                                <td colspan="2">
+                                    <form action="" method="" id="form1">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="list_table">
+                                            <tr style="background-color: #e7f1fe;">
+                                                <th width="15">选中</th>
+                                                <th width="30">Ad名称</th>
+                                                <th width="60">Ad图片</th>
+                                                <th width="25">添加时间</th>
+                                                <th width="25">广告状态</th>
+                                                <th width="60">操作</th>
+                                            </tr>
+                                            <volist name="adList" id="vo" key="k">
+                                                <tr class="tr">
+                                                    <td><input type="checkbox" value="{$vo.id}" name="chk[]" id="kuang"/></td>
+                                                    <td>{$vo.adname|mb_substr=0,20,'UTF-8'}</td>
+                                                    <!-- <td><img src="/upload/n3/{$vo.pic|default='default.jpg'|explode=',',###|array_shift}" width="50" height="50"/></td>-->
+                                                    <td><img src="__PUBLIC__/Home/AD/n0/{$vo.image}" width="250" height="100"/></td>
+                                                    <td>{:date("Y-m-d H:i:s",$vo['addtime'])}</td>
+                                                    <td>{$vo['adstate']?'使用':'隐藏'}</td>
+                                                    <td>
+                                                        <div class="ext_btn ext_btn_submit" href="#" id="cut({$vo['id']})" onclick="cut({$vo['id']})">状态切换</div>
+                                                        <div class="ext_btn ext_btn_submit" href="#"  onclick="del({$vo['id']})">删除</div>
+
+                                                    </td>
+                                                </tr>
+                                            </volist>
+                                        </table>
+                                        <div id="page">
+                                            {$page}
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="2%">&nbsp;</td>
+                </tr>
+                <!-- 产品列表结束 -->
+                <tr>
+                    <td height="40" colspan="4">
+                        <table width="100%" height="1" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                            <tr><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="2%">&nbsp;</td>
+                    <td width="51%" class="left_txt">
+                        <img src="__URL__/Images/icon_mail.gif" width="16" height="11"> 客户服务邮箱：rainman@foxmail.com<br />
+                        <img src="__URL__/Images/icon_phone.gif" width="17" height="14"> 官方网站：<a href="http://www.rain-man.cn">http://www.rain-man.cn</a>
+                    </td>
+                    <td>&nbsp;</td><td>&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+        <td background="__URL__/Images/mail_right_bg.gif">&nbsp;</td>
+    </tr>
+    <!-- 底部部分 -->
+    <tr>
+        <td valign="bottom" background="__URL__/Images/mail_left_bg.gif">
+            <img src="__URL__/Images/buttom_left.gif" width="17" height="17" />
+        </td>
+        <td background="__URL__/Images/buttom_bgs.gif">
+            <img src="__URL__/Images/buttom_bgs.gif" width="17" height="17">
+        </td>
+        <td valign="bottom" background="__URL__/Images/mail_right_bg.gif">
+            <img src="__URL__/Images/buttom_right.gif" width="16" height="17" />
+        </td>
+    </tr>
+
+</table>
+</body>
+<script type="text/javascript">
+    //删除弹窗
+    function del(id) {
+        layer.confirm('确定要删除这个商品吗？', {
+            btn: ['删除', '取消']
+        }, function () {
+            $.post("{:U('/Admin/Ad/delAd')}", {'id': id}, function (res) {
+                if (res.status == 'ok') {
+                    layer.msg(res.msg, {icon: 6}, function () {
+                                location.href = "{:U('/Admin/Ad/listAd')}";
+                            });
+                } else {layer.msg(res.msg);}
+            })
+        })
+    }
+    function edit(id){
+        $.post("{:U('/Admin/Ad/edit')}",{'id':id},function(res){
+
+        })
+    }
+    //切换弹窗
+    function cut(id) {
+        $.post("{:U('/Admin/Ad/issale')}", {'id': id}, function (res) {
+            if (res.status == 'ok') {
+                layer.msg(res.msg,{time:1000},function(){
+                    location.href = "{:U('/Admin/Ad/listAd')}";
+                });
+            }
+        })
+    }
+    $('#addAd').click( function(){
+        layer.open({
+            title:'添加广告',
+            type:2,
+            area: ['300px', '350px'],
+            fix: false, //不固定
+            maxmin: true,
+            content: "{:U('/Admin/Ad/adLayer')}"
+        })
+
+    });
+
+
+
+
+
+
+
+
+</script>
+</html>

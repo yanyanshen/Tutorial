@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__URL__/skins/all.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #form1 table tr{
+            height: 50px;
+            font-size: 15px;
+        }
+    </style>
+
+<script src="__URL__/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="__URL__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__URL__/js/common_js.js" type="text/javascript"></script>
+<script src="__URL__/js/footer.js" type="text/javascript"></script>
+<script src="__URL__/layer/layer.js" type="text/javascript"></script>
+<script src="__URL__/address/js/distpicker.data.js"></script>
+<script src="__URL__/address/js/distpicker.js"></script>
+<script src="__URL__/address/js/main.js"></script>
+<script src="__URL__/js/jquery.form.js"></script>
+
+<title>订单详情</title>
+</head>
+<include file="Goods/header"/>
+<body>
+<!--发货管理样式-->
+<div class="Inside_pages clearfix">
+<div class="left_style">
+  <!--列表-->
+</div>
+<div class="right_style" style="width: 100%">
+  <!--内容详细-->
+    <volist name="info" id="res">
+        <div class="title_style"><em></em> 订单号:{$res.oid} &nbsp;&nbsp;下单时间:{$res.time}  </div>
+
+        <table>
+            <th >
+                <td style="width: 20%">商品</td>
+                <td  style="width: 15%">单价(元)</td>
+                <td  style="width: 15%">数量</td>
+
+
+                <td  style="width: 20%">操作</td>
+            </th>
+
+            <tr>
+                <td>
+                    <a href="#" class="product_img"><img src="__ROOT__/upload/n0/{$res.pic|explode=',',###|array_shift}" width="80px" height="80px"></a>
+                    <a href="3">{$res.name}</a>
+                </td>
+                <td></td>
+                <td>{$res.price}</td>
+                <td>{$res.pnum}</td>
+                <td></td>
+            </tr>
+
+        </table>
+    </volist>
+   <div class="content_style">
+     <!--发货管理-->
+     <div class="Delivery_style">
+       <div class="hd">
+        <ul>
+         <li>发货地址</li>
+        </ul>
+       </div>
+       <div class="bd">
+        <ul>
+          <div class="add_address_style">
+             <table class="display_address">
+             <thead>
+              <tr class="label_name">
+
+               <td class="label_2" width="60px">联系人</td>
+               <td class="label_3" width="180px">所在地区</td>
+               <td class="label_4" width="180px">街道地址</td>
+               <td class="label_5" width="100px">邮政编码</td>
+
+               <td class="label_7" width="100px">手机号码</td>
+               <td class="label_8" width="100px">备注</td>
+               </tr>
+             </thead>
+              
+             <tbody>
+             <volist name="info" id="vo">
+              <tr>
+                  <td>{$vo.addname}</td>
+                  <td>{$vo.address}</td>
+                  <td>{$vo.town}</td>
+                  <td>{$vo.yid}</td>
+                  <td>{$vo.mobile}</td>
+                  <td></td>
+              </tr>
+             </volist>
+
+             </tbody>
+             </table>
+             <script type="text/javascript">
+                 function del($id){
+                     $.ajax({
+                         url:"{:U('Home/Address/del')}",
+                         type:'get',
+                         data:{'id':$id},
+                         success:function(res){
+                             if(res.status=='ok'){
+                                 layer.alert(res.msg);
+                             }else{
+                                 layer.alert(res.msg);
+                             }
+                         }
+                     })
+                 }
+             </script>
+
+          </div>
+        </ul>
+
+       </div>
+     </div>
+       <div>
+
+       </div>
+       <div>
+           <ul>
+               <li><div style="width: 150px;height: 50px;background-color: #A40000;font: bold 20px/1.5em '新宋体';text-align: center;line-height: 50px;margin-top: 20px" id="buy">提交订单</div></li>
+           </ul>
+       </div>
+       <volist name="info" id="val">
+    <form action="{:U('order')}" method="post" id="form2" style="display: none;margin: 50px 40px;">
+        <div style="line-height: 30px;">
+         <h1 style="color: red">确认提交订单吗？</h1>
+            <div style="font-size: 20px">
+            <span>订单编号:</span><input type="text" value="{$val.oid}" name="oid" style="width: 250px">
+            <span>下单时间:</span><input type="text" value="{$val.time}" name="time" style="width: 250px">
+            </div>
+            <table>
+                <th >
+                <td></td>
+                <td style="width: 20%">商品</td>
+                <td style="width: 15%">单价(元)</td>
+                <td style="width: 15%">数量</td>
+
+                </th>
+                <volist name="info" id="res">
+                    <tr>
+                        <td><label><input name="pid[{$res.id}]" type="checkbox"  value="{$res.payNum}"  checked="checked" /></label></td>
+                        <td>
+                            <a href="#" class="product_img"><img src="__ROOT__/upload/n0/{$res.pic|explode=',',###|array_shift}" width="80px" height="80px"></a>
+                            <a href="3">{$res.name}</a>
+                        </td>
+                        <td></td>
+                        <td>{$val.price}</td>
+                        <td>{$val.pnum}</td>
+
+                    </tr>
+                </volist>
+
+                <div style="text-align: center;line-height: 50px;">
+                    <tr class="label_name">
+                        <td class="label_1" width="60px">地址</td>
+                        <td class="label_2" width="60px">联系人</td>
+                        <td class="label_3" width="180px">所在地区</td>
+                        <td class="label_4" width="180px">街道地址</td>
+                        <td class="label_5" width="100px">邮政编码</td>
+                        <td class="label_7" width="100px">手机号码</td>
+                        <td class="label_8" width="100px">备注</td>
+
+                    </tr>
+                    <tbody>
+
+
+                        <tr>
+                            <td><label><input name="aid" type="radio" checked="checked" value="{$vo.id}"  /></label></td>
+                            <td>{$val.addname}</td>
+                            <td>{$val.address}</td>
+                            <td>{$val.town}</td>
+                            <td>{$val.yid}</td>
+                            <td>{$val.mobile}</td>
+                            <td></td>
+                        </tr>
+
+                </div>
+                    </tbody>
+
+            </table>
+            <h1 style="color: red"><重要提醒></重要提醒>:请选择收货地址(如果没有请选择添加)</h1>
+            <span style="font-size: 25px">总价:￥<input type="text" name="count" value="{$val.pmoney}" style="width: 200px"/> </span>
+            <span style="font-size: 25px">选择快递</span>
+            <select name="wlname" style="width: 160px;height: 40px;font-size: 20px">
+                <option value="中通快递" selected="selected">中通快递</option>
+                <option value="圆通快递" selected="selected">圆通快递</option>
+                <option value="顺丰快递" selected="selected">顺丰快递</option>
+                <option value="申通快递" selected="selected">申通快递</option>
+            </select>
+        <br/>
+        <input type="submit" value="提交订单" style="width: 100px;height: 40px;font-size: 20px" id="button"/>
+        </div>
+        <script type="text/javascript">
+        </script>
+    </form>
+       </volist>
+     <script type="text/javascript">
+         jQuery(".Delivery_style").slide({trigger:"click"});
+         $('#newAddress').click(function(){
+             layer.open({
+                 type: 1,
+                 title:'增加地址',
+                 area: ['500px','500px'],
+                 shadeClose: true,
+                 content: $('#form1')
+             });
+         })
+         $('#bc').click(function(){
+             $.ajax({
+                 url:"{:U('Address/address')}",
+                 data:$('#form1').serialize(),
+                 type:'get',
+                 success:function(res){
+                     if(res.status=='ok'){
+                         layer.alert(res.msg);
+                     }else{
+                         layer.alert(res.msg);
+                     }
+                 }
+             })
+         })
+         $('#button').click(function(){
+             $("#form2").submit(false);
+             $.post("{:U('order')}",$('#form2').serialize(),function(res){
+                 if(res.status=='re'){
+                     layer.alert(res.msg);
+                 }else{
+                     //$.post("{:U('order')}",$('#form2').serialize());
+                     //$('#button').type='submit';
+                 }
+             })
+         })
+         $('#buy').click(function(){
+             layer.open({
+                 type: 1,
+                 title:'提交订单',
+                 area: ['1200px','900px'],
+                 shadeClose: true,
+                 content: $('#form2')
+             })
+
+         })
+
+
+     </script>
+
+   </div>
+  </div>
+
+</div>
+</div>
+<!--网站地图-->
+<div class="fri-link-bg clearfix" style="width: 100%">
+    <div class="fri-link">
+        <div class="logo left margin-r20"><img src="__URL__/images/fo-logo.jpg" width="152" height="81" /></div>
+        <div class="left"><img src="__URL__/images/qd.jpg" width="90"  height="90" />
+            <p>扫描下载APP</p>
+        </div>
+    <div class="">
+    <dl>
+	 <dt>新手上路</dt>
+	 <dd><a href="#">售后流程</a></dd>
+     <dd><a href="#">购物流程</a></dd>
+     <dd><a href="#">订购方式</a> </dd>
+     <dd><a href="#">隐私声明 </a></dd>
+     <dd><a href="#">推荐分享说明 </a></dd>
+	</dl>
+	<dl>
+	 <dt>配送与支付</dt>
+	 <dd><a href="#">保险需求测试</a></dd>
+     <dd><a href="#">专题及活动</a></dd>
+     <dd><a href="#">挑选保险产品</a> </dd>
+     <dd><a href="#">常见问题 </a></dd>
+	</dl>
+	<dl>
+	 <dt>售后保障</dt>
+	 <dd><a href="#">保险需求测试</a></dd>
+     <dd><a href="#">专题及活动</a></dd>
+     <dd><a href="#">挑选保险产品</a> </dd>
+     <dd><a href="#">常见问题 </a></dd>
+	</dl>
+	<dl>
+	 <dt>支付方式</dt>
+	 <dd><a href="#">保险需求测试</a></dd>
+     <dd><a href="#">专题及活动</a></dd>
+     <dd><a href="#">挑选保险产品</a> </dd>
+     <dd><a href="#">常见问题 </a></dd>
+	</dl>	
+    <dl>
+	 <dt>帮助中心</dt>
+	 <dd><a href="#">保险需求测试</a></dd>
+     <dd><a href="#">专题及活动</a></dd>
+     <dd><a href="#">挑选保险产品</a> </dd>
+     <dd><a href="#">常见问题 </a></dd>
+	</dl>
+     <dl>
+	 <dt>帮助中心</dt>
+	 <dd><a href="#">保险需求测试</a></dd>
+     <dd><a href="#">专题及活动</a></dd>
+     <dd><a href="#">挑选保险产品</a> </dd>
+     <dd><a href="#">常见问题 </a></dd>
+	</dl>
+     <dl>
+	 <dt>帮助中心</dt>
+	 <dd><a href="#">保险需求测试</a></dd>
+     <dd><a href="#">专题及活动</a></dd>
+     <dd><a href="#">挑选保险产品</a> </dd>
+     <dd><a href="#">常见问题 </a></dd>
+	</dl>	   
+   </div>
+    </div>
+</div>
+<!--网站地图END-->
+<!--网站页脚-->
+<div class="copyright">
+    <div class="copyright-bg">
+        <div class="hotline">为生活充电在线 <span>招商热线：****-********</span> 客服热线：400-******</div>
+        <div class="hotline co-ph">
+            <p>版权所有Copyright ©***************</p>
+            <p>*ICP备***************号 不良信息举报</p>
+            <p>总机电话：****-*********/194/195/196 客服电话：4000****** 传 真：********
+                
+                E-mail:****@****.gov.cn</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script type="text/javascript">
+    function old(){
+        layer.open({
+
+        })
+    }
+    function logout(){
+        $.ajax({
+            type:"post",
+            url:"{:u('Home/Login/logout')}",
+            data:'',
+            success:function(data){
+                alert(data.status);
+                if(data.status=='ok'){
+                    location.reload();
+                }
+            }
+        })
+
+    }
+    function user(){
+        $.post("{:U('Home/User/user')}",function(res){
+            if(res.status=='no'){
+                layer.alert(res.msg);
+            }else{
+                location.href="{:U('Home/User/user')}";
+            }
+        })
+    }
+</script>
+</html>

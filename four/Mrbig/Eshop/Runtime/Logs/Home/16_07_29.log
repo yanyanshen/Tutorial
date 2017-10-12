@@ -1,0 +1,456 @@
+[ 2016-07-29T08:40:40+08:00 ] 172.16.11.190 /Mrbig/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mr_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mr_user` WHERE `username` = 'zhansan' AND `pwd` = '121121'  [ RunTime:0.0010s ]
+
+[ 2016-07-29T08:42:17+08:00 ] 172.16.11.190 /Mrbig/Home/Goods/orderToPay.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mr_orderdetail` [ RunTime:0.0070s ]
+SQL: UPDATE `mr_orderdetail` SET `statusid`='2' [ RunTime:0.1270s ]
+
+[ 2016-07-29T08:42:25+08:00 ] 172.16.11.190 /Mrbig/Home/User/user.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\mrbig\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\mrbig\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0080s ]
+SQL: select * from  mr_orderstatus as t , mr_orderdetail as o  where o.statusid=t.id and o.mrid='45' ORDER BY o.id DESC  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `mr_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `mr_uuser` WHERE `uname` = '45'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mr_address` WHERE `mrid` = 45  [ RunTime:0.0010s ]
+SQL: select * from  mr_goods as g , mr_cart as c  where c.pid=g.id and c.uid='45' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_information` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: p D:\mrbig\Mrbig\Eshop\Home\Controller\UserController.class.php 第 59 行.
+NOTIC: [8] Undefined index: limit D:\mrbig\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `mr_information` WHERE `uid` = 45 LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mr_collect` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mr_collect` WHERE `uid` = 45  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 19  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 7  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 6  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 357 行.
+NOTIC: [8] Undefined variable: bonuspoint D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 358 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [8] Use of undefined constant uploadHead - assumed 'uploadHead' D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 618 行.
+NOTIC: [8] Undefined variable: page D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 824 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 853 行.
+NOTIC: [8] Undefined variable: prices D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 863 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 853 行.
+NOTIC: [8] Undefined variable: prices D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 863 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 853 行.
+NOTIC: [8] Undefined variable: prices D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 863 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T08:47:10+08:00 ] 172.16.11.190 /Mrbig/Home/User/user.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\mrbig\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\mrbig\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0070s ]
+SQL: select * from  mr_orderstatus as t , mr_orderdetail as o  where o.statusid=t.id and o.mrid='45' ORDER BY o.id DESC  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mr_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mr_uuser` WHERE `uname` = '45'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mr_address` WHERE `mrid` = 45  [ RunTime:0.0010s ]
+SQL: select * from  mr_goods as g , mr_cart as c  where c.pid=g.id and c.uid='45' [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mr_information` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: p D:\mrbig\Mrbig\Eshop\Home\Controller\UserController.class.php 第 59 行.
+NOTIC: [8] Undefined index: limit D:\mrbig\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `mr_information` WHERE `uid` = 45 LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mr_collect` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mr_collect` WHERE `uid` = 45  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 19  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 7  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 6  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mr_goods` WHERE `id` = 4  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: grade D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 357 行.
+NOTIC: [8] Undefined variable: bonuspoint D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 358 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 436 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 445 行.
+NOTIC: [8] Use of undefined constant uploadHead - assumed 'uploadHead' D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 618 行.
+NOTIC: [8] Undefined variable: page D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 824 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 853 行.
+NOTIC: [8] Undefined variable: prices D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 863 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 853 行.
+NOTIC: [8] Undefined variable: prices D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 863 行.
+NOTIC: [2048] Only variables should be passed by reference D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 853 行.
+NOTIC: [8] Undefined variable: prices D:\mrbig\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 863 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:33:49+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:33:54+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:33:59+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:34:08+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:34:11+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:34:15+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:34:33+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:34:48+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mrid D:\project\four\Mrbig\Eshop\Home\Controller\GoodsController.class.php 第 51 行.
+
+[ 2016-07-29T10:35:34+08:00 ] 172.16.11.90 /Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mr_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mr_user` WHERE `username` = 'gaoyong' AND `pwd` = 'gaoyong'  [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:36:03+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mr_collect` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mr_collect` WHERE `pid` = 3  [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:37:00+08:00 ] 172.16.11.90 /Home/Goods/toCar/id/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mr_cart` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 589 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `mr_cart` WHERE `pid` = 3 AND ( ( `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null  )  )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `mr_cart` (`pid`,`num`,`uid`,`addTime`) VALUES ('3','1','43','1469759820') [ RunTime:0.0400s ]
+
+[ 2016-07-29T10:37:14+08:00 ] 172.16.11.90 /Home/Goods/old.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mr_collect` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mr_collect` WHERE `pid` = 3  [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:37:16+08:00 ] 172.16.11.90 /Home/Goods/toCar/id/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mr_cart` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 589 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `mr_cart` WHERE `pid` = 3 AND ( ( `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null  )  )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `mr_cart` (`pid`,`num`,`uid`,`addTime`) VALUES ('3','1','43','1469759836') [ RunTime:0.0380s ]
+
+[ 2016-07-29T10:37:29+08:00 ] 172.16.11.90 /Home/Goods/toCar/id/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mr_cart` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 589 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `mr_cart` WHERE `pid` = 3 AND ( ( `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null AND `uid` = null  )  )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `mr_cart` (`pid`,`num`,`uid`,`addTime`) VALUES ('3','1','43','1469759849') [ RunTime:0.0300s ]
+
+[ 2016-07-29T10:42:11+08:00 ] 172.16.11.90 /Home/Address/address.html?name=%E9%AB%98%E5%8B%87&province=%E5%86%85%E8%92%99%E5%8F%A4%E8%87%AA%E6%B2%BB%E5%8C%BA&city=%E4%B9%8C%E6%B5%B7%E5%B8%82&town1=%E6%B5%B7%E5%8D%97%E5%8C%BA&town=%E6%96%87%E5%8C%96%E8%B7%AF&yid=460000&mobile=13837125766
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0030s ]
+SQL: INSERT INTO `mr_address` (`addname`,`address`,`town`,`mobile`,`yid`) VALUES ('高勇','内蒙古自治区乌海市海南区','文化路','13837125766','460000') [ RunTime:0.1170s ]
+
+[ 2016-07-29T10:42:58+08:00 ] 172.16.11.90 /Home/Address/address.html?name=%E9%AB%98%E5%8B%87&province=%E5%8C%97%E4%BA%AC%E5%B8%82&city=%E5%8C%97%E4%BA%AC%E5%B8%82%E5%B8%82%E8%BE%96%E5%8C%BA&town1=%E4%B8%9C%E5%9F%8E%E5%8C%BA&town=%E5%9F%92&yid=450002&mobile=13837125766
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0040s ]
+SQL: INSERT INTO `mr_address` (`addname`,`address`,`town`,`mobile`,`yid`) VALUES ('高勇','北京市北京市市辖区东城区','埒','13837125766','450002') [ RunTime:0.0370s ]
+
+[ 2016-07-29T10:45:00+08:00 ] 172.16.11.90 /Home/User/user.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::data() should be compatible with Think\Model::data($data = '') D:\project\four\Mrbig\Eshop\Home\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mr_goods` [ RunTime:0.0030s ]
+SQL: select * from  mr_orderstatus as t , mr_orderdetail as o  where o.statusid=t.id and o.mrid='43' ORDER BY o.id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mr_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_uuser` WHERE `uname` = '43'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\Eshop\Home\Controller\UserController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_address` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_address` WHERE `mrid` = 43  [ RunTime:0.0000s ]
+SQL: select * from  mr_goods as g , mr_cart as c  where c.pid=g.id and c.uid='43' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mr_information` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: p D:\project\four\Mrbig\Eshop\Home\Controller\UserController.class.php 第 59 行.
+NOTIC: [8] Undefined index: limit D:\project\four\Mrbig\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `mr_information` WHERE `uid` = 43 LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mr_collect` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_collect` WHERE `uid` = 43  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arrOld D:\project\four\Mrbig\Eshop\Home\Controller\UserController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: grade D:\project\four\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 357 行.
+NOTIC: [8] Undefined variable: bonuspoint D:\project\four\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 358 行.
+NOTIC: [8] Use of undefined constant uploadHead - assumed 'uploadHead' D:\project\four\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 618 行.
+NOTIC: [8] Undefined variable: page D:\project\four\Mrbig\Eshop\Runtime\Cache\Home\661af2e48cc89eb746b31474d7de9ef0.php 第 824 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:45:42+08:00 ] 172.16.11.90 /Home/User/chong.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_information` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mr_uuser` WHERE `uname` = '43'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\Eshop\Home\Controller\UserController.class.php 第 144 行.
+SQL: UPDATE `mr_uuser` SET `umoney`='100' WHERE `uname` = '43' [ RunTime:0.0000s ]
+SQL: INSERT INTO `mr_information` (`money`,`way`,`time`,`uid`) VALUES ('+100','支付宝','1469760342','43') [ RunTime:0.0360s ]
+
+[ 2016-07-29T10:45:47+08:00 ] 172.16.11.90 /Home/User/chong.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mr_information` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mr_uuser` WHERE `uname` = '43'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\project\four\Mrbig\Eshop\Home\Controller\UserController.class.php 第 144 行.
+SQL: UPDATE `mr_uuser` SET `umoney`='100' WHERE `uname` = '43' [ RunTime:0.0000s ]
+SQL: INSERT INTO `mr_information` (`money`,`way`,`time`,`uid`) VALUES ('+100','财付通','1469760347','43') [ RunTime:0.0410s ]
+
+[ 2016-07-29T10:46:43+08:00 ] 172.16.11.90 /Home/User/uploadHead.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\four\Mrbig\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: UPDATE `mr_uuser` SET `head`='579ac3936b908.png' WHERE `uname` = '43' [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:46:43+08:00 ] 172.16.11.90 /Home/User/uploadHead.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\four\Mrbig\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: UPDATE `mr_uuser` SET `head`='579ac39372669.png' WHERE `uname` = '43' [ RunTime:0.0010s ]
+
+[ 2016-07-29T10:46:48+08:00 ] 172.16.11.90 /Home/User/uploadHead.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\four\Mrbig\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: UPDATE `mr_uuser` SET `head`='579ac398556a9.png' WHERE `uname` = '43' [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:46:48+08:00 ] 172.16.11.90 /Home/User/uploadHead.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\four\Mrbig\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: UPDATE `mr_uuser` SET `head`='579ac3985c022.png' WHERE `uname` = '43' [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:46:54+08:00 ] 172.16.11.90 /Home/User/uploadHead.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\four\Mrbig\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0020s ]
+SQL: UPDATE `mr_uuser` SET `head`='579ac39e6f22e.png' WHERE `uname` = '43' [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:46:54+08:00 ] 172.16.11.90 /Home/User/uploadHead.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\four\Mrbig\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mr_uuser` [ RunTime:0.0030s ]
+SQL: UPDATE `mr_uuser` SET `head`='579ac39e757bf.png' WHERE `uname` = '43' [ RunTime:0.0000s ]
+

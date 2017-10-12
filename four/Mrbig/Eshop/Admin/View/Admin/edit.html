@@ -1,0 +1,233 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="__URL__/Style/skin.css" />
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__URL__/cjyy/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/cjyy/jquery.validate.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/cjyy/jquery.form.js"></script>
+    <style>
+        span.error{
+            color:#a98673
+        }
+    </style>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+    <tr>
+        <td width="17" valign="top" background="__URL__/Images/mail_left_bg.gif">
+            <img src="__URL__/Images/left_top_right.gif" width="17" height="29" />
+        </td>
+        <td valign="top" background="__URL__/Images/content_bg.gif">
+            <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./__URL__/Images/content_bg.gif">
+                <tr><td height="31"><div class="title">添加栏目</div></td></tr>
+            </table>
+        </td>
+        <td width="16" valign="top" background="__URL__/Images/mail_right_bg.gif"><img src="__URL__/Images/nav_right_bg.gif" width="16" height="29" /></td>
+    </tr>
+
+    <tr>
+
+        <td valign="middle" background="__URL__/Images/mail_left_bg.gif">&nbsp;</td>
+
+        <td valign="top" bgcolor="#F7F8F9">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                <tr><td colspan="2" valign="top">&nbsp;</td><td>&nbsp;</td><td valign="top">&nbsp;</td></tr>
+                <tr>
+                    <td colspan="4">
+                        <table>
+                            <tr>
+                                <td width="100" align="center"><img src="__URL__/Images/mime.gif" /></td>
+                                <td valign="bottom"><h3 style="letter-spacing:1px;">MrBig,改变空间，改变生活！</h3></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="40" colspan="4">
+                        <table width="100%" height="1" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                            <tr><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="2%">&nbsp;</td>
+                    <td width="96%">
+                        <table width="100%">
+                            <tr>
+                                <td colspan="2">
+                                    <form action="{:u('editSave')}" method="post"  id="form1">
+                                        <input type="hidden" name="id" value="{$admin.id}"/>
+                                        <table width="100%" class="cont">
+                                            <tr>
+                                                <td width="2%">&nbsp;</td>
+                                                <td width="10%">用户名：</td>
+                                                <td width="20%"><input class="text" type="text" name="name" value="{$admin.name}" readonly="" style="background-color: #a9a9a9"/></td>
+                                                <td></td>
+                                                <td width="2%">&nbsp;</td>
+                                            </tr>
+                                            </tr>
+                                            <tr>
+                                                <td width="2%">&nbsp;</td>
+                                                <td>密码：</td>
+                                                <td><input class="text" type="text" name="password" value="{$admin.password}" id="password"/></td>
+                                                <td></td>
+                                                <td width="2%">&nbsp;</td>
+                                            </tr>
+                                            </tr>
+                                            <tr>
+                                                <td width="2%">&nbsp;</td>
+                                                <td>确认密码：</td>
+                                                <td><input class="text" type="text" name="repwd" value="{$admin.repwd}" /></td>
+                                                <td></td>
+                                                <td width="2%">&nbsp;</td>
+                                            </tr>
+                                            </tr>
+                                            <tr>
+                                                <td width="2%">&nbsp;</td>
+                                                <td>电子邮箱：</td>
+                                                <td><input class="text" type="text" name="email" value="{$admin.email}" /></td>
+                                                <td></td>
+                                                <td width="2%">&nbsp;</td>
+                                            </tr>
+                                            </tr>
+                                            <tr>
+                                                <td width="2%">&nbsp;</td>
+                                                <td>类型：</td>
+                                                <td>
+                                                    <input type="radio" name="id_law" value="1" /> 管理员
+                                                    <input type="radio" name="id_law" value="0" /> 普通用户
+                                                </td>
+                                                <td></td>
+                                                <td width="2%">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td colspan="3"><input id="se" class="btn" type="button" value="提交" /></td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="2%">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td height="40" colspan="4">
+                        <table width="100%" height="1" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                            <tr><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="2%">&nbsp;</td>
+                    <td width="51%" class="left_txt">
+                        <img src="__URL__/Images/icon_mail.gif" width="16" height="11"> 客户服务邮箱：rainman@foxmail.com<br />
+                        <img src="__URL__/Images/icon_phone.gif" width="17" height="14"> 官方网站：<a href="http://www.rain-man.cn">http://www.rain-man.cn</a>
+                    </td>
+                    <td>&nbsp;</td><td>&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+        <td background="__URL__/Images/mail_right_bg.gif">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td valign="bottom" background="__URL__/Images/mail_left_bg.gif">
+            <img src="__URL__/Images/buttom_left.gif" width="17" height="17" />
+        </td>
+        <td background="__URL__/Images/buttom_bgs.gif">
+            <img src="__URL__/Images/buttom_bgs.gif" width="17" height="17">
+        </td>
+        <td valign="bottom" background="__URL__/Images/mail_right_bg.gif">
+            <img src="__URL__/Images/buttom_right.gif" width="16" height="17" />
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+
+    var validate = $('#form1').validate({
+        //设置验证规则
+        rules: {
+            password:{
+                required:true,
+                rangelength:[7,11]
+            },
+            repwd:{
+                required:true,
+                equalTo:'#password'
+            },
+            email:{
+                required:true,
+                email:true
+            },
+            id_law:{
+                required:true,
+                remote:{
+                    url:'{:U("/Admin/Admin/checkLevel")}',
+                    type :'post'
+                }
+            }
+        },
+        messages: {
+            password:{
+                required:'请输入密码',
+                rangelength:'密码长度不符合规则'
+
+            },
+            repwd: {
+                required: '请输入确认密码',
+                equalTo: '确认密码不正确'
+            },
+            email: {
+                required: '请输入邮箱',
+                email: '邮箱格式不正确'
+            },
+            id_law:{
+                required:'必须选择管理员等级',
+                remote:'对不起你不能更改权限'
+            }
+
+        },
+        success: function (label) {
+            label.addClass("ok");
+        },
+        validClass: "ok",
+        errorElement: 'span',
+        errorPlacement: function (error, element) {
+            error.appendTo(element.parent());
+
+        }
+    })
+    jQuery.validator.onfocus = true;
+
+    $('.btn').click(function(){
+            $.post("{:U('Admin/Admin/editSave')}",$('#form1').serialize(),function(res){
+                if(res.status=='ok'){
+                    layer.msg(res.msg,{icon:6,time:1000},function(){
+                                location.href="{:U('Admin/Admin/adminList')}";
+                            }
+                    );
+                }else{
+                    layer.tips(res.msg,'#se', {tips: [1, '#3f3149']},function () {
+                                location.href = "{:U('Admin/Admin/edit')}";
+                            }
+                    )
+                }
+            })
+    })
+</script>
+</html>
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加商品</title>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/main.css">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/colResizable-1.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/common.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/cjyy/layer/layer.js"></script>
+    <link rel="stylesheet" type="text/css" href="__URL__/Style/skin.css" />
+    <script type="text/javascript" src="__URL__/cjyy/jquery.form.js"></script>
+    <script type="text/javascript" src="__URL__/cjyy/jquery.validate.js"></script>
+    <script type="text/javascript" src="__URL__/cjyy/upImg100.js"></script>
+    <style>
+        input.error {
+            border-color: #dda483;
+        }
+        .picc{
+            float: left;
+
+
+        }
+        .selectImg{
+            display: block;
+            width:60px;
+            height:23px;
+            line-height:23px;
+            margin:0px;
+            padding:3px 5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            background: #1B75B6;
+            font-size:13px;
+            text-align:center;
+            color:#fff;
+        }
+
+    </style>
+</head>
+<body>
+                        <!--编辑内容-->
+                <form action="{:u('Admin/Ad/addAd')}" class="form2" id="form2" method="post" enctype="multipart/form-data">
+                    <table class="form_table pt15 pb15" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="td_right">广告名称：</td>
+                            <td class=""><input type="text" name="adname" class="input-text lh30" size="25"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">广告图片：</td>
+                            <td class="">
+                                <div class="picc">
+                                    <p id="preview1" ><img id="imghead1"  border=0 src='' alt=""></p><span></span>
+                                    <input type="file" id="image1" name="image" onchange="previewImage(this,'preview1','imghead1')" style="display:none;" >
+                                    <label for="image1"  class="selectImg">选择图片</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">是否使用：</td>
+                            <td class="">
+                                <select name="adstate" class="input-text lh30" style="width: 60px">
+                                <option  value="1">使用</option>
+                                <option value="0">隐藏</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">图片描述：</td>
+                            <td class=""><input type="text" name="adsp"  class="input-text lh30" size="25"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">&nbsp;</td>
+                            <td class="" style="width: auto">
+                                <button type="button" id="ad1" class="ext_btn ext_btn_submit">添&nbsp;加&nbsp;广&nbsp;告</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                        <!--编辑内容结束-->
+
+<script type="text/javascript">
+    var validate = $('#form2').validate({
+        //设置验证规则
+        rules: {
+            adname:{
+                required:true,
+                remote: {
+                    url: '{:U("Admin/Ad/checkAdName")}',
+                    type: 'post'
+                }
+            },
+            image:{
+                required:true
+            }
+        },
+        messages: {
+            adname:{
+                required:'不能为空',
+                remote: '广告名已使用'
+            },
+            image:{
+                required:'图片不能为空'
+            }
+
+        },
+        success: function (label) {
+            label.addClass("ok");
+        },
+        validClass: "ok",
+        errorElement: 'span',
+        errorPlacement: function (error, element) {
+            error.appendTo(element.parent());
+
+        }
+    });
+    jQuery.validator.onfocus = true;
+    $('#ad1').click(function(){
+        if (validate.form()) {
+            $('#form2').ajaxSubmit(function(res) {
+
+                if(res.status=='ok'){
+                    layer.confirm(res.msg,{
+                                btn:['继续添加','广告列表']
+                            },
+                            function(){
+                                layer.msg('ok',{time:1000},function(){
+                                    location.href="{:U('/Admin/Ad/ad')}";
+                                })
+                            },
+                            function(){
+                                var index = parent.layer.getFrameIndex(window.name);
+                                layer.msg('冲向广告列表',{time:1000},function(){
+                                    location.href="{:U('/Admin/Ad/listAd')}";
+                                    parent.layer.close(index);
+                                })
+                            })
+                }
+
+            })
+            return false;
+
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?php
+namespace Home\Controller;
+use Home\Model\UserModel;
+use Think\Controller;
+class LoginController extends Controller
+{
+    public function verify(){
+        $con=array(
+            'fontsize'=>25,
+            'length'=>4,
+        );
+        $verify=new \Think\Verify($con);
+        $verify->entry();
+    }
+    public function check(){
+        $res=new UserModel();
+        $num=$res->che();
+        if($num){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public function checkVerify(){
+        $res1=I('post,verify');
+        $res2=$_SESSION['verify'];
+        if($res1=$res2){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public function register(){
+        $this->checkVerify();
+        $arr['username']=$_POST['username'];
+        $arr['pwd']=$_POST['password'];
+        $arr['email']=$_POST['email'];
+        $res=new UserModel();
+        $num=$res->reg($arr);
+        if($num){
+            echo "<script>alert('注册成功');location.href='login.html'</script>";
+        }else{
+            echo "<script>alert('注册失败')</script>";
+        }
+    }
+    public function login(){
+        $username=$_POST['username'];  //I('post,username');
+        $pwd=$_POST['password'];   //I('post,password');
+
+        $res=new UserModel();
+        $num=$res->login($username,$pwd);
+        if($num){
+            echo "<script>alert('登录成功')</script>";
+            $this->display('Index/index');
+
+        }else{
+            echo "<script>alert('登录失败')</script>";
+            $this->display();
+        }
+    }
+}

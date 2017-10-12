@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>myFocus v2 js焦点幻灯片特效代码</title>
+<script type="text/javascript" src="js/myfocus-2.0.4.min.js"></script>
+<style type="text/css">
+#myFocus{ width:560px; height:300px;margin:0 auto;}
+#foot_bm a,#foot_bm,p,p a{color:#666;}
+</style>
+<!--<script type="text/javascript">
+myFocus.set({
+  id:'myFocus',//ID
+  pattern:'mF_fancy'//风格
+});
+</script> -->
+<script type="text/javascript">
+myFocus.set({
+    id:'myFocus',//焦点图盒子ID
+    pattern:'mF_fancy',//风格应用的名称
+    time:3,//切换时间间隔(秒)
+    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+    width:560,//设置图片区域宽度(像素)
+    height:300,//设置图片区域高度(像素)
+    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+});
+</script>
+</head>
+<body>
+<div id="myFocus"><!--焦点图盒子-->
+  <div class="loading"></div><!--载入画面(可删除)-->
+  <div class="pic"><!--图片列表-->
+  	<ul>
+        <li><a href="#1"><img src="img/1m.jpg" thumb="" alt="图片1" text="图片1更详细的描述文字" /></a></li>
+        <li><a href="#2"><img src="img/2m.jpg" thumb="" alt="图片2" text="图片2更详细的描述文字" /></a></li>
+        <li><a href="#3"><img src="img/3m.jpg" thumb="" alt="图片3" text="图片3更详细的描述文字" /></a></li>
+        <li><a href="#4"><img src="img/4m.jpg" thumb="" alt="图片4" text="图片4更详细的描述文字" /></a></li>
+        <li><a href="#5"><img src="img/5m.jpg" thumb="" alt="图片5" text="图片5更详细的描述文字" /></a></li>
+  	</ul>
+  </div>
+</div>
+</body>
+</html>

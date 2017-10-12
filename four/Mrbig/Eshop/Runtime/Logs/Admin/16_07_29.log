@@ -1,0 +1,59 @@
+[ 2016-07-29T10:47:57+08:00 ] 172.16.11.90 /Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:48:00+08:00 ] 172.16.11.90 /Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:48:00+08:00 ] 172.16.11.90 /Admin/Login/checkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:48:02+08:00 ] 172.16.11.90 /Admin/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: password D:\project\four\Mrbig\Eshop\Admin\Controller\LoginController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `mr_admin` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `mr_admin` WHERE `name` = 'hxc111' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id_law` FROM `mr_admin` WHERE `name` = 'hxc111' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:49:30+08:00 ] 172.16.11.90 /Admin/Ad/ad.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/ad.html
+
+[ 2016-07-29T10:49:33+08:00 ] 172.16.11.90 /Admin/Ad/listAd.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/listAd.html
+
+[ 2016-07-29T10:49:34+08:00 ] 172.16.11.90 /Admin/Ad/ad.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/ad.html
+
+[ 2016-07-29T10:49:35+08:00 ] 172.16.11.90 /Admin/Ad/listAd.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/listAd.html
+
+[ 2016-07-29T10:49:36+08:00 ] 172.16.11.90 /Admin/Ad/ad.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/ad.html
+
+[ 2016-07-29T10:49:45+08:00 ] 172.16.11.90 /Admin/Ad/ad.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/ad.html
+
+[ 2016-07-29T10:49:46+08:00 ] 172.16.11.90 /Admin/Ad/listAd.html
+ERR: 模板不存在:./Eshop/Admin/View/Ad/listAd.html
+
+[ 2016-07-29T10:50:39+08:00 ] 172.16.11.90 /Admin/Login/loginout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

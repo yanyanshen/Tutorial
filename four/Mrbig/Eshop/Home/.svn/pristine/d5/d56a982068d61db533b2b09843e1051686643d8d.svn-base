@@ -1,0 +1,28 @@
+<?php
+namespace Home\Model;
+use Think\Model;
+class UserModel extends Model{
+    protected $_validate = array(
+        array('username',)
+    );
+    public function login($username,$pwd){
+        $res=M('User');
+        //$sql="select * from mr_user where username=$username and pwd=$password";
+        $where['username']=$username;
+        $where['pwd']=$pwd;
+        $num=$res->where($where)->select();
+        return $num;
+    }
+    public function reg($arr){
+        $obj=$arr;
+        $res=M('User');
+        $num=$res->add($obj);
+        return $num;
+    }
+    public function che(){
+        $name=$_POST['username'];
+        $res=M('User');
+        $num=$res->where("$name")->select();
+        return $num;
+    }
+}

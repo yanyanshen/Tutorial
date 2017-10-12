@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__URL__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/style.css" rel="stylesheet" type="text/css" />
+<script src="__URL__/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="__URL__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__URL__/js/common_js.js" type="text/javascript"></script>
+<script src="__URL__/js/footer.js" type="text/javascript"></script>
+<title>产品列表页</title>
+    <style type="text/css">
+
+
+
+        #link{
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<script type="text/javascript" charset="UTF-8">
+<!--
+ //点击效果start
+ function infonav_more_down(index)
+ {
+  var inHeight = ($("div[class='p_f_name infonav_hidden']").eq(index).find('p').length)*30;//先设置了P的高度，然后计算所有P的高度
+  if(inHeight > 60){
+   $("div[class='p_f_name infonav_hidden']").eq(index).animate({height:inHeight});
+   $(".infonav_more").eq(index).replaceWith('<p class="infonav_more"><a class="more"  onclick="infonav_more_up('+index+');return false;" href="javascript:">收起<em class="pulldown"></em></a></p>');
+  }else{
+   return false;
+  }
+ }
+ function infonav_more_up(index)
+ {
+  var infonav_height = 85;
+  $("div[class='p_f_name infonav_hidden']").eq(index).animate({height:infonav_height});
+  $(".infonav_more").eq(index).replaceWith('<p class="infonav_more"> <a class="more" onclick="infonav_more_down('+index+');return false;" href="javascript:">更多<em class="pullup"></em></a></p>');
+ }
+   
+ function onclick(event) {
+  info_more_down();
+ return false;
+ }
+ //点击效果end  
+//-->
+</script>
+<body>
+<!--头部开始-->
+<include file="Goods/header"/>
+<!--头部结束-->
+<!--产品列表样式-->
+<div class="Inside_pages"> 
+    <!--位置-->
+    <div id="Filter_style">
+       <h2><div class="Location_link"> <em></em><a href="#">您好，<b style="color: red;font-size: 18px">“{$keywords}”&nbsp;</b>共搜索到</a> &lt; <a href="#">{$total}件商品</a> </div></h2>
+        <!--产品列表样式-->
+    <div class="p_list  clearfix">
+        <ul>
+            <volist name="list" id="val">
+            <li class="gl-item"> <em class="icon_special tejia"></em>
+                <div class="Borders" >
+                    <div class="img"><a href="#" onclick="window.location.href='{:u(\'Goods/goods\',array(\'id\'=>$val[\'id\']))}'"><img src="__ROOT__/upload/n1/{$val.pic|explode=',',###|array_shift}" style="width:220px;height:220px"></a></div>
+                    <div class="name">
+                        <h2><a href="#">
+                        {:mb_substr($val['name'],0,12,"utf-8")}
+                        </a></h2>
+                    </div>
+                    <div class="Shop_name"><a href="#">两只老鼠旗舰店</a></div>
+                    <div class="yushou">
+                        <div class="yushou-p fl">¥<strong>{$val['price']}</strong></div>
+                        <a href="">
+                        <div class="fr sold-go">抢购</div>
+                        </a> </div>
+                </div>
+            </li>
+                </volist>
+        </ul>
+        <div class="Paging">
+            <div class="Pagination">{$page}</div>
+        </div>
+    </div>
+</div>
+<!--网站地图-->
+    <!--网站地图-->
+    <div class="fri-link-bg clearfix">
+        <div class="fri-link" id="link">
+
+            <div class="left"><img src="__URL__/images/link.png" width="90"  height="90" />
+                <p>扫描下载APP</p>
+            </div>
+            <div class="">
+                <dl>
+                    <a href="{:U('Home/Teach/teach')}"><dt>新手上路</dt></a>
+                    <dd><a href="#">售后流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">订购方式</a> </dd>
+                    <dd><a href="#">隐私声明 </a></dd>
+                </dl>
+                <dl>
+                    <dt>配送与支付</dt>
+                    <dd><a href="#">保险需求测试</a></dd>
+                    <dd><a href="#">专题及活动</a></dd>
+                    <dd><a href="#">挑选保险产品</a> </dd>
+                    <dd><a href="#">常见问题 </a></dd>
+                </dl>
+                <dl>
+                    <dt>售后保障</dt>
+                    <dd><a href="#">保险需求测试</a></dd>
+                    <dd><a href="#">专题及活动</a></dd>
+                    <dd><a href="#">挑选保险产品</a> </dd>
+                    <dd><a href="#">常见问题 </a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">保险需求测试</a></dd>
+                    <dd><a href="#">专题及活动</a></dd>
+                    <dd><a href="#">挑选保险产品</a> </dd>
+                    <dd><a href="#">常见问题 </a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">保险需求测试</a></dd>
+                    <dd><a href="#">专题及活动</a></dd>
+                    <dd><a href="#">挑选保险产品</a> </dd>
+                    <dd><a href="#">常见问题 </a></dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+    <!--网站地图END-->
+    <!--网站页脚-->
+    <div class="copyright">
+        <div class="copyright-bg">
+            <div class="hotline">为生活充电在线 <span>招商热线：4000-889912354</span> 客服热线：400-1515495</div>
+            <div class="hotline co-ph">
+                <p>版权所有Copyright ©Mr.Big信息科技有限责任公司</p>
+                <p>ICP备15241423521号 不良信息举报</p>
+                <p>总机电话：0521-4835/194/195/196 客服电话：4000-63568995 传 真：zhazha.xx.567
+
+                    E-mail:54994578@niubi.gov.cn</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    $(function() {
+        $('.cateList').hide();
+    });
+
+    function sort(v) {
+        $(v).addClass('active').siblings().removeClass('active');
+    }
+
+    function search(id){
+        var keywords= $("input[name='keywords']").val();
+        var id=id;
+        $.post("{:U('search')}",{"p":id,"keywords":keywords},function(res){
+            $('.pxlist').html(res);
+        })
+    }
+    function logout(){
+        $.ajax({
+            type:"post",
+            url:"{:u('Home/Login/logout')}",
+            data:'',
+            success:function(data){
+                layer.alert(data.status);
+                if(data.status=='ok'){
+                    location.reload();
+                }
+            }
+        })
+    }
+    function user(){
+        $.post("{:U('Home/User/user')}",function(res){
+            if(res.status=='no'){
+                layer.alert(res.msg);
+            }else{
+                location.href="{:U('Home/User/user')}";
+            }
+        })
+    }
+</script>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__URL__/skins/all.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #form1 table tr{
+            height: 50px;
+            font-size: 15px;
+        }
+
+
+
+        #link{
+            margin-left: 33%;
+        }
+        #submit{
+
+            margin-left:90%;
+        }
+
+    </style>
+
+<script src="__URL__/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="__URL__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__URL__/js/common_js.js" type="text/javascript"></script>
+<script src="__URL__/js/footer.js" type="text/javascript"></script>
+<script src="__URL__/layer/layer.js" type="text/javascript"></script>
+<script src="__URL__/address/js/distpicker.data.js"></script>
+<script src="__URL__/address/js/distpicker.js"></script>
+<script src="__URL__/address/js/main.js"></script>
+<title>订单详情</title>
+</head>
+<include file="Goods/header"/>
+<body>
+<!--发货管理样式-->
+<div class="Inside_pages clearfix">
+<div class="left_style">
+  <!--列表-->
+</div>
+<div class="right_style" style="width: 100%">
+  <!--内容详细-->
+        <div class="title_style"><em></em> 下单时间:{$time} </div>
+
+        <table>
+            <th >
+                <td style="width: 20%">商品</td>
+                <td  style="width: 15%">单价(元)</td>
+                <td  style="width: 15%">数量</td>
+                <td  style="width: 15%">实付款(元)</td>
+
+                <td  style="width: 20%">操作</td>
+            </th>
+            <volist name="info" id="res">
+            <tr>
+                <td>
+                    <a href="#" class="product_img"><img src="__ROOT__/upload/n0/{$res.pic|explode=',',###|array_shift}" width="80px" height="80px"></a>
+                    <a href="3">{$res.name}</a>
+                </td>
+                <td></td>
+                <td>{$res.price}</td>
+                <td>{$res.payNum}</td>
+                <td>{$res.prices}</td>
+
+                <td>删除</td>
+            </tr>
+            </volist>
+        </table>
+
+   <div class="content_style">
+     <!--发货管理-->
+     <div class="Delivery_style">
+       <div class="hd">
+        <ul>
+         <li>发货地址</li>
+         <li>运费模板</li>
+        </ul>
+       </div>
+       <div class="bd">
+        <ul>
+          <div class="add_address_style">
+            <div class="user_Remark">用来保存自己的发货，退货地址，用户最多只能添加20个地址。</div>  
+             <table class="display_address">
+             <thead>
+              <tr class="label_name">
+
+               <td class="label_2" width="60px">联系人</td>
+               <td class="label_3" width="180px">所在地区</td>
+               <td class="label_4" width="180px">街道地址</td>
+               <td class="label_5" width="100px">邮政编码</td>
+
+               <td class="label_7" width="100px">手机号码</td>
+               <td class="label_8" width="100px">备注</td>
+               <td class="label_9" width="100px">操作</td>
+               </tr>
+             </thead>
+              
+             <tbody>
+             <volist name="array" id="vo">
+              <tr>
+                  <td>{$vo.addname}</td>
+                  <td>{$vo.address}</td>
+                  <td>{$vo.town}</td>
+                  <td>{$vo.yid}</td>
+                  <td>{$vo.mobile}</td>
+                  <td></td>
+                  <td><a href="javascript:del({$vo.id})">删除</a></td>
+              </tr>
+             </volist>
+
+             </tbody>
+             </table>
+             <script type="text/javascript">
+                 function del($id){
+                     $.ajax({
+                         url:"{:U('Home/Address/del')}",
+                         type:'get',
+                         data:{'id':$id},
+                         success:function(res){
+                             if(res.status=='ok'){
+                                 layer.alert(res.msg);
+                             }else{
+                                 layer.alert(res.msg);
+                             }
+                         }
+                     })
+                 }
+             </script>
+
+          </div>
+        </ul>
+         <!--运费模板-->
+        <div class="Freight_template">
+         <div class="add_yunfei">
+           <div class="mb_prompt">你还没有创建任何模板，请点击下运费面创建模板。</div>
+           <div class="yunfei_list">
+             <table cellpadding="0" cellspacing="0" class="Case_list confirm_yunfei">
+             <thead>
+             <tr class="label_name "><td width="100px">运送方式</td><td width="500px">运送到</td><td width="100px">首件（个）</td><td width="100px">运费（元）</td><td width="100px">续件（个）</td><td width="100px">运费（元）</td></tr></thead>
+             <tbody>
+             <tr><td>顺丰快递</td><td>江苏，上海，浙江</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>顺丰快递</td><td>四川，安徽，江西，广东，广西，山西，陕西，云南，湖南，湖北，河北，内蒙古，新疆</td><td>1</td><td>20</td><td>1</td><td>10</td></tr>
+            </tbody>
+             </table>           
+           </div>
+           <a  href="javascript:(0)"class="AddTemplate_btn" id="test">新增运费模板</a><!--局部刷新显新增运费模板示文本-->
+         <script type="text/javascript">
+         //弹出一个iframe层
+;</script>
+         </div>
+         <div class="Case_style">
+          <div class="case_title"><h2 class="left">参考范例：</h2><span>（以下模板仅供参考）</span></div>
+          <h4>你可以按照宝贝的数量设置模板，一般适用于比较轻的宝贝。</h4>
+          <table class="Case_list" cellpadding="0" cellspacing="0" width="100%">
+           <thead>
+           <tr class="title_name"><td colspan="6">小物件模板副本</td></tr>
+           <tr class="label_name "><td width="100px">运送方式</td><td width="500px">运送到</td><td width="100px">首件（个）</td><td width="100px">运费（元）</td><td width="100px">续件（个）</td><td width="100px">运费（元）</td></tr>
+           </thead>
+           <tbody>
+            <tr><td>顺丰快递</td><td>江苏，上海，浙江</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>顺丰快递</td><td>四川，安徽，江西，广东，广西，山西，陕西，云南，湖南，湖北，河北，内蒙古，新疆</td><td>1</td><td>20</td><td>1</td><td>10</td></tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+
+       </div>
+     </div>
+       <div>
+
+       </div>
+       <div>
+           <ul>
+               <li ><div style="width: 150px;height: 50px;background-color: #00E8D7;font: bold 20px/1.5em '新宋体';text-align: center;line-height: 50px" id="newAddress">使用新地址</div></li>
+               <li><div style="width: 150px;height: 50px;background-color: #A40000;font: bold 20px/1.5em '新宋体';text-align: center;line-height: 50px;margin-top: 20px" id="buy">提交订单</div></li>
+           </ul>
+       </div>
+           <form id="form1" method="post" style="display: none">
+               <table>
+                   <tr style="margin-top: 30px">
+                       <td class="label">&nbsp;&nbsp;联&nbsp;&nbsp;系&nbsp;人：<i>*</i></td>
+                       <td><input name="name" type="text"  class="addtext"/></td>
+                   </tr>
+                   <tr style="margin-top: 30px">
+                       <td class="label">&nbsp;&nbsp;所在地区：<i>*</i></td><td>
+                       <div data-toggle="distpicker">
+                           <select class="form-control" id="province1" name="province"></select>
+                           <select class="form-control" id="city1" name="city"></select>
+                           <select class="form-control" id="district1" name="town1"></select>
+                       </div>
+                   </tr>
+                   <tr style="margin-top: 30px"><td class="label">&nbsp;&nbsp;街道地址：<i>*</i></td><td><input name="town" type="text"  class="addtext"  style="width:300px"/></td></tr>
+                   <tr style="margin-top: 30px"><td class="label">&nbsp;&nbsp;邮政编码：<i>*</i></td><td><input name="yid" type="text"  class="addtext"/></td></tr>
+                   <tr style="margin-top: 30px"><td class="label">&nbsp;&nbsp;手机号码：</td><td><input name="mobile" type="text"  class="addtext"/></td></tr>
+                   <tr style="margin-top: 30px"><td class="label">&nbsp;&nbsp;公司名称：</td><td><input name="" type="text"  class="addtext"/></td></tr>
+                   <tr style="margin-top: 30px">
+                       <td colspan="2" class="center">
+                           <input name="" type="button" value="保存设置"   id="bc" style="background-color: #009772"/>
+                       </td>
+                   </tr >
+               </table>
+           </form>
+    <form action="{:U('order')}" method="post" id="form2" style="display: none;margin: 50px 40px;">
+        <div style="line-height: 30px;">
+         <h1 style="color: #7ad9f1">确认提交订单吗？</h1><br>
+            <div style="font-size: 20px">
+            <span>订单编号:&nbsp;&nbsp;</span><input type="text" value="{$oid}" name="oid" style="width: 250px;text-indent:1em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>下单时间:&nbsp;&nbsp;</span><input type="text" value="{$time}" name="time" style="width: 250px;text-indent: 1em"><br><br>
+            </div>
+            <table>
+                <th >
+                <td></td>
+                <td style="width: 20% ">商品</td>
+                <td style="width: 15%">单价(元)</td>
+                <td style="width: 15%">数量</td>
+                <td style="width: 15%">实付款(元)</td>
+
+                </th>
+                <volist name="info" id="res">
+                    <tr>
+                        <td><label><input name="pid[{$res.id}]" type="checkbox"  value="{$res.payNum}"  checked="checked" /></label></td>
+                        <td>
+                            <a href="#" class="product_img"><img src="__ROOT__/upload/n0/{$res.pic|explode=',',###|array_shift}" width="80px" height="80px"></a>
+                            <a href="3">{$res.name}</a>
+                        </td>
+                        <td></td>
+                        <td>{$res.price}</td>
+                        <td>{$res.payNum}</td>
+                        <td>{$res.prices}</td>
+
+                    </tr>
+                </volist>
+
+                <div style="text-align: center;line-height: 50px;">
+                    <tr class="label_name">
+                        <td class="label_1" width="60px">地址</td>
+                        <td class="label_2" width="60px">联系人</td>
+                        <td class="label_3" width="180px">所在地区</td>
+                        <td class="label_4" width="180px">街道地址</td>
+                        <td class="label_5" width="100px">邮政编码</td>
+                        <td class="label_7" width="100px">手机号码</td>
+                        <td class="label_8" width="100px">备注</td>
+
+                    </tr>
+                    <tbody>
+
+                    <volist name="array" id="vo">
+                        <tr>
+                            <td><label><input name="aid" type="radio" value="{$vo.id}"  /></label></td>
+                            <td>{$vo.addname}</td>
+                            <td>{$vo.address}</td>
+                            <td>{$vo.town}</td>
+                            <td>{$vo.yid}</td>
+                            <td>{$vo.mobile}</td>
+                            <td></td>
+                        </tr>
+                    </volist>
+                </div>
+                    </tbody>
+
+            </table>
+            <br>
+            <h1 style="color: #7ad9f1">重要提醒:请选择收货地址(如果没有请选择添加)</h1>
+           <br> <span style="font-size: 25px">总价:&nbsp;&nbsp; <input type="text" name="count" value="{$count}" style="width: 200px;text-indent:1em" />&nbsp;￥&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+            <span style="font-size: 25px">选择快递:&nbsp;&nbsp;</span>
+            <select name="wlname" style="width: 160px;height: 40px;font-size: 20px">
+                <option value="中通快递" selected="selected">中通快递</option>
+                <option value="圆通快递" selected="selected">圆通快递</option>
+                <option value="顺丰快递" selected="selected">顺丰快递</option>
+                <option value="申通快递" selected="selected">申通快递</option>
+            </select>
+        <br/>
+            <br>
+        <input type="submit" value="提交订单" id="submit" style="width: 100px;height: 40px;font-size: 20px;background-color:  #7ad9f1" id="button"/>
+        </div>
+        <script type="text/javascript">
+
+        </script>
+    </form>
+     <script type="text/javascript">
+         jQuery(".Delivery_style").slide({trigger:"click"});
+         $('#newAddress').click(function(){
+             layer.open({
+                 type: 1,
+                 title:'增加地址',
+                 area: ['500px','500px'],
+                 shadeClose: true,
+                 content: $('#form1')
+             });
+         })
+         $('#bc').click(function(){
+             $.ajax({
+                 url:"{:U('Address/address')}",
+                 data:$('#form1').serialize(),
+                 type:'get',
+                 success:function(res){
+                     if(res.status=='ok'){
+                         layer.alert(res.msg);
+                     }else{
+                         layer.alert(res.msg);
+                     }
+                 }
+             })
+         })
+         $('#buy').click(function(){
+             layer.open({
+                 type: 1,
+                 title:'提交订单',
+                 area: ['1200px','900px'],
+                 shadeClose: true,
+                 content: $('#form2')
+             })
+
+         })
+
+     </script>
+
+   </div>
+  </div>
+
+</div>
+</div>
+<!--网站地图-->
+<div class="fri-link-bg clearfix">
+    <div class="fri-link" id="link">
+
+        <div class="left"><img src="__URL__/images/link.png" width="90"  height="90" />
+            <p>扫描下载APP</p>
+        </div>
+        <div class="">
+            <dl>
+                <a href="{:U('Home/Teach/teach')}"><dt>新手上路</dt></a>
+                <dd><a href="#">售后流程</a></dd>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">订购方式</a> </dd>
+                <dd><a href="#">隐私声明 </a></dd>
+            </dl>
+            <dl>
+                <dt>配送与支付</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+            <dl>
+                <dt>售后保障</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+            <dl>
+                <dt>帮助中心</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+
+        </div>
+    </div>
+</div>
+<!--网站地图END-->
+<!--网站页脚-->
+<div class="copyright">
+    <div class="copyright-bg">
+        <div class="hotline">为生活充电在线 <span>招商热线：4000-889912354</span> 客服热线：400-1515495</div>
+        <div class="hotline co-ph">
+            <p>版权所有Copyright ©Mr.Big信息科技有限责任公司</p>
+            <p>ICP备15241423521号 不良信息举报</p>
+            <p>总机电话：0521-4835/194/195/196 客服电话：4000-63568995 传 真：zhazha.xx.567
+
+                E-mail:54994578@niubi.gov.cn</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script type="text/javascript">
+    function old(){
+        layer.open({
+
+        })
+    }
+    function logout(){
+        $.ajax({
+            type:"post",
+            url:"{:u('Home/Login/logout')}",
+            data:'',
+            success:function(data){
+                alert(data.status);
+                if(data.status=='ok'){
+                    location.reload();
+                }
+            }
+        })
+
+    }
+    function user(){
+        $.post("{:U('Home/User/user')}",function(res){
+            if(res.status=='no'){
+                layer.alert(res.msg);
+            }else{
+                location.href="{:U('Home/User/user')}";
+            }
+        })
+    }
+</script>
+</html>

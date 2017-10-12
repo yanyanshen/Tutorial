@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+    <link href="__URL__/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/css.css" rel="stylesheet" type="text/css" />
+<link href="__URL__/css/style1.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__URL__/js/jQuery-1.8.2.js"></script>
+<script src="__URL__/js/jquery.simpleGal.js" type="text/javascript"></script>
+<script type="text/javascript" src="__URL__/js/jquery.imagezoom.min.js"></script>
+<script type="text/javascript" src="__URL__/layer/layer.js"></script>
+
+
+<style>
+
+    #link{
+        margin-left: 33%;
+    }
+    img {
+	max-width: none;
+}
+.tb-pic a {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.tb-pic a img {
+	vertical-align: middle;
+}
+.tb-pic a {
+*display:block;
+*font-family:Arial;
+*line-height:1;
+}
+.tb-thumb {
+	margin: 10px 0 0;
+	overflow: hidden;
+}
+.tb-thumb li {
+	float: left;
+	width: 86px;
+	height: 86px;
+	overflow: hidden;
+	border: 1px solid #cdcdcd;
+	margin-right: 5px;
+}
+.tb-thumb li:hover, .tb-thumb .tb-selected {
+	width: 84px;
+	height: 84px;
+	border: 2px solid #799e0f;
+}
+.tb-s310, .tb-s310 a {
+	height: 365px;
+	width: 365px;
+}
+.tb-s310, .tb-s310 img {
+	max-height: 365px;
+	max-width: 365px;
+}
+.tb-booth {
+	border: 1px solid #CDCDCD;
+	position: relative;
+	z-index: 1;
+}
+div.zoomDiv {
+	z-index: 999;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	display: none;
+	overflow: hidden;
+}
+div.zoomMask {
+	position: absolute;
+	background: url("__URL__/images/mask.png") repeat;
+	cursor: move;
+	z-index: 1;
+}
+<!--弹出隐藏层-->
+ .black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 1200px;
+	background-color: black;
+	z-index: 9999;
+	-moz-opacity: 0.4;
+	opacity: 0.40;
+	filter: alpha(opacity=40);
+}
+.white_content {
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	width: 400px;
+	height: 175px;
+	border: none;
+	background-color: white;
+	z-index: 100200;
+	overflow: auto;
+}
+.white_content_small {
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: 40%;
+	height: 50%;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+.dialogbox {
+	padding: 20px;
+	line-height: 40px;
+}
+.addbtn {
+	width: 22px;
+	height: 22px;
+	background: url(__URL__/images/close2.png) no-repeat;
+	margin-right: 5px;
+	margin-top: 3px;
+	border: none;
+	float: right;
+}
+</style>
+</head>
+<body>
+<include file="Goods/header"/>
+<div class="sup-wid">
+    <div class="pro_detail" >
+        <div class="pro_detail_img float-lt">
+            <div class="gallery">
+                <div class="tb-booth tb-pic tb-s310">
+                    <a href="">
+                        <img src="__ROOT__/upload/n0/{$pic[0]}"  alt="展品细节展示放大镜特效" rel="__ROOT__/upload/n0/{$pic[1]}" class="jqzoom" />
+                    </a>
+                </div>
+                <ul class="tb-thumb" id="thumblist">
+                    <volist name="pic" id="vo" key="k" offset="0" length="3">
+                        <li class="<eq name='k' value='1'>tb-selected</eq>">
+                            <div class="tb-pic tb-s40">
+                                <a href="#">
+                                <img src="__ROOT__/upload/n2/{$pic[$key]}"  mid="__ROOT__/upload/n1/{$pic[$key]}" big="__ROOT__/upload/n0/{$pic[$key]}">
+                                </a>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <form action="" method="get" id="oldForm">
+            <input type="text" style="display: none" value="{$id}" name="pid">
+            <input type="button" value="加入收藏" id="h1" class="addcart" />
+            </form>
+            <script type="text/javascript">
+                 $('#h1').click(function(){
+                     $.get("{:U('Home/Goods/old')}", $('#oldForm').serialize(),function(res){
+                         if(res.status=='ok'){
+                             layer.alert(res.msg);
+                         }else{
+                             layer.alert(res.msg);
+                         }
+                     })
+                 })
+            </script>
+        </div>
+        <form action="" method="post" id="form">
+            <div class="float-lt pro_detail_con">
+            <div class="pro_detail_tit">{$name}</div>
+            <div class="pro_detail_ad">{:htmlspecialchars_decode($information)}</div>
+            <div class="pro_detail_score margin-t20">
+                <ul>
+                    <li class="margin-r20">评分</li>
+                </ul>
+                <ul>
+                    <li style="width:16px; height:16px;"><img src="__URL__/images/iconfont-xingxingman.png" width="16" height="16" /></li>
+                    <li style="width:16px; height:16px;"><img src="__URL__/images/iconfont-xingxingman.png" width="16" height="16" /></li>
+                    <li style="width:16px; height:16px;"><img src="__URL__/images/iconfont-xingxingman.png" width="16" height="16" /></li>
+                    <li style="width:16px; height:16px;"><img src="__URL__/images/iconfont-xingxingman.png" width="16" height="16" /></li>
+                    <li style="width:16px; height:16px;"><img src="__URL__/images/iconfont-xingxingkong.png" width="16" height="16" /></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="pro_detail_price  margin-t20"><span class="margin-r20">市场价</span><span style=" font-size:16px"><s>￥:{$marketprice}</s></span></div>
+            <div class="clear"></div>
+                <div class="yushou">
+                    <div class="fl font24">售价：<strong>{$price}元</strong></div>
+                </div>
+            <div class="clear"></div>
+            <div class="pro_detail_number margin-t30">
+                <div class="margin-r20 float-lt">数量</div>
+                <div class=""> <a href="javascript:jian()"> <i class="jian" ></i></a>
+                    <input type="text" value="1" class="float-lt choose_input" name="num" id="num"/>
+                    <a href="javascript:jia()"><i class="jia"></i></a> <span>&nbsp;盒</span></div>
+                <div class="clear"></div>
+            </div>
+            <div class="guige">
+                <div class="margin-r20 float-lt" style="line-height:25px;">规格</div>
+                <ul>
+                    <li class="guige-cur">规格一</li>
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="pro_detail_number margin-t20">
+                <div class="margin-r20 float-lt">月成交量：<span class="colorred"><strong>999件</strong></span></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="pro_detail_btn margin-t30">
+                <ul>
+                    <li class="pro_detail_shop"><a href="javascript:pay()" id="pay">立即购买</a></li>
+                    <li class="pro_detail_add"><a id="toCar">加入购物车</a></li>
+                </ul>
+            </div>
+        </div>
+        </form>
+
+    </div>
+    <div class="clear"></div>
+    <script>
+		$(function(){
+			$(".pro_tab li").each(function(i){
+				$(this).click(function(){
+					$(this).addClass("cur").siblings().removeClass("cur");
+					$(".conlist .conbox").eq(i).show().siblings().hide();
+				})
+			})
+		})
+	</script>
+    <div class="pro_con margin-t55" style="overflow:hidden;">
+        <div class="pro_tab">
+            <ul>
+                <li class="cur">产品介绍</li>
+            </ul>
+        </div>
+        <div class="conlist">
+            <div class="conbox" style="display:block; font-size: 20px; color: #3d3d45">
+                <p>{:htmlspecialchars_decode($information)}</p>
+                <volist name="pic" id="vo">
+                    <img src="__ROOT__/upload/n0/{$vo}">
+                </volist>
+            </div>
+
+        </div>
+    </div>
+    <div class="hotpro">
+        <div class="hotpro_title">热销产品</div>
+        <div class="hotpro_box">
+            <div class="pro-view-hot">
+                <volist name="arr" id="res">
+                    <ul>
+                        <li class="pro-img"><a href="{:U('goods',array('id'=>$res['id']))}"><img src="__ROOT__/upload/n1/{$res.pic|explode=',',###|array_shift}" /></a></li>
+                        <li class="price"><strong>￥ 36.00</strong><span>已销售{$res.num}</span></li>
+                        <li><a href="{:U('goods',array('id'=>$res['id']))}" class="title">{$res.name} </a></li>
+                    </ul>
+                </volist>
+            </div>
+        </div>
+    </div>
+
+    <div class="helper">
+        <div class="mod">
+            <div class="mod-wrap">
+                <h4><img src="__URL__/images/h1.png" width="60" height="60" /><span>新手上路</span> </h4>
+            </div>
+        </div>
+        <div class="mod">
+            <div class="mod-wrap">
+                <h4><img src="__URL__/images/h2.png" width="60" height="60" /><span>如何支付</span> </h4>
+            </div>
+        </div>
+        <div class="mod">
+            <div class="mod-wrap">
+                <h4><img src="__URL__/images/h3.png" width="60" height="60" /><span>配送运输</span> </h4>
+            </div>
+        </div>
+        <div class="mod mod-last">
+            <div class="mod-wrap">
+                <h4><img src="__URL__/images/h4.png" width="60" height="60" /><span>售后服务</span> </h4>
+            </div>
+        </div>
+        <div class="mod mod-last">
+            <div class="mod-wrap">
+                <h4><img src="__URL__/images/h5.png" width="60" height="60" /><span>联系我们</span> </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="fri-link-bg clearfix">
+    <div class="fri-link" id="link">
+
+        <div class="left"><img src="__URL__/images/link.png" width="90"  height="90" />
+            <p>扫描下载APP</p>
+        </div>
+        <div class="">
+            <dl>
+                <a href="{:U('Home/Teach/teach')}"><dt>新手上路</dt></a>
+                <dd><a href="#">售后流程</a></dd>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">订购方式</a> </dd>
+                <dd><a href="#">隐私声明 </a></dd>
+            </dl>
+            <dl>
+                <dt>配送与支付</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+            <dl>
+                <dt>售后保障</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+            <dl>
+                <dt>帮助中心</dt>
+                <dd><a href="#">保险需求测试</a></dd>
+                <dd><a href="#">专题及活动</a></dd>
+                <dd><a href="#">挑选保险产品</a> </dd>
+                <dd><a href="#">常见问题 </a></dd>
+            </dl>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--网站页脚-->
+<div class="copyright">
+    <div class="copyright-bg">
+        <div class="hotline">为生活充电在线 <span>招商热线：4000-889912354</span> 客服热线：400-1515495</div>
+        <div class="hotline co-ph">
+            <p>版权所有Copyright ©Mr.Big信息科技有限责任公司</p>
+            <p>ICP备15241423521号 不良信息举报</p>
+            <p>总机电话：0521-4835/194/195/196 客服电话：4000-63568995 传 真：zhazha.xx.567
+
+                E-mail:54994578@niubi.gov.cn</p>
+        </div>
+    </div>
+</div>
+<!--网站页脚END-->
+
+
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $(".jqzoom").imagezoom();
+
+        $("#thumblist li a").mousemove(function () {
+            $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+            $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+            $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+        });
+    })
+
+
+
+function jian(){
+    var buynum=document.getElementById('num').value;
+    if(buynum>1){
+        document.getElementById('num').value=parseInt(buynum)-1;
+    }
+}
+function jia(){
+    var buynum=document.getElementById('num').value;
+    if(buynum<199){
+        document.getElementById('num').value=parseInt(buynum)+1;
+    }
+}
+function pay(){
+    var res=document.getElementById('form');
+    res.action="{:U('Home/Goods/pay',array('id'=>$id))}";
+    res.submit();
+}
+
+document.getElementById('num').onkeyup=function(){
+    if(this.value<1){
+    }
+        this.value=1;
+    if(this.value>199){
+        this.value=199;
+    }
+    if(isNaN(this.value)){
+        this.value=1;
+    }
+};
+
+     $('#toCar').click(function(){
+         $.post("{:U('toCar',array('id'=>$id))}",$('#form').serialize(),function(res){
+             if(res.status=='no'){
+                 layer.alert(res.msg);
+             }else if(res.status=='ok'){
+                 layer.alert(res.msg);
+             }else{
+                 layer.alert(res.msg);
+             }
+         })
+     })
+
+
+function old(){
+    layer.open({
+
+    })
+}
+function logout(){
+    $.ajax({
+        type:"post",
+        url:"{:u('Home/Login/logout')}",
+        data:'',
+        success:function(data){
+            layer.alert(data.status);
+            if(data.status=='ok'){
+                location.reload();
+            }
+        }
+    })
+}
+function user(){
+    $.post("{:U('Home/User/user')}",function(res){
+        if(res.status=='no'){
+            layer.alert(res.msg);
+        }else{
+            location.href="{:U('Home/User/user')}";
+        }
+    })
+}
+</script>
+</body>
+</html>
