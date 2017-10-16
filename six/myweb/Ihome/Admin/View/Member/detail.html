@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员详情</title>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/reg.css">
+    <script src="__PUBLIC__/Admin/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/lr.js"></script>
+
+</head>
+<body>
+
+<!-- 添加模块开始 -->
+<div class="reg wid_1200">
+    <ul class="clearfix">
+        <li><a href="#">会员详情</a></li>
+
+    </ul>
+    <div>
+        <form>
+        <volist name="list" id="v">
+            <p>用户名：<input type="text" name="usename" value="{$v.username}"></p><br />
+            <p>性&nbsp;&nbsp;&nbsp;&nbsp;别：<input type="text" value="{$v.sex}" name="username"></p><br />
+            <p>出生日期：<input type="text" class="password" name="birthday" value={$v.year}-{$v.month}-{$v.day}></p><br />
+            <p>手机号：<input type="text" name="mobile" value="{$v.mobile}"></p><br />
+            <p>E-mail：<input type="text" name="email" value="{$v.email}"></p><br />
+            <p>创建时间：<input type="text" name="createtime" value="{$v.createtime | date='Y-m-d H:i:s',###}"></p><br />
+            <p>上次登录时间：<input type="text" name="lastlogintime" value="{$v.lastlogintime| date='Y-m-d H:i:s',###}"></p><br />
+            <p>上次登录ip：<input type="text" name="lastloginip" value="{$v.lastloginip}"></p><br />
+        </volist>
+            </form>
+    </div>
+
+</div>
+</body>
+</html>

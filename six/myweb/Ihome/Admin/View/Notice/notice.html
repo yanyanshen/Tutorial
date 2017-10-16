@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <link href="__PUBLIC__/Admin/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.ba-resize.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jsapi.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/format+zh_CN,default,corechart.I.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.gvChart-1.0.1.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/layer-v2.4/layer.js"></script>
+    <title></title>
+</head>
+<script type="text/javascript">
+    gvChartInit();
+    jQuery(document).ready(function(){
+
+        jQuery('#myTable5').gvChart({
+            chartType: 'PieChart',
+            gvSettings: {
+                vAxis: {title: 'No of players'},
+                hAxis: {title: 'Month'},
+                //width: 100
+                height: 250
+            }
+        });
+    });
+</script>
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">工作台</a></li>
+    </ul>
+</div>
+<div class="mainbox"></div>
+  <div style="padding-left: 10px">
+    <div id="width" style="height: 300px;">
+        <!--<div  style="width:20%;border:1px solid black;height:300px;float: left" >-->
+            <!--<div class="listtitle"><a href="{:U('Notice/noticelist')}" class="more1">更多</a>系统公告</div>-->
+            <!--<ul class="newlist">-->
+                <!--<volist name="list" id="vo" >-->
+                    <!--<li id="dianji"><if condition="$vo.fl eq 0 ">[系统]   <a id="{$vo.id}" href="{:U('Notice/title',array('id'=>$vo['id']))}">{$vo.title|bsubstr=0,15,'utf-8',false}</a><b>{$vo.createtime|date="m-d",###}</b> {$vo.author} </if></li>-->
+                <!--</volist>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <div  class="goods" style="width:30%;border:1px solid black;height: 300px; ;float:left;margin-left: 4px" >
+            <div class="listtitle"><a href="{:U('Notice/noticelist')}" class="more1">更多</a>系统公告</div>
+            <ul class="newlist">
+                <volist name="listto" id="vo" >
+                    <li><if condition="$vo.fl eq 0 ">[系统]
+                    <else/> [动态] </if><a id="{$vo.id}" href="{:U('Notice/title',array('id'=>$vo['id']))}">{$vo.title|bsubstr=0,15,'utf-8',false}</a><b>{$vo.createtime|date="m-d",###}</b> {$vo.author}           </li>
+                </volist>
+            </ul>
+        </div>
+        <div  class="goods" style="width:30%;border:1px solid black;height:300px ;float:left;margin-left: 4px;" >
+            <div class="listtitle">销量统计信息</div>
+            <table id='myTable5' style="width:100%">
+                <thead>
+                <tr>
+                <th></th>
+                <th>一季度销量</th>
+                <th>二季度销量</th>
+                <th>三季度销量</th>
+                <th>四季度销量</th>
+                <!--<th>May</th>-->
+                <!--<th>Jun</th>-->
+                <!--<th>Jul</th>-->
+                <!--<th>Aug</th>-->
+                <!--<th>Sep</th>-->
+                <!--<th>Oct</th>-->
+                <!--<th>Nov</th>-->
+                <!--<th>Dec</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <th></th>
+                <td>150</td>
+                <td>200</td>
+                <td>300</td>
+                <td>100</td>
+                <!--<td>376</td>-->
+                <!--<td>398</td>-->
+                <!--<td>398</td>-->
+                <!--<td>398</td>-->
+                <!--<td>398</td>-->
+                <!--<td>398</td>-->
+                <!--<td>398</td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div  style="width:30%;border:1px solid black;height: 300px; ;float:left;margin-left: 4px">
+
+            <div class="listtitle"><a href="#" class="more1">更多</a>最新注册会员</div>
+            <ul  class="newlistt">
+                <volist name="userList" id="vo" >
+                <li>用户名{$vo.username}；联系方式{$vo.email};<a href="{:U('Member/memDetail',array('mid'=>$vo['mid']))}"> <i>查看</i> </a></li>
+                    </volist>
+            </ul>
+        </div>
+    </div>
+
+<div class="mainbox"></div>
+
+    <div id="widthto" class="down" style="height: 300px;padding-left: 5px">
+
+
+        <div style="width:30%;border:1px solid black;height: 100%; ;float:left">
+
+            <div class="listtitle">登陆信息</div>
+
+
+
+
+            <ul class="newlist" style="height:100%;width: 100%" >
+                    <li ><i>管理员ID</i>{$info.id}</li>
+                    <li><i>管理员属性</i> <if condition="$info.vip eq 1 ">超级管理员<else /> 管理员</if>  </li>
+                    <li><i>登陆时间</i>{$info.logintime|date="m-d h:i:s",###}</li>
+                    <li><i>登陆Ip</i>{$info.loginip}</li>
+                    <li>Thinkphp版本&nbsp;&nbsp;{:THINK_VERSION}</li>
+                    <li><i>域名</i>{$info.www}</li>
+                    <li><i>数据库</i>{$info.ser}</li>
+                    <li><i>服务器空间</i>{$info.kj}</li>
+                    <li><i>服务器环境</i>{$info.os}</li>
+            </ul>
+
+        </div>
+
+        <div  style="width:30%;border:1px solid black;height: 300px; ;float:left;margin-left: 4px">
+
+            <div class="listtitle">系统更新</div>
+
+            <ul class="tooli">
+            <li id="clean"><span><img src="__PUBLIC__/Admin/images/d01.png" /></span><p><a href="javascript:void(0)">清空缓存</a></p></li>
+            <li><span><img src="__PUBLIC__/Admin/images/d02.png" /></span><p><a href="javascript:void(0)" id="sql">数据库备份</a></p></li>
+            <li><span><img src="__PUBLIC__/Admin/images/d03.png" /></span><p><a href="javascript:void(0)" id="backsql">数据库还原</a></p></li>
+            <!--<li><span><img src="__PUBLIC__/Admin/images/d04.png" /></span><p><a href="#">服务器重启</a></p></li>-->
+            <!--<li><span><img src="__PUBLIC__/Admin/images/d05.png" /></span><p><a href="#">图片管理</a></p></li>-->
+            <!--<li><span><img src="__PUBLIC__/Admin/images/d06.png" /></span><p><a href="#">交易</a></p></li>-->
+            <!--<li><span><img src="__PUBLIC__/Admin/images/d07.png" /></span><p><a href="#">档案袋</a></p></li>-->
+            </ul>
+
+        </div>
+
+        <!--<div class="tj"  style="width:20%;border:1px solid black;height: 300px; ;float:left;margin-left: 4px">-->
+            <!--<div class="listtitle">数量统计</div>-->
+            <!--<ul class="newlist">-->
+                <!--<li><i>管理员数：</i>{$count[0]}</li>-->
+                <!--<li><i>会员数：</i>{$count[1]}</li>-->
+                <!--<li><i>文档数：</i>{$count[2]}</li>-->
+                <!--&lt;!&ndash;<li><i>普通文章：</i>2315</li>&ndash;&gt;-->
+                <!--<li><i>软件：</i><if condition="$count[3] eq 0 ">暂无数据<else/> {$count[3]} </if></li>-->
+                <!--<li><i>评论数</i><if condition="$count[4] eq 0 ">暂无数据<else/> {$count[4]} </if></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+
+        <div class="tj"  style="width:30%;border:1px solid black;height: 300px; ;float:left;margin-left: 4px">
+            <div class="listtitle">网站数据统计</div>
+            <ul class="newlist">
+                <li><i>管理员数：</i>{$count[0]}</li>
+                <li><i>会员数：</i>{$count[1]}</li>
+                <li><i>文档数：</i>{$count[2]}</li>
+                <!--<li><i>普通文章：</i>2315</li>-->
+                <li><i>软件：</i>  <if condition="$count[3] eq 0 ">暂无数据<else/> {$count[3]} </if>  </li>
+                <li><i>评论数</i><if condition="$count[4] eq 0 ">暂无数据<else/> {$count[3]} </if></li>
+            </ul>
+        </div>
+
+    </div>
+  </div>
+<input type="hidden" id="uid" class="{$Think.session.id}" value="{$Think.session.vip}">
+
+</body>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/notice.js"></script>
+<script type="text/javascript">
+    setWidth();
+    $(window).resize(function(){
+        setWidth();
+    });
+    function setWidth(){
+        var width =($('.leftinfos').width()-12)/2;
+        $('.infoleft,.inforight').width(width);
+
+    }
+</script>
+
+<script>
+   var width= $(document).width();
+    $('#width').css("width",width);
+   $('#widthto').css("width",width);
+</script>
+
+
+</html>

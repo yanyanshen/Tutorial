@@ -1,0 +1,45 @@
+@charset "utf-8";
+*{margin:0;padding:0; font-family:"微软雅黑"; font-weight:normal; font-size:12px;}
+ul,li {list-style:none;}
+a {text-decoration:none;}
+a:link {color:#666;}
+a:visited {color:purple;}
+a:hover {color:#136dc6}
+img {border:0; vertical-align:top;}
+
+/*公共类标签*/
+.wid_1200 {width:1200px; margin:0 auto;} /*公共框架,内容在1200px内,居中*/
+.fl {float:left;}
+.fr {float:right;}
+.clearfix:after {content:"."; display:block; height:0; font-size:0; clear:both; visibility:hidden;}
+.clearfix {zoom:1;}
+
+/*header样式*/
+.header{height:124px; border-bottom:1px solid red; line-height:124px; margin-bottom:48px;}
+.header .logo{width:300px; height:124px; line-height:124px; text-align:right; position:relative; display: inline-block;}
+.header .logo img{float:left; width:164px; height:86px; position:absolute; top:17px; left:0;}
+.header .logo h3{font-size:24px;}
+.header span{text-align:right; font-size:14px; color:#666;}
+.header span a{font-size:14px; color:#f00;}
+
+/*注册模块样式*/
+.reg {width:1200px; height:auto;}
+.reg ul li {float:left; width:120px; height:60px; line-height:60px; text-align:center;}
+.reg ul li a{font-size:18px; color:#666;}
+.active {border-bottom:3px solid #f00;}
+.reg div {padding-left:252px; padding-top:36px; height:580px; border:1px solid #cbcbcb; display:none;}
+.reg form input{width:250px; height:30px; margin-left:15px; padding-left:10px; font-size:16px; color:#666;}
+.reg form input.password{margin-left:0px;}
+.reg div form p{font-size:14px; color:#666;}
+.reg div form p a{color:#666;}
+.reg div form p a:hover{color:#f00;}
+.reg div form p span.red{color:red; font-size:14px; margin:0 5px;}
+.reg div form p input.sex{height:14px; width:14px;}
+.reg div form p select#country{margin-left:14px;}
+.reg div form p input.yzm{width:104px;}
+.reg div form p input.check{height:16px; width:16px; margin-left:70px;}
+.reg div form p input.btn{width:250px; height:44px; line-height:44px; text-align:center; font-size:24px; background:#cc0001; color:#fff; margin-left:70px; margin-top:56px; border:1px solid #f00; cursor:pointer; transition:all 1s;}
+.reg div form p input.btn:hover{background:#f00;}
+.reg div form p input.inp{margin-top:2px;}
+.reg div form p input.yzm1{width:115px;}
+.reg div form p input.yzm2{font-size:14px; text-align:center; padding-left:0; cursor:pointer;}

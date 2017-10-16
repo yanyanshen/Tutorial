@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/affirm.css">
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/layer/layer.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/click.js"></script>
+    <script src="__PUBLIC__/Home/js/geo.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.form.js"></script>
+    <title>确认信息</title>
+    <style>
+        #tb1 td{height:100px;}
+        #div1{text-align: center;}
+        #div1 input{height:32px;}
+        #div1 em{color:red;}
+        #div1 span{font-size: 15px;}
+    </style>
+
+</head>
+<body>
+<form id="form1" action="{:u('Home/Order/submitOrder')}" method="post">
+    <!--  顶部开始 -->
+    <div class="top ">
+        <div class="topCont frm_sty">
+            <p><a href="#">欢迎光临爱家频道！</a></p>
+            <ul class="fr">
+                <li><a href="#"><span>{$Think.session.membername}</span></a></li>
+                <li><a href="javascript:logout()">退出</a>|</li>
+                <li><a href="{:U('Home/Member/member')}">会员中心</a>|</li>
+                <li><a href="{:U('Home/Member/order')}">我的订单</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--  导航搜索栏 -->
+    <div class="logo frm_sty clearfix">
+        <h1 class="fl"><a href="{:U('Home/Index/index')}"><img src="__PUBLIC__/Home/images/Ihomelogo.png" alt="" width=180px></a></h1>
+        <h3 class="fl">确认信息</h3>
+        <ul class="fr">
+            <li class="li01"><a href="mycart.html">我的购物车</a></li>
+            <li class="li02"><a href="pay1.html">填写核对结算信息</a></li>
+            <li class="li03"><a href=" #">成功提交订单</a></li>
+        </ul>
+    </div>
+    <i></i>
+    <div class="title frm_sty">
+        <h3>填写并核对订单信息</h3>
+    </div>
+
+    <div class="car frm_sty clearfix">
+        <!-- 收货人信息  开始 -->
+        <div class="site" style="height: auto">
+            <div class="title clearfix">
+                <h3 class="fl">收货人信息</h3>
+                <!-- <span class="fr"><a href="#">新增收货地址</a></span> -->
+            </div>
+            <div class="siteCont clearfix" >
+                <div class="show"><a href="javascript:void(0);">新增收货地址</a></div>
+                <volist name="adressInfo" id="val">
+                    <p class="p2">
+                        <input type="radio" name="adressid" id="adress" value="{$val.id}" onclick="displayResult(this.value)">&nbsp;{$val.province}&nbsp;{$val.city}&nbsp;{$val.town}&nbsp;{$val.adressdetail}&nbsp;<span style="color: red">（{$val.username}&nbsp;收）</span>&nbsp;{$val.mobile}&nbsp;{$val.tel}</p><br/>
+                </volist>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!-- 收货人信息  结束-->
+        <!-- 支付方式 开始 -->
+        <!--<div class="way">-->
+            <!--<div class="title clearfix">-->
+                <!--<h3 class="fl">支付方式</h3>-->
+            <!--</div>-->
+            <!--<div class="wayCont">-->
+                <!--<ul>-->
+                    <!--<li>在线支付</li>-->
+                    <!--<li>网上银行</li>-->
+                    <!--<li>货到付款</li>-->
+                    <!--<li>账户余额</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- 支付方式 结束 -->
+        <!-- 送货清单 开始 -->
+        <div class="opt clearfix">
+            <div class="title clearfix">
+                <h3 class="fl">送货清单</h3>
+                <!--<span class="fr"><a href="#">返回购物车修改</a></span>-->
+            </div>
+            <volist name="goodsList" id="val">
+            <div class="goods01 fl" style="height: auto">
+                <table width="1200px" style="text-align: center; vertical-align: middle" id="tb1">
+                    <tr>
+                        <th width="20%"></th>
+                        <th width="45%">店铺宝贝</th>
+                        <th width="10%">商品属性</th>
+                        <th width="5%">单价(元)</th>
+                        <th width="5%">数量</th>
+                        <th width="5%">小计</th>
+                    </tr>
+                        <tr id="goods">
+                            <td style="vertical-align: middle"><input type="hidden" name="buythis[]" value="{$val.gid}"><img width="100px" height="100px" src="__PUBLIC__/Upload/Goodspic/{$val.pic}"></td>
+                            <td><a href="#">{:mb_substr($val['goodsname'],0,15,'utf-8')}</a></td>
+                            <td><p class="p3">{$val.color}</p></td>
+                            <td><p class="p1"><span><input type="hidden" value="{$val.price}" id="price" name="price">￥{$val.price}</span></p></td>
+                            <td><p class="p2"><span><input type="hidden" value="{$val.buynum}" id="buynum" name="{$val.gid}">{$val.buynum}</span></p></td>
+                            <td><p class="p2"><span><input type="hidden" value="{$val.prices}" class="prices" name="prices">{$val.prices}</span></p></td>
+                        </tr>
+
+                </table>
+            </div>
+            <div class="privilege frm_sty clearfix">
+                <div class="privilegeCont fr ">
+                    商品金额：<p>￥{$val.prices}</p>
+                </div>
+            </div>
+            </volist>
+    </div>
+        <div class="rental frm_sty">
+            <div class="rentalCont fr">
+                <h3><span class="num">{$num}</span>件商品 应付金额:<span id="total">￥{$sum}</span></h3>
+            </div>
+        </div>
+        <div class="btn frm_sty">
+            <input type="hidden" id="result">
+            <a href="#" style="width:150px;height: 50px;line-height:50px;background-color:red;color: white;font-size: 20px;text-align: center" class="fr" id="submit">提交订单</a>
+        </div>
+        <!-- 底部 开始 -->
+        <div class="footer">
+            <div class="footer_cont frm_sty">
+                <div class="service">
+                    <ul>
+                        <li class="ser1">
+                            <span></span>
+                            <h4><a href="#">正品保证</a></h4>
+                            <p>正品保障，提供发票</p>
+                        </li>
+                        <li class="ser2">
+                            <span></span>
+                            <h4><a href="#">急速物流</a></h4>
+                            <p>急速物流，急速送达</p>
+                        </li>
+                        <li class="ser3">
+                            <span></span>
+                            <h4><a href="#">无忧售后</a></h4>
+                            <p>7天无理由退换货</p>
+                        </li>
+                        <li class="ser4">
+                            <span></span>
+                            <h4><a href="#">帮助中心</a></h4>
+                            <p>您的购物指南</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guild clearfix">
+                    <ul class="guild01 clearfix">
+                        <li class="strong"><a href="#">购物指南</a></li>
+                        <li><a href="#">导购指标</a></li>
+                        <li><a href="#">免费注册</a></li>
+                        <li><a href="#">会员等级</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">品牌大全</a></li>
+                    </ul>
+                    <ul>
+                        <li class="strong"><a href="#">支付方式</a></li>
+                        <li><a href="#">易付定支会付</a></li>
+                        <li><a href="#">网银注册</a></li>
+                        <li><a href="#">快捷支付</a></li>
+                        <li><a href="#">分期付款</a></li>
+                    </ul>
+                    <ul>
+                        <li class="strong"><a href="#">物流配送</a></li>
+                        <li><a href="#">免运费政策</a></li>
+                        <li><a href="#">配送服务承诺</a></li>
+                        <li><a href="#">签收验货</a></li>
+                        <li><a href="#">物流查询</a></li>
+                    </ul>
+                    <ul>
+                        <li class="strong"><a href="#">售后服务</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                        <li><a href="#">退换货申请</a></li>
+                    </ul>
+                    <ul>
+                        <li class="strong"><a href="#">商家服务</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">培训中心</a></li>
+                        <li><a href="#">信息公告</a></li>
+                        <li><a href="#">广告服务</a></li>
+                        <li><a href="#">商家帮助</a></li>
+                        <li><a href="#">服务市场</a></li>
+                    </ul>
+                    <div class="weixin fr">
+                        <p>爱家频道客户端</p>
+                        <img src="__PUBLIC__/Home/images/erweima.jpg">
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer_b">
+                <p>Copyright @ 2016-2028 爱家频道有限公司版权所有 桂ICP备10101010号-201600001</p>
+
+            </div>
+        </div>
+        <!-- 底部结束 -->
+    </div>
+</form>
+
+<!--新增地址界面-->
+<div class="pop">
+    <h3><a href="javascript:void(0);">
+        <img src="__PUBLIC__/Home/images/gb_btn.png" alt="关闭" style="margin-top: 17px;">
+    </a>收货人信息
+    </h3>
+    <div class="form clearfix" id="div1">
+        <form id="form2"  action="{:u('Member/adressForm')}" method="post">
+            <em>*</em>&nbsp;<span>收货人:</span>
+            <input type="text" name="username"><br/><br/>
+
+            <em>*</em>&nbsp;<span>所在地区:</span>
+            <select class="select" name="province" id="s1">
+                <option></option>
+            </select>
+            <select class="select" name="city" id="s2">
+                <option></option>
+            </select>
+            <select class="select" name="town" id="s3">
+                <option></option>
+            </select><br/><br/>
+            <em>*</em>&nbsp;<span>详细地址:</span>
+            <input type="text" name="adressdetail"><br/><br/>
+            <em>*</em>&nbsp;<span>手机号码:</span>
+            <input type="text" name="mobile"><br/><br/>
+            <span>邮编:</span>
+            <input type="text" name="code"><br/><br/>
+            <input id="btn" style="height: 35px;width: 150px;background-color: red;color:white;" type="button" value="保存地址" />
+        </form>
+    </div>
+</div>
+
+</body>
+<script>
+
+    //提交订单
+    $('#submit').click(function () {
+        if($(':radio').is(":checked")){
+            $.post("{:u('Home/Order/submitOrder')}", $('#form1').serialize(), function (res) {
+                if (res.status == 'ok') {
+                    layer.alert(res.msg, {
+                        yes: function () {
+                            location.href = "{:u('Home/Member/order')}";
+                        }
+                    });
+                } else {
+                    layer.alert(res.msg);
+                };
+            })
+        }
+        else{
+            layer.alert('请选择收货地址');
+        }
+    })
+    setup();
+    //新增收货地址
+    $(function(){
+        var validate=$('#form2').validate({
+            //设置验证规则
+            rules:{
+                username:{
+                    required:true,
+                    minlength:2,
+                    maxlength:10
+                },
+                adressdetail:{
+                    required:true
+
+                },
+                mobile:{
+                    required:true,
+                    mobile:true
+                }
+
+            },
+
+            //设置提示
+            messages:{
+                username:{
+                    required:'请您填写收货人姓名',
+                    minlength:'姓名至少需要两个字符',
+                    maxlength:'姓名最多10个字符'
+                },
+                adressdetail:{
+                    required:'请您填写收货人详细地址'
+
+                },
+                mobile:{
+                    required:'请您填写收货人手机号码',
+                    mobile:'手机号码格式不正确'
+                }
+            }
+        })
+        // 手机号码验证
+        jQuery.validator.addMethod("mobile", function(value, element) {
+            var mobileReg = /^1[34578]{1}[0-9]{9}$/;
+            return this.optional(element) || (mobileReg.test(value));
+        }, "请正确填写您的手机号码");
+
+        jQuery.validator.onfocus=true;
+
+        $('#btn').click(function(){
+            if(validate.form()){
+                $.post("{:u('Member/adressForm')}",$('#form2').serialize(),function(res){
+                    if(res.status=='ok'){
+                        layer.alert(res.msg,{
+                            yes:function(){
+                                location.reload();
+                            }
+                        })
+                    }
+                })
+            }
+        })
+    })
+
+</script>
+<!--<script type="text/javascript">
+    $(function() {
+        $("#submit").click(function () {
+            alert($("#goods").text());
+            alert($("#result").val());
+        })
+    })
+</script>
+
+<script>
+    function displayResult(adressid){
+        document.getElementById("result").value=adressid
+    }
+</script>-->
+
+<script>
+    function logout(){
+//询问框
+        layer.confirm('您确定要退出当前账户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.get("{:u('Login/logout')}",'',function(res){
+                if(res.status=='ok'){
+                    location.href="{:u('Index/index')}"
+                };
+            })
+        });
+    }
+
+function getTotal(){
+    var len=$("#goods .prices").length;
+    var sum=0;
+    for(var i=0;i<len;i++){
+        var prices=$("#goods .p2 span .prices").eq(i).val();
+        sum+=parseInt(prices);
+    }
+    $(".rental .rentalCont .num").html(len);
+
+    $(".rental .rentalCont #total").html(sum);
+}
+getTotal();
+
+
+
+</script>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表页</title>
+    <link href="__PUBLIC__/Admin/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/adminlist.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/editor/kindeditor.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/layer-v2.4/layer.js"></script>
+    <style>
+        button{
+            line-height:30px;
+            height:30px;
+            width:auto;
+            /*// color:#ffffff;*/
+            background-color:#c5f1fd;
+            font-size:16px;
+            font-weight:normal;
+            padding-left: 10px;
+            padding-right: 10px;
+            -webkit-border-top-left-radius:3px;
+            -moz-border-radius-topleft:3px;
+            border-top-left-radius:3px;
+            -webkit-border-top-right-radius:3px;
+            -moz-border-radius-topright:3px;
+            border-top-right-radius:3px;
+            -webkit-border-bottom-left-radius:3px;
+            -moz-border-radius-bottomleft:3px;
+            border-bottom-left-radius:3px;
+            -webkit-border-bottom-right-radius:3px;
+            -moz-border-radius-bottomright:3px;
+            border-bottom-right-radius:3px;
+            text-align:center;
+            display:inline-block;
+            text-decoration:none;
+        }
+        button:hover{
+            background-color:#4a8cf7;
+            background:-moz-linear-gradient(top, #4a8cf7 5%, #4aa3f7 100%);
+            background:-o-linear-gradient(top, #4a8cf7 5%, #4aa3f7 100%);
+            background:-ms-linear-gradient(top, #4a8cf7 5%, #4aa3f7 100%);
+            background:linear-gradient(to bottom, #4a8cf7 5%, #4aa3f7 100%);
+            background:-webkit-linear-gradient(top, #4a8cf7 5%, #4aa3f7 100%);
+        }
+    </style>
+    <script type="text/javascript">
+        KE.show({
+            id : 'content7',
+            cssPath : './index.css'
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $(".select1").uedSelect({
+                width : 345
+            });
+            $(".select2").uedSelect({
+                width : 167
+            });
+            $(".select3").uedSelect({
+                width : 100
+            });
+        });
+    </script>
+    <style type="text/css">
+        .page a{display: inline-block;width:18px;height:18px;padding:5px;margin:2px;
+            border:1px solid #238ac5;text-align: center;}
+        .page span.current{display: inline-block;width:18px;height:18px;padding:5px;margin:2px;
+            border:1px solid #238ac5;text-align: center;background:#3d96c9;}
+        .page a:hover{background:#999999;color:#1a1a1a;}
+    </style>
+</head>
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+</div>
+<div class="formbody">
+    <div id="usual1" class="usual">
+        <div id="tab2" class="tabson">
+            <form action="{:U('Admins/ser')}" enctype="multipart/form-data" method="post">
+                <ul class="seachform">
+                    <li><label>查询广告</label><input name="key" type="text" class="scinput"/></li>
+                    <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="查询"/></li>
+                    <ul class="toolbar1">
+                        <li class="click"><a href="{:U('Admins/add')}"><span><img src="__PUBLIC__/Admin/images/t01.png"/></span>添加</a></li>
+                        <!--<li><a href=""><span><img src="__PUBLIC__/Admin/images/t03.png" /></span>删除</a></li>-->
+                    </ul>
+                </ul>
+            </form>
+            <table class="tablelist" style="text-align: center;">
+                <thead>
+                <tr >
+                    <th  style="text-align: center">
+                        <!--<input name="" type="checkbox" value="" checked="checked"/></th>-->
+                    <th  style="text-align: center">编号<i class="sort"><img src="__PUBLIC__/Admin/images/px.gif" /></i></th>
+                    <th  style="text-align: center">标题名称</th>
+                    <th  style="text-align: center">公告属性</th>
+                    <th  style="text-align: center">发布时间</th>
+                    <th  style="text-align: center">发布管理员</th>
+                    <th  style="text-align: center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="value" key="k">
+                    <tr>
+                        <td></td>
+                        <!--<td><input name="" type="checkbox" value="" /></td>-->
+                        <td>{$k+$num}</td>
+                      <!--//  <td><button name="{$value.vip}" id={$value.id} class="username">{$value.title}</button></td>-->
+
+                        <td style="text-align: left"><a href="{:U('Notice/title',array('id'=>$value['id']))}">{$value.title}</a>  </td>
+
+                        <td>
+                            <if condition="$value.fl eq 1 ">系统
+                                <else /> 公告 </if>
+                        </td>
+                        <td>{$value.createtime|date="Y-m-d",###} </td>
+                        <td>{$value.author}</td>
+                        <td>
+                            <input type="hidden" value="{$vip}" id="vip"/>
+                            <input type="hidden" id="id" value="{$Think.session.id}"/>
+                            <button  name="{$value.vip}" class="del" id={$value.id}>删除</button>
+                            <!--<a href="#" class="tablelink">{$value['issale']?'下架':'上架'}</a>-->
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <div class="pagin" >
+                <div class="message">
+                <!--{$show}-->
+                </div>
+                <div class="paginList">
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $("#usual1 ul").idTabs();
+</script>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+</script>
+
+
+<script>
+    $("button").click(function(){
+         var id=$(this).attr('id');
+        $.post("{:U('delnotice')}",{id:id},function(rel){
+          if(rel=="true"){
+              layer.alert('删除成功', function(index){
+                  window.location.reload()
+              });
+          }else{
+              layer.alert("删除失败，请重试")
+          }
+
+        })
+
+
+    })
+
+
+</script>
+
+
+
+
+</html>

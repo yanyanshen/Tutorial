@@ -1,0 +1,3672 @@
+[ 2016-07-30T08:59:31+08:00 ] 172.16.11.248 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T08:59:35+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T08:59:36+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T08:59:38+08:00 ] 172.16.11.248 /index.php/Home/Detail/quicklogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T08:59:47+08:00 ] 172.16.11.248 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.025001s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( username='xiaoming' ) LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2016-07-30T08:59:48+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T08:59:48+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' )  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T08:59:49+08:00 ] 172.16.11.248 /index.php/Home/Cart/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T08:59:54+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.018001s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30ea4eb49329550caaa1d2044105223721',29,6,1469840394,1,2300,54) [ RunTime:0.028002s ]
+
+[ 2016-07-30T08:59:55+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:00:04+08:00 ] 172.16.11.248 /index.php/Home/Member/take.html?ordersyn=2016-07-2958c2ac6f92a1c369e00bcb3a28af2d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=40 WHERE ( `ordersyn` = '2016-07-2958c2ac6f92a1c369e00bcb3a28af2d' ) [ RunTime:0.036002s ]
+
+[ 2016-07-30T09:00:04+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:00:44+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:00:58+08:00 ] 172.16.11.248 /index.php/Home/Member/com.html?ordersyn=2016-07-2958c2ac6f92a1c369e00bcb3a28af2d&content=%E6%88%91%E7%9A%84%E8%AF%84%E8%AE%BA%E6%98%AF111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ihome_order` WHERE ( `ordersyn` = '2016-07-2958c2ac6f92a1c369e00bcb3a28af2d' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `mid` = 29 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods_comment` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_goods_comment` (`gid`,`comtime`,`username`,`content`) VALUES (7,1469840458,'xiaoming','我的评论是111111') [ RunTime:0.026001s ]
+SQL: UPDATE `ihome_order` SET `statusid`=50 WHERE ( `ordersyn` = '2016-07-2958c2ac6f92a1c369e00bcb3a28af2d' ) [ RunTime:0.020002s ]
+
+[ 2016-07-30T09:00:58+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:01:42+08:00 ] 172.16.11.248 /index.php/Home/Member/changeStatus/ordersyn/2016-07-30ea4eb49329550caaa1d20441052237
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=20 WHERE ( `ordersyn` = '2016-07-30ea4eb49329550caaa1d20441052237' ) [ RunTime:0.032002s ]
+
+[ 2016-07-30T09:01:42+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:01:49+08:00 ] 172.16.11.248 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:01:50+08:00 ] 172.16.11.248 /admin.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:01:58+08:00 ] 172.16.11.248 /admin.php/Admin/Login/verify/id/1997953069.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:01:59+08:00 ] 172.16.11.248 /admin.php/Admin/Login/verify/id/1997953069.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:02:00+08:00 ] 172.16.11.248 /admin.php/Admin/Login/verify/id/1997953069.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:02:03+08:00 ] 172.16.11.248 /admin.php/Admin/Login/checkVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:02:05+08:00 ] 172.16.11.248 /admin.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:05+08:00 ] 172.16.11.248 /admin.php/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:05+08:00 ] 172.16.11.248 /admin.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:05+08:00 ] 172.16.11.248 /admin.php/Admin/Notice/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:05+08:00 ] 172.16.11.248 /admin.php/Admin/Index/footer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:08+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:02:23+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.004000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 11 ) [ RunTime:0.029002s ]
+
+[ 2016-07-30T09:02:23+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:02:26+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:31+08:00 ] 172.16.11.248 /index.php/Home/Member/take.html?ordersyn=2016-07-30ea4eb49329550caaa1d20441052237
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=40 WHERE ( `ordersyn` = '2016-07-30ea4eb49329550caaa1d20441052237' ) [ RunTime:0.026002s ]
+
+[ 2016-07-30T09:02:31+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:02:41+08:00 ] 172.16.11.248 /index.php/Home/Member/com.html?ordersyn=2016-07-30ea4eb49329550caaa1d20441052237&content=22222222222222222222222222222222222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_order` WHERE ( `ordersyn` = '2016-07-30ea4eb49329550caaa1d20441052237' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `mid` = 29 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods_comment` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_goods_comment` (`gid`,`comtime`,`username`,`content`) VALUES (6,1469840561,'xiaoming','22222222222222222222222222222222222') [ RunTime:0.028002s ]
+SQL: UPDATE `ihome_order` SET `statusid`=50 WHERE ( `ordersyn` = '2016-07-30ea4eb49329550caaa1d20441052237' ) [ RunTime:0.025001s ]
+
+[ 2016-07-30T09:02:41+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:05:22+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+
+[ 2016-07-30T09:05:24+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:05:43+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据bbbb' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.001000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据bbbb',101) [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,105' WHERE ( `cid` = 105 ) [ RunTime:0.015600s ]
+
+[ 2016-07-30T09:05:49+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:06:07+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据cccccc' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.001000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据cccccc',101) [ RunTime:0.033002s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,106' WHERE ( `cid` = 106 ) [ RunTime:0.018001s ]
+
+[ 2016-07-30T09:06:15+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T09:07:24+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:07:41+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据ddddd' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.001000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据ddddd',106) [ RunTime:0.031200s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.017600s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 106 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,106,107' WHERE ( `cid` = 107 ) [ RunTime:0.035002s ]
+
+[ 2016-07-30T09:07:41+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:08:14+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:08:29+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据eeeee' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.002000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据eeeee',102) [ RunTime:0.045003s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 102 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,102,108' WHERE ( `cid` = 108 ) [ RunTime:0.030002s ]
+
+[ 2016-07-30T09:08:29+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:10:16+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:10:33+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据fffffff' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.001000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据fffffff',102) [ RunTime:0.028002s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,102,109' WHERE ( `cid` = 109 ) [ RunTime:0.016001s ]
+
+[ 2016-07-30T09:10:33+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T09:11:19+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:11:32+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据gggggg' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.000000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据gggggg',101) [ RunTime:0.031200s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,110' WHERE ( `cid` = 110 ) [ RunTime:0.021001s ]
+
+[ 2016-07-30T09:11:32+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:14:48+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是策划死数据hhhh' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.001001s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是策划死数据hhhh',102) [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,102,111' WHERE ( `cid` = 111 ) [ RunTime:0.015001s ]
+
+[ 2016-07-30T09:14:48+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:24:49+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:25:13+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `catename` = '我是测试数据库9999' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `cid`,`catename`,`pid`,`path` FROM `ihome_category` ORDER BY path asc  [ RunTime:0.001000s ]
+SQL: INSERT INTO `ihome_category` (`catename`,`pid`) VALUES ('我是测试数据库9999',102) [ RunTime:0.030002s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 102 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ihome_category` SET `path`='101,102,112' WHERE ( `cid` = 112 ) [ RunTime:0.031002s ]
+
+[ 2016-07-30T09:25:17+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:28:12+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:28:15+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:28:19+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/issale.html?issale=1&gid=41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_goods` SET `issale`=0 WHERE ( `gid` = 41 ) [ RunTime:0.028001s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.012001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ihome_goods` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_goods` LIMIT 0,10   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-30T09:28:21+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:28:25+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/issale.html?issale=0&gid=41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_goods` SET `issale`=1 WHERE ( `gid` = 41 ) [ RunTime:0.030002s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.007001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ihome_goods` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_goods` LIMIT 0,10   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:28:27+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:29:13+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:29:15+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:29:18+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/delGoods.html?gid=41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: DELETE FROM `ihome_goods` WHERE ( `gid` = 41 ) [ RunTime:0.030001s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ihome_goods` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_goods` LIMIT 0,10   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:29:20+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:33:12+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:33:12+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:33:13+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:33:18+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/search.html?keywords=%E5%8D%A1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:33:21+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/editGoods/gid/gid.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:33:45+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:33:49+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/search.html?keywords=%E5%8D%A1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:33:51+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/editGoods/gid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:33:52+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/editGoods/gid/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:34:03+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:34:06+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/search.html?keywords=%E5%8D%A1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:34:15+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/search.html?keywords=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:34:20+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/issale.html?issale=1&gid=40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003001s ]
+SQL: UPDATE `ihome_goods` SET `issale`=0 WHERE ( `gid` = 40 ) [ RunTime:0.033001s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ihome_goods` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_goods` LIMIT 0,10   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:34:22+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/search.html?keywords=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:34:29+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/delGoods.html?gid=40
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.004000s ]
+SQL: DELETE FROM `ihome_goods` WHERE ( `gid` = 40 ) [ RunTime:0.052003s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.006001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ihome_goods` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_goods` LIMIT 0,10   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:34:31+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/search.html?keywords=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:37:25+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:37:30+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:37:31+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:37:34+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003001s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 3 ) [ RunTime:0.022001s ]
+
+[ 2016-07-30T09:37:36+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:39:36+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:39:42+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 3 ) AND ( `statusid` = 20 ) [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:39:44+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:39:57+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:39:59+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 3 ) AND ( `statusid` = 20 ) [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:40:01+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:40:59+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:41:00+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 3 ) AND ( `statusid` = 20 ) [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:41:03+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:42:20+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:42:24+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 3 ) AND ( `statusid` = 20 ) [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:42:26+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:42:53+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:42:55+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:43:04+08:00 ] 172.16.11.248 /admin.php/Admin/Member/search.html?username=xiaoming
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:43:09+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:43:14+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:43:24+08:00 ] 172.16.11.248 /admin.php/Admin/Member/delete/mid/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:43:25+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:43:59+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:44:14+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:44:16+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:44:28+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:44:29+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:44:43+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:44:44+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:44:52+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:44:53+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T09:45:31+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memberList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:45:32+08:00 ] 172.16.11.248 /admin.php/Admin/Member/memDetail/mid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:45:39+08:00 ] 172.16.11.248 /admin.php/Admin/Member/MemberAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:46:20+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:46:21+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:index.css
+
+[ 2016-07-30T09:46:22+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:46:25+08:00 ] 172.16.11.248 /admin.php/Admin/Category/addCategory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:46:26+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:46:29+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:46:39+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: cid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\CategoryController.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `catename`='卧室家居' WHERE ( `cid` = 1 ) [ RunTime:0.015600s ]
+
+[ 2016-07-30T09:47:40+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:47:44+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:47:49+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: cid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\CategoryController.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `catename`='卧室家居' WHERE ( `cid` = 1 ) [ RunTime:0.031200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:47:51+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:47:57+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:48:53+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:48:57+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T09:49:05+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\CategoryController.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `catename`='卧室家居' WHERE ( `cid` = 1 ) [ RunTime:0.041002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:50:06+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:50:07+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:50:10+08:00 ] 172.16.11.248 /index.php/Admin/Category/editcate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\CategoryController.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `cid` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_category` SET `catename`='卧室家居' WHERE ( `cid` = 1 ) [ RunTime:0.031200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-30T09:50:16+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T09:50:16+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:50:43+08:00 ] 172.16.11.248 /admin.php/Admin/Category/selList.html?keywords=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:50:48+08:00 ] 172.16.11.248 /admin.php/Admin/Category/delcate.html?cid=112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `pid` = 112 )  [ RunTime:0.000000s ]
+SQL: DELETE FROM `ihome_category` WHERE ( `cid` = 112 ) [ RunTime:0.022001s ]
+
+[ 2016-07-30T09:51:30+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:51:35+08:00 ] 172.16.11.248 /admin.php/Admin/Category/selList.html?keywords=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:51:38+08:00 ] 172.16.11.248 /admin.php/Admin/Category/delcate.html?cid=110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ihome_category` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `ihome_category` WHERE ( `pid` = 110 )  [ RunTime:0.000000s ]
+SQL: DELETE FROM `ihome_category` WHERE ( `cid` = 110 ) [ RunTime:0.039602s ]
+
+[ 2016-07-30T09:51:40+08:00 ] 172.16.11.248 /admin.php/Admin/Category/selList.html?keywords=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:53:04+08:00 ] 172.16.11.248 /admin.php/Admin/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T09:53:06+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:53:06+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index.css
+
+[ 2016-07-30T09:53:07+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-30T09:53:08+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T09:53:08+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index.css
+
+[ 2016-07-30T09:53:09+08:00 ] 172.16.11.248 /admin.php/Admin/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:02:29+08:00 ] 172.16.11.248 /admin.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:02:29+08:00 ] 172.16.11.248 /admin.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:02:29+08:00 ] 172.16.11.248 /admin.php/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:02:29+08:00 ] 172.16.11.248 /admin.php/Admin/Notice/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:02:29+08:00 ] 172.16.11.248 /admin.php/Admin/Index/footer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:02:30+08:00 ] 172.16.11.248 /admin.php/Admin/Notice/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:02:35+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:02:37+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:02:38+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:05:46+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:06:13+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:06:14+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:06:14+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:06:14+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:06:15+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:06:56+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:07:26+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:10:04+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:29:09+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:29:09+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:29:11+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:29:12+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:29:13+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:29:14+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:29:15+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:30:07+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:30:44+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:30:45+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:35:11+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:44:35+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-30T10:44:42+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:44:44+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:45:40+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:45:40+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:45:41+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:45:41+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:45:42+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:46:02+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:46:08+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:46:10+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:48:44+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:48:45+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:48:47+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:48:49+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:49:41+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:49:50+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:49:52+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:52:00+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:52:07+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:52:30+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:53:56+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:54:15+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:54:23+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:54:40+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T10:54:49+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T10:54:55+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:05:14+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:06:17+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:06:36+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:06:55+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:07:01+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:07:12+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:08:47+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:09:38+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:09:50+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:09:58+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:10:24+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:10:28+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:12:47+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:12:51+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:17:03+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:17:55+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:17:58+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:18:17+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:18:31+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: adpic D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\LunboController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:18:33+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:37:21+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:37:50+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:38:10+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: adpic D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\LunboController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:38:13+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:38:25+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: adpic D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Admin\Controller\LunboController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:38:27+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:42:04+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:42:05+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:42:35+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:42:36+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:42:52+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:43:34+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:43:39+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:44:33+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:44:45+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:44:46+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:47:38+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:47:38+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:47:44+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:47:46+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:47:50+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:47:51+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:48:44+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:48:45+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:48:49+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:48:52+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:49:17+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-30T11:50:12+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:50:16+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:50:19+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:50:30+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:50:33+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+
+[ 2016-07-30T11:51:02+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:51:02+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:51:03+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/lunBolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T11:51:03+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T11:52:49+08:00 ] 172.16.11.248 /admin.php/Admin/Lunbo/addLunBo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:11:33+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' )  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:13:30+08:00 ] 172.16.11.248 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:13:32+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:13:32+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' )  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:13:34+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:13:36+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:13:46+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:13:55+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.025001s ]
+NOTIC: [8] Undefined index: gid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 118 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 120 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 121 行.
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30fdb2c3bab9d0701c4a050a4d8d782c7f',29,null,1469859235,null,0,54) [ RunTime:0.000000s ]
+ERR: 1048:Column 'gid' cannot be null
+ [ SQL语句 ] : INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30fdb2c3bab9d0701c4a050a4d8d782c7f',29,null,1469859235,null,0,54)
+
+[ 2016-07-30T14:13:55+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:13:56+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:14:05+08:00 ] 172.16.11.248 /index.php/Home/Member/changeStatus/ordersyn/2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003001s ]
+SQL: UPDATE `ihome_order` SET `statusid`=20 WHERE ( `ordersyn` = '2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62' ) [ RunTime:0.049002s ]
+
+[ 2016-07-30T14:14:06+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:14:10+08:00 ] 172.16.11.248 /index.php/Home/Member/changeStatus/ordersyn/2016-07-3026b58a41da329e0cbde0cbf956640a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=20 WHERE ( `ordersyn` = '2016-07-3026b58a41da329e0cbde0cbf956640a' ) [ RunTime:0.032002s ]
+
+[ 2016-07-30T14:14:10+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:14:21+08:00 ] 172.16.11.248 /index.php/Home/Member/changeStatus/ordersyn/2016-07-30ed582716bfb4738ccd92405301122e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=20 WHERE ( `ordersyn` = '2016-07-30ed582716bfb4738ccd92405301122e' ) [ RunTime:0.021001s ]
+
+[ 2016-07-30T14:14:21+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:14:33+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:14:36+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:14:36+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:14:37+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:14:37+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:14:40+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 12 ) AND ( `statusid` = 20 ) [ RunTime:0.040002s ]
+
+[ 2016-07-30T14:14:42+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:14:57+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:15:00+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:15:04+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 15 ) AND ( `statusid` = 20 ) [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:15:06+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:15:08+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.000000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 13 ) AND ( `statusid` = 20 ) [ RunTime:0.031200s ]
+
+[ 2016-07-30T14:15:10+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:15:12+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003001s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 14 ) AND ( `statusid` = 20 ) [ RunTime:0.022001s ]
+
+[ 2016-07-30T14:15:14+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:15:22+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:15:25+08:00 ] 172.16.11.248 /index.php/Home/Member/take.html?ordersyn=2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.004000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=40 WHERE ( `ordersyn` = '2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62' ) [ RunTime:0.036002s ]
+
+[ 2016-07-30T14:15:26+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:15:28+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:15:34+08:00 ] 172.16.11.248 /index.php/Home/Member/com.html?ordersyn=2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62&content=12312312312
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_order` WHERE ( `ordersyn` = '2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `mid` = 29 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods_comment` [ RunTime:0.003001s ]
+SQL: INSERT INTO `ihome_goods_comment` (`gid`,`comtime`,`username`,`content`) VALUES (6,1469859334,'xiaoming','12312312312') [ RunTime:0.020001s ]
+SQL: UPDATE `ihome_order` SET `statusid`=50 WHERE ( `ordersyn` = '2016-07-307cb1f2f2baf6ab2ae929ad8cb88d62' ) [ RunTime:0.014001s ]
+
+[ 2016-07-30T14:15:34+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:15:49+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:16:20+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:22+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:22+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 21 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:16:23+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:25+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:31+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:32+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:34+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:35+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:16:37+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:38+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:16:39+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:40+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:41+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:42+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:16:43+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:16:44+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:16:56+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:17:00+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: gid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 118 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 120 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 121 行.
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-301e3b21cb226c39b6aa4634f820b372f3',29,null,1469859420,null,0,55) [ RunTime:0.000000s ]
+ERR: 1048:Column 'gid' cannot be null
+ [ SQL语句 ] : INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-301e3b21cb226c39b6aa4634f820b372f3',29,null,1469859420,null,0,55)
+
+[ 2016-07-30T14:17:00+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:17:01+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:17:11+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:17:29+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:17:31+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:17:32+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:17:50+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:17:51+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: gid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 118 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 120 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 121 行.
+NOTIC: [8] Undefined index: adressid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 122 行.
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30f8e6ba1db0f3c4054afec1684ba8fb26',29,null,1469859471,null,0,null) [ RunTime:0.001000s ]
+ERR: 1048:Column 'gid' cannot be null
+ [ SQL语句 ] : INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30f8e6ba1db0f3c4054afec1684ba8fb26',29,null,1469859471,null,0,null)
+
+[ 2016-07-30T14:17:51+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:17:52+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:17:54+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:18:23+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: gid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 118 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 120 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 121 行.
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-3029e11ea8ec6c7804a7f939e8e78e9c18',29,null,1469859503,null,0,54) [ RunTime:0.000000s ]
+ERR: 1048:Column 'gid' cannot be null
+ [ SQL语句 ] : INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-3029e11ea8ec6c7804a7f939e8e78e9c18',29,null,1469859503,null,0,54)
+
+[ 2016-07-30T14:18:23+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:18:24+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:19:42+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:19:44+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:19:45+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='29' )  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:19:48+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:19:50+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:19:59+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:20:00+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:21:12+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:21:34+08:00 ] 172.16.11.248 /index.php/Home/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:21:34+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:21:36+08:00 ] 172.16.11.248 /index.php/Home/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:21:36+08:00 ] 172.16.11.248 /index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:21:48+08:00 ] 172.16.11.248 /index.php/Home/Login/check_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `username` = '123456789' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:04+08:00 ] 172.16.11.248 /index.php/Home/Login/check_mobile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `mobile` = '15012345645' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:22:10+08:00 ] 172.16.11.248 /index.php/Home/Login/check_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:12+08:00 ] 172.16.11.248 /index.php/Home/Login/verify/id/2059339026.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:16+08:00 ] 172.16.11.248 /index.php/Home/Login/check_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:16+08:00 ] 172.16.11.248 /index.php/Home/Login/check_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:22:18+08:00 ] 172.16.11.248 /index.php/Home/Login/check_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:18+08:00 ] 172.16.11.248 /index.php/Home/Login/check_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:20+08:00 ] 172.16.11.248 /index.php/Home/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.005000s ]
+SQL: INSERT INTO `ihome_member` (`username`,`pwd`,`mobile`,`createtime`) VALUES ('123456789','7fa8282ad93047a4d6fe6111c93b308a','15012345645',1469859740) [ RunTime:0.029002s ]
+
+[ 2016-07-30T14:22:22+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:27+08:00 ] 172.16.11.248 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:22:46+08:00 ] 172.16.11.248 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( username='123456789' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:47+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:53+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:53+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 25 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:22:56+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:22:57+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:22:59+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:25:03+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 25 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:25:03+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:25:08+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:25:08+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 7 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:25:10+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:25:51+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:27:05+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:27:24+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:27:35+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?searchwords=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:29:09+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:29:15+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html?searchwords=%E5%84%BF%E7%AB%A5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:29:36+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:29:39+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?searchwords=%E5%AE%B6%E5%85%B7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:29:53+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?searchwords=%E5%84%BF%E7%AB%A5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:29:54+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?searchwords=%E5%84%BF%E7%AB%A5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:29:55+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?act=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:29:58+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?act=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:29:59+08:00 ] 172.16.11.248 /index.php/Home/Search/search.html?act=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:30:25+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:30:29+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 7 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:30:41+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:31:42+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:31:45+08:00 ] 172.16.11.248 /index.php/Home/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:31:45+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:31:54+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:31:54+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:31:58+08:00 ] 172.16.11.248 /index.php/Home/Detail/quicklogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:32:06+08:00 ] 172.16.11.248 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( username='123456789' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:32:07+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:32:07+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='38' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 21 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:32:10+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:32:11+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:32:28+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:34:31+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:34:37+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:34:38+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:34:39+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:34:40+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:35:00+08:00 ] 172.16.11.248 /index.php/Home/Cart/delCart/id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:35:01+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:35:12+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:35:16+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:36:30+08:00 ] 172.16.11.248 /admin.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:36:30+08:00 ] 172.16.11.248 /admin.php/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:36:30+08:00 ] 172.16.11.248 /admin.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:36:30+08:00 ] 172.16.11.248 /admin.php/Admin/Notice/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:36:30+08:00 ] 172.16.11.248 /admin.php/Admin/Index/footer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:36:37+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:41:37+08:00 ] 172.16.11.248 /index.php/Home/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:41:37+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:41:39+08:00 ] 172.16.11.248 /index.php/Home/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:41:39+08:00 ] 172.16.11.248 /index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:41:44+08:00 ] 172.16.11.248 /index.php/Home/Login/check_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `username` = '654321' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:41:56+08:00 ] 172.16.11.248 /index.php/Home/Login/check_mobile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `mobile` = '15045678912' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:42:02+08:00 ] 172.16.11.248 /index.php/Home/Login/check_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:42:02+08:00 ] 172.16.11.248 /index.php/Home/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_member` (`username`,`pwd`,`mobile`,`createtime`) VALUES ('654321','7fa8282ad93047a4d6fe6111c93b308a','15045678912',1469860922) [ RunTime:0.037002s ]
+
+[ 2016-07-30T14:42:04+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:42:08+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:42:08+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 6 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:42:09+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:42:13+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:42:17+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:42:36+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-30T14:42:40+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:45:34+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:51:08+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:51:18+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:51:38+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:52:17+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:52:17+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:52:19+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:52:19+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 6 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-30T14:52:20+08:00 ] 172.16.11.248 /index.php/Home/Cart/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:52:45+08:00 ] 172.16.11.248 /index.php/Home/Cart/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:52:59+08:00 ] 172.16.11.248 /index.php/Home/Cart/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:53:56+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 6 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:53:59+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:54:01+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:54:05+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:54:40+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:03+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:06+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:57:28+08:00 ] 172.16.11.248 /index.php/Home/Member/adressForm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_adress` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: tel D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\MemberController.class.php 第 175 行.
+SQL: INSERT INTO `ihome_adress` (`username`,`mid`,`province`,`city`,`town`,`adressdetail`,`mobile`,`tel`,`code`) VALUES ('12546',39,'天津市','天津市','河东区','123','15012312311',null,'123456') [ RunTime:0.031201s ]
+
+[ 2016-07-30T14:57:29+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:57:32+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: gid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 118 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 120 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 121 行.
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-305f0f5e5f33945135b874349cfbed4fb9',39,null,1469861852,null,0,56) [ RunTime:0.000000s ]
+ERR: 1048:Column 'gid' cannot be null
+ [ SQL语句 ] : INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-305f0f5e5f33945135b874349cfbed4fb9',39,null,1469861852,null,0,56)
+
+[ 2016-07-30T14:57:33+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:35+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:36+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:57:36+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:36+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:57:36+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:37+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:37+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:57:37+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:57:37+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:46+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: gid D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 118 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 120 行.
+NOTIC: [8] Undefined index: buynum D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\CartController.class.php 第 121 行.
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-307f100b7b36092fb9b06dfb4fac360931',39,null,1469861866,null,0,56) [ RunTime:0.001000s ]
+ERR: 1048:Column 'gid' cannot be null
+ [ SQL语句 ] : INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-307f100b7b36092fb9b06dfb4fac360931',39,null,1469861866,null,0,56)
+
+[ 2016-07-30T14:57:48+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T14:57:49+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:49+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T14:57:49+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:49+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T14:57:58+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:02:01+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:03:31+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 6 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-30T15:03:33+08:00 ] 172.16.11.248 /index.php/Home/Cart/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:03:36+08:00 ] 172.16.11.248 /index.php/Home/Cart/submit_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-304b86ca48d90bd5f0978afa3a012503a4',39,6,1469862216,1,2300,56) [ RunTime:0.043003s ]
+
+[ 2016-07-30T15:03:37+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:07:12+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 6 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T15:07:13+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:07:14+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:07:17+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:07:23+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:08:12+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:08:16+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.004000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-307fa732b517cbed14a48843d74526c11a',39,6,1469862496,3,6900,56) [ RunTime:0.059004s ]
+
+[ 2016-07-30T15:10:47+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:10:49+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-3021186d7b1482412ab14f0332b8aee119',39,6,1469862649,3,6900,56) [ RunTime:0.026002s ]
+
+[ 2016-07-30T15:10:50+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30301ad0e3bd5cb1627a2044908a42fdc2',39,6,1469862650,3,6900,56) [ RunTime:0.027001s ]
+
+[ 2016-07-30T15:10:51+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.000000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30a052f1fccf47b66d047f2234c53f1597',39,6,1469862651,3,6900,56) [ RunTime:0.031201s ]
+
+[ 2016-07-30T15:10:51+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.002000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-3052292e0c763fd027c6eba6b8f494d2eb',39,6,1469862651,3,6900,56) [ RunTime:0.027002s ]
+
+[ 2016-07-30T15:10:51+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-302adcefe38fbcd3dcd45908fbab1bf628',39,6,1469862651,3,6900,56) [ RunTime:0.040003s ]
+
+[ 2016-07-30T15:11:24+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:11:25+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-301592104031ceaa405b8a103c399e2633',39,6,1469862685,3,6900,56) [ RunTime:0.015600s ]
+
+[ 2016-07-30T15:11:42+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:11:44+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:13:55+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:13:58+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.000000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-307fcb0a2c0f0f41d9f4454ac2d8ed7ad6',39,6,1469862838,3,6900,56) [ RunTime:0.024600s ]
+
+[ 2016-07-30T15:16:07+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:16:09+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.005001s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30cff34ad343b069ea6920464ad17d4bcf',39,6,1469862969,3,6900,56) [ RunTime:0.029001s ]
+
+[ 2016-07-30T15:16:10+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:16:43+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:16:44+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:16:47+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:16:47+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 20 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-30T15:16:49+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:16:50+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:16:53+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:16:56+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 20 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-30ce016f59ecc2366a43e1c96a4774d167',39,20,1469863016,1,2500,56) [ RunTime:0.030002s ]
+
+[ 2016-07-30T15:16:57+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:17:04+08:00 ] 172.16.11.248 /index.php/Home/Member/changeStatus/ordersyn/2016-07-30ce016f59ecc2366a43e1c96a4774d1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.016001s ]
+SQL: UPDATE `ihome_order` SET `statusid`=20 WHERE ( `ordersyn` = '2016-07-30ce016f59ecc2366a43e1c96a4774d1' ) [ RunTime:0.033002s ]
+
+[ 2016-07-30T15:17:04+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:17:07+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:17:10+08:00 ] 172.16.11.248 /admin.php/Admin/Order/affirm.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=30 WHERE ( `id` = 1 ) AND ( `statusid` = 20 ) [ RunTime:0.024002s ]
+
+[ 2016-07-30T15:17:12+08:00 ] 172.16.11.248 /admin.php/Admin/Order/orderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:17:14+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:17:16+08:00 ] 172.16.11.248 /index.php/Home/Member/take.html?ordersyn=2016-07-30ce016f59ecc2366a43e1c96a4774d1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: UPDATE `ihome_order` SET `statusid`=40 WHERE ( `ordersyn` = '2016-07-30ce016f59ecc2366a43e1c96a4774d1' ) [ RunTime:0.032002s ]
+
+[ 2016-07-30T15:17:16+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:17:19+08:00 ] 172.16.11.248 /index.php/Home/Member/com.html?ordersyn=2016-07-30ce016f59ecc2366a43e1c96a4774d1&content=123123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_order` WHERE ( `ordersyn` = '2016-07-30ce016f59ecc2366a43e1c96a4774d1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_member` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_member` WHERE ( `mid` = 39 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods_comment` [ RunTime:0.003000s ]
+SQL: INSERT INTO `ihome_goods_comment` (`gid`,`comtime`,`username`,`content`) VALUES (20,1469863039,'654321','123123123') [ RunTime:0.028002s ]
+SQL: UPDATE `ihome_order` SET `statusid`=50 WHERE ( `ordersyn` = '2016-07-30ce016f59ecc2366a43e1c96a4774d1' ) [ RunTime:0.012001s ]
+
+[ 2016-07-30T15:17:19+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:17:57+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:17:59+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:18:31+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:20:18+08:00 ] 172.16.11.248 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:20:21+08:00 ] 172.16.11.248 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:20:26+08:00 ] 172.16.11.248 /index.php/Home/Detail/detail.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-30T15:20:26+08:00 ] 172.16.11.248 /index.php/Home/Detail/checkFocus.html?gid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ihome_member_focus` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ihome_member_focus` WHERE ( uid='39' )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 6 D:\Program Files (x86)\Apache Software Foundation\Apache2.2\myweb\Ihome\Home\Controller\DetailController.class.php 第 66 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:20:31+08:00 ] 172.16.11.248 /index.php/Home/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T15:20:33+08:00 ] 172.16.11.248 /index.php/Home/Cart/showCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:20:36+08:00 ] 172.16.11.248 /index.php/Home/Cart/cartToOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:20:39+08:00 ] 172.16.11.248 /index.php/Home/Order/submitOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ihome_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ihome_goods` WHERE ( `gid` = 20 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ihome_order` [ RunTime:0.003001s ]
+SQL: INSERT INTO `ihome_order` (`ordersyn`,`mid`,`gid`,`createtime`,`buynum`,`prices`,`adressid`) VALUES ('2016-07-3085ef8e895264ae2dcab7bcd0f04d9bea',39,20,1469863239,1,2500,56) [ RunTime:0.027001s ]
+
+[ 2016-07-30T15:20:40+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T15:20:43+08:00 ] 172.16.11.248 /index.php/Home/Member/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T17:53:15+08:00 ] 172.16.11.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-30T17:53:36+08:00 ] 172.16.11.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-30T17:58:07+08:00 ] 172.16.11.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T17:58:13+08:00 ] 172.16.11.90 /index.php/Home/Search/search.html?cid=76
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T17:58:16+08:00 ] 172.16.11.90 /index.php/Home/Detail/detail.html?gid=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T17:58:17+08:00 ] 172.16.11.90 /index.php/Home/Detail/checkFocus.html?gid=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mid D:\project\six\myweb\Ihome\Home\Controller\DetailController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T17:58:20+08:00 ] 172.16.11.90 /index.php/Home/Member/focus.html?gid=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T17:58:20+08:00 ] 172.16.11.90 /index.php/Home/Detail/checkFocus.html?gid=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mid D:\project\six\myweb\Ihome\Home\Controller\DetailController.class.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-30T17:58:22+08:00 ] 172.16.11.90 /index.php/Home/Detail/quicklogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-30T17:58:27+08:00 ] 172.16.11.90 /index.php/Home/Detail/quicklogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

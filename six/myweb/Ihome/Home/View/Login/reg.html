@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reg.css">
+    <script src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/lr.js"></script>
+    <script src="__PUBLIC__/Home/js/layer/layer.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.validate.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.form.js"></script>
+    <style>
+        input.error { border: 1px solid #EA5200;background: #ffdbb3;}
+        label.error{
+            background:url("__PUBLIC__/Home/images/error.png") no-repeat 5px 2px;
+            padding-left:18px;
+            color:#ff0300;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        label.ok {
+            background:url("__PUBLIC__/Home/images/ok.png") no-repeat 5px 2px;
+        }
+    </style>
+</head>
+<body>
+<!-- 头部开始 -->
+    <div class="header">
+        <div class="headerCont wid_1200 clearfix">
+            <div class="logo clearfix"><a href="{:U('Home/Index/index')}"><img src="__PUBLIC__/Home/images/Ihomelogo.png" alt=""></a></div>
+            <span class="fr">已有账号，直接<a href="login.html">登录</a></span>
+        </div>
+    </div>
+<!-- 注册模块开始 -->
+    <div class="reg wid_1200">
+        <ul class="clearfix">
+            <li><a href="#">用户名注册</a></li>
+        </ul>
+        <div>
+            <form action="{:u('Login/register')}" method="post" id="form1">
+                    <p>用户名：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="username" id="username" placeholder="请输入3-16位字母"><label id="user"></label></p><br/>
+                    <p>密&nbsp;&nbsp;&nbsp;码：&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pwd" id="pwd"></p><br/>
+                    <p>确认密码：<input type="password" name="repwd"></p><br />
+                    <p>手机号：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mobile"></p><br/>
+                    <p>验证码：&nbsp;&nbsp;&nbsp;&nbsp;<input class="yzm" name="yzm" type="text"><img width="130" src="{:u('verify')}" alt="{*通过路径引入验证码*}" onclick="this.src='{:u(\'verify\',array(\'id\'=>mt_rand()))}'"/></p><br />
+                <label id="code"></label>
+                <p><input class="check" type="checkbox" class="inp" >我已看过并接受<a href="#">《苗家频道网注册用户协议》</a></p><br />
+                    <p><input class="btn" type="button" name="btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册"></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    //用户名是否存在判断
+   /* $('#username').focusout(function(){
+        var username=$('#username').val();
+        $.post("{:u('Login/check_user')}",
+                {username:username},
+                function(da){
+                    if(da.status==1)
+                    {
+                        $('#user').html(da.msg);
+                    }else {
+                        $('#user').html(da.msg);
+                    }
+                },'json')
+    });*/
+
+    //验证码正误判断
+   /* $('.yzm').focusout(function(){
+        var yzm=$('.yzm').val();
+        $.post("{:u('Login/check_code')}",
+                {yzm:yzm},
+                function(da){
+                    if(da.status==1)
+                    {
+                        $('#code').html(da.msg);
+                    }else{
+                        $('#code').html(da.msg);
+                    }
+                },'json')
+    });*/
+
+    //验证格式是否正确
+    $(function(){
+        var validate=$('#form1').validate({
+            //设置验证规则
+            rules:{
+                username:{
+                    required:true,   //不能为空
+                    minlength:3,
+                    maxlength:16,
+                    remote:{
+                        url:"check_user",
+                        type:'post'
+                    }
+
+                },
+
+                pwd:{
+                    required:true,
+                    minlength:5,
+                    maxlength:20
+                },
+
+                repwd:{
+                    required:true,
+                    equalTo:"#pwd"
+                },
+
+                mobile:{
+                    required:true,
+                    mobile:true,
+                    remote:{
+                        url:"check_mobile",
+                        type:'post'
+                    }
+                },
+
+                yzm:{
+                    required:true,
+                    remote:{
+                        url:"check_code",
+                        type:'post'
+                    }
+                }
+
+
+            },
+            messages:{
+
+                username:{
+                    required:'用户名不能为空',
+                    minlength:'用户名至少需要3个字符',
+                    maxlength:'用户名最多16个字符',
+                    remote:'用户名已存在'
+                },
+
+                pwd:{
+                    required:'密码不能为空',
+                    minlength:'密码长度至少5个字符',
+                    maxlength:'密码长度最多20个字符'
+                },
+
+                repwd:{
+                    required:'重复密码不能为空',
+                    equalTo:'两次密码输入不一致'
+                },
+
+                mobile:{
+                    required:'手机号码不能为空',
+                    mobile:'手机号码格式不正确',
+                    remote:'手机号码已被注册'
+                },
+
+                yzm:{
+                    required:'请输入验证码',
+                    remote:'验证码不正确'
+                }
+
+            },
+            success: function(label) {
+                label.addClass("ok");
+            },
+            validClass: "ok",
+            errorPlacement: function(error, element) {
+                error.appendTo( element.parent());
+            }
+
+        })
+
+        // 手机号码验证
+        jQuery.validator.addMethod("mobile", function(value, element) {
+         var mobileReg = /^1[34578]{1}[0-9]{9}$/;
+         return this.optional(element) || (mobileReg.test(value));
+         }, "请正确填写您的手机号码");
+
+        jQuery.validator.onfocus=true;
+
+        $('.btn').click(function(){
+            if(validate.form()){
+                $.post("{:u('Login/register')}",$('#form1').serialize(),function(res){
+                    if(res.status=='ok'){
+                        layer.alert(res.msg,{
+                            yes:function(){
+                                location.href="{:u('Index/index')}"
+                            }
+                        })
+                    }else{
+                        layer.alert(res.msg);
+                    }
+                })
+            }
+        })
+
+    })
+</script>
+</html>

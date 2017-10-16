@@ -1,0 +1,13 @@
+
+.WeBodyHp { width: 1155px; height: 328px;  border-right: 2px solid #4D4D4D; }
+.WeBodyHp ul { margin: 0px; padding: 0px; }
+.WeBodyHp li { margin: 0px; padding: 0px; list-style: none; width: 163px; height: 80px;  border-left: 2px solid #4D4D4D; float: left; background: #DDDDDD; text-transform: uppercase; text-align: center; }
+.WeBodyHp ul li a { display: table; width: 100%; height: 100%; text-decoration: none; outline: none; -webkit-transition: all 800ms ease-out; /* CSS3 transition. Last value is pause before transition play */ -moz-transition: all 800ms ease-out; transition: all 800ms ease-out; }
+.WeBodyHp ul li a img { border: 0px; width: 168px; height: 80px; }
+.WeBodyHp ul li a span { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: table-cell; vertical-align: middle; width: 100%; height: 100%; -webkit-transition: all 800ms ease-out; /* CSS3 transition. */ -moz-transition: all 800ms ease-out; transition: all 800ms ease-out; }
+.WeBodyHp ul li:hover a { color: black; /* color of icon font onMouseover */ -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); /* flip horizontally 180deg*/ transform: rotateY(180deg); -webkit-transition-delay: 0.2s; -moz-transition-delay: 0.2s; transition-delay: 0.2s; }
+
+/*案例版块*/
+.WeBodyHp { height: auto ;margin: 0 auto}
+.WeBodyHp, .WeBodyHp li { overflow: hidden }
+
