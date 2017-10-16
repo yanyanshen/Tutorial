@@ -1,0 +1,1627 @@
+[ 2016-12-02T09:02:54+08:00 ] 172.16.17.184 /index.php/Mobile/Detail/detail/gid/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pic` [ RunTime:0.0020s ]
+SQL: SELECT `picname` FROM `shop_goods_pic` WHERE `gid` = 18  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `shop_category` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `id` IN ('6','21','53')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('6','21','53') LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods_comment` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`pic`,gc.* FROM shop_goods_comment gc INNER JOIN shop_member as m on m.id=gc.mid  WHERE gc.gid = '18'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `shop_collect` WHERE `mid` = null AND `gid` = 18 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mid D:\project\five\Shop\Runtime\Cache\Mobile\3b86ec34818053f45cc778890d15ea93.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T09:03:19+08:00 ] 172.16.17.184 /index.php/Mobile/Detail/detail/gid/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pic` [ RunTime:0.0030s ]
+SQL: SELECT `picname` FROM `shop_goods_pic` WHERE `gid` = 52  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `shop_category` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_category` WHERE `id` IN ('1','28','31')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','28','31') LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_goods_comment` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`pic`,gc.* FROM shop_goods_comment gc INNER JOIN shop_member as m on m.id=gc.mid  WHERE gc.gid = '52'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_comment_pic` [ RunTime:0.0030s ]
+SQL: SELECT `picname` FROM `shop_comment_pic` WHERE ( `addtime` > 1480397844 AND `addtime` < 1480397864  ) AND `gid` = 52 AND `mid` = 4 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `shop_collect` WHERE `mid` = null AND `gid` = 52 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mid D:\project\five\Shop\Runtime\Cache\Mobile\3b86ec34818053f45cc778890d15ea93.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:04:39+08:00 ] 192.168.4.55 /Mobile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY salenum desc LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY addtime desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_brand` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_ads` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_ads` WHERE `adposition` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '2%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','13','14','43','44','45','46','47','48','49','50','51','52','82') LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '1%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goodsname` FROM `shop_goods` ORDER BY salenum LIMIT 8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:21:33+08:00 ] 192.168.4.55 /index.php/Mobile/Detail/detail/gid/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_foot` WHERE `mid` = 4 AND `gid` = 47 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shop_foot` SET `addtime`='1480666893' WHERE `mid` = 4 AND `gid` = 47 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pic` [ RunTime:0.0040s ]
+SQL: SELECT `picname` FROM `shop_goods_pic` WHERE `gid` = 47  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `shop_category` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `id` IN ('2','12','48')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','48') LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods_comment` [ RunTime:0.0040s ]
+SQL: SELECT `username`,`pic`,gc.* FROM shop_goods_comment gc INNER JOIN shop_member as m on m.id=gc.mid  WHERE gc.gid = '47'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_comment_pic` [ RunTime:0.0040s ]
+SQL: SELECT `picname` FROM `shop_comment_pic` WHERE ( `addtime` > 1480410714 AND `addtime` < 1480410734  ) AND `gid` = 47 AND `mid` = 12 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `shop_collect` WHERE `mid` = 4 AND `gid` = 47 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:21:38+08:00 ] 192.168.4.55 /index.php/Mobile/Order/toBuyCreateOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0000s ]
+SQL: INSERT INTO `shop_order` (`order_syn`,`order_price`,`mid`,`addtime`) VALUES ('201612021621381190391086','65','4','1480666898') [ RunTime:0.0000s ]
+SQL: INSERT INTO `shop_order_goods` (`oid`,`gid`,`buynum`) VALUES ('55','47','1') [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:21:40+08:00 ] 192.168.4.55 /index.php/Mobile/Order/orderList.html?oid=55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT o.id,o.order_price FROM shop_order o WHERE ( o.id=55 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`address`,`mobile`,`postcode`,`name`,`isdefault` FROM `shop_address` WHERE ( mid=4 ) ORDER BY isdefault desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.order_price,g.pic,g.id,g.goodsname,g.marketprice,g.price,og.buynum FROM shop_order o INNER JOIN shop_order_goods og on og.oid=o.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=55 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:21:47+08:00 ] 192.168.4.55 /index.php/Mobile/Address/otherAddress/oid/55.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`address`,`mobile`,`postcode`,`isdefault` FROM `shop_address` WHERE ( mid=4 ) ORDER BY isdefault desc,addtime desc LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:21:58+08:00 ] 192.168.4.55 /index.php/Mobile/Address/setDefault.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0000s ]
+SQL: UPDATE `shop_address` SET `isdefault`='1' WHERE ( id=36 ) [ RunTime:0.0156s ]
+SQL: UPDATE `shop_address` SET `isdefault`='0' WHERE ( mid=4 AND id!=36 ) [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:21:59+08:00 ] 192.168.4.55 /index.php/Mobile/Order/orderList.html?oid=55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT o.id,o.order_price FROM shop_order o WHERE ( o.id=55 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`address`,`mobile`,`postcode`,`name`,`isdefault` FROM `shop_address` WHERE ( mid=4 ) ORDER BY isdefault desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.order_price,g.pic,g.id,g.goodsname,g.marketprice,g.price,og.buynum FROM shop_order o INNER JOIN shop_order_goods og on og.oid=o.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=55 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:22:05+08:00 ] 192.168.4.55 /index.php/Mobile/Pay/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_feedback` [ RunTime:0.0312s ]
+
+[ 2016-12-02T16:22:17+08:00 ] 192.168.4.55 /index.php/Mobile/Pay/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_feedback` [ RunTime:0.0000s ]
+SQL: UPDATE `shop_order` SET `address`='36' WHERE `id` = 55 [ RunTime:0.0000s ]
+SQL: SELECT `order_syn`,`order_price` FROM `shop_order` WHERE ( id=55 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shop_feedback` (`mid`,`content`,`addtime`) VALUES ('4','aaa','1480666937') [ RunTime:0.0156s ]
+
+[ 2016-12-02T16:22:19+08:00 ] 192.168.4.55 /index.php/Mobile/Pay/payList.html?order_syn=201612021621381190391086&order_price=65.00&oid=55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0040s ]
+SQL: SELECT `status_name` FROM shop_order o INNER JOIN shop_order_status s on s.id=o.order_status  WHERE ( o.id=55 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM shop_member m INNER JOIN shop_order o on o.mid=m.id  WHERE ( m.id=4 AND o.id=55 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:22:28+08:00 ] 192.168.4.55 /index.php/Mobile/Pay/topay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0020s ]
+SQL: SELECT `order_price`,`order_syn` FROM `shop_order` WHERE ( id=55 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0000s ]
+SQL: SELECT `money`,`paypwd`,`costs`,`credit` FROM `shop_member` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select g.id,g.salenum,g.num,og.buynum from shop_order_goods og,shop_order o,shop_goods g where og.gid=g.id and og.oid=o.id and o.id=55 [ RunTime:0.0000s ]
+SQL: UPDATE `shop_member` SET `credit`='125',`costs`='12507.75',`money`='1050116',`level`='5' WHERE `id` = 4 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0156s ]
+SQL: SELECT `salenum`,`num` FROM `shop_goods` WHERE ( id=47 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shop_goods` SET `salenum`='5',`num`='962856' WHERE `id` = 47 [ RunTime:0.0000s ]
+SQL: UPDATE `shop_order` SET `order_status`='2' WHERE `id` = 55 [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:22:29+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/personalList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shop_member` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=1 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=2 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=3 AND mid=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=4 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=5 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-12-02T16:22:32+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=55 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_order_status` [ RunTime:0.0070s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=54 )  [ RunTime:0.0010s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=53 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=52 )  [ RunTime:0.0010s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=51 )  [ RunTime:0.0010s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:22:45+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order.html?p=2&order_status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 ) ORDER BY addtime desc LIMIT 5,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=49 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_status` [ RunTime:0.0156s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=48 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=47 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=44 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=43 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T16:22:53+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order.html?p=3&order_status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 ) ORDER BY addtime desc LIMIT 10,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=42 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_status` [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=33 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=32 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=2 )  [ RunTime:0.0156s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=5 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T16:22:59+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order/order_status/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 AND order_status=5 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 AND order_status=5 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0040s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=2 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_order_status` [ RunTime:0.0040s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=5 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:23:03+08:00 ] 192.168.4.55 /index.php/Mobile/Order/delOrder.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT og.gid FROM shop_order o INNER JOIN shop_order_goods og on og.oid=o.id  WHERE ( o.id=2 )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `shop_order` WHERE ( mid=4 AND id=2 ) [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0040s ]
+SQL: DELETE FROM `shop_order_goods` WHERE `oid` = 2 AND `gid` IN ('52') [ RunTime:0.0020s ]
+
+[ 2016-12-02T16:23:04+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order/order_status/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 AND order_status=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 AND order_status=5 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-02T16:23:10+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order/order_status/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 AND order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 AND order_status=2 ) ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0040s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=55 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_status` [ RunTime:0.0040s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=54 )  [ RunTime:0.0010s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=53 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=51 )  [ RunTime:0.0010s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=49 )  [ RunTime:0.0010s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:23:14+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/order.html?p=2&order_status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 AND order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `shop_order` WHERE ( mid=4 AND order_status=2 ) ORDER BY addtime desc LIMIT 5,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=44 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order_status` [ RunTime:0.0156s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=42 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=33 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=32 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT g.id,g.pic,g.introduction,g.goodsname,g.price,og.buynum,o.order_price,os.status_name,os.member_opt,o.order_status FROM shop_order_goods og INNER JOIN shop_order o on og.oid=o.id INNER JOIN shop_order_status os on o.order_status=os.id INNER JOIN shop_goods g on og.gid=g.id  WHERE ( o.id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT os.id,os.member_opt,os.status_name FROM shop_order_status os INNER JOIN shop_order o on o.order_status=os.id  WHERE ( o.order_status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T16:23:20+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`address`,`mobile`,`postcode`,`isdefault` FROM `shop_address` WHERE ( mid=4 ) ORDER BY isdefault desc,addtime desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T16:23:29+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/setDefault.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: UPDATE `shop_address` SET `isdefault`='1' WHERE ( id=52 ) [ RunTime:0.0040s ]
+SQL: UPDATE `shop_address` SET `isdefault`='0' WHERE ( mid=4 AND id!=52 ) [ RunTime:0.0010s ]
+
+[ 2016-12-02T16:23:30+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`address`,`mobile`,`postcode`,`isdefault` FROM `shop_address` WHERE ( mid=4 ) ORDER BY isdefault desc,addtime desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:23:35+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0050s ]
+SQL: DELETE FROM `shop_address` WHERE ( id=36 ) [ RunTime:0.0030s ]
+
+[ 2016-12-02T16:23:36+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`address`,`mobile`,`postcode`,`isdefault` FROM `shop_address` WHERE ( mid=4 ) ORDER BY isdefault desc,addtime desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:23:38+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/editAddress/id/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_address` WHERE ( id=48 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:23:41+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/editAddress/id/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_address` WHERE ( id=48 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:23:57+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/addAddress.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T16:24:11+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/changePwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:24:17+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/accountAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0040s ]
+SQL: SELECT `username`,`money` FROM `shop_member` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:24:34+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/accountAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0000s ]
+SQL: SELECT `money` FROM `shop_member` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shop_member` SET `money`='1050126' WHERE ( id=4 ) [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:24:35+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/personalList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_member` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=1 AND mid=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=2 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=3 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=4 AND mid=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=5 AND mid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-02T16:24:47+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/accountAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`money` FROM `shop_member` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:24:52+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/editPayPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:29:29+08:00 ] 192.168.4.55 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY salenum desc LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY addtime desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_brand` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_ads` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_ads` WHERE `adposition` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '2%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','13','14','43','44','45','46','47','48','49','50','51','52','82') LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '1%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goodsname` FROM `shop_goods` ORDER BY salenum LIMIT 8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:29:32+08:00 ] 192.168.4.55 /index.php/Mobile/Detail/detail/gid/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_foot` WHERE `mid` = 12 AND `gid` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shop_foot` SET `addtime`='1480667372' WHERE `mid` = 12 AND `gid` = 32 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pic` [ RunTime:0.0050s ]
+SQL: SELECT `picname` FROM `shop_goods_pic` WHERE `gid` = 32  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `shop_category` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_category` WHERE `id` IN ('4','20','71')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('4','20','71') LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods_comment` [ RunTime:0.0040s ]
+SQL: SELECT `username`,`pic`,gc.* FROM shop_goods_comment gc INNER JOIN shop_member as m on m.id=gc.mid  WHERE gc.gid = '32'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_comment_pic` [ RunTime:0.0040s ]
+SQL: SELECT `picname` FROM `shop_comment_pic` WHERE ( `addtime` > 1480667352 AND `addtime` < 1480667372  ) AND `gid` = 32 AND `mid` = 12 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `shop_collect` WHERE `mid` = 12 AND `gid` = 32 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:29:59+08:00 ] 192.168.4.55 /index.php/Mobile/Detail/detail/gid/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_foot` WHERE `mid` = 12 AND `gid` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shop_foot` SET `addtime`='1480667399' WHERE `mid` = 12 AND `gid` = 32 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pic` [ RunTime:0.0050s ]
+SQL: SELECT `picname` FROM `shop_goods_pic` WHERE `gid` = 32  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `shop_category` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `id` IN ('4','20','71')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('4','20','71') LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods_comment` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`pic`,gc.* FROM shop_goods_comment gc INNER JOIN shop_member as m on m.id=gc.mid  WHERE gc.gid = '32'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_comment_pic` [ RunTime:0.0040s ]
+SQL: SELECT `picname` FROM `shop_comment_pic` WHERE ( `addtime` > 1480667352 AND `addtime` < 1480667372  ) AND `gid` = 32 AND `mid` = 12 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `shop_collect` WHERE `mid` = 12 AND `gid` = 32 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T16:35:22+08:00 ] 192.168.4.55 /index.php/Mobile/Index/seckill.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_goods` INNER JOIN shop_activity as a on shop_goods.id = a.gid   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T16:35:30+08:00 ] 192.168.4.55 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY salenum desc LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY addtime desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_brand` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_ads` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_ads` WHERE `adposition` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '2%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','13','14','43','44','45','46','47','48','49','50','51','52','82') LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '1%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goodsname` FROM `shop_goods` ORDER BY salenum LIMIT 8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T16:35:32+08:00 ] 192.168.4.55 /index.php/Mobile/Integral/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '5%'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('5','77','78','79','85','86','87','88','89','90','96','97')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:35:34+08:00 ] 192.168.4.55 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY salenum desc LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY addtime desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_ads` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_ads` WHERE `adposition` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '2%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','13','14','43','44','45','46','47','48','49','50','51','52','82') LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '1%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goodsname` FROM `shop_goods` ORDER BY salenum LIMIT 8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:35:48+08:00 ] 192.168.4.55 /index.php/Mobile/Detail/detail/gid/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_foot` WHERE `mid` = 12 AND `gid` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shop_foot` SET `addtime`='1480667748' WHERE `mid` = 12 AND `gid` = 37 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pic` [ RunTime:0.0040s ]
+SQL: SELECT `picname` FROM `shop_goods_pic` WHERE `gid` = 37  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `shop_category` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_category` WHERE `id` IN ('3','16','67')  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('3','16','67') LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_goods_comment` [ RunTime:0.0040s ]
+SQL: SELECT `username`,`pic`,gc.* FROM shop_goods_comment gc INNER JOIN shop_member as m on m.id=gc.mid  WHERE gc.gid = '37'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_comment_pic` [ RunTime:0.0050s ]
+SQL: SELECT `picname` FROM `shop_comment_pic` WHERE ( `addtime` > 1479988920 AND `addtime` < 1479988940  ) AND `gid` = 37 AND `mid` = 47 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `shop_collect` WHERE `mid` = 12 AND `gid` = 37 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/Detail/collect.html?gid=37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_collect` WHERE `mid` = 12 AND `gid` = 37 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `shop_collect` (`gid`,`mid`,`addtime`) VALUES ('37','12','1480667750') [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:35:59+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/personalList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_member` WHERE `id` = 12  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=12 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=1 AND mid=12 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=2 AND mid=12 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=3 AND mid=12 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=4 AND mid=12 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=5 AND mid=12 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:36:01+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/mycollect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_collect` WHERE `mid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pic`,`goodsname`,`price`,`marketprice`,`gid`,c.id FROM shop_collect c INNER JOIN shop_goods as g on c.gid = g.id  WHERE `mid` = '12' LIMIT 0,4   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:36:11+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/collectdel.html?cid=26,27,29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0050s ]
+SQL: DELETE FROM `shop_collect` WHERE `mid` = 12 AND `id` IN ('26','27','29') [ RunTime:0.0070s ]
+
+[ 2016-12-02T16:36:11+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/mycollect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_collect` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_collect` WHERE `mid` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pic`,`goodsname`,`price`,`marketprice`,`gid`,c.id FROM shop_collect c INNER JOIN shop_goods as g on c.gid = g.id  WHERE `mid` = '12' LIMIT 0,4   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:36:16+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/foot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_foot` WHERE `mid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pic`,`goodsname`,`price`,`marketprice`,`gid`,c.id FROM shop_foot c INNER JOIN shop_goods as g on c.gid = g.id  WHERE `mid` = '12' LIMIT 0,4   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T16:36:20+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/foot.html?p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_foot` WHERE `mid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pic`,`goodsname`,`price`,`marketprice`,`gid`,c.id FROM shop_foot c INNER JOIN shop_goods as g on c.gid = g.id  WHERE `mid` = '12' LIMIT 4,4   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T16:36:21+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/foot.html?p=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_foot` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_foot` WHERE `mid` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pic`,`goodsname`,`price`,`marketprice`,`gid`,c.id FROM shop_foot c INNER JOIN shop_goods as g on c.gid = g.id  WHERE `mid` = '12' LIMIT 16,4   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\five\ThinkPHP\Library\Org\Shop\AjaxPage.class.php 第 121 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T16:43:41+08:00 ] 192.168.4.55 /index.php/Mobile/Category/cateList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shop_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_goods` ORDER BY addtime desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` ORDER BY salenum desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:43:58+08:00 ] 192.168.4.55 /index.php/Mobile/ProductList/productList/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `shop_category` WHERE `path` LIKE '1,%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0010s ]
+SQL: SELECT `catename` FROM `shop_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-02T16:44:01+08:00 ] 192.168.4.55 /index.php/Mobile/ProductList/productList.html?cateID=1&listorder=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `shop_category` WHERE `path` LIKE '1,%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') ORDER BY salenum  [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:44:02+08:00 ] 192.168.4.55 /index.php/Mobile/ProductList/productList.html?cateID=1&listorder=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `shop_category` WHERE `path` LIKE '1,%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') ORDER BY price  [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:44:03+08:00 ] 192.168.4.55 /index.php/Mobile/ProductList/productList.html?cateID=1&listorder=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `shop_category` WHERE `path` LIKE '1,%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:44:04+08:00 ] 192.168.4.55 /index.php/Mobile/ProductList/productList.html?cateID=1&listorder=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `shop_category` WHERE `path` LIKE '1,%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') ORDER BY salenum  [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:44:13+08:00 ] 192.168.4.55 /index.php/Mobile/ProductList/searchList.html?search=%E6%B0%B4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_goods` WHERE `goodsname` LIKE '%水%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T16:53:58+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/personalList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_member` WHERE `id` = null  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0070s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid= ) LIMIT 1  
+
+[ 2016-12-02T16:54:04+08:00 ] 192.168.4.55 /index.php/Mobile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY salenum desc LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY addtime desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_brand` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shop_brand` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_ads` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_ads` WHERE `adposition` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '2%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','13','14','43','44','45','46','47','48','49','50','51','52','82') LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '1%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goodsname` FROM `shop_goods` ORDER BY salenum LIMIT 8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-02T16:54:14+08:00 ] 192.168.4.55 /index.php/Mobile/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:54:26+08:00 ] 192.168.4.55 /index.php/Mobile/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shop_member` WHERE `username` = '夏冉' AND `password` = '96e79218965eb72c92a549dd5a330112' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.0156s ]
+
+[ 2016-12-02T16:54:27+08:00 ] 192.168.4.55 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY salenum desc LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY addtime desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `display` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_brand` LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_ads` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shop_ads` WHERE `adposition` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '2%'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('2','12','13','14','43','44','45','46','47','48','49','50','51','52','82') LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop_category` WHERE `path` LIKE '1%'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `cid` IN ('1','9','10','11','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39') LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goodsname` FROM `shop_goods` ORDER BY salenum LIMIT 8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:54:29+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/personalList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shop_member` WHERE `id` = 47  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( mid=47 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=1 AND mid=47 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=2 AND mid=47 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=3 AND mid=47 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=4 AND mid=47 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE ( order_status=5 AND mid=47 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:54:35+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/myData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`gender`,`pic` FROM `shop_member` WHERE `id` = 47  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T16:54:36+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/nameChange.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT `username` FROM `shop_member` WHERE `id` = 47  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Personal - assumed 'Personal' D:\project\five\Shop\Runtime\Cache\Mobile\ed878a77318ec48ab7ef374c0339c978.php 第 58 行.
+NOTIC: [8] Use of undefined constant nameChange - assumed 'nameChange' D:\project\five\Shop\Runtime\Cache\Mobile\ed878a77318ec48ab7ef374c0339c978.php 第 58 行.
+NOTIC: [2] Division by zero D:\project\five\Shop\Runtime\Cache\Mobile\ed878a77318ec48ab7ef374c0339c978.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-12-02T16:54:44+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/nameChange.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0156s ]
+SQL: UPDATE `shop_member` SET `username`='小夏' WHERE `id` = 47 [ RunTime:0.0000s ]
+
+[ 2016-12-02T16:54:49+08:00 ] 192.168.4.55 /index.php/Mobile/Personal/myData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`gender`,`pic` FROM `shop_member` WHERE `id` = 47  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
