@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/member.css">
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/carousel.js"></script>
+	<title>收货地址</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+        })
+    </script>
+</head>
+<body>
+<!--  顶部开始 --> 
+<include file="Public/header"/>
+       
+<!-- 导航开始 -->
+<div class="car clearfix frm_sty">
+
+	<div class="sidebar frm_sty">
+	<!-- 侧边栏导航 结束 -->
+		<ul class="fl">
+			<li><a href="{:u('User/member')}">会员中心</a></li>
+            <li><a href="{:u('User/order')}">我的订单</a></li>
+			<li><a href="{:u('User/goodsScList')}">商品收藏</a></li>
+			<li><a href="{:u('User/myscore')}">我的积分</a></li>
+			<li><a href="{:u('User/meminfo')}">个人消息</a></li>
+			<li class="no"><a href="{:u('User/addressList')}">收货地址</a></li>
+			<li class="li02"><a href="#">在线客服</a></li>
+		</ul>	
+	</div>
+	<!-- 侧边栏导航 结束 -->
+
+	<div class="manage fl">
+	<!-- 收货地址 开始 -->
+		<div class=" order">
+			<div class="title">
+				<h3>我的收货地址</h3>
+			</div>
+            <volist name="addressList" id="vo" empty="您还没有添加收货地址">
+                <ul class="clearfix">
+                    <li>
+                        <p class="p0">收货地址:{$vo.address},收货人:{$vo.name},联系电话:{$vo.tel}</p>
+                        <p><a href="{:u('delAddress',array('id'=>$vo['id']))}">删除</a> </p>
+                    </li>
+                </ul>
+            </volist>
+            {$page}
+		</div>
+	<!-- 收货地址 结束 -->
+	<!-- 我的关注 开始 -->
+		<div class="attention clearfix">
+			<div class="title">
+				<h3>我的关注</h3>
+			</div>
+			<ul>
+				<li class="li01">
+					<a href="#">
+						<p class="p1"></p>
+						<p class="p2">苗族农家自制萝卜<br/>干 细干萝卜条</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	<!-- 我的关注 结束 -->
+	</div>
+</div>
+
+<!-- 底部 开始 -->
+<include file="Public/footer"/>
+<!-- 底部结束 -->
+</body>
+</html>
+
+
+
+
+

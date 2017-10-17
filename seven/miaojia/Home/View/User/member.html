@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/member.css">
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/carousel.js"></script>
+	<title>我的订单-{:C('WEB_NAME')}</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+            //付款操作
+            $(".toPay").click(function(){
+                var orderid=$(this).parent().siblings('.p0').find('a').text();
+                layer.confirm('确认付款吗?',{
+                    btn:['确认','取消']
+                },function(){
+                    $.ajax({
+                        type:"get",
+                        url:"{:u('Order/payOver')}",
+                        data:"ordersyn="+orderid,
+                        success:function(res){
+                            if(res=='订单支付完成'){
+                                layer.msg(res,{
+                                    icon:6,
+                                    time:3000
+                                },function(){
+                                    location.reload();
+                                })
+                            }else{
+                                layer.msg(res,{
+                                    icon:5,
+                                    time:3000
+                                },function(){
+                                    location.reload();
+                                })
+                            }
+                        }
+                    })
+                },function(){
+                    layer.msg('您取消了付款');
+                })
+            });
+
+            //确认完成操作
+
+            $(".confirmSh").click(function(){
+                var orderid=$(this).parent().siblings('.p0').find('a').text();
+                layer.confirm("请确认您已收到物品!确认后,您的钱将立即打给卖家!",{
+                    btn:['确认','取消']
+                },function(){
+                    layer.prompt({
+                        title:"请输入您的密码进行确认收货操作!",
+                        formType:1
+                    },function(val){
+                        $.ajax({
+                            type:"post",
+                            url:"{:u('confirmSh')}",
+                            data:"ordersyn="+orderid+"&passwd="+val,
+                            success:function(data){
+                                if(data=='确认收货成功'){
+                                    layer.msg(data,{
+                                        icon:1,
+                                        time:3000
+                                    },function(){
+                                        location.reload();
+                                    })
+                                }else{
+                                    layer.msg(data,{
+                                        icon:2,
+                                        time:3000
+                                    },function(){
+                                        location.reload();
+                                    })
+                                }
+                            }
+                        })
+                    })
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<!--  顶部开始 --> 
+<include file="Public/header"/>
+       
+<!-- 导航开始 -->
+<div class="car clearfix frm_sty">
+
+	<div class="sidebar frm_sty">
+	<!-- 侧边栏导航 结束 -->
+		<ul class="fl">
+			<li class="no"><a href="{:u('User/member')}">会员中心</a></li>
+            <li><a href="{:u('User/order')}">我的订单</a></li>
+			<li><a href="{:u('User/goodsScList')}">商品收藏</a></li>
+			<li><a href="{:u('User/myscore')}">我的积分</a></li>
+			<li><a href="{:u('User/meminfo')}">个人消息</a></li>
+			<li><a href="{:u('User/addressList')}">收货地址</a></li>
+			<!--<li class="li02"><a href="#">在线客服</a></li>-->
+		</ul>	
+	</div>
+	<!-- 侧边栏导航 结束 -->
+
+	<div class="manage fl">
+	<!-- 账户信息 开始 -->
+		<div class="account" style="background: url('/upload/UserPic/small/{$meminfo.pic|default=\'default.jpg\'}') no-repeat -1px 30px ;">
+			<h3>你好<a href="#"><span><eq name="meminfo.nickname" value="">{$meminfo.username}<else/>{$meminfo.nickname}</eq></span></a>，欢迎登录{:C('WEB_NAME')}！</h3>
+			<ul>
+                <li><a href="#">账户余额:<span>￥{$meminfo.money}元</span></a></li>
+				<li><a href="#">你当前积分:<span>{$meminfo.score}</span>分</a></li>
+				<li class="li04"><a href="{:u('member',array('s'=>1))}">待付款（<span>{$order1}</span>）</a></li>
+				<li class="li05"><a href="{:u('member',array('s'=>3))}">待收货（<span>{$order3}</span>）</a></li>
+				<li class="li06"><a href="{:u('member',array('s'=>4))}">待评价（<span>{$order4}</span>）</a></li>
+			</ul>
+		</div>
+	<!-- 账户信息 结束 -->
+	<!-- 订单信息 开始 -->
+		<div class=" order">
+			<div class="title">
+				<h3>我的订单</h3>
+			</div>
+            <volist name="orderList" id="vo" empty="暂时没有此状态的订单">
+                <ul class="clearfix">
+                    <li>
+                        <p class="p0">订单号:<a href="#">{$vo.ordersyn}</a></p>
+                        <p class="p1"><eq name="meminfo.nickname" value="">{$meminfo.username}<else/>{$meminfo.nickname}</eq></p>
+                        <p class="p2">￥<span>{$vo.prices}</span></p>
+                        <p class="p3">{$vo.createtime|date='Y-m-d',###}</p>
+                        <p class="p4">
+                            <switch name="vo.orderstatus">
+                                <case value="1"><a href="javascript:void(0)" class="toPay">未付款</a></case>
+                                <case value="2"><span style="color: #ff0000;">等待发货</span></case>
+                                <case value="3"><a href="javascript:void(0)" class="confirmSh">等待确认收货</a></case>
+                                <case value="4"><span style="color: #ff0000;"><a href="javascript:void(0)" class="toPj">待评价</a></span></case>
+                                <case value="5"><span style="color: #008855;">已评价</span></case>
+                            </switch>
+                        </p>
+                        <p class="p3"><a href="{:u('order')}">查看</a></p>
+                    </li>
+                </ul>
+            </volist>
+            {$page}
+		</div>
+	<!-- 订单信息 结束 -->
+	</div>
+</div>
+
+<!-- 底部 开始 -->
+<include file="Public/footer"/>
+<!-- 底部结束 -->
+</body>
+</html>
+
+
+
+
+

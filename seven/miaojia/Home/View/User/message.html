@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息</title>
+    <script src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/layer.js"></script>
+<script src="__PUBLIC__/Home/js/denglujs.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/denglu.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css" />
+    <script type="text/javascript">
+        $(function () {
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+        })
+    </script>
+</head>
+<body>
+
+<!-- 内容开始 -->
+<!--  顶部开始 --> 
+<include file="Public/header"/>
+
+<div class="cont">
+    <div class="cont_bg">
+        <ul class="sidebar">
+            <li class="touxiang"><img src="__PUBLIC__/Home/images/touxiang.jpg"><br/>叶叶
+            </li>
+            <li><a href="{:u('User/member')}">会员中心</a></li>
+            <li><a href="{:u('User/order')}">我的订单</a></li>
+            <li><a href="{:u('User/goodsScList')}">商品收藏</a></li>
+            <li><a href="{:u('User/myscore')}">我的积分</a></li>
+            <li><a href="User/password.html">个人信息</a></li>
+            <li><a href="{:u('User/addressList')}">收货地址</a></li>
+            <li class="kefu"><a href="#">在线客服</a></li>
+        </ul>
+    
+     <!-- tab -->
+    <div class="news">
+        <ul class="clearfix">
+            <li><a href="#">系统信息</a></li>
+            <li><a href="#">系统通知</a></li>
+        </ul>
+        <div class="text">
+            <h4>登录提醒<span class="fl">返回消息列表</span></h4>
+            <p>         您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码。不建议在公共场所使用记住密码功能，<br/>  以防账号丢失，退出浏览器时记得清楚缓存，账号安全从小事做起。</p>
+        </div>
+       
+   <div class="text02 clearfix">
+         <table cellpadding="0" cellspacing="0" class="gwc_tb1">
+        <tr>
+          <td class="tb1_td1"><input id="Checkbox1" type="checkbox"  class="allselect"/>  </td>
+          <td class="tb1_td2"><a href="#">全选</a></td>
+          <td class="tb1_td3"><a href="#">删除</a></td>
+          <td class="tb1_td4"><a href="#">标为已读</a></td>
+        </tr>    
+       </table> 
+
+
+        <table cellpadding="0" cellspacing="0" class="gwc_tb2" >
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox2" name="newslist" type="checkbox"  class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin01.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+      </table>
+
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox3" name="newslist" type="checkbox"  class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin01.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+       </table>
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2" >
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox4" type="checkbox" name="newslist"  class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin01.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+      </table>
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox5" type="checkbox" name="newslist" class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin02.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+       </table>
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox6" type="checkbox" name="newslist" class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin02.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+        </table>
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox7" type="checkbox" name="newslist" class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin02.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+        </table>
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox8" type="checkbox" name="newslist" class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin02.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+      </table>
+       <table cellpadding="0" cellspacing="0" class="gwc_tb2">
+        <tr>
+          <td class="tb2_td1"><input id="Checkbox9" type="checkbox" name="newslist" class="allselect"/></td>
+          <td class="tb2_td2"><img src="__PUBLIC__/Home/images/xin02.png"></td>
+          <td class="tb2_td3">登录提醒</td>
+          <td class="tb2_td4"><a href="#"><span>查看</span>|<span>删除</span></a></td> 
+            
+          </tr>
+       <td class="tb2_td5">您的账号于2016年04月18日13:19:50登录，如非本人操作，请尽快修改登录密码</td>
+          
+        
+       </table>
+       
+ </div>
+
+        
+</div>
+</div>
+</div>
+
+  
+
+<div class="btn clearfix">
+     <ul class="ul1 fl">
+        <li class="l1"><a href="#"><下一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">...</a></li>
+        <li class="l1"><a href="#">下一页></a></li>
+     </ul>
+      <ul class="ul2 fr">
+        <li class="l2"><a href="#">共&nbsp;6&nbsp;页</a></li>
+        <li class="l2"><a href="#">到第<input id="text_box1" name="" type="text" value="1" style=" width:25px; text-align:center; border:1px solid #d2d2d2;margin:0 3px;" />页</a></li>
+        <li class="l1"><a href="#">确定</a></li>
+     </ul>
+ </div>  
+
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+    
+</body>
+</html>

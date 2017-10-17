@@ -1,0 +1,1529 @@
+[ 2016-07-29T14:11:35+08:00 ] 172.16.11.90 /Mobile/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:11:40+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 36 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0070s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 36  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:11:43+08:00 ] 172.16.11.90 /index.php/Mobile/User/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 ORDER BY createtime desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 ORDER BY createtime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 1 ORDER BY createtime desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 3 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 4 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:11:49+08:00 ] 172.16.11.90 /index.php/Mobile/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:11:50+08:00 ] 172.16.11.90 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = null LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0100s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:11:52+08:00 ] 172.16.11.90 /index.php/Mobile/User/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:11:52+08:00 ] 172.16.11.90 /index.php/Mobile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:11:52+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T14:11:57+08:00 ] 172.16.11.90 /index.php/Mobile/User/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:05+08:00 ] 172.16.11.90 /index.php/Mobile/Category/categoryList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T14:12:07+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-29T14:12:07+08:00 ] 172.16.11.90 /index.php/Mobile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:07+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:17+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:17+08:00 ] 172.16.11.90 /index.php/Mobile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:17+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:22+08:00 ] 172.16.11.90 /index.php/Mobile/Category/categoryList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:12:23+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:23+08:00 ] 172.16.11.90 /index.php/Mobile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:23+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:27+08:00 ] 172.16.11.90 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = null LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:31+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 29 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = null  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = null  [ RunTime:0.0020s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = null  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 29  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:40+08:00 ] 172.16.11.90 /index.php/Mobile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:12:40+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:49+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:49+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:49+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:50+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:50+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:12:50+08:00 ] 172.16.11.90 /index.php/Mobile/User/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:01:31+08:00 ] 172.16.11.90 /Mobile/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:01:44+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:01:49+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/addToSc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17 AND `gid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `mj_goodssc` (`uid`,`gid`) VALUES ('17','2') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:01:50+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:01:59+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T17:02:01+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:02:02+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:02:15+08:00 ] 172.16.11.90 /index.php/Mobile/User/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 ORDER BY createtime desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 ORDER BY createtime desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 1 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 3 ORDER BY createtime desc  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 4 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:02:18+08:00 ] 172.16.11.90 /index.php/Mobile/User/goodsScList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\d5106df75c313f8a821717ca104f911e.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:02:20+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goodssc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goodssc` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SELECT `gid` FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SELECT `pjintro`,`pjtime`,`uid` FROM `mj_pingjia` WHERE `gid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T17:02:26+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `mj_cart` WHERE `gid` = 2 AND `uid` = 17 AND `goodsargs` = '75mm果径' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `mj_cart` (`buynum`,`goodsargs`,`gid`,`uid`) VALUES ('1','75mm果径','2','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:02:29+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\cabca320c0660935179ea8ffd5ebf317.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:02:36+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/saveCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `mj_cart` SET `buynum`='7' WHERE `uid` = 17 AND `gid` = 2 AND `goodsargs` = '75mm果径' [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:02:38+08:00 ] 172.16.11.90 /index.php/Mobile/Order/affirm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_address` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_address` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_address` WHERE `uid` = 17  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: prices D:\project\seven\miaojia\Mobile\Controller\OrderController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\392f56411afe0ff07097a1ba6c5e8521.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:02:44+08:00 ] 172.16.11.90 /index.php/Mobile/Order/addCartToOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_address` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_address` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: prices D:\project\seven\miaojia\Mobile\Controller\OrderController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `mj_order` (`ordersyn`,`uid`,`createtime`,`orderstatus`,`address`,`prices`) VALUES ('579b1bb48f38547','17','1469782964','1','收货地址:北京市北京市东城区3楼,收货人:高勇,联系电话:15237150303','188.3') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_ordergoods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_ordergoods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\seven\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `mj_ordergoods` (`orderid`,`gid`,`goodsargs`,`buynum`) VALUES ('20','2','75mm果径','7') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: gid D:\project\seven\miaojia\Mobile\Model\CartModel.class.php 第 45 行.
+SQL: DELETE FROM `mj_cart` WHERE `uid` = 17 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T17:02:48+08:00 ] 172.16.11.90 /index.php/Mobile/User/order/s/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 1 ORDER BY createtime desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 1 ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_ordergoods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_ordergoods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_ordergoods` WHERE `orderid` = 20  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_pingjia` WHERE `gid` = 2 AND `goodsargs` = '75mm果径' AND `uid` = 17 AND `orderid` = 20 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_ordergoods` WHERE `orderid` = 14  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 146 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_pingjia` WHERE `gid` = 146 AND `goodsargs` = '原味' AND `uid` = 17 AND `orderid` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_ordergoods` WHERE `orderid` = 13  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_pingjia` WHERE `gid` = 2 AND `goodsargs` = '75mm果径' AND `uid` = 17 AND `orderid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_ordergoods` WHERE `orderid` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 5 AND `issale` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_pingjia` WHERE `gid` = 5 AND `goodsargs` = '芹菜猪肉' AND `uid` = 17 AND `orderid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 3 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_pingjia` WHERE `gid` = 3 AND `goodsargs` = '三鲜' AND `uid` = 17 AND `orderid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\89ac4c2855466743e944abf397c69d7c.php 第 185 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\89ac4c2855466743e944abf397c69d7c.php 第 185 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\89ac4c2855466743e944abf397c69d7c.php 第 185 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\89ac4c2855466743e944abf397c69d7c.php 第 185 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\89ac4c2855466743e944abf397c69d7c.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:02:56+08:00 ] 172.16.11.90 /index.php/Mobile/Order/payOver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_order` WHERE `ordersyn` = '579b1bb48f38547' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_order` WHERE `ordersyn` = '579b1bb48f38547' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: UPDATE `mj_user` SET `money`=money-188.30 WHERE `id` = 17 [ RunTime:0.0020s ]
+SQL: UPDATE `mj_user` SET `score`=score+188.30 WHERE `id` = 17 [ RunTime:0.0010s ]
+SQL: UPDATE `mj_order` SET `id`='20',`ordersyn`='579b1bb48f38547',`uid`='17',`createtime`='1469782964',`orderstatus`='2',`sendtime`=NULL,`overtime`=NULL,`prices`='188.3',`address`='收货地址:北京市北京市东城区3楼,收货人:高勇,联系电话:15237150303',`logisticsname`=NULL,`logisticsinfo`=NULL WHERE `ordersyn` = '579b1bb48f38547' [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:03:00+08:00 ] 172.16.11.90 /index.php/Mobile/User/order/s/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 2 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 2 ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_ordergoods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_ordergoods` WHERE `orderid` = 20  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `id` = 2 AND `issale` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_pingjia` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_pingjia` WHERE `gid` = 2 AND `goodsargs` = '75mm果径' AND `uid` = 17 AND `orderid` = 20 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\89ac4c2855466743e944abf397c69d7c.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-07-29T17:03:19+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_goods` WHERE `issale` = 1 ORDER BY createtime desc  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `issale` = 1 ORDER BY createtime desc LIMIT 0,12   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:03:28+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mj_goods` WHERE `issale` = 1 AND `goodsname` LIKE '%蛋%' ORDER BY createtime desc  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goods` WHERE `issale` = 1 AND `goodsname` LIKE '%蛋%' ORDER BY createtime desc LIMIT 0,12   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:03:35+08:00 ] 172.16.11.90 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:03:38+08:00 ] 172.16.11.90 /index.php/Mobile/User/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_order` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 ORDER BY createtime desc  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 ORDER BY createtime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 1 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 3 ORDER BY createtime desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mj_order` WHERE `uid` = 17 AND `orderstatus` = 4 ORDER BY createtime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:03:42+08:00 ] 172.16.11.90 /index.php/Mobile/User/addressList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_address` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_address` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_address` WHERE `uid` = 17  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:03:45+08:00 ] 172.16.11.90 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T17:03:51+08:00 ] 172.16.11.90 /index.php/Mobile/Goods/goodsList/cid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `mj_category` WHERE `id` = '2' OR ( `path` LIKE '%,2,%' OR `path` RLIKE('^,*2,.*') )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_goods` WHERE `issale` = 1 AND `cid` IN ('2','10','11','12','13','56','58','62','67','70','73','74','75','76','77','79','82','83','85','86','87','88','89','90','91','126') ORDER BY createtime desc  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mj_category` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `mj_category` WHERE `id` = '2' OR ( `path` LIKE '%,2,%' OR `path` RLIKE('^,*2,.*') )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mj_goods` WHERE `issale` = 1 AND `cid` IN ('2','10','11','12','13','56','58','62','67','70','73','74','75','76','77','79','82','83','85','86','87','88','89','90','91','126') ORDER BY createtime desc LIMIT 0,12   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\97ccc437f17eb5d9a35bd45dab163d2d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:03:57+08:00 ] 172.16.11.90 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:04:02+08:00 ] 172.16.11.90 /index.php/Mobile/Cart/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mj_cart` WHERE `uid` = 17 LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T17:04:08+08:00 ] 172.16.11.90 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mj_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mj_user` WHERE `username` = 'gaoyong' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mj_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goods` WHERE `hot` = 1 AND `tj` = 1 AND `issale` = 1 ORDER BY rand()  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mj_goods` ORDER BY rand() LIMIT 0,4   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 118 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 124 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 125 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 126 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 127 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 140 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 141 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 142 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 143 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 158 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 159 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 160 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 161 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 176 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 177 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 178 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\seven\miaojia\Runtime\Cache\Mobile\82d75ba67c965cfdfbbe732a82312df2.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/member.css">
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/carousel.js"></script>
+	<title>我的收藏-{:C('WEB_NAME')}</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+
+            $(".delSc").click(function(){
+                $.ajax({
+                    type:"post",
+                    url:"{:u('delGoodsSc')}",
+                    data:"gid="+$(this).attr('rel'),
+                    success:function(data){
+                        layer.msg(data.msg,{icon:1,time:1000},function(){
+                            location.reload();
+                        })
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<!--  顶部开始 --> 
+<include file="Public/header"/>
+       
+<!-- 导航开始 -->
+<div class="car clearfix frm_sty">
+
+	<div class="sidebar frm_sty">
+	<!-- 侧边栏导航 结束 -->
+		<ul class="fl">
+			<li><a href="{:u('User/member')}">会员中心</a></li>
+            <li><a href="{:u('User/order')}">我的订单</a></li>
+			<li class="no"><a href="{:u('User/goodsScList')}">商品收藏</a></li>
+			<li><a href="{:u('User/myscore')}">我的积分</a></li>
+			<li><a href="{:u('User/meminfo')}">个人消息</a></li>
+			<li><a href="{:u('User/addressList')}">收货地址</a></li>
+			<li class="li02"><a href="#">在线客服</a></li>
+		</ul>	
+	</div>
+	<!-- 侧边栏导航 结束 -->
+
+	<div class="manage fl">
+	<!-- 收货地址 开始 -->
+		<div class=" order">
+			<div class="title">
+				<h3>我的收藏</h3>
+			</div>
+            <volist name="goodsScList" id="vo" empty="您还没有收藏的商品">
+                <ul class="clearfix">
+                    <li>
+                        <p class="p0"><img src="/upload/n3/{$vo.image|default='default.jpg'|explode=',',###|array_shift}"> </p>
+                        <p><a href="{:u('Goods/detail',array('id'=>$vo['id']))}" target="_blank">{$vo.goodsname|mb_substr='0','20','utf-8'}</a></p>
+                        <p>{$vo.siteprice}元</p>
+                        <p><a href="javascript:void(0)" rel="{$vo.id}" class="delSc">删除</a> </p>
+                    </li>
+                </ul>
+            </volist>
+            {$page}
+		</div>
+	<!-- 收货地址 结束 -->
+	</div>
+</div>
+
+<!-- 底部 开始 -->
+<include file="Public/footer"/>
+<!-- 底部结束 -->
+</body>
+</html>
+
+
+
+
+

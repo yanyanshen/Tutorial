@@ -1,0 +1,94 @@
+<div class="header">
+    <div class="headerCont frm_sty clearfix">
+        <p>欢迎光临{:C('WEB_NAME')}！</p>
+        <p class="tel">{:C('WEB_TEL')}</p>
+        <a href="#">帮助中心</a>
+        <if condition="session('username')?1:0">
+            <a href="javascript:void(0)" id="safe_logout">安全退出</a>&nbsp;&nbsp;<a href="{:u('User/member')}">会员中心</a>&nbsp;&nbsp;<a href="{:u('User/member')}">用户名:{$Think.session.username}</a>
+            <else/>
+            <a href="{:u('User/register')}">注册</a>
+            <a href="{:u('User/login')}" id="login">登录</a>
+        </if>
+    </div>
+</div>
+<!-- 导航搜索栏 -->
+<div class="search">
+    <div class="searchCont frm_sty clearfix">
+        <!-- 标志搜索栏开始 -->
+        <h1 class="fl"><a href="{:u('Home/Index/index')}"><img src="__PUBLIC__/Home/images/logo.png" alt=""></a></h1>
+        <div class="bd fl">
+            <form action="{:u('Goods/goodsList')}" method="post" id="searchForm">
+                <select class="op">
+                    <option value="商品">商品</option>
+                    <!--<option value="店铺">店铺</option>-->
+                </select>
+                <input name="goodsname" type="text" class="msg" placeholder="搜索商品名称" value="{$goodsname}">
+                <!-- <input class="btn" type="submit" value="搜索"/> -->
+            </form>
+            <a href="#" class="btn fl" id="goodsSearch">搜索</a><!--
+            <p class="msg1">
+                <a href="#">干笋 |</a>
+                <a href="#">腊肉 |</a>
+                <a href="#">银耳环 |</a>
+                <a href="#">糯米糕</a>
+            </p>-->
+        </div>
+        <div class="buy clearfix">
+            <span class="fl">1</span>
+            <a class="fl" href="javascript:void (0);" id="gotocart">购物车({$cartCount})</a>
+            <!-- <p class="fl"></p> -->
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navCont frm_sty">
+            <div class="classify fl">
+                <div class="fenlei">
+                    <h2>全部商品分类</h2>
+                    <img class="xiala" src="__PUBLIC__/Home/images/xiala.png" alt="">
+                </div>
+                <div class="menu">
+                    <volist name="firstCate" id="vo" offset="0" length="6">
+                        <div class="menu1">
+                            <h4>{$vo.catename|mb_substr=0,10,'UTF-8'}</h4>
+                            <volist name="vo['second']" id="vo1" offset="0" length="4">
+                                <a href="{:u('Goods/goodsList',array('cid'=>$vo1['id']))}">{$vo1.catename|mb_substr=0,3,'UTF-8'}</a>
+                            </volist>
+                            <div class="submenu">
+                                <h4>{$vo.catename}</h4>
+                                <volist name="vo['second']" id="vo1" offset="0" length="8">
+                                    <p>{$vo1.catename}</p>
+                                    <volist name="vo1['third']" id="vo2" offset="0" length="6">
+                                        <a href="{:u('Goods/goodsList',array('cid'=>$vo2['id']))}">{$vo2.catename}</a>
+                                    </volist>
+                                </volist>
+                                <!--<img src="__PUBLIC__/Home/images/menu1.jpg" alt=""/>
+                                <img src="__PUBLIC__/Home/images/menu1.jpg" alt=""/>
+                                <img src="__PUBLIC__/Home/images/menu1.jpg" alt=""/>-->
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <ul class="topNav clearfix">
+                <li><a href="{:u('Index/index')}">首页</a></li>
+                <li><a href="{:u('Goods/goodsList',array('cid'=>1))}">生鲜</a></li>
+                <li><a href="{:u('Goods/goodsList',array('cid'=>2))}">食品饮料</a></li>
+                <li><a href="{:u('Goods/goodsList',array('cid'=>3))}">酒类</a></li>
+                <li><a href="{:u('Goods/goodsList',array('cid'=>4))}">地方特产</a></li>
+                <li><a href="{:u('Goods/goodsList',array('cid'=>5))}">全球购美食</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("#goodsSearch").click(function(){
+        if($("input[name=goodsname]").val().length<1){
+            layer.msg("搜索商品名称不能为空");
+        }else{
+            $("#searchForm").submit();
+        }
+    })
+
+</script>

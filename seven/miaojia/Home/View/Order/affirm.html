@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/affirm.css">
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/click.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/geo.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.form.js"></script>
+    <script type="text/javascript">
+        function promptinfo(){
+            var address = document.getElementById('address');
+            var s1 = document.getElementById('s1');
+            var s2 = document.getElementById('s2');
+            var s3 = document.getElementById('s3');
+            address.value = s1.value + s2.value + s3.value;
+        }
+        $(function(){
+            $("#submit").click(function(){
+                $("#form3").submit(false);
+                $("#address").val($("#address").val()+$("#ls_address").val());
+                $("#form3").ajaxSubmit(function(res){
+                    layer.msg(res,{
+                        icon:1,
+                        time:2000
+                    },function(){
+                        $(".overlay").hide();
+                        $(".pop").hide();
+                        location.reload();
+                    })
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+
+            $("#backToCart").click(function(){
+                location.href="{:u('Cart/shopping')}";
+            })
+            $("#fr").click(function(){
+                if($(".shaddress").length>0){
+                    $.ajax({
+                        url:"{:u('addCartToOrder')}",
+                        data:"address="+$("#orderaddress").text(),
+                        type:"post",
+                        success:function(data){
+                            if(data=='订单生成成功'){
+                                layer.msg(data+'正在跳转到个人中心',{
+                                    icon:1,
+                                    time:4000
+                                },function(){
+                                    location.href="{:u('User/member')}";
+                                })
+                            }else{
+                                layer.msg(data);
+                            }
+                        }
+                    })
+                }else{
+                    layer.msg("请先添加收货地址再提交订单!");
+                }
+
+            })
+        })
+    </script>
+
+	<title>确认信息</title>
+</head>
+<body>
+
+<!--  顶部开始 --> 
+<include file="Public/header"/>
+
+
+<div class="title frm_sty">
+	<h3>填写并核对订单信息</h3>
+</div>
+<div class="car frm_sty clearfix">
+<!-- 收货人信息  开始 -->
+	<div class="site">
+		<div class="title clearfix">
+			<h3 class="fl">收货人信息</h3>
+		</div>
+		<div class="siteCont clearfix">
+            <div class="show"><a href="javascript:void(0);">新增收货地址</a></div>
+            <volist name="address" id="vo">
+                <div class="shaddress">
+                    <p><a href="javascript:void (0)">{$vo.name}</a></p>
+                    <p class="p2">{$vo.address}&nbsp;&nbsp;手机号:{$vo.tel}</p>
+                    <!--<p class="p3"><eq name="vo.default" value="1">默认地址<else/><a href="javascript:void(0)">设为默认</a></eq></p>-->
+                </div>
+            </volist>
+		</div>
+	</div>
+
+
+    <div class="overlay"></div>
+<div class="pop">
+        <h3><a href="javascript:void(0);">
+        <img src="__PUBLIC__/Home/images/gb_btn.png" alt="关闭" style="margin-top: 17px;">
+        </a>收货人信息
+        </h3>
+    <form action="{:u('User/addAddress')}" method="post" id="form3">
+        <input type="hidden" name="uid" value="{$Think.session.uid}"/>
+        <div class="form clearfix">
+            <p>收货人姓名:<input type="text" class="user" name="name"></p>
+            <p class="p2"><span>收货地址:</span>
+                <select class="shengfen">
+                    <option value="1">中国</option>
+                </select>
+                <select class="shengfen" id="s1">
+                </select>
+                <select class="shengfen" id="s2">
+                </select>
+                <select class="shengfen" id="s3">
+                </select>
+            </p>
+            <p><input type="text" id="ls_address" class="user" placeholder="详情街道 楼层号"><input type="hidden" name="address" id="address"/></p>
+            <p>手机号:<input type="text" class="user" name="tel"></p>
+            <p>邮编:<input type="text" class="user" name="code"></p>
+            <p class="p1"></p>
+            <button id="submit">使用并保存</button>
+        </div>
+    </form>
+</div>
+
+	
+<!-- 收货人信息  结束-->
+<!-- 支付方式 开始 -->
+	<!--<div class="way">
+		<div class="title clearfix">
+			<h3 class="fl">支付方式</h3>
+		</div>
+		<div class="wayCont">
+			<ul>
+					<li>在线支付</li>
+					<li>网上银行</li>
+					<li>货到付款</li>
+					<li>账户余额</li>
+			</ul>	
+		</div>
+	</div>-->
+<!-- 支付方式 结束 -->
+<!-- 送货清单 开始 -->
+	<div class="opt clearfix">
+		<div class="title clearfix">
+			<h3 class="fl">送货清单</h3>
+			<span class="fr"><a href="javascript:void (0)" id="backToCart">返回购物车修改</a></span>
+		</div>
+        <volist name="cartList" id="vo">
+            <div class="goods01 fl">
+                <h3 class="fl"><img src="/upload/n3/{$vo.goods.image|default='default.jpg'|explode=',',###|array_shift}"/>&nbsp;&nbsp;<a href="{:u('Goods/detail',array('id'=>$vo['goods']['id']))}" target="_blank">{$vo.goods.goodsname}&nbsp;&nbsp;{$vo.goodsargs}</a></h3>
+                <p class="p1"><a href="#"><span>￥{$vo['buynum'] * $vo['goods']['siteprice']}</span></a></p>
+                <p class="p2"><a href="#"><span>×{$vo.buynum}</span></a></p>
+            </div>
+        </volist>
+	</div>
+<!-- 送货清单 结束 -->
+</div>
+<!-- 总金额 开始 -->
+<div class="rental frm_sty">
+	<div class="rentalCont fr">
+		<h3>应付金额:<span>￥{$cartList.0.prices}</span></h3><br/><br/><br/>
+		<p>配送至：<span id="orderaddress"></span></p>
+	</div>
+</div>
+<!-- 总金额 结束 -->
+<!-- 提交按钮 开始 -->
+<!-- 提交按钮 结束 -->
+<div class="btn frm_sty">
+	<button class="fr" id="fr">提交订单</button>
+</div>
+
+
+
+<!-- 底部 开始 -->
+<include file="Public/footer"/>
+<!-- 底部结束 -->
+</body>
+</html>

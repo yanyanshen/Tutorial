@@ -1,0 +1,146 @@
+<div class="menu1">
+                        <h4>苗家工艺</h4>
+                        <a href="#">银器</a>
+                        <a href="#">刺绣</a>
+                        <a href="#">工艺品</a>
+                        <div class="submenu">
+                            <h4>苗家工艺</h4>
+                            <p>银器</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>刺绣</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>工艺品</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <img src="__PUBLIC__/images/menu1.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu2.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu1">
+                        <h4>茗茶佳酿</h4>
+                        <a href="#">酒类</a>
+                        <a href="#">茶类</a>
+                        <div class="submenu">
+                            <h4>茗茶佳酿</h4>
+                            <p>酒类</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>茶类</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <img src="__PUBLIC__/images/menu1.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu2.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu1">
+                        <h4>生鲜食品</h4>
+                        <a href="#">肉类</a>
+                        <a href="#">蔬菜</a>
+                        <a href="#">蛋类</a>
+                        <a href="#">水果</a>
+                        <div class="submenu">
+                            <h4>生鲜食品</h4>
+                            <p>肉类</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>蔬菜</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>蛋类</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <!-- <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a> -->
+
+                            <p>水果</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <img src="__PUBLIC__/images/menu1.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu2.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu3.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="menu1">
+                        <h4>休闲零食</h4>
+                        <a href="#">坚果类</a>
+                        <a href="#">肉制品</a>
+                        <a href="#">糖果</a>
+                        <div class="submenu">
+                            <h4>休闲零食</h4>
+                            <p>坚果类</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>肉制品</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+                            <p>糖果</p>
+                            <a href="#">风干腊肉</a>
+                            <a href="#">农家土鸡蛋</a>
+                            <a href="#">干香菇</a>
+                            <a href="#">红薯粉丝</a>
+                            <a href="#">鱼干</a>
+                            <a href="#">黑木耳</a>
+
+
+                            <img src="__PUBLIC__/images/menu1.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu2.jpg" alt="">
+                            <img src="__PUBLIC__/images/menu3.jpg" alt="">
+                        </div>
+                    </div>

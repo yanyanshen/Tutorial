@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/order.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/swiper.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+    <script src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+    <script src="__PUBLIC__/Home/js/order.js"></script>
+    <script src="__PUBLIC__/Home/js/reset.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+            //付款操作
+            $(".toPay").click(function(){
+                var orderid=$("#ordersyn").text();
+                layer.confirm('确认付款吗?',{
+                    btn:['确认','取消']
+                },function(){
+                    $.ajax({
+                        type:"get",
+                        url:"{:u('Order/payOver')}",
+                        data:"ordersyn="+orderid,
+                        success:function(res){
+                            if(res=='订单支付完成'){
+                                layer.msg(res,{
+                                    icon:6,
+                                    time:3000
+                                },function(){
+                                    location.reload();
+                                })
+                            }else{
+                                layer.msg(res,{
+                                    icon:5,
+                                    time:3000
+                                },function(){
+                                    location.reload();
+                                })
+                            }
+                        }
+                    })
+                },function(){
+                    layer.msg('您取消了付款');
+                })
+            });
+
+            //确认完成操作
+
+            $(".confirmSh").click(function(){
+                var orderid=$("#ordersyn").text();
+                layer.confirm("请确认您已收到物品!确认后,您的钱将立即打给卖家!",{
+                    btn:['确认','取消']
+                },function(){
+                    layer.prompt({
+                        title:"请输入您的密码进行确认收货操作!",
+                        formType:1
+                    },function(val){
+                        $.ajax({
+                            type:"post",
+                            url:"{:u('confirmSh')}",
+                            data:"ordersyn="+orderid+"&passwd="+val,
+                            success:function(data){
+                                if(data=='确认收货成功'){
+                                    layer.msg(data,{
+                                        icon:1,
+                                        time:3000
+                                    },function(){
+                                        location.reload();
+                                    })
+                                }else{
+                                    layer.msg(data,{
+                                        icon:2,
+                                        time:3000
+                                    },function(){
+                                        location.reload();
+                                    })
+                                }
+                            }
+                        })
+                    })
+                })
+            });
+
+            $(".toPj").click(function(){
+                var me=$(this);
+                layer.prompt({
+                    formType: 2,
+                    value: '',
+                    title: '感谢您的评价'
+                }, function(value, index, elem){
+                    $.ajax({
+                        type:"post",
+                        url:"{:u('toPj')}",
+                        data:"gid="+me.attr('rel')+"&pjintro="+value+"&goodsargs="+me.attr('mall')+"&orderid="+me.attr('orderid'),
+                        success:function(data){
+                            if(data=='评价成功'){
+                                layer.msg(data,{icon:6,time:2000},function(){
+                                    location.reload();
+                                })
+                                layer.close(index);
+                            }else if(data=='评价成功,10字以上评价可以获得10积分,所得积分已存入您的个人积分账户'){
+                                layer.msg(data,{icon:6,time:2000},function(){
+                                    location.reload();
+                                })
+                                layer.close(index);
+                            }else{
+                                layer.msg(data,{icon:5,time:2000},function(){
+                                    location.reload();
+                                })
+                                layer.close(index);
+                            }
+                        }
+                    })
+                });
+
+            })
+        })
+    </script>
+</head>
+<body>
+<include file="Public/header"/>
+<!-- 我的订单开始 myorder-->
+<!-- 左侧边栏开始 -->
+<div class="myorder frm_sty clearfix">
+    <div class="sidebar fl">
+        <p style="background:url('/upload/UserPic/small/{$meminfo.pic|default=\'default.jpg\'}') no-repeat 10px 9px;">{$Think.session.username}</p>
+        <a href="{:u('User/member')}">会员中心</a>
+        <a class="no" href="{:u('User/order')}">我的订单</a>
+        <a href="{:u('User/goodsScList')}">商品收藏</a>
+        <a href="{:u('User/myscore')}">我的积分</a>
+        <a href="{:u('User/meminfo')}">个人信息</a>
+        <a href="{:u('User/addressList')}">收货地址</a>
+        <a href="#">在线客服</a>
+    </div>
+<!-- 左侧边栏结束 -->
+    <div class="order fl">
+        <h4>我的订单</h4>
+        <div class="orderCont">
+            <ul class="ul1 clearfix">
+                <li class="font_c"><a href="{:u('order')}">全部订单</a></li>
+                <li><a href="{:u('order',array('s'=>1))}">待付款</a></li>
+                <li><a href="{:u('order',array('s'=>3))}">待收货</a></li>
+                <li><a href="{:u('order',array('s'=>4))}">待评价</a></li>
+                <li><a href="{:u('order',array('s'=>5))}">已完成</a></li>
+            </ul>
+            <div class="orderCont01 clearfix">
+                <ul class="clearfix">
+                    <li class="or_li1"><a href="#">全部订单</a></li>
+                    <li class="or_li2"><a href="#">订单详情</a></li>
+                    <li class="or_li4"><a href="#">金额</a></li>
+                    <li class="or_li5"><a href="#">状态</a></li>
+
+                </ul>
+            </div>
+            <volist name="orderList" id="vo">
+                <div class="orderCont02">
+                    <p>{$vo.createtime|date='Y-m-d H:i:s',###}<span class="span2">订单号：<span id="ordersyn">{$vo.ordersyn}</span></span><span class="span2">
+                        <switch name="vo.orderstatus">
+                            <case value="1"><a href="javascript:void(0)" class="toPay">未付款</a></case>
+                            <case value="2"><span style="color: #ff0000;">等待发货</span></case>
+                            <case value="3"><span style="color: #ff0000;">物流公司:{$vo.logisticsname},物流订单号:{$vo.logisticsinfo}&nbsp;&nbsp;&nbsp;<a href="http://www.kuaidi100.com/" target="_blank">点此查询快递信息</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" class="confirmSh">等待确认收货</a></span></case>
+                            <case value="4"><span style="color: #ff0000;">待评价</span></case>
+                            <case value="5"><span style="color: #008855;">已评价</span></case>
+                        </switch>
+                    </span> </p>
+                    <volist name="vo.ordergoods" id="vo1">
+                        <ul class="clearfix">
+                            <li class="or_li11"><img src="/upload/n2/{$vo1.image|default='default.jpg'|explode=',',###|array_shift}"></li>
+                            <li class="or_li22"><a href="{:u('Goods/detail',array('id'=>$vo1['id']))}" target="_blank">{$vo1.goodsname|mb_substr='0','30','utf-8'}({$vo1.ordergoodsargs})</a></li>
+                            <li class="or_li33">×{$vo1.buynum}</li>
+                            <li class="or_li44">总额￥{$vo1['buynum']*$vo1['siteprice']}</li>
+                            <switch name="vo.orderstatus">
+                                <case value="4"><li class="or_li55"><eq name="vo1.isPj" value="1">已评价<else/><a href="javascript:void (0)" rel="{$vo1.id}" class="toPj" mall="{$vo1.ordergoodsargs}" orderid="{$vo.id}">去评价</a></eq></li></case>
+                            </switch>
+                        </ul>
+                    </volist>
+                </div>
+            </volist>
+            {$page}
+        </div>
+    </div>
+   
+    
+</div>
+ <!-- hot样式开始 -->
+ <div class="hit frm_sty ">
+        <h4>热销商品</h4>
+       <div class="swiper-container swiper1 gold-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hitCont clearfix">
+                        <ul class="clearfix">
+                            <li class="hit_li1">
+                               <p class="hit_p1">苗家频道特色美食</p>
+                               <img src="__PUBLIC__/Home/images/hit_1.jpg" class="img_01"></li>
+                            <li class="hit_li2"><p class="hit_p2">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_2.jpg" class="img_02"></li>
+                            <li class="hit_li3"><p class="hit_p3">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_3.jpg" class="img_03"></li>
+                            <li class="hit_li4"><p class="hit_p4">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_4.jpg" class="img_04"></li>
+                            <li class="hit_li5"><p class="hit_p5">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_5.jpg" class="img_05"></li>
+                            <li class="hit_li6"><p class="hit_p6">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_6.jpg" class="img_06"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hitCont clearfix">
+                        <ul class="clearfix">
+                            <li class="hit_li1"><p class="hit_p1">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_1.jpg" class="img_01"></li>
+                            <li class="hit_li2"><p class="hit_p2">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_2.jpg" class="img_02"></li>
+                            <li class="hit_li3"><p class="hit_p3">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_3.jpg" class="img_03"></li>
+                            <li class="hit_li4"><p class="hit_p4">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_4.jpg" class="img_04"></li>
+                            <li class="hit_li5"><p class="hit_p5">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_5.jpg" class="img_05"></li>
+                            <li class="hit_li6"><p class="hit_p6">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_6.jpg" class="img_06"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hitCont clearfix">
+                        <ul class="clearfix">
+                            <li class="hit_li1"><p class="hit_p1">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_1.jpg" class="img_01"></li>
+                            <li class="hit_li2"><p class="hit_p2">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_2.jpg" class="img_02"></li>
+                            <li class="hit_li3"><p class="hit_p3">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_3.jpg" class="img_03"></li>
+                            <li class="hit_li4"><p class="hit_p4">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_4.jpg" class="img_04"></li>
+                            <li class="hit_li5"><p class="hit_p5">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_5.jpg" class="img_05"></li>
+                            <li class="hit_li6"><p class="hit_p6">苗家频道特色美食</p><img src="__PUBLIC__/Home/images/hit_6.jpg" class="img_06"></li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </div>
+        <!-- 如果需要分页 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 左右箭头 -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+     <!-- Swiper JS -->
+    <script src="__PUBLIC__/Home/js/swiper.min.js"></script>
+
+    <script>        
+    var swiper1 = new Swiper('.swiper1', {
+        pagination: '.swiper-pagination1',
+        paginationClickable: true,
+        // 左右箭头js
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        parallax: true,
+        loop:true,
+    });
+    </script>
+</div>
+
+    <script src="__PUBLIC__/Home/js/swiper.min.js"></script>
+
+<!-- 底部样式开始 -->
+<include file="Public/footer"/>
+
+
+
+
+
+
+    
+</body>
+</html>

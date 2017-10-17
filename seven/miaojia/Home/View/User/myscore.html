@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/member.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/main.css">
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/dist/jquery.validator.min.js?local=zh_CN"></script>
+    <script src="__PUBLIC__/Home/js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/carousel.js"></script>
+    <title>积分兑换-{:c('WEB_NAME')}</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+
+            $("form").validator({
+                fields:{
+                    score:"积分:required;range[100~{$meminfo.score}]"
+                },
+                valid:function(form){
+                    var me=this;
+                    $(form).ajaxSubmit(function(data){
+                        me.holdSubmit();
+                        if(data=='积分兑换成功'){
+                            layer.msg(data,{
+                                icon:1,
+                                time:2000
+                            },function(){
+                                me.holdSubmit(false);
+                            })
+                        }else{
+                            layer.msg(data,{
+                                icon:2,
+                                time:2000
+                            },function(){
+                                me.holdSubmit(false);
+                            })
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<!--  顶部开始 -->
+<include file="Public/header"/>
+
+<!-- 导航开始 -->
+<div class="car clearfix frm_sty">
+
+    <div class="sidebar frm_sty">
+        <!-- 侧边栏导航 结束 -->
+        <ul class="fl">
+            <li><a href="{:u('User/member')}">会员中心</a></li>
+            <li><a href="{:u('User/order')}">我的订单</a></li>
+            <li><a href="{:u('User/goodsScList')}">商品收藏</a></li>
+            <li class="no"><a href="{:u('User/myscore')}">我的积分</a></li>
+            <li><a href="{:u('User/meminfo')}">个人消息</a></li>
+            <li><a href="{:u('User/addressList')}">收货地址</a></li>
+            <li class="li02"><a href="#">在线客服</a></li>
+        </ul>
+    </div>
+    <!-- 侧边栏导航 结束 -->
+
+    <div class="manage fl">
+        <!-- 收货地址 开始 -->
+        <div class=" order">
+            <div class="title">
+                <h3>积分兑换</h3>
+            </div>
+                <ul class="clearfix">
+                    <li style="text-align: center; line-height: 50px;font-size: 16px;color: #008855">积分兑换人民币比例为100:1,起兑积分为<span style="color: #F00;">100</span>(即100积分兑换人民币1元,兑换款项会直接加入您的账户余额)<br/>您当前积分余额为{$meminfo.score}分,可兑换人民币{$meminfo['score']/100}元</li>
+                    <form action="{:u('User/scoreToMoney')}" method="post">
+                        <li style="padding-left: 150px">
+                            <p><input type="text" name="score" class="input-text lh30" size="40" data-msg-range="您输入的数字超出可兑换范围,可输入范围为100到{$meminfo.score}"><br><span class="msg-box" for="score"></span></p>
+                            <p><input type="submit" class="btn btn82 btn_save2" value="兑换"> </p>
+                        </li>
+                    </form>
+                </ul>
+            {$page}
+        </div>
+        <!-- 收货地址 结束 -->
+    </div>
+</div>
+
+<!-- 底部 开始 -->
+<include file="Public/footer"/>
+<!-- 底部结束 -->
+</body>
+</html>
+
+
+
+
+

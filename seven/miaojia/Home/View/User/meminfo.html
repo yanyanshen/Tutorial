@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <script src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/password.js"></script>
+    <script src="__PUBLIC__/Home/js/layer.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.form.js"></script>
+    <script src="__PUBLIC__/Home/js/dist/jquery.validator.min.js?local=zh_CN"></script>
+    <script src="__PUBLIC__/Home/js/YMDClass.mini.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/password.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css" />
+    <script type="text/javascript">
+        $(function () {
+            <empty name="meminfo.birthday">
+            new YMDselect('year','month','day');
+            </empty>
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.href="{:u('Index/index')}";
+                        });
+                    }
+                })
+            });
+
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+
+            $("#editok").click(function () {
+                $("#form2").ajaxSubmit(function(res){
+                    if(res=='修改成功'){
+                        layer.msg(res+'，请重新登录',{
+                            icon:1,
+                            time:2000
+                        },function(){
+                            $.ajax({
+                                type:"post",
+                                url:"{:u('User/logout')}",
+                                success:function(data){
+                                    location.href="{:u('User/login')}"
+                                }
+                            })
+                        });
+                    }else{
+                        layer.msg(res,{
+                            icon:2,
+                            time:2000
+                        });
+                    }
+                })
+            });
+
+            //更改用户信息
+            $("#updateInfo").click(function(){
+                $("#form1").ajaxSubmit(function(res){
+                    layer.msg(res.message,{
+                        icon:1,
+                        time:2000
+                    },function(){
+                        location.reload();
+                    })
+                })
+            })
+
+            //上传用户头像
+            $("#pic").change(function(){
+                $("#form3").ajaxSubmit(function(res){
+                    location.reload();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+
+<!--  顶部开始 --> 
+<include file="Public/header"/>
+ 
+
+
+<div class="cont">
+    <div class="cont_bg">
+        <ul class="sidebar">
+            <li class="touxiang"><img src="/upload/UserPic/small/{$meminfo.pic|default='default.jpg'}"><br/>用户名:{$Think.session.username}</li>
+            <li><a href="{:u('User/member')}">会员中心</a></li>
+            <li><a href="{:u('User/order')}">我的订单</a></li>
+            <li><a href="{:u('User/goodsScList')}">商品收藏</a></li>
+            <li><a href="{:u('User/myscore')}">我的积分</a></li>
+            <li class="no"><a href="{:u('User/meminfo')}">个人消息</a></li>
+            <li><a href="{:u('User/addressList')}">收货地址</a></li>
+            <li class="li02"><a href="#">在线客服</a></li>
+        </ul>
+    
+     <!-- tab -->
+    <div class="news">
+        <ul class="clearfix">
+            <li><a href="#">基本信息</a></li>
+            <li><a href="#">修改密码</a></li>
+            
+        </ul>
+        <div class="text">
+            <p class="text_p">用户名：{$meminfo.username}</p>
+            <form action="{:u('updateInfo')}" method="post" id="form1">
+                <input type="hidden" name="id" value="{$meminfo.id}"/>
+                    昵称：&nbsp;&nbsp;&nbsp;<input name="nickname" class="form1" type="text" id="user" placeholder="请输入您的昵称" value="{$meminfo.nickname}"/><br />
+                    性别：&nbsp;&nbsp;&nbsp;{$meminfo.sex}<br />
+                    <p class="p1"><empty name="meminfo.birthday">
+                        出生年月：<select name="year"></select>
+                        <select name="month"></select>
+                        <select name="day"></select>
+                        <span class="red">*</span>
+                        <else/>
+                        <br/>
+                        出生年月：{$meminfo.birthday|date='Y-m-d',###}
+                    </empty>
+                        </p><br />
+                    <p class="p2"><empty name="meminfo.tel"><input type="text" name="tel"/> <else/>手机号：{$meminfo.tel}</empty></p><br />
+                    <p class="p3">E-mail：<empty name="meminfo.email"><input type="text" class="e_mail" name="email"><else/>{$meminfo.email}</empty></p><br />
+                </form>
+                <h2 id="updateInfo">保存</h2>
+
+            <div class="file">
+                <form action="{:u('uploadPic')}" method="post" enctype="multipart/form-data" id="form3">
+                    <p class="fr file_p"><img src="/upload/UserPic/small/{$meminfo.pic|default='default.jpg'}"></p>
+                    <span><label for="pic"  class="file_p1">选择图片</label></span>
+                    <input name="pic" type="file" id="pic" class="file_p1"style="display:none">
+                    <!--<input name="pic" type="file" id="pic" class="file_p1">-->
+                    </p>
+                </form>
+            </div>
+
+            </div>
+       
+       <div class="text02 clearfix">
+           <form action="{:u('changepwd')}" method="post" id="form2">
+                <p>输入原密码：<input type="password" name="oldpwd"></p><br />
+                <p>新密码：<input type="password" name="pwd"></p><br />
+                <p>确认密码：<input type="password" name="repwd"></p><br />
+                <p class="xiugai"><a href="javascript:void (0)" id="editok">确认修改</a></p>
+           </form>
+           
+       </div>
+     
+    </div>
+    </div>
+</div>
+
+
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+    
+</body>
+</html>

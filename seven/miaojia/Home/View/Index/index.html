@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title>{:C('WEB_NAME')}</title>
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/reset.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/Home/style/index.css"/>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/layer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#safe_logout").click(function () {
+                $.ajax({
+                    type:"GET",
+                    url:"{:u('User/logout')}",
+                    success:function(){
+                        layer.msg("安全退出",{
+                            icon:1,
+                            time:1000
+                        },function(){
+                            location.reload();
+                        });
+                    }
+                })
+            });
+            $("#gotocart").click(function(){
+                <if condition="session('username')?1:0">
+                location.href="{:u('Cart/shopping')}";
+                <else/>
+                layer.confirm('您尚未登录，请登录后进行购物车相关操作!',{
+                    btn:['登录','返回']
+                },function(){
+                    location.href="{:u('User/login')}";
+                },function(){
+                    layer.tips('如果您喜欢网站的商品，请点击这里登录后进行操作','#login',{
+                        tips: [1, '#3595CC'],
+                        time: 5000
+                    });
+                });
+                </if>
+            });
+
+
+            $("#goodsSearchFixed").click(function(){
+                $("#searchFormFixed").submit();
+            })
+            //懒加载
+            $("img.lazy").lazyload({effect: "fadeIn"});
+        })
+    </script>
+</head>
+<body>
+<!-- 顶部开始 -->
+    <include file="Public/header"/>
+<!-- 导航开始 -->
+<!-- banner开始 -->
+ <div class="banner">
+        <ul class="banner-img">
+            <li><a href="#"><img src="__PUBLIC__/Home/images/banner1.jpg" alt="" /></a></li>
+            <li><a href="#"><img src="__PUBLIC__/Home/images/banner2.jpg" alt="" /></a></li>
+            <li><a href="#"><img src="__PUBLIC__/Home/images/banner3.jpg" alt="" /></a></li>
+        </ul>
+        <ul class="banner-menu"></ul>
+        <div class="btn_l">&lt;</div>
+        <div class="btn_r">&gt;</div>
+ </div>
+<!--banner 结束-->
+
+<!-- 推荐开始 -->
+    <div class="recommend frm_sty clearfix">
+        <volist name="hot_tj" id="vo" offset="0" length="4">
+            <div class="rec1">
+                <a href="{:u('Goods/detail',array('id'=>$vo['id']))}"><img src="/upload/n1/{$vo.image|default='default.jpg'|explode=',',###|array_shift}" alt="" width="275" height="275"></a>
+                <p class="msg2"><span>{$vo.goodsname|mb_substr=0,20,'UTF-8'}</span></p>
+            </div>
+        </volist>
+    </div>
+    <!-- 推荐结束 -->
+
+
+    <!-- 生鲜开始 -->
+    <div class="list1 frm_sty" id="f11">
+        <div class="tab clearfix">
+            <h3 class="fl"><span>1F</span>生鲜</h3>
+            <ul class="clearfix">
+                <volist name="firstCate[0]['second']" id="vo1" offset="0" length="4">
+                    <li><a href="#">{$vo1.catename|mb_substr=0,2,'UTF-8'}</a></li>
+                </volist>
+                <span><a class="more" href="{:u('Goods/goodsList',array('cid'=>1))}">MORE>></a></span>
+            </ul>
+            <div class="tab1">
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.1_1" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="tab1">
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.1_2" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="tab1">
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.1_3" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="tab1">
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.1_4" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 生鲜结束 -->
+
+
+<!-- 食品饮料开始 -->
+<div>
+    <div class="list1 frm_sty " id="f22">
+        <div class="tab clearfix">
+            <h3 class="fl"><span>2F</span>食品饮料</h3>
+            <ul class="clearfix">
+                <volist name="firstCate[1]['second']" id="vo2" offset="0" length="4">
+                    <li><a href="#">{$vo2.catename|mb_substr=0,2,'UTF-8'}</a></li>
+                </volist>
+                <a class="more" href="{:u('Goods/goodsList',array('cid'=>2))}">MORE>></a>
+            </ul>
+            <div>
+               <ul class="tab1Cont clearfix">
+                   <volist name="floor.2_1" id="f1" offset="0" length="6">
+                       <li class="list12">
+                           <div class="two">
+                               <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                               <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                   <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                   <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                   <div class="border1"></div>
+                                   <div class="border2"></div>
+                               </div>
+                           </div>
+                       </li>
+                   </volist>
+                </ul>
+            </div>
+            <div>
+               <ul class="tab1Cont clearfix">
+                   <volist name="floor.2_2" id="f1" offset="0" length="6">
+                       <li class="list12">
+                           <div class="two">
+                               <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                               <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                   <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                   <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                   <div class="border1"></div>
+                                   <div class="border2"></div>
+                               </div>
+                           </div>
+                       </li>
+                   </volist>
+                </ul>
+            </div>
+            <div>
+               <ul class="tab1Cont clearfix">
+                   <volist name="floor.2_3" id="f1" offset="0" length="6">
+                       <li class="list12">
+                           <div class="two">
+                               <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                               <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                   <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                   <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                   <div class="border1"></div>
+                                   <div class="border2"></div>
+                               </div>
+                           </div>
+                       </li>
+                   </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.2_4" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 食品饮料结束 -->
+</div>
+<!-- 酒类 开始 -->
+<div>
+    <div class="list1 frm_sty " id="f33">
+        <div class="tab clearfix">
+            <h3 class="fl"><span>3F</span>酒类</h3>
+            <ul class="clearfix">
+                <volist name="firstCate[2]['second']" id="vo3" offset="0" length="4">
+                    <li><a href="#">{$vo3.catename|mb_substr=2,4,'UTF-8'}</a></li>
+                </volist>
+                <a class="more" href="{:u('Goods/goodsList',array('cid'=>3))}">MORE>></a>
+            </ul>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.3_1" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.3_2" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.3_3" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.3_4" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 酒类结束 -->
+</div>
+
+<!-- 地方特产开始 -->
+<div>
+    <div class="list1 frm_sty " id="f44">
+        <div class="tab clearfix">
+            <h3 class="fl"><span>4F</span>地方特产</h3>
+            <ul class="clearfix">
+                <volist name="firstCate[3]['second']" id="vo4" offset="0" length="4">
+                    <li><a href="#">{$vo4.catename|mb_substr=0,2,'UTF-8'}</a></li>
+                </volist>
+                <a class="more" href="{:u('Goods/goodsList',array('cid'=>4))}">MORE>></a>
+            </ul>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.4_1" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.4_2" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.4_3" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.4_4" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 地方特产结束 -->
+</div>
+
+<!-- 全球购美食开始 -->
+<div>
+    <div class="list1 frm_sty " id="f55">
+        <div class="tab clearfix">
+            <h3 class="fl"><span>5F</span>全球购美食</h3>
+            <ul class="clearfix">
+                <volist name="firstCate[4]['second']" id="vo4" offset="0" length="4">
+                    <li><a href="#">{$vo4.catename|mb_substr=2,4,'UTF-8'}</a></li>
+                </volist>
+                <a class="more" href="{:u('Goods/goodsList',array('cid'=>5))}">MORE>></a>
+            </ul>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.5_1" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.5_2" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.5_3" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div>
+                <ul class="tab1Cont clearfix">
+                    <volist name="floor.5_4" id="f1" offset="0" length="6">
+                        <li class="list12">
+                            <div class="two">
+                                <img class="lazy" data-original="/upload/n1/{$f1.image|explode=',',###|array_shift}" src="__PUBLIC__/Home/images/loading.jpg" alt="">
+                                <div class="msg3" onclick="window.location.href='{:u(\'Goods/detail\',array(\'id\'=>$f1[\'id\']))}'">
+                                    <span class="bt1">{$f1.goodsname|mb_substr=0,40,'UTF-8'}</span>
+                                    <h5 class="fl"><span>本站价:￥</span>{$f1.siteprice}</h5>
+                                    <div class="border1"></div>
+                                    <div class="border2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 全球购美食结束 -->
+</div>
+
+<!--<div class="hot frm_sty">
+    <h2>热销商品</h2>
+
+<div class="news-box frm_sty">
+        <div class="news">
+            <input id="S_Num" type="hidden" value="2" />
+            <div id="starsIF" class="imageflow">
+                <img src="__PUBLIC__/Home/images/hot1.jpg" alt="" />
+                <img src="__PUBLIC__/Home/images/hot2.jpg" alt="" />
+                <img src="__PUBLIC__/Home/images/hot3.jpg" alt="" />
+                <img src="__PUBLIC__/Home/images/hot4.jpg" alt="" />
+                <img src="__PUBLIC__/Home/images/hot5.jpg" alt="" />
+                <img src="__PUBLIC__/Home/images/hot6.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+<!-- 底部开始 -->
+<include file="Public/footer"/>
+    
+
+<!-- 返回顶部 -->
+<!-- <div class="toTop">TOP</div> -->
+
+<!-- 滚屏效果 -->
+<div class="leftNav">
+  <ul>
+    <li class="focus f1"><a href="javascript:void(0)" >分类</a>
+    </li>
+    <li class="focus f1"><a href="javascript:void(0)" >1F</a>
+    </li>
+    <li class="f2"><a href="javascript:void(0)" >2F</a></li>
+    <li class="f3"><a href="javascript:void(0)">3F</a></li>
+    <li class="f4"><a href="javascript:void(0)">4F</a></li>
+    <li class="f5"><a href="javascript:void(0)">5F</a></li>
+
+  </ul>
+</div>
+
+<!-- 右导航 -->
+<div class="rightNav">
+    <div class="right">
+      <ul class="rightCont">
+            <li class="wo">
+                <a class="me" href="../User/member.html"><p class="p1">1</p></a>
+                <div class="woCont">
+                    <div class="wo1">
+                        <img src="/upload/UserPic/small/{$meminfo.pic|default='default.jpg'}" alt="头像" width="100" height="100">
+                        <p>你好！亲爱的{$meminfo.nickname|default=$meminfo.username}</p>
+                    </div>
+                    <ul class="wo2">
+                        <li><img src="__PUBLIC__/Home/images/dingdan.png" alt=""><a href="{:u('User/member')}">我的订单</a></li>
+                        <li><img src="__PUBLIC__/Home/images/xiaoxi.png" alt=""><a href="{:u('User/meminfo')}">个人信息</a></li>
+                    </ul>
+                </div>
+            </li>
+        
+        <li class="sc">
+            <a class="me" href="{:u('User/goodsScList')}"><p class="p1">1</p></a>
+            <p class="sc1">我的收藏</p>
+        </li>
+        <li class="gwc">
+            <a class="me" href="{:u('Cart/shopping')}"><p class="p1">1</p></a>
+            <p>购<br/>物<br/>车<br/></p>
+        </li>
+        <li class="kf">
+            <a class="me" href="javascript:void (0)"><p class="p1">1</p></a>
+            <p class="kf1">客服服务</p>
+        </li>
+     
+        <li class="toTop"></li>
+      </ul>
+    </div>
+</div>
+
+<!-- 置顶导航 -->
+<div class="topFixed">
+    <ul class="frm_sty">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">生鲜</a></li>
+        <li><a href="#">食品饮料</a></li>
+        <li><a href="#">酒类</a></li>
+        <li><a href="#">地方特产</a></li>
+        <li><a href="#">全球购美食</a></li>
+        <li><form action="{:u('Goods/goodsList')}" method="post" id="searchFormFixed"><input name="goodsname" type="text" class="msg" placeholder="请输入查询商品名称"></form></li>
+        <li class="sousuo"><a href="javascript:void(0)" id="goodsSearchFixed">搜索</a></li>
+    </ul>
+</div>
+<script src="__PUBLIC__/Home/js/imageflow.js"></script>
+<script src="__PUBLIC__/Home/js/index.js"></script>
+<script src="__PUBLIC__/Home/js/reset.js"></script>
+</body>
+</html>
