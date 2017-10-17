@@ -1,0 +1,764 @@
+[ 2016-07-29T09:22:17+08:00 ] 127.0.0.1 /index.php/Home/Login/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ebook_member` WHERE `username` = 'pppp' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:23:30+08:00 ] 127.0.0.1 /index.php/Home/Login/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ebook_member` WHERE `username` = 'pppp' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:23:50+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:23:50+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:23:50+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:23:53+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:23:57+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:23:59+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:24:01+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:25:01+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:25:01+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'heng' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:25:19+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:25:55+08:00 ] 127.0.0.1 /index.php/Home/Login/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ebook_member` WHERE `username` = 'ppp' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:25:55+08:00 ] 127.0.0.1 /index.php/Home/Login/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ebook_member` WHERE `username` = 'pppp' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:26:57+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:26:57+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:27:01+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:27:01+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-29T09:27:02+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:30:47+08:00 ] 127.0.0.1 /index.php/Home/Login/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ebook_member` WHERE `username` = 'pppp' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:30:59+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:31:03+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:31:04+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:31:05+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:31:21+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-07-29T09:34:52+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ebook_member` (`username`,`password`,`regdate`) VALUES ('pppp','e10adc3949ba59abbe56e057f20f883e','1469756091') [ RunTime:0.0468s ]
+
+[ 2016-07-29T09:34:57+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:36:28+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T09:36:28+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'pppp' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:36:29+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:37:25+08:00 ] 127.0.0.1 /index.php/Home/Login/index.html
+ERR: 非法操作:index
+
+[ 2016-07-29T09:37:37+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:38:45+08:00 ] 127.0.0.1 /index.php/Home/Login/index.html
+ERR: 非法操作:index
+
+[ 2016-07-29T09:38:50+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:39:36+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:39:38+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:39:43+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:58:51+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:58:51+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T09:58:52+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:59:12+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T09:59:31+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T09:59:31+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'zzzz' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:00:43+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:00:56+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:00:56+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'qqqq' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:00:57+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:03:15+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:03:28+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:03:28+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'clear' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:04:11+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:04:26+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:04:26+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'zzzz' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:04:37+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-07-29T10:04:38+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'zzzz' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:04:51+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:05:23+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:05:23+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:05:59+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:06:05+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:06:05+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:06:06+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:06:14+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:06:15+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:11:19+08:00 ] 127.0.0.1 /index.php/Home/Login/chkUsername.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ebook_member` WHERE `username` = 'wb' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:11:28+08:00 ] 127.0.0.1 /index.php/Home/login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:11:28+08:00 ] 127.0.0.1 /index.php/Home/Login/register.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\Study\Project\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ebook_member` (`username`,`password`,`regdate`) VALUES ('wb','e10adc3949ba59abbe56e057f20f883e','1469758288') [ RunTime:0.0836s ]
+
+[ 2016-07-29T10:11:29+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:18:56+08:00 ] 127.0.0.1 /Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T10:21:05+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T10:21:05+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T10:21:19+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T10:21:19+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:06:47+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:06:50+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:06:50+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:06:51+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T14:06:51+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:06:51+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:07:00+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:07:04+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T14:07:49+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T14:07:57+08:00 ] 127.0.0.1 /index.php/Home/Detail/detail1.html
+ERR: 模板不存在:./ebook/Home/View/Detail/detail1.html
+
+[ 2016-07-29T14:08:00+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T14:08:00+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T14:08:06+08:00 ] 127.0.0.1 /index.php/Home/Detail/detail1.html
+ERR: 模板不存在:./ebook/Home/View/Detail/detail1.html
+
+[ 2016-07-29T14:08:08+08:00 ] 127.0.0.1 /index.php/Home/Index/_PUBLIC__/Home/images/30jpg
+ERR: 非法操作:_PUBLIC__
+
+[ 2016-07-29T14:25:34+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:26:01+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:26:39+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:27:16+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:27:58+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:28:00+08:00 ] 127.0.0.1 /index.php/Home/MemberCenter/member_info.html
+ERR: 无法加载控制器:MemberCenter
+
+[ 2016-07-29T14:28:24+08:00 ] 127.0.0.1 /index.php/Home/Member/member_editor.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:29:38+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:29:40+08:00 ] 127.0.0.1 /index.php/Home/Member/member_editor.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:29:42+08:00 ] 127.0.0.1 /index.php/Home/Member/member_safe.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:29:44+08:00 ] 127.0.0.1 /index.php/Home/Member/member_address.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:29:45+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list.html
+ERR: 无法加载控制器:Order
+
+[ 2016-07-29T14:29:47+08:00 ] 127.0.0.1 /index.php/Home/Shop/shop_list.html
+ERR: 无法加载控制器:Shop
+
+[ 2016-07-29T14:30:45+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:30:46+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:32:27+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T14:39:23+08:00 ] 127.0.0.1 /Home/MemberCenter/member_info
+ERR: 1146:Table 'ebook.ebook_member_center' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ebook_member_center`
+
+[ 2016-07-29T14:39:24+08:00 ] 127.0.0.1 /index.php/Home/MemberCenter/member_editor.html
+ERR: 1146:Table 'ebook.ebook_member_center' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ebook_member_center`
+
+[ 2016-07-29T14:39:26+08:00 ] 127.0.0.1 /Home/MemberCenter/member_info
+ERR: 1146:Table 'ebook.ebook_member_center' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ebook_member_center`
+
+[ 2016-07-29T14:39:41+08:00 ] 127.0.0.1 /index.php/Home/MemberCenter/member_info.html
+ERR: 1146:Table 'ebook.ebook_member_center' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ebook_member_center`
+
+[ 2016-07-29T14:42:56+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-29T14:42:56+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T14:55:11+08:00 ] 127.0.0.1 /index.php/Home/Order/order_detail/id/1.html
+ERR: 无法加载控制器:Order
+
+[ 2016-07-29T14:55:14+08:00 ] 127.0.0.1 /index.php/Home/Order/order_delete/id/1.html
+ERR: 无法加载控制器:Order
+
+[ 2016-07-29T14:55:17+08:00 ] 127.0.0.1 /index.php/Home/Order/order_delete/id/1.html
+ERR: 无法加载控制器:Order
+
+[ 2016-07-29T14:57:21+08:00 ] 127.0.0.1 /index.php/Home/Detail/order_detail/id/1.html
+ERR: 非法操作:order_detail
+
+[ 2016-07-29T14:57:24+08:00 ] 127.0.0.1 /index.php/Home/MemberOrder/order_delete/id/MemberOrder/order_list
+ERR: 1054:Unknown column 'MemberOrder' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `ebook_order` WHERE ( id=MemberOrder )
+
+[ 2016-07-29T14:58:33+08:00 ] 127.0.0.1 /index.php/Home/MemberOrder/order_delete/id/MemberOrder/order_list
+ERR: 1054:Unknown column 'MemberOrder' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `ebook_order` WHERE ( id=MemberOrder )
+
+[ 2016-07-29T15:02:12+08:00 ] 127.0.0.1 /index.php/Home/Detail/order_detail/id/2.html
+ERR: 非法操作:order_detail
+
+[ 2016-07-29T15:02:17+08:00 ] 127.0.0.1 /index.php/Home/MemberOrder/order_delete/id/MemberOrder/order_list
+ERR: 1054:Unknown column 'MemberOrder' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `ebook_order` WHERE ( id=MemberOrder )
+
+[ 2016-07-29T15:06:20+08:00 ] 127.0.0.1 /index.php/Home/Detail/order_detail/id/1.html
+ERR: 非法操作:order_detail
+
+[ 2016-07-29T15:08:53+08:00 ] 127.0.0.1 /index.php/Home/MemberShop/shop_list.html
+ERR: 无法加载控制器:MemberShop
+
+[ 2016-07-29T15:11:01+08:00 ] 127.0.0.1 /index.php/Home/Shop/shop_delete/id/170.html
+ERR: 无法加载控制器:Shop
+
+[ 2016-07-29T15:20:08+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T15:20:08+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-29T15:24:54+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T15:24:58+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T15:25:01+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T15:25:37+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T15:30:54+08:00 ] 127.0.0.1 /index.php/Home/Member/member_info.html
+ERR: 无法加载控制器:Member
+
+[ 2016-07-29T15:39:07+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T15:39:07+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T15:39:12+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0000s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T15:46:35+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T15:46:35+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0030s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T15:49:16+08:00 ] 127.0.0.1 /index.php/Home/Login/chkVerify.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-29T15:49:16+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ebook_member` [ RunTime:0.0020s ]
+SQL: SELECT `userid` FROM `ebook_member` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-07-29T17:23:26+08:00 ] 172.16.11.90 /
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-29T17:26:09+08:00 ] 172.16.11.90 /
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-29T17:30:00+08:00 ] 172.16.11.90 /index.php/Home/Shop/shop_list.html
+ERR: 无法加载控制器:Shop
+
+[ 2016-07-29T17:30:03+08:00 ] 172.16.11.90 /index.php/Home/Shop/shop_list.html
+ERR: 无法加载控制器:Shop
+
+[ 2016-07-29T17:30:08+08:00 ] 172.16.11.90 /index.php/Home/Shop/shop_list.html
+ERR: 无法加载控制器:Shop
+

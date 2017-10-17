@@ -1,0 +1,33 @@
+[ 2016-07-28T09:55:41+08:00 ] 127.0.0.1 /index.php/Admin/Login/getlogin.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-28T09:56:20+08:00 ] 127.0.0.1 /index.php/Admin/Login/getlogin.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-28T09:57:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/list.html
+ERR: 非法操作:list
+
+[ 2016-07-28T09:57:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/add.html
+ERR: 非法操作:add
+
+[ 2016-07-28T09:57:26+08:00 ] 127.0.0.1 /index.php/Admin/Index/list.html
+ERR: 非法操作:list
+
+[ 2016-07-28T09:57:30+08:00 ] 127.0.0.1 /index.php/Admin/Index/add.html
+ERR: 非法操作:add
+
+[ 2016-07-28T09:57:34+08:00 ] 127.0.0.1 /index.php/Admin/Index/list.html
+ERR: 非法操作:list
+
+[ 2016-07-28T10:04:09+08:00 ] 127.0.0.1 /index.php/Admin/Member/member_list.html
+ERR: 模板不存在:./ebook/Admin/View/Member/member_list.html
+
+[ 2016-07-28T10:04:11+08:00 ] 127.0.0.1 /index.php/Admin/Member/member_list.html
+ERR: 模板不存在:./ebook/Admin/View/Member/member_list.html
+
+[ 2016-07-28T10:42:59+08:00 ] 127.0.0.1 /index.php/Admin/Index/add.html
+ERR: 非法操作:add
+
+[ 2016-07-28T10:43:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/add.html
+ERR: 非法操作:add
+
