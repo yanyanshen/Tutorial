@@ -1,0 +1,60 @@
+<table>
+    <thead>
+    <tr>
+        <td class="list_name_title0">商品</td>
+        <td class="list_name_title1">单价(元)</td>
+        <td class="list_name_title2">数量</td>
+        <td class="list_name_title4">实付款(元)</td>
+        <td class="list_name_title5">订单状态</td>
+        <td class="list_name_title6">操作</td>
+    </tr>
+    </thead>
+    <volist name="orderList" id="order">
+        <tbody>
+        <tr><td colspan="6" class="Order_form_time">{$order.createtime|date='Y-m-d H:s:i',###} 订单号：{$order.ordersyn}</td></tr>
+        <tr>
+            <td colspan="3">
+                <table class="Order_product_style">
+                    <tbody>
+                    <volist name="order.goodsname" id="goodsname">
+                        <tr>
+                            <td>
+                                <div class="product_name clearfix">
+                                    <a href="javascript:;" class="product_img"><img src="/uploads/n2/{$order[image][$key]|explode=',',###|array_shift}" width="80px" height="80px"></a>
+                                    <a href="{:U('Goods/goodsDetail',array('id'=>$order[gid][$key]))}">{$goodsname}</a>
+                                    <p class="specification">{$order[goodsintro][$key]}</p>
+                                </div>
+                            </td>
+                            <td>{$order[saleprice][$key]}</td>
+                            <td>{$order[buynum][$key]}
+                                <if condition="($order[ispj][$key] eq 0) and ($order.statusname eq '订单完成')">
+                                    <a href="javascript:;" class="pingjia" style="margin-left: 10px">评价</a>
+                                    <elseif condition="$order[ispj][$key] eq 1"/>已评价
+                                    <else/>
+                                </if>
+                                <div style="display: none">{$order[gid][$key]}</div>
+                                <div style="display: none">{$order.id}</div>
+                                <div style="display: none">{$goodsname}</div>
+                            </td>
+
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </td>
+            <td class="split_line">{$order.prices}</td>
+            <td class="split_line">{$order.statusname}</td>
+            <td class="operating">
+                <!--<a href="javascript:;">查看详细</a>-->
+                <switch name="order.orderstatus">
+                    <case value="1"><a href="javascript:;" class="topay">去支付</a></case>
+                    <case value="2"><a href="javascript:;" class="tip">提醒发货</a></case>
+                    <case value="3"><a href="javascript:;" class="affirm">确认收货</a></case>
+                    <default/><a href="javascript:;" class="odel">删除</a>
+                </switch>
+                <div style="display: none">{$order.id}</div>
+            </td>
+        </tr>
+        </tbody>
+    </volist>
+</table>

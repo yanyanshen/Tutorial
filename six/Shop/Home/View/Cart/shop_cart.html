@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+<link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+
+<script src="__SKIN__/Home/js/lrtk.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/layer.js" type="text/javascript"></script>
+    <link href="__SKIN__/Home/css/loginDialog.css" rel="stylesheet" type="text/css" />
+<title>购物车</title>
+</head>
+<script type="text/javascript">
+$(document).ready(function () {
+   //全选
+   $("#CheckedAll").click(function () {
+       if (this.checked) {                 //如果当前点击的多选框被选中
+           $('.check').attr("checked", true);
+           all=0
+           diff=0
+           $(".num").each(function(){
+
+               var num=$(this).val();
+               var n1=$(this).next("a").attr("name");
+               var price=$("#price_item_"+n1).text().substr(1)
+               var mprice=$("#Original_Price_"+n1).text().substr(1)
+               var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+               num=parseFloat(num)
+               price=parseFloat(price)
+               mprice=parseFloat(mprice)
+               all=parseFloat(all)
+               diff=parseFloat(diff)
+               var price_one=num*price;
+               $(".price_"+n1).val(price_one)
+               $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+               if($("#check"+n1).attr("checked")){
+                   all=all+price_one
+                   diff_once=(mprice-price)*num
+               }
+               diff=diff+diff_once
+               $(".price_"+n1).val(price_one)
+               $("#total_points").text(all)
+               $("#all_price1").val(all)
+               $("#Preferential_price").text("￥"+diff.toFixed(2))
+               all=all.toFixed(2);
+               $("#all_price").text("￥"+all);
+
+           })
+
+
+
+       } else {
+           $('.check').attr("checked", false);
+           all=0
+           diff=0
+           $(".num").each(function(){
+
+               var num=$(this).val();
+               var n1=$(this).next("a").attr("name");
+               var price=$("#price_item_"+n1).text().substr(1)
+               var mprice=$("#Original_Price_"+n1).text().substr(1)
+               var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+               num=parseFloat(num)
+               price=parseFloat(price)
+               mprice=parseFloat(mprice)
+               all=parseFloat(all)
+               diff=parseFloat(diff)
+               var price_one=num*price;
+               $(".price_"+n1).val(price_one)
+               $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+               if($("#check"+n1).attr("checked")){
+                   all=all+price_one
+                   diff_once=(mprice-price)*num
+               }
+               diff=diff+diff_once
+               $(".price_"+n1).val(price_one)
+               $("#total_points").text(all)
+               $("#all_price1").val(all)
+               $("#Preferential_price").text("￥"+diff.toFixed(2))
+               all=all.toFixed(2);
+               $("#all_price").text("￥"+all);
+
+           })
+       }
+   });
+   $('.check').click(function () {
+       var flag = true;
+       $('.check').each(function () {
+           if (!this.checked) {
+               flag = false;
+           }
+       });
+
+       if (flag) {
+           $('#CheckedAll').attr('checked', true);
+           all=0
+           diff=0
+           $(".num").each(function(){
+
+               var num=$(this).val();
+               var n1=$(this).next("a").attr("name");
+               var price=$("#price_item_"+n1).text().substr(1)
+               var mprice=$("#Original_Price_"+n1).text().substr(1)
+               var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+               num=parseFloat(num)
+               price=parseFloat(price)
+               mprice=parseFloat(mprice)
+               all=parseFloat(all)
+               diff=parseFloat(diff)
+               var price_one=num*price;
+               $(".price_"+n1).val(price_one)
+               $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+               if($("#check"+n1).attr("checked")){
+                   all=all+price_one
+                   diff_once=(mprice-price)*num
+               }
+               diff=diff+diff_once
+               $(".price_"+n1).val(price_one)
+               $("#total_points").text(all)
+               $("#all_price1").val(all)
+               $("#Preferential_price").text("￥"+diff.toFixed(2))
+               all=all.toFixed(2);
+               $("#all_price").text("￥"+all);
+
+           })
+       } else {
+           $('#CheckedAll').attr('checked', false);
+           all=0
+           diff=0
+           $(".num").each(function(){
+
+               var num=$(this).val();
+               var n1=$(this).next("a").attr("name");
+               var price=$("#price_item_"+n1).text().substr(1)
+               var mprice=$("#Original_Price_"+n1).text().substr(1)
+               var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+               num=parseFloat(num)
+               price=parseFloat(price)
+               mprice=parseFloat(mprice)
+               all=parseFloat(all)
+               diff=parseFloat(diff)
+               var price_one=num*price;
+               $(".price_"+n1).val(price_one)
+               $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+               if($("#check"+n1).attr("checked")){
+                   all=all+price_one
+                   diff_once=(mprice-price)*num
+               }
+               diff=diff+diff_once
+               $(".price_"+n1).val(price_one)
+               $("#total_points").text(all)
+               $("#all_price1").val(all)
+               $("#Preferential_price").text("￥"+diff.toFixed(2))
+               all=all.toFixed(2);
+               $("#all_price").text("￥"+all);
+
+           })
+       }
+   });
+   //输出值
+//   $("#send").click(function () {
+//       if($(".check").attr("checked")){
+//            var str = "你是否要删除选中的商品：\r\n";
+//            $('.check').each(function () {
+//            str += $(this).val() + "\r\n";
+//            })
+//           alert(str);
+//       }else{
+//           var str = "你未选中任何商品，请选择后在操作！";
+//           alert(str);
+//       }
+//
+//   });
+    $("#send").click(function(){
+        var a=0;
+        var a=parseInt(a)
+        var str = "你是否要删除选中的商品：\r\n";
+        $(".check").each(function(){
+            if($(this).attr("checked")){
+                a=a+1
+                str += $(this).parents("td").prevAll(".name").children(".p_name").children("a").text() + "\r\n"
+            }
+        })
+
+        if(a!=0) {
+            layer.confirm(str,{btn:["确认","删除"]},function(){
+                $.post("{:U('Cart/alldel')}", $(".form1").serialize(), function (res) {
+                    if (res.status != 0) {
+                        layer.msg("删除成功")
+                            $(".table_list").html("<div style='margin:40px auto 0; font-size:30px;color:#a9a9a9;text-align: center '>购物车空空如也，赶紧去购物吧</div>")
+
+
+                    } else {
+                        layer.msg("删除失败");
+                    }
+                }, "json")
+            },function(){})
+        }else{
+            layer.alert("你未选中任何商品，请选择后在操作！")
+        }
+    })
+
+
+})
+</script>
+<script  type="text/javascript">
+    $(function(){
+        $(".jian").click(function(){
+            var n=$(this).attr("name");
+            var num=$("#num"+n).val();
+            n=parseFloat(n)
+            num=parseFloat(num)
+            if(num<=1){
+                layer.alert("数量不能少于1");
+            }else{
+                num=parseFloat(num)-1
+                $("#num"+n).val(num);
+
+                all=0
+                diff=0
+                $(".num").each(function(){
+
+                    var num=$(this).val();
+                    var n1=$(this).next("a").attr("name");
+                    var price=$("#price_item_"+n1).text().substr(1)
+                    var mprice=$("#Original_Price_"+n1).text().substr(1)
+                    var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+                    num=parseFloat(num)
+                    price=parseFloat(price)
+                    mprice=parseFloat(mprice)
+                    all=parseFloat(all)
+                    diff=parseFloat(diff)
+                    var price_one=num*price;
+                    $(".price_"+n1).val(price_one)
+                    $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+                    if($("#check"+n1).attr("checked")){
+                        all=all+price_one
+                        diff_once=(mprice-price)*num
+                    }
+                    diff=diff+diff_once
+                    $(".price_"+n1).val(price_one)
+                    $("#total_points").text(all)
+                    $("#all_price1").val(all)
+                    $("#Preferential_price").text("￥"+diff.toFixed(2))
+                    all=all.toFixed(2);
+                    $("#all_price").text("￥"+all);
+
+                })
+                }
+
+            })
+
+        $(".jia").click(function(){
+            var n=$(this).attr("name");
+            var max=$(".goodsnum"+n).val()
+            var num=$("#num"+n).val();
+                n=parseFloat(n);
+                max=parseFloat(max)
+                num=parseFloat(num)
+            if(num>=max){
+                layer.alert("数量不能大于库存数量");
+            }else{
+
+                num=parseFloat(num)+1;
+                $("#num"+n).val(num);
+               // $("#all_price").test();
+                 all=0
+                diff=0
+                $(".num").each(function(){
+
+                    var num=$(this).val();
+                    var n1=$(this).next("a").attr("name");
+                    var price=$("#price_item_"+n1).text().substr(1)
+                    var mprice=$("#Original_Price_"+n1).text().substr(1)
+                    var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+                    num=parseFloat(num)
+                    price=parseFloat(price)
+                    mprice=parseFloat(mprice)
+                    all=parseFloat(all)
+                    diff=parseFloat(diff)
+                    var price_one=num*price;
+                    $(".price_"+n1).val(price_one)
+                    $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+                    if($("#check"+n1).attr("checked")){
+                        all=all+price_one
+                        diff_once=(mprice-price)*num
+                    }
+                    diff=diff+diff_once
+                    $(".price_"+n1).val(price_one)
+                    $("#total_points").text(all)
+                    $("#Preferential_price").text("￥"+diff.toFixed(2))
+                    $("#all_price1").val(all)
+                    all=all.toFixed(2);
+                    $("#all_price").text("￥"+all);
+
+                })
+            }
+        })
+        $(".num").keyup(function(){
+                 var n=$(this).next("a").attr("name");
+                 var max=$(".goodsnum"+n).val()
+                 var num=$(this).val()
+                n=parseFloat(n);
+                max=parseFloat(max)
+                if(isNaN(num)){
+                    layer.alert("数量必须为数字");
+                    $("#num"+n).val(1)
+                }
+                num=parseFloat(num);
+                if(num<1){
+                    layer.alert("数量不能少于1");
+                    $("#num"+n).val(1)
+                }
+                if(num>max){
+                    layer.alert("数量不能大于库存数量");
+                    $("#num"+n).val(max)
+                }
+            all=0
+            diff=0
+            $(".num").each(function(){
+
+                var num=$(this).val();
+                var n1=$(this).next("a").attr("name");
+                var price=$("#price_item_"+n1).text().substr(1)
+                var mprice=$("#Original_Price_"+n1).text().substr(1)
+                var diff_once=0;
+//                   var all=$("#all_price").test();
+//                   all=parseFloat(all)
+                num=parseFloat(num)
+                price=parseFloat(price)
+                mprice=parseFloat(mprice)
+                all=parseFloat(all)
+                diff=parseFloat(diff)
+                var price_one=num*price;
+                $(".price_"+n1).val(price_one)
+                $("#total_item_"+n1).text("￥"+price_one.toFixed(2));
+                if($("#check"+n1).attr("checked")){
+                    all=all+price_one
+                    diff_once=(mprice-price)*num
+                }
+                diff=diff+diff_once
+                $(".price_"+n1).val(price_one)
+                $("#total_points").text(all)
+                $("#all_price1").val(all)
+                $("#Preferential_price").text("￥"+diff.toFixed(2))
+                all=all.toFixed(2);
+                $("#all_price").text("￥"+all);
+
+            })
+        })
+
+
+
+        //立即购买
+        $(".cartsubmit").click(function(){
+            var a=0;
+            a=parseInt(a)
+            $(".check").each(function(){
+                if($(this).attr("checked")){
+                    a=a+1
+                }
+            })
+
+            if(a!=0){
+                if({$_SESSION["uid"]|default="false"}){
+                $.post("{:U('Cart/buy')}",$(".form1").serialize(),function(res){
+                    if(res.status!=0){
+                       location="{:U('Orders/orders')}?id="+ res.info
+                    }else{
+                        layer.alert(res.info)
+                    }
+                })
+                }else{
+                //弹出登录
+                $("body").append("<div id='mask'></div>");
+
+                $("#remind").html("");
+                $("#txtName").val("");
+                $("#txtPwd").val("");
+                $("#mask").addClass("mask").fadeIn("slow");
+                $("#LoginBox").fadeIn("slow");
+
+
+                //文本框不允许为空---按钮触发
+                $("#loginbtn").on('click', function () {
+                    var txtName = $("#txtName").val();
+                    var txtPwd = $("#txtPwd").val();
+                    if (txtName == "" || txtName == undefined || txtName == null) {
+                        if (txtPwd == "" || txtPwd == undefined || txtPwd == null) {
+                            $(".warning").css({ display: 'block' });
+                        }
+                        else {
+                            $("#warn").css({ display: 'block' });
+                            $("#warn2").css({ display: 'none' });
+                        }
+                    }
+                    else {
+                        if (txtPwd == "" || txtPwd == undefined || txtPwd == null) {
+                            $("#warn").css({ display: 'none' });
+                            $(".warn2").css({ display: 'block' });
+                        }
+                        else {
+                            $(".warning").css({ display: 'none' });
+                        }
+                    }
+                });
+                //文本框不允许为空---单个文本触发
+                $("#txtName").on('blur', function () {
+                    var txtName = $("#txtName").val();
+                    if (txtName == "" || txtName == undefined || txtName == null) {
+                        $("#warn").css({ display: 'block' });
+                    }
+                    else {
+                        $("#warn").css({ display: 'none' });
+                    }
+                });
+                $("#txtName").on('focus', function () {
+                    $("#warn").css({ display: 'none' });
+                });
+                //
+                $("#txtPwd").on('blur', function () {
+                    var txtName = $("#txtPwd").val();
+                    if (txtName == "" || txtName == undefined || txtName == null) {
+                        $("#warn2").css({ display: 'block' });
+                    }
+                    else {
+                        $("#warn2").css({ display: 'none' });
+                    }
+                });
+                $("#txtPwd").on('focus', function () {
+                    $("#warn2").css({ display: 'none' });
+                });
+                //关闭
+                $(".close_btn").hover(function () { $(this).css({ color: 'black' }) }, function () { $(this).css({ color: '#999' }) }).on('click', function () {
+                    $("#LoginBox").fadeOut("fast");
+                    $("#mask").css({ display: 'none' });
+                });
+              }
+            }else{
+
+                layer.alert("请选择商品后在提交");
+            }
+
+        })
+
+    $("#loginbtn").click(function(){
+        name=$("#txtName").val();
+        pwd=$("#txtPwd").val();
+        $.post("{:U('Users/login')}",{username:name,password:pwd},function(res){
+            if(res.status){
+                $("#remind").css("color","green");
+                $("#remind").html("登陆成功");
+                $.post("{:U('Cart/buy')}",$(".form1").serialize(),function(res){
+                    if(res.status!=0){
+                        location.href="{:U('Orders/orders')}?id="+ res.info
+                    }else{
+                        layer.alert(res.info)
+                    }
+                })
+            }else{
+                $("#remind").css("color","red");
+                $("#remind").html("用户名或密码错误");
+            }
+        },'json')
+    })
+    $(".del_one").click(function(){
+        var gid=$(this).attr("name");
+        str=$(this).parents("td").prevAll(".name").children(".p_name").children("a").text()
+       // str=$("input[class='check'][value='gid']").parent().next(".name").childern(".p_name").childern("a").text();
+        layer.confirm('您确定要删除商品'+str+'吗？',{btn:['确认','退出']},function(){
+
+            $.post("{:U('Cart/cartdel')}",{gid:gid},function(res){
+                if(res.status!=0){
+                    layer.msg("删除成功");
+                        $("[name='"+gid+"']").parents(".tr").remove();
+                        if(!$(".table_list").text()){
+                            $(".table_list").html("<div style='margin:40px auto 0; font-size:30px;color:#a9a9a9;text-align: center '>购物车空空如也，赶紧去购物吧</div>")
+                        }
+
+                }else{
+                    layer.alert("删除失败");
+                }
+            },"json")
+        },function(){})
+
+
+    })
+
+
+
+    $(".collect").click(function(){
+        var id=$(this).attr("id");
+        var gid=$(this).attr("name").substr(2);
+        uid={$_SESSION['uid']|default="false"};
+        $.post("{:U('Cart/collect')}",{"gid":gid,"uid":uid},function(res){
+
+
+            if(id==0){
+                $("[name='1_"+gid+"']").text("已收藏商品")
+                $("[name='1_"+gid+"']").attr("id",1)
+                $("[name='1_"+gid+"']").css("color","#FF0000")
+            }else{
+                $("[name='1_"+gid+"']").text("收藏该商品")
+                $("[name='1_"+gid+"']").attr("id",0)
+                $("[name='1_"+gid+"']").css("color","#999")
+            }
+            layer.msg(res.info);
+        },"json")
+    })
+
+
+
+
+
+
+
+    })
+</script>
+<body>
+<include file="Shop/Home/Common/header.html" />
+<!--菜单导航样式-->
+<include file="Shop/Home/Common/topMenu.html"/>
+<!--购物车样式图层-->
+<div class="Inside_pages">
+ <div class="shop_carts">
+   <div class="Process"></div>
+ <div class="Shopping_list">
+  <div class="title_name">
+    <ul>
+    <li class="checkbox"></li>
+    <li class="name" style="width: 450px">商品名称</li>
+    <li class="scj">市场价</li>
+    <li class="bdj">本店价</li>
+    <li class="sl" style="width: 187px">购买数量</li>
+    <li class="xj">小计</li>
+    <LI class="cz">操作</LI>
+  </ul>
+ </div>
+  <div class="shopping">
+  <form  method="post" action="{:U('Cart/buy')}" enctype="multipart/form-data" class="form1">
+ <table class="table_list">
+
+     <volist name="goods" id="val" key="k" empty="$empty">
+
+   <tr class="tr">
+   <td class="checkbox"><input name="gid[]" type="checkbox" value="{$val['gid']}" id="check{$k}" class="check"/>
+       <input name="id[]" type="hidden" value="{$val['gid']}" /></td>
+    <td class="name" style="width: 440px">
+      <div class="img"><a href="{:U('goods/goodsDetail',array('id'=>$val['gid']))}"><img src="/uploads/n2/{$val['image']}" /></a></div>
+      <div class="p_name"><a href="{:U('goods/goodsDetail',array('id'=>$val['gid']))}">{$val["goodsname"]}</a></div>
+    </td>
+    <td class="scj sp"><span id="Original_Price_{$k}">￥{$val["markprice"]}</span></td>
+    <td class="bgj sp" style="width: 140px"><span id="price_item_{$k}" class="price">￥{$val["saleprice"]}</span></td>
+    <td class="sl" style="width: 120px;padding-left: 32px;padding-right: 32px;">
+        <div class="Numbers">
+          <a  href="javascript:void(0)" class="jian" name="{$k}">-</a>
+          <input type="text" name="num[]" value="{$val['buynum']}" id="num{$k}" class="number_text num">
+          <a  href="javascript:void(0)" class="jia" name="{$k}">+</a>
+         </div>
+        <input type="hidden" name="goodsnum[]" value="{$val['goodsnum']}" class="goodsnum{$k}">
+    </td>
+    <td class="xj" ><span id="total_item_{$k}" class="prices">￥{$val["saleprice"]*$val['buynum']}.00</span><input type="hidden" name="price1[]"  value="" class="price_{$k}"></td>
+    <td class="cz">
+     <p><a href="#" class="del_one" name="{$val['gid']}">删除</a><p>
+     <if condition="$val['status']==0"><p><a href="javascript:;" class="collect" name="1_{$val['gid']}" id="0" style="color: #999">收藏该商品</a></p><else/><p><a href="javascript:;" class="collect" name="1_{$val['gid']}" id="1" style="color: #FF0000">已收藏商品</a></p></if>
+    </td>
+   </tr>
+     </volist>
+       <!--<tr class="tr on">
+       <td class="checkbox"><input name="checkitems" type="checkbox" value="金龙鱼 东北大米 蟹稻共生 盘锦大米5KG" /></td>
+      <td class="name">
+        <div class="img"><a href="#"><img src="common/images/cp-4jpg.jpg" /></a></div>
+        <div class="p_name"><a href="#">金龙鱼 东北大米 蟹稻共生 盘锦大米5KG</a></div>
+      </td>
+      <td class="scj sp">￥39.50</td>
+      <td class="bgj sp" id="price_item_2">￥32.40</td>
+      <td class="sl">
+          <div class="Numbers">
+            <a onClick="setAmount.reduce('#qty_item_')" href="javascript:void(0)" class="jian">-</a>
+            <input type="text" name="qty_item_" value="1" id="qty_item_" onkeyup="setAmount.modify('#qty_item_')" class="number_text">
+            <a onclick="setAmount.add('#qty_item_')" href="javascript:void(0)" class="jia">+</a>
+           </div>
+      </td>
+      <td class="xj" ><span id="total_item_2"></span><input type="hidden" name="total_price" id="total_price" value=""></td>
+      <td class="cz">
+       <p><a href="#">删除</a><P>
+       <p><a href="#">收藏该商品</a></p>
+      </td>
+     </tr>
+--> </table>
+ <div class="sp_Operation clearfix">
+  <div class="select-all">
+  <div class="cart-checkbox"><input type="checkbox"   id="CheckedAll" name="toggle-checkboxes" class="jdcheckbox" clstag="clickcart">全选</div>
+  <div class="operation"><a href="javascript:void(0);" id="send">删除选中的商品</a></div>
+    </div>
+     <!--结算-->
+    <div class="toolbar_right">
+    <ul class="Price_Info">
+    <li class="p_Total"><label class="text">商品总价：</label><span class="price sumPrice" id="all_price">￥0.00</span><input type="hidden" id="all_price1" name="allprice"></li>
+    <li class="Discount"><label class="text">已&nbsp;&nbsp;节&nbsp;&nbsp;省：</label><span class="price" id="Preferential_price">￥0.00</span></li>
+    <li class="integral">本次购物可获得<b id="total_points">0</b>积分</li>
+    </ul>
+    <div class="btn"><a class="cartsubmit" href="javascript:;"></a><a class="continueFind" href="{:U('Index/index')}"></a></div>
+  </div>
+  </div>
+   </form>
+      {/*弹出层*/}
+      <div id="LoginBox">
+      <div class="row1" style="position: relative;">
+          <a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="closeBtn">×</a>
+      </div>
+      <div class="row1" style="margin-top: 30px;">
+          <label style="display:inline-block;line-height: 38px;margin: 0; vertical-align:middle;margin-left:160px">账号登录</label>
+      </div>
+      <div class="row" style="margin-top: 30px;position:relative;height:100px">
+          账号: <span class="inputBox">
+                <input type="text" id="txtName" placeholder="账号/邮箱" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn">*</a>
+          <label style="display:inline-block;width:150px;height:38px;font-size: 15px;position: absolute;left:130px;top:40px" id="remind"></label>
+      </div>
+      <div class="row" style="position:relative;height:70px">
+          密码: <span class="inputBox">
+                <input type="password" id="txtPwd" placeholder="密码" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn2">*</a>
+      </div>
+      <div class="row" style="margin-top: 50px;">
+          <a href="javascript:;" id="loginbtn">登录</a>
+      </div>
+  </div>
+ </div>
+ </div>
+ </div>
+</div>
+  <!--底部样式-->
+ <include file="Shop/Home/common/footer.html"/>
+ <!--底部样式-->
+
+</body>
+</html>

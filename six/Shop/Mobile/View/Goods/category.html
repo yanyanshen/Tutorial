@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="__MOBILE__/mobile/css/class.css" rel="stylesheet">
+<!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+<style>
+.left>ul li{background: red;}
+    .righ{width:5.6rem;float: right;/*background: red;*/}
+    .righh{width: 5.6rem;}
+    .righh p{display: block;margin-bottom: 0.24rem;height: 0.5rem;line-height: 0.5rem;color: red;}
+    .righh ul{position: relative;}
+    /*.righh ul li img{float: left;}*/
+    .righh ul li{float: left;list-style: none;width: 1.66rem;height:2.1rem;/*background: white;*/margin-right: 0.2rem;}
+    .righh ul li a{display: block; text-align: center;}
+    .righh ul li img{width: 1.6rem;height: 1.58rem;}
+    .search{}
+
+/*#nav{width: 60px;position: fixed;left:0px;bottom:100px;list-style: none;display: none;cursor: pointer;}*/
+#nav{width: 70px;position: fixed;left:5px;bottom:300px;list-style: none;cursor: pointer;}
+#nav li{width: 70px;height: 55px;line-height: 55px;border-bottom: 1px dashed #ccc;text-align: center;position: relative;font-size: 25px;margin-top: 1px;color: #000000}
+#nav li span{border-radius:6px;position: absolute;display: inline-block;height: 55px;line-height: 55px;width: 100%;text-align: center;left: 0;top: 0;display: none;background: #fff;color: #000000}
+</style>
+</head>
+<!--头部-->
+<body>
+<script>
+
+</script>
+<div class="header">
+    <div class="wrapper">
+        <div class="search">
+            <form action="{:U('Goods/goodsList')}" method="get" name="search" id="searchForm">
+                <input class="txt" type="text" placeholder="动动手指，总有一款你想要的" name="keywords">
+                <a onclick="document.getElementById('searchForm').submit();return false"><i></i></a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--热销分类-->
+<div class="class clearfix">
+    <!-- 左边开始 -->
+    <div class="left fl">
+        <ul id="nav">
+            <li>男装<span style="display: inline-block;" class="curr">男装</span></li>
+            <li>女装<span>女装</span></li>
+            <li>男鞋<span>男鞋</span></li>
+            <li>女鞋<span>女鞋</span></li>
+            <li>箱包<span>箱包</span></li>
+            <li>配饰<span>配饰</span></li>
+        </ul>
+    </div>
+    <!-- 左边结束 -->
+   <!-- 右边开始 -->
+    <volist name="Cate" id="vo1" key="k1" empty="11">
+        <div class="righbox">
+            <volist name="Cate[$k1-1]['c']" id="vo2" key="k2" empty="22">
+                <div class="righ" >
+                    <div class="righh">
+                        <p class="p{$k2}"><a href="{:U('Goods/goodsList',array('id2'=>$vo2['id']))}">{$vo2.catename}</a> </p>
+                        <ul>
+                            <volist name="Cate[$k1-1]['c'][$k2-1]['c']" id="vo3" key="k3" empty="33">
+                                <a href="{:U('Goods/goodsList',array('id3'=>$vo3['id']))}">
+                                    <li>
+                                        <img src="/uploads/n2/{$vo3.image}" alt="">
+                                        <a href="{:U('Goods/goodsList',array('id3'=>$vo3['id']))}">{$vo3.catename}</a>
+                                    </li>
+                                </a>
+                            </volist>                       
+                        </ul>
+                        
+                    </div>
+                </div>
+            </volist>  
+        </div>
+    </volist>
+    <!-- 右边结束 -->
+</div>
+
+<!--底部导航-->
+<include file="Shop/Mobile/Common/footer.html" />     
+
+<script src="__MOBILE__/mobile/js/jquery-1.9.1.min.js"></script>
+<script src="__MOBILE__/mobile/js/class.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".i2").parent().addClass('on');
+    })
+</script>
+</body>
+<script>
+    //楼层导航开始
+        $(document).ready(function(){
+//    $(function(){
+        var winHeight = $(window).height(),
+        onOff = false;    //布尔值变量,通错这个变量可以防止快速连续点击的时候出现的连续滚动
+        $(window).on('scroll',function(){
+            var scTop = $(window).scrollTop();
+            //滚动时切换显示楼层
+            if(!onOff){
+                $('.p1').each(function(index,element){
+                    var _top = $(this).offset().top; //offset获取匹配元素在当前视窗的相对偏移
+                    if(scTop >= _top - winHeight / 2){
+                        //此处添加curr类样式并不是改变显示样式，而是为了标当前所在的楼层  ,显示出li的儿子标签
+                        //eq()匹配一个给定索引值的元素
+                        $('#nav>li').eq(index).addClass('curr').children().show()
+                                .end().siblings().removeClass('curr').children().hide(); //end()将匹配到的元素列表变回到前一次的状态
+                    }
+                });
+            }
+        })
+
+        $('#nav>li').hover(function(){
+            $(this).children().show();
+        },function(){
+            $(this).not('.curr').children().hide();
+        }).on('click',function(){
+            onOff = true;  //将开关变量onOff置为true
+            var index = $(this).index(),
+                    _top = $('.p1').eq(index).offset().top
+            $(this).addClass('curr').children().show().end()
+                    .siblings().removeClass('curr').children().hide();
+
+            $('html,body').animate({'scrollTop':_top},400,function(){
+                onOff = false; //在运动执行完毕的毁掉函数中将onOff的值重置为false
+            });
+
+            //或者也可以用scrollIntoView()方法，只是该方法没有滚动的效果，而是直接跳到浏览器可是窗口的最上面.用法如下：
+            /*var index = $(this).index();
+             $('.floor').get(index).scrollIntoView();*/
+        });
+
+    });
+
+    //楼层导航结束
+
+
+
+</script>
+</html>

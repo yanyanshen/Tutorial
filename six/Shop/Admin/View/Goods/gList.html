@@ -1,0 +1,49 @@
+<div id='div' style="font-size: 13px; margin: 10px 5px; position:relative;">
+    <form action=""></form>
+    <table class="table_a" border="1" width="100%">
+        <tr style="font-weight: bold;">
+            <td>序号</td>
+            <td>商品名称</td>
+            <td>库存</td>
+            <td>市场价格</td>
+            <td>本站价格</td>
+            <td>图片</td>
+            <td>品牌</td>
+            <td>发布时间</td>
+            <td>是否在售</td>
+            <td align="center">操作</td>
+        </tr>
+        <tbody class="tb">
+        <volist name="info" id="vo" key="k" empty="$empty">
+            <tr id="product1">
+                <td>{$k}</td>
+                <td><a href="#" style="text-decoration: none">{$vo.goodsname}</a></td>
+                <td>{$vo.goodsnum}</td>
+                <td>{$vo.saleprice}</td>
+                <td>{$vo.markprice}</td>
+                <td><img src="/uploads/n3/{$vo.image|default='default.jpg'|explode=',',###|array_shift}" height="60" width="60"></td>
+                <td>{$vo.bname}</td>
+                <td>{$vo.createtime|date='Y-m-d H:i:s',###}</td>
+                <td>{$vo['is_show']==1?展示:下架}</td>
+                <td>
+                    <a href="{:U('Goods/update_goods',array('id'=>$vo['id']),'')}" style="text-decoration: none">修改</a>
+                    <!-- <a id="del" href="{:U('Goods/delete_goods',array('id'=>$vo['id']),'')}" onclick="return confirm('确定要删除吗？')">删除</a> -->
+                    <a class="del" href="javascript:;" name="{$vo.id}" style="text-decoration: none">删除</a>
+
+                    <if condition="$vo.is_active eq 0">
+                        <a href="{:U('Active/add_active',array('id'=>$vo['id']),'')}" style="text-decoration: none">参加活动</a>
+                        <else/>已活动
+                    </if>
+
+                </td>
+            </tr>
+        </volist>
+
+        <tr>
+            <td colspan="20" style="text-align: center;">
+                {$page}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

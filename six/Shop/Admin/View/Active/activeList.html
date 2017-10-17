@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>会员列表</title>
+
+    <link href="__ADMINSKIN__/css/mine.css" type="text/css" rel="stylesheet" />
+    <script src="__ADMINSKIN__/js/jQuery-1.8.2.min.js"></script>
+    <script src="__ADMINSKIN__/js/layer.js"></script>
+</head>
+<script>
+    $(function(){
+        $('.del').click(function(){
+            var a=$(this).attr("name");
+            layer.confirm('删除将不可恢复！', {btn:['删除','取消'], icon: 3, title:'活动商品'}, function(index){
+                $.post("{:U('Active/del_active')}",{gid:a},function(res){
+                    if(res.status==1){
+                        layer.msg("删除成功",{icon:1,time:1000},function(){location.reload();})
+                    }else{
+                        layer.msg("删除失败",{icon:3,time:1000})
+                    }
+                })
+            });
+        })
+    })
+</script>
+<body>
+<style>
+    .tr_color{background-color: #9F88FF}
+    .pages{
+        width: 100.5%;
+        text-align:right;
+        padding: 10px 0;
+        clear:both;
+    }
+    .pages a,.pages .current{
+        font-size: 18px;
+        margin: 0 2px;
+    }
+    .pages a,.pages .current{
+        border:1px dotted gray;
+        background: #fff;
+        padding: 2px 6px;
+        text-decoration: none;
+    }
+    .pages .current,.pages a:hover{
+        background: #7AB63F;
+        color: #fff;
+    }
+    .pages .now{
+        color: black;
+    }
+    .pages b{
+        font-size: 20px;
+        color: orange;
+    }
+</style>
+<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：品牌管理-》品牌列表</span>
+                <span style="float: right; margin-right: 8px; font-weight: bold;">
+                    <a style="text-decoration: none;" href="{:U('Brand/add')}">【添加品牌】</a>
+                </span>
+            </span>
+</div>
+<div></div>
+<div class="div_search">
+            <span>
+                <form action="{:U('Active/activeList')}" method="get">
+                    活动时间
+                    <select name="activetime" id="">
+                        <option value="08:00-10:00">08:00-10:00</option>
+                        <option value="12:00-14:00">12:00-14:00</option>
+                        <option value="16:00-18:00">16:00-18:00</option>
+                    </select>
+                    <input value="查询" type="submit" />
+                </form>
+            </span>
+</div>
+<div style="font-size: 13px; margin: 10px 5px;">
+    <table class="table_a" border="1" width="100%">
+        <tbody><tr style="font-weight: bold;">
+            <td>序号</td>
+            <td>商品名称</td>
+            <td>商品图片</td>
+            <td>活动价格</td>
+            <td>活动数量</td>
+            <td>开始时间</td>
+            <td>结束时间</td>
+            <td>活动状态</td>
+            <td align="center" colspan="2">操作</td>
+        </tr>
+        <volist name="active" id="val" empty="" key="k">
+            <tr id="product{$k+1}">
+                <td>{$k}</td>
+
+                <td><a href="{:U('Active/add_active',array('id'=>$val['gid']))}">{$val["goodsname"]}</a></td>
+
+                <td><img src="/uploads/n1/{$val['image']|explode=',',###|array_shift}" height="60" width="60"></td>
+                <td>{$val["activeprice"]}</td>
+                <td>{$val["activenum"]}</td>
+                <td>{$val["startime"]}</td>
+                <td>{$val["endtime"]}</td>
+                <td>{$val["is_active"]==0?'活动结束':'等待活动'}</td>
+                <td><a href="{:U('Active/add_active',array('id'=>$val['gid']))}">修改</a></td>
+                <td><a href="#" class="del" name="{$val['id']}">删除</a></td>
+                    <!--<a href="#" class="del" name="{$value['id']}"></a></td>-->
+            </tr>
+        </volist>
+        <tr>
+            <td colspan="20" style="text-align: center;">
+                <div class="pages">{$show}</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>购物车</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+<script src="__MOBILE__/Mobile/js/cart.js"></script>
+<link href="" rel="stylesheet">
+<link rel="stylesheet" href="__MOBILE__/Mobile/css/font-awesome-ie7.css">
+<link href="__MOBILE__/Mobile/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="__MOBILE__/Mobile/css/cart.css"/>
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+    <style>
+        .empty{
+            width:100%;
+            height: 500px;
+            text-align: center;
+            line-height: 500px;
+            font-size: 16px;
+            color: #a7b2b2;
+        }
+    </style>
+<script>
+    $(function(){
+        $(".fr").click(function(){
+                if($(this).text()=='编辑'){
+                    $("span:contains('删除')").css('display','inline-block');
+                    $(this).text('完成');
+                }else{
+                    $("span:contains('删除')").css('display','none');
+                    $(this).text('编辑');
+                }
+            })
+    })
+     
+</script>
+</head>
+<body>
+    <!-- 头部 开始 -->
+    <div class="header">
+        <div class="shop clearfix">
+            <p class="fl">购物车</p>
+            <p class="right fr"><a href="#">编辑</a></p>
+        </div>
+    </div>
+    <!-- 头部 结束 -->
+
+    <!-- 产品详情 开始-->
+    <form action="{:U('Goods/submitOrder')}" method="post" id="form1">
+    <div class="product ">
+        <volist name="goodsinfo" id="goods" empty="$empty">
+            <table cellpadding="0" cellspacing="0" class="tab1">
+                <tr>
+                    <td class="tab1-td1 ">
+                        <input type="checkbox" value="{$goods.gid}" name="gid[{$key}]" class="newslist-5" />
+                    </td>
+                    <td class="tab1-td2">
+                        <a href="#"><img src="/uploads/n1/{:reset(explode(',',$goods['image']))}"/></a>
+                    </td>
+                    <td class="tab1-td3">
+                        <a href="#">{$goods.goodsname} </a>
+                        <span class="tex">{$goods.goodsintro}</span>
+                        <span class="price">￥<i>{$goods.saleprice}</i></span>
+                        <input id="min5" name="" type="button" value="-"/>
+                        <input id="text_box5" name="buynum[{$k}]" type="text" value="{$goods.buynum}"/>
+                        <input type="hidden" name="price[{$k}]" value="{$goods.saleprice}"/>
+                        <input id="add5" name="" type="button" value="+"/>
+                    </td>
+                    <td>
+                        <span class="del" name="{$goods.gid}" style="display:none">删除</span>
+                    </td>
+                </tr>
+                
+            </table>
+
+        </volist>
+    </div>
+
+   
+   
+    <!-- 产品详情 结束 -->
+
+    <!-- 全选结算 开始 -->
+    <div class="clase">
+        <table cellpadding="0" cellspacing="0" class="tab2">
+            <tr>
+                <td class="tab2-td1">
+                    <input id="invert" type="checkbox" />全选
+                </td>
+                <td class="tab2-td2">已选商品 <label class="num">0</label> 件</td>
+                <td class="tab2-td3">合计:<span>￥</span><span class="fr"><label id="tatle" style="">0</label></span></td>
+                <td class="tab2-td4"><span class="js"><a href="javascript:;" id="submit">结算</a></span></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+
+    <!-- 全选结算 结束 -->
+
+    <!-- 底部导航 开始 -->
+<include file="Shop/Mobile/Common/footer.html" />     
+    <!-- 底部导航 结束 -->
+    <script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".i3").parent().addClass('on');
+        })
+
+        $(function(){
+            $("#add5").click(function(){
+
+            })
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#submit").click(function(){
+                if({$_SESSION['uid']|default='false'}){
+                    var i=0;
+                    $(".newslist-5").each(function(){
+                        if(this.checked){
+                            i++
+                        }
+                    })
+                    if(i==0){
+                        layer.open({
+                            content:"请选择至少一件商品",
+                            skin:'msg',
+                            time:1
+                        })
+                    }else{
+                        var totalprice=$("#tatle").text();
+//                        alert(totalprice)
+                        $("#tatle").append("<input type='hidden' name='totalprice' value="+totalprice+">");
+                        $("#form1").submit();
+                    }
+                }else{
+                    layer.open({
+                        content:"请登录",
+                        time:1
+                    })
+                    setTimeout(login,1000);
+                    function login(){
+                        location.href="{:U('Users/login')}"
+                    }
+                }
+
+            })
+        })
+    </script>
+    <!-- 删除购物车里的商品 -->
+    <script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+    <script>
+        $(function(){
+             $('.del').click(function(){
+                gid=$(this).attr("name")
+                // alert(id);
+                $.post("{:U('Cart/delcart')}",{gid:gid},function(res){
+                   
+                    // alert(res);
+                    if(res.status>0){
+                         layer.open({
+                            content:'删除成功！',
+                            skin:'msg',
+                            time:2
+                        })
+                        $.post("{:U('Cart/cart')}",function(a){
+                            $('.product').html(a);
+                        })
+                    }else{
+                        layer.open({
+                            content:'删除失败！',
+                            skin:'msg',
+                            time:2
+                        });
+                    }
+                })
+            })
+        })
+       
+    </script>
+</body>
+</html>

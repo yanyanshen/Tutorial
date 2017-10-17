@@ -1,0 +1,95 @@
+div.item{
+    position:relative;
+    height:35px;
+    line-height: 30px;
+    padding:12px 6px;
+    text-align:justify;
+    text-align-last:justify;
+    font-family:'微软雅黑';
+}
+label.left{
+    width:228px;
+    height:10px;
+    position:relative;
+    line-height: 5px;
+    padding:12px 6px;
+    text-align:justify;
+    text-align-last:justify;
+    font-family:'微软雅黑';
+}
+input{
+    height:20px;
+    width: 20px;
+    padding:3px 8px;
+    border-width:1px;
+    border-color: #c2ccd1 #333333 #c2ccd1 #ccc;
+    font-size:15px;
+}
+button.regBtn{
+    background: transparent;
+    color:#000;
+    width:100px;
+    height:30px;
+    border-radius:4px;
+    font-weight: bold;
+    font-size:15px;
+    font-family: '微软雅黑';
+    cursor:pointer;
+}
+div.regBtn:hover{
+    background:#3635ee;
+    color:#ffffee;
+}
+#reg td button.regBtn:hover{
+    background: #3b0616;
+    color:#ffffee;
+}
+input text.error{
+    border:1px solid #b30c09;
+    background: #9fcbdd;
+}
+div.error{
+    position: absolute;
+    top:40px;
+    left: 155px;
+    color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 7px;
+
+    vertical-align: text-top;
+    padding-left: 20px;
+    margin-right: 8px;
+    display: inline-block;
+
+}
+div.error {
+    color: #e22;
+
+}
+div.ok{
+
+    position: absolute;
+    top: 10px;
+    left: 366px;
+    color:green;
+    font-size: 13px;
+    font-weight:bold;
+    display: none;
+
+
+}
+.rgister-btn {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background: #e22;
+    border: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+}
+a.loginBtn {
+    weidth: 80px;
+    line-height: 40px;
+    color: #fff;
+}

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>提交订单</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <link href="__MOBILE__/Mobile/css/amazeui.min.css" rel="stylesheet" type="text/css" />
+        <link href="__MOBILE__/Mobile/css/submit.css" rel="stylesheet" type="text/css" />
+        <script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+        <script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+        <!--<script src="js/date.js"></script>
+		<script src="iscroll.js"></script>-->
+		<!--<script type="text/javascript">
+			$(function(){
+				$('#beginTime').date();
+				$('#endTime').date({theme:"datetime"});
+			});
+        </script>-->
+	</head>
+	<body>
+		<header data-am-widget="header" class="am-header am-header-default sq-head ">
+			<div class="am-header-left am-header-nav" style="width: 50px;height: 50px;">
+				<a href="javascript:history.back()" class="" style="width: 50px;height: 50px;">
+					<i class="am-icon-chevron-left" style="font-size:30px;margin-top:-50px;"><</i>
+				</a>
+			</div>
+			<h1 class="am-header-title">
+  	            <a href="" class="">确认订单</a>
+            </h1>
+	    </header>
+        <form action="" method="post" id="form1">
+	    <div style="height: 49px;"></div>
+	    <h5 class="order-tit">收货人信息</h5>
+	    <div class="order-name">
+	    	<a href="{:U('Address/selectAddress')}">
+	    		<p class="order-tele">{$address.name}&nbsp;&nbsp;&nbsp;{$address.mobile}</p>
+	    		<p class="order-add">{$address.address}{$address.detailaddress}</p>
+	    	</a>
+	    	<i class="am-icon-angle-right"style="font-size:30px;margin-top: -20px;"> > </i>
+            <input type="hidden" name="aid" value="{$address.id}"/>
+	    </div>
+        <div style="background: #eee; height: 10px;"></div>
+        <h5 class="order-tit">确认订单信息</h5>
+        <ul class="shopcart-list" style="padding-bottom: 0; margin-top: 0;">
+            <volist name="goodslist" id="goods">
+	    	<li>
+                <img src="/uploads/n1/{:reset(explode(',',$goods['image']))}" class="shop-pic" />
+                <div class="order-mid">
+                	<div class="tit">{$goods.goodsname}</div>
+                	<div class="order-price">￥{$goods.price} <i>X{$goods.buynum}</i></div>
+                </div>
+	    	</li>
+                <input type="hidden" name="gid[{$key}]" value="{$goods.gid}"/>
+                <input type="hidden" name="price[{$key}]" value="{$goods.price}"/>
+                <input type="hidden" name="buynum[{$key}]" value="{$goods.buynum}"/>
+            </volist>
+	    </ul>
+	    <ul class="order-infor">
+	    	<li class="order-infor-first">
+	    		<span>商品总计：</span>
+	    		<i>￥{$totalprice}</i>
+	    	</li>
+	    	<li class="order-infor-first">
+	    		<span>运费：</span>
+	    		<i>包邮</i>
+	    	</li>
+	    	<!--<li class="order-infor-first">
+	    		<a href="integral.html">积分抵费></a>
+	    	</li>-->
+	    </ul>
+	    <div style="background: #eee; height: 10px;"></div>
+
+		<div id="datePlugin"></div>
+	    <div style="background: #eee; height: 10px;"></div>
+	    <textarea placeholder="备注说明" class="bz-infor"></textarea>
+	    <div style="background: #eee; height: 10px;"></div>
+	    <div style="height: 55px;"></div>
+	    <div class="shop-fix">
+	    	<div class="order-text">
+	    		应付总额：<span>￥{$totalprice}</span>
+	    	</div>
+            <input type="hidden" name="totalprice" value="{$totalprice}"/>
+	    	<a href="javascript:;" class="js-btn">提交订单</a>
+	    </div>
+        </form>
+<!--底部-->
+
+        <script type="text/javascript">
+            $(function(){
+                $(".js-btn").click(function(){
+                    var message=$(".bz-infor").text();
+                    $(".bz-infor").append("<input type='hidden' name='message' value="+message+">");
+                    $.post("{:U('Goods/submit')}",$("#form1").serialize(),function(res){
+                        layer.open({
+                            content:res.info,
+                            skin:'msg'
+                        })
+                        setTimeout(o,1000)
+                        function o(){
+                            location.href="{:U('Order/pay')}?oid="+parseInt(res.url);
+                        }
+                    })
+                })
+            })
+        </script>
+
+        <!--<script type="text/javascript">
+            $(document).ready(function(){
+                function getCookie(name)
+                {
+                    if (document.cookie.length>0)
+                    {
+                        c_start=document.cookie.indexOf(name + "=")
+                        if (c_start!=-1)
+                        {
+                            c_start=c_start + c_name.length+1
+                            c_end=document.cookie.indexOf(";",c_start)
+                            if (c_end==-1) c_end=document.cookie.length
+                            return unescape(document.cookie.substring(c_start,c_end))
+                        }
+                    }
+                    return ""
+                }
+                var address= getCookie('addressid')
+                alert(address);
+            })
+        </script>-->
+	</body>
+</html>

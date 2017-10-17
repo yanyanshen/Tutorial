@@ -1,0 +1,162 @@
+
+<!--//-->
+<script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+<style>
+    #allSortOuterbox .hd_allsort_out_box_new{
+        height: 540px;
+    }
+    .Menu_list li{
+        background: rgb(234,232,233);
+    }
+    .Menu_list li:hover{
+        background:white;
+    }
+</style>
+<script>
+    $(function(){
+        $(".Category").mouseenter(function(){
+            var str='';
+
+            $.get("{:U('Index/fcate')}",{},function(res){
+                for(var i in res){
+//                   alert(res[i]['id']);
+                    str+="<li class='name' id='"+res[i]['id']+"'>";
+                    str+="<div class='Menu_name' style='height: 20px;padding-bottom: 0;line-height: 30px;'>"+"<a href='{:U(\'Goods/goodsList\')}?id1="+res[i]['id']+"' >"+res[i]['catename']+"</a> <span>&lt;</span></div>";
+//                    alert(res[i]['catename']);
+                    str+='<div class="link_name" style="padding-bottom: 0;width:190px;height:24px;"><p style="margin-top: 5px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis">';
+                    for(var m in res[i]['child']){
+                        // alert(res[i]['child'][m]);
+                        for(var n in res[i]['child'][m]['c']){
+
+
+                        str+="<a href='{:U(\'Goods/goodsDetail\')}?id="+res[i]['child'][m]['c'][n]['id']+"'>"+res[i]['child'][m]['c'][n]['catename']+"</a>";
+
+                    }}
+                    str+="</p></div>";
+                    str+="<div class='menv_Detail' style='height: 540px;margin-left: 40px;'></div>";
+                    str+="</li>";
+                }
+                //将拼接的字符串写入到相应的标签内
+                $(".Menu_list").html(str);
+
+           },'json')
+        })
+        $(".Category").mouseleave(function(){
+            //鼠标移开时，制空
+            $(".Menu_list").html();
+        })
+
+
+        //第二级
+        $(".name").live({
+            mouseenter:function(){
+                var str2='';
+                var id=$(this).attr("id"); //当鼠标进入该标签时，通过此id可以传值
+                $.get("{:U('Index/scate')}",{id:id},function(res){
+                    str2+='<div class="cat_pannel clearfix">';
+                    str2+='<div class="hd_sort_list">';
+                    for(var i in res[0]){
+                        str2+=' <dl class="clearfix" data-tpc="1">';
+                            str2+="<dt><a href='{:U("goods/goodsList")}?id2="+res[0][i]['id']+"'>"+res[0][i]['catename']+"</a></dt>";
+                        for(var n in res[0][i]['child']){
+
+                                str2+="<dd><a href='{:U("goods/goodsList")}?id3="+res[0][i]['child'][n]['id']+"'   style='margin-left: 10px'>"+res[0][i]['child'][n]['catename']+"</a></dd>";
+                     }
+                        str2+='</dl>';
+                    }
+                    str2+='</div>';
+                    str2+='<div class="Brands">';
+                    for(var p in res['image']){
+                        str2+="<a href='#' style='height: 90px;width: 90px;'><img style='height: 100%;width: 100%' src='/uploads/n1/"+res['image'][p]['image']+"'/></a>";
+                    }
+                    str2+='</div></div>';
+                    //单引号不解析变量
+                    $("li[id='"+id+"']").children(".menv_Detail").html(str2);
+                    //防止下一层li标签覆盖（其上所有）上层li标签，设置先显示，然后隐藏当前li标签的所有de兄弟标签
+                    $("li[id='"+id+"']").children(".menv_Detail").show();
+                    $("li[id='"+id+"']").siblings().children(".menv_Detail").hide();
+               },'json')}
+        })
+
+    })
+
+    //鼠标划过样式开始
+//    $(function() {
+//        $(".Menu_list").mouseenter(function () {
+//            var i=$(this).children().hasClass('a').index();
+//            if(i){
+//
+//            }
+//            $(this).children().css('background','red');
+//        })
+//    })
+
+
+    // $(function(){
+    //     $(".Menu_list").mouseenter(function(){
+    //         $(this).children('.name').on('mouseenter',function(){
+    //             // alert(11);
+    //             $(this).css({background:'white'})
+    //         });
+    //         $(this).children('.name').on('mouseleave',function(){
+    //             $(this).css({background:rgb(234,232,233)})
+    //         });
+    //     })
+
+    //     //
+    // })
+    //鼠标划过样式结束
+</script>
+
+
+<!--新的-->
+<div id="Menu" class="clearfix">
+    <div class="Inside_pages">
+        <div id="allSortOuterbox" class="display">
+            <div class="t_menu_img"></div>
+            <div class="Category"><a href="{:U('Index/index')}"><em></em>所有产品分类</a></div>
+            <div class="hd_allsort_out_box_new">
+                <!--左侧栏目开始-->
+                <ul class="Menu_list">
+                    <!--<li class="name">-->
+                        <!--<div class="Menu_name"><a href="#" >男装女装</a> <span>&lt;</span></div>-->
+                        <!--<div class="link_name">-->
+.
+                            <!--<p><a href="#">酱香型</a></p>-->
+                        <!--</div>-->
+                        <!--<div class="menv_Detail">-->
+                            <!--<div class="cat_pannel clearfix">-->
+                                <!--<div class="hd_sort_list">-->
+                                    <!--<dl class="clearfix" data-tpc="1">-->
+                                        <!--<dt>白酒</dt>-->
+                                        <!--<dd><a href="#">酱香型</a></dd>-->
+
+                                    <!--</dl>-->
+
+                                <!--</div><div class="Brands">-->
+
+                                <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/p_logo_5.jpg" /></a>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;品牌&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+        <script>$("#allSortOuterbox").slide({ titCell:".Menu_list li",mainCell:".menv_Detail",	});</script>
+        <!--菜单栏-->
+        <div class="Navigation" id="Navigation">
+            <ul class="Navigation_name">
+                <li> <a href=""></a> </li>
+                <li><a href="{:U('Goods/clothing')}" target="_blank">服装城</a></li>
+                <li><a href="{:U('Goods/shoes')}" target="_blank">鞋城</a></li>
+                <li><a href="{:U('Goods/bags')}" target="_blank">箱包大全</a></li>
+                <li><a href="{:U('Goods/jewelry')}" target="_blank">精美饰品</a></li>
+                <li><a href="{:U('Goods/goodsGroup')}" target="_blank">限时抢购</a></li>
+        </div>
+        <script>$("#Navigation").slide({titCell:".Navigation_name li"});</script>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+<link href="__SKIN__/Home/css/Orders.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/address1.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/address2.css" rel="stylesheet" type="text/css" />
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.reveal.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.sumoselect.min.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+<!--<script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>-->
+<script src="__SKIN__/Home/js/layer.js" type="text/javascript"></script>
+<title>确认订单界面</title>
+</head>
+<style type="text/css">
+    .shade_content{
+        display: none;
+    }
+    .list{
+        border: 2px darkgrey solid;
+        height: 246px;
+        margin-left: 10px;
+    }
+    .adderss_list{
+        height: 286px;
+        overflow: hidden;
+        position: relative;
+    }
+    .adderss_list:hover .list .hd{display: block}
+    .list .hd{display: none}
+    .list .hd .prev,.list .hd .next{
+        position:absolute;
+        left:0px;
+        top:50%;
+        z-index: 999;
+        color:#FFF;
+        line-height:70px;
+        font-size:18px;
+        text-align:center;
+        font-family:"新宋体";
+        font-weight: bold;
+        margin-top:-25px;
+        width:30px;
+        height:70px;
+        background-color: #0F8EEC;
+        filter:alpha(opacity=50);
+        opacity:0.5;
+    }
+    .list .hd .next{ left:auto; left:1120px; background-position:8px 5px; }
+    .list .hd .prev:hover, .list .hd .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+    .defaul_btn{
+        font-size: 16px;
+        color: white;
+        float: left;
+        padding-top: 10px;
+    }
+    .defaul_btn_show{
+        display: none;
+    }
+</style>
+ <script type="text/javascript">
+        $(function(){
+           $(".next").click(function(){
+               $(".list").animate({marginLeft:"-360px"},1000,function(){
+                   $(".list ul").eq(0).appendTo($(".list"));
+                   $(this).css("marginLeft","0")
+               })
+           });
+            $(".prev").click(function(){
+                $(".list ul:last").prependTo($(".list"));
+                $(".list").css("marginLeft","-360px");
+                $(".list").animate({marginLeft:0},1000);
+            });
+        });
+        //设置默认地址
+        $(function(){
+            $('.defaul_btn').click(function(){
+                var id=$(this).next().text();
+                var a=$(this);
+                $.post("{:U('Orders/defaultAddress')}",{id:id},function(res){
+                    if(res.status==1){
+                        layer.msg("设置成功",{time:500});
+                        a.parent('.Operate').parent('.adderss_operating').parent('.confirm')
+                                .prepend("<div class='default'>默认地址</div>");
+                        a.parent().parent().parent().siblings().children("div:contains('默认地址')").detach();
+                    }else{
+                        layer.msg("设置失败",{time:500});
+                    }
+                })
+
+            })
+        })
+
+
+        $(document).ready(function () {
+            window.asd = $('.SlectBox').SumoSelect({ csvDispCount: 3 });
+            window.test = $('.testsel').SumoSelect({okCancelInMulti:true });
+        });
+
+
+
+    </script>
+<body>
+<!--顶部样式-->
+<include file="Shop/Home/common/header.html"/>
+<!--菜单导航样式-->
+<include file="Shop/Home/Common/topMenu.html"/>
+
+
+<div id="Orders" class="Inside_pages  clearfix">
+<div class="Process"></div>
+  <div class="Orders_style clearfix">
+     <div class="address clearfix">
+       <div class="title">收货人信息</div>
+          <div class="adderss_list clearfix">
+            <div class="title_name">选择收货地址 <a href="javascript:;" class="addAddress" onclick="onclick_open()">+使用新地址</a></div>
+            <div class="list" id="select">
+                <div class="hd">
+                    <a class="prev" href="javascript:void(0)">&lt;</a>
+                    <a class="next" href="javascript:void(0)">&gt;</a>
+                </div>
+                <volist name="addressList" id="val">
+                    <ul class="confirm">
+                        <div class="adderss_operating">
+                         <div style="display: none">{$val.id}</div>
+                         <div class="Operate">
+                             <a href="javascript:;" class="delete_btn"></a><div style="display: none;">{$val.id}</div>
+                             <a href="javascript:;" class="modify_btn"></a><div style="display: none;">{$val.id}</div>
+                             <a href="javascript:;" class="defaul_btn">设为默认</a><div style="display: none;">{$val.id}</div>
+                         </div>
+                        </div>
+                        <div class="user_address">
+                            <li>{$val.name}</li>
+                            <li>{$val.address}{$val.detailaddress}</li>
+                            <li class="Postcode">{$val.code}</li>
+                            <li>{$val.mobile}</li>
+                        </div>
+                    </ul>
+                </volist>
+            </div>
+           </div>
+      <!--收货地址样式-->
+    <!-- <div class="Shipping_address">
+       <ul class="detailed">
+        <li><label>收货人姓名</label><span>张晓</span></li>
+        <li><label>电子邮件</label><span>4567454@qq.com</span></li>
+        <li><label>详细地址</label><span>四川成都武侯区簇景西路20号3栋1单元302号</span></li>
+        <li><label>邮政编码</label><span></span></li>
+        <li><label>移动电话</label><span></span></li> 
+         <li><label>固定电话</label><span></span></li>        
+       </ul>
+     </div>-->
+     </div>       
+        <form class="form" method="post">  
+        <fieldset> 
+     <!--快递选择-->
+     <div class="express_delivery">
+       <div class="title_name">选择快递方式</div>
+    
+        <ul class="dowebok">
+        <li><input type="radio" name="radio" data-labelauty="韵达快递" value="韵达快递">
+          <div class="description">
+           <em class="arrow"></em>
+           <p>免费</p>
+           <p>资费：<em>0</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+           <!--<p><a href="#">点击查看是否在配送范围内</a></p>-->
+          </div>
+        </li>
+        <li>
+            <input type="radio" name="radio" data-labelauty="中通快递" value="中通快递">
+            <div class="description">
+               <em class="arrow"></em>
+               <p>需要额外支付5元运费</p>
+               <p>资费：<em>5</em>元</p>
+            </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="申通快递" value="申通快递">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付5元运费</p>
+             <p>资费：<em>5</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+          </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="邮政EMS" value="邮政EMS">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付5元运费</p>
+             <p>资费：<em>5</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+          </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="圆通快递" value="圆通快递">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付5元运费</p>
+             <p>资费：<em>5</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+          </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="国通快递" value="国通快递">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付5元运费</p>
+             <p>资费：<em>5</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+          </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="顺丰快递" value="顺丰快递">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付20元运费</p>
+             <p>资费：<em>20</em>元</p>
+           <!--<p class="Note">满88元包邮</p>-->
+          </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="邮政小包" value="邮政小包">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付5元运费</p>
+             <p>资费：<em>5</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+          </div>
+        </li>
+        <li><input type="radio" name="radio" data-labelauty="天天快递" value="天天快递">
+         <div class="description">
+           <em class="arrow"></em>
+             <p>需要额外支付5元运费</p>
+             <p>资费：<em>5</em>元</p>
+           <!--<p class="Note">满68元包邮</p>-->
+          </div>
+        </li>
+        </ul>       
+      
+     </div>
+    
+     <!--付款方式-->
+     <div class="payment">
+      <div class="title_name">支付方式</div>
+       <ul>
+        <li><input type="radio" name="radio1" data-labelauty="余额支付" value="余额支付"></li>
+        <!--<li><input type="radio" name="radio1" data-labelauty="支付宝"></li>
+        <li><input type="radio" name="radio1" data-labelauty="财付通"></li>
+        <li><input type="radio" name="radio1" data-labelauty="银联支付"></li>
+         <li><input type="radio" name="radio1" data-labelauty="货到付款"></li>-->
+       </ul>
+     </div>
+      <!--发票样式-->
+     <!--<div class="invoice_style">
+       <ul>
+         <li class="invoice_left"><input name="" type="checkbox" value="" data-labelauty="是否开发票"/> </li>
+         <li class="invoice_left"><select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+              <option disabled="disabled" selected="selected">发票类型</option>
+              <option value="办公用品">办公用品</option>
+              <option value="食品">食品</option>
+              <option value="20元红包">20元红包</option>
+              <option value="50元红包">50元红包</option>
+              <option value="100元红包">100元红包</option>
+              <option value="200元红包">200元红包</option>
+            </select>
+         </li>
+         <li class="invoice_left">发票抬头
+         <input name="" type="text" class="text_info" /></li>
+         <li class="invoice_left">
+         <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+              <option disabled="disabled" selected="selected">发票内容</option>
+              <option value="办公用品">办公用品</option>
+              <option value="食品">食品</option>
+              <option value="数码配件">数码配件</option>
+              <option value="电脑">电脑</option>
+              <option value="手机">手机</option>
+              <option value="200元红包">200元红包</option>
+            </select>
+         
+         </li>
+        </ul>
+     </div>-->
+     <!--红包列表-->
+     <div class="Product_List">
+     <!--<div class="envelopes">
+     选择已有红包<select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                    <option disabled="disabled" selected="selected">选择红包金额</option>
+                    &lt;!&ndash;placeholder&ndash;&gt;
+                    <option value="5元红包">5元红包</option>
+                    <option value="10元红包">10元红包</option>
+                    <option value="20元红包">20元红包</option>
+                    <option value="50元红包">50元红包</option>
+                    <option value="100元红包">100元红包</option>
+                    <option value="200元红包">200元红包</option>
+                </select>
+                或者输入红包序列号<input name="" type="text" class="text_number" /><input type="submit"  class="verification_btn" value="验证序列号"/>
+     </div>-->
+         <!--商品-->
+      <table>
+       <thead><tr class="title"><td class="name">商品名称</td><td class="price">商品价格</td><td class="Preferential">优惠价</td><td class="Quantity">购买数量</td><td class="Money">金额</td></tr></thead>
+       <tbody>
+       <volist name="goodsList" id="goods">
+            <tr>
+                <td class="Product_info">
+                 <a href="#"><img src="/uploads/n2/{$goods.image|explode=',',###|array_shift}"  width="100px" height="100px"/></a>
+                 <a href="#" class="product_name" style="text-align: center;line-height: 100px">{$goods.goodsname}</a>
+                 </td>
+                <td><i>￥</i>{$goods.saleprice}</td>
+                <td><i>￥</i>{$goods.saleprice}</td>
+                <td id="buynum">{$goods.buynum}</td>
+                <td class="Moneys"><i>￥</i>{$goods[saleprice]*$goods.buynum}</td>
+            </tr>
+       </volist>
+       </tbody>
+      </table>
+         <!--留言-->
+      <div class="Pay_info">
+       <label>订单留言</label><input name="message" value="" type="text"  onkeyup="checkLength(this);" class="text_name " />  <span class="wordage">剩余字数：<span id="sy" style="color:Red;">50</span></span>
+      </div>
+      <!--价格-->
+      <div class="price_style">
+      <div class="right_direction">
+        <ul>
+         <li><label>商品总价</label><i>￥</i><span class="total">{$goodsList[0].prices}</span></li>
+         <li><label>优惠金额</label><i>￥</i><span>00.00</span></li>
+         <li><label>配&nbsp;&nbsp;送&nbsp;&nbsp;费</label><i>￥</i><span class="youfei">0</span></li>
+         <li class="shiji_price"><label>实&nbsp;&nbsp;付&nbsp;&nbsp;款</label><i>￥</i><span>{$goodsList[0].prices}</span></li>
+        </ul>   
+        <div class="btn">
+            <div style="display: none">{$goodsList[0][oid]}</div>
+            <input name="" type="button" value=""  class="return_btn" style="background: white;cursor: default"/>
+            <input name="submit" type="button" value="提交订单" class="submit_btn"/>
+
+        </div>
+         <div class="integral right">待订单确认后，你将获得<span>{$goodsList[0]['prices']/10}</span>积分</div>
+      </div>
+      </div>
+     </div>  
+     </fieldset>
+        </form>
+  </div>
+</div>
+
+</div>
+  <!--底部样式-->
+
+  <!--底部-->
+<include file="Shop/Home/common/footer.html"/>
+ <!--底部样式-->
+
+
+
+<!--弹窗添加收货地址-->
+<div class="shade_content">
+    <div class="col-xs-12 shade_colse">
+        <button onclick="javascript:onclick_close();">x</button>
+    </div>
+    <div class="nav shade_content_div">
+        <div class="col-xs-12 shade_title">
+            新增收货地址
+        </div>
+        <div class="col-xs-12 shade_from">
+            <form action="{:U('Member/addAddress')}" method="post" id="formAddress">
+                <div class="col-xs-12">
+                    <span style="color: red">*</span>
+                    <span class="span_style" >地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</span>
+                    <input class="input_style" type="" name="address" id="region" value="{$address}" placeholder="&nbsp;&nbsp;请输入您的所在地区" />
+                    <span style="color: red"></span>
+                </div>
+                <div class="col-xs-12">
+                    <span style="color: red">*</span>
+                    <span class="span_style" >详细地址</span>
+                    <input class="input_style" type="" name="detailaddress" id="address" value="" placeholder="&nbsp;&nbsp;请输入您的详细地址" />
+                    <span style="color: red"></span>
+                </div>
+                <div class="col-xs-12">
+                    <span class="span_style" >邮政编号</span>
+                    <input class="input_style" type="" name="code" id="number_this" value="" placeholder="&nbsp;&nbsp;请输入您的邮政编号" />
+                </div>
+                <div class="col-xs-12">
+                    <span style="color: red">*</span>
+                    <span class="span_style" class="span_sty" >姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                    <input class="input_style" type="" name="name" id="name_" value="" placeholder="&nbsp;&nbsp;请输入您的姓名" />
+                    <span style="color: red"></span>
+                </div>
+                <div class="col-xs-12">
+                    <span style="color: red">*</span>
+                    <span class="span_style" id="">手机号码</span>
+                    <input class="input_style" type="" name="mobile" id="phone" value="" placeholder="&nbsp;&nbsp;请输入您的手机号码" />
+                    <span style="color: red"></span>
+                </div>
+                <div class="col-xs-12">
+                    <span style="color: red;">带&nbsp;*&nbsp;的为必填选项</span>
+                </div>
+                <div class="col-xs-12">
+                    <input class="btn_remove" type="button"  onclick="javascript:onclick_close();" value="取消" />
+                    <input type="button" class="sub_set" id="sub_setID" value="保存" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="__SKIN__/Home/js/jquery.validate.min.js" type="text/javascript"></script>
+<!--字段必填验证-->
+<script type="text/javascript">
+    $(function(){
+        $("#sub_setID").click(function(){
+            var username=$(".login_name").children().text();
+            if(username==''){
+                alert('请登录');
+            }else{
+                if ($("input[name='address']").val() == '') {
+                    $("input[name='address']").next().text("请填写收货地区");
+                };
+                if($("input[name='detailaddress']").val()==''){
+                    $("input[name='detailaddress']").next().text("请填写详细地址");
+                };
+                if($("input[name='name']").val()==''){
+                    $("input[name='name']").next().text("请填写收件人姓名");
+                };
+                if($("input[name='mobile']").val()==''){
+                    $("input[name='mobile']").next().text("请填写正确的联系方式");
+                }
+            }
+        })
+        $("input[name='address1']").live('blur',function() {
+            if ($(this).val() == '') {
+                $(this).next().text("请填写收货地区");
+            } else {
+                $(this).next().text("");
+            }
+        })
+        $("input[name='detailaddress']").live('blur',function() {
+            if($(this).val()==''){
+                $(this).next().text("请填写详细地址");
+            } else {
+                $(this).next().text("");
+            }
+        })
+        $("input[name='name']").live('blur',function() {
+            if($(this).val()==''){
+                $(this).next().text("请填写收件人姓名");
+            } else {
+                $(this).next().text("");
+            }
+        })
+        $($("input[name='mobile']")).live('blur',function() {
+            if($(this).val()==''){
+                $(this).next().text("请填写联系方式");
+            } else {
+                $(this).next().text("");
+            }
+        })
+
+    })
+</script>
+
+<script type="text/javascript">
+    $(".dowebok li").click(function(){
+        var youfei=$(this).children("div").children("p").children().text();
+        $(".youfei").text(youfei);
+        var totalprice=$('.total').text();
+        $('.shiji_price span').text(totalprice*1+youfei*1);
+    })
+</script>
+<!--收货地址管理-->
+<script type="text/javascript">
+    //添加收货地址关闭
+    function onclick_close() {
+        var shade_content = $(".shade_content");
+        var shade = $(".shade");
+        layer.confirm('确认关闭么！该收货信息将不会保存', {
+                    btn:['确定','取消']
+                },function(){
+                    layer.closeAll();
+                    shade_content.hide();
+                    shade.hide();
+                },function(){
+                }
+        )
+    };
+    //打开收货地址
+    function onclick_open() {
+        $("input[name='address']").val('')
+        $("input[name='detailaddress']").val('')
+        $("input[name='code']").val('')
+        $("input[name='name']").val('')
+        $("input[name='mobile']").val('')
+        $("input[name='id']").detach();
+        $(".shade").show();
+        var input_out = $(".input_style");
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shadeClose: false,
+            skin: 'yourclass',
+            content: $('.shade_content')
+        });
+
+    };
+
+    //添加收货地址
+    $(function(){
+        $("#sub_setID").click(function(){
+            $.post("{:U('Orders/addAddress')}",$("#formAddress").serialize(),function(res){
+
+                if(res.status==1){
+                    layer.confirm("更换收货地址后您需要重新确认订单",{
+                        btn:['确定','取消']
+                    },function(){
+                        location.reload();
+                    },function(){})
+
+                }else if(res.status==0){
+                    layer.msg("添加失败,请检查填写是否正确",{icon:7});
+                }
+            })
+        })
+    });
+    //第一个默认选中
+    $(function(){
+        $('.list ul').eq(0).addClass("active");
+        $('.list ul').eq(0).prepend("<div class='default'>默认地址</div>");
+    });
+    //删除收货地址
+    $(function(){
+        $(".delete_btn").click(function(){
+            var id=$(this).next().text();
+            layer.confirm("确认删除该收货地址？",{btn:['删除','取消']},function(){
+
+                $.post("{:U('Orders/delAddress')}",{id:id},function(res){
+                    if(res.status==1){
+                        layer.msg("删除成功",{icon:5});
+                        location.reload();
+                    }else{
+                        layer.msg("删除失败，请稍候再试",{icon:4})
+                    }
+                })
+            })
+
+        })
+    });
+    //修改收货地址
+    $(".modify_btn").click(function(){
+        var id=$(this).next().text();
+        $("#formAddress").prepend("<input type='hidden' name='id' value='"+id+"'/>");
+        $.post("{:U('Orders/updateAddress')}",{id:id},function(res){
+            $("input[name='address']").val(res['address'])
+            $("input[name='detailaddress']").val(res['detailaddress'])
+            $("input[name='code']").val(res['code'])
+            $("input[name='name']").val(res['name'])
+            $("input[name='mobile']").val(res['mobile'])
+
+
+            layer.open({
+                type: 1,
+                title: false,
+                closeBtn: 0,
+                shadeClose: false,
+                skin: 'yourclass',
+                content: $('.shade_content')
+            })
+        },'json')
+    })
+
+
+
+ //添加收货地址结束
+
+ //提交订单
+    $(function(){
+        $('.submit_btn').click(function(){
+
+            var message = $("input[name='message']").val();
+            var deliver = $("input:radio:checked").val();
+            var oid = $("input[name='submit']").prev().prev().text();
+            var aid = $(".active .adderss_operating").children().eq(0).text();
+            var money = $('.shiji_price span').text();
+            var jifen = $('.integral span').text();
+            //先判断是否设置了支付密码
+            $.post("{:U('Orders/ispaypwd')}",function(res){
+                //如果已经设置了
+                if(res.status==1){
+                    var a=$(".Postcode").prev().text();
+                    var b=$("input[name='radio1']:checked").val();
+                    if(a){  //选择收货地址
+                        if(b) {  //选择付款方式
+                            $.post("{:U('Orders/addorders')}", {message: message, deliver: deliver, aid: aid, oid: oid},
+                                    function (res) {
+                                        if (res.status == 1) {
+                                            layer.load(2, {time: 800});
+                                            setTimeout(a, 800);
+                                            function a() {
+                                                layer.prompt({
+                                                    title: '输入支付密码，并确认',
+                                                    formType: 1 //prompt风格，支持0-2
+                                                }, function (pwd) {
+                                                    $.post("{:U('Orders/payorders')}", {pwd: pwd, money: money, jifen: jifen,oid:oid}, function (res)
+                                                    {
+                                                        if (res == 0) {
+                                                            layer.load();
+                                                            setTimeout(b, 800);
+                                                            function b() {
+                                                                location.href = "{:U('Orders/ordersfinish')}"
+                                                            }
+                                                        } else if (res == 2) {
+                                                            layer.msg("密码错误，今天还有两次机会", {icon: 2});
+                                                        } else {
+                                                            layer.confirm("余额不足", {btn: ['去充值', '放弃付款']}, function () {
+                                                                location.href = "{:U('Member/memberCZ')}?oid="+oid;
+                                                            })
+                                                            $(".layui-layer-btn1").click(function(){location.href = "{:U('Member/memberOrderlist')}";})
+                                                        }
+                                                    })
+
+                                                })
+                                                $(".layui-layer-btn1").click(function(){location.href = "{:U('Member/memberOrderlist')}";})
+                                            }
+
+                                        }
+                                        else {
+                                            location.reload
+                                        }
+
+                                    })
+                        }else{
+                            layer.msg("请选择支付方式",{icon:7})
+                        }
+                    }else{
+                        layer.msg("请选择收货地址",{icon:7})
+                    }
+                }else{   //如果没有支付密码，前去设置
+                    layer.confirm(res.info,{btn:['设置','取消']},function(){
+                        location.href = "{:U('Member/memberEdit')}?oid="+oid;
+                    })
+                    $(".layui-layer-btn1").click(function(){location.href = "{:U('Member/memberOrderlist')}";})
+                };
+            });
+        })
+    })
+
+
+//商品数量限制
+function checkLength(which) {
+    var maxChars = 50; //
+    if(which.value.length > maxChars){
+        alert("您出入的字数超多限制!");
+        // 超过限制的字数了就将 文本框中的内容按规定的字数 截取
+        which.value = which.value.substring(0,maxChars);
+        return false;
+    }else{
+        var curr = maxChars - which.value.length; //250 减去 当前输入的
+        document.getElementById("sy").innerHTML = curr.toString();
+        return true;
+    }
+}
+
+
+</script>
+<script>
+$(function(){
+    $(':input').labelauty();
+});
+</script>
+</body>
+</html>

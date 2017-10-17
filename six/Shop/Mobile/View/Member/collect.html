@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>收藏夹</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+    <script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+<!-- <script src="js/1.js"></script> -->
+
+    <script type="text/javascript">
+        $(function(){
+
+
+
+
+            $(".fr").click(function(){
+                if($(this).text()=='编辑'){
+                    $("span:contains('删除')").css('display','inline-block');
+                    $(this).text('完成');
+                }else{
+                    $("span:contains('删除')").css('display','none');
+                    $(this).text('编辑');
+                }
+            })
+
+
+            //删除收藏
+            $(".del").click(function() {
+                var colid=$(this).prev().text();
+                $.post("{:U('Member/delcollect')}",{id:colid},function(res){
+                     layer.open({
+                     content:res.info,
+                     skin:'msg',
+                     time:1
+                     })
+                     if(res.status==1){
+                         $.post("{:U('Member/collect')}",function(res1){
+                            $('.product').html(res1);
+                         })
+                     }
+                 })
+            })
+
+
+        })
+    </script>
+
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+    <style type="text/css">
+        .del{
+            width: 10%;float: right;margin-top: -50px;display: none;
+        }
+    </style>
+
+<link rel="stylesheet" type="text/css" href="__MOBILE__/Mobile/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__MOBILE__/Mobile/css/collection.css"/>
+
+    <style>
+        .hback{
+            margin-right: 20px;
+            font-size: 24px;
+            font-weight: 900;
+        }
+        .collection .left{
+            height: 40px;
+        }
+    </style>
+
+</head>
+<!-- 头部开始 -->
+<body>
+<div class="collection clearfix">
+
+    <div class="wrapper">
+        <p class="left fl"><a href="javascript:history.back();" class="hback"><</a>您收藏了{$collect|count}个商品</p>
+        <p class="right fr">编辑</p>
+    </div>    
+</div>
+
+<!-- 产品详情 -->
+<div class="product ">
+    <volist name="collect" id="goods">
+        <div class="pro1 clearfix">
+            <a href="{:U('Goods/details',array('id'=>$goods['gid']))}" style="width: 90%">
+                <img src="/uploads/n2/{:reset(explode(',',$goods['goods']['image']))}" alt="">
+                <p class="fl" style="width: 70%;height: 40px">{$goods['goods']['goodsname']}</p>
+                <p class="mony fl">￥{$goods['goods']['saleprice']}</p>
+            </a>
+            <div style="display: none">{$goods['id']}</div>
+            <span class="del">删除</span>
+        </div>
+    </volist>
+</div>
+
+<!-- 底部导航 STRAT -->
+<include file="Shop/Mobile/Common/footer.html" />     
+<!-- 底部导航 STRAT -->
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+
+
+
+
+div.mod-main .mc {
+    overflow: hidden;
+
+}
+div.mod-main.mc{
+    overflow: visible;
+}
+
+.mod-main .mt h3 {
+    float: left;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: #0D93BF;
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.doing .s-num{  background-position: -23px 0;  }
+
+.stepflex dl {  float: left;  position: relative;  width: 160px;  top: 80px;  border-top: 5px solid #ccc;  }
+
+
+
+dl.doing {  border-top-color: #7abd54;  }
+
+
+input, textarea, keygen, select, button {  margin: 0em;
+    font: normal normal normal 13.3333330154419px/normal Arial;
+    color: initial;  letter-spacing: normal;  word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;  display: inline-block;
+    text-align: start;
+}
+div {
+    display: block;
+}
+.mc{
+    overflow: hidden;
+    zoom: 1;
+}
+
+.form .item:after {  content: ".";  display: block;  height: 0;  clear: both;  visibility: hidden;  }
+
+.form .item {
+
+    display: block;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+#sflex04 {
+    width: 640px;
+
+}
+.stepflex {
+
+    display: block;
+}
+.form {
+    float: right;
+}
+.stepflex {
+
+    text-align: center;
+    margin: 30px auto;
+
+}
+
+div.form .itxt, div.form .text {  padding: 8px 23px 8px 5px; height: 15px;  width: 150px; }
+
+
+h4 {  display: block;  -webkit-margin-before: 1.33em;  -webkit-margin-after: 1.33em;  -webkit-margin-start: 0px;  -webkit-margin-end: 0px;  font-weight: bold;  }  input#authCode{  float: left;  }  div.mt{  margin-top: 50px;  }  .mt{  float: left;  }
+.form .item span.label { float: left;  height: 30px;  line-height: 20px;  padding: 6px 0;  width: 50px;  text-align: right;  }
+div.form.formno{  margin-top: 180px;  }
+
+
+.btn-5, .btn-6, .btn-7, .btn-8 {
+    background-color: #f5fbef;
+    background-image: -moz-linear-gradient(top,#f5fbef,#eaf6e2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f5fbef),color-stop(1,#eaf6e2));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fbef', endColorstr='#eaf6e2', GradientType='0');
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fbef', endColorstr='#eaf6e2');
+    background-image: linear-gradient(to bottom,#f5fbef 0,#eaf6e2 100%);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #bfd6af;
+    padding: 2px 14px 3px;
+    color: #323333;
+}
+
+/*
+label#verify-error,label#username-error{  font-size: 13px;  color:#ee2223;  margin-left: 10px;  }*/

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>管理员编辑</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link href="__ADMINSKIN__/css/mine.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="__ADMINSKIN__/js/jQuery-1.8.2.min.js"></script>
+    <script type="application/javascript" src="__PUBLIC__/Admin/js/layer.js"></script>
+    <script type="application/javascript" src="__PUBLIC__/Admin/js/jquery.form.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("select[name='province']").change(function(){
+                $("#s2").css("display","inline-block");
+            })
+            $("select[name='city']").change(function(){
+                $("#s3").css("display","inline-block");
+            })
+        //管理员编辑
+            $("input[name='baocun']").click(function(){
+                    $.post("{:U('Role/update_role')}",$('#role_form').serialize(),function(res){
+                        if(res.status==1){
+                            layer.msg('正在跳转到管理员列表',{
+                                icon:1,
+                                time:2000
+                            },function(){
+                                location.href="{:u('roleList')}";
+                            })
+                        }else{
+                            layer.msg('数据未改变化或账号已存在！',{
+                                icon:2,
+                                time:2000
+                            },function(){
+                                location.reload('update_role');
+                            })
+                        }
+                    },'json');
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+<div class="div_head">
+            <span>
+                <span style="float:left">当前位置是：管理员管理->管理员编辑</span>
+                <span style="float:right;margin-right: 8px;font-weight: bold">
+                    <a style="text-decoration: none" href="{:U('Role/roleList')}">【返回】</a>
+                </span>
+            </span>
+</div>
+<div></div>
+
+<div style="font-size: 13px;margin: 10px 5px">
+    <form action="{:U('Role/update_role')}" method="post" id="role_form" enctype="multipart/form-data">
+        <table border="1" width="100%" class="table_a">
+            <tr>
+                <td style="text-align: right;width: 120px">* 账号：</td>
+                <td><input type="text" name="username" value="{$user['username']}" /></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;width: 120px">* 密码：</td>
+                <td><input type="password" name="password" placeholder="不填写则数据不发生改变!" value="" /></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;width: 120px">* 确认密码：</td>
+                <td><input type="password" name="password2" placeholder="不填写则数据不发生改变！" value="" /></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;width: 120px">* 等级：</td>
+                <td>
+ <!--                   <select name="level">
+                       <if condition="$user['level'] eq '普通管理员'">
+                           <option value="">请选择</option>
+                           <option value="普通管理员" selected >普通管理员</option>
+                           <option value="超级管理员">超级管理员</option>
+                           <else />
+                           <option value="">请选择</option>
+                           <option value="普通管理员"  >普通管理员</option>
+                           <option value="超级管理员" selected>超级管理员</option>
+                       </if>
+                    </select>-->
+                    <volist name="group" id="v" empty="">
+                        <input type="checkbox" value="{$v['id']}" id="key{$v['id']}" name="gid[]" {$v["status"]==1?"checked":""}/>
+                        <label for="key{$v['id']}">{$v["title"]}</label>&nbsp;&nbsp;
+                    </volist>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--查看此处id-->
+                    <input type="hidden" name="id" value="{$user['id']}"/>
+                    <input type="button" value="保存" name="baocun" class="Bcun" style="padding-left: 6px;cursor: pointer;" />
+                    <input type="reset" value="重置" name="" style="cursor: pointer;" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

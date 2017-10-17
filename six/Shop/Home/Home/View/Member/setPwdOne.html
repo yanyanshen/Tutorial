@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+    <link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/Orders.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/jd.css" rel="stylesheet" type="text/css"/>
+    <link href="__SKIN__/Home/css/jd-1.css" rel="stylesheet" type="text/css"/>
+    <link href="__SKIN__/Home/css/jd-2.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<include file="Shop/Home/Common/header.html"/>
+<include file="Shop/Home/Common/topMenu.html"/>
+<style>
+    .s-num{
+        background-image:url(__SKIN__/Home/imgs/jd/step2013.png);
+    }
+</style>
+
+<body>
+<form method="post" action="{:U('member/send_email')}" name="form1" id="form1">
+    <input type="hidden" name="id" value="{$data.id}"/>
+    <div id="container" style="width: 85%; background-color: #FFFFFF;">
+        <div id="content">
+            <div class="mod-main mod-comm">
+                <div class="mt">
+                    <h3>找回密码</h3>
+                </div>
+                <div class="mc">
+                    <div id="sflex04" class="stepflex ">
+                        <dl class="first done">
+                            <dt class="s-num">1</dt>
+                            <dd class="s-text">填写账户名<s></s><b></b></dd>
+                            <dd></dd>
+                        </dl>
+                        <dl class="normal doing">
+                            <dt class="s-num">2</dt>
+                            <dd class="s-text">验证身份<s></s><b></b></dd>
+                        </dl>
+                        <dl class="normal">
+                            <dt class="s-num">3</dt>
+                            <dd class="s-text">设置新密码<s></s><b></b></dd>
+                        </dl>
+                        <dl class="last">
+                            <dt class="s-num">&nbsp;</dt>
+                            <dd class="s-text">完成<s></s><b></b></dd>
+                        </dl>
+                    </div>
+                    <div class="form formno" style="width: 65%;margin-left: 30%;">
+                        <div class="item">
+                            <span class="label">请选择验证身份方式：</span>
+                            <div class="fl">
+                                <select class="selt" id="type" name="" onchange="selectVerifyType();">
+                                    <option value="mobile">电子邮箱</option>
+                                </select>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                        <div id="mobileDiv">
+                            <div class="item">
+                                <span class="label">验证邮箱：</span>
+                                <div class="fl">
+                                    <strong class="ftx-un"> {$data['email']|substr_replace='***',3,4}
+                                    </strong>
+                                    <label class="blank invisible" id="username_succeed"></label>
+                                    <div class="clr"></div>
+                                    <!--  &lt;!&ndash; <div class="msg-text">若该手机号无法接收验证短信，请拨打客服电话400-606-5500转7申诉更改验证手机</div> &ndash;&gt;-->
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+
+                            <div class="item">
+                                <span class="label">请输入已验证邮箱：</span>
+                                <div class="fl">
+                                    <strong id="mobileSpan" class="ftx-un" ><input class="itxt" name="email" tabindex="1" id="email"  type="text" value="" ><span id="chkmsg"></span></strong>
+                                    <!-- <div class="clr"></div>-->
+                                    <div class="error" id="email-error"></div>
+                                    <!-- <div class="msg-text">若该手机号无法接收验证短信，请拨打客服电话400-606-5500转7申诉更改验证手机</div> -->
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+
+                            <div class="item">
+                                <!--  <span class="label">请填写您的邮箱：</span>-->
+                                <div class="fl">
+                                    <!--<input class="itxt" name="email" tabindex="1" id="email"  type="text" value="{//$users['email']}" disabled="disabled">-->
+                                    <!--<a href="javascript:sendFindPwdCode('');" id="sendMobileCode" class="btn btn-10 ml10"><s></s>获取邮箱校验码</a>-->
+                                    <div class="clr"></div>
+                                    <div id="code_error" class="msg-error"></div>
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                            <div class="item">
+                                <span class="label">&nbsp;</span>
+                                <div class="fl">
+                                    <input type="button" class="btn-10"  value="获取邮箱校验码" style="cursor: pointer" id="btn"/>
+                                    <!--   <input type="button" class="btn" id="sub_btn" value="提 交"/>
+-->
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<script src="__SKIN__/Home/js/jQuery.1.10.2.min.js " type="text/javascript"></script>
+<script src="__SKIN__/Home/js/gt.js"  type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jQuery.validate.min.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/layer/layer.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+        var email= $('#form1').validate({
+            rules:{
+                email:{
+                    required:true,
+                    email:true
+                }
+            },
+            messages:{
+                email:{
+                    required:'请填写邮箱',
+                    email:'邮箱格式不正确'
+                }
+            }
+        }) ;
+
+
+        $('.btn-10').click(function(){
+            if(email.form()){
+                $.post("{:U('member/send_email')}",$('#form1').serialize(),function(res){
+                    var btn=$('#btn').val();
+                    var time=60;
+                    if(res.status==1){
+                        layer.alert('邮件已发往您的邮箱 请注意接收',{skin:'layui-layer-lan',closeBtn:0,anim:4})
+                        btn.attr("disabled", true);
+                        btn.val(time <= 0 ? "发送邮箱校验码" : ("" + (time) + "秒后可发送"));
+                        var hander = setInterval(function() {
+                            if (time <= 0) {
+                                clearInterval(hander); //清除倒计时
+                                btn.val("发送邮箱校验码");
+                                btn.attr("disabled", false);
+                                return false;
+                            }else {
+                                btn.val("" + (time--) + "秒后可发送");
+                            }
+                        }, 1000);
+                    }else{
+                        layer.msg(res.info)
+                    }
+                },'json')
+            }
+        })
+    })
+
+
+</script>
+<script>
+    /* $(function(){
+      $(".btn-10").click(function(){
+            var id= $("input[name='uid']").val();
+            var email= $("input[name='email']").val();
+            var preg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*//*; //匹配Email
+            if(email=='' || !preg.test(email)){
+                $("#chkmsg").html("请填写正确的邮箱！");
+            }else{
+                $(".btn-10").attr("disabled","disabled").val('提交中.....').css("cursor","default");
+                $.post("{:U('member/send_email')}",{email:email,id:id},function(msg){
+                    if(msg=='noreg'){
+                        $("#chkmsg").html("该邮箱尚未注册！");
+                        $(".btn-10").removeAttr("disabled").val('提 交').css("cursor","pointer");
+                    }else{
+                        $(".demo").html("<h3>"+msg+"</h3>");
+                    }
+                });
+            }
+        });
+    })*/
+</script>
+<include file="Shop/Home/Common/rightMenu.html"/>
+<!--底部-->
+<include file="Shop/Home/Common/footer.html"/>
+<!--右侧菜单栏购物车样式-->
+i</html>

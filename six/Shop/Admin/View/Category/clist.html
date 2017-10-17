@@ -1,0 +1,53 @@
+
+    <table class="table_a" border="1" width="100%">
+        <tbody><tr style="font-weight: bold;">
+            <td>序号</td>
+            <td>分类名称</td>
+            <td>分类id</td>
+            <td>分类父id</td>
+            <td>上级分类</td>
+            <td>是否展示</td>
+            <td align="center">操作</td>
+        </tr>
+
+        <volist name="info" id="value" key="k"  empty="$empty">
+            <tr id="product1">
+                <td>{$k}</td>
+                <td><a href="#" style="text-decoration: none">{$value['catename']}</a></td>
+                <td>{$value['id']}</td>
+                <td>{$value['pid']}</td>
+                <td>{$value['pathname']}</td>
+                <td><a href="#" style="text-decoration: none">{$value['flag']==1?展示:下架}</a></td>
+                <!--<td><a onclick="confirm('已展示！')" href="{:U('Category/zhanshi',array('id'=>$value['id']))}"  style="text-decoration: none" >展示</a>-->
+                <!--<a href="{:U('Category/xiajia/',array('id'=>$value['id']))}" style="text-decoration: none" onclick="confirm('已下架！')">下架</a>-->
+                <!--<a href="{:U('Category/del',array('id'=>$value['id']))}" style="text-decoration: none" onclick="return confirm('确定要删除吗？')">删除</a>-->
+                <!--</td>-->
+                <td>
+                    <a href="#" style="text-decoration: none" class="lay" name="{$value['id']}">{$value['flag']==1?下架:展示}</a>
+                    <script>
+                        $(function(){
+                            $('.lay').click(function(){
+                                var a=$(this).attr("name");
+                                layer.confirm('真的要修改吗?', {icon: 3, title:'状态修改'}, function(index){
+                                    location.href="{:U('Category/replace')}?id="+a
+
+                                });
+//                layer.confirm('确定要下架吗?',{icon:9,title:'上下架操作'},function(index){
+//                    layer.msg('');
+//                });
+                            })
+                        })
+                    </script>
+                    <a href="{:U('Category/update',array('id'=>$value['id']))}" style="text-decoration: none">编辑</a>
+                    <a href="{:U('Category/del',array('id'=>$value['id']))}" style="text-decoration: none" onclick="return confirm('确定要删除吗？')">删除</a>
+                </td>
+            </tr>
+        </volist>
+        <notempty name="info">
+            <tr>
+                <td colspan="20" style="text-align: right;"><div class="div" style="text-align: center;text-decoration: none">{$pagelist}</div></td>
+            </tr>
+        </notempty>
+
+        </tbody>
+    </table>

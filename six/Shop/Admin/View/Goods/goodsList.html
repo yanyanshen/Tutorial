@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>会员列表</title>
+
+        <link href="__ADMINSKIN__/css/mine.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="__ADMINSKIN__/js/jQuery-1.8.2.min.js"></script>
+        <!--//-->
+        <!--<script type="text/javascript" src="__ADMINSKIN__/js/jquery-1.8.3.min.js"></script>-->
+        <!--<script type="text/javascript" src="__ADMINSKIN__/js/slimtable.min.js"></script>-->
+        <!--<link rel="stylesheet" href="__ADMINSKIN__/css/slimtable.css">-->
+        <!--//-->
+        <script type="text/javascript" src="__ADMINSKIN__/js/jquery.validate.min.js"></script>
+        <script src="__ADMINSKIN__/js/layer.js"></script>
+        <link rel="stylesheet" href="__ADMINSKIN__/css/OrderPage.css">
+
+
+
+
+
+
+
+        <style>
+            a{
+               text-decoration: none;
+
+            }
+            .current{
+
+                padding:0;
+
+            }
+        </style>
+
+        <script>
+
+
+            // $(function () {
+            //     $('#del').click(function () {
+            //        layer.confirm('您是如何看待前端开发？', {
+            //           btn: ['重要','奇葩'] //按钮
+            //         }, function(){
+            //           layer.msg('的确很重要', {icon: 1});
+            //         }, function(){
+            //           layer.msg('也可以这样', {
+            //             time: 20000, //20s后自动关闭
+            //             btn: ['明白了', '知道了']
+            //           });
+            //         });
+            //     })
+            // })
+
+             $(function(){
+            $('.del').click(function(){
+                var a=$(this).attr("name");
+                 layer.confirm('真的要删除吗?', {btn: ['删除','取消']}, function(index){
+                    // location.href="{:U('Goods/delete_goods')}?id="+a
+                    layer.closeAll();
+                     $.post("{:U('Goods/delete_goods')}",{id:a},function(res){
+                     // alert(res);
+                    if(res.status>0){
+                         layer.msg('删除成功');
+                         function url(){
+                                     location.href='{:U("Goods/goodsList")}';
+                                 }
+                          setTimeout(url,1000)
+                     }else{
+                          layer.msg('删除失败');
+                     }
+                  })
+
+                 });
+            })
+        })
+
+        </script>
+        <style>
+            .tr_color{background-color: #9F88FF}
+            .empty{font-size: 30px;position: absolute;top: 40px;color: red;}
+
+
+             #button {
+                 background-color: #3b95c8;
+                 display: inline-block;
+                 outline: none;
+                 cursor: pointer;
+                 color:#fff;
+                 border: 0px;
+                 text-align: center;
+                 text-decoration: none;
+                 font: 14px/100% Arial, Helvetica, sans-serif;
+                 padding: .5em 1.5em .55em;
+                 text-shadow: 0 1px 1px rgba(0,0,0,.5);
+                 -webkit-border-radius: .5em;
+                 -moz-border-radius: .5em;
+                 border-radius: .3em;
+                 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+                 -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+                 box-shadow: 0 1px 2px rgba(0,0,0,.2);
+             }
+            #button:hover {
+                text-decoration: none;
+            }
+            #button:active {
+                position: relative;
+                top: 1px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：商品管理-》商品列表</span>
+                <span style="float: right; margin-right: 8px; font-weight: bold;">
+                    <a style="text-decoration: none;" href="{:U('Goods/add_goods')}">【添加商品】</a>
+                </span>
+            </span>
+        </div>
+        <div></div>
+        <div class="div_search" style="position:relative;">
+            <span>
+                <form action="{:U('Goods/goodsList')}" method="get">
+                   商品名称: <input type="text" name="goodsname" value="">
+                    <!--本站价格:   <input type="text" name="markprice" value="">-->
+                    价&nbsp;&nbsp;格: 从 <input type="text" name="price1">到 <input type="text" name="price2">
+                    添加时间: 从 <input type="text" name="time1" id="time1" >
+                    到 <input type="text" name="time2" id="time2">
+                    <!--<input type="submit" value="搜索">-->
+                    <a href="javascript:goodsList();" class="searchBtn lf" id="button">搜索</a>
+                    
+                </form>
+                
+            </span>
+            <a href="{:U('Goods/expGoods')}" style="background:rgb(59,149,200);display:block;width:80px;height:30px;color:white;line-height:30px; position:absolute;right:0;top:0;" id="export">导出到EXCEL</a>
+        </div>
+        <div>
+            
+        </div>
+        <div id='div' style="font-size: 13px; margin: 10px 5px; position:relative;">
+            <form action=""></form>
+            <table class="table_a" border="1" width="100%" id="exampletable">
+                <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>商品名称</td>
+                        <td>库存</td>
+                        <td>市场价格</td>
+                        <td>本站价格</td>
+                        <td>图片</td>
+                        <td>品牌</td>
+                        <td>发布时间</td>
+                        <td>是否在售</td>
+                        <td align="center">操作</td>
+                    </tr>
+                <tbody class="tb">
+                    <volist name="info" id="vo" key="k" empty="$empty">
+                    <tr id="product1">
+                        <td>{$k}</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">{$vo.goodsname}</a></td>
+                        <td>{$vo.goodsnum}</td>
+                        <td>{$vo.saleprice}</td>
+                        <td>{$vo.markprice}</td>
+                        <td><img src="/uploads/n3/{$vo.image|default='default.jpg'|explode=',',###|array_shift}" height="60" width="60"></td>
+                        <td>{$vo.bname}</td>
+                        <td>{$vo.createtime|date='Y-m-d H:i:s',###}</td>
+                        <td>{$vo['is_show']==1?展示:下架}</td>
+                        <td>
+                            <a href="{:U('Goods/update_goods',array('id'=>$vo['id']),'')}" style="text-decoration: none">修改</a>
+                            <!-- <a id="del" href="{:U('Goods/delete_goods',array('id'=>$vo['id']),'')}" onclick="return confirm('确定要删除吗？')">删除</a> -->
+                            <a class="del" href="javascript:;" name="{$vo.id}" style="text-decoration: none">删除</a>
+
+                            <if condition="$vo.is_active eq 0">
+                                <a href="{:U('Active/add_active',array('id'=>$vo['id']),'')}" style="text-decoration: none">参加活动</a>
+                                <else/>已活动
+                            </if>
+
+                        </td>
+                    </tr>
+                    </volist>
+
+                    <tr>
+                        <td colspan="20" style="text-align: center;">
+                           {$page}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <!--//-->
+    <script>
+            function goodsList(i){
+                var id=i?i:1;
+                var goodsname=$("input[name='goodsname']").val();
+                var price1=$("input[name='price1']").val();
+                var price2=$("input[name='price2']").val();
+                var time1=$("input[name='time1']").val();
+                var time2=$("input[name='time2']").val();
+                $.get("{:U('goodsList')}",{"p":id,'goodsname':goodsname,'price1':price1,'price2':price2,'time1':time1,'time2':time2},function(res){
+//                    alert(res);
+                    $("#div").html(res);
+                })
+
+            }
+    </script>
+    <!--//-->
+    <script type="text/javascript">
+        $(function() {
+            $("#exampletable").slimtable();
+        });
+    </script>
+
+
+    <!-- 时间插件 -->
+    <link href="__ADMINSKIN__/js/datetimepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="__ADMINSKIN__/js/datetimepicker/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__ADMINSKIN__/js/datetimepicker/datepicker-zh_cn.js"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="__ADMINSKIN__/js/datetimepicker/time/jquery-ui-timepicker-addon.min.css" />
+    <script type="text/javascript" src="__ADMINSKIN__/js/datetimepicker/time/jquery-ui-timepicker-addon.min.js"></script>
+    <script type="text/javascript" src="__ADMINSKIN__/js/datetimepicker/time/i18n/jquery-ui-timepicker-addon-i18n.min.js"></script>
+    <script>
+        $.timepicker.setDefaults($.timepicker.regional['zh-CN']);
+        $("#time1").datetimepicker();
+        $("#time2").datetimepicker();
+    </script>
+</html>
+<script>
+    // $("#export").click(function(){
+
+    //             location.href="{:U('Goods/expGoods')}";
+    //         })
+</script>

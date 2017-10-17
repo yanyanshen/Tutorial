@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="__SKIN__/Home/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__ADMINSKIN__/css/style.css">
+    <link href="__SKIN__/Home/css/Orders.css" rel="stylesheet" type="text/css" />
+    <script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>
+    <script  src =__SKIN__/Home/js/layer.js type="text/javascript"></script>
+    <title>我的收藏</title>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        setInterval(showTime, 1000);
+        function timer(obj,txt){
+            obj.text(txt);
+        }
+        function showTime(){
+            var today = new Date();
+            var weekday=new Array(7)
+            weekday[0]="星期日"
+            weekday[1]="星期一"
+            weekday[2]="星期二"
+            weekday[3]="星期三"
+            weekday[4]="星期四"
+            weekday[5]="星期五"
+            weekday[6]="星期六"
+            var y=today.getFullYear()+"年";
+            var month=today.getMonth()+1+"月";
+            var td=today.getDate();
+            var d=weekday[today.getDay()];
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            timer($("#y"),y+month);
+            //timer($("#MH"),month);
+            timer($("h1"),td);
+            timer($("#D"),d);
+            timer($("#H"),h);
+            timer($("#M"),m);
+            timer($("#S"),s);
+        }
+    })
+</script>
+<style>
+    #user .us_Orders{ width:950px;}
+    .bd ul{float: left}
+     #Collect .bd .collect,#Collect .cart{
+        color: #000000;
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        cursor: pointer;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+    #Collect .bd .collect:hover,#Collect .cart:hover{
+        border: 0px;
+        background-color: #FF7A22;
+    }
+    #Collect .cart{
+        float: right;
+    }
+    .empty{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        color: #CCCCCC;
+    }
+</style>
+<body>
+<!--顶部样式-->
+<include file="Shop/Home/Common/header.html"/>
+<!--菜单导航样式-->
+<include file="Shop/Home/Common/topMenu.html"/>
+<!--内页样式-->
+<div class="user_style clearfix" id="user">
+    <!--用户中心布局样式-->
+    <include file="Shop/Home/View/Member/public.html"/>
+    <!--右侧内容展示-->
+    <div class="right_style r_user_style">
+        <div class="Notice"><span>系统最新公告:</span>为了更好地服务于【520私库】的会员朋友及读者 发表意见。</div>
+        <!--收藏商品-->
+
+        <div class="Collections_p">
+            <div class="title_name">收藏的商品</div>
+            <div id="Collect" class="Collect_Products">
+                <!--<div class="hd">
+                    <a class="next">&lt;</a>
+                    <a class="prev">&gt;</a>
+                </div>-->
+                <div class="bd">
+                    <volist name="collect" id="goods" empty="$empty">
+                    <ul>
+                        <li style="width: 200px;line-height: 20px"><div class="pic" style="width: 200px;height: 200px"><a href="{:U('Goods/Goodsdetail',array('id'=>$goods['gid']))}"><img src="/uploads/n1/{:reset(explode(',',$goods['image']))}" style="width: 200px;height: 200px"/></a></div>
+                            <div class="title" style="margin-top: 10px;margin-left: 20px"><a href="{:U('Goods/Goodsdetail',array('id'=>$goods['gid']))}">{$goods.goodsname}</a></div>
+                            <div class="p_Price">￥{$goods.saleprice}</div>
+                            <div class="p_Price collect">取消收藏</div>
+                            <div style="display: none">{$goods.gid}</div>
+                            <div class="p_Price cart">加入购物车</div>
+                        </li>
+                    </ul>
+                    </volist>
+                </div>
+            </div>
+            <div class="title_name">猜你喜欢</div>
+            <div id="Collect_Products" class="Collect_Products">
+                <div class="hd">
+                    <a class="next">&lt;</a>
+                    <a class="prev">&gt;</a>
+                </div>
+                <div class="bd">
+                    <volist name="like" id="val">
+                    <ul >
+                        <li >
+                            <div class="pic"><a href="{:U('Goods/Goodsdetail',array('id'=>$val['id']))}"><img src="/uploads/n1/{:reset(explode(',',$val['image']))}"></a></div>
+                            <div class="title"><a href="{:U('Goods/Goodsdetail',array('id'=>$val['id']))}">{$val.goodsname}</a></div>
+                            <div class="p_Price">￥{$val.saleprice}</div>
+                        </li>
+                    </ul>
+                    </volist>
+                </div>
+            </div>
+
+            <script type="text/javascript">jQuery("#Collect_Products").slide({ mainCell:".bd ul",effect:"leftLoop",vis:5,autoPlay:false });</script>
+        </div>
+        <!--结束-->
+    </div>
+</div>
+<!--底部-->
+<include file="Shop/Home/Common/footer.html"/>
+<!--右侧菜单栏购物车样式-->
+<include file="Shop/Home/Common/rightMenu.html"/>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(".Section li a span:contains('我的收藏')").parent().addClass("on");
+    $(".Section li a span:contains('我的特色馆')").parent().removeClass("on");
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        //取消收藏
+        $(document).on('click','.collect',function(){
+            var id=$(this).next().text();
+            $.post("{:U('Member/delCollect')}",{id:id},function(res){
+                if(res.status==1){
+                    layer.msg(res.info,{icon:1,time:1000},function(){
+                        $.post("{:U('Member/memberCollect')}",function(resa){
+                            $('#Collect .bd').html(resa);
+                        });
+                    });
+                }else{
+                    layer.msg(res.info,{icon:5,time:1000});
+                }
+            });
+        })
+        //加入购物车
+        $(document).on('click','.cart',function(){
+            var gid=$(this).prev().text();
+            //传id 加入购物车
+            $.post("{:U('Cart/addcart')}",{gid:gid},function(res){
+                if(res.status==1){
+                    //从收藏里面删除
+                    $.post("{:U('Member/delCollect')}",{id:gid},function(res){
+                        if(res.status==1){
+                            layer.msg('加入购物车成功',{icon:1,time:1000},function(){
+                                //异步刷新页面
+                                $.post("{:U('Member/memberCollect')}",function(resa){
+                                    $('#Collect .bd').html(resa);
+                                });
+                            });
+                        }else{
+                            layer.msg('加入购物车失败',{icon:5,time:1000});
+                        }
+                    });
+                }else{
+                    layer.msg('加入购物车失败',{icon:5,time:1000});
+                }
+            });
+        })
+    })
+</script>

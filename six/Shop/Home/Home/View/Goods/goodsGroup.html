@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+<link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/layer.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>
+
+<title>限时抢购</title>
+    <style>
+        #Navigation ul li:nth-child(7){background-color: #008cd6;color: white}
+        #Navigation ul li:nth-child(7) a{color: white}
+        #Navigation ul li:nth-child(1){background-color: white;color: #000000}
+        #Navigation ul li:nth-child(1):hover{background-color: #008cd6}
+        #Navigation ul li:nth-child(1) a{color: #000000}
+        #Navigation ul li:nth-child(1) a:hover{color: white}
+        /*#Navigation .Navigation_name li[href*='goodsGroup']{background-color: #008cd6}*/
+
+        #tab1{width:1200px; overflow:hidden; margin:50px auto;border:1px solid #BF9660;}
+        #tab1 #nav {display:block;width:100%;list-style:none;border-bottom: 1px solid #fff;border-bottom:1px solid #BF9660;}
+        #tab1 #nav li {float:left;width:300px;height:60px;margin-left:75px;line-height:60px;text-align:center; color:#333;font-size: 20px;cursor: pointer;}
+        #tablist1{ width:1200px; border-top:none}
+        .tablist{ padding:10px; overflow:hidden;}
+        .now{background:red; color:#fff;}
+        .empty{font-size: 20px}
+
+        #tablist1 .group_list .group_info{background-color: #fef6ff}
+        .group_list{
+            width: 600px;
+            height: 270px;
+        }
+    </style>
+
+</head>
+
+<body>
+<!--顶部样式-->
+<include file="Shop/Home/Common/header.html" />
+<!--菜单导航样式-->
+<include file="Shop/Home/Common/topMenu.html" />
+<!--广告-->
+<div style=" background-image:url(__SKIN__/Home/imgs/images/ADimg_02.png); background-position:center; background-repeat:no-repeat; height:470px;"></div>
+<!--团购样式-->
+
+<div id="tab1">
+    <ul id="nav">
+        <li onclick="setTab(1,0)" class="now">08:00-10:00</li>
+        <li onclick="setTab(1,1)">12:00-14:00</li>
+        <li onclick="setTab(1,2)">16:00-18:00</li>
+    </ul>
+
+    <div id="tablist1">
+        <div class="tablist">
+            <div class="Inside_pages clearfix">
+                <div class="group_buy">
+                    <div class="star" style="display: none">{$time.starttime}</div>
+                    <div class="end" style="display: none">{$time.endtime}</div>
+                    <volist name="info" id="vo" empty="$empty">
+                        <div class="group_list">
+                            <ul class="group_info">
+                                <li class="group_img"><a href="{:U('Goods/goodsDetail',array('id'=>$vo['id']))}"><img src="/uploads/n0/{$vo.image|default='default.jpg'|explode=',',###|array_shift}" style="width: 270px;height: 270px;" /></a></li>
+                                <li class="group_name">
+                                    <a href="#">{$vo.goodsname|mb_substr=###,0,15,'utf8'}</a>
+                                    <div class="group_content">{$vo.goodsintro}</div>
+                                    <div class="group_Price"><span>抢购价：</span><i>￥</i><em>{$vo.activeprice}</em></div>
+                                    <div class="Original_Price">原价：￥{$vo.saleprice}</div>
+                                    <div class="Original_Price">库存量：{$vo.activenum}</div>
+                                    <a href="{:U('Goods/goodsDetail',array('id'=>$vo['id']))}" class="buy_botton">立即购买</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!--底部样式-->
+<!-- <include file="Shop/Home/Common/footer.html" /> -->
+ <!--右侧菜单栏购物车样式1-->
+<!-- <include file="Shop/Home/Common/topMenu.html" /> -->
+
+<script type="text/javascript">
+    $(function(){
+        //初始化
+        $.post("{:U('Goods/setprice')}",function(res){
+            GetRTime();
+        });
+
+        var runtimes = 0;
+        var flag=0;
+        var time='';
+        function GetRTime() {
+            var starttime=$('.star').text();
+            var endtime=$('.end').text();
+            var t1=(parseInt("{$time.nowtime}")+runtimes) - parseInt(starttime);
+            var t2=parseInt(endtime) - (parseInt("{$time.nowtime}")+runtimes);
+            if (t1<0) {
+                $(".buy_botton").html("即将开始").css("backgroundColor", "grey");
+            } else if(t2<0) {
+                $(".buy_botton").html("本轮抢购结束").css("backgroundColor", "grey");
+                if(time==starttime){
+
+                    $.post("{:U('Goods/endprice')}",{time:starttime},function(res){
+                        //alert(res);
+                    });
+                    flag=0;
+                }
+            }else{
+                $(".buy_botton").html("立即购买").css("backgroundColor", "red");
+                if(flag==0){
+                    $.post("{:U('Goods/starprice')}",{time:starttime},function(res){
+                        //alert(res)
+                    });
+                    flag=1;
+                    time=starttime;
+                }
+            }
+            runtimes++;
+            setTimeout(GetRTime,100);
+        }
+    })
+</script>
+
+
+<script type="text/javascript">
+    $(function(){
+        $("#nav li").click(function(){
+            $(this).css("backgroundColor","red").siblings().css("backgroundColor","white");
+            var time=$(this).text();
+            $.post("{:U('Goods/goodsGroup')}",{time:time},function(res){
+                $(".tablist").html(res);
+            })
+        })
+    })
+</script>
+
+</body>
+</html>

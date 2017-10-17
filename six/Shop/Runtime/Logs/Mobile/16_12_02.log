@@ -1,0 +1,71 @@
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/css/style.css
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/js/select-ui.min.js
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/css/select.css
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/js/webuploader.js
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/js/upload.js
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/css/webuploader.css
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:35:50+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/__ADMINSKIN__/js/jquery.idTabs.min.js
+ERR: 非法操作:__ADMINSKIN__
+
+[ 2016-12-02T17:36:04+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/myInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0050s ]
+SQL: SELECT `avatar`,`sex` FROM `sk_users` WHERE `username` = 'lixuran' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0030s ]
+SQL: UPDATE `sk_users` SET `sex`='女' WHERE ( id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:36:10+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/myInfo.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+SQL: SELECT `avatar`,`sex` FROM `sk_users` WHERE `username` = 'lixuran' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+SQL: UPDATE `sk_users` SET `sex`='男' WHERE ( id=29 ) [ RunTime:0.0156s ]
+
+[ 2016-12-02T17:36:18+08:00 ] 192.168.4.55 /index.php/Mobile/MyInfo/loginout.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-02T17:43:55+08:00 ] 192.168.4.55 /index.php/Mobile/Users/chkName.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sk_users` WHERE `username` = '用户名' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:43:55+08:00 ] 192.168.4.55 /index.php/Mobile/Users/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`lastdate`,`lastip`,`loginnum`,`status` FROM `sk_users` WHERE `username` = '用户名' AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:44:19+08:00 ] 192.168.4.55 /index.php/Mobile/Users/send_sms_code.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0050s ]
+SQL: SELECT `mobile`,`username` FROM `sk_users` WHERE `username` = 'admin5' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

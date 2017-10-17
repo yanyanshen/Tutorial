@@ -1,0 +1,11 @@
+<volist name="collect" id="goods" empty="$empty">
+    <ul>
+        <li style="width: 200px"><div class="pic" style="width: 200px;height: 200px"><a href="{:U('Goods/Goodsdetail',array('id'=>$goods['gid']))}"><img src="/uploads/n1/{:reset(explode(',',$goods['image']))}" style="width: 200px;height: 200px"/></a></div>
+            <div class="title"><a href="{:U('Goods/Goodsdetail',array('id'=>$goods['gid']))}">{$goods.goodsname}</a></div>
+            <div class="p_Price">￥{$goods.saleprice}</div>
+            <div class="p_Price collect">取消收藏</div>
+            <div style="display: none">{$goods.gid}</div>
+            <div class="p_Price cart">加入购物车</div>
+        </li>
+    </ul>
+</volist>

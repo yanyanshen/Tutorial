@@ -1,0 +1,936 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+<link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/jquery.lazyload.js" type="text/javascript"></script>
+    <script type="text/javascript" src="__SKIN__/Home/js/ads.js"></script>
+    <title>�̳���ҳ</title>
+    <style type="text/css">
+        #pop{background:#fff;width:300px; height:282px;font-size:12px;position:fixed;right:0;bottom:0;}
+        #pop_head{line-height:32px;background:#f6f0f3;border-bottom:1px solid #e0e0e0;font-size:12px;padding:0 0 0 10px;}
+        #pop_head h2{font-size:14px;color:#666;line-height:32px;height:32px;}
+        #pop_head #popClose{position:absolute;right:10px;top:1px;}
+        #pop_head a#popClose:hover{color:#f00;cursor:pointer;}
+    </style>
+<title>商城首页-传统版</title>
+    <style>
+    </style>
+    <style>
+
+        #nav{width: 60px;position: fixed;left: 5px;bottom:300px;list-style: none;display: none;cursor: pointer;}
+        #nav li{height: 55px;line-height: 55px;border-bottom: 1px dashed #ccc;text-align: center;position: relative;font-size: 25px;margin-top: 1px;}
+        #nav li span{position: absolute;display: inline-block;height: 55px;line-height: 55px;width: 100%;text-align: center;left: 0;top: 0;display: none;background: #f00;color: #fff;}
+
+
+        .div{
+            width: 100%;
+            height: 110px;
+            padding: 0;
+            margin:0;
+            position: fixed;
+            top:0;
+            z-index: 9999;
+            display: none;
+            background: #ecf0f1;
+        }
+        .div2{
+            width: 1200px;
+            height: 110px;
+            margin: 0 auto;
+            display: block;
+
+
+        }
+        .logo1{
+            float: left;
+        }
+        .Search1 {
+            float: right;
+            margin:35px 140px 66px 0;
+            width: 634px;
+            height: 34px;
+
+        }
+        .Search1 .text{
+            font-size: 12px;
+            width: 495px;
+            height: 32px;
+            border:2px solid  #008cd6;
+            line-height: 24px;
+            padding: 0px 0px 0px 40px;
+            vertical-align: top;
+        }
+        .Search_btn{
+            background:#008cd6;
+            padding:0px 29px;
+            color:#FFFFFF;
+            font-size:16px;
+            height: 35px;
+            border: 0;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        .Product_area .clearfix{
+            background: #f8f8f0;
+        }
+        .Product_area .clearfix div{
+            color:  #fefefe;
+        }
+
+
+
+
+
+
+        .tv_hot2 {
+            width: 220px;
+        }
+
+        /*.avatar {*/
+            /*position: relative;*/
+        /*}*/
+        .tv_hot2 .avatar2 {
+            display: block;
+            height: 150px;
+            /*超出部分隐藏*/
+            overflow: hidden;
+            width: 220px;
+        }
+        .tv_hot2 .avatar2 img {
+            height: 150px;
+        }
+
+        .avatar2:hover {
+            box-shadow: 0 0 10px gray;
+        }
+       .avatar2:hover img {
+            transform: scale(1.5);
+            transition: all 1s ease 0s;
+            -webkit-transform: scale(1.3);
+            -webkit-transform: all 1s ease 0s;
+        }
+
+
+
+       .tv_hot2 .avatar2 div{
+           position: absolute;
+           z-index: 1;
+           width: 72px;
+           height: 150px;
+           border-top: 3px solid #e93524;
+           background-color: #fff;margin: 0;padding: 0;display: block;color: red
+       }
+        .tv_hot2 .avatar2 div p{
+
+        }
+
+
+        .tv_hot {
+            width: 219px;
+        }
+
+        /*.avatar {*/
+        /*position: relative;*/
+        /*}*/
+        .tv_hot .avatar {
+            display: block;
+            height: 219px;
+            /*超出部分隐藏*/
+            overflow: hidden;
+            width: 219px;
+        }
+        .tv_hot .avatar img {
+            height: 219px;
+        }
+        .avatar:after {
+            /*bottom: 0;*/
+            /*content: url("");*/
+            /*left: 5px;*/
+            /*position: absolute;*/
+            /*z-index: 10;*/
+        }
+        .avatar:hover {
+            box-shadow: 0 0 10px gray;
+        }
+        .avatar:hover img {
+            transform: scale(1.5);
+            transition: all 1s ease 0s;
+            -webkit-transform: scale(1.3);
+            -webkit-transform: all 1s ease 0s;
+        }
+    </style>
+</head>
+
+<body>
+<script type="text/javascript" charset="UTF-8">
+
+<!--
+ //点击效果start
+ function infonav_more_down(index)
+ {
+  var inHeight = ($("div[class='p_f_name infonav_hidden']").eq(index).find('p').length)*30;//先设置了P的高度，然后计算所有P的高度
+  if(inHeight > 60){
+   $("div[class='p_f_name infonav_hidden']").eq(index).animate({height:inHeight});
+   $(".infonav_more").eq(index).replaceWith('<p class="infonav_more"><a class="more"  onclick="infonav_more_up('+index+');return false;" href="javascript:">收起<em class="pulldown"></em></a></p>');
+  }else{
+   return false;
+  }
+ }
+ function infonav_more_up(index)
+ {
+  var infonav_height = 85;
+  $("div[class='p_f_name infonav_hidden']").eq(index).animate({height:infonav_height});
+  $(".infonav_more").eq(index).replaceWith('<p class="infonav_more"> <a class="more" onclick="infonav_more_down('+index+');return false;" href="javascript:">更多<em class="pullup"></em></a></p>');
+ }
+
+ function onclick(event) {
+  info_more_down();
+ return false;
+ }
+ //点击效果end
+//-->
+
+//返回顶部开始
+$(function(){
+//    var t=$(window).height(); //获取可视窗口高度
+
+
+    $('#one_piece').click(function(){$('body').animate({scrollTop: '0px'}, 800);});
+//        $('#one_piece').click(function(){$('body').animate({scrollTop: t+'px'}, 800);});
+
+//    $(window).on('scroll',function(){
+//        var t2=$(window).scrollTop(); //获取滚动条的高度
+//        if(''){
+//
+//        }
+//    })
+
+})
+//返回顶部结束
+
+
+
+    //鼠标划过样式开始
+    $(function(){
+        $(".Menu_list").mouseover(function(){
+            $(this).css({background:'#f0e8e8'});
+        })
+
+    })
+//鼠标划过样式结束
+
+
+//懒加载开始
+$(function(){
+    $("img.lazy").lazyload({
+        effect:"fadeIn",
+        threshold:10
+    });
+})
+//懒加载结束
+
+
+//楼层导航开始
+$(function(){
+    var winHeight = $(window).height(), //获取浏览器可视窗口的高度
+            headerHeight1 = $('.Slide_style').height(),  //获取header的高度
+            headerHeight2=$('.index_style').height(),
+            headerHeight3=$('.Brand').height();
+            onOff = false;    //布尔值变量,通错这个变量可以防止快速连续点击的时候出现的连续滚动
+    $(window).on('scroll',function(){
+        var scTop = $(window).scrollTop();  //获取滚动条的滚动距离
+        //当楼侧开始出现时显示楼层导航条
+        if(scTop >= (headerHeight1+ headerHeight2 + headerHeight3 -2800) - winHeight ){
+            $('#nav').fadeIn(400);   //也可以不传参数，传参数表示运动时间
+        }else{
+            $('#nav').hide(400);
+        }
+
+        //滚动时切换显示楼层
+        if(!onOff){
+            $('.floors').each(function(index,element){
+                var _top = $(this).offset().top; //offset获取匹配元素在当前视窗的相对偏移
+                //当每层楼的最上面滚动到浏览器窗口的中间时切换导航条的显示
+                if(scTop >= _top - winHeight / 2){
+                    //此处添加curr类样式并不是改变显示样式，而是为了标当前所在的楼层  ,显示出li的儿子标签
+                    //eq()匹配一个给定索引值的元素
+                    $('#nav>li').eq(index).addClass('curr').children().show()
+                            .end().siblings().removeClass('curr').children().hide(); //end()将匹配到的元素列表变回到前一次的状态
+                }
+            });
+        }
+    })
+
+    $('#nav>li').hover(function(){
+        $(this).children().show();
+    },function(){
+        //此处用到.not('.curr')来过滤当前楼层，鼠标移开时仍然保持当前的显示样式
+        $(this).not('.curr').children().hide();
+    }).on('click',function(){
+        onOff = true;  //将开关变量onOff置为true
+        var index = $(this).index(),  //获取当前电机的li的索引
+                _top = $('.floors').eq(index).offset().top;//获取相对于的楼层到文档顶部的距离
+        $(this).addClass('curr').children().show().end()
+                .siblings().removeClass('curr').children().hide();
+
+        $('html,body').animate({'scrollTop':_top},400,function(){
+            onOff = false; //在运动执行完毕的毁掉函数中将onOff的值重置为false
+        });
+
+        //或者也可以用scrollIntoView()方法，只是该方法没有滚动的效果，而是直接跳到浏览器可是窗口的最上面.用法如下：
+        /*var index = $(this).index();
+         $('.floor').get(index).scrollIntoView();*/
+    });
+
+});
+
+    //楼层导航结束
+
+</script>
+
+<body id="totop">
+<include file="Shop/Home/Common/header.html" />
+<!--可修改图层2-->
+  <!--<div class="festival1"><a href="#"><img src="__SKIN__/Home/imgs/images/logo_sd.png" /></a></div>--><!--结束-->
+ <!--购物车样式-->
+
+<!--菜单导航样式-->
+<div id="header2 "  class="div">
+    <div class="div2">
+        <div class="logo1"><a href="{:U('Index/index')}"><img src="__SKIN__/Home/imgs/images/logo.png" /></a></div>
+        <div class="Search1">
+            <form action="{:U('Goods/goodsList')}" method="get" name="search" id="searchForm2">
+                <p><input name="goodsname" type="text"  class="text" id="goodsname2"/><input name="" type="submit" value="搜 索"  class="Search_btn"/></p>
+            </form>
+        </div>
+     </div>
+</div>
+<div id="Menu" class="clearfix">
+    <div class="Inside_pages">
+        <div id="allSortOuterbox">
+            <div class="t_menu_img"></div>
+            <div class="Category"><a href="#"><em></em>所有产品分类</a></div>
+            <div class="hd_allsort_out_box_new">
+                <!--左侧栏目开始-->
+                <ul class="Menu_list">
+
+
+                    
+                    <foreach name="Cate" item="val1" key="k1">
+                    <li class="name" style="padding-bottom: 0">
+                        <span class="Menu_name">
+                            <!-- 顶级分类 -->
+                            <a href="{:U('Goods/goodsList',array('id1'=>$val1['id']))}" style="text-size:1px">{$val1['catename']}</a> <span>&lt;</span></span>
+
+
+                        <div class="link_name" style="height: 65px; overflow: hidden;text-overflow: ellipsis">
+
+
+                            <foreach name="Cate[$k1]['c']" item="val3" key="k3">
+
+
+                                <volist name="Cate[$k1]['c'][$k3]['c']" id="val4" key="k4" empty="">
+
+                            <span><a href="{:U('Goods/goodsList',array('id3'=>$val4['id']))}">{$val4["catename"]}</a></span>
+                                
+                                </volist>
+
+                            </foreach>
+                        </div>
+                        <div class="menv_Detail" style="height: 623px; z-index: 9999;">
+                            <div class="cat_pannel clearfix">
+                                <div class="hd_sort_list">
+                                    <foreach name="Cate[$k1]['c']" item="val3" key="k3">
+                                    <dl class="clearfix" data-tpc="1">
+                                        <!--二级分类-->
+                                       <dt><a href="{:U('Goods/goodsList',array('id2'=>$val3['id']))}">{$val3['catename']}</a></dt>
+                                            <!-- 三级分类 -->
+                                            <volist name="Cate[$k1]['c'][$k3]['c']" id="val4" key="k4" empty="" >
+                                                <dd><a href="{:U('Goods/goodsList',array('id3'=>$val4['id']))}">{$val4["catename"]}</a></dd>
+                                            </volist>
+                                    </dl>
+                                    </foreach>
+<!--///////-->
+                                </div>
+                                <div class="Brands" style="">
+                                    <volist name="Cate[$k1]['g']" id="val" key="k">
+                                        <a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" name="a" style="height: 140px;width: 140px"><img src="/uploads/n0/{:reset(explode(',',$val['image']))}" style="width: 100%;height: 100%"/></a>
+                                    </volist>
+                                </div>
+                            </div>
+                            <!--品牌-->
+                        </div>
+                    </li></foreach>
+
+                </ul>
+            </div>
+        </div>
+        <script>
+            if(!($("a[name='a']").children('img').attr("src"))){
+                $("img").remove();
+            }
+        </script>
+        <script>$("#allSortOuterbox").slide({ titCell:".Menu_list li",mainCell:".menv_Detail",	});</script>
+        <!--菜单栏-->
+        <div class="Navigation" id="Navigation">
+            <ul class="Navigation_name">
+                <li> <a href=""></a> </li>
+                <li><a href="{:U('Goods/clothing')}" target="_blank">服装城</a></li>
+                <li><a href="{:U('Goods/shoes')}" target="_blank">鞋城</a></li>
+                <li><a href="{:U('Goods/bags')}" target="_blank">箱包大全</a></li>
+                <li><a href="{:U('Goods/jewelry')}" target="_blank">精美饰品</a></li>
+                <li><a href="{:U('Goods/goodsGroup')}" target="_blank">限时抢购</a></li>
+                
+            </ul>
+        </div>
+        <script>$("#Navigation").slide({titCell:".Navigation_name li"});</script>
+    </div>
+</div>
+</div>
+<div class="Slide_style" >
+
+   	<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul class="smallUl"></ul>
+			</div>
+			<div class="bd">
+				<ul>
+                    <volist name="banner" id="valn">
+					<li><a href="{:U('Goods/goodsList',array('id1'=>5))}" target="_self"><div style="background:url(/uploads/AdImgs/{$valn.image}) no-repeat; background-position:center; width:100%; height:645px; background-size:100% 100%"></div></a></li>
+                    </volist>
+				</ul>
+			</div>
+			<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+			<a class="prev" href="javascript:void(0)"><em class="left_arrow"></em></a>
+			<a class="next" href="javascript:void(0)"><em class="right_arrow"></em></a>
+
+		</div>
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,autoPage:true,delayTime:500,interTime:5000});
+		</script>
+ </div>
+
+<div class="index_style clearfix">
+ <!--推荐图层样式-->
+  <div class="recommend">
+   <div class="recommend_bg"></div>
+   <div class="list">
+     <div class="picScroll">
+        <div class="hd">
+        <a class="prev" href="javascript:void(0)">&gt;</a>
+		<a class="next" href="javascript:void(0)">&lt;</a>
+        </div>
+        <div class="bd">
+          <ul>
+              <volist name="tj" id="val" key="k">
+                  <li class="recommend_info">
+                      <!--<a href="#" class="img_link"><img src="__SKIN__/Home/imgs/Products/x-1.jpg"  width="130px" height="130px"/></a>-->
+                      <a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="img_link"><img src="/uploads/n1/{:reset(explode(',',$val['image']))}"  width="130px" height="130px"/></a>
+                      <div class="content">
+                          <a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="title_name">{$val.goodsname}</a>
+                          <h2><i>￥</i>{$val.saleprice}</h2>
+                      </div>
+                      <a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="buy_btn"> 立即购买</a>
+                  </li></volist>
+           
+          </ul>
+        </div>
+     </div>
+     <script>jQuery(".picScroll").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});</script>
+   </div>
+  </div>
+  <!--品牌列表样式-->
+  <div class="Brand clearfix AA">
+   <div class="title_name"><span>品牌库</span><span class="English">BRANDS LIBRARIES</span></div>
+   <div class="img_title">
+     <div class="img_title_name">
+      <h1>大品牌，大智慧</h1>
+      <h2>优质品牌，精选品牌</h2>
+     </div>
+     </div>
+    <div class="Brand_style">
+     <div class="hd">
+      <ul>
+       <li>女装品牌</li>
+       <li>男装品牌</li>
+       <li>外国品牌</li>
+       <li>国内品牌</li>
+      </ul>
+     </div>
+     <div class="bd">
+      <ul>
+          <li>
+              <volist name="female" id="v1" key="k">
+                  <a href="{:U('Goods/goodsList',array('id'=>$v1['id']))}"  style="margin-left:25px;width:146px;height:90px"><img src="/uploads/logo/{$v1.logo}"  width="125" height="38" style="margin:30px 0 0 30px;"/></a>
+              </volist>
+
+              <!--<a href="#"><img src="__SKIN__/Home/imgs/Brand/p-20.jpg" width="125" height="38"/></a>-->
+          </li>
+      </ul>
+         <ul>
+             <volist name="man" id="v2" key="k" offset="0" length="9">
+                 <a href="{:U('Goods/goodsList',array('id'=>$v2['id']))}"  style="margin-left:25px;width:146px;height:90px"><img src="/uploads/logo/{$v2.logo}"  width="125" height="38" style="margin:30px 0 0 30px;"/></a>
+             </volist>
+
+         </ul>
+
+         <ul>
+<!--///-->
+             <volist name="home" id="v3" key="k" offset="0" length="12">
+                 <a href="{:U('Goods/goodsList',array('id'=>$v4['id']))}"  style="margin-left:25px;width:146px;height:90px"><img src="/uploads/logo/{$v3.logo}"  width="125" height="38" style="margin:30px 0 0 30px;"/></a>
+<!--=======-->
+             </volist>
+         </ul>
+         <ul>
+                 <volist name="external" id="v4" key="k" offset="0" length="12">
+                 <a href="{:U('Goods/goodsList',array('id'=>$v4['id']))}"  style="margin-left:25px;width:146px;height:90px"><img src="/uploads/logo/{$v4.logo}"  width="125" height="38" style="margin:30px 0 0 30px;"/></a>
+<!--/////-->
+             </volist>
+         </ul>
+     </div>
+    </div>
+    <script>jQuery(".Brand_style").slide({trigger:"click"});</script>
+  </div>
+  <!--产品版块样式图层-->
+  <div class="Product_area clearfix">
+   <div class="area_title"><div class="name"><span class="floors">1F</span>男装女装</div></div>
+   <div class="list_style clearfix">
+    <div class="Left_side">
+     <ul>
+         <volist  name="goods" id="val3" key="k3" empty="" offset="0" length="4">
+      <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val3['image']))}" width="219px" height="219px"/>
+
+          </a>
+      </li>
+      </volist>
+          
+     </ul>
+    </div>
+    <div class="middle">
+     <!--广告-->
+      <div class="hd">
+         <a class="prev" href="javascript:void(0)">&gt;</a>
+		<a class="next" href="javascript:void(0)">&lt;</a>
+      </div>
+      <div class="bd">
+      <ul>
+          <volist name="first" id="v1">
+            <li><a href="{:U('Goods/goodsList',array('id1'=>1))}"><img src="/uploads/AdImgs/{:reset(explode(',',$v1['image']))}" /></a></li>
+          </volist>
+      </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+		jQuery(".middle").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,autoPage:true,interTime:7000});
+		</script>
+     <div class="Left_side">
+     <ul>
+         <volist  name="goods" id="val3" key="k3" empty="" offset="8" length="4">
+       <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val3['image']))}" width="219px" height="219px"/>
+
+           </a></li>
+      </volist>
+     
+     </ul>
+    </div>
+    <div class="advertising">
+        <volist  name="goods" id="val3" key="k3" empty="" offset="4" length="2">
+     <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+         <!--<div style="">-->
+             <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+             <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+             <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+         <!--</div>-->
+         <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+              style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+         <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+     </a></span>
+            </volist>
+     <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-8.jpg" width="219" height="150"/></a>-->
+
+     <a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))}" class="da_AD" style="text-align: left">
+         <volist  name="goods" id="val3" key="k3" empty="" offset="2" length="2">
+         <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))} " width="159" height="150"/>
+         </volist>
+     </a>
+
+     <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-10.jpg" width="219" height="150"/></a>-->
+        <volist  name="goods" id="val3" key="k3" empty="" offset="11" length="2">
+     <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+         <!--<div style="">-->
+             <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+             <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+             <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+         <!--</div>-->
+         <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+              style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+         <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+     </a></span>
+        </volist>
+    </div>
+    <!--品牌-->
+    <div class="Brand_Gallery">
+        <volist name="logoinfo" id="val" key="k" empty="" offset="0" length="8">
+     <a href="#"><img class='lazy' src="__SKIN__/Home/imgs/big/1.gif" data-original="/uploads/logo/{$val['logo']}" width="120" height="32"/></a>
+        </volist>
+    </div>
+   </div>
+  </div>
+    <!--产品版块样式图层-->
+  <div class="Product_area clearfix">
+   <div class="area_title"><div class="name"><span class="floors">2F</span>男鞋女鞋</div></div>
+   <div class="list_style clearfix">
+    <div class="Left_side">
+     <ul>
+         <volist name="goods2" id="val" key="k" empty="" offset="0" length="4">
+      <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val['image']))}" width="219px" height="219px"/>
+
+      </a></li>
+      </volist>
+            
+     </ul>
+    </div>
+    <div class="middle">
+     <!--广告-->
+      <div class="hd">
+         <a class="prev" href="javascript:void(0)">&gt;</a>
+		<a class="next" href="javascript:void(0)">&lt;</a>
+      </div>
+      <div class="bd">
+      <ul>
+          <volist name="secend" id="v2">
+                <li><a href="{:U('Goods/goodsList',array('id1'=>4))}"><img src="/uploads/AdImgs/{:reset(explode(',',$v2['image']))}" /></a></li>
+          </volist>
+      </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+		jQuery(".middle").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,autoPage:true,interTime:7000});
+		</script>
+     <div class="Left_side">
+     <ul>
+         <volist name="goods2" id="val" key="k" empty="" offset="4" length="4">
+       <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val['image']))}" width="219px" height="219px"/>
+
+       </a></li>
+      </volist>
+        
+     </ul>
+    </div>
+       <div class="advertising">
+           <volist  name="goods2" id="val3" key="k3" empty="" offset="0" length="2">
+              <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+                  <!--<div style="">-->
+                      <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+                      <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+                      <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+                  <!--</div>-->
+                  <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+                       style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+                  <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+              </a></span>
+           </volist>
+           <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-8.jpg" width="219" height="150"/></a>-->
+
+               <a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))}" class="da_AD">
+                   <volist  name="goods2" id="val3" key="k3" empty="" offset="2" length="2">
+                   <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val3['image']))} " width="159" height="150"/>
+                       </volist>
+               </a>
+
+           <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-10.jpg" width="219" height="150"/></a>-->
+           <volist  name="goods2" id="val3" key="k3" empty="" offset="3" length="2">
+               <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+                   <!--<div style="">-->
+                       <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+                       <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+                       <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+                   <!--</div>-->
+                   <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+                        style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+                   <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+               </a></span>
+           </volist>
+       </div>
+    <!--品牌-->
+    <div class="Brand_Gallery">
+        <volist name="logoinfo2" id="val2" key="k" empty="" offset="0" length="8">
+            <a href="#"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/logo/{$val2['logo']}" width="120" height="32"/></a>
+        </volist>
+
+    </div>
+   </div>
+  </div>
+    <!--产品版块样式图层-->
+  <div class="Product_area clearfix">
+   <div class="area_title"><div class="name"><span class="floors">3F</span>箱包大全</div></div>
+   <div class="list_style clearfix">
+    <div class="Left_side">
+     <ul>
+         <volist name="goods3" id="val" key="k" empty="" offset="0" length="4">
+      <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val['image']))}"  width="219px" height="219px"/>
+
+      </a></li>
+      </volist>
+      
+     </ul>
+    </div>
+    <div class="middle">
+     <!--广告-->
+      <div class="hd">
+         <a class="prev" href="javascript:void(0)">&gt;</a>
+		<a class="next" href="javascript:void(0)">&lt;</a>
+      </div>
+      <div class="bd">
+      <ul>
+          <volist name="three" id="v3">
+              <li><a href="{:U('Goods/goodsList',array('id1'=>5))}"><img src="/uploads/AdImgs/{:reset(explode(',',$v3['image']))}" /></a></li>
+          </volist>
+      </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+		jQuery(".middle").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,autoPage:true,interTime:7000});
+		</script>
+     <div class="Left_side">
+     <ul>
+         <volist name="goods3" id="val" key="k" empty="" offset="4" length="4">
+       <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val['image']))}"  width="219px" height="219px"/>
+
+       </a></li>
+     </volist>
+    
+     </ul>
+    </div>
+       <div class="advertising">
+           <volist  name="goods3" id="val3" key="k3" empty="" offset="0" length="2">
+               <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+                   <!--<div style="">-->
+                       <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+                       <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+                       <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+                   <!--</div>-->
+                   <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+                        style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+                   <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+               </a></span>
+           </volist>
+           <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-8.jpg" width="219" height="150"/></a>-->
+
+               <a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))}" class="da_AD">
+                   <volist  name="goods3" id="val3" key="k3" empty="" offset="5" length="2">
+                   <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val3['image']))} " width="159" height="150"/>
+                       </volist>
+               </a>
+
+           <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-10.jpg" width="219" height="150"/></a>-->
+           <volist  name="goods3" id="val3" key="k3" empty="" offset="2" length="2">
+              <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+                  <!--<div style="">-->
+                      <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+                      <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+                      <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+                  <!--</div>-->
+                  <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+                       style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+                  <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+              </a></span>
+           </volist>
+       </div>
+    <!--品牌-->
+    <div class="Brand_Gallery">
+        <volist name="logoinfo3" id="val3" key="k" empty="" offset="0" length="8">
+            <a href="#"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/logo/{$val3['logo']}" width="120" height="32"/></a>
+        </volist>
+
+    </div>
+   </div>
+  </div>
+     <!--产品版块样式图层-->
+  <div class="Product_area clearfix">
+   <div class="area_title"><div class="name"><span class="floors">4F</span>精品配饰</div></div>
+   <div class="list_style clearfix">
+    <div class="Left_side">
+     <ul>
+         <volist name="goods4" id="val4" key="k" empty="" offset="0" length="4">
+      <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val4['id']))}" class="avatar"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val4['image']))}"  width="219px" height="219px"/>
+          <!--<div>{$val4.goodsname}</div>-->
+          <!--<div><span>￥</span>{$val4.saleprice}</div>-->
+          <!--<div class="Layers"><img src="__SKIN__/Home/imgs/images/bg_img.png" /></div>-->
+      </a></li>
+      </volist>
+          
+     </ul>
+    </div>
+    <div class="middle">
+     <!--广告-->
+      <div class="hd">
+         <a class="prev" href="javascript:void(0)">&gt;</a>
+		<a class="next" href="javascript:void(0)">&lt;</a>
+      </div>
+      <div class="bd">
+      <ul>
+          <volist name="four" id="v4">
+              <li><a href="{:U('Goods/goodsList',array('id1'=>6))}"><img src="/uploads/AdImgs/{:reset(explode(',',$v4['image']))}" /></a></li>
+          </volist>
+      </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+		jQuery(".middle").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,autoPage:true,interTime:7000});
+		</script>
+     <div class="Left_side">
+     <ul>
+         <volist name="goods4" id="val4" key="k" empty="" offset="4" length="4">
+       <li class="tv_hot fl"><a href="{:U('Goods/goodsDetail',array('id'=>$val4['id']))}" class="avatar"><img  class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val4['image']))}"  width="219px" height="219px"/>
+           <!--<div>{$val4.goodsname}</div>-->
+           <!--<div><span>￥</span>{$val4.saleprice}</div>-->
+           <!--<div class="Layers"><img src="__SKIN__/Home/imgs/images/bg_img.png"  width="219" height="219"/></div>-->
+       </a></li>
+      </volist>
+            
+     </ul>
+    </div>
+       <div class="advertising">
+           <volist  name="goods4" id="val3" key="k3" empty="" offset="0" length="2">
+              <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+                  <!--<div style="">-->
+                      <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+                      <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+                      <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+                  <!--</div>-->
+                  <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+                       style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+                  <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+              </a></span>
+           </volist>
+           <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-8.jpg" width="219" height="150"/></a>-->
+
+               <a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))}" class="da_AD">
+                   <volist  name="goods4" id="val3" key="k3" empty="" offset="6" length="2">
+                   <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n1/{:reset(explode(',',$val3['image']))} " width="159" height="150"/>
+                       </volist>
+               </a>
+
+           <!--<a href="#"><img src="__SKIN__/Home/imgs/Products/AD-10.jpg" width="219" height="150"/></a>-->
+           <volist  name="goods4" id="val3" key="k3" empty="" offset="3" length="2">
+             <span class="tv_hot2"><a href="{:U('Goods/goodsDetail',array('id'=>$val3['id']))} "  style="text-align: right;position: relative" class="avatar2">
+                 <!--<div style="">-->
+                     <!--<p style="text-align: left;margin-top: 20px;">￥</p>-->
+                     <!--<p style="text-align: left;"><span style="font-size: 18px">{$val3.saleprice}</span></p>-->
+                     <!--<p style="text-align: left;margin-top: 30px;background-color:#e7e7e7;height: 50px;text-align: center;padding-top:10px;">{$val3.goodsname}</p>-->
+                 <!--</div>-->
+                 <img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/n0/{:reset(explode(',',$val3['image']))}"  width="220" height="150"
+                      style="transition: transform .5s,-webkit-transform .5s,-moz-transform .5s;
+              overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;"/>
+                 <!--<span style="position: absolute;top:50px">{$val3.goodsname}</span><span style="position: absolute;top:90px">{$val3.goodsname}</span>-->
+             </a></span>
+           </volist>
+       </div>
+    <!--品牌-->
+    <div class="Brand_Gallery">
+        <volist name="logoinfo4" id="val4" key="k" empty="">
+            <a href="#"><img class='lazy' src="__SKIN__/Home/imgs/big/3.gif" data-original="/uploads/logo/{$val4['logo']}" width="120" height="32"/></a>
+        </volist>
+    </div>
+   </div>
+  </div>
+  <!--热销-->
+<div id="showcase" class="advanced">
+	<div id="guessyou" class="m"><div class="mt"><h2>猜你喜欢</h2><a href="javascript:;" class="extra">更多</a></div>
+    <div class="mc"><div class="spacer"><i></i></div>
+    <ul id="lists">
+        <volist name="Show" id="val" key="k" empty="">
+        <li class="fore1">
+     <div class="p-img">
+     <a data-clk="" href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" target="_blank"><img data-lazy-img="done" width="190" height="190" title="{$val.goodsname}" src="/uploads/n1/{:reset(explode(',',$val['image']))}" class="" width="219px" height="219px"></a>
+     </div>
+     <div class="p-info">
+      <div class="p-name">
+      <a style="display: block;text-align: center;" data-clk="" href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" target="_blank" title="{$val.goodsname}">{$val.goodsname}</a></div>
+      <!--<div class="p-price" data-lazyload-fn="done">-->
+          <!--&lt;!&ndash;<span class="left"><i>¥</i>{$val.markprice}</span><span class="Original_Price">{$val.saleprice}</span>&ndash;&gt;-->
+      <!--</div>-->
+      </div>
+      <div class="Detailed" style="display: none;">
+	   <div class="content">
+		  <p class="center"><a href="{:U('Goods/goodsDetail',array('id'=>$val['id']))}" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>
+      </li>    </volist>
+     
+       </ul>
+      </div>
+     </div>
+     </div>
+</div>
+<div>
+    <ul id="nav">
+        <li>1F<span style="display: inline-block;" class="curr">1楼</span></li>
+        <li>2F<span>2楼</span></li>
+        <li>3F<span>3楼</span></li>
+        <li>4F<span>4楼</span></li>
+        <li id="one_piece" style="background: #808080;line-height:55px " >TOP</li>
+    </ul>
+</div>
+<div id="pop" style="display:none;margin-right: 75px">
+    <div id="pop_head">
+        <a id="popClose" title="关闭">关闭</a>
+        <h2>520私库广告</h2>
+    </div>
+    <div id="pop_content">
+        <a href="{:U('Goods/goodsList',array('id1'=>5))}" target="_blank"><img src="/uploads/AdImgs/{:reset(explode(',',$v3['image']))}" style="width: 300px;height: 280px" alt="广告"/></a>
+    </div>
+</div>
+<script type="text/javascript">
+            var int = new Pop();
+</script>
+  <!--底部样式-->
+ <include file="Shop/Home/common/footer.html"/>
+ <!--底部样式-->
+
+ <!--右侧菜单栏购物车样式-->
+<include file="Shop/Home/Common/rightMenu.html"/>
+</body>
+</body>
+</html>

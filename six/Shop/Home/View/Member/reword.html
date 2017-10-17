@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+    <link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+    <link href="__SKIN__/Home/css/Orders.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Admin/css/editor/min.css"  type="text/css" rel="stylesheet"/>
+    <link href="__PUBLIC__/Admin/css/editor/skin_0.css"  type="text/css" rel="stylesheet" />
+    <link href="__PUBLIC__/Admin/css/editor/font-min.css"  type="text/css" rel="stylesheet"/>
+    <script src="__SKIN__/Home/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+    <script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/geo.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/layer.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>
+    <title>修改密码</title>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        setInterval(showTime, 1000);
+        function timer(obj,txt){
+            obj.text(txt);
+        }
+        function showTime(){
+            var today = new Date();
+            var weekday=new Array(7)
+            weekday[0]="星期日"
+            weekday[1]="星期一"
+            weekday[2]="星期二"
+            weekday[3]="星期三"
+            weekday[4]="星期四"
+            weekday[5]="星期五"
+            weekday[6]="星期六"
+            var y=today.getFullYear()+"年";
+            var month=today.getMonth()+1+"月";
+            var td=today.getDate();
+            var d=weekday[today.getDay()];
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            timer($("#y"),y+month);
+            //timer($("#MH"),month);
+            timer($("h1"),td);
+            timer($("#D"),d);
+            timer($("#H"),h);
+            timer($("#M"),m);
+            timer($("#S"),s);
+        }
+    })
+</script>
+<style type="text/css">
+    .r_user_style {background: #FFFFFF;border:3px solid #ddd; box-shadow: 0px 3px 3px #cccccc;width: 960px; margin-top: 22px;}  div.page{  height: 684px;  background-color: #fff; background-image: url("__SKIN__/Home/imgs/bg.jpeg") ; }  .tbody-s{  margin-left: 300px;  }  form#user_form{  margin-top:150px;  }  .top{  margin-top: 100px;  }  .btn-s{  margin-left: 90px;  }  input#member_code.txt{  width: 150px;  }  .btn-10,  {  padding: 10px 6px 10px 5px;  font-size: 14px;  text-align: center;  border: 3px #71b351;  background: rgba(49, 20, 33, 0.12);  margin-left: 20px;  color: rgba(113, 179, 81, 0.82);  }
+</style>
+<body>
+<!--顶部样式-->
+<include file="Shop/Home/Common/header.html"/>
+<!--菜单导航样式-->
+<include file="Shop/Home/Common/topMenu.html"/>
+<!--内页样式-->
+<div class="user_style clearfix" id="user">
+    <!--用户中心布局样式-->
+    <include file="Shop/Home/View/Member/public.html"/>
+    <!--右侧样式布局-->
+    <div class="right_style r_user_style">
+        <!--地址管理-->
+        <div class="user_address">
+            <div id="append_parent"></div>
+            <div id="ajaxwaitid"></div>
+            <div class="page">
+                <form id="user_form" enctype="multipart/form-data" method="post" action="{:U('member/editor')}?id={$date['id']}">
+                    <div class="tbody-s">
+                        <input type="hidden" name="form_submit" value="ok" />
+                        <input type="hidden" name="member_id" value="2" />
+                        <input type="hidden" name="old_member_avatar" value="" />
+                        <input type="hidden" name="member_name" value="admin" />
+                        <table class="table tb-type2">
+                            <tbody>
+                            <tr class="noborder">
+                                <td class="vatop rowform">{$date['username']}</td>
+                                <td class="vatop tips"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="required"><label for="member_password">旧密码:</label></td>
+                            </tr>
+                            <tr class="noborder">
+                                <td class="vatop rowform"><input type="password" id="member_password" name="password" class="txt" value=""></td>
+                                <td class="vatop tips"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="required"><label for="member_repassword">新密码:</label></td>
+                            </tr>
+                            <tr class="noborder">
+                                <td class="vatop rowform"><input type="password" id="member_repassword" name="repassword" class="txt" value=""></td>
+                                <td class="vatop tips"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="required"><label class="validation" for="member_mobile">手机号码:</label></td>
+                            </tr>
+                            <tr class="noborder">
+                                <td class="vatop rowform"><input type="text" value="" id="member_mobile" name="mobile" class="txt"></td>
+                                <td class="vatop tips"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="required"><label class="member_code">验证码:</label> </td>
+                            </tr>
+                            <tr class="noborder">
+                                <td class="vatop rowform"><input type="text" value="" id="member_code" name="code" class="txt"  ><input type="button" id="btn" value="获取验证码" onclick="Code_send()"><s></s></a>
+                                </td>
+                                <td class="vatop tips"></td>
+                            </tr>
+                            <!--V3-B11 手机号码-->
+                            </tbody>
+                            <tfoot>
+                            <tr class="tfoot">
+                                <!--<td colspan="15"><a href="javascript:document.getElementById('user_form').submit();" class="btn-s" id="{$date['id']}"><span>提交</span></a></td>-->
+                                <td colspan="15"><a  class="btn-s" id="" style="cursor: pointer" href="javascript:void(0)" onclick="code()"><span>提交</span></a></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--底部样式-->
+<include file="Shop/Home/Common/footer.html"/>
+<!--底部样式-->
+<!--右侧菜单栏购物车样式-->
+<include file="Shop/Home/Common/rightMenu.html"/>
+</body>
+</html>
+<style>
+    input#btn{  color: #0d93bf;  border: solid 1px#75ccef;  height: 25px;  padding: -1px 1px 0px 1px;  margin-top: -1px;  }
+    input#btn:hover{  cursor: pointer;  color: #666;  }
+</style>
+<script src="__SKIN__/Home/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script> <!--逻辑功能代码 -->
+<script type="text/javascript">
+/*
+  function addCookie(name,value,expiresHours){
+        if(expiresHours>0){
+            var date=new Data();
+            date.setTime(date.getTime()+expiresHours*1000);
+            $.cookie(name,escape(value),{expires:date});
+        }else{
+            $.cookie(name,escape(value));
+        }
+    }
+    function editCookie(name,value,expiresHours){
+        if(expiresHours>0){
+            var date=new Date();
+            date.setTime(date.getTime()+expiresHours*1000);
+            $cookie(name,escape(value),{expires:date});
+
+        }else{
+            $.cookie(name,escape(value));
+        }
+    }
+    function getCookieValue(name){
+        return $.cookie(name);
+    }
+    $(function(){
+        $('#btn').click(function(){
+            Code_send($('#btn'));
+        });
+        V= getCookieValue("secondsremained");
+        if(V>0){
+           // setTime($('#btn'));
+            settime($("#btn"));
+        }
+    })
+*/
+
+  var InterValObj;
+  var count=60;
+  var curCount;
+    function Code_send(){
+        var mobile=$('#member_mobile').val();
+        var Length=$('#member_mobile').val().length;
+        if(mobile==''){
+            layer.msg('请填写手机号');
+        }else{
+            if(Length!==11){
+                layer.msg('请填写11位的手机号')
+                $('#btn').val('');
+            }else{
+                if(!mobile.match(/^1[3|4|5|7|8][0-9]\d{4,8}$/)){
+                    layer.msg('请填写正确的手机号码')
+                }
+                $.ajax({
+                    url:'{:U("member/Code_send")}',
+                    type:'post',
+                    data:{'mobile':$('#member_mobile').val()},
+                    error:function(){
+                        layer.msg('网络错误')
+                        $("#btn").val("重新获取");
+                    },
+                    success:function(res){
+                        if(res==0){
+                            curCount=count;
+                            $("#btn").attr("disabled",true);
+                            $("#btn").val(curCount+'秒后可重新获取');
+                            InterValObj=window.setInterval(SetRemainTime,1000);
+                            layer.msg('验证码已发送请注意接收');
+                        }else if(res==1){
+                            layer.msg('手机号和账户不匹配')
+                        }else{
+                            if(res==2){
+                               layer.msg('网络错误 请重新获取')
+                                 $("#btn").val("重新获取");
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }
+    function SetRemainTime(){
+        if(curCount==0){
+            window.clearInterval(InterValObj);
+            $("#btn").val("重新获取");
+        }else{
+            curCount--;
+            $("#btn").val(curCount+'秒后可重新获取');
+        }
+    }
+</script>
+<script type="text/javascript">
+    function code(){
+        var password=$('#member_password').val();
+        var rePassword=$('#member_repassword').val();
+        var mobile=$('#member_mobile').val();
+        var code=$('#member_code').val();
+        var Mol=$('#member_mobile').val().length;
+        if(password==''){
+            layer.msg('请填写密码');
+        }else if(rePassword==''){
+            layer.msg('请填写密码');
+        }else if(mobile==''){
+            layer.msg('请填写手机号');
+        }else if(code==''){
+            layer.msg('请填写验证码')
+        }else{
+            if(Mol!==11){
+                layer.msg('请填写11位的手机号')
+            }else{
+                if(!mobile.match(/^1[3|4|5|7|8][0-9]\d{4,8}$/)){
+                    layer.msg('请填写正确的手机号码')
+                }
+                $.ajax({
+                    url:'{:U("member/send_Code")}',
+                    type:'post',
+                    data:{'password':$('#member_password').val(),'rePassword':$('#member_repassword').val(),'mobile':$('#member_mobile').val(),'code':$('#member_code').val()},
+                    error:function(){
+                        layer.msg('网络错误 请重新填写');
+                    },
+                    success:function(res){
+                        if(res==0){
+                            layer.msg('新密码不能旧密码相同')
+                        }else if(res==1){
+                            layer.msg('旧密码错误');
+                        }else if(res==2) {
+                            layer.msg('验证码错误');
+                        }else{
+                            if(res==3){
+                                layer.msg('修改成功 请重新登陆');
+                                function url(){
+                                    window.location='{:U("users/login")}'
+                                }
+                                setTimeout(url,3000);
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }
+</script>
+
+
+
+
+
+
+

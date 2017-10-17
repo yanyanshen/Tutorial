@@ -1,0 +1,39 @@
+<volist name="collect" id="goods">
+    <div class="pro1 clearfix">
+        <a href="{:U('Goods/details',array('id'=>$goods['gid']))}" style="width: 90%">
+            <img src="/uploads/n2/{:reset(explode(',',$goods['goods']['image']))}" alt="">
+            <p class="fl" style="width: 70%;height: 40px">{$goods['goods']['goodsname']}</p>
+            <p class="mony fl">￥{$goods['goods']['saleprice']}</p>
+        </a>
+        <div style="display: none">{$goods['id']}</div>
+        <span class="del">删除</span>
+    </div>
+</volist>
+<script>
+    $(function(){
+        if($('.fr').text()=='完成'){
+            $("span:contains('删除')").css('display','inline-block');
+        }else{
+            $("span:contains('删除')").css('display','none');
+        }
+
+        $(".del").click(function() {
+            //alert(1)
+             var colid=$(this).prev().text();
+             $.post("{:U('Member/delcollect')}",{id:colid},function(res){
+                 layer.open({
+                 content:res.info,
+                 skin:'msg',
+                 time:1
+                 })
+                 if(res.status==1){
+                     $.post("{:U('Member/collect')}",function(res1){
+                     $('.product').html(res1);
+                     })
+                 }
+             })
+        })
+
+
+    })
+</script>

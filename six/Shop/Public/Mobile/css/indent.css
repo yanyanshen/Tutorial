@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-06-21 19:50:12
+ * @version $Id$
+ */
+
+/*通用样式*/
+
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var{ margin: 0; padding: 0; box-sizing: border-box;}
+html { font-size: 100px; }
+body { font-family:"微软雅黑"; font-size:0.24rem; color:#333333;background:#f2f2f2;padding-left:0.3rem;padding-right:0.3rem;}
+ul, li { list-style:none;} 
+h1,h2,h3,h4,h5,h6 { font-weight:normal;}
+img { border:none; vertical-align:top; font-size:0rem;}
+.bk { border:0.01rem solid green;}
+.fl { float:left;}
+.fr { float:right;}
+a { text-decoration:none; color:#000;}
+a:hover { color:#ea5505;}
+a:link,a:visited{text-decoration:none;color:#333;}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix:after { content:""; height:0; font-size:0rem; visibility:hidden; display:block; clear:both;}
+.clearfix { *zoom:1;}
+.wrapper{width:6.9rem;margin:0 auto;}
+
+/*头部样式 开始*/
+.header{width:100%;height:0 auto;padding:0.24rem 0.25rem 0.23rem 0.25rem;overflow:hidden;}
+.header .right{position: relative;}
+.header .right input{vertical-align:top;border:0.01px solid #fff;border-radius:0.1rem;width:6.35rem;height:0.7rem;font-size:0.24rem;color:#999;display: block;text-indent: 0.67rem;border:0.02rem solid #ccc;}
+.header .right span{background:url(../images/search.png) no-repeat;width:0.25rem;height:0.29rem;background-size:0.25rem 0.29rem;display:block;position: absolute;top: 0.19rem;left: 0.25rem;}
+
+/*头部样式 结束*/
+
+ /*菜单样式 开始 */
+.menu{width:100%;height:0 auto;background:#fff;padding-left:0.25rem;padding-right:0.25rem;border:0.02rem solid #ccc;}
+.menu ul{font-size: 0;}
+.menu ul li{display:inline-block;*display: inline;*zoom:1;padding:0.26rem 0rem;font-size:0.26rem;color:#666;margin-right:0.26rem;}
+.menu ul li a{padding:0.26rem 0rem;}
+.menu ul .all{text-align: center;padding-left:0.13rem;padding-right: 0.13rem;}
+.menu ul .refund{text-align: center;padding-left:0.13rem;padding-right: 0.13rem;margin-right:0;}
+.menu ul li:hover{border-bottom:0.02rem solid #ff3300;}
+.menu ul li:hover a{color:#ff3300;}
+
+/*菜单样式 结束 */
+
+/*评价样式 开始*/
+.evaluate{width:100%;height:0 auto;position: relative;margin-bottom:0.47rem;}
+.evaluate .evaluate-top{background:#fff;border:0.02rem solid #ccc;}
+.evaluate .evaluate-top p{display: inline-block;*display:inline;*zoom:1;padding:0.19rem 0.04rem 0.3rem 0.28rem;color:#ff0000;}
+.evaluate .evaluate-top p a{color:#fff;background-color: #ff9900;width:1.25rem;height:0.6rem;display: block;text-align:center;line-height:0.6rem;border-radius: 0.1rem;}
+.evaluate .evaluate-top p:nth-of-type(2){padding-left:3.8rem;}
+.evaluate .evaluate-bottom{background:#fff;border:0.02rem solid #ccc;margin-top:0.02rem;padding:0.36rem 0.33rem 0.31rem 0.3rem;}
+.evaluate .evaluate-bottom p img{width:1.57rem;height:1.57rem;} 
+.evaluate .evaluate-bottom .evaluate-bottom-right p{font-size: 0.24rem;padding-left: 0.33rem;padding-top:0.2rem;padding-left:0.33rem;}
+.evaluate .evaluate-bottom .evaluate-bottom-right .money{font-size: 0.26rem;color:#ff0000;padding-top: 0.35rem;}
+.evaluate .evaluate-bottom .evaluate-bottom-right .money span{font-size: 0.24rem;color:#999;position: absolute;right:0.29rem;}
+
+/*评价样式 结束*/
+
+/*付款样式 开始*/
+.payment{width:100%;height:0 auto;position: relative;margin-bottom:0.05rem;}
+.payment .payment-top{background:#fff;border:0.02rem solid #ccc;}
+.payment .payment-top p{display: inline-block;*display:inline;*zoom:1;padding:0.17rem 0.04rem 0.3rem 0.25rem;color:#ff0000;}
+.payment .payment-top p a{color:#fff;background-color: #ff3300;width:1.25rem;height:0.6rem;display: block;text-align:center;line-height:0.6rem;border-radius: 0.1rem;}
+.payment .payment-top p:nth-of-type(2){padding-left:3.8rem;}
+.payment .payment-bottom{background:#fff;border:0.02rem solid #ccc;margin-top:0.02rem;padding:0.36rem 0.33rem 0.31rem 0.3rem;}
+.payment .payment-bottom p img{width:1.57rem;height:1.57rem;} 
+.payment .payment-bottom .payment-bottom-right p{font-size: 0.24rem;padding-left: 0.33rem;padding-top:0.2rem;padding-left:0.33rem;}
+.payment .payment-bottom .payment-bottom-right .money{font-size: 0.26rem;color:#ff0000;padding-top: 0.35rem;}
+.payment .payment-bottom .payment-bottom-right .money span{font-size: 0.24rem;color:#999;position: absolute;bottom:0.59rem;right:0.29rem;}
+
+/*付款样式 结束*/
+
+/*收货样式 开始*/
+.goods{width:100%;height:0 auto;position: relative;margin-bottom:0.05rem;}
+.goods .goods-top{background:#fff;border:0.02rem solid #ccc;}
+.goods .goods-top p{display: inline-block;*display:inline;*zoom:1;padding:0.17rem 0.04rem 0.3rem 0.25rem;color:#ff0000;}
+.goods .goods-top p a{color:#fff;background-color: #66cc00;width:1.25rem;height:0.6rem;display: block;text-align:center;line-height:0.6rem;border-radius: 0.1rem;}
+.goods .goods-top p:nth-of-type(2){padding-left:3.8rem;}
+.goods .goods-bottom{background:#fff;border:0.02rem solid #ccc;margin-top:0.02rem;padding:0.36rem 0.33rem 0.31rem 0.3rem;}
+.goods .goods-bottom p img{width:1.57rem;height:1.57rem;} 
+.goods .goods-bottom .goods-bottom-right p{font-size: 0.24rem;padding-left: 0.33rem;padding-top:0.2rem;padding-left:0.33rem;}
+.goods .goods-bottom .goods-bottom-right .money{font-size: 0.26rem;color:#ff0000;padding-top: 0.35rem;}
+.goods .goods-bottom .goods-bottom-right .money span{font-size: 0.24rem;color:#999;position: absolute;bottom:0.59rem;right:0.29rem;}
+
+
+/*收货样式 结束*/
+
+
+
+
+
+

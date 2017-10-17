@@ -1,0 +1,130 @@
+<style>
+.cartBox{width: 800px;color: black}
+.scar{width:100%;}
+.scar li{height: 50px;line-height: 50px;margin-bottom: 4px;border-bottom: 1px solid #D4D4D4;position: relative;}
+.scar li .a1{width: 50px;height: 50px;float: left;}
+.scar li .a1 img{width: 50px;height: 50px;}
+.scar li .span11{width: 130px;height: 50px; float: left;text-align: left;margin-left: 5px; }
+.scar li .span11 a{color: black;text-decoration: none;}
+.scar li .span22{width: 50px;float: left;color: red;position: absolute;top: -12px;right: 20px;}
+.scar li .a2{width: 30px; height: 50px;float: right;margin-right: 10px;margin-left: 3px;margin-top: 5px;position: absolute}
+.tt{height: 50px;}
+.ttt{width: 160px;height: 50px;float: left;margin-left: 0px;line-height: 50px;text-align: left;}
+.ttt strong{float:right;height: 50px;line-height: 50px;margin-top: 15px;}
+.tttt{width: 80px;height: 30px;display: block;float: right;margin:10px 20px 0 0;background:#E4393C;text-align: center;line-height: 30px;}
+</style>
+<div class="fixedBox">
+    <ul class="fixedBoxList">
+        <li class="fixeBoxLi user"><a href="#"> <span class="fixeBoxSpan iconfont icon-my"></span> <strong>用户</strong></a> </li>
+        <li class="fixeBoxLi cart_bd" style="display:block;" id="cartboxs">
+            <p class="good_cart" id="good_cart">0</p>
+            <span class="fixeBoxSpan iconfont icon-cart"></span> <strong>购物车</strong>
+            <div class="cartBox">
+                <div class="bjfff"></div>
+                <ul class="scar">
+                  
+                </ul>  
+                <div class="tt">
+                    <div class="ttt">共<b></b>件商品　共计<strong>￥ 515.00</strong></div>
+                    <a href="{:U('Goods/shop_cart')}" title="去购物车结算" id="btn-payforgoods" class="tttt">去购物车结算</a>
+                </div>
+            </div>
+        </li>
+        <li class="fixeBoxLi Service "> <span class="fixeBoxSpan iconfont icon-qq1"></span> <strong>客服</strong>
+            <div class="ServiceBox">
+                <div class="bjfffs"></div>
+                <dl onclick="javascript:;">
+                    <dt><img src="__SKIN__/Home/imgs/images/Service1.png"></dt>
+                    <dd><strong>QQ客服1</strong>
+                        <p class="p1">9:00-22:00</p>
+                        <p class="p2"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456&amp;site=DGG三端同步&amp;menu=yes">点击交谈</a></p>
+                    </dd>
+                </dl>
+                <dl onclick="javascript:;">
+                    <dt><img src="__SKIN__/Home/imgs/images/Service1.png"></dt>
+                    <dd> <strong>QQ客服2</strong>
+                        <p class="p1">9:00-22:00</p>
+                        <p class="p2"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456&amp;site=DGG三端同步&amp;menu=yes">点击交谈</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li class="fixeBoxLi code cart_bd " style="display:block;" id="cartboxs">
+            <span class="fixeBoxSpan iconfont icon-weixin"></span> <strong>微信</strong>
+            <div class="cartBox">
+                <!-- <div class="bjfff"></div> -->
+                <div class="QR_code" >
+                    <p><img src="__SKIN__/Home/imgs/images/erweima.png" width="150px" height="150px" style=" margin-top:10px;" /></p>
+                    <p>微信扫一扫，关注我们</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="fixeBoxLi Home"> <a href="./"> <span class="fixeBoxSpan iconfont  icon-collect"></span> <strong>收藏</strong> </a> </li>
+        <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan iconfont icon-top"></span> <strong>返回顶部</strong> </li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        $(".cart_bd").mouseenter(function(){
+            $(this).addClass('hover');
+            $.post('{:U("Index/smallcar")}',function(res){
+                var str='';
+                var str2='';
+
+                var num=0;
+                var totalprice=0;
+                
+                if(res){
+                    for(var i in res){
+
+                    str+='<li>';
+                    str+='<a href="" class="a1"><img src="/uploads/n1/'+res[i].image+'"></a>';
+                    str+='<span class="span11"><a style="color:black;" href="#">'+res[i].goodsname+'</a></span>';
+                    str+='<span class="span22">￥'+res[i].saleprice+'*'+res[i].buynum+'</span>';
+                    str+='<a style="color:black;" href="javascript:;" name="'+res[i].gid+'" class="gid a2">删除</a>';
+                    str+='</li>';
+                    num=num+res[i].buynum*1;
+                    totalprice=totalprice+(res[i].saleprice*1)*(res[i].buynum*1);
+                    }
+
+                    $('.scar').html(str);
+                }else{
+                    if($(".message").attr("class")){
+
+                    }else{
+                    str='<div class="message">购物车内暂无商品，赶紧选购吧</div>';
+                    $('.bjfff').after(str);
+                    $('.scar').empty();
+                    }
+                }
+                str2+='<div class="ttt">共<b>'+num+'</b>件商品　共计<strong style="color:black;">￥ '+totalprice+'</strong></div>'; 
+                str2+='<a href="{:U('Cart/cart')}" title="去购物车结算" id="btn-payforgoods" class="tttt">去购物车结算</a>';
+                
+                
+                var coun=document.getElementById('good_cart');
+                coun.innerHTML=num;
+                $('.tt').html(str2);
+            },'json')
+
+        })
+       
+
+        $('.gid').live('click',function(){
+            id=$(this).attr("name")
+            $.post("{:U('Cart/cartdel')}",{gid:id},function(res){
+                // alert(res);
+                if(res.status>0){
+                    layer.msg('删除成功');
+                }else{
+                    layer.msg('删除失败');
+                }
+            })
+        })
+        // $(".hd_Shopping_list").mouseleave(function(){
+        //     $(this).removeClass('hover');
+        //     // $('.')
+        // })
+    })
+
+</script>

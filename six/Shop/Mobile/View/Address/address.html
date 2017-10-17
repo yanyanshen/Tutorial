@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>超市</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link href="__MOBILE__/Mobile/css/amazeui.min.css" rel="stylesheet" type="text/css" />
+    <link href="__MOBILE__/Mobile/css/address.css" rel="stylesheet" type="text/css" />
+    <script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+    <script src="__MOBILE__/Mobile/js/amazeui.min.js"></script>
+    <style type="text/css">
+        .empty{font-size: 20px;}
+    </style>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default sq-head ">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.back()" class="">
+            <i class="am-icon-chevron-left" style="font-size: 28px;margin-left: -20px;"> < </i>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="" class="">管理收货地址</a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="{:U('Address/addAddress')}" class="">
+            <i class="am-icon-plus" style="font-size: 40px;">+</i>
+        </a>
+    </div>
+</header>
+<div style="height: 49px;"></div>
+<ul class="address-list">
+    <volist name="addresslist" id="address" empty="$empty">
+    <li class="curr">
+        <p>收货人：{$address.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系电话：{$address.mobile}</p>
+        <p class="order-add1">收货地址：{$address.address}{$address.detailaddress}</p>
+        <hr />
+        <div class="address-cz">
+            <label class="am-radio am-warning">
+                <if condition="$address.setdefault eq 1">
+                    <input type="radio" name="radio3" value="" checked > 设为默认
+                    <else/><input type="radio" name="radio3" value="" > 设为默认
+                </if>
+
+            </label>
+            <div style="display: none">{$address.id}</div>
+            <a href="{:U('Address/addAddress',array('id'=>$address['id']))}" class="edit"><img src="__MOBILE__/Mobile/imgs/bj.png" width="18" />&nbsp;编辑</a>
+            <a href="javascript:;" class="adel">删除</a>
+        </div>
+    </li>
+    </volist>
+</ul>
+<script src="__MOBILE__/Mobile/js/amazeui.min.js"></script>
+<script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".adel").click(function(){
+            var aid=$(this).prev().prev().text();
+            //alert(aid);
+            layer.open({
+                content:'确定删除？',
+                style:"width:300px;height:130px; font-size:28px;",
+                btn:['删除','取消'],
+                shadeClose:false,
+                yes:function(){
+                    $.post("{:U('Address/deladdress')}",{id:aid},function(res){
+                            layer.open({
+                                content:res.info,
+                                time:1
+                            });
+                        setTimeout(del,1000);
+                        function del(){location.reload();}
+                    })
+                }
+            })
+
+        })
+
+        //设置默认
+        $(".am-radio input").click(function(){
+            var aid=$(this).parent().next().text();
+            $.post("{:U('Address/defaultaddress')}",{id:aid},function(res){
+                layer.open({
+                    content:res.info,
+                    time:1
+                })
+            })
+        })
+    })
+</script>
+</body>
+</html>

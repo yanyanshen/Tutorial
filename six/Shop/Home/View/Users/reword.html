@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+    <link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="__SKIN__/Home/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    <link href="__SKIN__/Home/css/jd.css" rel="stylesheet" type="text/css"/>
+    <link href="__SKIN__/Home/css/jd-1.css" rel="stylesheet" type="text/css"/>
+    <link href="__SKIN__/Home/css/jd-2.css" rel="stylesheet" type="text/css">
+    <script src="__SKIN__/Home/js/search.js" type="text/javascript" ></script>
+    <title>修改密码</title>
+</head>
+<script src="__SKIN__/Home/js/gt.js"  type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jQuery.validate.min.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/layer/layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#form1').submit(function(){
+            $.post('{:U("Users/geetest_submit_check")}',$('#form1').serialize(),function(res){
+                if(res.status==0){
+                    //layer.alert(res.info,{skin:'layui-layer-molv',closeBtn:0,anim:4})
+                    if(layer.msg(res.info)){
+                        setTimeout("location.reload();",1000);
+                    }
+                }else{
+                    location.href='{:U("Users/setPwdOne")}?username='+res.info
+                }
+            })
+            return false;
+
+        })
+    })
+</script>
+<script type="text/javascript">
+    var handler = function (captchaObj) {
+        // 将验证码加到id为captcha的元素里
+        captchaObj.appendTo("#captcha");
+    };
+    // 获取验证码
+    $.get("{:U('Home/Users/geetest_show_verify')}", function(data) {
+        // 使用initGeetest接口
+        // 参数1：配置参数，与创建Geetest实例时接受的参数一致
+        // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+        initGeetest({
+            gt: data.gt,
+            challenge: data.challenge,
+            product: "float", // 产品形式
+            offline: !data.success
+        }, handler);
+    },'json');
+    /*  function check_verify(){
+     // 组合验证需要用的数据
+     var test=$('.geetest_challenge').val();
+     var postData={
+     geetest_challenge: $('.geetest_challenge').val(),
+     geetest_validate: $('.geetest_validate').val(),
+     geetest_seccode: $('.geetest_seccode').val()
+     }
+     $.post("{:U('Home/member/geetest_ajax_check')}", postData, function(data) {
+     if (data==1){
+     alert('验证通过')
+     }else{
+     layer.alert('验证吗错误')
+     }
+     });
+     }*/
+</script>
+<body>
+<include file="Shop/Home/Common/header.html"/>
+<include file="Shop/Home/Common/topMenu.html"/>
+<form action="{:U('Users/geetest_submit_check')}" name="form1" method="post" id="form1">
+    <div id="container">
+        <div class="w">
+            <div class="mod-main mod-comm">
+                <div class="mt">
+                    <h3>找回密码</h3>
+                </div>
+                <div class="mc">
+                    <div id="sflex04" class="stepflex ">
+                        <dl class="first doing">
+                            <dt class="s-num">1</dt>
+                            <dd class="s-text">填写账户名<s></s><b></b></dd>
+                            <dd></dd>
+                        </dl>
+                        <dl class="normal">
+                            <dt class="s-num">2</dt>
+                            <dd class="s-text">验证身份<s></s><b></b></dd>
+                        </dl>
+                        <dl class="normal">
+                            <dt class="s-num">3</dt>
+                            <dd class="s-text">设置新密码<s></s><b></b></dd>
+                        </dl>
+                        <dl class="last">
+                            <dt class="s-num">&nbsp;</dt>
+                            <dd class="s-text">完成<s></s><b></b></dd>
+                        </dl>
+                    </div>
+
+                    <div class="form formno" style="width: 65%;margin-left: 30%;">
+                        <div class="item">
+                            <span class="label">账户名：</span>
+                            <div class="fl">
+                                <input type="text" class="itxt" tabindex="1" onfocus="usernameOnfocus();" onblur="usernameOnblur();"  name="username" id="username" value="{$Think.session.username}">
+                                <div class="clr"></div>
+                                <label id="username_error" calss=""></label>
+                            </div>
+
+                            <div class="clr"></div>
+                        </div>
+                        <div class="item">
+                            <span class="label">验证码：</span>
+                            <div class="fl">
+                                <div class="clr" id="captcha" ></div>
+                                <div class="msg-error" id="authCode_error"></div>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+
+
+                        <div class="item">
+                            <span class="label">&nbsp;</span>
+                            <div class="fl">
+                                <!-- <a href="javascript:void(0);" class="btn-5" onclick="check_verify()" id="findPwdSubmit">提交</a>-->
+                                <!--<input type="button" value="提交" onclick="check_verify()" id="findPwdSubmit">-->
+                                <input type="submit" value="提交"  id="findPwdSubmit">
+
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                        <input type="hidden" name="eid" id="eid" value="" class="hide"/>
+                        <input type="hidden" name="fp" id="fp" value="" class="hide"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<include file="Shop/Home/Common/footer.html"/>
+</html>
+
+
+
+
+
+
+
+
+

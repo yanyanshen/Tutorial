@@ -1,0 +1,83 @@
+<div class="comment detail_div mt10"><div class="comment_summary"><div class="rate fl"><strong><em>{$good[3]}</em>%</strong><br /><span>好评度</span>
+</div><div class='percent fl'><dl><dt>好评（{$good[3]}%)</dt><dd><div style='width:0px;'></div></dd></dl><dl><dt>中评（{$good[2]}%）</dt><dd><div style='width:0px;'></div></dd></dl>
+    <dl><dt>差评（{$good[1]}%）</dt><dd><div style='width:0px;' ></div></dd></dl></div><div class='buyer fl'><dl><dt>评论查询：</dt>
+    <dd><span><label for="v0">全部</label></span><if condition="$good[4]==0"><input type="radio" class="level" name="level" value="0" id="v0" checked><else/><input type="radio" name="level" value="0" id="v0" ></if></dd>
+    <dd><span><label for="v3">好评</label></span><if condition="$good[4]==3"><input type="radio" class="level" name="level" value="3" id="v3" checked><else/><input type="radio" name="level" value="3" id="v3" ></if></dd>
+    <dd><span><label for="v2">中评</label></span><if condition="$good[4]==2"><input type="radio" class="level" name="level" value="2" id="v2" checked><else/><input type="radio" name="level" value="2" id="v2" ></if></dd>
+    <dd><span><label for="v1">差评</label></span><if condition="$good[4]==1"><input type="radio" class="level" name="level" value="1" id="v1" checked><else/><input type="radio" name="level" value="1" id="v1" ></if></dd>
+    </dl></div></div></div>
+    <volist name="list" id="val" empty="$empty">
+        <div class='comment_items mt10'><div class='user_pic'><dl><dt><a href=''><img src="/uploads/avatar/{$val.images}" alt='' width="60" height="60"/></a></dt><dd><a href='javascript:;'>{$val["username"]}</a></dd> </dl> </div>
+            <div class='item'><div class='title'><span>{:date("Y-m-d H:i",$val["pjtime"])}</span><strong class='star star{$val.level}'></strong> <!-- star5表示5星级 start4表示4星级，以此类推 --> </div>
+                <div class='comment_content'><dl><dt>评价：</dt><dd>{$val["pingjia"]}</dd>
+                    <if condition="$val['return'] eq 0"><else/><dt>回复：</dt><dd style="color:darkorange">{$val["return"]}</dd></if></dl>
+                    <dl><dt>购买日期：</dt><dd>{:date("Y-m-d",$val["createtime"])}</dd></dl></div>
+                <div class='btns'><a href='javascript:;' class='useful' name="{$val['id']}">有用({$val["userful"]})</a></div></div><div class='cornor'></div></div>
+
+
+    </volist>
+    <div class='page mt20'>{$page}</div>
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js"></script>
+<script src="__SKIN__/Home/js/layer.js"></script>
+<script>
+    $(function(){
+        $(".percent").children().eq(0).children("dd").children("div").css("width",{$good[3]}+"px");
+        $(".percent").children().eq(1).children("dd").children("div").css("width",{$good[2]}+"px");
+        $(".percent").children().eq(2).children("dd").children("div").css("width",{$good[1]}+"px");
+
+        $("input[name='level']").change(function(){
+            var id={$goods["id"]};
+            var level=0;
+            $("input[name='level']").each(function(){
+                if($(this).attr("checked")){
+                    level=$(this).val();
+                }
+            })
+            $.post("{:U('Goods/goodsDetail')}",{'id':id,'level':level},function(res){
+                $("#shangpsx").html(res);
+            })
+        })
+
+
+    })
+</script>
+<script>
+    $(function(){
+
+        $(".useful").click(function(){
+
+         if({$_SESSION['uid']|default="false"}){
+                var pid=$(this).attr("name")
+                 id={$_SESSION['uid']|default="0"};
+                $.post("{:U('Goods/useful')}",{"pid":pid,"uid":id},function(res){
+                    if(res.status!=0){
+                        layer.msg("评论成功，感谢您的支持")
+                    }else{
+                        layer.msg("评论失败,您已经评价过了")
+                    }
+                })
+
+            }else{
+
+                layer.msg("请您先登录");
+
+
+           }
+
+        })
+    })
+
+    function search(id){
+        var level=0;
+        $("input[name='level']").each(function(){
+            if($(this).attr("checked")){
+                level=$(this).val();
+            }
+        })
+
+        var id=id?id:1;
+        $.post("{:U('Goods/goodsDetail')}",{"p":id,"level":level},function(res){
+            $('#shangpsx').html(res);
+        })
+    }
+</script>

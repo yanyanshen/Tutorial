@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>超市</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="/theme/default/images/favicon.png">
+    <link href="__MOBILE__/Mobile/css/amazeui.min.css" rel="stylesheet" type="text/css" />
+    <link href="__MOBILE__/Mobile/css/address.css" rel="stylesheet" type="text/css" />
+    <link href="__MOBILE__/Mobile/css/area.css" rel="stylesheet" type="text/css"/>
+    <script src="__MOBILE__/Mobile/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="__MOBILE__/Mobile/js/area.js"></script>
+    <script src="__MOBILE__/Mobile/js/area.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default sq-head ">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.back()" class="">
+            <i class="am-icon-chevron-left"></i>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="" class="">新增收货地址</a>
+    </h1>
+</header>
+<div style="height: 60px;"></div>
+<form action="{:U('Address/addAddress')}" method="post" id="form1">
+    <ul class="address">
+        收货人：  <li><input type="text" name="name" value="{$address.name}" class="add-input" placeholder="收货人" /></li>
+        联系电话：<li><input type="text" name="mobile" value="{$address.mobile}" class="add-input" placeholder="联系方式" /></li>
+        所在地区：<li>
+                    <div id="addAddress">
+                        <div class="address_input"><input class="add-input address_input1" name="address" value="{$address.address}" style="width: 375px" type="text" placeholder="省市区" id="shengshi" onClick="getProvinceBuy()" readonly="readonly"></div>
+                    </div>
+                </li>
+                <li><input type="text" class="add-input" name="detailaddress" value="{$address.detailaddress}" placeholder="详细地址" /></li>
+
+    </ul>
+    <div class="moren">
+        <label class="am-checkbox am-warning">
+            <input type="checkbox" name="default" checked="checked" value="1" checked>设为默认
+        </label>
+
+    </div>
+    <input type="hidden" name="id" value="{$address.id}"/>
+    <input type="button" class="login-btn" value="确认提交">
+</form>
+<script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+<script src="__MOBILE__/Mobile/js/amazeui.min.js"></script>
+<script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".login-btn").click(function(){
+            $.post("{:U('Address/addAddress')}",$("#form1").serialize(),function(res){
+                layer.open({
+                    content:res.info,
+                    skin:'msg',
+                    time:1
+                })
+                if(res.status==1){
+                    setTimeout(a,1000);
+                    function a(){location.href="{:U('Address/address')}"}
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>

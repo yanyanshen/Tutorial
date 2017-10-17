@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="" rel="stylesheet">
+<link href="__MOBILE__/Mobile/css/details.css" rel="stylesheet">
+<link href="__MOBILE__/Mobile/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__MOBILE__/Mobile/css/font-awesome.css" rel="stylesheet">
+<link href="__MOBILE__/Mobile/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__MOBILE__/Mobile/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="__MOBILE__/Mobile/css/swiper.min.css">
+<script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+
+    <style>
+        .memu li{cursor: pointer}
+    </style>
+</head>
+
+<body>
+<!-- banner开始 -->
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <volist name=":explode(',',$goodsinfo['image'])" id="vi">
+                <div class="swiper-slide"><a href="javascript:;"><img src="/uploads/n0/{$vi}" alt=""></a></div>
+            </volist>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+
+<!--    详情开始  -->
+<form action="{:U('Cart/addcart')}" method="post" id="add" name="form1" enctype="multipart/form-data">
+    <input type="hidden" name="gid" value="{$goodsinfo['id']}">
+    <input type="hidden" name="goodsname" value="{$goodsinfo['goodsname']}">
+    <input type="hidden" name="price" value="{$goodsinfo['saleprice']}">
+    <div class="introduct">
+        <div class="wrapper font ">
+           <span class="name">{$goodsinfo.goodsname}
+            </span>
+            <span class="share" style="float: right">
+             <a href=""><i class="icon-share"></i><br>分享</a>
+            </span>
+            <p>
+                <span class="price">￥<span>{$goodsinfo.saleprice}</span></span>
+                <span class="price-2"><i>涨价</i></span>
+                <span class="price-3"><i>促销</i></span>
+            </p>
+            <p class="price-4">价格￥{$goodsinfo.markprice}</p>
+            <p>
+	            <span class="price-5">快递：免运费<span>月销6899笔</span>河南郑州</span>
+            </p>
+        </div>
+        <div class="statement" >
+                <i class="icon-heart"></i>
+                <span>卖家承诺7天内发货</span>
+                <i class="icon-heart"></i>
+                <span>七天无理由</span>
+                <i class="icon-heart"></i>
+                <span>新品</span>
+        </div>
+        <div class="choose-color" >
+                购买数量：
+                <input id="min5" name="" type="button" value="-" style="width:0.4rem;height:0.4rem;"/>
+                <input id="text_box5" name="buynum" class="buynum" type="text" value="1" style="width:0.3rem;height:0.3rem;"/>
+                <input id="add5" name="" type="button" value="+" style="width:0.4rem;height:0.4rem;"/>
+        </div>              
+    </div>
+    <!-- 底部开始   -->
+    <div class="foot">
+        <div class="bg">
+        </div>
+        <ul class="memu">
+            <li class="icon-heart-empty icon"></li>
+            <li class="icon-shopping-cart icon"></li>
+            <li class="shopping" >加入购物车</li>
+            <li class="buy">立即购买</li>
+        </ul>
+    </div>
+    <input type="hidden" name="gid[0]" value="{$goodsinfo['id']}">
+    <input type="hidden" name="price[0]" value="{$goodsinfo['saleprice']}">
+</form>
+<!-- 商品评价 -->
+<div class="evaluate">
+        <div class="wrapper font ">
+                <!-- <p>商品评价</p>
+                <div class="great">
+                    <span>质量好(202)</span>
+                    <span>外形好(202)</span>
+                    <span>好看(202)</span>
+                    <span class="last">服务好(202)</span>
+                </div> -->
+                <div class="content">
+                <volist name="data" id="val" empty="此商品暂时还没有评论">
+                    <div class="user ">
+                        <p class="border"></p>
+                        <img src="/uploads/avatar/{$val.images}" alt="" class="people-2">
+                        <span class="tel">{$val.username}</span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <!-- <strong class='star star{$val.level}'></strong> -->
+                        <span class="time">{:date("Y-m-d",$val["createtime"])}</span>
+                        <p style="margin-left:0.5rem;">{$val.pingjia}</p>
+                    </div>
+                </volist>  
+                </div>  
+        </div>
+</div>
+<div style="border-bottom:0.01rem solid rgb(123,123,123);border-top:0.01rem solid rgb(123,123,123);margin-bottom:0.5rem;height:0.5rem;line-height:0.5rem;">商品详情</div>
+<volist name=":explode(',',$goodsinfo['image'])" id="vi">
+    <img src="/uploads/n1/{$vi}" alt="" style="text-align:center;width:100%;">
+</volist>
+<!-- <div style="height:100px;
+<!-- js -->
+    <!-- Swiper JS -->
+<script src="__MOBILE__/Mobile/js/swiper.min.js"></script>
+<script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+<script src="__MOBILE__/Mobile/js/details.js"></script>
+<script src="__MOBILE__/Mobile/js/layer_mobile/layer.js"></script>
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+</script>
+<script>
+    $("#add5").click(function(){
+       $("#text_box5").val(($("#text_box5").val())*1+1);
+    })
+    $("#min5").click(function(){
+       var num=parseInt($("#text_box5").val(($("#text_box5").val())*1-1));
+      
+    })
+
+</script>
+<script>
+    // 处理添加购物车信息
+     $(".shopping").click(function(){
+            // document.getElementById('add').submit();
+            // echo "添加成功";
+            buynum=$(".buynum").val();
+            id={$goodsinfo["id"]};
+            // goodsname={};
+            $.post("{:U('Cart/addcart')}",{gid:id,buynum:buynum},function(res){
+                if(res.status!=0){
+                    // echo "添加成功";
+                    layer.open({
+                        content:'加入购物车成功',
+                        btn:['去购物车','再逛逛'],
+                        yes:function(index){
+                            location.href="{:U('Cart/cart')}";
+                        },
+                        no:function(index){
+                            location.href="{:U('Index/index')}";
+                        }
+                    });
+                    
+                }else{
+                     layer.open({
+                        content:'加入购物车失败'
+                        
+                    });
+                }
+            },'json')
+        })
+
+    $(function(){
+        $(".buy").click(function (){
+            if({$_SESSION['uid']|default='false'}){
+            var totalprice=$("#text_box5").val()*$(".price span").text();
+
+            $(".buy").append("<input type='hidden' name='totalprice' value="+totalprice+">");
+                document.form1.action="{:U('Goods/submitOrder')}";
+                $("#add").submit();
+            }else{
+                layer.open({content:"请登录",time:1000})
+                setTimeout(buy,1000);
+                function buy(){
+                    location.href="{:U('Users/login')}"
+                }
+            }
+
+        })
+    })
+</script>
+</body>
+</html>

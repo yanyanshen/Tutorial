@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>添加商品</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link href="__ADMINSKIN__/css/mine.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="__ADMINSKIN__/js/jQuery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__ADMINSKIN__/js/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="__ADMINSKIN__/js/jquery.form.js"></script>
+    <script type="text/javascript" src="__ADMINSKIN__/js/layer.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+        })
+    </script>
+    <style>
+        .button {
+            background-color: #3b95c8;
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            color:#fff;
+            border: 0px;
+            text-align: center;
+            text-decoration: none;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 1.5em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.5);
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .3em;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        }
+        .button:hover {
+            text-decoration: none;
+        }
+        .button:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="div_head">
+            <span>
+                <span style="float:left">当前位置是：活动商品-》添加活动商品</span>
+                <span style="float:right;margin-right: 8px;font-weight: bold">
+                    <a style="text-decoration: none" href="{:U('Brand/show')}">【返回】</a>
+                </span>
+            </span>
+</div>
+<div></div>
+
+<div style="font-size: 13px;margin: 10px 5px">
+    <form action="{:U('Active/add')}" method="post" class="form1">
+        <table border="1" width="100%" class="table_a">
+            <input type="hidden" value="{$goods.id}" name="gid">
+            <tr>
+                <td>商品名称</td>
+                <td><input type="text" name="goodsname" placeholder="请填写品牌名称" value="{$goods.goodsname}" /></td>
+            </tr>
+            <tr>
+                <td>商品图片</td>
+                <td><img src="/uploads/n1/{$goods.image|explode=',',###|array_shift}" alt=""/></td>
+            </tr>
+            <tr>
+                <td>库存量</td>
+                <td><input type="text" name="goodsnum" value="{$goods.goodsnum}" /></td>
+            </tr>
+            <tr>
+                <td>活动数量</td>
+                <td><input type="text" name="activenum" value=""  placeholder="请填写活动数量" /></td>
+            </tr>
+            <tr>
+                <td>原价价格</td>
+                <td><input type="text" name="saleprice" value="{$goods.saleprice}" /></td>
+            </tr>
+            <tr>
+                <td>活动价格</td>
+                <td><input type="text" name="activeprice" value=""  placeholder="请填写活动价格" /></td>
+            </tr>
+            <tr>
+                <td>活动时间</td>
+                <td>
+                    <select name="activetime" id="">
+                        <option value="08:00-10:00">08:00-10:00</option>
+                        <option value="12:00-14:00">12:00-14:00</option>
+                        <option value="16:00-18:00">16:00-18:00</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>商品简介</td>
+                <td>
+                    <textarea name="description" rows="7" cols="50" id="goodspro">{$goods.goodsdetail}</textarea>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td colspan="2" align="center">
+                    <input type="button" value="添加" class="button">
+                    <input type="reset" value="重置" class="button">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+<script src="__ADMINSKIN__/js/kindeditor/kindeditor-all-min.js"></script>
+<script src="__ADMINSKIN__/js/laydate.js"></script>
+<script>
+    KindEditor.ready(function(K) {
+        K.create('#goodspro',{
+            allowFileManager:true,
+            afterBlur:function(){
+                this.sync("#goodspro");
+
+            }
+        });
+
+    });
+
+</script>
+<script type="text/javascript">
+    $(function(){
+        $("input[type='button']").click(function(){
+            $.post("{:U('Active/add')}",$(".form1").serialize(),function(res){
+                if(res.status==1){
+                    layer.msg(res.info,{icon:1,time:1000},function(){location.href="{:U('Active/activeList')}"})
+                }else{
+                    layer.msg(res.info,{icon:5})
+                }
+            })
+        })
+    })
+</script>
+</html>

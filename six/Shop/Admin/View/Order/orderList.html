@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>订单列表</title>
+
+        <link href="__PUBLIC__/Admin/css/mine.css" type="text/css" rel="stylesheet" />
+        <link href="__PUBLIC__/Admin/css/OrderPage.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="__PUBLIC__/Admin/js/jQuery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/Admin/js/layer.js"></script>
+        <!--<script type="application/javascript" src="__PUBLIC__/Admin/js/jquery.form.js"></script>-->
+
+    </head>
+    <body>
+        <style>
+            #product1{
+                height: 70px;
+            }
+            .tr_color{background-color: #9F88FF}
+            .empty{
+                font-size: 30px;
+                font-weight: bold;
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                color: #CCCCCC;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                a();
+                function a(){
+                    $.post("{:U('Order/ordernews')}",function(res){
+                        if(res&&"{$status}"!=2){
+                            layer.alert('你有新订单需要发货', {
+                                skin: 'layui-layer-lan', //样式类名
+                                offset: 'rb',
+                                title:'新消息',
+                                shade: false,
+                                closeBtn: 0,
+                                btn:['去发货','下次再处理']
+                            }, function(){
+                                layer.closeAll();
+
+                                    location.href="{:U('Order/orderList')}?status=2"
+
+                            });
+                            $(".layui-layer-btn1").click(function(){
+                                //提示过一次之后清除session，本次登录不再提示
+                                $.post("{:U('Order/clearSession')}",function(){})
+                            });
+                            $(".layui-layer-close1").click(function(){setTimeout(a,5000);})
+                            clearTimeout(a);
+                        }else{
+                            setTimeout(a,5000);
+                        }
+                    });
+                }
+            })
+        </script>
+        <script type="application/javascript">
+            $(function(){
+                $('.del').click(function(){
+                   var a=$(this).children('div').text();//获取oid的值
+                    var s="{$status}";
+                     layer.confirm('删除将不可恢复', {
+                     btn: ['删除','取消'] //按钮
+                     }, function(){
+                         layer.closeAll();
+                         $.post('{:U("Order/orderDel")}',{id:a},function(res){
+                             if(res==1){
+                                 layer.msg('删除成功',{icon:1});
+                                 function url(){
+                                     location.href='{:U("Order/orderList")}?status='+s;
+                                 }
+                                 setTimeout(url,1000);
+                             }
+                             else{
+                                 layer.msg('删除失败',{time:1000});
+                             }
+                         })
+                     }, function(){
+                     });
+                })
+
+            })
+        </script>
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：订单管理-》
+                    <switch name="status">
+                        <case value="1">未付款订单</case>
+                        <case value="2">等待发货订单</case>
+                        <case value="3">已发货订单</case>
+                        <case value="4">已评价订单</case>
+                        <default/>全部订单
+                    </switch>
+                </span>
+
+            </span>
+        </div>
+        <div></div>
+        <div class="div_search">
+            <span>
+                <form action="{:U('Order/orderList')}" method="post">
+                    订单编号<input type="text" name="oid" value="{$oid}" style="width: 200px"/>
+                    <input value="查询" type="submit" />
+                </form>
+            </span>
+        </div>
+        <div style="font-size: 13px; margin: 10px 5px;">
+            <table class="table_a" border="1" width="100%">
+                <tbody>
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>订单编号</td>
+                        <td>收件人</td>
+                        <td>订单状态</td>
+                        <td>总价格</td>
+                        <td>商品名称</td>
+                        <td>联系方式</td>
+                        <td>收货地址</td>
+                        <td>创建时间</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    <volist name="orderlist" id="val" empty="$empty">
+                        <tr id="product1">
+                            <td>{$nowpage?($nowpage-1)*10+$key+1:$key+1}</td>
+                            <td><a href="javascript:;" class="ordersyn[$k]">{$val.ordersyn}</a></td>
+                            <td>{$val.name}</td>
+                            <td>{$val.statusname}</td>
+                            <td>{$val.prices}</td>
+                            <td>{$val.goodsname}</td>
+                            <td>{$val.mobile}</td>
+                            <td>{$val.address}</td>
+                            <td>{$val.createtime|date='Y-m-d H:s:i',###}</td>
+                            <switch name="val.orderstatus">
+                            <case value="2"><td><a href="javascript:;" class="send">发货</a></td></case>
+                            <case value="3"><td><a href="javascript:;" class="detail">待收货</a></td></case>
+                            <default/><td><a href="javascript:;"class="del"><div style="display: none;">{$val.id}</div>删除</a></td>
+                            </switch>
+                        </tr>
+                    </volist>
+                    <tr>
+                        <td colspan="20" style="text-align: center;padding-top: 20px">
+                            {$Page}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+</html>
+<script type="text/javascript">
+    $(function(){
+        var status="{$status}";
+        $(".send").click(function(){
+            var ordersyn=$(this).parent().parent().children().eq(1).text();
+                location.href="{:U('Order/orderEdit')}?ordersyn="+ordersyn+"&&status="+status;
+        })
+    })
+</script>
+

@@ -1,0 +1,408 @@
+[ 2016-12-02T17:33:06+08:00 ] 192.168.4.55 /index.php/Admin/Advertising/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\project\six\Shop\Admin\Controller\AdvertisingController.class.php 第 48 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\six\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `sk_advertising` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sk_advertising` (`name`,`sale`,`place`,`url`,`status`,`details`,`createtime`,`image`) VALUES ('test','44444','1F','www.shop.com','可用','teast','1480671186','58413fd296b5d.jpg') [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:41:50+08:00 ] 192.168.4.55 /index.php/Admin/member/chkUserName.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sk_users` WHERE `username` = 'admin5' AND `id` <> '64' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:41:50+08:00 ] 192.168.4.55 /index.php/Admin/member/chkMobile.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sk_users` WHERE `mobile` = '15637138806' AND `id` <> '64' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:41:50+08:00 ] 192.168.4.55 /index.php/Admin/member/editor.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sk_users` SET `username`='admin5',`password`='e10adc3949ba59abbe56e057f20f883e',`email`='2528160214@qq.com',`mobile`='15637138806' WHERE `id` = 64 [ RunTime:0.0040s ]
+
+[ 2016-12-02T17:41:55+08:00 ] 192.168.4.55 /index.php/Admin/member/editor.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sk_users` SET `username`='admin5',`password`='e10adc3949ba59abbe56e057f20f883e',`email`='2528160214@qq.com',`mobile`='15637138806' WHERE `id` = 64 [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:42:03+08:00 ] 192.168.4.55 /index.php/Admin/member/editor.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sk_users` SET `username`='admin5',`password`='fcea920f7412b5da7be0cf42b8c93759',`email`='2528160214@qq.com',`mobile`='15637138806' WHERE `id` = 64 [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:42:58+08:00 ] 192.168.4.55 /index.php/Admin/member/chkUserName.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sk_users` WHERE `username` = 'admin5' AND `id` <> '64' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:42:58+08:00 ] 192.168.4.55 /index.php/Admin/member/editor.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sk_users` SET `username`='admin5',`password`='25d55ad283aa400af464c76d713c07ad',`email`='2528160214@qq.com',`mobile`='15637138806' WHERE `id` = 64 [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:42:58+08:00 ] 192.168.4.55 /index.php/Admin/member/chkMobile.html?id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sk_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sk_users` WHERE `mobile` = '15637138806' AND `id` <> '64' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:46:26+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:46:35+08:00 ] 192.168.4.55 /index.php/Admin/Category/addCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0000s ]
+SQL: INSERT INTO `sk_category` (`pid`,`catename`) VALUES ('0','aa') [ RunTime:0.0000s ]
+SQL: UPDATE `sk_category` SET `path`='99' WHERE ( id=99 ) [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:46:36+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-02T17:46:43+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0050s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 99  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:46:55+08:00 ] 192.168.4.55 /index.php/Admin/Category/addCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `sk_category` WHERE `id` = 99 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sk_category` (`pid`,`catename`) VALUES ('99','cc') [ RunTime:0.0156s ]
+SQL: UPDATE `sk_category` SET `path`='99,100' WHERE ( id=100 ) [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:46:56+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:48:30+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0050s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:48:30+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0000s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 29  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:48:30+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0040s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 5  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:50:57+08:00 ] 192.168.4.55 /index.php/Admin/Brand/show.html?p=2&where=%E7%94%B7%E8%A3%85
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\BrandController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\project\six\Shop\Admin\Controller\BrandController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `sk_brands` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_brands` WHERE ( bname like '%男装%' or website like '%男装%' or type in (1) ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: header D:\project\six\ThinkPHP\Library\Org\Yh\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `sk_brands` WHERE ( bname like '%男装%' or website like '%男装%' or type in (1) ) ORDER BY addtime LIMIT 4,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:50:58+08:00 ] 192.168.4.55 /index.php/Admin/Brand/show.html?p=3&where=%E7%94%B7%E8%A3%85
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\BrandController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\project\six\Shop\Admin\Controller\BrandController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `sk_brands` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_brands` WHERE ( bname like '%男装%' or website like '%男装%' or type in (1) ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\six\ThinkPHP\Library\Org\Yh\AjaxPage.class.php 第 121 行.
+SQL: SELECT * FROM `sk_brands` WHERE ( bname like '%男装%' or website like '%男装%' or type in (1) ) ORDER BY addtime LIMIT 8,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:51:17+08:00 ] 192.168.4.55 /index.php/Admin/Brand/updatebrand.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\BrandController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\project\six\Shop\Admin\Controller\BrandController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `sk_brands` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\project\six\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `sk_brands` [ RunTime:0.0186s ]
+SQL: SELECT `bname`,`logo`,`website`,`description`,`type`,`id` FROM `sk_brands` WHERE ( id=45 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sk_brands` SET `bname`='SFG',`website`='www.cdd.com',`type`='1',`description`='正品国外大牌，你这得拥有！',`logo`='584144153b352.png' WHERE ( id=45 ) [ RunTime:0.0040s ]
+
+[ 2016-12-02T17:54:02+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0050s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:05+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0050s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:09+08:00 ] 192.168.4.55 /index.php/Admin/Order/send.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0000s ]
+SQL: UPDATE `sk_order` SET `orderstatus`='3',`tx`='0' WHERE `ordersyn` = '3b69fcaf4030770337de7a4c86532625' [ RunTime:0.0156s ]
+
+[ 2016-12-02T17:54:11+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0040s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:17+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0050s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:23+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0060s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:29+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0050s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:35+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0040s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:40+08:00 ] 192.168.4.55 /index.php/Admin/Order/ordernews.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_order` [ RunTime:0.0050s ]
+SQL: SELECT `ordersyn` FROM `sk_order` WHERE `tx` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:54:45+08:00 ] 192.168.4.55 /index.php/Admin/Pingjia/pingjiaList.html?p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_pingjia` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sk_ordergoods` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_pingjia` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: header D:\project\six\ThinkPHP\Library\Org\Yh\AjaxPage.class.php 第 121 行.
+SQL: SELECT sk_pingjia.id,sk_pingjia.return,sk_pingjia.goodsname,sk_pingjia.oid,sk_pingjia.pjtime,sk_pingjia.level,sk_users.username,sk_goods.image FROM `sk_pingjia` INNER JOIN sk_users on sk_users.id=sk_pingjia.uid INNER JOIN sk_goods on sk_goods.id=sk_pingjia.gid  ORDER BY pjtime LIMIT 8,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Only variables should be passed by reference D:\project\six\Shop\Runtime\Cache\Admin\39e2d72616227f87b03f9298954dd13e.php 第 21 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\six\Shop\Runtime\Cache\Admin\39e2d72616227f87b03f9298954dd13e.php 第 21 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\six\Shop\Runtime\Cache\Admin\39e2d72616227f87b03f9298954dd13e.php 第 21 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\six\Shop\Runtime\Cache\Admin\39e2d72616227f87b03f9298954dd13e.php 第 21 行.
+NOTIC: [2048] Only variables should be passed by reference D:\project\six\Shop\Runtime\Cache\Admin\39e2d72616227f87b03f9298954dd13e.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-02T17:54:51+08:00 ] 192.168.4.55 /index.php/Admin/Category/childCate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sk_category` [ RunTime:0.0060s ]
+SQL: SELECT `catename`,`id` FROM `sk_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-02T17:57:46+08:00 ] 192.168.4.55 /index.php/Admin/Role/add_role.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sk_admin` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sk_admin` WHERE `username` = 'ceshi1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sk_admin` (`username`,`password`) VALUES ('ceshi1','9464c3798239e316379036767f0ff7d1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sk_admin` [ RunTime:0.0000s ]
+SQL: UPDATE `sk_admin` SET `regdate`='1480672666' WHERE `username` = 'ceshi1' AND `password` = '9464c3798239e316379036767f0ff7d1' [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sk_auth_group_access` [ RunTime:0.0000s ]
+SQL: INSERT INTO `sk_auth_group_access` (`uid`,`group_id`) VALUES ('57','16') [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:58:44+08:00 ] 192.168.4.55 /index.php/Admin/Rule/addRule.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `sk_auth_rule` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\project\six\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sk_auth_rule` (`title`,`name`,`pid`,`status`,`type`) VALUES ('aa','add','23','1','1') [ RunTime:0.0000s ]
+SQL: UPDATE `sk_auth_rule` SET `path`='13,23,55' WHERE ( id=55 ) [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:59:11+08:00 ] 192.168.4.55 /index.php/Admin/Group/addmember.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sk_auth_group_access` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sk_auth_group_access` WHERE `group_id` = 14  [ RunTime:0.0000s ]
+SQL: DELETE FROM `sk_auth_group_access` WHERE `group_id` = 14 AND `uid` = 47 [ RunTime:0.0000s ]
+
+[ 2016-12-02T17:59:21+08:00 ] 192.168.4.55 /index.php/Admin/Group/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sk_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sk_auth_group` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: path D:\project\six\Shop\Admin\Controller\GroupController.class.php 第 116 行.
+SQL: UPDATE `sk_auth_group` SET `rules`='13,23,24,25,26,14,30,31,32,33,15,34,35,16,38,39,17,40,41,42,18,43,19,44,20,45,46,21,47,48,49,50,51,22,52,53' WHERE ( id=14 ) [ RunTime:0.0156s ]
+

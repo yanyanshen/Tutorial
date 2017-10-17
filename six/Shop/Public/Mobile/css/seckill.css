@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-06-21 20:00:06
+ * @version $Id$
+ */
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var{ margin: 0; padding: 0; box-sizing: border-box;}
+body { font-family: "微软雅黑";background: #f2f2f2;width:7.5rem;}
+.wrapper{width:6.9rem;margin:0 auto;}
+img { vertical-align: top;}
+ul,li{list-style: none;}
+a:link,a:visited,a:hover{text-decoration:none;/*color:#ff3300;*/}
+i{font-style: normal;}
+b{font-weight: normal;}
+h1,h2,h3,h4{font-weight:normal;}
+.fl{float: left;}
+.fr{float: right;}
+.bk{border: 0.01rem solid red;}
+.bk1{background:#000;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/*通用样式结束*/
+/*头部样式*/
+.header{width:100%;height:1rem;background:#fff;}
+.header ul{font-size:0;}
+.header ul li{display:inline-block;*display:inline;*zoom:1;width:1.38rem;height:0.76rem;border-right:0.01rem solid #d1d1d1;margin-top: 0.12rem;text-align:center;}
+.header ul li a {display: block; height: 0.9rem;}
+.header ul li .on{background:url(../images/bg01.png) no-repeat -0.21rem -0.2rem;}
+.header ul li .on p{ color: #fff;}
+.header ul li p { color: #333;}
+.header ul li p:nth-child(1){font-size:0.28rem;padding-bottom:0.08rem;}
+.header ul li p:nth-child(2){font-size:0.24rem;}
+.header ul li:nth-last-of-type(1){border:none;}
+/*抢购样式*/
+ #time{width:1.22rem;height:0.36rem;border-radius:0.06rem;background:#000;position: absolute;top:0.3rem.;left:3rem;font-size: 0.24rem;line-height:0.36rem;margin-top: 0.07rem;}
+.Bar{ position:absolute;bottom:0.2rem;left:2.8rem; width:2rem; background:#ffb19e; padding:0.01rem;border-radius:0.2rem 0.2rem 0.2rem 0.2rem; } 
+.Bar div{ display: block; position: relative;background:#ff3300;color: #333333; height:0.4rem;line-height:0.4rem;
+border-radius:0.2rem 0 0 0.2rem;} 
+.Bar div span a { position: absolute; width:3rem;color:#fff; text-indent:0.25rem;font-size:0.18rem;}
+.purchase{background:#fff;width:100%;height:10.23rem;margin-top:0.3rem;padding-top:0.2rem;position:relative;}
+.purchase p{/*width:4rem;*/font-size:0.24rem;color:#333333;margin-bottom: 0.5rem;}
+.purchase p i{border-left:0.05rem solid #ff3300;height:0.32rem;float:left;margin-right: 0.25rem;}
+.purchase p span{float:right;margin-right:3rem;color:#fff;text-align:center;}
+.purchase .content{position:relative;margin-bottom:0.6rem;}
+.purchase .content:nth-last-of-type(1){margin-bottom:0;}
+.purchase .content .pic01 img{width:2.6rem;height: 2.6rem;}
+.purchase .content p a{color:#333333;font-size:0.24rem;}
+.purchase .content div:nth-child(2){width:4.2rem;float:right;}
+.purchase .content p:nth-child(1){float:right;padding-top:0.2rem;margin-left:0.05rem;}
+.purchase .content p:nth-child(2){position:absolute;top:1.45rem;left:2.9rem;font-size: 0.28rem;color:#ff3300;}
+.purchase .content p:nth-child(3){position:absolute;top:1.48rem;left:3.88rem;color:#999999;font-size:0.2rem;text-decoration:line-through;}
+.purchase .content .meu02 a{position:absolute;top:1.82rem;right:0.17rem;width:1.05rem;height:0.6rem;line-height:0.6rem;text-align: center;border-radius:0.05rem;background: #ff3300;color:#fff;font-size: 0.24rem;}
+/*底部样式*/
+.foot{position:fixed;bottom:0;left:0;width:7.5rem;height:0.98rem;background:#f2f2f2;border-top:0.01rem solid #bfbfbf;text-align:center;line-height: 0.98rem;line-height:0.3rem;}
+.foot p {font-size:0.3rem;display:inline-block;margin:0.32rem 1rem;}
+.foot p a:link,.foot p a:visited{color:#666666;}
+.foot p a:hover{color:#ff3300;}

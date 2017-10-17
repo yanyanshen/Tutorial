@@ -1,0 +1,13 @@
+<volist name="info3" id="goods" empty="亲，赶紧逛逛吧!">
+    <ul>
+        <li style="width: 200px;line-height: 20px"><div class="pic" style="width: 200px;height: 200px"><a href="{:U('Goods/Goodsdetail',array('id'=>$goods['gid']))}"><img src="/uploads/n1/{:reset(explode(',',$goods['image']))}" style="width: 200px;height: 200px"/></a></div>
+            <div class="title" style="margin-top: 10px;margin-left: 20px"><a href="{:U('Goods/Goodsdetail',array('id'=>$goods['gid']))}">{$goods.goodsname}</a></div>
+            <div class="p_Price">￥{$goods.saleprice}</div>
+            <div class="p_Price collect" name="{$goods.gid}">删除</div>
+            <div style="display: none">{$goods.gid}</div>
+            <div class="p_Price cart">加入购物车</div>
+        </li>
+    </ul>
+</volist>
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script  src =__SKIN__/Home/js/layer.js type="text/javascript"></script>

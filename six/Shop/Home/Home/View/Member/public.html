@@ -1,0 +1,31 @@
+<div class="left_style">
+    <!--栏目名称-->
+    <div class="title_username">个人中心</div>
+    <div class="user_Head">
+        <div class="user_time">
+            <h4 id="y" class="years"></h4>
+            <h1></h1>
+            <h4 id="D"></h4>
+        </div>
+        <div class="user_portrait">
+            <a href="{:U('Member/memberEdit')}" title="修改头像"></a>
+            <if condition="$Think.session.avatar neq ''">
+                <img src="/uploads/avatar/{$Think.session.avatar}" />
+                <else />
+                <img src="/uploads/avatar/a.jpg" />
+            </if>
+            <div class="background_img"></div>
+        </div>
+    </div>
+    <ul class="Section">
+        <li><a href="#" class="on"><em></em><span>我的特色馆</span></a></li>
+        <li><a href="{:U('member/memberInfo')}"><em></em><span>个人信息</span></a></li>
+       <li><a href="{:U('Member/reword')}"><em></em><span>修改密码</span></a></li>
+        <li><a href="{:U('Member/memberOrderlist',array('status'=>0))}"><em></em><span>我的订单</span></a></li>
+        <li><a href="{:U('Member/memberEdit')}"><em></em><span>我的资料</span></a></li>
+        <li><a href="{:U('Member/memberCZ')}"><em></em><span>在线充值</span></a></li>
+        <li><a href="{:U('Member/memberCollect')}"><em></em><span>我的收藏</span></a></li>
+        <li><a href="{:U('Member/memberAddress')}"><em></em><span>收货地址管理</span></a></li>
+        <li><a href="{:U('Member/memberHistory')}"><em></em><span>我的足迹</span></a></li>
+    </ul>
+</div>

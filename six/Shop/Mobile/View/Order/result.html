@@ -1,0 +1,25 @@
+<volist name="orderlist" id="order">
+    <div class="evaluate">
+        <div class="evaluate-top">
+            <div style="padding-left: 20px">订单编号：{$order.ordersyn}</div>
+            <p >{$order.statusname}</p>
+            <div style="display: none">{$order.id}</div>
+            <switch name="order.orderstatus">
+                <case value="1"><p class="txt01 pay"><a href="#" style="background-color: #ff3300">付款</a></p></case>
+                <case value="2"><p class="txt01"><a href="#">待发货</a></p></case>
+                <case value="3"><p class="txt01 sure"><a href="javascript:;" style="background-color:#66cc00">收货</a></p></case>
+                <case value="4"><p class="txt01 pingjia"><a href="#">评价</a></p></case>
+            </switch>
+        </div>
+        <volist name="order.goods" id="goods">
+            <div class="evaluate-bottom clearfix">
+                <p class="fl"><a href="#"><img src="/uploads/n2/{:reset(explode(',',$goods['image']))}" alt=""></a></p>
+                <div class="evaluate-bottom-right fl">
+                    <p><a href="{:U('Goods/details',array('id'=>$goods['id']))}">{$goods.goodsname}</a>
+                    </p>
+                    <p class="money">￥{$goods.price}<span>{$goods.buynum}件</span></p>
+                </div>
+            </div>
+        </volist>
+    </div>
+</volist>

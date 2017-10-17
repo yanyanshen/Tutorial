@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__SKIN__/Home/css/common.css" rel="stylesheet" tyle="text/css" />
+<link href="__SKIN__/Home/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__SKIN__/Home/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script src="__SKIN__/Home/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jqzoom.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/common_js.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/footer.js" type="text/javascript"></script>
+<script src="__SKIN__/Home/js/jquery.jumpto.js" type="text/javascript"></script>
+<!--<script src="__SKIN__/Home/js/payfor.js" type="text/javascript"></script>-->
+<script src="__SKIN__/Home/js/layer/layer.js"></script>
+    <link href="__SKIN__/Home/css/loginDialog.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__SKIN__/Home/css/goods.css" type="text/css">
+    <link rel="stylesheet" href="__SKIN__/Home/css/common.css" type="text/css">
+    <link rel="stylesheet" href="__SKIN__/Home/css/base.css" type="text/css">
+    <link rel="stylesheet" href="__SKIN__/Home/css/global.css" type="text/css">
+    <title>产品名称详细页</title>
+    <style>
+        .huifu{margin-top: 20px;color: orange;padding-top: 10px;border-top: 1px #c6d8d8 solid}
+        .no{
+            display: inline-block;text-align: center;line-height: 50px;width: 150px;height:50px;
+            background-color: #e8e8e8;
+            font-size: 20px;
+            border-radius: 6px;
+            box-shadow: -3px -3px 5px #cbd1cf inset;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        $(function(){
+
+            $(".example").click(function(){
+                $("input[name='allprice']").val($("#buy-num").val());
+                if({$_SESSION["uid"]|default="false"}){
+                //$("#ECS_FORMBUY").submit();
+                $.post("{:U('cart/d_cart')}",$("#ECS_FORMBUY").serialize(),function(res){
+                    if(res.status!=0){
+                        location.href="{:U('Orders/orders')}?id="+ res.info
+                    }else{
+                        layer.alert(res.info)
+                    }
+                },'json')
+            }else{
+                //弹出登录
+                $("body").append("<div id='mask'></div>");
+
+                $("#remind").html("");
+                $("#txtName").val("");
+                $("#txtPwd").val("");
+                $("#mask").addClass("mask").fadeIn("slow");
+                $("#LoginBox").fadeIn("slow");
+
+
+                //文本框不允许为空---按钮触发
+                $("#loginbtn").on('click', function () {
+                    var txtName = $("#txtName").val();
+                    var txtPwd = $("#txtPwd").val();
+                    if (txtName == "" || txtName == undefined || txtName == null) {
+                        if (txtPwd == "" || txtPwd == undefined || txtPwd == null) {
+                            $(".warning").css({ display: 'block' });
+                        }
+                        else {
+                            $("#warn").css({ display: 'block' });
+                            $("#warn2").css({ display: 'none' });
+                        }
+                    }
+                    else {
+                        if (txtPwd == "" || txtPwd == undefined || txtPwd == null) {
+                            $("#warn").css({ display: 'none' });
+                            $(".warn2").css({ display: 'block' });
+                        }
+                        else {
+                            $(".warning").css({ display: 'none' });
+                        }
+                    }
+                });
+                //文本框不允许为空---单个文本触发
+                $("#txtName").on('blur', function () {
+                    var txtName = $("#txtName").val();
+                    if (txtName == "" || txtName == undefined || txtName == null) {
+                        $("#warn").css({ display: 'block' });
+                    }
+                    else {
+                        $("#warn").css({ display: 'none' });
+                    }
+                });
+                $("#txtName").on('focus', function () {
+                    $("#warn").css({ display: 'none' });
+                });
+                //
+                $("#txtPwd").on('blur', function () {
+                    var txtName = $("#txtPwd").val();
+                    if (txtName == "" || txtName == undefined || txtName == null) {
+                        $("#warn2").css({ display: 'block' });
+                    }
+                    else {
+                        $("#warn2").css({ display: 'none' });
+                    }
+                });
+                $("#txtPwd").on('focus', function () {
+                    $("#warn2").css({ display: 'none' });
+                });
+                //关闭
+                $(".close_btn").hover(function () { $(this).css({ color: 'black' }) }, function () { $(this).css({ color: '#999' }) }).on('click', function () {
+                    $("#LoginBox").fadeOut("fast");
+                    $("#mask").css({ display: 'none' });
+                });
+            }
+        })
+
+        $("#loginbtn").click(function(){
+            name=$("#txtName").val();
+            pwd=$("#txtPwd").val();
+            $.post("{:U('Users/login')}",{username:name,password:pwd},function(res){
+                if(res.status){
+                    $("#remind").css("color","green");
+                    $("#remind").html("登陆成功");
+                   // $("#ECS_FORMBUY").submit()
+                    $.post("{:U('cart/d_cart')}",$("#ECS_FORMBUY").serialize(),function(res){
+                        if(res.status!=0){
+                            location.href="{:U('Orders/orders')}?id="+ res.info
+                        }else{
+                            layer.alert(res.info)
+                        }
+                    },'json')
+
+                }else{
+                    $("#remind").css("color","red");
+                    $("#remind").html("用户名或密码错误");
+                }
+            },'json')
+        })
+
+        $(".wrap_btn1").click(function(){
+            num=$("#buy-num").val();
+            id={$goods["id"]};
+            $.post("{:U('Cart/addcart')}",{gid:id,buynum:num},function(res){
+                if(res.status!=0){
+
+                    layer.confirm('商品已成功添加到购物车',{btn:["再逛逛","去购物车"]},function(){
+                        location.href="{:U('Index/index')}";
+                    },function(){
+                        location.href="{:U('Cart/cart')}";
+                    })
+                }else{
+                    layer.msg("添加失败");
+                }
+            },'json')
+        })
+
+        })
+
+    </script>
+
+    <script>
+        $(function(){
+
+                //选项卡
+            $("#property-id").click(function(){
+                var str=""
+                str+="<ul class='shangpsx_info'>";
+                str+="<li><label>所属分类</label><span>{$goods['cate'][2]['catename']}</span></li>";
+                str+="<li><label>品牌</label><span>{$goods['brand']['bname']}</span></li>";
+                str+="<li><label>价格</label><span>￥{$goods['saleprice']}元</span></li>";
+                str+="<li><label>简介</label><span>{$goods['goodsintro']}</span></li>";
+                str+="</ul>";
+                str+='<foreach name="images"   item="val"  key="k">';
+                str+='<img src="/uploads/n0/{$val}"/></foreach>';
+                $("#shangpsx").html(str);
+            });
+            $("#shot-id").click(function(){
+                var str="";
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>520私库所售商品符合以下情况，自售出之日（以实际收货日期为准）起7日内可以退货，15日内可以换货。</p>";
+                str+="<img src='__SKIN__/Home/imgs/rule1.jpg'>";
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>（一）买卖双方达成退换货协议，或520私库做出退换货处理结果后，商家应当在收到520私库处理结果后的24小时内或者与买家约定的时间内提供退换货地址。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>商家逾期未提供退换货地址的，以其在520私库系统内填写的“默认退货地址”作为退换货地址。<p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>（二）商家提供的退换货地址错误导致买家操作退回商品后无法送达的，商家承担因此产生的运费。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>（三）买家根据协议约定或520私库做出的处理结果操作退换货时，应当使用与商家发货时相同的运输方式发货。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>除非得到收件方的明确同意，发件方不得使用到付方式支付运费。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>退货后，商家有收货的义务。商家提供换货服务并重新发货后，买家有收货义务。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>（四）商品属于“三包”(系指法律法规规定的三包或520私库所在地适用的三包，以下简称“三包规定”)范围内的，买家要求商家履行换货或维修义务的，商家应当按照买家的要求提供相应服务。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>（五）享受“三包规定”保障的商品产生的保障范围内的争议，买家应当在交易成功后的九十天内提出申请。</p>"
+                str+="<p style='font-size: 16px;line-height: 33px;text-indent: 33px;letter-spacing: 0.5px'>备注：不影响二次销售细则</p>"
+                str+="<img src='__SKIN__/Home/imgs/rule2.jpg'>";
+
+                $("#shangpsx").html(str);
+            });
+            $("#coms1-id").click(function(){
+                var id={$goods["id"]};
+                var level=0;
+                    var str="";
+                $.post("{:U('Goods/goodsDetail')}",{'id':id,'level':level},function(res){
+
+                    $("#shangpsx").html(res);
+                })
+
+            });
+
+            $(".collected").click(function(){
+                var id=$(this).attr("id");
+                var gid=$(this).attr("name").substr(2);
+                uid={$_SESSION['uid']|default="false"}
+
+            $.post("{:U('Cart/collect')}",{"gid":gid,"uid":uid},function(res){
+                $.post("{:U('Cart/collect_all')}",{"gid":gid},function(res1){
+                    col_num=res1.info
+                    if(id==1){
+                        $("[name='1_"+gid+"']").html("<em class='ico1'></em>收藏该商品( "+col_num+" )")
+                        $("[name='1_"+gid+"']").attr("id",0)
+                        $("[name='1_"+gid+"']").toggleClass("collect1")
+                        $("[name='1_"+gid+"']").css("color","#999")
+                    }else{
+                        $("[name='1_"+gid+"']").html("<em class='ico1'></em>收藏该商品( "+col_num+" )")
+                        $("[name='1_"+gid+"']").attr("id",1)
+                        $("[name='1_"+gid+"']").toggleClass("collect1")
+                        $("[name='1_"+gid+"']").css("color","#FF0000")
+                    }
+                })
+
+
+                layer.msg(res.info);
+            },"json")
+        })
+
+        })
+        //购物车
+    </script>
+
+    <script>
+
+        /** ------------- choose -------------------- **/
+        /* reduce_add */
+        var setAmount = {
+            min:1,
+            max:{$goods["goodsnum"]},
+            reg:function(x) {
+                return new RegExp("^[1-9]\\d*$").test(x);
+            },
+            amount:function(obj, mode) {
+                var x = $(obj).val();
+                if (this.reg(x)) {
+                    if (mode) {
+                        x++;
+                    } else {
+                        x--;
+                    }
+                } else {
+                    layer.alert('请输入正确的数量', {
+                        skin: 'layui-layer-hong'
+                        ,closeBtn: 0
+                    })
+                    $(obj).val(1);
+                    $(obj).focus();
+                }
+                return x;
+            },
+            reduce:function(obj) {
+                var x = this.amount(obj, false);
+                if (x >= this.min) {
+                    $(obj).val(x);
+                    recalc();
+                } else {
+                    layer.alert('商品数量最少为'+ this.min, {
+                        skin: 'layui-layer-hong'
+                        ,closeBtn: 0
+                    })
+                    $(obj).val(1);
+                    $(obj).focus();
+                }
+            },
+            add:function(obj) {
+                var x = this.amount(obj, true);
+                if (x <= this.max) {
+                    $(obj).val(x);
+                    recalc();
+                } else {
+                    layer.alert('商品数量最多为'+ this.max, {
+                        skin: 'layui-layer-hong'
+                        ,closeBtn: 0
+                    })
+                    $(obj).val({$goods["goodsnum"]});
+                    $(obj).focus();
+                }
+            },
+            modify:function(obj) {
+                var x = $(obj).val();
+                if (x < this.min || x > this.max || !this.reg(x)) {
+                    layer.alert("请输入正确的数量！", {
+                        skin: 'layui-layer-hong'
+                        ,closeBtn: 0
+                    })
+                    $(obj).val(1);
+                    $(obj).focus();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<!--顶部样式-->
+<include file="Shop/Home/Common/header.html" />
+<!--菜单导航样式-->
+<include file="Shop/Home/Common/topMenu.html" />
+<!--产品详细页-->
+<div class="clearfix  Inside_pages">
+ <!--位置-->
+ <div id="goodsInfo">
+ <div class="Location_link">
+  <em></em>
+        <foreach name="goods['cate']" item="v0" key="k0">
+     <a href="#">{$v0["catename"]}</a>  &gt;&nbsp;
+        </foreach>
+     {$goods["goodsname"]}
+ </div>
+ <!--产品详细介绍-->
+ <div class="Details_style clearfix" >
+  <div class="mod_picfold clearfix">
+
+    <div class="clearfix" id="detail_main_img">
+	 <div class="layout_wrap preview">
+     <div id="vertical" class="bigImg">
+		<img src="/uploads/n0/{:reset($images)}" width="350" height="350" alt="" id="midimg" />
+		<div style="display:none;" id="winSelector"></div>
+	</div>
+     <div class="smallImg">
+		<div class="scrollbutton smallImgUp disabled">&lt;</div>
+		<div id="imageMenu">
+			<ul>
+
+                <foreach name="images"   item="val"  key="k">
+				<li><img src="/uploads/n0/{$val}" width="68" height="68" alt="{$goods['goodsname']}"/></li>
+                </foreach>
+			</ul>
+		</div>
+		<div class="scrollbutton smallImgDown">&gt;</div>
+	</div><!--smallImg end-->	
+	<div id="bigView" style="display:none;"><div><img width="800" height="800" alt="" src="" /></div></div>
+	 </div>
+
+	</div>
+
+		 <div class="Sharing">
+	 <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1441079683326"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+  <!--收藏-->
+	  <div class="Collect">
+          <!--<div class="collect1" style="display: none"></div>-->
+          <if condition="$goods['status']==1">
+              <a href="javascript:collect(92)" name="1_{$goods['id']}" class="collected collect1" id="1" style="color:#FF0000"><em class="ico1"></em>收藏该商品( {$collect|default="0"} )</a>
+            <else/>
+              <a href="javascript:collect(92)" name="1_{$goods['id']}" class="collected" id="0" style="color:#999"><em class="ico1"></em>收藏该商品( {$collect|default="0"} )</a>
+          </if>
+      </div>
+	 </div>
+   </div>
+   <!--信息样式-->
+    <div class="textInfo">
+    <form action="{:U('cart/d_cart')}" name="ECS_FORMBUY" id="ECS_FORMBUY" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="gid" value="{$goods['id']}"/>
+        <input type="hidden" name="goodsname" value="{$goods['goodsname']}"/>
+        <input type="hidden" name="price" value="{$goods['saleprice']}"/>
+	  <div class="title"><h1>{$goods["goodsname"]}</h1><p style="display: none">{$goods["goodsnum"]}</p></div>
+	  <div class="mod_detailInfo_priceSales">
+	  <div class="margins">
+	  <div class="Price clearfix"><label>价格</label><span>¥{$goods["saleprice"]}<b>{$goods["markprice"]}</b></span></div>
+
+	  </div>
+	  <div class="s_Review">
+	   <a href="#">好评率<b>{$good[3]}%</b>[评论<b>{$good[0]}</b>条]</a>
+	  </div>
+	  </div>
+	 <div class="buyinfo" id="detail_buyinfo">
+		<dl>
+        <dt>数量</dt>
+        <dd>
+		  <div class="choose-amount left">
+			<a class="btn-reduce" href="javascript:;" onclick="setAmount.reduce('#buy-num')">-</a>
+			<a class="btn-add" href="javascript:;" onclick="setAmount.add('#buy-num')">+</a>
+			<input class="text" id="buy-num" value="1" name="num" onkeyup="setAmount.modify('#buy-num');">
+		 </div>
+		 <div class="P_Quantity">剩余：{$goods["goodsnum"]}件</div>
+        </dd>
+	    <dd>
+	        <div class="wrap_btn">
+                <if condition="$goods['goodsnum'] gt 0">
+                <a href="javascript:addToCart_bak(92)" class="wrap_btn1" title="加入购物车"></a>
+		        <a href="javascript:addToCart(92)" class="wrap_btn2 example" title="立即购买" ></a>
+                    <else/><span class="no" title="已售完" >已售完</span>
+                </if>
+            </div>
+		</dd>
+	  </dl>
+	  </div>
+	  <div class="Guarantee clearfix">
+	   <dl><dt>支付方式</dt><dd><em></em>货到付款（部分地区）</dd><dd><em></em>在线支付</dd> 
+	   <dd> <div class="payment " id="payment" style="width:160px;height:24px;text-align: center;line-height: 24px">
+                                    <a href="javascript:void(0);" class="paybtn" >支付方式<span class="iconDetail"></span></a>
+                                <ul><li>货到付款</li><li>礼品卡支付</li><li>网上支付</li><li>银行转账</li></ul></div>
+	  </dd></dl></div>	  
+	</form>
+  </div>
+
+    {/*弹出层*/}
+     <div id="LoginBox">
+         <div class="row1" style="position: relative;">
+             <a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="closeBtn">×</a>
+         </div>
+         <div class="row1" style="margin-top: 30px;">
+         <label style="display:inline-block;line-height: 38px;margin: 0; vertical-align:middle;margin-left:160px">账号登录</label>
+         </div>
+         <div class="row" style="margin-top: 30px;position:relative;height:100px">
+             账号: <span class="inputBox">
+                <input type="text" id="txtName" placeholder="账号/邮箱" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn">*</a>
+             <label style="display:inline-block;width:150px;height:38px;font-size: 15px;position: absolute;left:130px;top:40px" id="remind"></label>
+         </div>
+         <div class="row"style="position:relative;height:70px">
+             密码: <span class="inputBox">
+                <input type="password" id="txtPwd" placeholder="密码" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn2">*</a>
+         </div>
+         <div class="row" style="margin-top: 50px;">
+             <a href="javascript:;" id="loginbtn">登录</a>
+         </div>
+     </div>
+
+  <!--产品推荐-->
+    <div class="Recommend">
+      <div class="title_name">同类产品推荐</div>
+	  <div class="Recommend_list">
+	    <ul>
+            <volist name="goods['like']" id="val1" key="k1" empty="暂时没有同类商品">
+		 <li class="clearfix">
+		 <div class="pic_img"><a href="{:U('Goods/GoodsDetail',array('id'=>$val1['id']))}"><img src="/uploads/n2/{:reset(explode(',',$val1['image']))}" width="100" height="100"></a></div>
+		 <div class="r_content">
+			<div class="title"><a href="{:U('Goods/GoodsDetail',array('id'=>$val1['id']))}">{$val1["goodsname"]}</a></div>
+			<div class="p_Price">￥{$val1["saleprice"]}</div>
+          </div>
+		 </li>
+            </volist>
+		</ul>
+	  </div>
+   </div>
+  </div> 
+   </div>
+  <!--产品-->
+  <div class="clearfix">
+   <div class="left_style">
+   <div class="user_Records">
+     <div class="title_name">用户浏览记录</div>
+	 <ul>
+     <volist name="info3" id="vo" key="k" empty="">
+     <if condition="$k elt 6">
+	  <li>
+	   <a href="{:U('Goods/goodsDetail',array('id'=>$vo['gid']))}">
+	   <p><img src="/uploads/n1/{$vo.image|default='default.jpg'|explode=',',###|array_shift}" data-bd-imgshare-binded="1"></p>
+	   <p class="p_name">{$vo.goodsintro}</p>
+	   </a>
+	   <p><span class="p_Price" style="margin-left:40px;">￥{$vo.markprice}</span><b>￥{$vo.saleprice}</b></p>
+	  </li>
+      </if>
+	 </volist>
+	 </ul>
+   </div>
+   </div>
+   <div class="right_style">	  
+	<div class="inDetail_boxOut " id="inDetail_box">
+	 <div class="inDetail_box" >
+	  <div class="fixed_out ">
+	   <ul class="inLeft_btn fixed_bar">
+                  <li class="active"><a id="property-id" href="#payment" class="current">商品属性</a></li>
+                  <li><a id="shot-id" href="#payment" class="after-sale">售后服务</a></li>
+                  <li><a id="coms1-id" href="#payment" class="discuss">买家评论({$good[0]})</a></li>
+                </ul>
+               <div class="subbuy">
+          <span class="extra currentPrice"> ¥{$goods["saleprice"]}</span>
+                   <if condition="$goods['goodsnum'] gt 0">
+          <a href="#" class="extra  notice J_BuyButtonSub example">立即购买</a></div>
+          <else/>
+          <span class="no" title="已售完" >已售完</span>
+          </if>
+	  </div>
+	 </div>	  
+	</div>  
+
+   <div id="shangpsx">
+       <ul class="shangpsx_info">
+            <li><label>所属分类</label><span>{$goods["cate"][2]["catename"]}</span></li>
+            <li><label>品牌</label><span>{$goods["brand"]["bname"]}</span></li>
+            <li><label>颜色</label><span>{$goods["color"]}</span></li>
+            <li><label>尺寸</label><span>{$goods["size"]}</span></li>
+            <li><label>价格</label><span>￥{$goods["saleprice"]}元</span></li>
+            
+        </ul>
+        <foreach name="images"   item="val"  key="k">
+            <img src="/uploads/n0/{$val}"  alt="{$goods['goodsname']}"/>
+        </foreach>
+    </div>
+       <!-- 商品评论 end -->
+   </div>
+   </div>
+  </div>
+  <!--底部样式-->
+<include file="Shop/Home/Common/footer.html" />
+ <!--底部样式-->
+
+ <!--右侧菜单栏购物车样式-->
+<include file="Shop/Home/Common/rightMenu.html" />
+</body>
+</html>

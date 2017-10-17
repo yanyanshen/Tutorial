@@ -1,0 +1,29 @@
+<!--商品-->
+<div class="Inside_pages clearfix">
+    <div class="group_buy">
+        <div class="star" style="display: none">{$time.starttime}</div>
+        <div class="end" style="display: none">{$time.endtime}</div>
+        <volist name="info" id="vo" empty="$empty">
+            <div class="group_list">
+                <ul class="group_info">
+                    <li class="group_img"><a href="{:U('Goods/goodsDetail',array('id'=>$vo['id']))}"><img src="/uploads/n1/{$vo.image|default='default.jpg'|explode=',',###|array_shift}"style="width: 270px;height: 270px;" /></a></li>
+                    <li class="group_name">
+                        <a href="#">{$vo.goodsname|mb_substr=###,0,15,'utf8'}</a>
+                        <div class="group_content">{$vo.goodsintro}</div>
+                        <div class="group_Price"><span>抢购价：</span><i>￥</i><em>{$vo.activeprice}</em></div>
+                        <div class="Original_Price">原价：￥{$vo.saleprice}</div>
+                        <div class="Original_Price">库存量：{$vo.goodsnum}</div>
+                        <if condition="($time['nowtime'] gt $time['starttime']) and ($time['nowtime'] lt $time['endtime'])">
+                        <a href="{:U('Goods/goodsDetail',array('id'=>$vo['id']))}" class="buy_botton">立即购买</a>
+                        <elseif condition="$time['nowtime'] lt $time['starttime']"/>
+                            <a href="{:U('Goods/goodsDetail',array('id'=>$vo['id']))}" class="buy_botton" style="background-color: grey">即将开始</a>
+                            <else/>
+                            <a href="{:U('Goods/goodsDetail',array('id'=>$vo['id']))}" class="buy_botton" style="background-color: grey">本轮抢购结束</a>
+                        </if>
+                    </li>
+                </ul>
+            </div>
+        </volist>
+    </div>
+</div>
+

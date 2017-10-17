@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>添加管理员</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link href="__ADMINSKIN__/css/mine.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__ADMINSKIN__/css/main.css">
+    <link rel="stylesheet" type="text/css" href="__ADMINSKIN__/css/reset.css">
+
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        #clouds {
+            background:url(__ADMINSKIN__/img/cloud.jpg) 0 0 repeat-x #248bc9;
+        }
+
+        #ticket {
+            background:url(__ADMINSKIN__/img/ticket.png) 0 0 no-repeat transparent;
+            width:801px;
+            height:340px;
+            z-index:1000;
+            position:relative;
+            top:200px;
+            display:block;
+            margin:auto;
+        }
+    </style>
+</head>
+    <body>
+
+        <div id="container">
+            <div id="stage" class="stage">
+                <div id="clouds" class="stage" style="background-position: 516.599999999995px 0px;"></div>
+            </div>
+
+            <div id="ticket">
+                <section id="ticket_left">
+                    <p class="text1_a">没有访问权限</p>
+                    <p class="text2_a">未找到航班</p>
+                    <p class="text3_a">请联系超级管理员</p>
+                    <p class="text4_a">对不起!</p>
+                    <p class="text5_a">从</p>
+                    <p class="text6_a">地球</p>
+                    <p class="text7_a">到</p>
+                    <p class="text8_a">火星</p>
+                    <p class="text9_a">座</p>
+                    <p class="text10_a">404</p>
+                    <p class="text11_a">请联系管理员</p>
+
+                </section>
+
+                <section id="ticket_right">
+                    <p class="text1_b">第一类</p>
+                    <p class="text2_b">迷失在云端</p>
+                    <p class="text3_b">从</p>
+                    <p class="text4_b">地球</p>
+                    <p class="text5_b">到</p>
+                    <p class="text6_b">火星</p>
+                    <p class="text7_b">座</p>
+                    <p class="text8_b">404</p>
+                    <p class="text9_b">1</p>
+                    <p class="text10_b">103076498</p>
+                </section>
+            </div>
+        </div>
+
+        <script src="__ADMINSKIN__/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="__ADMINSKIN__/js/jquery.spritely-0.5.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            (function($) {
+                $(document).ready(function() {
+                    $('#clouds').pan({fps: 40, speed: 0.7, dir: 'right', depth: 10});
+                });
+            })(jQuery);
+        </script>
+
+    </body>
+    </html>

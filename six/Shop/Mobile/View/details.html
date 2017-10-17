@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="" rel="stylesheet">
+<link href="__MOBILE__/mobile/css/details.css" rel="stylesheet">
+<link href="__MOBILE__/mobile/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__MOBILE__/mobile/css/font-awesome.css" rel="stylesheet">
+<link href="__MOBILE__/mobile/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="__MOBILE__/mobile/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="__MOBILE__/mobile/css/swiper.min.css">
+
+</head>
+
+<body>
+<!-- banner开始 -->
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <volist name=":explode(',',$goodsinfo['image'])" id="vi">
+                <div class="swiper-slide"><a href="javascript:;"><img src="/uploads/n0/{$vi}" alt=""></a></div>
+            </volist>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+
+<!--    详情开始  -->
+    <div class="introduct">
+        <div class="wrapper font ">
+           <span class="name">{$goodsinfo.goodsname}
+            </span>
+            <span class="share" style="float: right">
+             <a href=""><i class="icon-share"></i><br>分享</a>
+            </span>
+            <p>
+                <span class="price">￥{$goodsinfo.saleprice}</span>
+                <span class="price-2"><i>涨价</i></span>
+                <span class="price-3"><i>促销</i></span>
+            </p>
+            <p class="price-4">价格￥{$goodsinfo.markprice}</p>
+            <p>
+	            <span class="price-5">快递：免运费<span>月销6899笔</span>河南郑州</span>
+            </p>
+        </div>
+        <div class="statement" >
+                <i class="icon-heart"></i>
+                <span>卖家承诺7天内发货</span>
+                <i class="icon-heart"></i>
+                <span>七天无理由</span>
+                <i class="icon-heart"></i>
+                <span>新品</span>
+        </div>
+        <div class="choose-color" >
+                选择尺码颜色
+        </div>              
+    </div>
+<!-- 商品评价 -->
+<div class="evaluate">
+        <div class="wrapper font ">
+                <p>商品评价（1883）</p>
+                <div class="great">
+                    <span>质量好(202)</span>
+                    <span>外形好(202)</span>
+                    <span>好看(202)</span>
+                    <span class="last">服务好(202)</span>
+                </div>
+                <div class="content">
+                    <div class="user ">
+                        <p class="border"></p>
+                        <img src="__MOBILE__/mobile/imgs/people-2.png" alt="" class="people-2">
+                        <span class="tel">1****8</span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="time">2016-04-17</span>
+                        <p>穿着挺舒服，做工也很好，布料摸起来很舒服，不像棉的还会<br>皱起来，卖家态度很好
+                        ，发货很及时，下次还来！</p>
+                    </div>
+                    <div class="user ">
+                        <p class="border"></p>
+                        <img src="__MOBILE__/mobile/imgs/people-2.png" alt="" class="people-2">
+                        <span class="tel">1****8</span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="time">2016-04-17</span>
+                        <p>穿着挺舒服，做工也很好，布料摸起来很舒服，不像棉的还会<br>皱起来，卖家态度很好
+                        ，发货很及时，下次还来！</p>
+                    </div>
+                    <div class="user ">
+                        <p class="border"></p>
+                        <img src="__MOBILE__/mobile/imgs/people-2.png" alt="" class="people-2">
+                        <span class="tel">1****8</span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="time">2016-04-17</span>
+                        <p>穿着挺舒服，做工也很好，布料摸起来很舒服，不像棉的还会皱起来，卖家态度很好，发货很及时，下次还来！
+                        </p>
+                        <img src="__MOBILE__/mobile/imgs/people-1.png" alt="" class="people-1">
+                        <img src="__MOBILE__/mobile/imgs/people-1.png" alt="" class="people-1">
+                        <img src="__MOBILE__/mobile/imgs/people-1.png" alt="" class="people-1">
+                    </div>                     
+                </div>  
+        </div>
+</div>
+<!-- 底部开始   -->
+<div class="foot">
+    <div class="bg">
+    </div>
+    <ul class="memu">
+        <li class="icon-heart-empty icon"></li>
+        <li class="icon-shopping-cart icon"></li>
+        <li class="shopping">加入购物车</li>
+        <li class="buy">立即购买</li>
+    </div>
+</div>
+<!-- js -->
+    <!-- Swiper JS -->
+<script src="__MOBILE__/mobile/js/swiper.min.js"></script>
+<script src="__MOBILE__/mobile/js/jquery-1.9.1.min.js"></script>
+<script src="__MOBILE__/mobile/js/details.js"></script>
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>收藏夹</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="__MOBILE__/Mobile/js/jquery-1.9.1.min.js"></script>
+<!-- <script src="js/1.js"></script> -->
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;
+    // console.log(a);
+        if (a > 750 ){
+            a = 750;
+        } 
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+    }
+    var t;
+    w();
+    window.addEventListener("resize", function() {
+        clearTimeout(t);
+        t = setTimeout(w, 300)
+    }, false);
+})();
+
+</script>
+<link rel="stylesheet" type="text/css" href="__MOBILE__/Mobile/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__MOBILE__/Mobile/css/collection.css"/>
+</head>
+<!-- 头部开始 -->
+<body>
+<div class="collection clearfix">
+    <div class="wrapper">
+        <p class="left fl">您收藏了58个商品</p>
+        <p class="right fr">编辑</p>
+    </div>    
+</div>
+
+<!-- 产品详情 -->
+<div class="product ">
+        <div class="pro1 clearfix">
+            <a href="#"><img src="__MOBILE__/Mobile/imgs/pic1.png" alt="">
+            <p class="fl">苹果iphone6s(64G) （玫瑰金）开放版</p>
+            <p class="mony fl">￥5888</p>
+            </a>
+        </div> 
+      <div class="pro1 clearfix">
+            <a href="#"><img src="__MOBILE__/Mobile/imgs/pic2.png" alt="">
+            <p class="fl">女神专属夏季新款女长袖衬衫白色外套</p>
+            <p class="mony fl">￥99</p>
+            </a>
+       </div>  
+        <div class="pro1 clearfix">
+            <a href="#"><img src="__MOBILE__/Mobile/imgs/pic3.png" alt="">
+            <p class="fl">佰草集新七白补水护肤套装保湿礼盒嫩肤</p>
+            <p class="mony fl">￥299</p>
+            </a>
+        </div>
+        <div class="pro1 clearfix">
+            <a href="#"><img src="__MOBILE__/Mobile/imgs/pic4.png" alt="">
+            <p class="fl">女神专属夏季新款森女系甜美粉色外套 </p>
+            <p class="mony fl">￥199</p>
+            </a>
+        </div>
+        <div class="pro1 clearfix">
+            <a href="#"><img src="__MOBILE__/Mobile/imgs/pic5.png" alt="">
+            <p class="fl">韩后水动力补水保湿嫩白提亮礼盒套装</p>
+            <p class="mony fl">￥199</p>
+            </a>
+        </div> 
+</div>
+
+<!-- 底部导航 STRAT -->
+<include file="Shop/Mobile/Common/footer.html" />     
+<!-- 底部导航 STRAT -->
+</body>
+</html>
