@@ -1,0 +1,119 @@
+/* CSS Document */
+/*顶部导航 样式开始*/
+.top{height:34px; border-bottom: 1px solid #dbdbdb; background:#f2f2f2;}
+.top p{line-height: 35px;font-size: 14px; float: left;}
+.top ul li{float: left; line-height: 35px; margin-right: 10px; }
+.top ul li a{margin-right: 10px;}
+.top ul li a:hover{color: #cc0001;}
+.top ul li span{color: #cc0001;}
+
+.nav  .navCont .classify .menu{width:185px;  background:#eee;position: absolute; top:0 left:0;display: none;z-index: 99999;}
+.nav  .navCont .classify:hover .menu{display:block;}
+/*侧边栏样式 开始*/
+.car{width: 1200px;/*min-width: 1200px;*/margin-top:20px; }
+
+.car .sidebar ul{border:1px solid #cbcbcb;}
+.car .sidebar ul li{padding: 15px 40px; text-align: center;background: #f1f1f1;transition: all 0.5s; border-bottom:1px solid #cbcbcb;}
+.car .sidebar ul li:hover{background: #cc0001;}
+.car .sidebar ul li.li01:hover a{color: #343434;}
+.car .sidebar ul li span{font-size: 20px;}
+.car .sidebar ul li.li02{border-bottom: none;}
+.car .sidebar ul li a{font-size: 14px; color:#343434;}
+.car .sidebar ul li:hover a{ color: #fff; }
+.car .sidebar ul li.no{background: #cc0001;}
+.car .sidebar ul li.no a{color:#fff;}
+/*侧边栏样式 结束*/
+/*账户信息 样式开始*/
+.manage{width:985px;border:1px solid #cbcbcb; margin-left: 50px;}
+.manage .account{ height: 175px; }
+.manage .account h3{font-size:14px; padding-left: 140px; color: #343434;padding-top:40px; }
+.manage .account h3 span{color: #cc0001;}
+.manage .account ul{ padding-left:75px;}
+.manage .account ul li{float: left; margin-left: 40px;margin-top: 20px; padding-left: 25px; padding-top:6px; }
+.manage .account ul li.li04{background: url(../images/jl_icon02.png) no-repeat 3px -35px;}
+.manage .account ul li.li05{background: url(../images/jl_icon02.png) no-repeat 0px -64px;}
+.manage .account ul li.li06{background: url(../images/jl_icon02.png) no-repeat 0px -91px;}
+.manage .account ul li a{ font-size: 14px; }
+.manage .account ul li a:hover{color: #343434; text-decoration:underline;}
+.manage .account ul li span{color: #cc0001;}
+/*账户信息 样式结束*/
+
+/*订单信息 样式开始*/
+.order .title h3{font-size: 18px; color: #343434; line-height: 40px; background: #f1f1f1; padding-left: 22px;}
+.order .title h3 span{float: right;padding-right:22px; font-size: 14px;}
+.order .title h3 span a:hover{ color:#cc0001; }
+.order ul li {height: 110px; border-bottom: 1px solid #cbcbcb;}
+.order ul li a img{padding: 15px 25px; }
+.order ul li p{float: left;font-size: 14px; padding-left: 80px;padding-top: 40px; }
+.order ul li p span{color:#cc0001;}
+.order ul li p a{color: #343434;}
+.order ul li p a:hover{color: #cc0001;}
+.order ul li.li3{border-bottom: none;}
+/*订单信息 样式结束*/
+
+/*我的关注 样式开始*/
+.attention{height: 245px;}
+.attention .title h3{font-size: 18px; color: #343434; line-height: 40px; background: #f1f1f1; padding-left: 22px;}
+.attention ul li{float: left;margin-right:46px;width: 160px; height: 180px;position: relative; }
+.attention ul li.li01{background: url(../images/gz_bg01.jpg)no-repeat 0px 20px;margin-right:47px;}
+.attention ul li.li02{background: url(../images/gz_bg02.jpg)no-repeat 0px 20px;}
+.attention ul li.li03{background: url(../images/gz_bg03.jpg)no-repeat 0px 20px;}
+.attention ul li.li04{background: url(../images/gz_bg04.jpg)no-repeat 0px 20px;}
+.attention ul li.li05{background: url(../images/gz_bg05.jpg)no-repeat 0px 20px;margin-right:-1px;}
+.attention ul li p{width: 160px; height: 0px;margin-top: 20px; background: rgba(0,0,0,0.5); -webkit-transition: all 0.5s;  }
+.attention ul li:hover p.p1{height: 160px;}
+.attention ul li p.p1 span{padding-top:30px;}
+.attention ul li p.p2{ text-align: center; position: absolute; left:0px; top: 40% ; font-size: 0px;color: #fff;  margin-top: -60px; -webkit-transition: all 0.3s; }
+.attention ul li:hover p.p2{font-size: 16px;text-align: center; color: #fff; color: #fff; margin-top: 0px; }
+/*我的关注 样式结束*/
+
+/*浏览记录 样式开始*/
+	/*轮播开始*/
+.record {position: relative;}
+.record .title h3{font-size: 18px; color: #343434; line-height: 40px; background: #f1f1f1; padding-left: 22px;}
+
+.record .lb{position:relative; width: 900px; height: 180px; margin-top:10px; overflow:hidden;  margin-left: 50px;}
+.record .lb .lb-img{width: 3600px; height:180px;position: absolute;left: 0px;top: 0px; }
+.record .lb .lb-img>li{float: left;}
+
+.lb div { position:absolute;  color:#979797;font-size:30px; text-align:center; line-height: 100px;top:50%;margin-top:-50px;cursor:pointer;}
+.lb .btn_l {left: 0px;}
+.lb .btn_r {right:0px;}
+	/*轮播结束*/
+.record .lb .lb-img>li ul li{float: left;margin:0px 32.5px;width: 160px; height: 180px;position: relative; }
+.record .lb .lb-img>li ul li.li01{background: url(../images/gz_bg02.jpg)no-repeat 0px 20px;}
+.record .lb .lb-img>li ul li.li02{background: url(../images/gz_bg06.jpg)no-repeat 0px 20px;}
+.record .lb .lb-img>li ul li.li03{background: url(../images/gz_bg03.jpg)no-repeat 0px 20px;}
+.record .lb .lb-img>li ul li.li04{background: url(../images/gz_bg07.jpg)no-repeat 0px 20px;}
+.record .lb .lb-img>li ul li p{width: 160px; height: 0px;margin-top: 20px; background: rgba(0,0,0,0.5); -webkit-transition: all 0.5s;  }
+.record .lb .lb-img>li ul li:hover p.p1{height: 160px;}
+.record .lb .lb-img>li ul li p.p1 span{padding-top:30px;}
+.record .lb .lb-img>li ul li p.p2{ text-align: center; position: absolute; left:0px; top: 40% ; font-size: 0px;color: #fff;  margin-top: -60px; -webkit-transition: all 0.3s; }
+.record .lb .lb-img>li ul li:hover p.p2{font-size: 16px ; text-align: center;color: #fff; color: #fff; margin-top: 0px; }
+
+
+.jilu{padding-top: 20px; width: 1200px;}
+.jilu .title h3{font-size: 24px;color: #fff; background: #cc0001; line-height: 40px;padding-left: 15px; }
+.jilu ul li{float: left;margin-top: 20px; width: 190px; height: 260px; position: relative; margin-right: 12px; margin-bottom: 20px;}
+.jilu ul li.li01{background: url(../images/lulan_bg01.jpg) no-repeat;}
+.jilu ul li.li02{background: url(../images/lulan_bg02.jpg) no-repeat;}
+.jilu ul li.li03{background: url(../images/lulan_bg03.jpg) no-repeat;}
+.jilu ul li.li04{background: url(../images/lulan_bg04.jpg) no-repeat;}
+.jilu ul li.li05{background: url(../images/lulan_bg05.jpg) no-repeat;}
+.jilu ul li.li06{background: url(../images/lulan_bg06.jpg) no-repeat; margin-right: -1px;}
+.jilu ul li p{width: 190px; height: 0px; background: rgba(0,0,0,0.5); -webkit-transition: all 0.5s;  }
+.jilu ul li:hover p.p1{height: 260px;}
+.jilu ul li p.p1 span{padding-top:30px;}
+.jilu ul li p.p2{ text-align: center; position: absolute; left:0px; top: 40% ; font-size: 0px;color: #fff;  margin-top: -60px; -webkit-transition: all 0.3s; }
+.jilu ul li:hover p.p2{font-size: 16px ;color: #fff; color: #fff; margin-top: 0px; text-align: center; }
+/*浏览记录 样式结束
+
+/*分页类*/
+#page{height:40px; padding:20px 0px;text-align: center;}
+#page a{display:inline-block;margin-right:10px;padding:2px 12px;height:24px;border:1px #cccccc solid;background:#fff;text-decoration:none;color:#808080;font-size:12px;line-height:24px;}
+#page a:hover{color:#077ee3;border:1px #077ee3 solid;}
+#page a.cur{border:none;background:#077ee3;color:#fff;}
+#page span{display:inline-block;margin: 0;padding:2px 12px;font-size:12px;height:24px;line-height:24px;color:#bbb;border:1px #ccc solid;background:#fcfcfc;margin-right:8px;}
+#page span.pageRemark{border-style:none;background:none;margin-right:0px;padding:4px 0px;color:#666;}
+#page span.pageRemark b{color:red;}
+#page span.pageEllipsis{border-style:none;background:none;padding:4px 0px;color:#808080;}

@@ -1,0 +1,288 @@
+﻿@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-06-21 20:08:47
+ * @version $Id$
+ */
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var{margin:0;padding:0}
+body{width:7.5rem;font-family:"Microsoft Yahei";font-size: .2rem}
+.bk{border: 0.01rem solid red;}
+.wrapper{width:6.9rem; margin:0 auto;}
+ul, li { list-style:none;}
+.clearfix:after { content:""; height:0; font-size:0rem; visibility:hidden; display:block; clear:both;}
+.clearfix { *zoom:1;}
+i { font-style: normal;}
+a { text-decoration:none; color:#000;}
+body{background-color: #f4f4f4;}
+html{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*头部*/
+.header{height:0.9rem;background: #1c1c20;color:#fff;font-size: 0.36rem;text-align: center;line-height: 0.9rem;}
+.header a{color:#fff}
+.header p{display: inline-block;}
+.header h2{font-size:0.36rem;display: inline-block;margin-left:1.8rem;margin-right:1.8rem;}
+.header ul{display: inline-block;}
+.header ul li{width:0.1rem;height:0.1rem;background: #fff;display: inline-block;border-radius:0.1rem; }
+
+.font{font-size: 0;}
+/*banner开始*/
+.swiper-container .swiper-slide a {
+    width:7.5rem;
+    height:5.25rem;
+    display: block;
+}
+.swiper-container .swiper-slide a img{
+    width:7.5rem;
+    height:5.25rem;
+    display: block;
+}
+.swiper-container {
+    font-size: 0;
+    width:7.5rem;
+    height:5.25rem;
+    overflow: hidden;
+}
+
+
+
+
+/*详情开始*/
+.introduct .name {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    font-size:0.3rem;
+    color:#5f5f5f;
+    margin-right: 0.46rem;
+    width: 5rem;
+    overflow: hidden;
+}
+.introduct .icon-share {
+    font-size:0.3rem;
+}
+.introduct .share {
+    margin-top: 0.14rem;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    font-size:0.24rem;
+    color:#5f5f5f;
+    text-align: center;
+    width:0.6rem;
+    border-left:0.02rem solid #333;
+    padding-left: 0.5rem; 
+
+}
+.introduct .share .icon-share{
+    font-size: 0.4rem;
+}
+.introduct .price {
+    font-size:0.26rem ;
+    color:#ff1313;
+}
+.introduct .price-2 {
+    font-size:0.18rem;
+    color:#fff;
+    width:0.89rem;
+    height:0.25rem;
+    background-color: #ff3300;
+    display: block;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    line-height: 0.25rem;
+    text-align: center;
+    margin:0 0.14rem 0 0.4rem;
+}
+.introduct .price-3 {
+    font-size:0.18rem;
+    color:#fff;
+    width:0.89rem;
+    height:0.25rem;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    background-color: #ff7418;
+    line-height: 0.25rem;
+    text-align: center;
+    margin-top:0.2rem;
+}
+.introduct .price-4 {
+    font-size:0.2rem;
+    color:#7b7b7b;
+    text-decoration: line-through;
+    margin:0.18rem 0 0.2rem;
+}
+.introduct .price-5{
+    font-size:0.2rem;
+    color:#7b7b7b;
+}
+.introduct .price-5 span{
+margin:0 1.2rem 0 1.2rem;
+}
+
+.introduct .statement {
+    font-size: 0.2rem;
+    width:100%;
+    height: 0.6rem;
+    background: #eee;
+    line-height: 0.6rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+
+}
+.introduct .statement .icon-heart{
+    color:red;
+}
+.introduct .statement span{
+    color:#7b7b7b;
+    margin-right: 0.4rem;
+}
+.introduct .choose-color{
+    font-size: 0.28rem;
+    width:100%;
+    height: 0.6rem;
+    background: #eee;
+    line-height: 0.6rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    color:#7b7b7b;
+}
+
+/*商品评价*/
+ .evaluate p{
+    margin: 0.2rem 0 0.1rem;
+    color: #7b7b7b;
+    font-size:0.28rem ;
+}
+ .evaluate .great span{
+    font-size: 0.24rem;
+    width:1.65rem;
+    height:0.42rem;
+    background: #ffbcb3;
+    border-radius: 0.08rem;
+    color:#535353 ;
+    line-height: 0.42rem;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    margin-right: 0.04rem;
+    margin-bottom: 0.1rem;
+}
+.evaluate .great .last{
+    margin-right: 0;
+}
+.evaluate .content .border{
+    width:7.5rem;
+    height:0.02rem;
+    background: #7b7b7b;
+    margin-left: -0.3rem;
+
+} 
+
+.evaluate .content .user .people-2{
+    margin-top: 0.1rem;
+    width:0.5rem;
+    height:0.5rem;
+    margin-right: 0.2rem;
+
+}
+.evaluate .content .user span {
+    color:#7b7b7b;
+    font-size: 0.24rem;vertical-align:0.15rem;
+}
+.icon-star{
+    color:red !important;
+    font-size: 0.24rem;
+    margin-left:0.1rem;
+}
+.evaluate .content .user .tel{
+    margin-right: 0.25rem;
+}
+.evaluate .content .user .time{
+    float: right;
+    margin-top:0.1rem ;
+}
+.evaluate .content .user p{
+    font-size: 0.24rem;
+    color:#7b7b7b;
+}
+.evaluate .content .user .people-1{
+    height:0.95rem;
+    width:0.95rem;
+    display:inline-block;
+    *display: inline;
+    *zoom:1;
+    margin-right: 0.1rem;
+}
+/*底部开始  */
+.foot .bg{
+    width:100%;
+    height:0.99rem;
+}
+.foot ul{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:0.99rem;
+    background: #fff;
+    border:0.02rem solid #7b7b7b;
+    text-align: center;
+
+}
+.foot ul li{
+    float:left;
+    line-height: 0.99rem;
+    border-right:0.02rem solid #7b7b7b;
+}
+.foot ul .icon-heart-empty,.foot ul .icon-shopping-cart{
+    width:1.33rem;
+    font-size:0.4rem ;
+}
+.foot ul .color{
+    color:#f00;
+}
+.foot ul .icon-heart{
+    width:1.33rem;
+    font-size:0.4rem ;
+}
+.foot ul .shopping{
+    width:2.37rem;
+    background: #f76106;
+    font-size: 0.3rem;
+    color: #ffffff;
+}
+.foot ul .buy{
+    width:2.37rem;
+    background: #ff0c0c;
+    font-size: 0.3rem;
+    color: #ffffff;
+}
+@media screen and (max-width:375px){
+    .price-2 i,.price-3 i{transform:scale(0.5)}
+}
+
+/*弹出层购物车*/
+.shoppingCart{ width: 100%;  height: auto;}
+.shopping ul{ margin: 0; padding:0;}
+.shopping ul li{ list-style: none; height: 1.5rem; width: 100%;}
+.shopping ul li .lf{ width: 1rem; float: left; display: inline-block; vertical-align: middle;}
+.shopping ul li .ce{ width: 5.5rem; float: left; display: inline-block; vertical-align: middle;}
+.shopping ul li .rf{ width: 1rem; float: left; display: inline-block; vertical-align: middle;}
+
+/*弹出层菜单*/
+.popMenu{width:100%;height: auto;}
+.popMenu ul{margin: 0;padding:0;border-radius: 5px}
+.popMenu ul li{list-style: none;height: 0.8rem;line-height:0.8rem;width:100%;text-align: center;background-color: #fff;border-bottom: 5px solid #eee}
+.popMenu ul li a{color:#333;font-size:0.4rem;display: inline-block;width: 100%}
+
+
+
+
+
